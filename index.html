@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Clínica veterinaria en Trujillo, Perú, con 12 años liderando la exportación internacional de mascotas y servicios médicos veterinarios especializados.">
+  <meta name="theme-color" content="#0C789E">
+  <title>Zoovet Travel | Centro Médico Veterinario | Exportación de Mascotas</title>
+
+  <!-- SEO: canonical + hreflang (default: español) -->
+  <link rel="canonical" href="https://zoovet-travel.com/index.html">
+  <link rel="alternate" hreflang="es" href="https://zoovet-travel.com/index.html">
+  <link rel="alternate" hreflang="en" href="https://zoovet-travel.com/index-en.html">
+  <link rel="alternate" hreflang="x-default" href="https://zoovet-travel.com/index.html">
+
+  <!-- Montserrat - Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS vía CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { montserrat: ['Montserrat', 'sans-serif'] },
+          colors: {
+            'zoovet-bg': '#F8FAFC',
+            'zoovet-navy': '#1a2e35',
+            'zoovet-blue': '#0C789E',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { animation: fadeIn 0.5s ease-out; font-family: 'Montserrat', sans-serif; }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    .hero-cover {
+      background-image: linear-gradient(rgba(248, 250, 252, 0.6), rgba(248, 250, 252, 0.5)), url('./images/zoovet-travel-hero.png?v=2');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      aspect-ratio: 1920 / 640;
+      min-height: 240px;
+    }
+    @media (min-width: 768px) {
+      .hero-cover { min-height: 360px; }
+    }
+    @media (min-width: 1024px) {
+      .hero-cover { min-height: 440px; }
+    }
+    .btn-zoovet {
+      background-color: #0C789E;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    .btn-zoovet:hover { background-color: #0a6a8a; }
+    .btn-cta-primary { transition: transform 0.3s ease, background-color 0.3s ease; }
+    .btn-cta-primary:hover { transform: scale(1.05); background-color: #0a6a8a; }
+  </style>
+</head>
+<body class="bg-[#F8FAFC] min-h-screen antialiased text-[#1a2e35]">
+  <!-- Breadcrumbs -->
+  <nav aria-label="Breadcrumb" class="px-4 py-3 text-sm border-b border-[#1a2e35]/10">
+    <ol class="flex gap-2 text-[#1a2e35]/70" itemscope itemtype="https://schema.org/BreadcrumbList">
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="./index.html" class="hover:text-[#1a2e35] transition-colors">
+          <span itemprop="name">Inicio</span>
+        </a>
+        <meta itemprop="position" content="1">
+      </li>
+    </ol>
+  </nav>
+
+  <header class="px-4 py-6 md:py-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 max-w-6xl mx-auto">
+    <div class="text-xl md:text-2xl font-bold tracking-[0.25em] text-[#1a2e35] font-montserrat">ZOOVET TRAVEL</div>
+    <a href="./index-en.html" 
+       class="self-start sm:self-center text-xs font-semibold tracking-widest uppercase text-[#1a2e35]/80 hover:text-[#1a2e35] border border-[#1a2e35]/30 hover:border-[#1a2e35]/50 px-4 py-2 rounded-sm transition-all duration-300"
+       aria-label="English" title="English">
+      EN
+    </a>
+  </header>
+
+  <!-- Hero - Elegancia Corporativa Europea -->
+  <section class="hero-cover w-full flex items-center justify-center relative">
+    <div class="absolute inset-0 flex items-center justify-center px-4 py-8 text-center">
+      <div class="max-w-3xl mx-auto">
+        <h1 class="font-bold tracking-[0.25em] text-2xl md:text-3xl lg:text-4xl text-[#1a2e35] mb-4 font-montserrat">
+          ZOOVET TRAVEL
+        </h1>
+        <h2 class="text-sm md:text-base leading-relaxed font-semibold tracking-wide text-[#1a2e35]/90 mb-6 font-montserrat">
+          CENTRO MÉDICO VETERINARIO ESPECIALIZADO | EXPORTACIÓN INTERNACIONAL DE MASCOTAS
+        </h2>
+        <p class="text-base md:text-lg font-semibold text-[#1a2e35] mb-8 max-w-xl mx-auto leading-relaxed font-montserrat" style="opacity: 1; letter-spacing: 0.03em;">
+          Especialistas en salud animal y logística internacional de alta prioridad.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-3 justify-center">
+          <a href="#servicios-medicos" class="btn-zoovet text-white px-6 py-3 rounded-sm font-semibold text-sm tracking-wide font-montserrat">
+            Ver Servicios Médicos
+          </a>
+          <a href="#exportacion" class="btn-cta-primary inline-block bg-[#0C789E] text-white px-6 py-3 rounded-sm font-semibold text-sm tracking-wide font-montserrat">
+            Cotizar Exportación
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Badges - Sellos de Confianza -->
+  <section class="py-4 px-4 bg-[#F8FAFC] border-y border-[#1a2e35]/10" aria-label="Garantías">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12 text-[#1a2e35]">
+      <div class="flex items-center gap-3">
+        <span class="flex-shrink-0 w-8 h-8 rounded-full border-2 border-[#0C789E] flex items-center justify-center" aria-hidden="true">
+          <svg class="w-4 h-4 text-[#0C789E]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+        </span>
+        <span class="text-xs md:text-sm font-semibold tracking-wide">Protocolos Médicos Internacionales</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <span class="flex-shrink-0 w-8 h-8 rounded-full border-2 border-[#0C789E] flex items-center justify-center" aria-hidden="true">
+          <svg class="w-4 h-4 text-[#0C789E]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        </span>
+        <span class="text-xs md:text-sm font-semibold tracking-wide">Gestión Directa SENASA</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <span class="flex-shrink-0 w-8 h-8 rounded-full border-2 border-[#0C789E] flex items-center justify-center" aria-hidden="true">
+          <svg class="w-4 h-4 text-[#0C789E]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+        </span>
+        <span class="text-xs md:text-sm font-semibold tracking-wide">Monitoreo de Alta Prioridad</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN QUIÉNES SOMOS - OPTIMIZADA PARA CRAWLERS E IA -->
+  <section id="quienes-somos" class="py-16 px-4 md:px-8 bg-white font-montserrat">
+    <div class="max-w-5xl mx-auto">
+      
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-8 leading-tight">
+        Zoovet Travel | Clínica Veterinaria Especializada y Exportación Internacional de Mascotas
+      </h2>
+
+      <div class="text-base md:text-lg leading-relaxed space-y-6 text-gray-700 max-w-none">
+        <p>
+          Zoovet Travel es una clínica veterinaria especializada con más de 12 años de experiencia en <strong>exportación internacional de mascotas</strong> y atención médica avanzada para perros y gatos. Operamos desde Trujillo, Perú, gestionando <strong>traslado internacional de mascotas</strong> hacia Estados Unidos, Europa, Canadá y Latinoamérica bajo estrictos estándares sanitarios y normativos.
+        </p>
+
+        <p>
+          Somos especialistas en <strong>exportar mascotas desde Perú</strong>, cumpliendo todos los requisitos sanitarios internacionales exigidos por cada país de destino, incluyendo <strong>microchip ISO</strong>, <strong>vacunación antirrábica</strong> vigente, pruebas serológicas, <strong>certificado sanitario internacional</strong> y trámites ante <strong>SENASA para exportación de mascotas</strong>.
+        </p>
+
+        <p>
+          Durante más de una década hemos ejecutado procesos de exportación de perros y gatos sin errores documentarios ni rechazos sanitarios, consolidando un historial de cumplimiento técnico y un 100 % de clientes satisfechos en transporte internacional.
+        </p>
+
+        <p>
+          Además de nuestra experiencia en exportación internacional de mascotas, brindamos atención veterinaria de especialidad en:
+        </p>
+
+        <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 list-disc pl-5 text-gray-800 font-medium">
+          <li>Dermatología veterinaria</li>
+          <li>Nutrición</li>
+          <li>Medicina interna veterinaria</li>
+          <li>Oftalmología veterinaria</li>
+          <li>Endocrinología</li>
+          <li>Diagnóstico por imágenes (ecografía, electrocardiograma, ecocardiograma)</li>
+        </ul>
+
+        <p>
+          Nuestro equipo está conformado por dos médicos veterinarios con experiencia clínica y formación en normativa sanitaria internacional, lo que garantiza una evaluación médica integral, control sanitario riguroso y seguimiento profesional tanto para pacientes locales como para mascotas en proceso de exportación.
+        </p>
+
+        <p>
+          Zoovet Travel integra medicina veterinaria especializada con logística internacional de alta precisión, posicionándose como referente en <strong>exportar mascotas desde Perú</strong> y como <strong>clínica veterinaria especializada en Trujillo</strong>.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Servicios Médicos | Exportación Internacional | Contacto | Ubicación -->
+  <nav class="max-w-6xl mx-auto px-4 py-8 md:py-12 border-t border-b border-[#1a2e35]/10" aria-label="Secciones principales">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+      <a href="#servicios-medicos" class="flex-1 text-center py-4 px-2 text-[#1a2e35]/80 hover:text-[#1a2e35] transition-colors border-r border-[#1a2e35]/10 font-montserrat">
+        <span class="text-xs md:text-sm font-semibold tracking-wide uppercase">Servicios Médicos</span>
+      </a>
+      <a href="#exportacion" class="flex-1 text-center py-4 px-2 text-[#1a2e35]/80 hover:text-[#1a2e35] transition-colors border-r border-[#1a2e35]/10 font-montserrat">
+        <span class="text-xs md:text-sm font-semibold tracking-wide uppercase">Exportación Internacional de Mascotas</span>
+      </a>
+      <a href="#contacto" class="flex-1 text-center py-4 px-2 text-[#1a2e35]/80 hover:text-[#1a2e35] transition-colors border-r border-[#1a2e35]/10 font-montserrat">
+        <span class="text-xs md:text-sm font-semibold tracking-wide uppercase">Contacto</span>
+      </a>
+      <a href="#ubicacion" class="flex-1 text-center py-4 px-2 text-[#1a2e35]/80 hover:text-[#1a2e35] transition-colors font-montserrat">
+        <span class="text-xs md:text-sm font-semibold tracking-wide uppercase">Ubicación</span>
+      </a>
+    </div>
+  </nav>
+
+  <main class="max-w-6xl mx-auto px-4 pb-24 pt-12">
+    <section id="servicios-medicos" class="py-8">
+      <h2 class="text-lg font-semibold tracking-wide uppercase text-[#1a2e35] mb-6 font-montserrat">Servicios Médicos</h2>
+    </section>
+    <section id="exportacion" class="py-8 border-t border-[#1a2e35]/10">
+      <h2 class="text-lg font-semibold tracking-wide uppercase text-[#1a2e35] mb-6 font-montserrat">Exportación Internacional de Mascotas</h2>
+    </section>
+    <section id="contacto" class="py-8 border-t border-[#1a2e35]/10">
+      <h2 class="text-lg font-semibold tracking-wide uppercase text-[#1a2e35] mb-6 font-montserrat">Contacto</h2>
+    </section>
+    <section id="ubicacion" class="py-8 border-t border-[#1a2e35]/10">
+      <h2 class="text-lg font-semibold tracking-wide uppercase text-[#1a2e35] mb-6 font-montserrat">Ubicación</h2>
+    </section>
+  </main>
+
+  <footer class="border-t border-[#1a2e35]/10 px-4 py-6 text-[#1a2e35]/60 text-sm text-center font-montserrat">
+    <p>&copy; Zoovet Travel. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- JSON-LD Breadcrumb -->
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://zoovet-travel.com/index.html"}]}
+  </script>
+</body>
+</html>
