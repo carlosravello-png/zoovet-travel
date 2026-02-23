@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Clinique vétérinaire à Trujillo, Pérou, avec 12 ans d'expérience dans l'exportation internationale d'animaux de compagnie et les services médicaux vétérinaires spécialisés.">
+  <meta name="theme-color" content="#0C789E">
+  <title>Zoovet Travel | Centre Médical Vétérinaire | Exportation d'Animaux de Compagnie</title>
+
+  <!-- SEO: canonical + hreflang -->
+  <link rel="canonical" href="https://zoovet-travel.com/index-fr.html">
+  <link rel="alternate" hreflang="es" href="https://zoovet-travel.com/index.html">
+  <link rel="alternate" hreflang="en" href="https://zoovet-travel.com/index-en.html">
+  <link rel="alternate" hreflang="fr" href="https://zoovet-travel.com/index-fr.html">
+  <link rel="alternate" hreflang="x-default" href="https://zoovet-travel.com/index.html">
+
+  <!-- Montserrat - Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { montserrat: ['Montserrat', 'sans-serif'] },
+          colors: {
+            'zoovet-bg': '#F8FAFC',
+            'zoovet-navy': '#1a2e35',
+            'zoovet-blue': '#0C789E',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { animation: fadeIn 0.5s ease-out; font-family: 'Montserrat', sans-serif; }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    .hero-cover {
+      background-image: linear-gradient(rgba(26, 46, 53, 0.5), rgba(26, 46, 53, 0.5)), url('./images/zoovet-travel-hero.png?v=2');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      aspect-ratio: 1920 / 640;
+      min-height: 280px;
+    }
+    @media (min-width: 640px) { .hero-cover { min-height: 320px; } }
+    @media (min-width: 768px) { .hero-cover { min-height: 360px; } }
+    @media (min-width: 1024px) { .hero-cover { min-height: 440px; } }
+    .btn-zoovet { background-color: #0C789E; transition: all 0.5s ease; }
+    .btn-zoovet:hover { background-color: #0a6a8a; transform: translateY(-4px); box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25); }
+    .btn-cta-primary { transition: all 0.5s ease; }
+    .btn-cta-primary:hover { transform: translateY(-4px); background-color: #0a6a8a; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25); }
+    @media (max-width: 767px) {
+      body { -webkit-tap-highlight-color: rgba(12, 120, 158, 0.2); }
+      footer a { padding: 0.5rem 0; min-height: 44px; display: inline-flex; align-items: center; }
+    }
+    @supports (padding: max(0px)) {
+      .footer-safe { padding-bottom: max(1.5rem, env(safe-area-inset-bottom)); }
+    }
+  </style>
+</head>
+<body class="bg-[#F8FAFC] min-h-screen antialiased text-[#1a2e35]">
+  <!-- Breadcrumbs -->
+  <nav aria-label="Fil d'Ariane" class="px-4 py-3 text-sm border-b border-[#1a2e35]/10">
+    <ol class="flex gap-2 text-[#1a2e35]/70" itemscope itemtype="https://schema.org/BreadcrumbList">
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="./index-fr.html" class="hover:text-[#1a2e35] transition-colors">
+          <span itemprop="name">Accueil</span>
+        </a>
+        <meta itemprop="position" content="1">
+      </li>
+    </ol>
+  </nav>
+
+  <header class="px-4 py-6 md:py-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 max-w-6xl mx-auto">
+    <div class="text-lg sm:text-xl md:text-2xl tracking-[0.4em] text-[#1a2e35] font-montserrat"><span class="font-light">ZOOVET</span> <span class="font-bold">TRAVEL</span></div>
+    <div class="flex gap-2">
+      <a href="./index.html" class="self-start sm:self-center text-xs font-semibold tracking-widest uppercase text-[#1a2e35]/80 hover:text-[#1a2e35] border border-[#1a2e35]/30 hover:border-[#1a2e35]/50 px-3 py-2 rounded-sm transition-all duration-300" aria-label="Español" title="Español">ES</a>
+      <a href="./index-en.html" class="self-start sm:self-center text-xs font-semibold tracking-widest uppercase text-[#1a2e35]/80 hover:text-[#1a2e35] border border-[#1a2e35]/30 hover:border-[#1a2e35]/50 px-3 py-2 rounded-sm transition-all duration-300" aria-label="English" title="English">EN</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero-cover w-full flex items-center justify-center relative">
+    <div class="absolute inset-0 flex items-center justify-center px-4 py-8 text-center">
+      <div class="max-w-3xl mx-auto">
+        <h1 class="font-bold tracking-[0.25em] text-2xl md:text-3xl lg:text-4xl text-white mb-4 font-montserrat">ZOOVET TRAVEL</h1>
+        <h2 class="text-xs sm:text-sm md:text-base leading-relaxed font-light tracking-[0.2em] text-white/95 mb-6 font-montserrat">
+          CENTRE MÉDICAL VÉTÉRINAIRE SPÉCIALISÉ | EXPORTATION INTERNATIONALE D'ANIMAUX DE COMPAGNIE
+        </h2>
+        <p class="text-sm sm:text-base md:text-lg font-semibold text-white/95 mb-8 max-w-xl mx-auto leading-relaxed font-montserrat" style="opacity: 1; letter-spacing: 0.03em;">
+          Spécialistes en santé animale et logistique internationale prioritaire.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-3 justify-center">
+          <a href="#services-medicaux" class="btn-zoovet text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-none font-semibold text-xs sm:text-sm tracking-wide font-montserrat">Services médicaux</a>
+          <a href="#exportation" class="btn-cta-primary inline-block bg-[#0C789E] text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-none font-semibold text-xs sm:text-sm tracking-wide font-montserrat">Demande d'exportation</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Badges -->
+  <section class="py-4 sm:py-5 px-4 bg-[#F8FAFC] border-y border-[#1a2e35]/10" aria-label="Garanties">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 md:gap-12 text-[#1a2e35]">
+      <div class="flex items-center gap-2 sm:gap-3">
+        <svg class="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 text-[#0C789E]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+        <span class="text-[10px] sm:text-[10px] font-medium tracking-[0.15em] uppercase">Protocoles médicaux internationaux</span>
+      </div>
+      <div class="flex items-center gap-2 sm:gap-3">
+        <svg class="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 text-[#0C789E]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        <span class="text-[10px] sm:text-[10px] font-medium tracking-[0.15em] uppercase">Gestion directe SENASA</span>
+      </div>
+      <div class="flex items-center gap-2 sm:gap-3">
+        <svg class="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 text-[#0C789E]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+        <span class="text-[10px] sm:text-[10px] font-medium tracking-[0.15em] uppercase">Suivi prioritaire</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Qui sommes-nous -->
+  <section id="qui-sommes-nous" class="py-16 sm:py-20 md:py-24 px-4 md:px-8 bg-slate-50 font-montserrat">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-6 sm:mb-8 leading-tight">
+        Zoovet Travel | Clinique vétérinaire spécialisée et exportation internationale d'animaux de compagnie
+      </h2>
+
+      <div class="text-sm sm:text-base md:text-lg leading-loose space-y-6 text-slate-600 max-w-none">
+        <p>
+          Zoovet Travel est une clinique vétérinaire spécialisée avec plus de 12 ans d'expérience en <strong>exportation internationale d'animaux de compagnie</strong> et soins médicaux avancés pour chiens et chats. Nous opérons depuis Trujillo, Pérou, en gérant le <strong>transfert international d'animaux de compagnie</strong> vers les États-Unis, l'Europe, le Canada et l'Amérique latine, conformément aux normes sanitaires et réglementaires strictes.
+        </p>
+
+        <p>
+          Nous sommes spécialistes de l'<strong>exportation d'animaux de compagnie depuis le Pérou</strong>, en respectant tous les exigences sanitaires internationales imposées par chaque pays de destination, notamment la <strong>puce ISO</strong>, la <strong>vaccination antirabique</strong> à jour, les analyses sérologiques, le <strong>certificat sanitaire international</strong> et les formalités auprès du <strong>SENASA pour l'exportation d'animaux de compagnie</strong>.
+        </p>
+
+        <p>
+          Depuis plus d'une décennie, nous avons réalisé des processus d'exportation de chiens et de chats sans erreurs documentaires ni rejets sanitaires, consolidant un historique de conformité technique et 100 % de clients satisfaits en transport international.
+        </p>
+
+        <p>
+          En plus de notre expertise en exportation internationale d'animaux de compagnie, nous assurons des soins vétérinaires spécialisés dans :
+        </p>
+
+        <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 list-disc pl-5 text-slate-600 font-medium">
+          <li>Dermatologie vétérinaire</li>
+          <li>Nutrition</li>
+          <li>Médecine interne vétérinaire</li>
+          <li>Ophtalmologie vétérinaire</li>
+          <li>Endocrinologie</li>
+          <li>Diagnostic par imagerie (échographie, électrocardiogramme, échocardiogramme)</li>
+        </ul>
+
+        <p>
+          Notre équipe comprend deux médecins vétérinaires avec une expérience clinique et une formation en réglementation sanitaire internationale, garantissant une évaluation médicale intégrale et un suivi professionnel pour les patients locaux comme pour les animaux en cours d'exportation.
+        </p>
+
+        <p>
+          Zoovet Travel intègre la médecine vétérinaire spécialisée à la logistique internationale de haute précision, se positionnant comme référence pour l'<strong>exportation d'animaux de compagnie depuis le Pérou</strong> et comme <strong>clinique vétérinaire spécialisée à Trujillo</strong>.
+        </p>
+
+        <div id="articles-scientifiques" class="mt-10 pt-10 border-t border-[#1a2e35]/10">
+          <h2 class="text-xl md:text-2xl font-bold text-gray-900 mb-4">Articles scientifiques sur le transport et l'exportation internationale d'animaux de compagnie</h2>
+          <p class="text-[#1a2e35]/90 font-montserrat mb-4">Articles scientifiques en français, espagnol et anglais sur la médecine vétérinaire, l'exportation d'animaux et la santé animale.</p>
+          <a href="./articles/index-fr.html" class="inline-flex items-center gap-2 text-[#0C789E] font-semibold hover:underline font-montserrat">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+            Voir les articles
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Navigation -->
+  <nav class="max-w-6xl mx-auto px-4 py-6 sm:py-8 md:py-12 border-t border-b border-[#1a2e35]/10" aria-label="Sections principales">
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4 md:gap-6">
+      <a href="#services-medicaux" class="flex-1 text-center py-4 px-2 text-[#1a2e35]/80 hover:text-[#1a2e35] transition-colors border-r border-[#1a2e35]/10 font-montserrat"><span class="text-xs md:text-sm font-semibold tracking-wide uppercase">Services médicaux</span></a>
+      <a href="#exportation" class="flex-1 text-center py-4 px-2 text-[#1a2e35]/80 hover:text-[#1a2e35] transition-colors border-r border-[#1a2e35]/10 font-montserrat"><span class="text-xs md:text-sm font-semibold tracking-wide uppercase">Exportation internationale</span></a>
+      <a href="#articles-scientifiques" class="flex-1 text-center py-4 px-2 text-[#1a2e35]/80 hover:text-[#1a2e35] transition-colors border-r border-[#1a2e35]/10 font-montserrat"><span class="text-xs md:text-sm font-semibold tracking-wide uppercase">Articles scientifiques</span></a>
+      <a href="#contact" class="flex-1 text-center py-4 px-2 text-[#1a2e35]/80 hover:text-[#1a2e35] transition-colors border-r border-[#1a2e35]/10 font-montserrat"><span class="text-xs md:text-sm font-semibold tracking-wide uppercase">Contact</span></a>
+      <a href="#localisation" class="flex-1 text-center py-4 px-2 text-[#1a2e35]/80 hover:text-[#1a2e35] transition-colors font-montserrat"><span class="text-xs md:text-sm font-semibold tracking-wide uppercase">Localisation</span></a>
+    </div>
+  </nav>
+
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 pb-16 sm:pb-24 pt-8 sm:pt-12">
+    <section id="services-medicaux" class="py-8">
+      <h2 class="text-lg font-semibold tracking-wide uppercase text-[#1a2e35] mb-6 font-montserrat">Services médicaux</h2>
+    </section>
+    <section id="exportation" class="py-8 border-t border-[#1a2e35]/10">
+      <h2 class="text-lg font-semibold tracking-wide uppercase text-[#1a2e35] mb-6 font-montserrat">Exportation internationale d'animaux de compagnie</h2>
+    </section>
+    <section id="contact" class="py-8 border-t border-[#1a2e35]/10">
+      <details class="group">
+        <summary class="text-lg font-semibold tracking-wide uppercase text-[#1a2e35] font-montserrat cursor-pointer list-none flex items-center justify-between gap-2 [&::-webkit-details-marker]:hidden">
+          <span>Contact</span>
+          <span class="text-[#0C789E] text-sm font-normal normal-case">Cliquer pour afficher</span>
+        </summary>
+        <div class="mt-6 space-y-4 text-[#1a2e35]/90 font-montserrat">
+          <p><span class="font-semibold">Téléphone :</span> <a href="tel:044366094" class="text-[#0C789E] hover:underline">044 366094</a></p>
+          <p class="space-y-2">
+            <a href="https://wa.me/51979620402?text=Bonjour%2C%20je%20souhaite%20prendre%20rendez-vous." target="_blank" rel="noopener noreferrer" class="block text-[#0C789E] hover:underline">Pour services médicaux et relocalisation en Amérique latine et Canada</a>
+            <a href="https://wa.me/51922083707?text=Bonjour%2C%20je%20souhaite%20prendre%20rendez-vous." target="_blank" rel="noopener noreferrer" class="block text-[#0C789E] hover:underline">Pour exportation et relocalisation : Europe, Asie, Amérique du Nord et Océanie</a>
+          </p>
+          <p><span class="font-semibold">Courriel :</span> <a href="mailto:zoovet.trujillo@outlook.com" class="text-[#0C789E] hover:underline">zoovet.trujillo@outlook.com</a></p>
+          <p><span class="font-semibold">Horaires :</span> Lun - Sam, 09h00 - 19h00</p>
+        </div>
+      </details>
+    </section>
+    <section id="localisation" class="py-8 border-t border-[#1a2e35]/10">
+      <details class="group">
+        <summary class="text-lg font-semibold tracking-wide uppercase text-[#1a2e35] font-montserrat cursor-pointer list-none flex items-center justify-between gap-2 [&::-webkit-details-marker]:hidden">
+          <span>Localisation</span>
+          <span class="text-[#0C789E] text-sm font-normal normal-case">Cliquer pour afficher</span>
+        </summary>
+        <div class="mt-6 space-y-3 text-[#1a2e35]/90 font-montserrat">
+          <p><strong>Zoovet Travel — Siège Trujillo</strong></p>
+          <p>Calle Cuba 241, Urb. El Recreo, Trujillo, La Libertad, Pérou</p>
+          <a href="https://www.google.com/maps?q=-8.11585,-79.02364" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-[#0C789E] font-semibold hover:underline">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            Voir sur Google Maps
+          </a>
+        </div>
+      </details>
+    </section>
+  </main>
+
+  <footer class="bg-[#1a2e35] text-[#F8FAFC] font-montserrat border-t-[0.5px] border-white/10" role="contentinfo">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-12">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 lg:gap-8">
+        <div class="lg:col-span-1">
+          <p class="text-base font-bold tracking-[0.2em] uppercase text-[#F8FAFC] mb-3">ZOOVET TRAVEL</p>
+          <p class="text-sm text-[#F8FAFC]/80 leading-relaxed max-w-xs">Plus de 12 ans d'excellence en exportation internationale d'animaux de compagnie et médecine vétérinaire spécialisée.</p>
+        </div>
+        <div>
+          <p class="text-xs font-semibold tracking-wider uppercase text-[#F8FAFC]/90 mb-4">Services médicaux</p>
+          <ul class="space-y-2">
+            <li><a href="#services-medicaux" class="text-sm text-slate-400 hover:text-white transition-colors block py-2">Dermatologie</a></li>
+            <li><a href="#services-medicaux" class="text-sm text-slate-400 hover:text-white transition-colors block py-2">Nutrition</a></li>
+            <li><a href="#services-medicaux" class="text-sm text-slate-400 hover:text-white transition-colors block py-2">Médecine interne</a></li>
+            <li><a href="#services-medicaux" class="text-sm text-slate-400 hover:text-white transition-colors block py-2">Ophtalmologie</a></li>
+            <li><a href="#services-medicaux" class="text-sm text-slate-400 hover:text-white transition-colors block py-2">Endocrinologie</a></li>
+            <li><a href="#services-medicaux" class="text-sm text-slate-400 hover:text-white transition-colors block py-2">Diagnostic par imagerie</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-xs font-semibold tracking-wider uppercase text-[#F8FAFC]/90 mb-4">Exportation</p>
+          <ul class="space-y-2">
+            <li><a href="#exportation" class="text-sm text-slate-400 hover:text-white transition-colors block py-2">Gestion SENASA</a></li>
+            <li><a href="#exportation" class="text-sm text-slate-400 hover:text-white transition-colors block py-2">Puce ISO</a></li>
+            <li><a href="#exportation" class="text-sm text-slate-400 hover:text-white transition-colors block py-2">Séroneutralisation antirabique</a></li>
+            <li><a href="#exportation" class="text-sm text-slate-400 hover:text-white transition-colors block py-2">Protocoles internationaux</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-xs font-semibold tracking-wider uppercase text-[#F8FAFC]/90 mb-4">Contact</p>
+          <div class="space-y-4 text-sm text-slate-400">
+            <p class="flex items-start gap-2"><span class="flex-shrink-0 mt-0.5 text-[#0C789E]"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/></svg></span><span>Calle Cuba 241, Urb. El Recreo, Trujillo</span></p>
+            <div class="space-y-2">
+              <a href="tel:044366094" class="flex items-center gap-2 hover:text-white transition-colors block">044 366094</a>
+              <a href="https://wa.me/51979620402" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-white transition-colors block">+51 979620402</a>
+              <a href="https://wa.me/51922083707" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-white transition-colors block">+51 922083707</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-[#F8FAFC]/10 px-4 sm:px-6 py-4 footer-safe">
+      <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="flex items-center gap-4">
+          <a href="https://www.tiktok.com/@zoovet.trujillo" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-all duration-300 hover:scale-110 p-3 min-w-[44px] min-h-[44px] flex items-center justify-center" aria-label="TikTok"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"/></svg></a>
+          <a href="https://www.instagram.com/zoovet.trujillo/" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-all duration-300 hover:scale-110 p-3 min-w-[44px] min-h-[44px] flex items-center justify-center" aria-label="Instagram"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0z"/></svg></a>
+          <a href="https://www.facebook.com/Zoovet.Trujillo/" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-all duration-300 hover:scale-110 p-3 min-w-[44px] min-h-[44px] flex items-center justify-center" aria-label="Facebook"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+        </div>
+        <p class="text-xs text-[#F8FAFC]/60 text-center sm:text-right">© 2026 Zoovet Travel. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://zoovet-travel.com/index-fr.html"}]}
+  </script>
+</body>
+</html>

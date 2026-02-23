@@ -1,0 +1,24 @@
+---
+description: Reglas para artículos científicos en articles/
+globs: articles/**/*.html
+---
+
+# Artículos científicos — Zoovet Travel
+
+Todo artículo HTML en `articles/` DEBE incluir:
+
+1. **Header con botones ES/EN** (igual que index):
+   - ZOOVET TRAVEL (link a ../index.html o ../index-en.html)
+   - Breadcrumb: Inicio/Home → Artículos Científicos/Scientific Articles → Título
+   - Botones de idioma: ES (→ ./index.html) y EN (→ ./index-en.html)
+
+2. **Rutas correctas:**
+   - Home ES: `../index.html`
+   - Home EN: `../index-en.html`
+   - Índice artículos ES: `./index.html`
+   - Índice artículos EN: `./index-en.html`
+   - Imágenes: `./images/nombre.ext`
+
+3. **Enlace de vuelta** antes del footer: "← Volver a Artículos Científicos" (ES) o "← Back to Scientific Articles" (EN)
+
+Referencia: `articles/ARTICLE-TEMPLATE.md` y `articles/zoovet_article_v2.html`

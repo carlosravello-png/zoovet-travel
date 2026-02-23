@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Revue technique descriptive de la réponse immune humorale post-vaccination antirabique et des bases méthodologiques de la quantification des anticorps neutralisants par séroneutralisation RFFIT et FAVN chez les animaux de compagnie — Zoovet Travel Série Technique.">
+  <meta name="keywords" content="titrage anticorps antirabiques, séroneutralisation RFFIT FAVN, réponse humorale vaccin antirabique, seroconversion chiens, seuil 0,5 UI/mL, méthodologie serologie rabie, echec vaccinal primaire, mouvement animaux compagnie">
+  <meta name="author" content="Camacho Garcia JY, Camacho Paz VJ — Zoovet Travel, Pérou">
+  <title>Description technique de la réponse immune humorale post-vaccination antirabique et bases méthodologiques des épreuves de neutralisation virale (RFFIT et FAVN) chez les animaux de compagnie | Zoovet Travel Série Technique</title>
+  <link rel="canonical" href="https://zoovet-travel.com/articles/zoovet_article2_FR.html">
+  <link rel="alternate" hreflang="es" href="https://zoovet-travel.com/articles/zoovet_article2_ES.html">
+  <link rel="alternate" hreflang="en" href="https://zoovet-travel.com/articles/zoovet_article2_EN.html">
+  <link rel="alternate" hreflang="fr" href="https://zoovet-travel.com/articles/zoovet_article2_FR.html">
+  <link rel="alternate" hreflang="x-default" href="https://zoovet-travel.com/articles/zoovet_article2_ES.html">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Description technique de la réponse humorale et méthodologie RFFIT/FAVN chez les animaux de compagnie | Zoovet Travel Série Technique">
+  <meta property="og:description" content="Revue technique descriptive de la réponse immune humorale post-vaccination antirabique et bases méthodologiques de la séroneutralisation par RFFIT et FAVN.">
+  <meta property="og:image" content="https://zoovet-travel.com/articles/images/microscopio-lab-articulo-cientifico.webp">
+  <meta property="og:image:width" content="1080">
+  <meta property="og:image:height" content="1080">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Réponse humorale et méthodologie RFFIT/FAVN | Zoovet Travel Série Technique">
+  <meta name="twitter:description" content="Revue technique descriptive de la réponse humorale post-vaccination antirabique et bases méthodologiques RFFIT et FAVN.">
+  <meta name="twitter:image" content="https://zoovet-travel.com/articles/images/microscopio-lab-articulo-cientifico.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1a3a5c;
+      --accent: #2e74b5;
+      --light: #f4f8fc;
+      --border: #c8ddef;
+      --text: #1a1a1a;
+      --muted: #555;
+      --rule: #2e74b5;
+      --warn: #7b3f00;
+      --warn-bg: #fdf3e7;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { overflow-x: hidden; }
+    body {
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-size: 17px;
+      line-height: 1.8;
+      color: var(--text);
+      background: #fff;
+      max-width: 48rem;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+      overflow-x: hidden;
+    }
+    .tech-value { font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; }
+    .font-mono { font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', monospace; }
+    .article-figure { margin: 28px 0; max-width: 100%; }
+    .article-figure img { width: 100%; height: auto; max-width: 100%; display: block; border-radius: 4px; }
+    .running-head {
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-size: 12px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 10px;
+      margin-bottom: 40px;
+    }
+    header.article-header { text-align: center; margin-bottom: 50px; }
+    header.article-header h1 {
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-size: 1.55rem;
+      font-weight: 700;
+      color: var(--primary);
+      line-height: 1.35;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--primary);
+      line-height: 1.35;
+      margin-bottom: 16px;
+    }
+    .subtitle {
+      font-style: italic;
+      color: var(--muted);
+      font-size: 1.03rem;
+      margin-bottom: 24px;
+    }
+    .authors {
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+    .affiliation {
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-size: 0.9rem;
+      font-style: italic;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+    .series-tag {
+      display: inline-block;
+      margin-top: 14px;
+      background: var(--primary);
+      color: #fff;
+      font-family: ui-monospace, monospace;
+      font-size: 0.8rem;
+      padding: 4px 14px;
+      border-radius: 3px;
+      letter-spacing: .04em;
+    }
+    h2 {
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-size: 1.22rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin: 44px 0 14px;
+      padding-bottom: 7px;
+      border-bottom: 3px solid var(--accent);
+    }
+    h2.with-rule { border-bottom-color: var(--rule); }
+    h3 {
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-size: 1.08rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin: 32px 0 10px;
+    }
+    h4 {
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin: 22px 0 8px;
+    }
+    p { margin-bottom: 16px; text-align: justify; }
+    strong { color: var(--primary); }
+    em { color: var(--muted); }
+    .abstract-block {
+      background: #f8fafc;
+      border-left: 4px solid #0C789E;
+      padding: 24px 28px;
+      margin: 28px 0 36px;
+      font-style: italic;
+    }
+    .abstract-block h2 { border-bottom: none; margin-top: 0; font-size: 1.08rem; }
+    .abstract-row { margin-bottom: 12px; }
+    .abstract-row strong { display: inline; }
+    .keywords {
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-size: 0.9rem;
+      background: #eaf0f8;
+      padding: 12px 18px;
+      border-radius: 4px;
+      margin: 10px 0 30px;
+    }
+    .fact-box {
+      border: 2px solid var(--accent);
+      border-radius: 6px;
+      padding: 20px 24px;
+      margin: 24px 0;
+      background: #f0f6fd;
+    }
+    .fact-box .fact-title {
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: .07em;
+      color: var(--accent);
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .fact-box ul { padding-left: 20px; }
+    .fact-box ul li { margin-bottom: 8px; }
+    blockquote.reg-quote {
+      border-left: 6px solid var(--primary);
+      margin: 24px 0;
+      padding: 14px 20px;
+      background: var(--light);
+      font-style: italic;
+      color: #333;
+    }
+    blockquote.reg-quote cite {
+      display: block;
+      margin-top: 8px;
+      font-size: 0.85rem;
+      font-style: normal;
+      color: var(--muted);
+    }
+    .warning-box {
+      border: 2px solid #c0392b;
+      border-radius: 6px;
+      padding: 18px 22px;
+      margin: 22px 0;
+      background: #fdf0ef;
+    }
+    .warning-box .warn-title {
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: .07em;
+      color: #c0392b;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .recall-box {
+      border: 2px solid var(--warn);
+      border-radius: 6px;
+      padding: 16px 20px;
+      margin: 22px 0;
+      background: var(--warn-bg);
+    }
+    .recall-box .recall-title {
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: .07em;
+      color: var(--warn);
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .kinetics-bar {
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-size: 0.85rem;
+      margin: 24px 0;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    .kinetics-bar table { width: 100%; border-collapse: collapse; }
+    .kinetics-bar thead tr { background: #f8fafc; }
+    .kinetics-bar thead th {
+      padding: 9px 14px;
+      text-align: left;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: var(--primary);
+      border-bottom: 0.5px solid #cbd5e1;
+    }
+    .kinetics-bar tbody tr:nth-child(even) { background: #fff; }
+    .kinetics-bar tbody tr:nth-child(odd) { background: #fafbfc; }
+    .kinetics-bar tbody td { padding: 9px 14px; border-bottom: 0.5px solid #cbd5e1; }
+    .kinetics-bar tfoot td {
+      font-size: 0.78rem;
+      color: var(--muted);
+      font-style: italic;
+      padding: 10px 14px;
+      background: #fff;
+    }
+    .table-wrapper { overflow-x: auto; margin: 28px 0; -webkit-overflow-scrolling: touch; max-width: 100%; }
+    table {
+      width: 100%;
+      min-width: 680px;
+      border-collapse: collapse;
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-size: 0.82rem;
+      border-left: none; border-right: none;
+    }
+    table.compare {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-size: 0.83rem;
+      min-width: 0;
+    }
+    table.compare caption {
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-align: left;
+      margin-bottom: 8px;
+      color: var(--primary);
+      font-family: 'IBM Plex Sans', sans-serif;
+    }
+    table.compare thead tr { background: #f8fafc; }
+    table.compare thead th {
+      padding: 10px 12px;
+      text-align: left;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: var(--primary);
+      border-bottom: 0.5px solid #cbd5e1;
+    }
+    table.compare tbody tr:nth-child(even) { background: #fff; }
+    table.compare tbody tr:nth-child(odd) { background: #fafbfc; }
+    table.compare tbody td { padding: 9px 12px; border-bottom: 0.5px solid #cbd5e1; vertical-align: top; }
+    table.compare tfoot td {
+      font-size: 0.78rem;
+      color: var(--muted);
+      font-style: italic;
+      padding: 10px 12px;
+      background: #fff;
+      border-top: 0.5px solid #cbd5e1;
+    }
+    caption {
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-align: left;
+      margin-bottom: 10px;
+      color: var(--primary);
+    }
+    thead tr { background: #f8fafc; }
+    thead th {
+      padding: 10px 12px;
+      text-align: left;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: var(--primary);
+      border-bottom: 0.5px solid #cbd5e1;
+    }
+    tbody tr:nth-child(even) { background: #fff; }
+    tbody tr:nth-child(odd) { background: #fafbfc; }
+    tbody td {
+      padding: 10px 12px;
+      border-bottom: 0.5px solid #cbd5e1;
+      vertical-align: top;
+      border-left: none;
+      border-right: none;
+    }
+    tfoot td {
+      font-size: 0.78rem;
+      color: var(--muted);
+      font-style: italic;
+      padding: 10px 12px;
+      background: #fff;
+      border-top: 0.5px solid #cbd5e1;
+    }
+    .timeline { margin: 24px 0; }
+    .timeline-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 14px;
+      gap: 16px;
+    }
+    .timeline-day {
+      min-width: 90px;
+      background: var(--primary);
+      color: #fff;
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-align: center;
+      padding: 6px 8px;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+    .timeline-text { font-size: 0.95rem; padding-top: 4px; }
+    .risk-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 24px 0; }
+    @media (max-width: 600px) { .risk-grid { grid-template-columns: 1fr; } }
+    .risk-box {
+      border-radius: 6px;
+      padding: 18px 20px;
+      border: 1px solid var(--border);
+    }
+    .risk-box.type-a { border-top: 5px solid #c0392b; }
+    .risk-box.type-b { border-top: 5px solid #e67e22; }
+    .risk-box .risk-label {
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: .05em;
+      margin-bottom: 8px;
+    }
+    .risk-box.type-a .risk-label { color: #c0392b; }
+    .risk-box.type-b .risk-label { color: #e67e22; }
+    .factor-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin: 22px 0;
+    }
+    @media (max-width: 600px) { .factor-grid { grid-template-columns: 1fr; } }
+    .factor-card {
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 14px 16px;
+      background: var(--light);
+    }
+    .factor-card .fc-label {
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      color: var(--accent);
+      margin-bottom: 6px;
+    }
+    .factor-card p { margin-bottom: 0; font-size: 0.93rem; text-align: left; }
+    .declaration {
+      background: var(--light);
+      border: 2px solid var(--primary);
+      border-radius: 6px;
+      padding: 22px 28px;
+      margin: 40px 0 30px;
+      font-style: italic;
+    }
+    .declaration strong {
+      display: block;
+      font-style: normal;
+      margin-bottom: 10px;
+      color: var(--primary);
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+    }
+    ol.references {
+      padding-left: 0;
+      list-style: none;
+      counter-reset: ref-counter;
+    }
+    ol.references li {
+      counter-increment: ref-counter;
+      margin-bottom: 12px;
+      font-size: 0.88rem;
+      padding-left: 42px;
+      position: relative;
+      text-align: left;
+    }
+    ol.references li::before {
+      content: counter(ref-counter) ".";
+      position: absolute;
+      left: 0;
+      width: 36px;
+      text-align: right;
+      font-weight: 700;
+      color: var(--accent);
+    }
+    ol.references li a { color: var(--accent); word-break: break-all; }
+    .article-meta { font-family: 'IBM Plex Sans', ui-monospace, monospace; font-size: 0.75rem; color: var(--muted); margin-bottom: 12px; letter-spacing: 0.02em; }
+    .site-header {
+      font-family: 'IBM Plex Sans', sans-serif;
+      background: #fff;
+      border-bottom: 1px solid var(--border);
+      padding: 12px 0;
+      margin: -40px -30px 32px -30px;
+      padding: 12px 30px 16px;
+    }
+    .site-header-inner {
+      max-width: 48rem;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .site-header a { color: var(--primary); text-decoration: none; }
+    .site-header a:hover { text-decoration: underline; }
+    .breadcrumb { font-size: 0.85rem; color: var(--muted); }
+    .lang-switcher { display: flex; gap: 8px; }
+    .lang-switcher a {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 6px 12px;
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      color: var(--primary);
+    }
+    .lang-switcher a:hover,
+    .lang-switcher a.active,
+    .lang-switcher span.active { border-color: var(--accent); background: var(--light); }
+    footer.article-footer {
+      margin-top: 60px;
+      border-top: 2px solid var(--border);
+      padding-top: 20px;
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-size: 0.82rem;
+      color: var(--muted);
+      text-align: center;
+    }
+    blockquote.tech-note {
+      border-left: 5px solid var(--accent);
+      padding: 12px 20px;
+      margin: 18px 0;
+      background: var(--light);
+      font-style: italic;
+      font-size: 0.95rem;
+    }
+    blockquote.tech-note cite {
+      display: block;
+      margin-top: 6px;
+      font-size: 0.82rem;
+      font-style: normal;
+      color: var(--muted);
+    }
+    
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <nav class="breadcrumb" aria-label="Fil d'Ariane">
+      <a href="../index-fr.html">Accueil</a> &rarr; <a href="./index-fr.html">Articles Scientifiques</a> &rarr; <span>Réponse humorale et RFFIT/FAVN</span>
+    </nav>
+    <div class="lang-switcher">
+      <a href="./zoovet_article2_ES.html" hreflang="es">ES</a>
+      <a href="./zoovet_article2_EN.html" hreflang="en">EN</a>
+    </div>
+  </div>
+</header>
+
+<p class="running-head">En-tête : RÉPONSE HUMORALE ET MÉTHODOLOGIE DE SÉRONEUTRALISATION EN VACCINATION ANTIRABIQUE — ZOOVET SÉRIE TECHNIQUE VOL. II</p>
+
+<header class="article-header">
+  <h1>Description technique de la réponse immune humorale post-vaccination antirabique et bases méthodologiques des épreuves de neutralisation virale (RFFIT et FAVN) chez les animaux de compagnie</h1>
+  <p class="article-meta">Rev: 2026-02-23 | ISSN: Pending | Chercheur principal : J. Camacho (CMVP 1243)</p>
+  <p class="subtitle">Revue technique descriptive — Zoovet Travel Série Technique, Volume II</p>
+  <p class="authors">Jessica Ysabel Camacho Garcia, DMV — <span class="font-mono">CMVP 1243</span> &nbsp;|&nbsp; Víctor Jesús Camacho Paz, DMV — <span class="font-mono">CMVP 3103</span></p>
+  <p class="affiliation">Zoovet Travel — Unité clinique vétérinaire et conseil en exportation internationale, Pérou</p>
+  <p class="affiliation">Membres de l'Ordre des Médecins Vétérinaires du Pérou</p>
+  <p class="affiliation">Correspondance : info@zoovettravel.com</p>
+  <span class="series-tag">Zoovet Série Technique — Volume II — 2025</span>
+</header>
+
+<!-- ── DÉCLARATION DE NATURE ── -->
+<div class="declaration">
+  <strong>Nature du document — Déclaration obligatoire préalable</strong>
+  Ce document constitue une <strong>revue technique descriptive</strong> basée exclusivement sur la littérature scientifique révisée par les pairs et les documents institutionnels réglementaires d'accès public. Il ne présente aucune donnée expérimentale originale, aucun résultat d'essai clinique et aucune conclusion issue des activités de recherche des auteurs. Les concepts synthétisés ici reflètent le consensus scientifique actuel tel que décrit dans les publications indexées. Ce document ne constitue pas une orientation clinique individualisée, ne remplace pas l'évaluation vétérinaire spécifique et ne formule aucune affirmation absolue concernant la protection au niveau de l'animal individuel.
+</div>
+
+<!-- ── RÉSUMÉ ── -->
+<section id="resume">
+  <div class="abstract-block">
+    <h2>Résumé</h2>
+    <div class="abstract-row"><strong>Contexte :</strong> La quantification des anticorps neutralisants du virus de la rage (rVNA) par les épreuves de neutralisation standardisées internationalement — l'épreuve rapide d'inhibition des foyers fluorescents (RFFIT) et l'épreuve de neutralisation virale par immunofluorescence (FAVN) — constitue la méthode de référence pour la vérification sérologique du statut vaccinal antirabique chez les animaux de compagnie, telle que reconnue par l'OMSA, l'OMS et tous les cadres réglementaires nationaux majeurs. La compréhension des processus immunologiques qui régissent la génération de ces anticorps — et des principes méthodologiques des épreuves qui les mesurent — est essentielle pour l'interprétation correcte des résultats sérologiques et pour la gestion fondée sur les preuves des protocoles de mouvement international des animaux de compagnie.</div>
+    <div class="abstract-row"><strong>Objectif :</strong> Décrire, en termes techniques accessibles aux vétérinaires praticiens, la séquence de la réponse immune humorale déclenchée par la primovaccination antirabique, le fondement biologique du seuil de protection (0,5 UI/mL) comme corrélat opérationnel de protection, les principes méthodologiques comparatifs du RFFIT et du FAVN, les facteurs modulant la réponse anticorps et le phénomène documenté d'échec vaccinal primaire.</div>
+    <div class="abstract-row"><strong>Méthodes :</strong> Revue descriptive structurée de la littérature indexée dans PubMed et Scopus et de documents institutionnels de l'OMSA, ANSES-EURL, OMS et CDC.</div>
+    <div class="abstract-row"><strong>Résultats :</strong> La littérature publiée décrit de manière constante une séquence d'événements immunologiques après primovaccination antirabique chez le chien : phase de latence initiale de traitement antigénique et activation lymphocytaire ; apparition d'anticorps IgM suivie du commutation de classe vers IgG ; et consolidation progressive des titres rVNA mesurables au cours des 2 à 4 premières semaines post-vaccination. Les données publiées confirment une variabilité inter-individuelle substantielle dans le calendrier et l'ampleur de la séroconversion, influencée par l'âge, la taille corporelle, la race, la formulation vaccinale, l'état nutritionnel et l'immunosuppression concomitante. Le seuil de protection (0,5 UI/mL) est un corrélat réglementaire opérationnel dérivé des études de défi anciennes, et non une garantie absolue de protection au niveau individuel. RFFIT et FAVN sont reconnus comme équivalents au niveau populationnel pour le point de décision réglementaire ≥ 0,5 UI/mL, bien qu'une variation test-à-test ait été documentée pour les sérums à titre faible dans les deux épreuves. La variabilité inter-laboratoires dans les deux tests est gérée par des essais d'aptitude annuels coordonnés par l'ANSES-EURL.</div>
+    <div class="abstract-row"><strong>Conclusion :</strong> Une compréhension technique correcte de la cinétique rVNA post-vaccination et des limites inhérentes au RFFIT et au FAVN permet aux vétérinaires praticiens d'interpréter plus précisément les rapports sérologiques, d'anticiper l'échec vaccinal primaire et de gérer les délais d'exportation internationale des animaux de compagnie avec la rigueur scientifique appropriée.</div>
+  </div>
+  <div class="keywords"><strong>Mots-clés :</strong> titrage des anticorps antirabiques ; séroneutralisation par RFFIT ou FAVN ; réponse immune humorale vaccin antirabique ; séroconversion chiens ; seuil de protection (0,5 UI/mL) ; échec vaccinal primaire ; mouvement des animaux de compagnie ; méthodologie sérologie rabie ; variabilité inter-laboratoires</div>
+</section>
+
+<!-- ══════════════════════════════════════════════════ -->
+<h2>1. Introduction</h2>
+
+<p>La vaccination antirabique des animaux de compagnie constitue la principale barrière de biosécurité contre l'introduction du virus de la rage (RABV) dans les territoires indemnes par le mouvement international des animaux de compagnie. Pour que cette vaccination remplisse sa fonction réglementaire — permettre une certification juridiquement valide dans le cadre du Règlement (UE) n° 576/2013, des dispositions CDC/USDA en vigueur depuis août 2024 et des instruments équivalents au Royaume-Uni, en Australie et au Japon — la réponse immune qu'elle génère doit être vérifiable par une méthode de laboratoire objective, reproductible et standardisée internationalement.</p>
+
+<p>Cette méthode est l'épreuve de neutralisation virale sérique (VNT), opérationnalisée sous deux formes principales : l'épreuve rapide d'inhibition des foyers fluorescents (RFFIT) et l'épreuve de neutralisation virale par immunofluorescence (FAVN). Les deux mesurent la capacité fonctionnelle des anticorps sériques à inhiber l'infection des cultures cellulaires par le RABV in vitro, et toutes deux rapportent les résultats en Unités internationales par millilitre (UI/mL) standardisées par rapport à un sérum de référence OMS. Le <strong>seuil de protection (0,5 UI/mL)</strong>, adopté universellement par l'OMSA, l'OMS et les principaux cadres nationaux d'importation, est le critère de décision réglementaire qui détermine si le résultat sérologique d'un animal est considéré comme adéquat pour le mouvement international.</p>
+
+<p>La présente revue descriptive est la deuxième de la Zoovet Travel Série Technique. Le Volume I a abordé la base réglementaire et immunologique de l'intervalle de prélèvement de 30 jours post-primovaccination ; le présent document se concentre sur la séquence immunologique sous-jacente qui produit les anticorps mesurés par ces épreuves, les principes méthodologiques des essais eux-mêmes et les sources documentées de variabilité que les praticiens doivent comprendre pour interpréter correctement les résultats et anticiper les scénarios d'échec potentiels.</p>
+
+<!-- ══════════════════════════════════════════════════ -->
+<h2>2. Réponse immune humorale après primovaccination antirabique</h2>
+
+<h3>2.1. Activation immune primaire : de l'antigène au lymphocyte</h3>
+
+<p>Les vaccins antirabiques vétérinaires disponibles dans le commerce sont, à de rares exceptions près, formulés comme préparations virales entières inactivées ou sous-unitaires avec adjuvant (OMSA, 2024 ; Tizard, 2021). Après administration intramusculaire ou sous-cutanée, l'antigène vaccinal — principalement la glycoprotéine G du RABV, qui porte les épitopes de neutralisation majeurs — est capté par les cellules présentatrices d'antigène professionnelles (CPA), principalement les cellules dendritiques et les macrophages, au site d'injection et dans les ganglions lymphatiques régionaux (Flamand et al., 1993 ; Day, 2007).</p>
+
+<p>L'antigène traité est présenté aux lymphocytes T helper CD4+ naïfs via les molécules du complexe majeur d'histocompatibilité de classe II (CMH-II). Cette interaction, nécessitant des signaux de co-stimulation, initie l'expansion clonale des lymphocytes T helper spécifiques de l'antigène. Simultanément, l'antigène RABV peut activer directement les lymphocytes B spécifiques par l'engagement du récepteur des cellules B. L'interaction lymphocyte T helper–cellule B dans les centres germinatifs des organes lymphoïdes secondaires initie la réponse anticorps primaire (Day, 2007 ; Tizard, 2021).</p>
+
+<p>La littérature décrit de manière constante cette phase initiale — de l'administration de l'antigène au premier anticorps sérique détectable — comme une <strong>phase de latence</strong> pendant laquelle le traitement immunologique se produit mais l'anticorps circulant n'est pas encore mesurable au seuil de protection (0,5 UI/mL) chez la plupart des animaux. La durée de cette phase n'est pas fixe : elle est influencée par le type d'adjuvant, la dose d'antigène, la voie d'administration et la compétence immunologique de l'hôte (Day, 2007 ; Kennedy et al., 2007).</p>
+
+<h3>2.2. Production d'IgM, commutation de classe et consolidation IgG</h3>
+
+<p>La première classe d'anticorps produite dans la réponse immune primaire est l'<strong>IgM</strong>, une molécule pentamérique capable d'une agglutination virale efficace mais avec une affinité relativement inférieure par rapport aux isotypes IgG produits ultérieurement (Tizard, 2021). Les anticorps IgM sont mesurables plus tôt dans la réponse et contribuent à la neutralisation virale initiale. Les VNT utilisées pour la certification réglementaire (RFFIT et FAVN) détectent les anticorps neutralisants quel que soit l'isotype ; toutefois, les réponses dominées par l'IgM peuvent produire des titres en dessous du seuil réglementaire même chez des animaux qui généreront ultérieurement une réponse IgG robuste.</p>
+
+<p>À mesure que la réponse primaire mûrit, les lymphocytes B activés dans les centres germinatifs subissent une <strong>recombinaison de commutation de classe</strong> — un processus moléculaire par lequel le gène de la région constante de l'anticorps est remplacé, déplaçant la production de l'IgM vers l'IgG (et, dans certaines lignées de cellules B, vers l'IgA ou l'IgE). Simultanément, la <strong>maturation d'affinité</strong> — le processus d'hypermutation somatique et de sélection opérant dans les centres germinatifs — augmente progressivement l'affinité de liaison des anticorps IgG pour les épitopes RABV (Tizard, 2021 ; Day, 2007). Il en résulte une population de cellules plasmatiques à longue durée de vie sécrétant des IgG anti-RABV de haute affinité, qui constitue la classe dominante d'anticorps mesurée par RFFIT et FAVN au moment du prélèvement réglementaire (≥ 30 jours post-primovaccination).</p>
+
+<h3>2.3. Cinétique temporelle du développement des anticorps post-vaccination</h3>
+
+<p>La littérature scientifique documente la cinétique des anticorps post-vaccination chez le chien à l'aide de modèles expérimentaux de défi et d'études de séroprévalence de terrain à grande échelle, dont est tirée la description générale suivante. Il est important de noter que les données publiées reflètent des tendances au niveau populationnel et une variabilité individuelle substantielle ; les intervalles décrits ci-dessous sont des plages observées dans diverses études, et non des constantes physiologiques fixes.</p>
+
+<div class="kinetics-bar">
+  <table>
+    <caption style="padding:10px 14px;font-family:Arial,sans-serif;font-size:0.9rem;font-weight:700;color:#1a3a5c;">Tableau 1. Phases générales de la cinétique des anticorps après primovaccination antirabique chez le chien — synthèse de la littérature publiée</caption>
+    <thead>
+      <tr>
+        <th>Phase</th>
+        <th>Délai approximatif</th>
+        <th>Événements immunologiques</th>
+        <th>Pertinence réglementaire</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Phase de latence</strong></td>
+        <td>Jours 0–~7</td>
+        <td>Capture et traitement par les CPA ; amorçage des lymphocytes T ; activation précoce des cellules B. Peu ou pas de rVNA circulant détectable chez la plupart des animaux.</td>
+        <td>Aucune sérologie réglementaire ne doit être effectuée pendant cette fenêtre.</td>
+      </tr>
+      <tr>
+        <td><strong>Élévation précoce</strong></td>
+        <td>Jours ~7–14</td>
+        <td>Production initiale d'IgM ; commutation de classe précoce vers IgG chez les répondeurs rapides. Certains animaux peuvent atteindre ≥ 0,5 UI/mL pendant cette fenêtre dans des conditions optimales.</td>
+        <td>La littérature documente une séroconversion précoce dans des cohortes expérimentales (ex. 7/8 chiens au jour 7, 8/8 au jour 14 dans une étude de petite taille). Non représentatif de la population.</td>
+      </tr>
+      <tr>
+        <td><strong>Consolidation</strong></td>
+        <td>Jours ~14–30</td>
+        <td>Maturation d'affinité ; dominance IgG ; consolidation du titre. Les bons répondeurs atteignent ≥ 0,5 UI/mL de manière robuste ; variabilité inter-individuelle persistante.</td>
+        <td>UE, CDC, RU, Australie, Japon imposent un prélèvement ≥ jour 30. Crozet et al. (2024) rapportent un taux de succès de 89,1 % dans la fenêtre 30–40 jours dans un jeu de données agrégé de grande taille.</td>
+      </tr>
+      <tr>
+        <td><strong>Plateau et déclin</strong></td>
+        <td>Au-delà du jour 30</td>
+        <td>Les cellules plasmatiques à longue durée de vie maintiennent la sécrétion d'IgG ; cellules B et T mémoires établies. Le titre peut décliner sur des mois ou années selon l'individu et le statut de rappel.</td>
+        <td>Les notes techniques APHA (RU) rapportent un déclin du titre en dessous de 0,5 UI/mL chez certains animaux dans les 5–8 semaines post-primovaccination, soulignant l'importance du calendrier correct du rappel.</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr><td colspan="4">Note : Les délais sont des plages représentatives dérivées de la littérature publiée (Kennedy et al., 2007 ; Wallace et al., 2017 ; Crozet et al., 2024 ; Berndtsson et al., 2011). Les résultats individuels peuvent différer substantiellement selon les facteurs décrits à la Section 6.</td></tr>
+    </tfoot>
+  </table>
+</div>
+
+<p>Wallace et al. (2017), dans la plus grande analyse publiée des résultats de primovaccination antirabique chez le chien (n = 8 011), ont documenté que l'échec à atteindre ≥ 0,5 UI/mL était associé, entre autres facteurs, à des intervalles plus courts entre la vaccination et le prélèvement. L'étude a démontré que la relation entre le temps post-vaccination et l'adéquation sérologique n'est pas linéaire et est fortement modulée par l'âge, la taille corporelle et le nombre de vaccinations antérieures.</p>
+
+<p>Il convient de noter que la littérature publiée ne soutient pas un seul « jour pic » de réponse anticorps à la primovaccination qui soit universel pour tous les chiens, tous les vaccins et toutes les conditions. Diverses études ont observé une séroconversion initiale chez une proportion de chiens dans la première semaine, tandis que d'autres documentent qu'une fraction significative d'animaux n'atteint pas ≥ 0,5 UI/mL avant la troisième ou quatrième semaine post-vaccination. Cette hétérogénéité biologique est précisément la justification qui sous-tend l'exigence réglementaire d'un intervalle minimum de prélèvement de ≥ 30 jours, telle que décrite dans le Volume I de cette série.</p>
+
+<h3>2.4. Mémoire immunologique après primovaccination</h3>
+
+<p>Un résultat immunologique central de la primovaccination réussie est la génération d'une <strong>mémoire immunologique</strong> : populations de lymphocytes B mémoires à longue durée de vie et lymphocytes T CD4+ et CD8+ mémoires qui persistent dans les organes lymphoïdes secondaires et la circulation périphérique pendant des mois ou années après la vaccination (Day, 2007 ; Tizard, 2021). Lors d'une réexposition à l'antigène RABV — que ce soit par une vaccination de rappel ou une exposition naturelle — ces cellules mémoires montent une réponse immune secondaire qualitativement et quantitativement supérieure : phase de latence plus courte, production d'anticorps plus rapide, titres de pic plus élevés et affinité accrue des anticorps IgG.</p>
+
+<p>Cette distinction entre réponses primaire et secondaire a une signification opérationnelle directe pour le mouvement international des animaux de compagnie : les animaux recevant une vaccination de rappel valide dans la période de couverture d'une dose précédente ne requièrent pas de période d'attente de 30 jours post-vaccination avant le prélèvement sérologique réglementaire, leur mémoire préexistante assurant une restauration rapide et robuste des anticorps. Les cadres réglementaires incluant le Règlement (UE) n° 576/2013 et les règles du CDC distinguent explicitement ces deux scénarios.</p>
+
+<!-- ══════════════════════════════════════════════════ -->
+<h2>3. Le seuil de protection (0,5 UI/mL) : base technique et limites d'interprétation</h2>
+
+<h3>3.1. Origine et fondement scientifique</h3>
+
+<p>Le seuil de <strong>≥ 0,5 unités internationales par millilitre</strong> comme critère réglementaire d'immunité antirabique adéquate ne provient pas d'une seule étude marquante mais a émergé de l'accumulation progressive des données d'expériences de défi, d'évaluations d'efficacité vaccinale et de travaux de standardisation des méthodes de séroneutralisation menés durant les dernières décennies du vingtième siècle (Moore &amp; Hanlon, 2010 ; Briggs et al., 1998).</p>
+
+<p>Moore &amp; Hanlon (2010), dans une analyse exhaustive des anticorps antirabiques spécifiques comme substituts de protection, ont examiné la base de preuves sous-tendant le critère de 0,5 UI/mL et ont conclu qu'au niveau populationnel, les animaux présentant des titres sériques à ou au-dessus de ce seuil démontrent un risque substantiellement réduit de développer la rage clinique après défi. Le seuil a été adopté par l'OMS et l'Office International des Épizooties (aujourd'hui OMSA) et formalisé dans le Code sanitaire pour les animaux terrestres de l'OMSA comme le corrélat internationalement reconnu de réponse vaccinale antirabique adéquate.</p>
+
+<p>Une nuance interprétative critique documentée dans la littérature révisée par les pairs est que ≥ 0,5 UI/mL constitue un <strong>corrélat opérationnel de protection au niveau populationnel</strong> — et non une garantie binaire d'immunité stérilisante chez chaque animal individuel au-dessus du seuil (Moore &amp; Hanlon, 2010). Les animaux en dessous du seuil ne sont pas nécessairement non protégés (l'immunité cellulaire peut contribuer à la résistance), et les animaux au-dessus du seuil ne sont pas absolument garantis de survivre à chaque scénario potentiel d'exposition. Le seuil est un critère de décision réglementaire, sélectionné pour son utilité pratique et sa reproductibilité, et non comme marqueur de certitude biologique.</p>
+
+<h3>3.2. L'unité UI/mL : calibration et standardisation</h3>
+
+<p>Les résultats du RFFIT et du FAVN sont exprimés en unités internationales par millilitre (UI/mL), standardisés par rapport à un sérum de référence OMS/OMSA de titre défini (actuellement le sérum de référence OMS 2<sup>e</sup> standard, 30 UI/mL). Cette standardisation — décrite dans le Manuel des tests de diagnostic et des vaccins pour les animaux terrestres de l'OMSA (2024) et opérationnalisée par le système de laboratoires agréés accrédités ISO 17025 — permet de comparer les résultats de différents laboratoires et différentes localisations géographiques sur une échelle commune. Le programme annuel d'essais d'aptitude coordonné par l'ANSES-EURL (Wasniewski et al., 2019) est le mécanisme principal par lequel la comparabilité inter-laboratoires du point de décision ≥ 0,5 UI/mL est vérifiée et maintenue internationalement.</p>
+
+<h2>4. Base méthodologique du RFFIT</h2>
+<h3>4.1. Principe et protocole technique</h3>
+<p>L'épreuve rapide d'inhibition des foyers fluorescents a été mise au point par Smith, Yager et Baer (1973). Le principe repose sur la neutralisation d'une dose fixe de virus de défi standard vivant RABV (CVS-11 ou équivalent) par les anticorps du sérum à tester. La procédure comprend : dilution en série, addition du virus CVS, incubation, addition de cellules sensibles, fixation et coloration FITC, microscopie de fluorescence, calcul du titre par Reed–Muench ou Kärber. Le RFFIT nécessite RABV vivant et une infrastructure de biosécurité niveau 2 minimum (Moore, 2018 ; Wasniewski et al., 2019).</p>
+<h3>4.2. Considérations analytiques</h3>
+<p>La variation test-à-test est plus prononcée pour les sérums à titre faible à modéré (&lt; 1,0 UI/mL RFFIT) — plage incluant le seuil réglementaire de 0,5 UI/mL (Briggs et al., 1998).</p>
+
+<h2>5. Base méthodologique de l'épreuve FAVN</h2>
+<h3>5.1. Développement et principe</h3>
+<p>L'épreuve de neutralisation virale par immunofluorescence (FAVN) a été mise au point par Cliquet, Aubert et Sagné (1998) au CNEVA Nancy (aujourd'hui Laboratoire ANSES Nancy pour la rage et la faune sauvage — EURL). Le FAVN est une microadaptation du RFFIT, conçue pour un traitement à débit élevé, et est devenu la méthode prédominante dans les laboratoires agréés européens pour la sérologie d'exportation des animaux de compagnie. Le principe technique du FAVN est fonctionnellement équivalent au RFFIT (Cliquet et al., 1998 ; Wasniewski et al., 2019).</p>
+<h3>5.2. Équivalence reconnue avec le RFFIT</h3>
+<p>Le Manuel terrestre de l'OMSA (2024) reconnaît formellement que FAVN et RFFIT produisent des résultats équivalents pour les fins de certification réglementaire. Briggs et al. (1998) ont confirmé cette équivalence : aucune différence significative de sensibilité ou de spécificité entre RFFIT et FAVN pour les animaux non vaccinés ou à titre élevé. Pour les sérums à titre faible à modéré (&lt; 1,0 UI/mL), une variation test-à-test a été documentée pour les deux méthodes (Briggs et al., 1998).</p>
+<div class="fact-box">
+  <div class="fact-title">&#9654; Constat comparatif clé — RFFIT vs FAVN</div>
+  <p>Équivalence reconnue : OMSA (2024) ; Briggs et al. (1998). Aucune différence significative au point de décision ≥ 0,5 UI/mL. Zone de variabilité connue : titre faible à modéré (&lt; 1,0 UI/mL) pour les deux méthodes.</p>
+</div>
+<h3>5.3. Variabilité inter-laboratoires</h3>
+<p>La variabilité inter-laboratoires dans la quantification rVNA est un défi documenté et activement géré. Le programme annuel d'essais d'aptitude de l'ANSES-EURL (Wasniewski et al., 2019) conforme à ISO 13528 et ISO/IEC 17043 est le mécanisme principal assurant qu'un résultat UI/mL d'un laboratoire au Pérou, en Europe ou en Asie soit comparable et juridiquement interchangeable pour la certification réglementaire.</p>
+
+<h2>6. Facteurs modulant la réponse anticorps post-vaccination</h2>
+<p>La littérature scientifique identifie plusieurs variables liées à l'hôte et au produit qui influencent l'ampleur et le calendrier de la réponse rVNA post-vaccination chez le chien.</p>
+<div class="factor-grid">
+  <div class="factor-card"><div class="fc-label">Âge à la vaccination</div><p>Les animaux vaccinés avant 16 semaines peuvent présenter des titres plus bas (interférence des anticorps maternels, immaturité immunologique). Wallace et al. (2017) ont identifié l'âge &lt; 1 an comme facteur de risque pour une réponse insuffisante.</p></div>
+  <div class="factor-card"><div class="fc-label">Taille corporelle et race</div><p>Taux d'échec plus élevés pour les grandes races (Kennedy et al., 2007 ; Berndtsson et al., 2011).</p></div>
+  <div class="factor-card"><div class="fc-label">Formulation vaccinale</div><p>Toutes les vaccins antirabiques inactivés ne démontrent pas une immunogénicité équivalente (Kennedy et al., 2007).</p></div>
+  <div class="factor-card"><div class="fc-label">Interférence des anticorps maternels</div><p>Les anticorps maternels passifs peuvent supprimer la réponse primaire chez les jeunes chiots. Âge minimal de vaccination 12 semaines (Règlement UE n° 576/2013 ; OMSA, 2023).</p></div>
+  <div class="factor-card"><div class="fc-label">État nutritionnel et sanitaire</div><p>Maladies infectieuses concomitantes, parasitisme ou malnutrition altèrent la réponse immune.</p></div>
+  <div class="factor-card"><div class="fc-label">Immunosuppression</div><p>Corticostéroïdes, chimiothérapie ou maladies immunosuppressives (hyperadrénocorticisme, leishmaniose) peuvent compromettre la réponse vaccinale.</p></div>
+  <div class="factor-card"><div class="fc-label">Intégrité de la chaîne du froid</div><p>Les vaccins antirabiques inactivés doivent être maintenus à 2–8°C. Le rappel de février 2026 d'IMRAB® 3TF lot n°18665 (vials contenant de l'eau stérile au lieu du vaccin) illustre un cas extrême d'échec d'intégrité produit (Boehringer Ingelheim, 2026).</p></div>
+  <div class="factor-card"><div class="fc-label">Intervalle vaccination–prélèvement</div><p>L'intervalle entre la vaccination et la prise de sang est déterminant. Prélèvement dans les 21 premiers jours post-primovaccination : résultats potentiellement incomplets (Wallace et al., 2017 ; Crozet et al., 2024).</p></div>
+</div>
+<div class="recall-box">
+  <div class="recall-title">&#9888; Événement qualité récent — Rappel IMRAB® 3TF (février 2026)</div>
+  <p>Boehringer Ingelheim a initié un rappel volontaire d'IMRAB® 3TF, 1 mL, lot n°18665 début 2026 après qu'un nombre limité de flacons aient été trouvés contenir de l'eau stérile au lieu du vaccin. Lot distribué entre septembre 2025 et janvier 2026 aux États-Unis. Revaccination immédiate recommandée pour tout animal ayant reçu ce lot. Les animaux de ce lot n'auraient aucune réponse sérologique et requerraient un redémarrage complet du protocole (Boehringer Ingelheim, 2026 ; Massachusetts Veterinary Medical Association, 2026).</p>
+</div>
+
+<h2>7. Échec vaccinal primaire et non-répondeurs</h2>
+<h3>7.1. Définition</h3>
+<p><strong>Échec vaccinal primaire</strong> : incapacité d'un animal à générer une réponse anticorps détectable et adéquate après vaccination correctement administrée. À distinguer de l'échec vaccinal secondaire (déclin d'immunité) et de l'échec vaccinal apparent (mauvaise conservation, erreur d'administration, prélèvement trop précoce).</p>
+<p>Wallace et al. (2017) ont rapporté qu'environ 10 % des chiens immunologiquement naïfs peuvent ne pas atteindre ≥ 0,5 UI/mL après une dose unique, avec variation selon l'âge, la race, le produit et l'intervalle vaccination–prélèvement.</p>
+<h3>7.2. Facteurs associés</h3>
+<p>Kennedy et al. (2007) : âge &lt; 1 an, grande taille, produits vaccinaux spécifiques. Berndtsson et al. (2011) : protocoles à deux doses réduisent significativement l'échec, notamment chez les grandes races.</p>
+<h3>7.3. Conduite à tenir pour titres &lt; 0,5 UI/mL</h3>
+<p>Revaccination (dose de rappel) puis nouveau prélèvement. Règlement (UE) n° 576/2013 : redémarrage complet des 30 jours post-vaccination + période d'attente de 3 mois avant mouvement. Règles CDC : revaccination et nouveau prélèvement ≥ 30 jours après la nouvelle vaccination pour l'éligibilité sans quarantaine de 28 jours.</p>
+<div class="warning-box">
+  <div class="warn-title">&#9888; Précaution d'interprétation</div>
+  <p>Un titre &lt; 0,5 UI/mL ne signifie pas nécessairement absence d'immunité. L'immunité cellulaire peut persister. Toutefois, pour la certification réglementaire en mouvement international, le résultat VNT ≥ 0,5 UI/mL dans un laboratoire agréé est la seule preuve acceptée de statut immunitaire adéquat.</p>
+</div>
+
+<h2>8. Limites du présent document</h2>
+<ul style="margin: 16px 0 16px 28px; line-height: 2;">
+  <li>Revue <strong>descriptive</strong> sans méthodologie méta-analytique.</li>
+  <li>Cinétique immunologique dérivée d'études européennes et nord-américaines ; généralisation à d'autres populations avec prudence.</li>
+  <li>Textes réglementaires reflétés : état début 2026 ; vérifier les exigences actuelles auprès des autorités compétentes.</li>
+  <li>Pas de traitement détaillé de la sérologie antirabique chez le chat ou le furet.</li>
+  <li>Aucune recommandation clinique au niveau individuel ; les décisions relèvent du vétérinaire titulaire.</li>
+</ul>
+
+<h2>9. Déclaration de portée</h2>
+<div class="declaration">
+  <strong>Portée et limites</strong>
+  Ce document est une revue technique descriptive basée sur la littérature scientifique révisée par les pairs et les textes réglementaires publics. Il ne présente aucune donnée expérimentale originale, ne revendique aucune découverte et ne formule aucune recommandation clinique individualisée. Les affirmations citées sont traçables aux références listées. Le document ne se substitue pas à l'évaluation vétérinaire spécifique, n'établit ni ne modifie aucune exigence réglementaire, et ne doit pas être cité comme orientation réglementaire primaire.
+</div>
+
+<h2>Références</h2>
+<ol class="references">
+  <li>Berndtsson, L. T., Nyman, A.-K. J., Rivera, E., &amp; Klingeborn, B. (2011). Factors associated with the success of rabies vaccination of dogs in Sweden. <em>Acta Veterinaria Scandinavica, 53</em>(1), 22. <a href="https://doi.org/10.1186/1751-0147-53-22">https://doi.org/10.1186/1751-0147-53-22</a></li>
+  <li>Boehringer Ingelheim Animal Health. (2026, février). <em>Rappel volontaire : IMRAB® 3TF, 1 mL, lot n°18665</em>. <a href="https://www.boehringer-ingelheim.com/us/animal-health/companion-animals-horses/pets/voluntary-recall-single-serial-rabies-vaccine">https://www.boehringer-ingelheim.com/us/animal-health/companion-animals-horses/pets/voluntary-recall-single-serial-rabies-vaccine</a></li>
+  <li>Briggs, D. J., et al. (1998). A comparison of two serological methods for detecting the immune response after rabies vaccination in dogs and cats. <em>Biologicals, 26</em>(4), 347–355. <a href="https://doi.org/10.1006/biol.1998.0162">https://doi.org/10.1006/biol.1998.0162</a></li>
+  <li>CDC. (2024). <em>Entry requirements for foreign-vaccinated dogs from high-risk countries</em>. <a href="https://www.cdc.gov/importation/dogs/foreign-vaccinated-high-risk-countries.html">https://www.cdc.gov/importation/dogs/foreign-vaccinated-high-risk-countries.html</a></li>
+  <li>Cliquet, F., Aubert, M., &amp; Sagné, L. (1998). Development of a fluorescent antibody virus neutralisation test (FAVN test). <em>Journal of Immunological Methods, 212</em>(1), 79–87. <a href="https://doi.org/10.1016/s0022-1759(97)00212-3">https://doi.org/10.1016/s0022-1759(97)00212-3</a></li>
+  <li>Crozet, G., et al. (2024). What would be the impact on the rabies risk of reducing the waiting period before dogs are imported? <em>Zoonoses and Public Health, 71</em>(2), 166–179. <a href="https://doi.org/10.1111/zph.13113">https://doi.org/10.1111/zph.13113</a></li>
+  <li>Day, M. J. (2007). Immune system development in the dog and cat. <em>Journal of Comparative Pathology, 137</em>(Suppl 1), S10–S15. <a href="https://doi.org/10.1016/j.jcpa.2007.04.005">https://doi.org/10.1016/j.jcpa.2007.04.005</a></li>
+  <li>Parlement européen et Conseil. (2013). Règlement (UE) n° 576/2013 relatif au mouvement non commercial d'animaux de compagnie. <em>JOUE L 178</em>, 1–26.</li>
+  <li>Flamand, A., et al. (1993). Mechanisms of rabies virus neutralization. <em>Virology, 194</em>(1), 302–313. <a href="https://doi.org/10.1006/viro.1993.1261">https://doi.org/10.1006/viro.1993.1261</a></li>
+  <li>Kennedy, L. J., et al. (2007). Factors influencing the antibody response of dogs vaccinated against rabies. <em>Vaccine, 25</em>(51), 8500–8507. <a href="https://doi.org/10.1016/j.vaccine.2007.10.015">https://doi.org/10.1016/j.vaccine.2007.10.015</a></li>
+  <li>Massachusetts Veterinary Medical Association. (2026, février). <em>Boehringer Ingelheim initiates voluntary recall</em>. <a href="https://www.massvet.org/news/boehringer-ingelheim-voluntary-recall-limited-number-of-rabies-vaccine-vials">https://www.massvet.org</a></li>
+  <li>Moore, S. M. (2018). Challenges of rabies serology. <em>Frontiers in Veterinary Science, 5</em>, 147. <a href="https://doi.org/10.3389/fvets.2018.00147">https://doi.org/10.3389/fvets.2018.00147</a></li>
+  <li>Moore, S. M., &amp; Hanlon, C. A. (2010). Rabies-specific antibodies: Measuring surrogates of protection. <em>PLOS Neglected Tropical Diseases, 4</em>(3), e595. <a href="https://doi.org/10.1371/journal.pntd.0000595">https://doi.org/10.1371/journal.pntd.0000595</a></li>
+  <li>Smith, J. S., Yager, P. A., &amp; Baer, G. M. (1973). A rapid reproducible test for determining rabies neutralizing antibody. <em>Bulletin of the World Health Organization, 48</em>(5), 535–541.</li>
+  <li>Tizard, I. R. (2021). <em>Immunologie vétérinaire</em> (10<sup>e</sup> éd.). Elsevier.</li>
+  <li>Wallace, R. M., et al. (2017). Risk factors for inadequate antibody response to primary rabies vaccination in dogs. <em>PLOS Neglected Tropical Diseases, 11</em>(7), e0005761. <a href="https://doi.org/10.1371/journal.pntd.0005761">https://doi.org/10.1371/journal.pntd.0005761</a></li>
+  <li>Wasniewski, M., et al. (2019). Proficiency test for rabies serology. <em>PLOS Neglected Tropical Diseases, 13</em>(12), e0007824. <a href="https://doi.org/10.1371/journal.pntd.0007824">https://doi.org/10.1371/journal.pntd.0007824</a></li>
+  <li>OMSA. (2023). <em>Code sanitaire pour les animaux terrestres</em> (32<sup>e</sup> éd.), Chapitres 8.14/8.15. <a href="https://www.woah.org/en/what-we-do/standards/codes-and-manuals/terrestrial-code-online-access/">https://www.woah.org</a></li>
+  <li>OMSA. (2024). <em>Manuel des tests de diagnostic et des vaccins pour les animaux terrestres</em> (13<sup>e</sup> éd.), Chapitre 3.1.17 (Rage). <a href="https://www.woah.org/fileadmin/Home/eng/Health_standards/tahm/A_summry.htm">https://www.woah.org</a></li>
+  <li>OMS. (2018). <em>Laboratory techniques in rabies</em> (Vol. 1, 5<sup>e</sup> éd.). OMS.</li>
+</ol>
+
+<footer class="article-footer">
+  <p>Zoovet Série Technique — Volume II — 2025 &nbsp;|&nbsp; Zoovet Travel — Unité clinique vétérinaire et conseil en exportation internationale, Pérou</p>
+  <p style="margin-top:8px;">© 2025 Camacho Garcia JY &amp; Camacho Paz VJ. Tous droits réservés.</p>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://zoovet-travel.com/articles/zoovet_article2_FR.html#webpage",
+      "url": "https://zoovet-travel.com/articles/zoovet_article2_FR.html",
+      "name": "Description technique de la réponse humorale et méthodologie RFFIT/FAVN | Zoovet Travel",
+      "inLanguage": "fr",
+      "isPartOf": {"@id": "https://zoovet-travel.com/#website"}
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://zoovet-travel.com/articles/zoovet_article2_FR.html#article",
+      "headline": "Description technique de la réponse immune humorale post-vaccination antirabique et bases méthodologiques des épreuves de neutralisation virale (RFFIT et FAVN) chez les animaux de compagnie",
+      "alternativeHeadline": "Revue technique descriptive — Zoovet Travel Série Technique, Volume II",
+      "inLanguage": "fr",
+      "datePublished": "2025-01-01",
+      "dateModified": "2026-02-01",
+      "author": [
+        {"@id": "https://zoovet-travel.com/articles/zoovet_article2_FR.html#author-jessica"},
+        {"@id": "https://zoovet-travel.com/articles/zoovet_article2_FR.html#author-victor"}
+      ],
+      "publisher": {"@id": "https://zoovet-travel.com/#organization"},
+      "image": "https://zoovet-travel.com/articles/images/microscopio-lab-articulo-cientifico.webp",
+      "keywords": ["titrage anticorps antirabiques", "séroneutralisation RFFIT FAVN", "réponse humorale", "vaccination antirabique", "seuil 0,5 UI/mL", "échec vaccinal primaire", "mouvement animaux compagnie"],
+      "about": [{"@type": "Thing", "name": "Rabies"}, {"@type": "Thing", "name": "Rabies vaccination"}, {"@type": "Thing", "name": "FAVN"}, {"@type": "Thing", "name": "RFFIT"}],
+      "mainEntityOfPage": {"@id": "https://zoovet-travel.com/articles/zoovet_article2_FR.html#webpage"}
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://zoovet-travel.com/articles/zoovet_article2_FR.html#breadcrumb",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://zoovet-travel.com/index-fr.html"},
+        {"@type": "ListItem", "position": 2, "name": "Articles Scientifiques", "item": "https://zoovet-travel.com/articles/index-fr.html"},
+        {"@type": "ListItem", "position": 3, "name": "Réponse humorale et RFFIT/FAVN", "item": "https://zoovet-travel.com/articles/zoovet_article2_FR.html"}
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://zoovet-travel.com/#organization",
+      "name": "Zoovet Travel",
+      "url": "https://zoovet-travel.com/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://zoovet-travel.com/#website",
+      "url": "https://zoovet-travel.com/",
+      "name": "Zoovet Travel",
+      "publisher": {"@id": "https://zoovet-travel.com/#organization"}
+    },
+    {
+      "@type": "Person",
+      "@id": "https://zoovet-travel.com/articles/zoovet_article2_FR.html#author-jessica",
+      "name": "Jessica Ysabel Camacho Garcia",
+      "jobTitle": "Vétérinaire",
+      "identifier": "CMVP 1243",
+      "affiliation": {"@id": "https://zoovet-travel.com/#organization"}
+    },
+    {
+      "@type": "Person",
+      "@id": "https://zoovet-travel.com/articles/zoovet_article2_FR.html#author-victor",
+      "name": "Víctor Jesús Camacho Paz",
+      "jobTitle": "Vétérinaire",
+      "identifier": "CMVP 3103",
+      "affiliation": {"@id": "https://zoovet-travel.com/#organization"}
+    }
+  ]
+}
+</script>
+
+</body>
+</html>
