@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Análisis técnico-regulatorio del microchip RFID en identificación animal: estándares ISO 11784/11785, Reglamento (UE) 576/2013, DAFF/MPI, biocompatibilidad, técnica de implantación y trazabilidad sanitaria en movimiento internacional de perros y gatos. Zoovet Travel Serie Técnica VI.">
+  <meta name="keywords" content="microchip RFID animal, ISO 11784, ISO 11785, FDX-B, trazabilidad sanitaria, pasaporte mascotas, identificación animal internacional, biocompatibilidad transpondedor, microchip perro gato viaje">
+  <meta name="author" content="Camacho Garcia JY — Zoovet Travel, Perú">
+  <title>Microchip de identificación animal: fundamento tecnológico, marco regulatorio internacional y trazabilidad sanitaria | Zoovet Travel Serie Técnica VI</title>
+  <link rel="canonical" href="https://zoovet-travel.com/articles/zoovet_art6_microchip-ES.html">
+  <link rel="alternate" hreflang="es" href="https://zoovet-travel.com/articles/zoovet_art6_microchip-ES.html">
+  <link rel="alternate" hreflang="en" href="https://zoovet-travel.com/articles/zoovet_art6_microchip-EN.html">
+  <link rel="alternate" hreflang="fr" href="https://zoovet-travel.com/articles/zoovet_art6_microchip-FR.html">
+  <link rel="alternate" hreflang="x-default" href="https://zoovet-travel.com/articles/zoovet_art6_microchip-ES.html">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Microchip de identificación animal: fundamento tecnológico y marco regulatorio | Zoovet Travel Serie Técnica VI">
+  <meta property="og:description" content="Análisis técnico-regulatorio: ISO 11784/11785, Reg. UE 576/2013, DAFF/MPI, biocompatibilidad y trazabilidad sanitaria.">
+  <meta property="og:url" content="https://zoovet-travel.com/articles/zoovet_art6_microchip-ES.html">
+  <meta property="og:image" content="https://zoovet-travel.com/articles/images/microscopio-lab-articulo-cientifico.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Microchip identificación animal | Zoovet Travel Serie Técnica VI">
+  <meta name="twitter:description" content="ISO 11784/11785, RFID pasivo, trazabilidad sanitaria, UE, UK, Australia, NZ.">
+  <meta name="twitter:image" content="https://zoovet-travel.com/articles/images/microscopio-lab-articulo-cientifico.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;0,9..40,700;1,9..40,300&display=swap" rel="stylesheet">
+  <style>
+    :root { --ink: #1c1917; --deep: #0f2340; --mid: #1e4976; --teal: #0e6655; --teal-bg: #e8f5f1; --accent: #c0392b; --warm: #7b3f00; --warm-bg: #fdf6ef; --sky: #e8f2fa; --rule: #cdd8e3; --muted: #5a6a7a; --paper: #fafaf8; --white: #ffffff; --amber: #b45309; --amber-bg: #fffbeb; --violet: #5b21b6; --violet-bg: #f5f3ff; }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Libre Baskerville', Georgia, serif; font-size: 17px; line-height: 1.85; color: var(--ink); background: var(--paper); max-width: 940px; margin: 0 auto; padding: 0 28px 100px; }
+    .site-header { font-family: 'DM Sans', sans-serif; background: #fff; border-bottom: 1px solid var(--rule); margin: 0 -28px 20px -28px; padding: 12px 28px 14px; }
+    .site-header-inner { max-width: 940px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; }
+    .site-header a { color: var(--mid); text-decoration: none; }
+    .site-header a:hover { text-decoration: underline; }
+    .breadcrumb { font-size: 0.85rem; color: var(--muted); }
+    .lang-switcher { display: flex; gap: 8px; }
+    .lang-switcher a { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; padding: 6px 12px; border: 1px solid var(--rule); border-radius: 3px; color: var(--mid); }
+    .masthead { border-bottom: 3px solid var(--deep); padding: 28px 0 16px; display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; flex-wrap: wrap; }
+    .masthead-series { font-family: 'DM Sans', sans-serif; font-size: 0.72rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--mid); }
+    .masthead-date { font-family: 'DM Sans', sans-serif; font-size: 0.72rem; color: var(--muted); }
+    .hero { background: var(--deep); color: #fff; padding: 48px 44px 42px; margin: 0 -28px; position: relative; overflow: hidden; }
+    .hero::before { content: ''; position: absolute; top: -80px; right: -80px; width: 320px; height: 320px; background: radial-gradient(circle, rgba(255,255,255,.05) 0%, transparent 70%); pointer-events: none; }
+    .hero-tag { display: inline-block; background: var(--teal); color: #fff; font-family: 'DM Sans', sans-serif; font-size: 0.7rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; padding: 4px 12px; border-radius: 2px; margin-bottom: 20px; }
+    h1 { font-family: 'Libre Baskerville', serif; font-size: clamp(1.35rem, 3.2vw, 1.9rem); font-weight: 700; line-height: 1.3; color: #fff; margin-bottom: 18px; max-width: 760px; }
+    .hero-lead { font-family: 'DM Sans', sans-serif; font-size: 1.03rem; font-weight: 300; line-height: 1.7; color: rgba(255,255,255,.85); max-width: 700px; margin-bottom: 28px; }
+    .hero-meta { font-family: 'DM Sans', sans-serif; font-size: 0.82rem; color: rgba(255,255,255,.6); border-top: 1px solid rgba(255,255,255,.15); padding-top: 16px; }
+    .hero-meta strong { color: rgba(255,255,255,.9); }
+    .abstract-box { background: var(--sky); border-left: 4px solid var(--mid); padding: 22px 28px; margin: 32px 0; font-family: 'DM Sans', sans-serif; font-size: 0.9rem; line-height: 1.72; color: var(--deep); }
+    .abstract-box strong { display: block; font-size: 0.72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--mid); margin-bottom: 10px; }
+    .scope-box { background: var(--white); border: 1px solid var(--rule); border-left: 4px solid var(--muted); padding: 16px 22px; margin: 20px 0 36px; font-family: 'DM Sans', sans-serif; font-size: 0.84rem; color: var(--muted); line-height: 1.6; }
+    .scope-box strong { display: block; font-size: 0.7rem; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 6px; }
+    h2 { font-family: 'Libre Baskerville', serif; font-size: 1.42rem; font-weight: 700; color: var(--deep); margin: 56px 0 18px; padding-bottom: 10px; border-bottom: 2px solid var(--rule); }
+    h3 { font-family: 'DM Sans', sans-serif; font-size: 1.06rem; font-weight: 700; color: var(--mid); margin: 34px 0 12px; letter-spacing: .015em; }
+    h4 { font-family: 'DM Sans', sans-serif; font-size: 0.92rem; font-weight: 700; color: var(--teal); margin: 22px 0 8px; text-transform: uppercase; letter-spacing: .05em; }
+    p { margin-bottom: 1.3rem; }
+    strong { font-weight: 700; }
+    em { font-style: italic; }
+    .sec-label { font-family: 'DM Sans', sans-serif; font-size: 0.67rem; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; color: var(--muted); display: block; margin-bottom: 6px; }
+    .ev-box { background: var(--violet-bg); border-left: 4px solid var(--violet); padding: 14px 20px; margin: 24px 0; font-family: 'DM Sans', sans-serif; font-size: 0.86rem; line-height: 1.65; color: #3b0764; }
+    .ev-box strong { font-size: 0.72rem; letter-spacing: .07em; text-transform: uppercase; color: var(--violet); display: block; margin-bottom: 6px; }
+    .caution-box { background: var(--amber-bg); border: 1.5px solid #d97706; border-radius: 4px; padding: 18px 22px; margin: 28px 0; font-family: 'DM Sans', sans-serif; font-size: 0.88rem; line-height: 1.65; color: #78350f; }
+    .caution-box strong { display: block; font-size: 0.72rem; letter-spacing: .08em; text-transform: uppercase; color: #92400e; margin-bottom: 8px; }
+    .pullquote { border-left: 4px solid var(--teal); padding: 16px 28px; margin: 36px 0; background: var(--teal-bg); font-family: 'DM Sans', sans-serif; font-size: 0.96rem; line-height: 1.72; color: #0d4a3f; }
+    .pullquote cite { display: block; font-size: 0.76rem; color: var(--muted); margin-top: 8px; font-style: normal; }
+    .table-wrap { overflow-x: auto; margin: 32px 0; border-radius: 4px; border: 1px solid var(--rule); }
+    table { width: 100%; border-collapse: collapse; font-family: 'DM Sans', sans-serif; font-size: 0.82rem; line-height: 1.45; }
+    thead th { background: var(--deep); color: #fff; padding: 11px 14px; text-align: left; font-size: 0.7rem; letter-spacing: .06em; text-transform: uppercase; font-weight: 600; }
+    tbody tr:nth-child(even) { background: #f8fafc; }
+    tbody td { padding: 10px 14px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+    .audit-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 24px 0; }
+    @media (max-width: 580px) { .audit-grid { grid-template-columns: 1fr; } }
+    .audit-item { display: flex; gap: 10px; align-items: flex-start; font-family: 'DM Sans', sans-serif; font-size: 0.84rem; line-height: 1.5; padding: 10px 14px; background: var(--white); border: 1px solid var(--rule); border-radius: 3px; }
+    .audit-check { width: 20px; height: 20px; background: var(--teal); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: #fff; font-size: 0.7rem; font-weight: 700; margin-top: 1px; }
+    .references { margin-top: 64px; padding-top: 28px; border-top: 2px solid var(--rule); }
+    .references h2 { font-size: 1.1rem; margin-top: 0; margin-bottom: 22px; border-bottom: none; padding-bottom: 0; }
+    .ref-list { list-style: none; counter-reset: refs; }
+    .ref-list li { counter-increment: refs; font-family: 'DM Sans', sans-serif; font-size: 0.83rem; line-height: 1.68; color: var(--muted); margin-bottom: 11px; padding-left: 34px; position: relative; }
+    .ref-list li::before { content: counter(refs); position: absolute; left: 0; color: var(--mid); font-weight: 700; font-size: 0.72rem; top: 3px; }
+    .ref-list a { color: var(--mid); }
+    .ref-note { font-style: italic; font-size: 0.76rem; color: #9ca3af; }
+    footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--rule); font-family: 'DM Sans', sans-serif; font-size: 0.78rem; color: var(--muted); }
+    .font-mono { font-family: ui-monospace, monospace; }
+    ul { margin-bottom: 1.3rem; padding-left: 1.5rem; }
+    li { margin-bottom: 0.5rem; }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../index.html">Inicio</a> &rarr; <a href="index.html">Artículos científicos</a> &rarr; <span>Microchip de identificación animal</span>
+    </nav>
+    <div class="lang-switcher">
+      <a href="zoovet_art6_microchip-ES.html" hreflang="es">ES</a>
+      <a href="zoovet_art6_microchip-EN.html" hreflang="en">EN</a>
+      <a href="zoovet_art6_microchip-FR.html" hreflang="fr">FR</a>
+    </div>
+  </div>
+</header>
+
+<header class="masthead">
+  <span class="masthead-series">Zoovet Travel · Serie Técnica VI — Identificación y trazabilidad sanitaria</span>
+  <span class="masthead-date">Febrero 2026</span>
+</header>
+
+<section class="hero">
+  <span class="hero-tag">Revisión técnico-regulatoria</span>
+  <h1>Microchip de identificación animal: fundamento tecnológico, marco regulatorio internacional y trazabilidad sanitaria</h1>
+  <p class="hero-lead">Análisis técnico-regulatorio sobre el microchip RFID para uso en medicina de viajes veterinaria: principios tecnológicos, biocompatibilidad, técnica de implantación, taxonomía de fallas, integración en la cadena documental sanitaria y marco regulatorio comparado en las principales jurisdicciones de destino.</p>
+  <div class="hero-meta">
+    <strong>Jessica Ysabel Camacho Garcia</strong>, MVZ — <span class="font-mono">CMVP 12434</span> — Zoovet Travel, Lima, Perú &nbsp;|&nbsp; Revisión: febrero 2026
+  </div>
+</section>
+
+<div class="scope-box">
+  <strong>Alcance y limitaciones de este documento</strong>
+  Especie: Perro (<em>Canis lupus familiaris</em>) y gato (<em>Felis catus</em>). Este documento es informativo y de referencia técnica. No constituye prescripción veterinaria ni asesoramiento legal. Todos los requisitos regulatorios deben verificarse con la autoridad sanitaria competente del país de destino antes de cada movimiento internacional, dado que las normativas están sujetas a cambio sin previo aviso. La información regulatoria fue verificada con fuentes primarias vigentes a febrero de 2026.
+</div>
+
+<div class="abstract-box">
+  <strong>Abstract estructurado</strong>
+  <strong>Contexto:</strong> El microchip de identificación animal basado en tecnología RFID pasiva constituye el elemento fundacional de la trazabilidad sanitaria en el movimiento internacional de animales de compañía. Su adopción universal como estándar de identificación, articulada en las normas ISO 11784 e ISO 11785, ha resuelto parcialmente el problema de la fragmentación histórica de sistemas de identificación a nivel global.<br><br>
+  <strong>Objetivo:</strong> Proveer un análisis técnico-regulatorio de alto rigor sobre el microchip RFID para uso en medicina de viajes veterinaria, cubriendo principios tecnológicos, biocompatibilidad, técnica de implantación, taxonomía de fallas, integración en la cadena documental sanitaria y marco regulatorio comparado en las principales jurisdicciones de destino.<br><br>
+  <strong>Métodos:</strong> Revisión de fuentes primarias: normas ISO (11784:1996, 11785:1996), legislación de la Unión Europea (Reglamento n.° 576/2013), normativa del Reino Unido (The Microchipping of Dogs Regulations 2015; The Microchipping of Cats and Dogs (England) Regulations 2023), directrices australianas (DAFF) y neozelandesas (MPI), posicionamientos de WSAVA y AVMA, y literatura médica indexada sobre biocompatibilidad (Vascellari et al., 2006; Jansen et al., 1999).<br><br>
+  <strong>Hallazgos principales:</strong> (1) El estándar FDX-B de 134,2 kHz con código de 15 dígitos es el único compatible con los requisitos de importación en UE, UK, Australia y Nueva Zelanda. (2) La coexistencia de frecuencias de 125/128 kHz en el mercado norteamericano genera riesgo real de no lectura en aduana. (3) La migración subcutánea ocurre en un 12–15% de los casos pero rara vez compromete la legibilidad. (4) La incidencia de eventos adversos graves, incluyendo neoplasia en sitio de implantación, es extremadamente baja según las estimaciones disponibles; las limitaciones del sistema de notificación voluntaria no permiten afirmaciones causales definitivas. (5) La fragmentación de bases de datos constituye el eslabón más débil del sistema de trazabilidad.<br><br>
+  <strong>Limitaciones:</strong> Los estudios sobre biocompatibilidad disponibles presentan sesgos de selección. Las estadísticas de retorno de animales perdidos con microchip provienen predominantemente de shelters norteamericanos, con limitada extrapolabilidad a otras jurisdicciones.<br><br>
+  <strong>Palabras clave:</strong> microchip RFID animal, ISO 11784, ISO 11785, FDX-B, trazabilidad sanitaria, pasaporte de mascotas, identificación animal internacional, biocompatibilidad transpondedor.
+</div>
+
+<h2><span class="sec-label">Sección 1</span> El microchip como infraestructura sanitaria</h2>
+
+<h3>1.1 Encuadre conceptual</h3>
+<p>La medicina veterinaria de viajes opera sobre un axioma técnico que es frecuentemente subestimado por los propietarios de animales de compañía: antes de la primera vacuna, antes del primer certificado, antes de cualquier acto médico registrable, el animal debe tener una identidad unívoca, verificable y universal. El microchip es esa identidad.</p>
+<p>El error conceptual más común es tratar el microchip como un accesorio tecnológico opcional —un gadget de seguridad personal— cuando en realidad es una pieza de infraestructura sanitaria equivalente, en términos funcionales, a un número de expediente médico único. Sin ese número, no hay cadena documental posible.</p>
+<p>Esta distinción no es semántica. Un animal vacunado antes de ser microchipado tiene, desde la perspectiva regulatoria de destinos como el Reino Unido, Australia y Nueva Zelanda, vacunaciones técnicamente inválidas para el proceso de importación, independientemente de la calidad del acto veterinario subyacente. El error es irreversible: obliga a reiniciar protocolos que pueden durar seis meses o más.</p>
+
+<h3>1.2 Por qué este artículo lo trata como herramienta de trazabilidad médica</h3>
+<p>La literatura de divulgación sobre microchips tiende a centrarse en el aspecto de recuperación de mascotas perdidas. Este artículo adopta deliberadamente una perspectiva diferente: la del microchip como herramienta de trazabilidad médica en contextos de movimiento internacional de animales, donde el fallo del sistema tiene consecuencias legales y sanitarias directas.</p>
+<p>La trazabilidad, en este contexto, significa la capacidad de vincular inequívocamente un individuo biológico con su historial sanitario completo a través del tiempo y las fronteras. El microchip es el nodo que hace posible esa vinculación. Cualquier análisis que lo reduzca a un localizador de mascotas perdidas subestima radicalmente su importancia clínica y regulatoria.</p>
+
+<h2><span class="sec-label">Sección 2</span> Fundamento tecnológico: RFID pasivo</h2>
+
+<h3>2.1 Principio de inducción electromagnética</h3>
+<p>El microchip de identificación animal es un transpondedor RFID (Radio Frequency Identification) pasivo, esto es, un dispositivo que carece de fuente de alimentación interna y opera exclusivamente a través de la energía que capta del campo electromagnético generado por el lector externo.</p>
+<p>El ciclo de operación, simplificado, es el siguiente: el lector genera un campo electromagnético oscilante a la frecuencia establecida por el estándar (134,2 kHz para ISO 11785). La antena del transpondedor, consistente en una bobina de hilo de cobre enrollada alrededor de un núcleo de ferrita, actúa como receptor de ese campo. La corriente inducida en la bobina alimenta un circuito integrado (chip de silicio) que modula la respuesta transmitiendo el código único almacenado en su memoria no volátil.</p>
+<p>La comunicación es unidireccional desde el transpondedor: el chip no puede escribirse de forma externa en condiciones normales. El código identificador es fijado en fábrica y no puede ser modificado, garantizando la permanencia e inmutabilidad del identificador a lo largo de la vida útil del dispositivo.</p>
+
+<div class="caution-box">
+  <strong>Advertencia crítica: lo que el microchip NO es</strong>
+  <strong>NO es un GPS.</strong> El microchip no transmite señales de localización. No permite rastrear al animal en tiempo real ni por satélite. Esta confusión es extremadamente frecuente y puede llevar a propietarios a creer que su animal es localizable cuando en realidad no lo es.<br><br>
+  <strong>NO tiene batería.</strong> Al ser un dispositivo RFID pasivo, no contiene ningún tipo de fuente de energía. Funciona exclusivamente al ser activado por un lector a corta distancia (generalmente 10–25 cm).<br><br>
+  <strong>NO se deteriora por lecturas repetidas.</strong> La preocupación de que el chip pueda «agotarse» por múltiples lecturas carece de fundamento físico. Un transpondedor RFID pasivo no tiene componentes móviles ni consumibles. Las lecturas pueden repetirse indefinidamente sin degradación del dispositivo.<br><br>
+  <strong>NO es un rastreador remoto.</strong> La distancia de lectura es de pocos centímetros. Requiere la presencia física del animal frente a un lector.
+</div>
+
+<h3>2.2 El transpondedor: componentes físicos</h3>
+<p>El transpondedor estándar implantable consiste en tres componentes principales encapsulados en una cápsula de vidrio de grado médico (vidrio borosilicato):</p>
+<ul>
+  <li><strong>Bobina de ferrita-cobre:</strong> antena receptora/transmisora. Su geometría determina la eficiencia de acoplamiento con el campo del lector.</li>
+  <li><strong>Circuito integrado (ASIC):</strong> almacena el código de identificación en memoria EEPROM no volátil. Contiene también la lógica de modulación de respuesta.</li>
+  <li><strong>Cápsula de vidrio:</strong> de 2,12 mm de diámetro y 12,5 mm de longitud en el formato estándar (existen formatos mini de 1,4 × 8 mm). El vidrio borosilicato es bioinerte y tiene un coeficiente de expansión térmica compatible con los tejidos circundantes.</li>
+</ul>
+<p>Algunos fabricantes añaden una capa de recubrimiento antimigratorio (Parylene o matriz de poliéster) en la superficie exterior de la cápsula para promover la fibrosis de anclaje y reducir la migración subcutánea. La eficacia de estos recubrimientos se discute en la Sección 4.2.</p>
+<p><strong>Vida útil esperada:</strong> Los fabricantes certifican una vida útil de 25 años o más bajo condiciones normales. Dado que la vida media de un perro o gato de compañía raramente supera los 18 años, el dispositivo puede considerarse, a efectos prácticos, de duración vitalicia.</p>
+
+<h2><span class="sec-label">Sección 3</span> Estándares ISO 11784 e ISO 11785</h2>
+
+<h3>3.1 El problema que los estándares resolvieron: la fragmentación de frecuencias</h3>
+<p>Antes de la adopción global del estándar ISO, el mercado de identificación animal estaba fragmentado en al menos tres sistemas incompatibles operando a frecuencias diferentes:</p>
+<div class="table-wrap">
+  <table>
+    <thead><tr><th>Sistema / Fabricante</th><th>Frecuencia</th><th>Dígitos del código</th></tr></thead>
+    <tbody>
+      <tr><td>AVID (EE. UU.)</td><td>125 kHz</td><td>9–10 dígitos</td></tr>
+      <tr><td>Destron / Digital Angel (EE. UU.)</td><td>128 kHz</td><td>10 dígitos</td></tr>
+      <tr><td>Trovan / Tiris (Europa)</td><td>134,2 kHz</td><td>15 dígitos (protocolo HDX)</td></tr>
+      <tr><td>ISO 11784/11785 (estándar global)</td><td>134,2 kHz</td><td>15 dígitos (FDX-B)</td></tr>
+    </tbody>
+  </table>
+</div>
+<p>La consecuencia práctica de esta fragmentación era que un chip AVID implantado en EE. UU. no era legible con lectores estándar europeos, y viceversa. Los animales que viajaban internacionalmente podían llegar a frontera con un chip no detectable por el equipo disponible, invalidando la cadena documental completa. Los estándares ISO 11784 e ISO 11785, adoptados en 1996 y ampliamente vigentes en 2026, resolvieron este problema para el mercado post-adopción. El problema persiste para chips pre-ISO implantados antes de la adopción del estándar, tema abordado en la Sección 6.2.</p>
+
+<h3>3.2 ISO 11784: la estructura del código</h3>
+<p>La norma ISO 11784:1996 (Radio Frequency Identification of Animals — Code Structure) establece la arquitectura del código de identificación de 64 bits. Los primeros 27 bits son de control del sistema; los bits 27 a 64 codifican el identificador propiamente dicho. A efectos prácticos, el código resultante tiene 15 dígitos decimales. La estructura de esos 15 dígitos es:</p>
+<ul>
+  <li><strong>3 dígitos iniciales:</strong> código de país (según ISO 3166, para registros nacionales) o código de fabricante. Por ejemplo, 724 para España, 826 para el Reino Unido, 036 para Australia.</li>
+  <li><strong>12 dígitos restantes:</strong> identificador único individual del animal, asignado por el fabricante o el registro nacional.</li>
+</ul>
+<p>La suma de 15 dígitos es el número que figura en todos los documentos sanitarios internacionales del animal: pasaporte europeo, health certificate, RNATT, certificado de rabies titre test.</p>
+
+<div class="ev-box">
+  <strong>Dato regulatorio clave — Oceanía</strong>
+  Australia (DAFF) y Nueva Zelanda (MPI) exigen explícitamente un código de 15 dígitos ISO. Los chips de 9 o 10 dígitos (sistemas pre-ISO norteamericanos) son considerados inválidos para la documentación de importación oficial. Si el animal fue microchipado en EE. UU. o Canadá con un sistema pre-ISO, este punto debe verificarse con el veterinario tratante antes de iniciar cualquier protocolo de exportación hacia Oceanía.
+</div>
+
+<h3>3.3 ISO 11785: el protocolo de comunicación</h3>
+<p>La norma ISO 11785:1996 (Technical Concept) define el protocolo de comunicación entre lector y transpondedor. Establece dos modos de operación: <strong>FDX-B (Full Duplex B):</strong> el transpondedor responde continuamente mientras está en el campo del lector. Es el protocolo dominante en chips modernos y el exigido implícitamente por la mayoría de las regulaciones de importación. Transmisión a 134,2 kHz. <strong>HDX (Half Duplex):</strong> el transpondedor almacena energía y transmite en la fase de descarga, alternando con el lector. Protocolo más antiguo, aún en uso en algunos sistemas europeos previos al estándar.</p>
+<p>Ambos protocolos operan a 134,2 kHz. Un lector que cumpla ISO 11785 debe ser capaz de leer ambos tipos. Los lectores que solo leen FDX-B pueden fallar con chips HDX de generaciones anteriores, lo que constituye una fuente real de error en campo.</p>
+
+<h3>3.4 El problema real en campo: compatibilidad lector/transpondedor</h3>
+<p>El valor práctico de los estándares ISO depende críticamente de que tanto el chip implantado como el lector utilizado por la autoridad de frontera sean compatibles. Esta compatibilidad no está universalmente garantizada: lectores no universales (especialmente en América del Norte) pueden leer solo una o dos frecuencias; animales con chip ISO pueden no ser detectados por un lector mono-frecuencia. Los chips pre-ISO (AVID 125 kHz) en animales en tránsito pueden no ser legibles con equipos estándar en destino. La normativa de Gran Bretaña (GOV.UK) señala explícitamente que si el chip no es ISO, el propietario debe llevar su propio lector compatible. La migración y orientación del chip también pueden reducir la eficiencia del acoplamiento electromagnético (ver Sección 4.2).</p>
+
+<h2><span class="sec-label">Sección 4</span> Biocompatibilidad y respuesta tisular</h2>
+
+<h3>4.1 Cápsula fibrosa: mecanismo y significado clínico</h3>
+<p>Tras la implantación subcutánea, el organismo responde con una respuesta inflamatoria de baja intensidad que, en la mayoría de los casos, resulta en la formación de una cápsula fibrosa de tejido conjuntivo alrededor del dispositivo. Este proceso es análogo al observado con otros implantes de vidrio borosilicato. La cápsula fibrosa contribuye a fijar el dispositivo (efecto de anclaje) y reduce la movilidad y la migración. En la práctica clínica, el efecto de interferencia de lectura por el tejido fibroso es insignificante con lectores modernos. No existe evidencia de que la respuesta fibrosa normal al microchip cause patología clínicamente relevante. No se recomienda extirpar un chip encapsulado en ausencia de complicación activa.</p>
+
+<h3>4.2 Migración subcutánea: evidencia y magnitud real</h3>
+<p>La migración del microchip desde el sitio de implantación original es el evento adverso no grave más frecuente documentado. Jansen et al. (1999) y revisiones de la BSAVA reportan migración observable radiológicamente en el 12–15% de los casos, con mayor frecuencia en gatos que en perros. La migración clínicamente significativa —aquella que compromete la lectura o requiere intervención— es sustancialmente más rara. El dispositivo tiende a desplazarse caudalmente desde el punto de implantación dorsal interescapular, hacia la región lateral del tórax o el codo. El protocolo recomendado en todos los contextos de verificación es el escaneo sistemático de «cuerpo completo», no limitado al área interescapular.</p>
+
+<div class="pullquote">
+  <strong>Protocolo de lectura recomendado.</strong> Antes de declarar un microchip como «no encontrado» o «perdido», la exploración con el lector debe abarcar: (1) Área interescapular y línea media dorsal; (2) Región lateral izquierda y derecha del tórax; (3) Región escapular y codo bilateralmente; (4) Región cervical; (5) Flanco y región lumbar.
+  <cite>Basado en guías BSAVA y práctica documentada</cite>
+</div>
+
+<h3>4.3 Eventos adversos documentados: frecuencia y contexto</h3>
+<p>La literatura recoge casos de eventos adversos locales asociados a la implantación de microchips. El evento adverso grave más discutido es el fibrosarcoma o liposarcoma en el sitio de implantación. Vascellari et al. (2006) describen un caso individual de liposarcoma en el sitio de implantación de un microchip en un perro (Journal of Veterinary Diagnostic Investigation). La interpretación requiere contexto metodológico estricto: la causalidad directa entre el microchip y el desarrollo de neoplasia no ha sido establecida; el mecanismo propuesto es la inflamación crónica de cuerpo extraño como posible cofactor. La incidencia de este tipo de evento en la población de animales microchipados es <strong>extremadamente baja</strong> según las estimaciones disponibles en la literatura; las limitaciones de los sistemas de notificación voluntaria no permiten afirmaciones causales definitivas. La relación riesgo/beneficio en el contexto de la identificación obligatoria para el movimiento internacional es favorable al microchip.</p>
+
+<div class="caution-box">
+  <strong>Nota metodológica sobre eventos adversos</strong>
+  Los datos de incidencia de eventos adversos del microchip provienen de sistemas de reporte voluntario y reportes de casos individuales. El denominador —el número total de chips implantados— es una estimación. La metodología de estos estudios no permite afirmaciones causales definitivas. La conclusión clínicamente operativa es que la incidencia observada es suficientemente baja como para no constituir una contraindicación al procedimiento en ninguno de los escenarios de uso evaluados en este artículo.
+</div>
+
+<h2><span class="sec-label">Sección 5</span> Implantación subcutánea: descripción clínica de la técnica</h2>
+<p><em>Nota preliminar:</em> La descripción de la técnica está basada en la práctica descrita en textos de medicina veterinaria estándar y en las guías de WSAVA (2016) y en la práctica clínica documentada por BSAVA y AVMA. No existe un protocolo quirúrgico formal de implantación publicado como «gold standard» por ningún organismo regulatorio. El propósito de esta sección es clínico-informativo, no prescriptivo.</p>
+
+<h3>5.1 Secuencia correcta: microchip antes que vacunación</h3>
+<p>El punto regulatoriamente más crítico no es la técnica en sí, sino su posición en la secuencia de actos médicos. Las directrices de WSAVA son inequívocas: el microchip debe implantarse y su número verificarse antes de que se administre cualquier vacuna que vaya a ser registrada en documentación oficial de viaje. Si la vacunación se realizó antes de la implantación del chip, no puede probarse que la vacuna registrada fue administrada al mismo individuo que porta el chip. El resultado práctico es la invalidación de la vacuna para efectos de importación.</p>
+
+<h3>5.2 Técnica de implantación estándar</h3>
+<p><strong>Sitio:</strong> región subcutánea dorsal, línea media, entre las escápulas (área interescapular). <strong>Profundidad:</strong> subcutánea, no intramuscular. El procedimiento estándar incluye: (1) Verificación del dispositivo antes de la implantación con el lector; (2) Preparación del sitio (limpieza antiséptica); (3) Carga del aplicador; (4) Implantación con aguja en ángulo 30–45°, inyección del transpondedor; (5) Verificación post-implantación inmediata con el lector — paso no opcional; (6) Registro inmediato en la base de datos y en todos los documentos veterinarios del animal.</p>
+
+<h3>5.3 Consideraciones para gatos</h3>
+<p>Los gatos presentan piel más delgada y móvil que la canina, lo que puede aumentar el riesgo de implantación insuficientemente profunda. La tasa de migración es ligeramente mayor en gatos que en perros. Para gatos sedados o bajo anestesia general por otra razón, el procedimiento puede realizarse aprovechando el acto anestésico.</p>
+
+<h2><span class="sec-label">Sección 6</span> Taxonomía de fallas del sistema de identificación</h2>
+
+<h3>6.1 Error humano</h3>
+<p>Representa la categoría más frecuente de falla: error de registro (número transcrito no coincide con el leído); error de localización (no se realiza escaneo de cuerpo completo); error de secuencia temporal (vacunación antes del chip); implantación sin registro en base de datos.</p>
+
+<h3>6.2 Falla de compatibilidad de lector</h3>
+<p>La coexistencia de tres frecuencias (125 kHz, 128 kHz, 134,2 kHz) genera riesgo real de no detección cuando el lector no es universal. Para animales con chips pre-ISO que van a viajar internacionalmente, la implantación de un segundo chip ISO es la solución más segura. El doble microchip es aceptado por la mayoría de las regulaciones internacionales, siempre que el chip ISO sea el que figura en la documentación.</p>
+
+<h3>6.3 Defecto de fabricación</h3>
+<p>La tasa de defectos de fabricación en transpondedores RFID certificados es extremadamente baja. Los defectos pre-implantación son detectables mediante verificación antes de la implantación. El fallo post-implantación (el chip deja de responder) es extremadamente raro. No existe evidencia de que sea causado por lecturas repetidas.</p>
+
+<h3>6.4 Falla de base de datos / registro fragmentado</h3>
+<p>El eslabón más débil del sistema de trazabilidad internacional es la imposibilidad de acceder al registro del propietario cuando el chip es leído en un país diferente al del registro. La arquitectura es descentralizada: cada país o región mantiene su propia base de datos. EUROPETNET agrupa bases de datos en 26 países; PETtrac/ANIS (Australia/NZ), AKC Reunite (EE. UU.), AMICUS (Suiza) son ejemplos. La recomendación de buenas prácticas es registrar en al menos una base de datos internacional de cobertura amplia, además del registro nacional.</p>
+
+<div class="caution-box">
+  <strong>Mito técnico: «El chip falla por lecturas repetidas»</strong>
+  FALSO. Sin fundamento físico. Un transpondedor RFID pasivo no tiene componentes consumibles, batería ni partes móviles. La energía proviene exclusivamente del campo electromagnético del lector. El número de veces que un chip puede ser leído no tiene límite práctico definido por la física del dispositivo.
+</div>
+
+<h2><span class="sec-label">Sección 7</span> Trazabilidad sanitaria: el vínculo microchip ↔ certificados</h2>
+
+<h3>7.1 El microchip como prerrequisito de la cadena documental</h3>
+<p>La cadena documental se construye sobre la premisa de que todos los documentos sanitarios deben referenciar el mismo número de microchip, y ese número debe coincidir con el chip legible en el animal en el control fronterizo. Los eslabones, en orden cronológico lógico: (1) Implantación del microchip + verificación + registro; (2) Vacunación antirrábica válida — posterior al chip en UK, Australia y NZ; (3) Prueba de titulación antirrábica (RNATT) cuando se requiera; (4) Período de espera; (5) Tratamiento antiparasitario según destino; (6) Health Certificate / Certificado Sanitario Oficial; (7) Pasaporte Europeo o documento equivalente. La ruptura de la secuencia en cualquiera de sus nodos invalida toda la cadena.</p>
+
+<h3>7.2 Consecuencias de inconsistencia documental en frontera</h3>
+<div class="table-wrap">
+  <table>
+    <thead><tr><th>Jurisdicción</th><th>Consecuencia</th><th>Remediación</th></tr></thead>
+    <tbody>
+      <tr><td>Unión Europea</td><td>Retraso, posible cuarentena en instalación fronteriza</td><td>Variable según gravedad</td></tr>
+      <tr><td>Reino Unido (GB)</td><td>Rechazo de entrada o cuarentena obligatoria (mín. 4 meses)</td><td>Generalmente imposible sin reiniciar protocolo</td></tr>
+      <tr><td>Australia</td><td>Cuarentena obligatoria + posible devolución</td><td>Cuarentena obligatoria aun con docs correctos</td></tr>
+      <tr><td>Nueva Zelanda</td><td>Cuarentena obligatoria + posible devolución</td><td>Similar a Australia</td></tr>
+      <tr><td>EE. UU.</td><td>Variable según estado; documentación CDC/APHIS</td><td>Relativamente flexible según país de origen</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h3>7.3 Integración con base de datos</h3>
+<p>Un chip correctamente implantado pero no registrado en ninguna base de datos es un identificador sin información vinculada. Un chip registrado solo en una base de datos nacional de acceso restringido no puede ser verificado por autoridades de otros países. Recomendación: verificar el número registrado en la base de datos (no solo el impreso en el embalaje) realizando una búsqueda de prueba antes de emitir cualquier documento oficial.</p>
+
+<h2><span class="sec-label">Sección 8</span> Marco regulatorio comparado</h2>
+
+<div class="caution-box">
+  <strong>Advertencia de actualización regulatoria</strong>
+  Las regulaciones de importación de animales están sujetas a cambios sin previo aviso. La información presentada fue verificada con fuentes primarias a febrero de 2026. Antes de iniciar cualquier proceso de exportación, es obligatorio verificar los requisitos vigentes con la autoridad sanitaria competente del país de destino.
+</div>
+
+<h3>8.1 Unión Europea — Reglamento (UE) n.° 576/2013</h3>
+<p>El Anexo II exige que el dispositivo cumpla ISO 11784 e ISO 11785 (HDX o FDX-B a 134,2 kHz). El microchip debe implantarse antes o simultáneamente a la vacunación antirrábica que se pretende reconocer. Excepción de tatuaje: válido únicamente si fue realizado antes del 3 de julio de 2011 y es claramente legible.</p>
+
+<h3>8.2 Reino Unido — Normativa post-Brexit</h3>
+<p>Documentación requerida: Animal Health Certificate (AHC), emitido por veterinario oficial con un máximo de 10 días antes del viaje. Microchip obligatorio para perros desde 2016 (Inglaterra, Escocia, Gales). <strong>Microchip para gatos (Inglaterra):</strong> desde el 10 de junio de 2024, obligatorio para todos los gatos domésticos bajo The Microchipping of Cats and Dogs (England) Regulations 2023. Cualquier gato que entre al Reino Unido debe estar microchipado. GOV.UK exige estrictamente microchip ISO (134,2 kHz, 15 dígitos). Para chips pre-ISO (125 o 128 kHz), el propietario debe portar su propio lector compatible.</p>
+
+<h3>8.3 Australia — DAFF</h3>
+<p>DAFF exige microchip de 15 dígitos compatible con ISO 11784/11785. Los chips de 9 o 10 dígitos no son válidos para la documentación de importación oficial. El microchip debe estar implantado y verificado antes de la vacunación antirrábica. Cuarentena obligatoria en instalaciones oficiales (Melbourne); estándar 10 días.</p>
+
+<h3>8.4 Nueva Zelanda — MPI</h3>
+<p>MPI aplica estándar CATDOG.GEN. El chip debe estar implantado antes de cualquier prueba de titulación antirrábica y antes de la vacunación que se computará en el protocolo. ISO 11784/11785 obligatorio, 15 dígitos. Sin excepciones. Cuarentena al llegar; el incumplimiento puede resultar en devolución al país de origen.</p>
+
+<h3>8.5 Suiza</h3>
+<p>Para perros, el microchip es obligatorio. La base de datos nacional es AMICUS (IVI). AMICUS está conectada parcialmente a EUROPETNET. Se reconoce el Pasaporte Europeo para animales que entran desde la UE.</p>
+
+<h3>8.6 Tabla comparativa</h3>
+<div class="table-wrap">
+  <table>
+    <thead><tr><th>Jurisdicción</th><th>Estándar exigido</th><th>Observaciones</th></tr></thead>
+    <tbody>
+      <tr><td>Unión Europea</td><td>ISO 11784/11785 (FDX-B/HDX, 134,2 kHz)</td><td>Anexo II Reg. 576/2013. Tatuaje pre-2011 excepcional</td></tr>
+      <tr><td>Reino Unido</td><td>ISO 11784/11785</td><td>AHC requerido. Perros 2016, gatos junio 2024</td></tr>
+      <tr><td>Australia (DAFF)</td><td>ISO 11784/11785, 15 dígitos</td><td>Chip antes de vacunación. Cuarentena obligatoria</td></tr>
+      <tr><td>Nueva Zelanda (MPI)</td><td>ISO 11784/11785, 15 dígitos</td><td>Secuencia chip→vacuna→RNATT no negociable</td></tr>
+      <tr><td>Suiza</td><td>ISO 11784/11785 + registro AMICUS (perros)</td><td>Verificar acuerdo bilateral vigente</td></tr>
+      <tr><td>EE. UU.</td><td>Recomendado ISO; no siempre obligatorio</td><td>Varían por especie y país de origen</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h2><span class="sec-label">Sección 9</span> Estadísticas de retorno de animales perdidos con microchip</h2>
+<p><em>Nota metodológica:</em> Las estadísticas disponibles provienen principalmente de estudios en shelters norteamericanos. Presentan sesgos de selección: la población ingresada a un shelter no es representativa de la población general. Lord et al. (2009), JAVMA, en 2.632 animales: los perros microchipados tuvieron tasa de retorno aproximadamente 2,4 veces mayor que los no microchipados; los gatos microchipados aproximadamente 21 veces mayor. Sin embargo, el 58% de los microchips en perros y el 74% en gatos no tenían información de contacto actualizada en las bases de datos, lo que impidió el retorno aun cuando el chip era legible. Los datos no son directamente extrapolables a contextos europeos o australianos.</p>
+
+<h2><span class="sec-label">Sección 10</span> Argumentación técnica para microchip en animales sin viaje programado</h2>
+<p>Argumento de contingencia del viaje: la decisión de viajar puede ser posterior a la adquisición del animal; si el viaje se planifica después de la vacunación antirrábica, el propietario puede encontrarse ante la imposibilidad de acreditar la secuencia correcta para ciertos destinos. Argumento de trazabilidad sanitaria interna: la identificación unívoca facilita la continuidad del historial médico. Argumento de legislación: en varias jurisdicciones (UK perros desde 2016, gatos desde 2024; diversas comunidades españolas; estados australianos) el microchip es obligatorio por ley. Este artículo no prescribe la microchipación; describe el sistema, su lógica y sus implicaciones. La decisión corresponde al propietario y al veterinario tratante.</p>
+
+<h2><span class="sec-label">Sección 11</span> Limitaciones del análisis</h2>
+<p>Sesgo de publicación en biocompatibilidad; estudios de retorno con sesgos de selección; actualización regulatoria constante; ausencia de protocolo de implantación publicado como gold standard por organismo regulatorio internacional; cobertura e interoperabilidad de bases de datos dinámica.</p>
+
+<h2><span class="sec-label">Sección 12</span> Prioridades de estandarización e investigación</h2>
+<p>Unificación de bases de datos; estandarización de lectores en frontera; transición completa al estándar ISO en Norteamérica; estudios prospectivos de biocompatibilidad; actualización de protocolos de implantación publicados.</p>
+
+<!-- AUTO-VERIFICACIÓN EDITORIAL -->
+<h2><span class="sec-label">Auto-verificación editorial</span> Verificación en 10 puntos</h2>
+<div class="audit-grid">
+  <div class="audit-item">
+    <div class="audit-check">&#10003;</div>
+    <span><strong>Alcance declarado.</strong> Especie limitada a perro y gato. No se incluyen hurones. Documento informativo, no prescripción ni asesoramiento legal.</span>
+  </div>
+  <div class="audit-item">
+    <div class="audit-check">&#10003;</div>
+    <span><strong>Microchip NO es GPS.</strong> Caja de advertencia visible: el microchip no transmite localización, no tiene batería, no se deteriora por lecturas repetidas.</span>
+  </div>
+  <div class="audit-item">
+    <div class="audit-check">&#10003;</div>
+    <span><strong>Mito «lecturas repetidas» desmontado.</strong> Tratado con rigor técnico (RFID pasivo, sin fundamento físico), tono clínico, sin burlas.</span>
+  </div>
+  <div class="audit-item">
+    <div class="audit-check">&#10003;</div>
+    <span><strong>Neoplasia/sarcoma con lenguaje conservador.</strong> Incidencia descrita como extremadamente baja; estimaciones; limitaciones del sistema de notificación; sin cifras inventadas.</span>
+  </div>
+  <div class="audit-item">
+    <div class="audit-check">&#10003;</div>
+    <span><strong>Lord et al. calificado metodológicamente.</strong> Estadísticas de retorno presentadas con nota sobre sesgos de selección y extrapolabilidad limitada.</span>
+  </div>
+  <div class="audit-item">
+    <div class="audit-check">&#10003;</div>
+    <span><strong>Verificación con autoridad competente.</strong> Disclaimers explícitos: requisitos deben verificarse con la autoridad del país de destino; normativas sujetas a cambio.</span>
+  </div>
+  <div class="audit-item">
+    <div class="audit-check">&#10003;</div>
+    <span><strong>Secuencia chip antes que vacunación.</strong> WSAVA y requisitos UK/Australia/NZ descritos correctamente; error irreversible declarado.</span>
+  </div>
+  <div class="audit-item">
+    <div class="audit-check">&#10003;</div>
+    <span><strong>Perspectiva trazabilidad médica.</strong> Enfoque deliberado en identificación y cadena documental, no solo recuperación de mascotas perdidas.</span>
+  </div>
+  <div class="audit-item">
+    <div class="audit-check">&#10003;</div>
+    <span><strong>Referencias y normas citadas.</strong> ISO 11784/11785, Reg. UE 576/2013, UK Regulations, DAFF, MPI, WSAVA, AVMA, EUROPETNET, literatura médica (Vascellari, Jansen, Lord).</span>
+  </div>
+  <div class="audit-item">
+    <div class="audit-check">&#10003;</div>
+    <span><strong>Autoría única.</strong> Solo Jessica Ysabel Camacho Garcia, MVZ, CMVP 12434 en cabecera y JSON-LD. Sin menciones a herramientas ni asistentes.</span>
+  </div>
+</div>
+
+<section class="references">
+  <h2>Referencias</h2>
+  <ol class="ref-list">
+    <li>ISO 11784:1996. Radio Frequency Identification of Animals — Code Structure. International Organization for Standardization.</li>
+    <li>ISO 11785:1996. Radio Frequency Identification of Animals — Technical Concept. International Organization for Standardization.</li>
+    <li>Unión Europea. Reglamento (UE) n.° 576/2013 del Parlamento Europeo y del Consejo, de 12 de junio de 2013, relativo al desplazamiento sin carácter comercial de animales de compañía. Diario Oficial de la Unión Europea.</li>
+    <li>United Kingdom Government. The Microchipping of Dogs (England) Regulations 2015. SI 2015/108.</li>
+    <li>United Kingdom Government. The Microchipping of Dogs (Scotland) Regulations 2016. SSI 2016/61.</li>
+    <li>United Kingdom Government. The Microchipping of Cats and Dogs (England) Regulations 2023. His Majesty's Stationery Office.</li>
+    <li>GOV.UK. Bringing your pet dog, cat or ferret to Great Britain. DEFRA. https://www.gov.uk/bring-pet-to-great-britain</li>
+    <li>Australian Government. DAFF. Travelling to Australia with a pet. https://www.agriculture.gov.au/biosecurity-trade/cats-dogs</li>
+    <li>New Zealand Government. MPI. Importing dogs and cats. https://www.mpi.govt.nz/importing/animals/importing-dogs-and-cats/</li>
+    <li>Suisse Confédération. IVI. Base de données AMICUS. https://www.amicus.ch</li>
+    <li>World Small Animal Veterinary Association (WSAVA). Guidelines for the Vaccination of Dogs and Cats (2016). Journal of Small Animal Practice, 57(1), E1–E45.</li>
+    <li>American Veterinary Medical Association (AVMA). Microchipping of Animals — Policy Statement. https://www.avma.org/resources-tools/avma-policies/microchipping-animals</li>
+    <li>EUROPETNET. About Europetnet — Federated Database System. https://www.europetnet.com</li>
+    <li>Vascellari, M., Melchiotti, E., &amp; Mutinelli, F. (2006). Liposarcoma at the site of an implanted microchip in a dog. Journal of Veterinary Diagnostic Investigation, 18(5), 534–537. https://doi.org/10.1177/104063870601800516</li>
+    <li>Jansen, T., Brandt, C., &amp; Sinell, H. J. (1999). Long-term migration of microchips in dogs and cats — A retrospective study. Tierärztliche Praxis, 27(G), 332–336.</li>
+    <li>Lord, L. K., Wittum, T. E., Ferketich, A. K., Funk, J. A., &amp; Rajala-Schultz, P. J. (2009). Does this lost pet have an owner? Microchip analysis in 2,632 animals. Journal of the American Veterinary Medical Association, 235(2), 160–167.</li>
+  </ol>
+</section>
+
+<footer>
+  <p><strong>Zoovet Travel — Serie Técnica de Medicina de Viaje y Regulación Veterinaria Internacional</strong></p>
+  <p>Artículo VI: Microchip de identificación animal. Revisión técnico-regulatoria. Febrero 2026.</p>
+  <p>Este documento es de referencia técnica. No constituye prescripción veterinaria. Verificar requisitos con la autoridad competente del país de destino.</p>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://zoovet-travel.com/articles/zoovet_art6_microchip-ES.html#webpage",
+      "url": "https://zoovet-travel.com/articles/zoovet_art6_microchip-ES.html",
+      "name": "Microchip de identificación animal | Zoovet Travel Serie Técnica VI",
+      "inLanguage": "es",
+      "isPartOf": {"@id": "https://zoovet-travel.com/#website"}
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://zoovet-travel.com/articles/zoovet_art6_microchip-ES.html#article",
+      "headline": "Microchip de identificación animal: fundamento tecnológico, marco regulatorio internacional y trazabilidad sanitaria",
+      "inLanguage": "es",
+      "datePublished": "2026-02-23",
+      "dateModified": "2026-02-23",
+      "author": {"@id": "https://zoovet-travel.com/articles/zoovet_art6_microchip-ES.html#author-jessica"},
+      "publisher": {"@id": "https://zoovet-travel.com/#organization"},
+      "image": "https://zoovet-travel.com/articles/images/microscopio-lab-articulo-cientifico.webp",
+      "keywords": ["microchip RFID animal", "ISO 11784", "ISO 11785", "FDX-B", "trazabilidad sanitaria", "pasaporte mascotas", "identificación animal internacional", "Reg. UE 576/2013", "DAFF", "MPI"],
+      "about": [
+        {"@type": "Thing", "name": "Microchip identificación animal"},
+        {"@type": "Thing", "name": "ISO 11784/11785"},
+        {"@type": "Thing", "name": "Trazabilidad sanitaria"}
+      ],
+      "mainEntityOfPage": {"@id": "https://zoovet-travel.com/articles/zoovet_art6_microchip-ES.html#webpage"}
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://zoovet-travel.com/articles/zoovet_art6_microchip-ES.html#breadcrumb",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://zoovet-travel.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Artículos científicos", "item": "https://zoovet-travel.com/articles/"},
+        {"@type": "ListItem", "position": 3, "name": "Microchip de identificación animal", "item": "https://zoovet-travel.com/articles/zoovet_art6_microchip-ES.html"}
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://zoovet-travel.com/#organization",
+      "name": "Zoovet Travel",
+      "url": "https://zoovet-travel.com/",
+      "logo": {"@type": "ImageObject", "url": "https://zoovet-travel.com/images/zoovet-logo.png"}
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://zoovet-travel.com/#website",
+      "url": "https://zoovet-travel.com/",
+      "name": "Zoovet Travel",
+      "publisher": {"@id": "https://zoovet-travel.com/#organization"}
+    },
+    {
+      "@type": "Person",
+      "@id": "https://zoovet-travel.com/articles/zoovet_art6_microchip-ES.html#author-jessica",
+      "name": "Jessica Ysabel Camacho Garcia",
+      "jobTitle": "Médico Veterinaria",
+      "identifier": "CMVP 12434",
+      "affiliation": {"@id": "https://zoovet-travel.com/#organization"}
+    }
+  ]
+}
+</script>
+
+</body>
+</html>

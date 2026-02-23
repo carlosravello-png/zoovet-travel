@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Analyse technique et réglementaire de la puce d'identification animale : ISO 11784/11785, Règlement UE 576/2013, DAFF/MPI, biocompatibilité, technique d'implantation et traçabilité sanitaire dans le mouvement international des chiens et chats. Zoovet Travel Série Technique VI.">
+  <meta name="keywords" content="puce RFID animale, ISO 11784, ISO 11785, FDX-B, traçabilité sanitaire, passeport animal, identification animale internationale, biocompatibilité transpondeur, puce chien chat voyage">
+  <meta name="author" content="Camacho Garcia JY — Zoovet Travel, Pérou">
+  <title>Puce d'identification animale : fondement technologique, cadre réglementaire international et traçabilité sanitaire | Zoovet Travel Série Technique VI</title>
+  <link rel="canonical" href="https://zoovet-travel.com/articles/zoovet_art6_microchip-FR.html">
+  <link rel="alternate" hreflang="es" href="https://zoovet-travel.com/articles/zoovet_art6_microchip-ES.html">
+  <link rel="alternate" hreflang="en" href="https://zoovet-travel.com/articles/zoovet_art6_microchip-EN.html">
+  <link rel="alternate" hreflang="fr" href="https://zoovet-travel.com/articles/zoovet_art6_microchip-FR.html">
+  <link rel="alternate" hreflang="x-default" href="https://zoovet-travel.com/articles/zoovet_art6_microchip-ES.html">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Puce d'identification animale : fondement technologique et cadre réglementaire | Zoovet Travel Série Technique VI">
+  <meta property="og:description" content="Analyse technique et réglementaire : ISO 11784/11785, Règlement UE 576/2013, DAFF/MPI, biocompatibilité et traçabilité sanitaire.">
+  <meta property="og:url" content="https://zoovet-travel.com/articles/zoovet_art6_microchip-FR.html">
+  <meta property="og:image" content="https://zoovet-travel.com/articles/images/microscopio-lab-articulo-cientifico.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Puce d'identification animale | Zoovet Travel Série Technique VI">
+  <meta name="twitter:description" content="ISO 11784/11785, RFID passif, traçabilité sanitaire, UE, UK, Australie, NZ.">
+  <meta name="twitter:image" content="https://zoovet-travel.com/articles/images/microscopio-lab-articulo-cientifico.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;0,9..40,700;1,9..40,300&display=swap" rel="stylesheet">
+  <style>
+    :root { --ink: #1c1917; --deep: #0f2340; --mid: #1e4976; --teal: #0e6655; --teal-bg: #e8f5f1; --accent: #c0392b; --warm: #7b3f00; --warm-bg: #fdf6ef; --sky: #e8f2fa; --rule: #cdd8e3; --muted: #5a6a7a; --paper: #fafaf8; --white: #ffffff; --amber: #b45309; --amber-bg: #fffbeb; --violet: #5b21b6; --violet-bg: #f5f3ff; }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Libre Baskerville', Georgia, serif; font-size: 17px; line-height: 1.85; color: var(--ink); background: var(--paper); max-width: 940px; margin: 0 auto; padding: 0 28px 100px; }
+    .site-header { font-family: 'DM Sans', sans-serif; background: #fff; border-bottom: 1px solid var(--rule); margin: 0 -28px 20px -28px; padding: 12px 28px 14px; }
+    .site-header-inner { max-width: 940px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; }
+    .site-header a { color: var(--mid); text-decoration: none; }
+    .site-header a:hover { text-decoration: underline; }
+    .breadcrumb { font-size: 0.85rem; color: var(--muted); }
+    .lang-switcher { display: flex; gap: 8px; }
+    .lang-switcher a { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; padding: 6px 12px; border: 1px solid var(--rule); border-radius: 3px; color: var(--mid); }
+    .masthead { border-bottom: 3px solid var(--deep); padding: 28px 0 16px; display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; flex-wrap: wrap; }
+    .masthead-series { font-family: 'DM Sans', sans-serif; font-size: 0.72rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--mid); }
+    .masthead-date { font-family: 'DM Sans', sans-serif; font-size: 0.72rem; color: var(--muted); }
+    .hero { background: var(--deep); color: #fff; padding: 48px 44px 42px; margin: 0 -28px; position: relative; overflow: hidden; }
+    .hero::before { content: ''; position: absolute; top: -80px; right: -80px; width: 320px; height: 320px; background: radial-gradient(circle, rgba(255,255,255,.05) 0%, transparent 70%); pointer-events: none; }
+    .hero-tag { display: inline-block; background: var(--teal); color: #fff; font-family: 'DM Sans', sans-serif; font-size: 0.7rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; padding: 4px 12px; border-radius: 2px; margin-bottom: 20px; }
+    h1 { font-family: 'Libre Baskerville', serif; font-size: clamp(1.35rem, 3.2vw, 1.9rem); font-weight: 700; line-height: 1.3; color: #fff; margin-bottom: 18px; max-width: 760px; }
+    .hero-lead { font-family: 'DM Sans', sans-serif; font-size: 1.03rem; font-weight: 300; line-height: 1.7; color: rgba(255,255,255,.85); max-width: 700px; margin-bottom: 28px; }
+    .hero-meta { font-family: 'DM Sans', sans-serif; font-size: 0.82rem; color: rgba(255,255,255,.6); border-top: 1px solid rgba(255,255,255,.15); padding-top: 16px; }
+    .hero-meta strong { color: rgba(255,255,255,.9); }
+    .abstract-box { background: var(--sky); border-left: 4px solid var(--mid); padding: 22px 28px; margin: 32px 0; font-family: 'DM Sans', sans-serif; font-size: 0.9rem; line-height: 1.72; color: var(--deep); }
+    .abstract-box strong { display: block; font-size: 0.72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--mid); margin-bottom: 10px; }
+    .scope-box { background: var(--white); border: 1px solid var(--rule); border-left: 4px solid var(--muted); padding: 16px 22px; margin: 20px 0 36px; font-family: 'DM Sans', sans-serif; font-size: 0.84rem; color: var(--muted); line-height: 1.6; }
+    .scope-box strong { display: block; font-size: 0.7rem; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 6px; }
+    h2 { font-family: 'Libre Baskerville', serif; font-size: 1.42rem; font-weight: 700; color: var(--deep); margin: 56px 0 18px; padding-bottom: 10px; border-bottom: 2px solid var(--rule); }
+    h3 { font-family: 'DM Sans', sans-serif; font-size: 1.06rem; font-weight: 700; color: var(--mid); margin: 34px 0 12px; letter-spacing: .015em; }
+    h4 { font-family: 'DM Sans', sans-serif; font-size: 0.92rem; font-weight: 700; color: var(--teal); margin: 22px 0 8px; text-transform: uppercase; letter-spacing: .05em; }
+    p { margin-bottom: 1.3rem; }
+    strong { font-weight: 700; }
+    em { font-style: italic; }
+    .sec-label { font-family: 'DM Sans', sans-serif; font-size: 0.67rem; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; color: var(--muted); display: block; margin-bottom: 6px; }
+    .ev-box { background: var(--violet-bg); border-left: 4px solid var(--violet); padding: 14px 20px; margin: 24px 0; font-family: 'DM Sans', sans-serif; font-size: 0.86rem; line-height: 1.65; color: #3b0764; }
+    .ev-box strong { font-size: 0.72rem; letter-spacing: .07em; text-transform: uppercase; color: var(--violet); display: block; margin-bottom: 6px; }
+    .caution-box { background: var(--amber-bg); border: 1.5px solid #d97706; border-radius: 4px; padding: 18px 22px; margin: 28px 0; font-family: 'DM Sans', sans-serif; font-size: 0.88rem; line-height: 1.65; color: #78350f; }
+    .caution-box strong { display: block; font-size: 0.72rem; letter-spacing: .08em; text-transform: uppercase; color: #92400e; margin-bottom: 8px; }
+    .pullquote { border-left: 4px solid var(--teal); padding: 16px 28px; margin: 36px 0; background: var(--teal-bg); font-family: 'DM Sans', sans-serif; font-size: 0.96rem; line-height: 1.72; color: #0d4a3f; }
+    .pullquote cite { display: block; font-size: 0.76rem; color: var(--muted); margin-top: 8px; font-style: normal; }
+    .table-wrap { overflow-x: auto; margin: 32px 0; border-radius: 4px; border: 1px solid var(--rule); }
+    table { width: 100%; border-collapse: collapse; font-family: 'DM Sans', sans-serif; font-size: 0.82rem; line-height: 1.45; }
+    thead th { background: var(--deep); color: #fff; padding: 11px 14px; text-align: left; font-size: 0.7rem; letter-spacing: .06em; text-transform: uppercase; font-weight: 600; }
+    tbody tr:nth-child(even) { background: #f8fafc; }
+    tbody td { padding: 10px 14px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+    .audit-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 24px 0; }
+    @media (max-width: 580px) { .audit-grid { grid-template-columns: 1fr; } }
+    .audit-item { display: flex; gap: 10px; align-items: flex-start; font-family: 'DM Sans', sans-serif; font-size: 0.84rem; line-height: 1.5; padding: 10px 14px; background: var(--white); border: 1px solid var(--rule); border-radius: 3px; }
+    .audit-check { width: 20px; height: 20px; background: var(--teal); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: #fff; font-size: 0.7rem; font-weight: 700; margin-top: 1px; }
+    .references { margin-top: 64px; padding-top: 28px; border-top: 2px solid var(--rule); }
+    .references h2 { font-size: 1.1rem; margin-top: 0; margin-bottom: 22px; border-bottom: none; padding-bottom: 0; }
+    .ref-list { list-style: none; counter-reset: refs; }
+    .ref-list li { counter-increment: refs; font-family: 'DM Sans', sans-serif; font-size: 0.83rem; line-height: 1.68; color: var(--muted); margin-bottom: 11px; padding-left: 34px; position: relative; }
+    .ref-list li::before { content: counter(refs); position: absolute; left: 0; color: var(--mid); font-weight: 700; font-size: 0.72rem; top: 3px; }
+    .ref-list a { color: var(--mid); }
+    .ref-note { font-style: italic; font-size: 0.76rem; color: #9ca3af; }
+    footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--rule); font-family: 'DM Sans', sans-serif; font-size: 0.78rem; color: var(--muted); }
+    .font-mono { font-family: ui-monospace, monospace; }
+    ul { margin-bottom: 1.3rem; padding-left: 1.5rem; }
+    li { margin-bottom: 0.5rem; }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <nav class="breadcrumb" aria-label="Fil d'Ariane">
+      <a href="../index-fr.html">Accueil</a> &rarr; <a href="index-fr.html">Articles scientifiques</a> &rarr; <span>Puce d'identification animale</span>
+    </nav>
+    <div class="lang-switcher">
+      <a href="zoovet_art6_microchip-ES.html" hreflang="es">ES</a>
+      <a href="zoovet_art6_microchip-EN.html" hreflang="en">EN</a>
+      <a href="zoovet_art6_microchip-FR.html" hreflang="fr">FR</a>
+    </div>
+  </div>
+</header>
+
+<header class="masthead">
+  <span class="masthead-series">Zoovet Travel · Série Technique VI — Identification et traçabilité sanitaire</span>
+  <span class="masthead-date">Février 2026</span>
+</header>
+
+<section class="hero">
+  <span class="hero-tag">Revue technique et réglementaire</span>
+  <h1>Puce d'identification animale : fondement technologique, cadre réglementaire international et traçabilité sanitaire</h1>
+  <p class="hero-lead">Analyse technique et réglementaire de la puce RFID pour la médecine vétérinaire des voyages : principes technologiques, biocompatibilité, technique d'implantation, taxonomie des défaillances, intégration dans la chaîne documentaire sanitaire et cadre réglementaire comparé dans les principales juridictions de destination.</p>
+  <div class="hero-meta">
+    <strong>Jessica Ysabel Camacho Garcia</strong>, DMV — <span class="font-mono">CMVP 12434</span> — Zoovet Travel, Lima, Pérou &nbsp;|&nbsp; Révision : février 2026
+  </div>
+</section>
+
+<div class="scope-box">
+  <strong>Champ d'application et limites de ce document</strong>
+  Espèce : Chien (<em>Canis lupus familiaris</em>) et chat (<em>Felis catus</em>). Ce document est informatif et de référence technique. Il ne constitue ni prescription vétérinaire ni conseil juridique. Toutes les exigences réglementaires doivent être vérifiées auprès de l'autorité sanitaire compétente du pays de destination avant chaque mouvement international, les normes étant susceptibles de modification sans préavis. Les informations réglementaires ont été vérifiées auprès de sources primaires en vigueur en février 2026.
+</div>
+
+<div class="abstract-box">
+  <strong>Résumé structuré</strong>
+  <strong>Contexte :</strong> La puce d'identification animale basée sur la technologie RFID passive constitue l'élément fondateur de la traçabilité sanitaire dans le mouvement international des animaux de compagnie. Son adoption universelle comme standard d'identification, articulée dans les normes ISO 11784 et ISO 11785, a partiellement résolu le problème de la fragmentation historique des systèmes d'identification à l'échelle mondiale.<br><br>
+  <strong>Objectif :</strong> Fournir une analyse technique et réglementaire de haute rigueur sur la puce RFID pour la médecine vétérinaire des voyages, couvrant les principes technologiques, la biocompatibilité, la technique d'implantation, la taxonomie des défaillances, l'intégration dans la chaîne documentaire sanitaire et le cadre réglementaire comparé dans les principales juridictions de destination.<br><br>
+  <strong>Méthodes :</strong> Revue des sources primaires : normes ISO (11784:1996, 11785:1996), législation de l'Union européenne (Règlement n° 576/2013), réglementation du Royaume-Uni (The Microchipping of Dogs Regulations 2015 ; The Microchipping of Cats and Dogs (England) Regulations 2023), directives australiennes (DAFF) et néo-zélandaises (MPI), positions WSAVA et AVMA, et littérature médicale indexée sur la biocompatibilité (Vascellari et al., 2006 ; Jansen et al., 1999).<br><br>
+  <strong>Principaux résultats :</strong> (1) Le standard FDX-B à 134,2 kHz avec code à 15 chiffres est le seul compatible avec les exigences d'importation dans l'UE, le Royaume-Uni, l'Australie et la Nouvelle-Zélande. (2) La coexistence des fréquences 125/128 kHz sur le marché nord-américain crée un risque réel de non-lecture en douane. (3) La migration sous-cutanée survient dans 12–15 % des cas mais compromet rarement la lisibilité. (4) L'incidence des événements indésirables graves, dont la néoplasie au site d'implantation, est extrêmement faible selon les estimations disponibles ; les limites des systèmes de déclaration volontaire ne permettent pas d'affirmations causales définitives. (5) La fragmentation des bases de données constitue le maillon le plus faible du système de traçabilité.<br><br>
+  <strong>Limites :</strong> Les études de biocompatibilité disponibles présentent des biais de sélection. Les statistiques de retour d'animaux perdus avec puce proviennent principalement de refuges nord-américains, avec une extrapolabilité limitée à d'autres juridictions.<br><br>
+  <strong>Mots-clés :</strong> puce RFID animale, ISO 11784, ISO 11785, FDX-B, traçabilité sanitaire, passeport animal, identification animale internationale, biocompatibilité transpondeur.
+</div>
+
+<h2><span class="sec-label">Section 1</span> La puce comme infrastructure sanitaire</h2>
+
+<h3>1.1 Cadrage conceptuel</h3>
+<p>La médecine vétérinaire des voyages repose sur un axiome technique souvent sous-estimé par les propriétaires d'animaux de compagnie : avant la première vaccination, avant le premier certificat, avant tout acte médical enregistrable, l'animal doit avoir une identité univoque, vérifiable et universelle. La puce est cette identité.</p>
+<p>L'erreur conceptuelle la plus fréquente est de traiter la puce comme un accessoire technologique optionnel — un gadget de sécurité personnelle — alors qu'elle constitue une pièce d'infrastructure sanitaire équivalente, en termes fonctionnels, à un numéro de dossier médical unique. Sans ce numéro, aucune chaîne documentaire n'est possible.</p>
+<p>Cette distinction n'est pas sémantique. Un animal vacciné avant d'être pucé a, du point de vue réglementaire des destinations telles que le Royaume-Uni, l'Australie et la Nouvelle-Zélande, des vaccinations techniquement invalides pour le processus d'importation, quelle que soit la qualité de l'acte vétérinaire sous-jacent. L'erreur est irréversible : elle oblige à reprendre des protocoles pouvant durer six mois ou plus.</p>
+
+<h3>1.2 Pourquoi cet article la traite comme outil de traçabilité médicale</h3>
+<p>La littérature de vulgarisation sur les puces tend à se concentrer sur la récupération des animaux perdus. Cet article adopte délibérément une perspective différente : celle de la puce comme outil de traçabilité médicale dans les contextes de mouvement international d'animaux, où la défaillance du système a des conséquences juridiques et sanitaires directes.</p>
+<p>La traçabilité, dans ce contexte, désigne la capacité de lier de manière univoque un individu biologique à son historique sanitaire complet dans le temps et les frontières. La puce est le nœud qui rend ce lien possible. Toute analyse qui la réduit à un localisateur d'animaux perdus sous-estime radicalement son importance clinique et réglementaire.</p>
+
+<h2><span class="sec-label">Section 2</span> Fondement technologique : RFID passif</h2>
+
+<h3>2.1 Principe d'induction électromagnétique</h3>
+<p>La puce d'identification animale est un transpondeur RFID (Radio Frequency Identification) passif, c'est-à-dire un dispositif sans source d'alimentation interne qui fonctionne exclusivement grâce à l'énergie captée du champ électromagnétique généré par le lecteur externe.</p>
+<p>Le cycle de fonctionnement, simplifié, est le suivant : le lecteur génère un champ électromagnétique oscillant à la fréquence fixée par la norme (134,2 kHz pour l'ISO 11785). L'antenne du transpondeur, constituée d'une bobine de fil de cuivre enroulée autour d'un noyau de ferrite, agit comme récepteur de ce champ. Le courant induit dans la bobine alimente un circuit intégré (puce silicium) qui module la réponse en transmettant le code unique stocké dans sa mémoire non volatile.</p>
+<p>La communication est unidirectionnelle depuis le transpondeur : la puce ne peut pas être écrite de l'extérieur dans des conditions normales. Le code identifiant est fixé en usine et ne peut être modifié, garantissant la permanence et l'immuabilité de l'identifiant tout au long de la durée de vie du dispositif.</p>
+
+<div class="caution-box">
+  <strong>Avertissement critique : ce que la puce N'EST PAS</strong>
+  <strong>Ce n'est PAS un GPS.</strong> La puce ne transmet pas de signaux de localisation. Elle ne permet pas de suivre l'animal en temps réel ni par satellite. Cette confusion est extrêmement fréquente et peut conduire les propriétaires à croire que leur animal est localisable alors qu'il ne l'est pas.<br><br>
+  <strong>Elle n'a PAS de batterie.</strong> En tant que dispositif RFID passif, elle ne contient aucune source d'énergie. Elle fonctionne exclusivement lorsqu'elle est activée par un lecteur à courte distance (généralement 10–25 cm).<br><br>
+  <strong>Elle ne se détériore PAS par des lectures répétées.</strong> L'inquiétude que la puce puisse « s'user » après de multiples lectures n'a aucun fondement physique. Un transpondeur RFID passif n'a ni composants mobiles ni consommables. Les lectures peuvent être répétées indéfiniment sans dégradation du dispositif.<br><br>
+  <strong>Ce n'est PAS un traceur à distance.</strong> La distance de lecture est de quelques centimètres. Elle requiert la présence physique de l'animal devant un lecteur.
+</div>
+
+<h3>2.2 Le transpondeur : composants physiques</h3>
+<p>Le transpondeur implantable standard comprend trois composants principaux encapsulés dans une capsule de verre de qualité médicale (verre borosilicaté) :</p>
+<ul>
+  <li><strong>Bobine ferrite-cuivre :</strong> antenne récepteur/émetteur. Sa géométrie détermine l'efficacité du couplage avec le champ du lecteur.</li>
+  <li><strong>Circuit intégré (ASIC) :</strong> stocke le code d'identification en mémoire EEPROM non volatile. Il contient aussi la logique de modulation de réponse.</li>
+  <li><strong>Capsule de verre :</strong> 2,12 mm de diamètre et 12,5 mm de longueur au format standard (formats mini 1,4 × 8 mm existent). Le verre borosilicaté est bioinerte et a un coefficient de dilatation thermique compatible avec les tissus environnants.</li>
+</ul>
+<p>Certains fabricants ajoutent une couche de revêtement antimigratoire (Parylene ou matrice polyester) sur la surface externe de la capsule pour favoriser la fibrose d'ancrage et réduire la migration sous-cutanée. L'efficacité de ces revêtements est discutée à la section 4.2.</p>
+<p><strong>Durée de vie attendue :</strong> Les fabricants certifient une durée de vie de 25 ans ou plus dans des conditions normales. La durée de vie moyenne d'un chien ou chat de compagnie dépassant rarement 18 ans, le dispositif peut être considéré, en pratique, comme à durée vitale.</p>
+
+<h2><span class="sec-label">Section 3</span> Normes ISO 11784 et ISO 11785</h2>
+
+<h3>3.1 Le problème résolu par les normes : la fragmentation des fréquences</h3>
+<p>Avant l'adoption mondiale de la norme ISO, le marché de l'identification animale était fragmenté en au moins trois systèmes incompatibles fonctionnant à des fréquences différentes :</p>
+<div class="table-wrap">
+  <table>
+    <thead><tr><th>Système / Fabricant</th><th>Fréquence</th><th>Chiffres du code</th></tr></thead>
+    <tbody>
+      <tr><td>AVID (États-Unis)</td><td>125 kHz</td><td>9–10 chiffres</td></tr>
+      <tr><td>Destron / Digital Angel (États-Unis)</td><td>128 kHz</td><td>10 chiffres</td></tr>
+      <tr><td>Trovan / Tiris (Europe)</td><td>134,2 kHz</td><td>15 chiffres (protocole HDX)</td></tr>
+      <tr><td>ISO 11784/11785 (standard mondial)</td><td>134,2 kHz</td><td>15 chiffres (FDX-B)</td></tr>
+    </tbody>
+  </table>
+</div>
+<p>La conséquence pratique de cette fragmentation était qu'une puce AVID implantée aux États-Unis n'était pas lisible avec les lecteurs européens standard, et inversement. Les animaux voyageant à l'international pouvaient arriver à la frontière avec une puce indétectable par l'équipement disponible, invalidant toute la chaîne documentaire. Les normes ISO 11784 et ISO 11785, adoptées en 1996 et largement en vigueur en 2026, ont résolu ce problème pour le marché post-adoption. Le problème persiste pour les puces pré-ISO implantées avant l'adoption de la norme, thème traité à la section 6.2.</p>
+
+<h3>3.2 ISO 11784 : structure du code</h3>
+<p>La norme ISO 11784:1996 (Radio Frequency Identification of Animals — Code Structure) établit l'architecture du code d'identification sur 64 bits. Les 27 premiers bits sont de contrôle système ; les bits 27 à 64 codent l'identifiant proprement dit. En pratique, le code résultant comporte 15 chiffres décimaux. La structure de ces 15 chiffres est :</p>
+<ul>
+  <li><strong>3 premiers chiffres :</strong> code pays (ISO 3166, pour les registres nationaux) ou code fabricant. Par exemple 724 pour l'Espagne, 826 pour le Royaume-Uni, 036 pour l'Australie.</li>
+  <li><strong>12 chiffres restants :</strong> identifiant unique individuel de l'animal, attribué par le fabricant ou le registre national.</li>
+</ul>
+<p>Le numéro à 15 chiffres est celui qui figure sur tous les documents sanitaires internationaux de l'animal : passeport européen, certificat sanitaire, RNATT, certificat de titrage antirabique.</p>
+
+<div class="ev-box">
+  <strong>Donnée réglementaire clé — Océanie</strong>
+  L'Australie (DAFF) et la Nouvelle-Zélande (MPI) exigent explicitement un code ISO à 15 chiffres. Les puces à 9 ou 10 chiffres (systèmes pré-ISO nord-américains) sont considérées invalides pour la documentation d'importation officielle. Si l'animal a été pucé aux États-Unis ou au Canada avec un système pré-ISO, ce point doit être vérifié avec le vétérinaire traitant avant d'engager tout protocole d'exportation vers l'Océanie.
+</div>
+
+<h3>3.3 ISO 11785 : protocole de communication</h3>
+<p>La norme ISO 11785:1996 (Technical Concept) définit le protocole de communication entre lecteur et transpondeur. Elle établit deux modes de fonctionnement : <strong>FDX-B (Full Duplex B) :</strong> le transpondeur répond en continu tant qu'il est dans le champ du lecteur. C'est le protocole dominant dans les puces modernes et implicitement exigé par la plupart des réglementations d'importation. Transmission à 134,2 kHz. <strong>HDX (Half Duplex) :</strong> le transpondeur stocke l'énergie et transmet en phase de décharge, en alternance avec le lecteur. Protocole plus ancien, encore utilisé dans certains systèmes européens antérieurs à la norme.</p>
+<p>Les deux protocoles fonctionnent à 134,2 kHz. Un lecteur conforme à l'ISO 11785 doit pouvoir lire les deux types. Les lecteurs ne lisant que le FDX-B peuvent échouer avec les puces HDX de générations antérieures, ce qui constitue une source réelle d'erreur sur le terrain.</p>
+
+<h3>3.4 Le problème réel sur le terrain : compatibilité lecteur/transpondeur</h3>
+<p>La valeur pratique des normes ISO dépend de façon critique de la compatibilité à la fois de la puce implantée et du lecteur utilisé par l'autorité frontalière. Cette compatibilité n'est pas universellement garantie : les lecteurs non universels (surtout en Amérique du Nord) peuvent ne lire qu'une ou deux fréquences ; les animaux avec une puce ISO peuvent ne pas être détectés par un lecteur mono-fréquence. Les puces pré-ISO (AVID 125 kHz) chez les animaux en transit peuvent ne pas être lisibles avec l'équipement standard à destination. La réglementation britannique (GOV.UK) indique explicitement que si la puce n'est pas ISO, le propriétaire doit porter son propre lecteur compatible. La migration et l'orientation de la puce peuvent aussi réduire l'efficacité du couplage électromagnétique (voir section 4.2).</p>
+
+<h2><span class="sec-label">Section 4</span> Biocompatibilité et réponse tissulaire</h2>
+
+<h3>4.1 Capsule fibreuse : mécanisme et signification clinique</h3>
+<p>Après l'implantation sous-cutanée, l'organisme répond par une réaction inflammatoire de faible intensité qui, dans la plupart des cas, aboutit à la formation d'une capsule fibreuse de tissu conjonctif autour du dispositif. Ce processus est analogue à celui observé avec d'autres implants en verre borosilicaté. La capsule fibreuse contribue à fixer le dispositif (effet d'ancrage) et réduit la mobilité et la migration. En pratique clinique, l'effet d'interférence de lecture par le tissu fibreux est négligeable avec les lecteurs modernes. Il n'existe pas de preuve que la réponse fibreuse normale à la puce provoque une pathologie cliniquement pertinente. L'ablation d'une puce encapsulée en l'absence de complication active n'est pas recommandée.</p>
+
+<h3>4.2 Migration sous-cutanée : données et ampleur réelle</h3>
+<p>La migration de la puce depuis le site d'implantation initial est l'événement indésirable non grave le plus fréquemment documenté. Jansen et al. (1999) et les revues BSAVA rapportent une migration observable en radiologie dans 12–15 % des cas, plus souvent chez le chat que chez le chien. La migration cliniquement significative — celle qui compromet la lisibilité ou nécessite une intervention — est nettement plus rare. Le dispositif tend à se déplacer caudalement depuis le point d'implantation dorsal interscapulaire vers la région thoracique latérale ou le coude. Le protocole recommandé dans tous les contextes de vérification est un balayage systématique « corps entier », non limité à la zone interscapulaire.</p>
+
+<div class="pullquote">
+  <strong>Protocole de lecture recommandé.</strong> Avant de déclarer une puce « non trouvée » ou « perdue », le balayage avec le lecteur doit couvrir : (1) Zone interscapulaire et ligne médiane dorsale ; (2) Région thoracique latérale gauche et droite ; (3) Région scapulaire et coude bilatéralement ; (4) Région cervicale ; (5) Flanc et région lombaire.
+  <cite>D'après les guides BSAVA et la pratique documentée</cite>
+</div>
+
+<h3>4.3 Événements indésirables documentés : fréquence et contexte</h3>
+<p>La littérature rapporte des cas d'événements indésirables locaux associés à l'implantation de puces. L'événement indésirable grave le plus discuté est le fibrosarcome ou liposarcome au site d'implantation. Vascellari et al. (2006) décrivent un cas individuel de liposarcome au site d'implantation d'une puce chez un chien (Journal of Veterinary Diagnostic Investigation). L'interprétation requiert un contexte méthodologique strict : la causalité directe entre la puce et le développement de néoplasie n'a pas été établie ; le mécanisme proposé est l'inflammation chronique de corps étranger comme cofacteur possible. L'incidence de ce type d'événement dans la population d'animaux pucés est <strong>extrêmement faible</strong> selon les estimations disponibles dans la littérature ; les limites des systèmes de déclaration volontaire ne permettent pas d'affirmations causales définitives. Le rapport risque/bénéfice dans le contexte de l'identification obligatoire pour le mouvement international est favorable à la puce.</p>
+
+<div class="caution-box">
+  <strong>Note méthodologique sur les événements indésirables</strong>
+  Les données d'incidence des événements indésirables de la puce proviennent de systèmes de déclaration volontaire et de rapports de cas individuels. Le dénominateur — le nombre total de puces implantées — est une estimation. La méthodologie de ces études ne permet pas d'affirmations causales définitives. La conclusion cliniquement opérante est que l'incidence observée est suffisamment faible pour ne pas constituer une contre-indication à la procédure dans aucun des scénarios d'utilisation évalués dans cet article.
+</div>
+
+<h2><span class="sec-label">Section 5</span> Implantation sous-cutanée : description clinique de la technique</h2>
+<p><em>Note préliminaire :</em> La description de la technique est basée sur la pratique décrite dans les textes de médecine vétérinaire standard et les guides WSAVA (2016) et sur la pratique clinique documentée par la BSAVA et l'AVMA. Il n'existe pas de protocole chirurgical d'implantation formel publié comme « gold standard » par un organisme réglementaire. L'objet de cette section est clinico-informatif, non prescriptif.</p>
+
+<h3>5.1 Séquence correcte : puce avant vaccination</h3>
+<p>Le point réglementairement le plus critique n'est pas la technique en soi mais sa place dans la séquence des actes médicaux. Les directives WSAVA sont sans équivoque : la puce doit être implantée et son numéro vérifié avant toute vaccination devant figurer dans la documentation officielle de voyage. Si la vaccination a été réalisée avant l'implantation de la puce, on ne peut prouver que le vaccin enregistré a été administré au même individu porteur de la puce. Le résultat pratique est l'invalidation du vaccin pour les besoins d'importation.</p>
+
+<h3>5.2 Technique d'implantation standard</h3>
+<p><strong>Site :</strong> région sous-cutanée dorsale, ligne médiane, entre les omoplates (zone interscapulaire). <strong>Profondeur :</strong> sous-cutanée, non intramusculaire. La procédure standard comprend : (1) Vérification du dispositif avant implantation avec le lecteur ; (2) Préparation du site (nettoyage antiseptique) ; (3) Chargement de l'applicateur ; (4) Implantation avec aiguille à 30–45°, injection du transpondeur ; (5) Vérification post-implantation immédiate avec le lecteur — étape non optionnelle ; (6) Enregistrement immédiat dans la base de données et dans tous les documents vétérinaires de l'animal.</p>
+
+<h3>5.3 Considérations pour les chats</h3>
+<p>Les chats ont une peau plus fine et plus mobile que les chiens, ce qui peut augmenter le risque d'implantation insuffisamment profonde. Le taux de migration est légèrement plus élevé chez les chats que chez les chiens. Pour les chats sédatés ou sous anesthésie générale pour une autre raison, la procédure peut être réalisée en profitant de l'acte anesthésique.</p>
+
+<h2><span class="sec-label">Section 6</span> Taxonomie des défaillances du système d'identification</h2>
+
+<h3>6.1 Erreur humaine</h3>
+<p>Représente la catégorie de défaillance la plus fréquente : erreur d'enregistrement (numéro transcrit ne correspond pas au lu) ; erreur de localisation (balayage corps entier non effectué) ; erreur de séquence temporelle (vaccination avant la puce) ; implantation sans enregistrement en base de données.</p>
+
+<h3>6.2 Défaillance de compatibilité lecteur</h3>
+<p>La coexistence de trois fréquences (125 kHz, 128 kHz, 134,2 kHz) crée un risque réel de non-détection lorsque le lecteur n'est pas universel. Pour les animaux avec puces pré-ISO qui voyageront à l'international, l'implantation d'une deuxième puce ISO est la solution la plus sûre. La double puce est acceptée par la plupart des réglementations internationales, à condition que la puce ISO soit celle figurant dans la documentation.</p>
+
+<h3>6.3 Défaut de fabrication</h3>
+<p>Le taux de défauts de fabrication des transpondeurs RFID certifiés est extrêmement faible. Les défauts pré-implantation sont détectables par vérification avant implantation. La défaillance post-implantation (la puce cesse de répondre) est extrêmement rare. Il n'existe pas de preuve qu'elle soit causée par des lectures répétées.</p>
+
+<h3>6.4 Défaillance base de données / enregistrement fragmenté</h3>
+<p>Le maillon le plus faible du système de traçabilité international est l'impossibilité d'accéder à l'enregistrement du propriétaire lorsque la puce est lue dans un pays différent de celui d'enregistrement. L'architecture est décentralisée : chaque pays ou région maintient sa propre base. EUROPETNET regroupe des bases dans 26 pays ; PETtrac/ANIS (Australie/NZ), AKC Reunite (États-Unis), AMICUS (Suisse) en sont des exemples. La recommandation de bonne pratique est d'enregistrer dans au moins une base de données internationale à large couverture, en plus du registre national.</p>
+
+<div class="caution-box">
+  <strong>Mythe technique : « La puce tombe en panne à cause des lectures répétées »</strong>
+  FAUX. Aucun fondement physique. Un transpondeur RFID passif n'a ni composants consommables, ni batterie, ni pièces mobiles. L'énergie provient exclusivement du champ électromagnétique du lecteur. Le nombre de fois qu'une puce peut être lue n'a pas de limite pratique définie par la physique du dispositif.
+</div>
+
+<h2><span class="sec-label">Section 7</span> Traçabilité sanitaire : le lien puce ↔ certificats</h2>
+
+<h3>7.1 La puce comme prérequis de la chaîne documentaire</h3>
+<p>La chaîne documentaire se construit sur le principe que tous les documents sanitaires doivent référencer le même numéro de puce, et que ce numéro doit correspondre à la puce lisible sur l'animal au contrôle frontalier. Les maillons, dans l'ordre chronologique logique : (1) Implantation de la puce + vérification + enregistrement ; (2) Vaccination antirabique valide — après la puce au Royaume-Uni, Australie et Nouvelle-Zélande ; (3) Test de titrage antirabique (RNATT) si requis ; (4) Période d'attente ; (5) Traitement antiparasitaire selon la destination ; (6) Certificat sanitaire / Certificat sanitaire officiel ; (7) Passeport européen ou document équivalent. La rupture de la séquence à l'un de ses nœuds invalide toute la chaîne.</p>
+
+<h3>7.2 Conséquences de l'incohérence documentaire à la frontière</h3>
+<div class="table-wrap">
+  <table>
+    <thead><tr><th>Juridiction</th><th>Conséquence</th><th>Remédiation</th></tr></thead>
+    <tbody>
+      <tr><td>Union européenne</td><td>Retard, quarantaine possible en installation frontalière</td><td>Variable selon la gravité</td></tr>
+      <tr><td>Royaume-Uni (GB)</td><td>Refus d'entrée ou quarantaine obligatoire (min. 4 mois)</td><td>Généralement impossible sans reprendre le protocole</td></tr>
+      <tr><td>Australie</td><td>Quarantaine obligatoire + retour possible</td><td>Quarantaine obligatoire même avec documents corrects</td></tr>
+      <tr><td>Nouvelle-Zélande</td><td>Quarantaine obligatoire + retour possible</td><td>Similaire à l'Australie</td></tr>
+      <tr><td>États-Unis</td><td>Variable selon l'État ; documentation CDC/APHIS</td><td>Relativement souple selon le pays d'origine</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h3>7.3 Intégration avec la base de données</h3>
+<p>Une puce correctement implantée mais non enregistrée dans aucune base de données est un identifiant sans information liée. Une puce enregistrée uniquement dans une base nationale à accès restreint ne peut pas être vérifiée par les autorités d'autres pays. Recommandation : vérifier le numéro enregistré dans la base (et pas seulement celui imprimé sur l'emballage) en effectuant une recherche test avant d'émettre tout document officiel.</p>
+
+<h2><span class="sec-label">Section 8</span> Cadre réglementaire comparé</h2>
+
+<div class="caution-box">
+  <strong>Avertissement de mise à jour réglementaire</strong>
+  Les réglementations d'importation d'animaux sont susceptibles de modification sans préavis. Les informations présentées ont été vérifiées auprès de sources primaires en février 2026. Avant d'engager tout processus d'exportation, il est obligatoire de vérifier les exigences en vigueur auprès de l'autorité sanitaire compétente du pays de destination.
+</div>
+
+<h3>8.1 Union européenne — Règlement (UE) n° 576/2013</h3>
+<p>L'annexe II exige que le dispositif soit conforme aux ISO 11784 et ISO 11785 (HDX ou FDX-B à 134,2 kHz). La puce doit être implantée avant ou simultanément à la vaccination antirabique à reconnaître. Exception tatouage : valable uniquement s'il a été réalisé avant le 3 juillet 2011 et est clairement lisible.</p>
+
+<h3>8.2 Royaume-Uni — Réglementation post-Brexit</h3>
+<p>Documentation requise : Animal Health Certificate (AHC), délivré par un vétérinaire officiel au plus 10 jours avant le voyage. Puce obligatoire pour les chiens depuis 2016 (Angleterre, Écosse, Pays de Galles). <strong>Puce pour les chats (Angleterre) :</strong> depuis le 10 juin 2024, obligatoire pour tous les chats domestiques selon The Microchipping of Cats and Dogs (England) Regulations 2023. Tout chat entrant au Royaume-Uni doit être pucé. GOV.UK exige strictement une puce ISO (134,2 kHz, 15 chiffres). Pour les puces pré-ISO (125 ou 128 kHz), le propriétaire doit porter son propre lecteur compatible.</p>
+
+<h3>8.3 Australie — DAFF</h3>
+<p>Le DAFF exige une puce à 15 chiffres compatible avec l'ISO 11784/11785. Les puces à 9 ou 10 chiffres ne sont pas valides pour la documentation d'importation officielle. La puce doit être implantée et vérifiée avant la vaccination antirabique. Quarantaine obligatoire dans les installations officielles (Melbourne) ; standard 10 jours.</p>
+
+<h3>8.4 Nouvelle-Zélande — MPI</h3>
+<p>Le MPI applique le standard CATDOG.GEN. La puce doit être implantée avant tout test de titrage antirabique et avant la vaccination qui comptera pour le protocole. ISO 11784/11785 obligatoire, 15 chiffres. Aucune exception. Quarantaine à l'arrivée ; le non-respect peut entraîner un retour au pays d'origine.</p>
+
+<h3>8.5 Suisse</h3>
+<p>Pour les chiens, la puce est obligatoire. La base nationale est AMICUS (IVI). AMICUS est partiellement connectée à EUROPETNET. Le passeport européen est reconnu pour les animaux entrant depuis l'UE.</p>
+
+<h3>8.6 Tableau comparatif</h3>
+<div class="table-wrap">
+  <table>
+    <thead><tr><th>Juridiction</th><th>Standard exigé</th><th>Observations</th></tr></thead>
+    <tbody>
+      <tr><td>Union européenne</td><td>ISO 11784/11785 (FDX-B/HDX, 134,2 kHz)</td><td>Annexe II Règ. 576/2013. Tatouage pré-2011 exceptionnel</td></tr>
+      <tr><td>Royaume-Uni</td><td>ISO 11784/11785</td><td>AHC requis. Chiens 2016, chats juin 2024</td></tr>
+      <tr><td>Australie (DAFF)</td><td>ISO 11784/11785, 15 chiffres</td><td>Puce avant vaccination. Quarantaine obligatoire</td></tr>
+      <tr><td>Nouvelle-Zélande (MPI)</td><td>ISO 11784/11785, 15 chiffres</td><td>Séquence puce→vaccin→RNATT non négociable</td></tr>
+      <tr><td>Suisse</td><td>ISO 11784/11785 + enregistrement AMICUS (chiens)</td><td>Vérifier l'accord bilatéral en vigueur</td></tr>
+      <tr><td>États-Unis</td><td>ISO recommandé ; pas toujours obligatoire</td><td>Varie selon l'espèce et le pays d'origine</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h2><span class="sec-label">Section 9</span> Statistiques de retour des animaux perdus avec puce</h2>
+<p><em>Note méthodologique :</em> Les statistiques disponibles proviennent principalement d'études dans des refuges nord-américains. Elles présentent des biais de sélection : la population admise en refuge n'est pas représentative de la population générale. Lord et al. (2009), JAVMA, sur 2 632 animaux : les chiens pucés ont eu un taux de retour environ 2,4 fois supérieur aux non pucés ; les chats pucés environ 21 fois supérieur. Cependant, 58 % des puces chez les chiens et 74 % chez les chats n'avaient pas d'informations de contact à jour dans les bases, ce qui a empêché le retour même lorsque la puce était lisible. Les données ne sont pas directement extrapolables aux contextes européen ou australien.</p>
+
+<h2><span class="sec-label">Section 10</span> Argumentation technique pour la puce chez les animaux sans voyage prévu</h2>
+<p>Argument de contingence du voyage : la décision de voyager peut intervenir après l'acquisition de l'animal ; si le voyage est planifié après la vaccination antirabique, le propriétaire peut se heurter à l'impossibilité d'accréditer la séquence correcte pour certaines destinations. Argument de traçabilité sanitaire interne : l'identification univoque facilite la continuité du dossier médical. Argument législatif : dans plusieurs juridictions (Royaume-Uni chiens depuis 2016, chats depuis 2024 ; diverses communautés espagnoles ; États australiens) la puce est obligatoire par la loi. Cet article ne prescrit pas la puce ; il décrit le système, sa logique et ses implications. La décision relève du propriétaire et du vétérinaire traitant.</p>
+
+<h2><span class="sec-label">Section 11</span> Limites de l'analyse</h2>
+<p>Biais de publication en biocompatibilité ; études de retour avec biais de sélection ; mise à jour réglementaire constante ; absence de protocole d'implantation publié comme gold standard par un organisme réglementaire international ; couverture et interopérabilité des bases de données dynamiques.</p>
+
+<h2><span class="sec-label">Section 12</span> Priorités de normalisation et de recherche</h2>
+<p>Unification des bases de données ; normalisation des lecteurs en frontière ; transition complète vers la norme ISO en Amérique du Nord ; études prospectives de biocompatibilité ; mise à jour des protocoles d'implantation publiés.</p>
+
+<!-- AUTO-VÉRIFICATION ÉDITORIALE -->
+<h2><span class="sec-label">Auto-vérification éditoriale</span> Vérification en 10 points</h2>
+<div class="audit-grid">
+  <div class="audit-item">
+    <div class="audit-check">&#10003;</div>
+    <span><strong>Champ déclaré.</strong> Espèce limitée au chien et au chat. Furets non inclus. Document informatif, ni prescription ni conseil juridique.</span>
+  </div>
+  <div class="audit-item">
+    <div class="audit-check">&#10003;</div>
+    <span><strong>La puce N'EST PAS un GPS.</strong> Encadré d'avertissement visible : la puce ne transmet pas la localisation, n'a pas de batterie, ne se détériore pas par lectures répétées.</span>
+  </div>
+  <div class="audit-item">
+    <div class="audit-check">&#10003;</div>
+    <span><strong>Mythe « lectures répétées » démonté.</strong> Traité avec rigueur technique (RFID passif, aucun fondement physique), ton clinique, sans moquerie.</span>
+  </div>
+  <div class="audit-item">
+    <div class="audit-check">&#10003;</div>
+    <span><strong>Néoplasie/sarcome avec langage conservateur.</strong> Incidence décrite comme extrêmement faible ; estimations ; limites du système de déclaration ; pas de chiffres inventés.</span>
+  </div>
+  <div class="audit-item">
+    <div class="audit-check">&#10003;</div>
+    <span><strong>Lord et al. qualifié méthodologiquement.</strong> Statistiques de retour présentées avec note sur les biais de sélection et l'extrapolabilité limitée.</span>
+  </div>
+  <div class="audit-item">
+    <div class="audit-check">&#10003;</div>
+    <span><strong>Vérification auprès de l'autorité compétente.</strong> Avertissements explicites : les exigences doivent être vérifiées auprès de l'autorité du pays de destination ; réglementations susceptibles de modification.</span>
+  </div>
+  <div class="audit-item">
+    <div class="audit-check">&#10003;</div>
+    <span><strong>Séquence puce avant vaccination.</strong> Exigences WSAVA et Royaume-Uni/Australie/NZ correctement décrites ; erreur irréversible indiquée.</span>
+  </div>
+  <div class="audit-item">
+    <div class="audit-check">&#10003;</div>
+    <span><strong>Perspective traçabilité médicale.</strong> Focus délibéré sur l'identification et la chaîne documentaire, pas seulement la récupération d'animaux perdus.</span>
+  </div>
+  <div class="audit-item">
+    <div class="audit-check">&#10003;</div>
+    <span><strong>Références et normes citées.</strong> ISO 11784/11785, Règlement UE 576/2013, UK Regulations, DAFF, MPI, WSAVA, AVMA, EUROPETNET, littérature médicale (Vascellari, Jansen, Lord).</span>
+  </div>
+  <div class="audit-item">
+    <div class="audit-check">&#10003;</div>
+    <span><strong>Autorité unique.</strong> Seule Jessica Ysabel Camacho Garcia, DMV, CMVP 12434 en en-tête et JSON-LD. Aucune mention d'outils ni d'assistants.</span>
+  </div>
+</div>
+
+<section class="references">
+  <h2>Références</h2>
+  <ol class="ref-list">
+    <li>ISO 11784:1996. Radio Frequency Identification of Animals — Code Structure. International Organization for Standardization.</li>
+    <li>ISO 11785:1996. Radio Frequency Identification of Animals — Technical Concept. International Organization for Standardization.</li>
+    <li>Union européenne. Règlement (UE) n° 576/2013 du Parlement européen et du Conseil du 12 juin 2013 relatif aux déplacements non commerciaux d'animaux de compagnie. Journal officiel de l'Union européenne.</li>
+    <li>United Kingdom Government. The Microchipping of Dogs (England) Regulations 2015. SI 2015/108.</li>
+    <li>United Kingdom Government. The Microchipping of Dogs (Scotland) Regulations 2016. SSI 2016/61.</li>
+    <li>United Kingdom Government. The Microchipping of Cats and Dogs (England) Regulations 2023. His Majesty's Stationery Office.</li>
+    <li>GOV.UK. Bringing your pet dog, cat or ferret to Great Britain. DEFRA. https://www.gov.uk/bring-pet-to-great-britain</li>
+    <li>Australian Government. DAFF. Travelling to Australia with a pet. https://www.agriculture.gov.au/biosecurity-trade/cats-dogs</li>
+    <li>New Zealand Government. MPI. Importing dogs and cats. https://www.mpi.govt.nz/importing/animals/importing-dogs-and-cats/</li>
+    <li>Confédération suisse. IVI. Base de données AMICUS. https://www.amicus.ch</li>
+    <li>World Small Animal Veterinary Association (WSAVA). Guidelines for the Vaccination of Dogs and Cats (2016). Journal of Small Animal Practice, 57(1), E1–E45.</li>
+    <li>American Veterinary Medical Association (AVMA). Microchipping of Animals — Policy Statement. https://www.avma.org/resources-tools/avma-policies/microchipping-animals</li>
+    <li>EUROPETNET. About Europetnet — Federated Database System. https://www.europetnet.com</li>
+    <li>Vascellari, M., Melchiotti, E., &amp; Mutinelli, F. (2006). Liposarcoma at the site of an implanted microchip in a dog. Journal of Veterinary Diagnostic Investigation, 18(5), 534–537. https://doi.org/10.1177/104063870601800516</li>
+    <li>Jansen, T., Brandt, C., &amp; Sinell, H. J. (1999). Long-term migration of microchips in dogs and cats — A retrospective study. Tierärztliche Praxis, 27(G), 332–336.</li>
+    <li>Lord, L. K., Wittum, T. E., Ferketich, A. K., Funk, J. A., &amp; Rajala-Schultz, P. J. (2009). Does this lost pet have an owner? Microchip analysis in 2,632 animals. Journal of the American Veterinary Medical Association, 235(2), 160–167.</li>
+  </ol>
+</section>
+
+<footer>
+  <p><strong>Zoovet Travel — Série technique médecine des voyages et réglementation vétérinaire internationale</strong></p>
+  <p>Article VI : Puce d'identification animale. Revue technique et réglementaire. Février 2026.</p>
+  <p>Ce document est de référence technique. Il ne constitue pas une prescription vétérinaire. Vérifier les exigences auprès de l'autorité compétente du pays de destination.</p>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://zoovet-travel.com/articles/zoovet_art6_microchip-FR.html#webpage",
+      "url": "https://zoovet-travel.com/articles/zoovet_art6_microchip-FR.html",
+      "name": "Puce d'identification animale | Zoovet Travel Série Technique VI",
+      "inLanguage": "fr",
+      "isPartOf": {"@id": "https://zoovet-travel.com/#website"}
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://zoovet-travel.com/articles/zoovet_art6_microchip-FR.html#article",
+      "headline": "Puce d'identification animale : fondement technologique, cadre réglementaire international et traçabilité sanitaire",
+      "inLanguage": "fr",
+      "datePublished": "2026-02-23",
+      "dateModified": "2026-02-23",
+      "author": {"@id": "https://zoovet-travel.com/articles/zoovet_art6_microchip-FR.html#author-jessica"},
+      "publisher": {"@id": "https://zoovet-travel.com/#organization"},
+      "image": "https://zoovet-travel.com/articles/images/microscopio-lab-articulo-cientifico.webp",
+      "keywords": ["puce RFID animale", "ISO 11784", "ISO 11785", "FDX-B", "traçabilité sanitaire", "passeport animal", "identification animale internationale", "Règlement UE 576/2013", "DAFF", "MPI"],
+      "about": [
+        {"@type": "Thing", "name": "Puce d'identification animale"},
+        {"@type": "Thing", "name": "ISO 11784/11785"},
+        {"@type": "Thing", "name": "Traçabilité sanitaire"}
+      ],
+      "mainEntityOfPage": {"@id": "https://zoovet-travel.com/articles/zoovet_art6_microchip-FR.html#webpage"}
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://zoovet-travel.com/articles/zoovet_art6_microchip-FR.html#breadcrumb",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://zoovet-travel.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Articles scientifiques", "item": "https://zoovet-travel.com/articles/"},
+        {"@type": "ListItem", "position": 3, "name": "Puce d'identification animale", "item": "https://zoovet-travel.com/articles/zoovet_art6_microchip-FR.html"}
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://zoovet-travel.com/#organization",
+      "name": "Zoovet Travel",
+      "url": "https://zoovet-travel.com/",
+      "logo": {"@type": "ImageObject", "url": "https://zoovet-travel.com/images/zoovet-logo.png"}
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://zoovet-travel.com/#website",
+      "url": "https://zoovet-travel.com/",
+      "name": "Zoovet Travel",
+      "publisher": {"@id": "https://zoovet-travel.com/#organization"}
+    },
+    {
+      "@type": "Person",
+      "@id": "https://zoovet-travel.com/articles/zoovet_art6_microchip-FR.html#author-jessica",
+      "name": "Jessica Ysabel Camacho Garcia",
+      "jobTitle": "Médecin vétérinaire",
+      "identifier": "CMVP 12434",
+      "affiliation": {"@id": "https://zoovet-travel.com/#organization"}
+    }
+  ]
+}
+</script>
+
+</body>
+</html>
