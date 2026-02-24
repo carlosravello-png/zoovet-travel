@@ -1,0 +1,27 @@
+V6 structure counts (H2, p, ul, CTA) — NO SUMMARY check
+articulo_alimentacion_antes_durante_vuelo: ES={'h2': 5, 'p': 19, 'ul': 0, 'cta': 1} EN={'h2': 5, 'p': 19, 'ul': 0, 'cta': 1} FR={'h2': 5, 'p': 19, 'ul': 0, 'cta': 1}
+streesmascotas: ES={'h2': 4, 'p': 11, 'ul': 0, 'cta': 0} EN={'h2': 4, 'p': 11, 'ul': 0, 'cta': 0} FR={'h2': 4, 'p': 11, 'ul': 0, 'cta': 0}
+veterimariosntrujillo: ES={'h2': 4, 'p': 11, 'ul': 0, 'cta': 0} EN={'h2': 4, 'p': 11, 'ul': 0, 'cta': 0} FR={'h2': 4, 'p': 11, 'ul': 0, 'cta': 0}
+mascotabodega: ES={'h2': 4, 'p': 11, 'ul': 0, 'cta': 0} EN={'h2': 4, 'p': 11, 'ul': 0, 'cta': 0} FR={'h2': 4, 'p': 11, 'ul': 0, 'cta': 0}
+dondetramitarentrujillo: ES={'h2': 4, 'p': 11, 'ul': 0, 'cta': 0} EN={'h2': 4, 'p': 11, 'ul': 0, 'cta': 0} FR={'h2': 4, 'p': 11, 'ul': 0, 'cta': 0}
+mascotasinpapeles: ES={'h2': 4, 'p': 11, 'ul': 0, 'cta': 0} EN={'h2': 4, 'p': 11, 'ul': 0, 'cta': 0} FR={'h2': 4, 'p': 11, 'ul': 0, 'cta': 0}
+viaja-chile-argentina: ES={'h2': 4, 'p': 10, 'ul': 0, 'cta': 0} EN={'h2': 4, 'p': 10, 'ul': 0, 'cta': 0} FR={'h2': 4, 'p': 10, 'ul': 0, 'cta': 0}
+viajar_mascotas_australia_proceso_mas_estricto_editorial: ES={'h2': 4, 'p': 15, 'ul': 0, 'cta': 0} EN={'h2': 4, 'p': 15, 'ul': 0, 'cta': 0} FR={'h2': 4, 'p': 15, 'ul': 0, 'cta': 0}
+llevar_mascota_japon_proceso_que_pocos_intentan: ES={'h2': 5, 'p': 18, 'ul': 0, 'cta': 0} EN={'h2': 5, 'p': 18, 'ul': 0, 'cta': 0} FR={'h2': 5, 'p': 18, 'ul': 0, 'cta': 0}
+articulo_rechazo_aduana_mascota: ES={'h2': 5, 'p': 17, 'ul': 0, 'cta': 1} EN={'h2': 5, 'p': 17, 'ul': 0, 'cta': 1} FR={'h2': 5, 'p': 17, 'ul': 0, 'cta': 1}
+articulo_cuanto_tiempo_antes_viaje_mascota: ES={'h2': 6, 'p': 19, 'ul': 0, 'cta': 1} EN={'h2': 6, 'p': 19, 'ul': 0, 'cta': 1} FR={'h2': 6, 'p': 19, 'ul': 0, 'cta': 1}
+articulo_certificado_zoosanitario_senasa_trujillo: ES={'h2': 5, 'p': 18, 'ul': 0, 'cta': 1} EN={'h2': 5, 'p': 18, 'ul': 0, 'cta': 1} FR={'h2': 5, 'p': 18, 'ul': 0, 'cta': 1}
+gatosbodegaavion: ES={'h2': 4, 'p': 11, 'ul': 0, 'cta': 0} EN={'h2': 4, 'p': 11, 'ul': 0, 'cta': 0} FR={'h2': 4, 'p': 11, 'ul': 0, 'cta': 0}
+transportindeal: ES={'h2': 4, 'p': 11, 'ul': 0, 'cta': 0} EN={'h2': 4, 'p': 11, 'ul': 0, 'cta': 0} FR={'h2': 4, 'p': 11, 'ul': 0, 'cta': 0}
+viajarconpug: ES={'h2': 5, 'p': 13, 'ul': 0, 'cta': 0} EN={'h2': 5, 'p': 13, 'ul': 0, 'cta': 0} FR={'h2': 5, 'p': 13, 'ul': 0, 'cta': 0}
+prepararatuperro: ES={'h2': 5, 'p': 13, 'ul': 0, 'cta': 0} EN={'h2': 5, 'p': 13, 'ul': 0, 'cta': 0} FR={'h2': 5, 'p': 13, 'ul': 0, 'cta': 0}
+llevar_gato_estados_unidos_desde_peru_guia_2026_editorial_v2: ES={'h2': 5, 'p': 18, 'ul': 0, 'cta': 0} EN={'h2': 5, 'p': 18, 'ul': 0, 'cta': 0} FR={'h2': 5, 'p': 18, 'ul': 0, 'cta': 0}
+viajeanimalgeriatrico: ES={'h2': 4, 'p': 11, 'ul': 0, 'cta': 0} EN={'h2': 4, 'p': 11, 'ul': 0, 'cta': 0} FR={'h2': 4, 'p': 11, 'ul': 0, 'cta': 0}
+requisitos_mascota_reino_unido_desde_latinoamerica_editorial_v2: ES={'h2': 5, 'p': 18, 'ul': 0, 'cta': 0} EN={'h2': 5, 'p': 18, 'ul': 0, 'cta': 0} FR={'h2': 5, 'p': 18, 'ul': 0, 'cta': 0}
+zoovet_canada_exportacion: ES={'h2': 4, 'p': 10, 'ul': 0, 'cta': 0} EN={'h2': 4, 'p': 10, 'ul': 0, 'cta': 0} FR={'h2': 4, 'p': 10, 'ul': 0, 'cta': 0}
+bulldog_frances: ES={'h2': 4, 'p': 11, 'ul': 0, 'cta': 0} EN={'h2': 4, 'p': 11, 'ul': 0, 'cta': 0} FR={'h2': 4, 'p': 11, 'ul': 0, 'cta': 0}
+como_viajar_perro_espana_desde_peru_requisitos_final_v2: ES={'h2': 5, 'p': 19, 'ul': 0, 'cta': 0} EN={'h2': 5, 'p': 19, 'ul': 0, 'cta': 0} FR={'h2': 5, 'p': 19, 'ul': 0, 'cta': 0}
+queeselmicrochipdondelotramitas: ES={'h2': 4, 'p': 11, 'ul': 0, 'cta': 0} EN={'h2': 4, 'p': 11, 'ul': 0, 'cta': 0} FR={'h2': 4, 'p': 11, 'ul': 0, 'cta': 0}
+rnattviajes: ES={'h2': 4, 'p': 11, 'ul': 0, 'cta': 0} EN={'h2': 4, 'p': 11, 'ul': 0, 'cta': 0} FR={'h2': 4, 'p': 11, 'ul': 0, 'cta': 0}
+articulo_golden_labrador_cabina_bodega: ES={'h2': 5, 'p': 19, 'ul': 0, 'cta': 1} EN={'h2': 5, 'p': 19, 'ul': 0, 'cta': 1} FR={'h2': 5, 'p': 19, 'ul': 0, 'cta': 1}
+articulo_vacuna_antirrabica_para_viajar: ES={'h2': 5, 'p': 17, 'ul': 0, 'cta': 1} EN={'h2': 5, 'p': 17, 'ul': 0, 'cta': 1} FR={'h2': 5, 'p': 17, 'ul': 0, 'cta': 1}
