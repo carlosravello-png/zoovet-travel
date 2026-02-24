@@ -125,11 +125,11 @@ def build_index(lang):
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="{'Artículos de interés de Zoovet Travel: mascotas, viajes, salud animal y exportación internacional.' if lang == 'es' else 'Articles of interest from Zoovet Travel: pets, travel, animal health and international export.' if lang == 'en' else "Articles d'intérêt Zoovet Travel : animaux de compagnie, voyages, santé animale et exportation internationale."}">
   <title>{h1_text} | Zoovet Travel</title>
-  <link rel="canonical" href="https://zoovet-travel.com/articulos-interes/{'index-en.html' if lang == 'en' else 'index-fr.html' if lang == 'fr' else ''}">
-  <link rel="alternate" hreflang="es" href="https://zoovet-travel.com/articulos-interes/">
-  <link rel="alternate" hreflang="en" href="https://zoovet-travel.com/articulos-interes/index-en.html">
-  <link rel="alternate" hreflang="fr" href="https://zoovet-travel.com/articulos-interes/index-fr.html">
-  <link rel="alternate" hreflang="x-default" href="https://zoovet-travel.com/articulos-interes/">
+  <link rel="canonical" href="https://zoovettravel.com/articulos-interes/{'index-en.html' if lang == 'en' else 'index-fr.html' if lang == 'fr' else ''}">
+  <link rel="alternate" hreflang="es" href="https://zoovettravel.com/articulos-interes/">
+  <link rel="alternate" hreflang="en" href="https://zoovettravel.com/articulos-interes/index-en.html">
+  <link rel="alternate" hreflang="fr" href="https://zoovettravel.com/articulos-interes/index-fr.html">
+  <link rel="alternate" hreflang="x-default" href="https://zoovettravel.com/articulos-interes/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">

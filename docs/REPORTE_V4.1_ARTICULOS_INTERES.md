@@ -1,5 +1,9 @@
 # REPORTE PATCH V4.1 — Artículos de Interés (78 archivos)
 
+**Ubicación:** Este documento se conserva en `docs/` junto con las auditorías técnicas (AUDITORIA_TECNICA_1 a 5). Describe el historial de cambios en la sección articulos-interes (enlaces, estética, traducción V5/V6).
+
+---
+
 ## Conteo final
 
 | Idioma | Cantidad | Observación |

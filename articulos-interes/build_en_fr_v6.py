@@ -112,7 +112,7 @@ STYLE_BLOCK = """  <style>
     a:hover { text-decoration: underline; }
   </style>"""
 
-BASE_URL = "https://zoovet-travel.com/articulos-interes/"
+BASE_URL = "https://zoovettravel.com/articulos-interes/"
 
 # REGLA 9 — Enforced veterinary terminology (post-translation)
 TERMINOLOGY_EN = [
@@ -447,26 +447,26 @@ def build_json_ld(slug, short_title, canonical, lang):
         breadcrumb_name += "…"
     if lang == "en":
         bc_list = [
-            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://zoovet-travel.com/"},
-            {"@type": "ListItem", "position": 2, "name": "Articles of Interest", "item": "https://zoovet-travel.com/articulos-interes/index-en.html"},
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://zoovettravel.com/"},
+            {"@type": "ListItem", "position": 2, "name": "Articles of Interest", "item": "https://zoovettravel.com/articulos-interes/index-en.html"},
             {"@type": "ListItem", "position": 3, "name": breadcrumb_name, "item": canonical},
         ]
         author_job = "Veterinarian"
     else:
         bc_list = [
-            {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://zoovet-travel.com/"},
-            {"@type": "ListItem", "position": 2, "name": "Articles d'intérêt", "item": "https://zoovet-travel.com/articulos-interes/index-fr.html"},
+            {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://zoovettravel.com/"},
+            {"@type": "ListItem", "position": 2, "name": "Articles d'intérêt", "item": "https://zoovettravel.com/articulos-interes/index-fr.html"},
             {"@type": "ListItem", "position": 3, "name": breadcrumb_name, "item": canonical},
         ]
         author_job = "Médecin vétérinaire"
     headline_clean = short_title.replace(" | Zoovet Travel", "")[:200]
     graph = [
-        {"@type": "WebPage", "@id": canonical + "#webpage", "url": canonical, "name": short_title, "inLanguage": lang, "isPartOf": {"@id": "https://zoovet-travel.com/#website"}},
-        {"@type": "Article", "@id": canonical + "#article", "headline": headline_clean, "inLanguage": lang, "datePublished": "2026-02-24", "dateModified": "2026-02-24", "author": {"@id": canonical + "#author-jessica"}, "publisher": {"@id": "https://zoovet-travel.com/#organization"}, "mainEntityOfPage": {"@id": canonical + "#webpage"}},
+        {"@type": "WebPage", "@id": canonical + "#webpage", "url": canonical, "name": short_title, "inLanguage": lang, "isPartOf": {"@id": "https://zoovettravel.com/#website"}},
+        {"@type": "Article", "@id": canonical + "#article", "headline": headline_clean, "inLanguage": lang, "datePublished": "2026-02-24", "dateModified": "2026-02-24", "author": {"@id": canonical + "#author-jessica"}, "publisher": {"@id": "https://zoovettravel.com/#organization"}, "mainEntityOfPage": {"@id": canonical + "#webpage"}},
         {"@type": "BreadcrumbList", "@id": canonical + "#breadcrumb", "itemListElement": bc_list},
-        {"@type": "Organization", "@id": "https://zoovet-travel.com/#organization", "name": "Zoovet Travel", "url": "https://zoovet-travel.com/", "logo": {"@type": "ImageObject", "url": "https://zoovet-travel.com/images/zoovet-logo.png"}},
-        {"@type": "WebSite", "@id": "https://zoovet-travel.com/#website", "url": "https://zoovet-travel.com/", "name": "Zoovet Travel", "publisher": {"@id": "https://zoovet-travel.com/#organization"}},
-        {"@type": "Person", "@id": canonical + "#author-jessica", "name": "Jessica Ysabel Camacho Garcia", "jobTitle": author_job, "identifier": "CMVP 12434", "affiliation": {"@id": "https://zoovet-travel.com/#organization"}},
+        {"@type": "Organization", "@id": "https://zoovettravel.com/#organization", "name": "Zoovet Travel", "url": "https://zoovettravel.com/", "logo": {"@type": "ImageObject", "url": "https://zoovettravel.com/images/zoovet-logo.png"}},
+        {"@type": "WebSite", "@id": "https://zoovettravel.com/#website", "url": "https://zoovettravel.com/", "name": "Zoovet Travel", "publisher": {"@id": "https://zoovettravel.com/#organization"}},
+        {"@type": "Person", "@id": canonical + "#author-jessica", "name": "Jessica Ysabel Camacho Garcia", "jobTitle": author_job, "identifier": "CMVP 12434", "affiliation": {"@id": "https://zoovettravel.com/#organization"}},
     ]
     return json.dumps({"@context": "https://schema.org", "@graph": graph}, ensure_ascii=False)
 

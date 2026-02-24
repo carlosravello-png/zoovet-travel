@@ -12,22 +12,22 @@
     }
   },
   "urls": {
-    "base": "https://zoovet-travel.com/zoopedia",
+    "base": "https://zoovettravel.com/zoopedia",
     "paths": {
       "es": "/eeuu.html",
       "en": "/eeuu-en.html",
       "fr": "/eeuu-fr.html"
     },
     "canonical": {
-      "es": "https://zoovet-travel.com/zoopedia/eeuu.html",
-      "en": "https://zoovet-travel.com/zoopedia/eeuu-en.html",
-      "fr": "https://zoovet-travel.com/zoopedia/eeuu-fr.html"
+      "es": "https://zoovettravel.com/zoopedia/eeuu.html",
+      "en": "https://zoovettravel.com/zoopedia/eeuu-en.html",
+      "fr": "https://zoovettravel.com/zoopedia/eeuu-fr.html"
     },
     "hreflang": [
-      { "lang": "es", "url": "https://zoovet-travel.com/zoopedia/eeuu.html" },
-      { "lang": "en", "url": "https://zoovet-travel.com/zoopedia/eeuu-en.html" },
-      { "lang": "fr", "url": "https://zoovet-travel.com/zoopedia/eeuu-fr.html" },
-      { "lang": "x-default", "url": "https://zoovet-travel.com/zoopedia/eeuu.html" }
+      { "lang": "es", "url": "https://zoovettravel.com/zoopedia/eeuu.html" },
+      { "lang": "en", "url": "https://zoovettravel.com/zoopedia/eeuu-en.html" },
+      { "lang": "fr", "url": "https://zoovettravel.com/zoopedia/eeuu-fr.html" },
+      { "lang": "x-default", "url": "https://zoovettravel.com/zoopedia/eeuu.html" }
     ]
   },
   "seo": {
@@ -129,7 +129,7 @@
       "publisher": {
         "@type": "Organization",
         "name": "Zoovet Travel",
-        "url": "https://zoovet-travel.com"
+        "url": "https://zoovettravel.com"
       }
     },
     "faq": [
@@ -194,7 +194,7 @@
     { "name": "WOAH", "role": { "es": "Estándares internacionales de rabia, laboratorios acreditados", "en": "International rabies standards, accredited laboratories", "fr": "Normes internationales rage, laboratoires accrédités" }, "url": "https://www.woah.org/en/disease/rabies/" }
   ],
   "ogImage": {
-    "url": "https://zoovet-travel.com/images/zoovet-travel-hero.png",
+    "url": "https://zoovettravel.com/images/zoovet-travel-hero.png",
     "alt": { "es": "Zoovet Travel — Importar perro a EE.UU. desde Perú", "en": "Zoovet Travel — Dog import USA from Peru", "fr": "Zoovet Travel — Importer chien aux États-Unis depuis Pérou" }
   }
 }

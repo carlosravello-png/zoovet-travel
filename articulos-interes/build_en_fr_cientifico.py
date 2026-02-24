@@ -109,7 +109,7 @@ STYLE_BLOCK = """  <style>
     a:hover { text-decoration: underline; }
   </style>"""
 
-BASE_URL = "https://zoovet-travel.com/articulos-interes/"
+BASE_URL = "https://zoovettravel.com/articulos-interes/"
 
 
 def target_article_name(es_name, lang):
@@ -199,7 +199,7 @@ def build_lang_html(basename, title, desc, h1_content, main_content, lang):
         hero_tag = "Article of interest — travel medicine and international export"
         scope_box = SCOPE_BOX_EN
         footer = FOOTER_EN
-        bc_json = [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://zoovet-travel.com/"}, {"@type": "ListItem", "position": 2, "name": "Articles of Interest", "item": "https://zoovet-travel.com/articulos-interes/index-en.html"}, {"@type": "ListItem", "position": 3, "name": breadcrumb_name, "item": url_en}]
+        bc_json = [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://zoovettravel.com/"}, {"@type": "ListItem", "position": 2, "name": "Articles of Interest", "item": "https://zoovettravel.com/articulos-interes/index-en.html"}, {"@type": "ListItem", "position": 3, "name": breadcrumb_name, "item": url_en}]
     else:
         lang_attr = "fr"
         canonical = url_fr
@@ -208,17 +208,17 @@ def build_lang_html(basename, title, desc, h1_content, main_content, lang):
         hero_tag = "Article d'intérêt — médecine du voyage et exportation internationale"
         scope_box = SCOPE_BOX_FR
         footer = FOOTER_FR
-        bc_json = [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://zoovet-travel.com/"}, {"@type": "ListItem", "position": 2, "name": "Articles d'intérêt", "item": "https://zoovet-travel.com/articulos-interes/index-fr.html"}, {"@type": "ListItem", "position": 3, "name": breadcrumb_name, "item": url_fr}]
+        bc_json = [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://zoovettravel.com/"}, {"@type": "ListItem", "position": 2, "name": "Articles d'intérêt", "item": "https://zoovettravel.com/articulos-interes/index-fr.html"}, {"@type": "ListItem", "position": 3, "name": breadcrumb_name, "item": url_fr}]
 
     main_content = fix_links_for_lang(main_content, lang)
     # Sec-label: mantener "Sección" (cuerpo en ES)
     graph = [
-        {"@type": "WebPage", "@id": canonical + "#webpage", "url": canonical, "name": short_title + " | Zoovet Travel", "inLanguage": lang_attr, "isPartOf": {"@id": "https://zoovet-travel.com/#website"}},
-        {"@type": "Article", "@id": canonical + "#article", "headline": title[:200], "inLanguage": lang_attr, "datePublished": "2026-02-24", "dateModified": "2026-02-24", "author": {"@id": canonical + "#author-jessica"}, "publisher": {"@id": "https://zoovet-travel.com/#organization"}, "mainEntityOfPage": {"@id": canonical + "#webpage"}},
+        {"@type": "WebPage", "@id": canonical + "#webpage", "url": canonical, "name": short_title + " | Zoovet Travel", "inLanguage": lang_attr, "isPartOf": {"@id": "https://zoovettravel.com/#website"}},
+        {"@type": "Article", "@id": canonical + "#article", "headline": title[:200], "inLanguage": lang_attr, "datePublished": "2026-02-24", "dateModified": "2026-02-24", "author": {"@id": canonical + "#author-jessica"}, "publisher": {"@id": "https://zoovettravel.com/#organization"}, "mainEntityOfPage": {"@id": canonical + "#webpage"}},
         {"@type": "BreadcrumbList", "@id": canonical + "#breadcrumb", "itemListElement": bc_json},
-        {"@type": "Organization", "@id": "https://zoovet-travel.com/#organization", "name": "Zoovet Travel", "url": "https://zoovet-travel.com/", "logo": {"@type": "ImageObject", "url": "https://zoovet-travel.com/images/zoovet-logo.png"}},
-        {"@type": "WebSite", "@id": "https://zoovet-travel.com/#website", "url": "https://zoovet-travel.com/", "name": "Zoovet Travel", "publisher": {"@id": "https://zoovet-travel.com/#organization"}},
-        {"@type": "Person", "@id": canonical + "#author-jessica", "name": "Jessica Ysabel Camacho Garcia", "jobTitle": "Médico Veterinaria", "identifier": "CMVP 12434", "affiliation": {"@id": "https://zoovet-travel.com/#organization"}}
+        {"@type": "Organization", "@id": "https://zoovettravel.com/#organization", "name": "Zoovet Travel", "url": "https://zoovettravel.com/", "logo": {"@type": "ImageObject", "url": "https://zoovettravel.com/images/zoovet-logo.png"}},
+        {"@type": "WebSite", "@id": "https://zoovettravel.com/#website", "url": "https://zoovettravel.com/", "name": "Zoovet Travel", "publisher": {"@id": "https://zoovettravel.com/#organization"}},
+        {"@type": "Person", "@id": canonical + "#author-jessica", "name": "Jessica Ysabel Camacho Garcia", "jobTitle": "Médico Veterinaria", "identifier": "CMVP 12434", "affiliation": {"@id": "https://zoovettravel.com/#organization"}}
     ]
     json_ld_str = json.dumps({"@context": "https://schema.org", "@graph": graph}, ensure_ascii=False)
 
