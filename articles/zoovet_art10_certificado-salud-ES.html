@@ -78,6 +78,13 @@
     ul { margin-bottom: 1.3rem; padding-left: 1.5rem; }
     li { margin-bottom: 0.5rem; }
     sub { font-size: 0.75em; }
+    .series-context-note { font-size: 0.9rem; color: var(--muted); line-height: 1.6; margin: 32px 0 24px; padding: 14px 20px; background: #f8fafc; border-left: 4px solid var(--teal); }
+    .series-nav { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; margin: 28px 0 36px; padding: 20px 24px; background: var(--teal-bg); border: 1px solid var(--rule); border-radius: 4px; font-family: 'DM Sans', sans-serif; font-size: 0.88rem; }
+    .series-nav .nav-prev, .series-nav .nav-next { flex: 1; min-width: 0; }
+    .series-nav .nav-label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin-bottom: 6px; }
+    .series-nav a { color: var(--mid); text-decoration: none; font-weight: 600; }
+    .series-nav a:hover { text-decoration: underline; }
+    .series-nav .nav-next { text-align: right; }
   </style>
 </head>
 <body>
@@ -137,7 +144,7 @@
 <h3>1.2 Certificado vs. garantía: una distinción que no debe perderse</h3>
 <p>La palabra «certificado» induce frecuentemente una interpretación errónea: que el documento certifica, en el sentido de garantizar, que el animal está libre de enfermedad. Esta interpretación no es técnicamente correcta y, cuando guía las decisiones de los propietarios o de los operadores de transporte, genera expectativas que el instrumento no puede satisfacer.</p>
 <p>Lo que el certificado de salud acredita es que un veterinario habilitado examinó al animal en una fecha específica y no encontró, en ese examen, hallazgos clínicos que contraindiquen el transporte bajo las condiciones descritas. Eso es funcionalmente distinto de garantizar que el animal está sano en sentido absoluto, que no es portador de ningún agente infeccioso, o que no desarrollará enfermedad durante o después del viaje.</p>
-<p>La diferencia no es semántica. Un animal puede superar un examen clínico con resultado favorable y estar en el período de incubación de una enfermedad que aún no produce signos detectables. Un animal puede tener una condición subclínica que no sea relevante para el transporte pero que aparezca después del viaje. El sistema de control sanitario internacional conoce estas limitaciones y las gestiona con otros instrumentos —vacunación, pruebas serológicas, cuarentena— precisamente porque el certificado de salud solo puede hacer lo que un examen clínico puede hacer.</p>
+<p>La diferencia no es semántica. Un animal puede superar un examen clínico con resultado favorable y estar en el período de incubación de una enfermedad que aún no produce signos detectables. Un animal puede tener una condición subclínica que no sea relevante para el transporte pero que aparezca después del viaje. El sistema de control sanitario internacional conoce estas limitaciones y las gestiona con otros instrumentos —vacunación, pruebas serológicas, <a href="zoovet_art11_cuarentena-ES.html" title="Cuarentena en la Importación Internacional de Perros y Gatos: Fundamento Epidemiológico, Modelos Regulatorios y Puntos Críticos de Falla">cuarentena</a>— precisamente porque el certificado de salud solo puede hacer lo que un examen clínico puede hacer.</p>
 
 <h3>1.3 El veterinario emisor: declaración técnica bajo responsabilidad profesional</h3>
 <p>La firma del veterinario en un certificado de salud no es una validación formal de un formulario completado. Es una declaración técnica bajo responsabilidad profesional que afirma que el examen fue realizado, que los hallazgos registrados corresponden a lo observado, y que el criterio clínico del profesional sustenta las afirmaciones contenidas en el documento.</p>
@@ -150,7 +157,7 @@
 <p>El certificado de salud es uno de los instrumentos de ese sistema de control. Su función no es primariamente proteger al animal que lo porta —aunque puede contribuir a ello— sino proteger las poblaciones animales y humanas del territorio receptor. Esta perspectiva de salud pública veterinaria explica por qué los Estados exigen documentación incluso para animales procedentes de países con alta prevalencia de vacunación y baja incidencia de enfermedades relevantes: el riesgo no es solo el animal individual, sino la cadena de transmisión que podría iniciarse si un portador asintomático entra en contacto con una población receptora naive.</p>
 
 <h3>2.2 Riesgo individual vs. riesgo poblacional</h3>
-<p>La distinción entre riesgo individual y riesgo poblacional, ya introducida en el <a href="zoovet_art9_certificados-vacunacion-ES.html">Artículo 9</a> de esta serie en el contexto de la vacunación, es igualmente central para entender el certificado de salud. Un animal concreto puede tener un riesgo individual extremadamente bajo de portar o transmitir cualquier patógeno relevante. Pero el sistema de control sanitario no evalúa animales individuales: evalúa flujos de animales y gestiona probabilidades colectivas.</p>
+<p>La distinción entre riesgo individual y riesgo poblacional, ya introducida en el <a href="zoovet_art9_certificados-vacunacion-ES.html" title="Certificados de vacunación en perros y gatos: fundamento inmunológico, validez sanitaria y marco regulatorio internacional">Artículo 9</a> de esta serie en el contexto de la vacunación, es igualmente central para entender el certificado de salud. Un animal concreto puede tener un riesgo individual extremadamente bajo de portar o transmitir cualquier patógeno relevante. Pero el sistema de control sanitario no evalúa animales individuales: evalúa flujos de animales y gestiona probabilidades colectivas.</p>
 <p>Si un millón de animales cruzan una frontera por año y el sistema exige certificado de salud, el objetivo no es detectar los pocos portadores entre el millón —esa capacidad diagnóstica está por encima de lo que un examen clínico puede ofrecer— sino crear un mecanismo de trazabilidad que permita, cuando ocurre un evento sanitario, reconstruir los movimientos implicados, identificar el origen del problema y contener su extensión.</p>
 <p>Esta función de trazabilidad retroactiva es, en muchos casos, más importante que la función de cribado prospectivo del certificado. Un certificado que no puede ser rastreado hasta el animal concreto que lo porta, hasta el veterinario que lo emitió, y hasta el momento exacto del examen, ha perdido su utilidad principal como instrumento de control sanitario poblacional.</p>
 
@@ -176,7 +183,7 @@
 <h3>3.3 Sistemas relevantes para el transporte</h3>
 <p>Los marcos regulatorios y la práctica clínica orientada a certificación suelen contemplar la evaluación de los sistemas con mayor relevancia para la tolerancia al transporte aéreo:</p>
 <ul>
-  <li><strong>Sistema respiratorio (observacional):</strong> frecuencia y patrón respiratorio en reposo, presencia de disnea, esfuerzo respiratorio aumentado o secreciones evidentes. En razas braquicéfalas, este componente adquiere particular relevancia dado el perfil de riesgo descrito en el <a href="zoovet_art8_hipobaria-ES.html">Artículo 8</a> de esta serie.</li>
+  <li><strong>Sistema respiratorio (observacional):</strong> frecuencia y patrón respiratorio en reposo, presencia de disnea, esfuerzo respiratorio aumentado o secreciones evidentes. En razas braquicéfalas, este componente adquiere particular relevancia dado el perfil de riesgo descrito en el <a href="zoovet_art8_hipobaria-ES.html" title="Fisiología hipobárica en el transporte aéreo de perros y gatos: presurización, oxígeno y respuesta fisiológica en vuelo comercial">Artículo 8</a> de esta serie.</li>
   <li><strong>Sistema cardiovascular (básico):</strong> frecuencia cardíaca y calidad del pulso en el contexto del examen. Hallazgos que sugieran descompensación cardiovascular relevante para el transporte.</li>
   <li><strong>Estado neurológico aparente:</strong> nivel de conciencia, respuesta a estímulos, capacidad de deambulación. Signos neurológicos activos que comprometan la capacidad del animal de tolerar el confinamiento o que indiquen patología central activa.</li>
   <li><strong>Tegumento y ectoparásitos visibles:</strong> algunos destinos exigen la declaración de ausencia de ectoparásitos visibles como parte del certificado de salud. La evaluación del tegumento también puede revelar signos dermatológicos compatibles con condiciones zoonóticas relevantes para el destino.</li>
@@ -207,7 +214,7 @@
 <p>Si hay un patrón común en los problemas documentales que generan retrasos, rechazos o cuarentenas no planificadas en el movimiento internacional de animales de compañía, es la inconsistencia interna del expediente: documentos que individualmente son correctos pero que no son coherentes entre sí, o que no corresponden al animal que se presenta en frontera. La trazabilidad —la capacidad de vincular inequívocamente al animal individual con toda su cadena documental— es el principio que el sistema de control verifica de forma sistemática.</p>
 
 <h3>5.1 El microchip como hilo conductor del expediente</h3>
-<p>El número de microchip ISO de 15 dígitos es el identificador que debe aparecer de forma exacta e idéntica en cada documento del expediente sanitario: el certificado de salud, el certificado de vacunación, el resultado del RNATT cuando aplique, el pasaporte europeo o el health certificate oficial, y cualquier documento adicional exigido por el destino o el operador.</p>
+<p>El número de <a href="zoovet_art6_microchip-ES.html" title="Microchip de identificación animal: fundamento tecnológico, marco regulatorio internacional y trazabilidad sanitaria | Zoovet Travel Serie Técnica VI">microchip</a> ISO de 15 dígitos es el identificador que debe aparecer de forma exacta e idéntica en cada documento del expediente sanitario: el certificado de salud, el <a href="zoovet_art9_certificados-vacunacion-ES.html" title="Certificados de vacunación en perros y gatos: fundamento inmunológico, validez sanitaria y marco regulatorio internacional | Zoovet Travel Serie Técnica IX">certificado de vacunación</a>, el resultado del RNATT cuando aplique, el pasaporte europeo o el health certificate oficial, y cualquier documento adicional exigido por el destino o el operador.</p>
 <p>Esta redundancia no es innecesaria: es el mecanismo que permite la verificación cruzada. Si el número de microchip varía entre documentos —aunque sea en un solo dígito— la coherencia del expediente se rompe. La autoridad de control en frontera no puede asumir que la discrepancia es un error tipográfico: debe asumir que los documentos podrían corresponder a animales diferentes. Las consecuencias documentales de esa ambigüedad son, en la mayoría de los sistemas, la detención del movimiento hasta que se esclarezca la inconsistencia.</p>
 
 <h3>5.2 Errores técnicos frecuentes que invalidan el certificado</h3>
@@ -327,6 +334,15 @@
     <li>World Organisation for Animal Health (WOAH/OIE). Terrestrial Animal Health Code — Chapter on Certification. https://www.woah.org/en/what-we-do/standards/codes-and-manuals/</li>
   </ol>
 </section>
+
+<p class="series-context-note">
+Nota de navegación: esta Serie Técnica está interconectada. Los enlaces internos apuntan a desarrollos complementarios (no a requisitos por país).
+</p>
+
+<nav class="series-nav" aria-label="Navegación de la serie">
+  <div class="nav-prev"><span class="nav-label">← Anterior</span><br><a href="zoovet_art9_certificados-vacunacion-ES.html" title="Certificados de vacunación en perros y gatos: fundamento inmunológico, validez sanitaria y marco regulatorio internacional">Certificados de vacunación</a></div>
+  <div class="nav-next"><span class="nav-label">Siguiente →</span><br><a href="zoovet_art11_cuarentena-ES.html" title="Cuarentena en la Importación Internacional de Perros y Gatos: Fundamento Epidemiológico, Modelos Regulatorios y Puntos Críticos de Falla">Cuarentena</a></div>
+</nav>
 
 <footer>
   <p><strong>Zoovet Travel — Serie Técnica de Medicina de Viaje y Regulación Veterinaria Internacional</strong></p>

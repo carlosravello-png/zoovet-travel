@@ -527,6 +527,13 @@
     .series-tag { display: inline-block; margin-top: 12px; background: var(--deep); color: #fff; font-family: monospace; font-size: 0.8rem; padding: 4px 14px; border-radius: 3px; letter-spacing: .04em; }
     .font-mono { font-family: ui-monospace, monospace; }
 
+    .series-context-note { font-size: 0.9rem; color: var(--muted); line-height: 1.6; margin: 32px 0 24px; padding: 14px 20px; background: #f8fafc; border-left: 4px solid var(--green); }
+    .series-nav { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; margin: 28px 0 36px; padding: 20px 24px; background: var(--green-bg); border: 1px solid var(--rule); border-radius: 4px; font-family: 'DM Sans', sans-serif; font-size: 0.88rem; }
+    .series-nav .nav-prev, .series-nav .nav-next { flex: 1; min-width: 0; }
+    .series-nav .nav-label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin-bottom: 6px; }
+    .series-nav a { color: var(--mid); text-decoration: none; font-weight: 600; }
+    .series-nav a:hover { text-decoration: underline; }
+    .series-nav .nav-next { text-align: right; }
     /* ── FOOTER ── */
     footer {
       margin-top: 60px;
@@ -801,7 +808,7 @@
 
 <h3>3.7 Canadá</h3>
 
-<p>Los requisitos de importación de perros a Canadá están regulados por la Canadian Food Inspection Agency (CFIA). La CFIA <strong>no exige tratamiento antiparasitario certificado contra <em>Echinococcus multilocularis</em> ni tenias</strong> como condición de entrada para perros domésticos. El requisito principal de entrada se centra en la prevención de la rabia: el perro debe ir acompañado de un certificado de vacunación antirrábica válido, redactado en inglés o francés, con indicación de raza, color, peso, fecha de vacunación, nombre comercial de la vacuna y duración de la inmunidad. La Canada Border Services Agency (CBSA) realiza inspección visual; si el animal presenta signos evidentes de parasitosis externa (pulgas, garrapatas), puede ser remitido a inspección secundaria CFIA donde se aplicarían los tratamientos necesarios a costo del propietario, pero este procedimiento es correctivo, no un requisito preventivo de entrada (CFIA, inspection.canada.ca). Se recomienda la verificación directa en inspection.canada.ca antes de cada movimiento.</p>
+<p>Los requisitos de importación de perros a Canadá están regulados por la Canadian Food Inspection Agency (CFIA). La CFIA <strong>no exige tratamiento antiparasitario certificado contra <em>Echinococcus multilocularis</em> ni tenias</strong> como condición de entrada para perros domésticos. El requisito principal de entrada se centra en la prevención de la rabia: el perro debe ir acompañado de un <a href="zoovet_art9_certificados-vacunacion-ES.html" title="Certificados de vacunación en perros y gatos: fundamento inmunológico, validez sanitaria y marco regulatorio internacional | Zoovet Travel Serie Técnica IX">certificado de vacunación antirrábica válido</a>, redactado en inglés o francés, con indicación de raza, color, peso, fecha de vacunación, nombre comercial de la vacuna y duración de la inmunidad. La Canada Border Services Agency (CBSA) realiza inspección visual; si el animal presenta signos evidentes de parasitosis externa (pulgas, garrapatas), puede ser remitido a inspección secundaria CFIA donde se aplicarían los tratamientos necesarios a costo del propietario, pero este procedimiento es correctivo, no un requisito preventivo de entrada (CFIA, inspection.canada.ca). Se recomienda la verificación directa en inspection.canada.ca antes de cada movimiento.</p>
 
 <!-- TABLA COMPARATIVA -->
 <h2><span class="sec-label">Tabla resumen</span>Requisitos antiparasitarios comparados por destino</h2>
@@ -943,7 +950,7 @@
 
 <p>Las diferencias documentales más relevantes entre el sistema UE y el sistema UK post-Brexit son operativas, no de contenido: ambos exigen la misma información (producto, fecha, hora exacta, firma del veterinario), pero el soporte difiere (pasaporte UE vs. AHC). Un perro que viaja regularmente entre la UE y el Reino Unido puede necesitar ambos tipos de documentos para distintas etapas del viaje.</p>
 
-<p>En los sistemas australiano y neozelandés, los requisitos documentales son significativamente más extensos y deben coordinarse con los permisos de importación previos al viaje. La certificación del tratamiento antiparasitario es solo uno de los elementos del certificado sanitario oficial, que debe ser emitido y endosado por un veterinario gubernamental del país exportador.</p>
+<p>En los sistemas australiano y neozelandés, los requisitos documentales son significativamente más extensos y deben coordinarse con los permisos de importación previos al viaje. La certificación del tratamiento antiparasitario es solo uno de los elementos del <a href="zoovet_art12_expediente-ES.html" title="El Expediente de Exportación de Mascotas: Cadena Documental Completa, Taxonomía del Error y Reversibilidad | Zoovet Travel Serie Técnica XII">expediente de exportación</a> y del certificado sanitario oficial, que debe ser emitido y endosado por un veterinario gubernamental del país exportador.</p>
 
 
 <!-- SECCIÓN 5: IMPACTO SANITARIO -->
@@ -1025,6 +1032,15 @@
     <li>Canadian Food Inspection Agency (CFIA). (2025). Importing pets into Canada. inspection.canada.ca. [Confirma ausencia de requisito anti-<em>Echinococcus</em> para entrada de perros.] <a href="https://inspection.canada.ca" target="_blank">inspection.canada.ca</a></li>
   </ol>
 </section>
+
+<p class="series-context-note">
+Nota de navegación: esta Serie Técnica está interconectada. Los enlaces internos apuntan a desarrollos complementarios (no a requisitos por país).
+</p>
+
+<nav class="series-nav" aria-label="Navegación de la serie">
+  <div class="nav-prev"><span class="nav-label">← Anterior</span><br><a href="zoovet_article3_braquicefalos_ES.html" title="Transporte aéreo de perros braquicéfalos: riesgos fisiológicos y marco regulatorio">Braquicéfalos</a></div>
+  <div class="nav-next"><span class="nav-label">Siguiente →</span><br><a href="zoovet_art5_estres-metabolico-ES.html" title="Eje intestino–cerebro y estrés metabólico en perros y gatos durante transporte internacional">Estrés metabólico</a></div>
+</nav>
 
 <footer>
   <p><strong>Zoovet Travel — Serie Técnica de Medicina de Viaje y Regulación Veterinaria Internacional</strong></p>

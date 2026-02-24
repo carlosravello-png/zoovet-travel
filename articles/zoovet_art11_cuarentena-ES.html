@@ -75,6 +75,13 @@
     .ref-list li::before { content: counter(refs); position: absolute; left: 0; color: var(--mid); font-weight: 700; font-size: 0.72rem; top: 3px; }
     footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--rule); font-family: 'DM Sans', sans-serif; font-size: 0.78rem; color: var(--muted); }
     .font-mono { font-family: ui-monospace, monospace; }
+    .series-context-note { font-size: 0.9rem; color: var(--muted); line-height: 1.6; margin: 32px 0 24px; padding: 14px 20px; background: #f8fafc; border-left: 4px solid var(--teal); }
+    .series-nav { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; margin: 28px 0 36px; padding: 20px 24px; background: var(--teal-bg); border: 1px solid var(--rule); border-radius: 4px; font-family: 'DM Sans', sans-serif; font-size: 0.88rem; }
+    .series-nav .nav-prev, .series-nav .nav-next { flex: 1; min-width: 0; }
+    .series-nav .nav-label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin-bottom: 6px; }
+    .series-nav a { color: var(--mid); text-decoration: none; font-weight: 600; }
+    .series-nav a:hover { text-decoration: underline; }
+    .series-nav .nav-next { text-align: right; }
   </style>
 </head>
 <body>
@@ -153,7 +160,7 @@
 
 <h4>Nueva Zelanda — MPI: el protocolo más estricto de la región</h4>
 <p>El Ministerio para las Industrias Primarias de Nueva Zelanda (MPI) aplica el Import Health Standard (IHS) para perros y gatos, un protocolo que en varios puntos supera la exigencia del australiano. La cuarentena post-entrada es obligatoria y estructural, no condicional.</p>
-<p>Una particularidad del sistema neozelandés: el microchip debe estar implantado antes de la extracción de la muestra para el RNATT, no solo antes de la vacunación antirrábica, <strong>según el Import Health Standard vigente a la fecha de consulta</strong>. Este requisito es una fuente documentada de error en expedientes preparados sin verificar el IHS vigente. La duración de la cuarentena puede prolongarse si durante la estancia se detectan signos clínicos, si los resultados de pruebas no son concluyentes, o si los tratamientos antiparasitarios no fueron ejecutados dentro de las ventanas temporales exactas que el IHS especifica.</p>
+<p>Una particularidad del sistema neozelandés: el microchip debe estar implantado antes de la extracción de la muestra para el RNATT, no solo antes de la <a href="zoovet_art9_certificados-vacunacion-ES.html" title="Certificados de vacunación en perros y gatos: fundamento inmunológico, validez sanitaria y marco regulatorio internacional | Zoovet Travel Serie Técnica IX">vacunación antirrábica</a>, <strong>según el Import Health Standard vigente a la fecha de consulta</strong>. Este requisito es una fuente documentada de error en expedientes preparados sin verificar el IHS vigente. La duración de la cuarentena puede prolongarse si durante la estancia se detectan signos clínicos, si los resultados de pruebas no son concluyentes, o si los tratamientos antiparasitarios no fueron ejecutados dentro de las ventanas temporales exactas que el IHS especifica.</p>
 
 <h3>Modelo B — Cuarentena condicional por incumplimiento: Unión Europea y Reino Unido</h3>
 
@@ -217,7 +224,7 @@
 <p>La detección de garrapatas o ectoparásitos en el examen de llegada extiende frecuentemente la cuarentena en Australia y Nueva Zelanda. La bioseguridad en origen —aislamiento ambiental del animal en las semanas previas— es la medida preventiva más efectiva.</p>
 
 <h3>3.5 Inconsistencias documentales</h3>
-<p>Como se analizó en el <a href="zoovet_art10_certificado-salud-ES.html">Artículo 10</a> de esta serie, las inconsistencias internas del expediente son la causa más frecuente de cuarentena evitable en el Modelo B y C.</p>
+<p>Como se analizó en el <a href="zoovet_art10_certificado-salud-ES.html" title="El certificado de salud en el movimiento internacional de perros y gatos: examen clínico, trazabilidad sanitaria y validez documental | Zoovet Travel Serie Técnica X">certificado de salud</a> (Artículo 10) de esta serie, las inconsistencias internas del expediente son la causa más frecuente de cuarentena evitable en el Modelo B y C.</p>
 
 <h3>3.6 Signos clínicos en la inspección de frontera</h3>
 <p>La presencia de signos compatibles con enfermedad infecciosa activa activa protocolos de retención en todos los sistemas, con independencia de la calidad del expediente. El examen veterinario previo al viaje tiene entre sus funciones detectar estas situaciones antes de que el animal esté en tránsito.</p>
@@ -236,7 +243,7 @@
 
 <h2><span class="sec-label">Sección 5</span> Lo que no debe asumirse</h2>
 
-<p><strong>5.1</strong> El modelo australiano y neozelandés es excepcional; la mayoría de destinos desarrollados (UE, UK, Canadá, Japón) no aplican cuarentena rutinaria a animales con expediente completo. Asumir que la cuarentena es universal lleva a subestimar la importancia de la documentación.</p>
+<p><strong>5.1</strong> El modelo australiano y neozelandés es excepcional; la mayoría de destinos desarrollados (UE, UK, Canadá, Japón) no aplican cuarentena rutinaria a animales con <a href="zoovet_art12_expediente-ES.html" title="El Expediente de Exportación de Mascotas: Cadena Documental Completa, Taxonomía del Error y Reversibilidad | Zoovet Travel Serie Técnica XII">expediente completo</a>. Asumir que la cuarentena es universal lleva a subestimar la importancia de la documentación.</p>
 <p><strong>5.2</strong> No toda retención es cuarentena formal. Un certificado con un campo incorrecto puede generar retención administrativa de horas, sin que eso constituya cuarentena en sentido técnico.</p>
 <p><strong>5.3</strong> No toda demora es sanitaria. Las demoras pueden tener causas administrativas, logísticas o de capacidad operativa.</p>
 <p><strong>5.4</strong> En los sistemas donde la cuarentena es rutinaria, no puede evitarse; puede minimizarse en duración con preparación correcta. En los sistemas donde es condicional, puede prevenirse casi por completo con un expediente técnicamente correcto.</p>
@@ -279,6 +286,15 @@
     <li>WOAH/OMSA. World Animal Health Information System (WAHIS). https://wahis.woah.org</li>
   </ol>
 </section>
+
+<p class="series-context-note">
+Nota de navegación: esta Serie Técnica está interconectada. Los enlaces internos apuntan a desarrollos complementarios (no a requisitos por país).
+</p>
+
+<nav class="series-nav" aria-label="Navegación de la serie">
+  <div class="nav-prev"><span class="nav-label">← Anterior</span><br><a href="zoovet_art10_certificado-salud-ES.html" title="El certificado de salud en el movimiento internacional de perros y gatos">Certificado de salud</a></div>
+  <div class="nav-next"><span class="nav-label">Siguiente →</span><br><a href="zoovet_art12_expediente-ES.html" title="El Expediente de Exportación de Mascotas: Cadena Documental Completa">Expediente de exportación</a></div>
+</nav>
 
 <footer>
   <p><strong>Zoovet Travel — Serie Técnica de Medicina de Viaje y Regulación Veterinaria Internacional</strong></p>

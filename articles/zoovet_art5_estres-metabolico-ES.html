@@ -474,6 +474,13 @@
       color: var(--muted);
     }
     .font-mono { font-family: ui-monospace, monospace; }
+    .series-context-note { font-size: 0.9rem; color: var(--muted); line-height: 1.6; margin: 32px 0 24px; padding: 14px 20px; background: #f8fafc; border-left: 4px solid var(--teal); }
+    .series-nav { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; margin: 28px 0 36px; padding: 20px 24px; background: var(--teal-bg); border: 1px solid var(--rule); border-radius: 4px; font-family: 'DM Sans', sans-serif; font-size: 0.88rem; }
+    .series-nav .nav-prev, .series-nav .nav-next { flex: 1; min-width: 0; }
+    .series-nav .nav-label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin-bottom: 6px; }
+    .series-nav a { color: var(--mid); text-decoration: none; font-weight: 600; }
+    .series-nav a:hover { text-decoration: underline; }
+    .series-nav .nav-next { text-align: right; }
   </style>
 </head>
 <body>
@@ -532,7 +539,7 @@
 
 <p><strong>Estresores metabólicos:</strong> ayuno pre-transporte recomendado por razones de manejo, hiporexia durante el viaje, alteración del ritmo de ingesta y, en viajes prolongados, posible deshidratación relativa. Estos factores actúan sobre los mismos sistemas neuroendocrinos que los estresores psicosociales, potenciando su efecto sobre el tracto gastrointestinal.</p>
 
-<p>La duración del viaje introduce una variable crítica: los estudios disponibles en perros muestran que la respuesta de cortisol tiene un pico en los primeros 20–30 minutos del transporte y tiende a disminuir — aunque no siempre a valores basales — en las horas siguientes (Prpar-Mihevc et al., 2017). Sin embargo, en viajes superiores a varias horas, el mantenimiento de los estresores físicos y psicosociales puede sostener niveles de activación superiores a los basales durante períodos prolongados. No existen estudios en gatos que hayan medido la dinámica temporal de cortisol específicamente durante transporte aéreo de larga duración.</p>
+<p>La duración del viaje introduce una variable crítica: los estudios disponibles en perros muestran que la respuesta de cortisol tiene un pico en los primeros 20–30 minutos del transporte y tiende a disminuir — aunque no siempre a valores basales — en las horas siguientes (Prpar-Mihevc et al., 2017). Sin embargo, en viajes superiores a varias horas, el mantenimiento de los estresores físicos y psicosociales puede sostener niveles de activación superiores a los basales durante períodos prolongados; en vuelos transmeridianos se suma la <a href="zoovet_art7_jetlag-ES.html" title="Desincronización circadiana y estrés de transporte en perros y gatos: el fenómeno conocido como «jet lag» | Zoovet Travel Serie Técnica VII">desincronización circadiana (jet lag)</a>. No existen estudios en gatos que hayan medido la dinámica temporal de cortisol específicamente durante <a href="zoovet_art8_hipobaria-ES.html" title="Fisiología hipobárica en el transporte aéreo de perros y gatos: presurización, oxígeno y respuesta fisiológica en vuelo comercial | Zoovet Travel Serie Técnica VIII">transporte aéreo</a> de larga duración.</p>
 
 
 <!-- SECCIÓN 3 -->
@@ -816,6 +823,15 @@
     <li>World Small Animal Veterinary Association (WSAVA) Nutrition Committee. (2011). Body Condition Score for cats and dogs. wsava.org. <span class="ref-note">[Marco de referencia para condición corporal mencionada en el contexto de riesgo de lipidosis]</span></li>
   </ol>
 </section>
+
+<p class="series-context-note">
+Nota de navegación: esta Serie Técnica está interconectada. Los enlaces internos apuntan a desarrollos complementarios (no a requisitos por país).
+</p>
+
+<nav class="series-nav" aria-label="Navegación de la serie">
+  <div class="nav-prev"><span class="nav-label">← Anterior</span><br><a href="zoovet_art4_desparasitacionES.html" title="Intervenciones antiparasitarias en movimientos internacionales de perros">Desparasitación</a></div>
+  <div class="nav-next"><span class="nav-label">Siguiente →</span><br><a href="zoovet_art6_microchip-ES.html" title="Microchip de identificación animal: fundamento tecnológico y trazabilidad sanitaria">Microchip</a></div>
+</nav>
 
 <footer>
   <p><strong>Zoovet Travel — Serie Técnica de Medicina de Viaje y Regulación Veterinaria Internacional</strong></p>

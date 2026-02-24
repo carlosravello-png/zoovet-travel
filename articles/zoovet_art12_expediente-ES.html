@@ -80,6 +80,13 @@
     footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--rule); font-family: 'DM Sans', sans-serif; font-size: 0.78rem; color: var(--muted); }
     .font-mono { font-family: ui-monospace, monospace; }
     .peru-badge { display: inline-block; background: var(--mid); color: #fff; font-family: 'DM Sans', sans-serif; font-size: 0.7rem; font-weight: 700; letter-spacing: .08em; padding: 6px 14px; border-radius: 3px; margin-bottom: 14px; }
+    .series-context-note { font-size: 0.9rem; color: var(--muted); line-height: 1.6; margin: 32px 0 24px; padding: 14px 20px; background: #f8fafc; border-left: 4px solid var(--teal); }
+    .series-nav { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; margin: 28px 0 36px; padding: 20px 24px; background: var(--teal-bg); border: 1px solid var(--rule); border-radius: 4px; font-family: 'DM Sans', sans-serif; font-size: 0.88rem; }
+    .series-nav .nav-prev, .series-nav .nav-next { flex: 1; min-width: 0; }
+    .series-nav .nav-label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin-bottom: 6px; }
+    .series-nav a { color: var(--mid); text-decoration: none; font-weight: 600; }
+    .series-nav a:hover { text-decoration: underline; }
+    .series-nav .nav-next { text-align: right; }
   </style>
 </head>
 <body>
@@ -130,7 +137,7 @@
 
 <h3>1.1 El expediente no es una lista: es una cadena</h3>
 <p>El expediente de exportación de un animal de compañía no es una lista de documentos independientes que se van reuniendo en una carpeta. Es una cadena en la que cada documento tiene una relación de dependencia con los que lo preceden y condiciona los que vienen después.</p>
-<p>El microchip debe estar antes de la vacuna antirrábica. La vacuna debe estar antes del RNATT. El RNATT debe superar el umbral antes de que ciertos plazos empiecen a correr. El certificado de salud debe emitirse dentro de la ventana temporal del destino. El certificado zoosanitario de exportación —en el caso de Perú, el CZE de SENASA— debe verificar que todos los eslabones anteriores están en orden antes de ser emitido. Y el endoso oficial, cuando el destino lo exige, se construye sobre todo lo anterior.</p>
+<p>El <a href="zoovet_art6_microchip-ES.html" title="Microchip de identificación animal: fundamento tecnológico, marco regulatorio internacional y trazabilidad sanitaria | Zoovet Travel Serie Técnica VI">microchip</a> debe estar antes de la vacuna antirrábica. La vacuna debe estar antes del RNATT. El RNATT debe superar el umbral antes de que ciertos plazos empiecen a correr. El <a href="zoovet_art10_certificado-salud-ES.html" title="El certificado de salud en el movimiento internacional de perros y gatos: examen clínico, trazabilidad sanitaria y validez documental | Zoovet Travel Serie Técnica X">certificado de salud</a> debe emitirse dentro de la ventana temporal del destino. El certificado zoosanitario de exportación —en el caso de Perú, el CZE de SENASA— debe verificar que todos los eslabones anteriores están en orden antes de ser emitido. Y el endoso oficial, cuando el destino lo exige, se construye sobre todo lo anterior.</p>
 <p>Un fallo en un eslabón temprano no es solo un problema de ese documento. Es un problema que se propaga hacia adelante, invalidando cada documento que se construyó sobre el eslabón fallido. No se trabaja hacia atrás desde la fecha del viaje llenando documentos, sino hacia adelante desde el primer acto clínico verificando que cada paso habilita el siguiente.</p>
 
 <h3>1.2 El mapa de dependencias del expediente completo</h3>
@@ -142,12 +149,12 @@
       <tr><th>Eslabón</th><th>Depende de</th><th>Habilita</th></tr>
     </thead>
     <tbody>
-      <tr><td>1. Microchip ISO 11784/11785</td><td>Ninguno — es el primer acto</td><td>Todo lo que viene: vacuna, RNATT, certificados</td></tr>
-      <tr><td>2. Vacunación antirrábica válida</td><td>Microchip implantado y leído antes de la vacuna</td><td>RNATT, inicio del período de espera de 21 días</td></tr>
+      <tr><td>1. <a href="zoovet_art6_microchip-ES.html" title="Microchip de identificación animal: fundamento tecnológico, marco regulatorio internacional y trazabilidad sanitaria | Zoovet Travel Serie Técnica VI">Microchip ISO</a> 11784/11785</td><td>Ninguno — es el primer acto</td><td>Todo lo que viene: vacuna, RNATT, certificados</td></tr>
+      <tr><td>2. <a href="zoovet_art9_certificados-vacunacion-ES.html" title="Certificados de vacunación en perros y gatos: fundamento inmunológico, validez sanitaria y marco regulatorio internacional | Zoovet Travel Serie Técnica IX">Vacunación antirrábica</a> válida</td><td>Microchip implantado y leído antes de la vacuna</td><td>RNATT, inicio del período de espera de 21 días</td></tr>
       <tr><td>3. Período de espera post-vacuna (mín. 21 días)</td><td>Vacunación válida</td><td>Emisión válida del certificado de salud; RNATT en destinos que lo exigen</td></tr>
       <tr><td>4. RNATT ≥ 0,5 UI/mL (cuando aplica)</td><td>Muestra extraída mín. 30 días post-vacuna; microchip previo a extracción (NZ)</td><td>Inicio del período de espera post-RNATT en destinos que lo exigen (ej. UE: 3 meses)</td></tr>
       <tr><td>5. Tratamientos antiparasitarios (cuando aplica)</td><td>Fechas exactas definidas por el destino</td><td>Declaración en certificado de salud y CZE</td></tr>
-      <tr><td>6. Certificado de salud (health certificate)</td><td>Animal clínicamente sano; documentos anteriores coherentes; dentro de ventana temporal</td><td>CZE / endoso oficial</td></tr>
+      <tr><td>6. <a href="zoovet_art10_certificado-salud-ES.html" title="El certificado de salud en el movimiento internacional de perros y gatos: examen clínico, trazabilidad sanitaria y validez documental | Zoovet Travel Serie Técnica X">Certificado de salud</a> (health certificate)</td><td>Animal clínicamente sano; documentos anteriores coherentes; dentro de ventana temporal</td><td>CZE / endoso oficial</td></tr>
       <tr><td>7. CZE / Certificado zoosanitario de exportación</td><td>Todos los anteriores verificados y coherentes</td><td>Endoso oficial (cuando aplica); embarque</td></tr>
       <tr><td>8. Endoso oficial (cuando aplica)</td><td>CZE emitido por autoridad reconocida; dentro de ventana temporal del destino</td><td>Admisión en frontera del destino</td></tr>
     </tbody>
@@ -294,7 +301,7 @@
 
 <h2><span class="sec-label">Sección 5</span> Lo que Esta Serie Ha Construido</h2>
 
-<p>La Serie Técnica Zoovet Travel comenzó con el fundamento más básico —el microchip ISO— y llegó hasta la cuarentena post-entrada y la taxonomía del error documental. Doce artículos que cubren el ciclo completo del movimiento internacional de un animal de compañía.</p>
+<p>La Serie Técnica Zoovet Travel comenzó con el fundamento más básico —el microchip ISO— y llegó hasta la <a href="zoovet_art11_cuarentena-ES.html" title="Cuarentena en la Importación Internacional de Perros y Gatos: Fundamento Epidemiológico, Modelos Regulatorios y Puntos Críticos de Falla | Zoovet Travel Serie Técnica XI">cuarentena post-entrada</a> y la taxonomía del error documental. Doce artículos que cubren el ciclo completo del movimiento internacional de un animal de compañía.</p>
 
 <div class="table-wrap">
   <table>
@@ -347,6 +354,15 @@
     <li>WSAVA. Guidelines for the Vaccination of Dogs and Cats (2016). Journal of Small Animal Practice, 57(1), E1–E45.</li>
   </ol>
 </section>
+
+<p class="series-context-note">
+Nota de navegación: esta Serie Técnica está interconectada. Los enlaces internos apuntan a desarrollos complementarios (no a requisitos por país).
+</p>
+
+<nav class="series-nav" aria-label="Navegación de la serie">
+  <div class="nav-prev"><span class="nav-label">← Anterior</span><br><a href="zoovet_art11_cuarentena-ES.html" title="Cuarentena en la Importación Internacional de Perros y Gatos">Cuarentena</a></div>
+  <div class="nav-next"><span class="nav-label">Índice →</span><br><a href="index.html" title="Artículos Científicos Zoovet Travel">Artículos científicos</a></div>
+</nav>
 
 <footer>
   <p><strong>Zoovet Travel — Serie Técnica de Medicina de Viaje y Regulación Veterinaria Internacional</strong></p>
