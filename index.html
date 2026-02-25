@@ -83,6 +83,14 @@
     @supports (padding: max(0px)) {
       .footer-safe { padding-bottom: max(1.5rem, env(safe-area-inset-bottom)); }
     }
+    /* Servicios Médicos: acordeón suizo */
+    .servicio-details { border: 1px solid rgba(26, 46, 53, 0.12); }
+    .servicio-details:hover { border-color: rgba(26, 46, 53, 0.2); }
+    .servicio-details[open] { border-color: rgba(12, 120, 158, 0.25); }
+    .servicio-details summary { list-style: none; }
+    .servicio-details summary::-webkit-details-marker { display: none; }
+    .servicio-details .servicio-chevron { transition: transform 0.2s ease; }
+    .servicio-details[open] .servicio-chevron { transform: rotate(90deg); }
   </style>
 </head>
 <body class="bg-[#F8FAFC] min-h-screen antialiased text-[#1a2e35]">
@@ -248,8 +256,94 @@
   </nav>
 
   <main class="max-w-6xl mx-auto px-4 sm:px-6 pb-16 sm:pb-24 pt-8 sm:pt-12">
-    <section id="servicios-medicos" class="py-8">
-      <h2 class="text-lg font-semibold tracking-wide uppercase text-[#1a2e35] mb-6 font-montserrat">Servicios Médicos</h2>
+    <section id="servicios-medicos" class="py-10 sm:py-14" aria-labelledby="servicios-medicos-heading">
+      <h2 id="servicios-medicos-heading" class="text-lg font-semibold tracking-wide uppercase text-[#1a2e35] mb-8 font-montserrat">Servicios Médicos</h2>
+      <div class="space-y-3 max-w-3xl">
+        <details class="servicio-details group bg-white rounded-sm px-5 sm:px-6 py-1 font-montserrat">
+          <summary class="cursor-pointer py-4 flex items-center justify-between gap-4">
+            <h3 class="text-base font-semibold text-[#1a2e35] tracking-tight pr-4">Medicina Preventiva Veterinaria en Trujillo: Vacunas, Desparasitación y Chequeos</h3>
+            <span class="servicio-chevron flex-shrink-0 text-[#0C789E]" aria-hidden="true">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </span>
+          </summary>
+          <div class="pb-5 pt-0 border-t border-[#1a2e35]/08">
+            <p class="text-[#1a2e35]/90 text-sm leading-relaxed mt-4">No esperamos a que aparezca la enfermedad. Creamos un plan preventivo según la edad, estilo de vida y riesgos reales de tu mascota: vacunación al día, control antiparasitario y chequeos periódicos para detectar problemas antes de que se compliquen.</p>
+            <p class="mt-4 text-sm"><a href="https://wa.me/51979620402?text=Hola%2C%20quisiera%20agendar%20una%20cita%20para%20medicina%20preventiva." target="_blank" rel="noopener noreferrer" class="text-[#0C789E] hover:underline">Agenda un control preventivo y te indicamos el plan ideal para tu perro o gato.</a></p>
+          </div>
+        </details>
+        <details class="servicio-details group bg-white rounded-sm px-5 sm:px-6 py-1 font-montserrat">
+          <summary class="cursor-pointer py-4 flex items-center justify-between gap-4">
+            <h3 class="text-base font-semibold text-[#1a2e35] tracking-tight pr-4">Dermatología Veterinaria en Trujillo: Alergias, Picazón, Otitis y Problemas de Piel</h3>
+            <span class="servicio-chevron flex-shrink-0 text-[#0C789E]" aria-hidden="true">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </span>
+          </summary>
+          <div class="pb-5 pt-0 border-t border-[#1a2e35]/08">
+            <p class="text-[#1a2e35]/90 text-sm leading-relaxed mt-4">La picazón constante, el enrojecimiento, la caída de pelo y las otitis repetidas casi nunca se resuelven &quot;con algo para la alergia&quot;. Hacemos evaluación clínica dirigida y pruebas según el caso para identificar la causa y controlar brotes de forma segura.</p>
+            <p class="mt-4 text-sm"><a href="https://wa.me/51979620402?text=Hola%2C%20quisiera%20agendar%20una%20cita%20para%20dermatolog%C3%ADa." target="_blank" rel="noopener noreferrer" class="text-[#0C789E] hover:underline">Escríbenos por la consulta dermatológica y te orientamos según los signos que ves en casa.</a></p>
+          </div>
+        </details>
+        <details class="servicio-details group bg-white rounded-sm px-5 sm:px-6 py-1 font-montserrat">
+          <summary class="cursor-pointer py-4 flex items-center justify-between gap-4">
+            <h3 class="text-base font-semibold text-[#1a2e35] tracking-tight pr-4">Nutrición Veterinaria en Trujillo: Dietas para Obesidad, Gastritis, Alergias y Enfermedades Crónicas</h3>
+            <span class="servicio-chevron flex-shrink-0 text-[#0C789E]" aria-hidden="true">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </span>
+          </summary>
+          <div class="pb-5 pt-0 border-t border-[#1a2e35]/08">
+            <p class="text-[#1a2e35]/90 text-sm leading-relaxed mt-4">La comida también es medicina. Ajustamos dieta y porciones con objetivos claros: controlar peso, mejorar digestión, apoyar piel y pelaje, o acompañar patologías como problemas renales o hepáticos. Planes realistas, medibles y sostenibles.</p>
+            <p class="mt-4 text-sm"><a href="https://wa.me/51979620402?text=Hola%2C%20quisiera%20agendar%20una%20cita%20para%20nutrici%C3%B3n." target="_blank" rel="noopener noreferrer" class="text-[#0C789E] hover:underline">Solicita una evaluación nutricional y sal con un plan concreto, no con suposiciones.</a></p>
+          </div>
+        </details>
+        <details class="servicio-details group bg-white rounded-sm px-5 sm:px-6 py-1 font-montserrat">
+          <summary class="cursor-pointer py-4 flex items-center justify-between gap-4">
+            <h3 class="text-base font-semibold text-[#1a2e35] tracking-tight pr-4">Medicina Interna en Trujillo: Diagnóstico Clínico para Enfermedades Digestivas, Hepáticas, Renales y Respiratorias</h3>
+            <span class="servicio-chevron flex-shrink-0 text-[#0C789E]" aria-hidden="true">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </span>
+          </summary>
+          <div class="pb-5 pt-0 border-t border-[#1a2e35]/08">
+            <p class="text-[#1a2e35]/90 text-sm leading-relaxed mt-4">Cuando los síntomas se repiten o no hay una causa evidente, se necesita método. Investigamos el origen del problema con historia clínica, examen completo y pruebas según indicación para llegar a un diagnóstico real y un tratamiento efectivo, tanto en cuadros agudos como crónicos.</p>
+            <p class="mt-4 text-sm"><a href="https://wa.me/51979620402?text=Hola%2C%20quisiera%20agendar%20una%20cita%20para%20medicina%20interna." target="_blank" rel="noopener noreferrer" class="text-[#0C789E] hover:underline">Agenda una consulta de medicina interna si tu mascota lleva días con malestar o recaídas.</a></p>
+          </div>
+        </details>
+        <details class="servicio-details group bg-white rounded-sm px-5 sm:px-6 py-1 font-montserrat">
+          <summary class="cursor-pointer py-4 flex items-center justify-between gap-4">
+            <h3 class="text-base font-semibold text-[#1a2e35] tracking-tight pr-4">Oftalmología Veterinaria en Trujillo: Úlceras Corneales, Conjuntivitis, Cataratas y Glaucoma</h3>
+            <span class="servicio-chevron flex-shrink-0 text-[#0C789E]" aria-hidden="true">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </span>
+          </summary>
+          <div class="pb-5 pt-0 border-t border-[#1a2e35]/08">
+            <p class="text-[#1a2e35]/90 text-sm leading-relaxed mt-4">El ojo duele y progresa rápido. Atendemos desde irritaciones y úlceras hasta cataratas y glaucoma, con evaluación detallada para aliviar dolor, proteger la córnea y evitar pérdida de visión.</p>
+            <p class="mt-4 text-sm"><a href="https://wa.me/51979620402?text=Hola%2C%20quisiera%20agendar%20una%20cita%20para%20oftalmolog%C3%ADa." target="_blank" rel="noopener noreferrer" class="text-[#0C789E] hover:underline">Si ves ojo rojo, lagrimeo o molestia, consúltanos hoy mismo para descartar urgencias.</a></p>
+          </div>
+        </details>
+        <details class="servicio-details group bg-white rounded-sm px-5 sm:px-6 py-1 font-montserrat">
+          <summary class="cursor-pointer py-4 flex items-center justify-between gap-4">
+            <h3 class="text-base font-semibold text-[#1a2e35] tracking-tight pr-4">Endocrinología Veterinaria en Trujillo: Diabetes, Tiroides, Cushing y Trastornos Hormonales</h3>
+            <span class="servicio-chevron flex-shrink-0 text-[#0C789E]" aria-hidden="true">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </span>
+          </summary>
+          <div class="pb-5 pt-0 border-t border-[#1a2e35]/08">
+            <p class="text-[#1a2e35]/90 text-sm leading-relaxed mt-4">Los desequilibrios hormonales cambian el metabolismo: sed excesiva, aumento de peso, caída de pelo, debilidad o infecciones recurrentes. Realizamos evaluación clínica y pruebas específicas para confirmar el diagnóstico y ajustar el control con seguimiento.</p>
+            <p class="mt-4 text-sm"><a href="https://wa.me/51979620402?text=Hola%2C%20quisiera%20agendar%20una%20cita%20para%20endocrinolog%C3%ADa." target="_blank" rel="noopener noreferrer" class="text-[#0C789E] hover:underline">Pide una evaluación endocrina si notas cambios persistentes en energía, sed o peso.</a></p>
+          </div>
+        </details>
+        <details class="servicio-details group bg-white rounded-sm px-5 sm:px-6 py-1 font-montserrat">
+          <summary class="cursor-pointer py-4 flex items-center justify-between gap-4">
+            <h3 class="text-base font-semibold text-[#1a2e35] tracking-tight pr-4">Ecografía y Cardiología Veterinaria en Trujillo: Ecocardiograma, Electrocardiograma y Evaluación Clínica</h3>
+            <span class="servicio-chevron flex-shrink-0 text-[#0C789E]" aria-hidden="true">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </span>
+          </summary>
+          <div class="pb-5 pt-0 border-t border-[#1a2e35]/08">
+            <p class="text-[#1a2e35]/90 text-sm leading-relaxed mt-4">Cuando necesitas respuestas, la imagen ayuda a decidir bien. Realizamos ecografías y evaluación cardiológica (ECG y ecocardiograma según el caso) para detectar hallazgos tempranos, orientar tratamientos y evaluar riesgo antes de cirugías o viajes.</p>
+            <p class="mt-4 text-sm"><a href="https://wa.me/51979620402?text=Hola%2C%20quisiera%20agendar%20una%20cita%20para%20ecograf%C3%ADa%20y%20cardiolog%C3%ADa." target="_blank" rel="noopener noreferrer" class="text-[#0C789E] hover:underline">Escríbenos para coordinar la evaluación y te indicamos qué estudio corresponde según el caso.</a></p>
+          </div>
+        </details>
+      </div>
     </section>
     <section id="exportacion" class="py-8 border-t border-[#1a2e35]/10">
       <h2 class="text-lg font-semibold tracking-wide uppercase text-[#1a2e35] mb-6 font-montserrat">Exportación Internacional de Mascotas</h2>
@@ -299,6 +393,7 @@
         <div>
           <p class="text-xs font-semibold tracking-wider uppercase text-[#F8FAFC]/90 mb-4">Servicios Médicos</p>
           <ul class="space-y-2">
+            <li><a href="#servicios-medicos" class="text-sm text-slate-400 hover:text-white transition-colors block py-2">Medicina Preventiva</a></li>
             <li><a href="#servicios-medicos" class="text-sm text-slate-400 hover:text-white transition-colors block py-2">Dermatología</a></li>
             <li><a href="#servicios-medicos" class="text-sm text-slate-400 hover:text-white transition-colors block py-2">Nutrición</a></li>
             <li><a href="#servicios-medicos" class="text-sm text-slate-400 hover:text-white transition-colors block py-2">Medicina Interna</a></li>
