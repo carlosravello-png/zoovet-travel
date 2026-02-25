@@ -1,0 +1,29 @@
+User-agent: *
+Allow: /
+
+# Secciones principales
+Allow: /articles/
+Allow: /articulos-interes/
+Allow: /zoopedia/
+
+# Bloquear carpetas que no deben indexarse
+Disallow: /docs/
+Disallow: /.github/
+
+# Crawlers específicos con prioridad
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+# Sitemap
+Sitemap: https://zoovettravel.com/sitemap.xml
