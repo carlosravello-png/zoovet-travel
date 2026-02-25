@@ -43,10 +43,26 @@
       }
     }
   </script>
-  <style>body { font-family: 'Montserrat', sans-serif; } html { scroll-behavior: smooth; }</style>
+  <style>
+    body { font-family: 'Montserrat', sans-serif; } html { scroll-behavior: smooth; }
+    @media (min-width: 768px) { .hamburger-wrap { display: none !important; } .nav-drawer-backdrop { display: none !important; } }
+    .hamburger-wrap { position: relative; z-index: 60; }
+    .hamburger-btn { display: flex; flex-direction: column; justify-content: center; align-items: center; width: 44px; height: 44px; padding: 0; border: none; background: transparent; cursor: pointer; gap: 5px; -webkit-tap-highlight-color: transparent; }
+    .hamburger-btn span { display: block; width: 20px; height: 2px; background: #1a2e35; border-radius: 1px; transition: transform 0.25s ease, opacity 0.2s ease; }
+    .hamburger-btn.is-open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+    .hamburger-btn.is-open span:nth-child(2) { opacity: 0; }
+    .hamburger-btn.is-open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+    .nav-drawer-backdrop { position: fixed; inset: 0; background: rgba(26,46,53,0.2); z-index: 45; opacity: 0; visibility: hidden; transition: opacity 0.25s ease, visibility 0.25s; }
+    .nav-drawer-backdrop.is-open { opacity: 1; visibility: visible; }
+    .nav-drawer { position: fixed; top: 0; right: 0; width: min(280px, 88vw); max-width: 280px; height: 100%; background: #F8FAFC; box-shadow: -4px 0 24px rgba(26,46,53,0.12); z-index: 50; transform: translateX(100%); transition: transform 0.28s cubic-bezier(0.4,0,0.2,1); overflow-y: auto; padding: 3.5rem 1rem 1.5rem; font-family: 'Montserrat', sans-serif; }
+    .nav-drawer.is-open { transform: translateX(0); }
+    .nav-drawer a { display: block; padding: 0.75rem 0.5rem; color: #1a2e35; font-size: 0.8125rem; font-weight: 500; letter-spacing: 0.04em; border-bottom: 1px solid rgba(26,46,53,0.08); -webkit-tap-highlight-color: rgba(12, 120, 158, 0.15); }
+    .nav-drawer a:hover { color: #0C789E; }
+    body.menu-open-mobile { overflow: hidden; }
+  </style>
 </head>
 <body class="bg-[#F8FAFC] min-h-screen text-[#1a2e35]">
-  <nav class="px-4 py-3 text-sm border-b border-[#1a2e35]/10">
+  <nav class="px-4 py-3 text-sm border-b border-[#1a2e35]/10" aria-label="Breadcrumb">
     <ol class="flex gap-2 text-[#1a2e35]/70">
       <li><a href="../index.html" class="hover:text-[#1a2e35]">Inicio</a></li>
       <li aria-hidden="true">/</li>
@@ -55,12 +71,22 @@
   </nav>
   <header class="max-w-6xl mx-auto px-4 py-6 flex justify-between items-center">
     <a href="../index.html" class="text-xl font-bold tracking-[0.25em] text-[#1a2e35] font-montserrat">ZOOVET TRAVEL</a>
-    <div class="flex gap-2">
+    <div class="hidden md:flex gap-2">
       <a href="index.html" class="text-xs font-semibold tracking-widest uppercase text-[#1a2e35] border border-[#0C789E] bg-[#0C789E]/10 px-3 py-2 rounded-sm">ES</a>
       <a href="index-en.html" class="text-xs font-semibold tracking-widest uppercase text-[#1a2e35]/80 hover:text-[#1a2e35] border border-[#1a2e35]/30 px-3 py-2 rounded-sm transition-colors">EN</a>
       <a href="index-fr.html" class="text-xs font-semibold tracking-widest uppercase text-[#1a2e35]/80 hover:text-[#1a2e35] border border-[#1a2e35]/30 px-3 py-2 rounded-sm transition-colors">FR</a>
     </div>
+    <div class="hamburger-wrap md:hidden">
+      <button type="button" class="hamburger-btn" id="hamburger-btn" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-drawer"><span></span><span></span><span></span></button>
+    </div>
   </header>
+  <div class="nav-drawer-backdrop" id="nav-drawer-backdrop" aria-hidden="true"></div>
+  <nav class="nav-drawer" id="nav-drawer" aria-label="Menú" aria-hidden="true">
+    <a href="../index.html">Inicio</a>
+    <a href="index-en.html">English — EN</a>
+    <a href="index-fr.html">Français — FR</a>
+  </nav>
+  <script>(function(){ var btn=document.getElementById('hamburger-btn'), drawer=document.getElementById('nav-drawer'), backdrop=document.getElementById('nav-drawer-backdrop'); function open(){ btn.setAttribute('aria-expanded','true'); btn.setAttribute('aria-label','Cerrar menú'); drawer.setAttribute('aria-hidden','false'); backdrop.setAttribute('aria-hidden','false'); btn.classList.add('is-open'); drawer.classList.add('is-open'); backdrop.classList.add('is-open'); document.body.classList.add('menu-open-mobile'); } function close(){ btn.setAttribute('aria-expanded','false'); btn.setAttribute('aria-label','Abrir menú'); drawer.setAttribute('aria-hidden','true'); backdrop.setAttribute('aria-hidden','true'); btn.classList.remove('is-open'); drawer.classList.remove('is-open'); backdrop.classList.remove('is-open'); document.body.classList.remove('menu-open-mobile'); } if(btn&&drawer&&backdrop){ btn.addEventListener('click',function(){ drawer.classList.contains('is-open')?close():open(); }); backdrop.addEventListener('click',close); drawer.querySelectorAll('a').forEach(function(a){ a.addEventListener('click',close); }); } })();</script>
   <main class="max-w-6xl mx-auto px-4 py-12">
     <h1 class="text-2xl font-bold tracking-wide uppercase text-[#1a2e35] mb-2 font-montserrat">La Zoopedia de la Exportación e Importación Internacional de Mascotas</h1>
     <p class="text-[#1a2e35]/80 font-montserrat text-sm mb-6">Guía Internacional de Requisitos Oficiales por País — Desarrollada y Verificada por Zoovet Travel (Actualización Permanente 2026)</p>
