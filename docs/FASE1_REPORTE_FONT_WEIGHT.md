@@ -33,7 +33,7 @@ Montserrat:wght@300;400;600;700
 | **400** | `font-normal` | Texto "Clic para ver" / "Click to view" / "Cliquer pour afficher" en `<summary>`. |
 | **500** | `font-medium` | Trust badges (Protocolos Médicos…, Gestión Directa SENASA, Monitoreo…); lista de especialidades (Dermatología, Nutrición, etc.). |
 | **600** | `font-semibold` | Botones idioma (ES, EN, FR); botones hero (Ver Servicios / Cotizar Exportación); enlaces "Ver artículos"; nav principal; labels Contacto (Teléfonos, Correo, Horario); títulos de sección (Servicios Médicos, Exportación…); footer (Servicios Médicos, Exportación, Contacto). |
-| **700** | `font-bold` | Logo "TRAVEL" en header; h1 hero "ZOOVET TRAVEL"; h2 "Quiénes somos" y "Artículos Científicos…"; footer "ZOOVET TRAVEL". |
+| **700** | `font-bold` | Logo "TRAVEL" en header; h1 hero "ZOOVET TRAVEL"; h2 "Quiénes somos" y "Artículos Científicos en Medicina Veterinaria Aplicada al Transporte Internacional de Mascotas"; footer "ZOOVET TRAVEL". |
 
 **Conclusión landing:**
 - **Pesos cargados:** 300, 400, 600, 700. **Todos se usan.**
@@ -54,7 +54,7 @@ Montserrat:wght@400;600;700
 |------|-------------------|
 | **400** | Body por defecto (sin clase de peso). |
 | **600** | `font-semibold`: botones idioma, títulos de tarjetas de artículo, enlace "← Volver al inicio". |
-| **700** | `font-bold`: logo "ZOOVET TRAVEL", h1 "Zoovet Artículos Científicos" / "Zoovet Scientific Articles" / "Zoovet Articles Scientifiques". |
+| **700** | `font-bold`: logo "ZOOVET TRAVEL", h1 "Artículos Científicos en Medicina Veterinaria Aplicada al Transporte Internacional de Mascotas" / "Scientific Articles in Applied Veterinary Medicine for International Pet Transport" / "Articles scientifiques en médecine vétérinaire appliquée au transport international d'animaux de compagnie". |
 
 **Conclusión articles index:**
 - **Pesos cargados:** 400, 600, 700. **Todos se usan.** No hay pesos cargados sin uso. No se usa 300 ni 500.

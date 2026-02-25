@@ -8,7 +8,7 @@
 
 | Idioma | Cantidad | Observación |
 |--------|----------|-------------|
-| ES     | 26       | Canonical, hreflang, JSON-LD, breadcrumb «Artículos de interés», estética Artículos Científicos |
+| ES     | 26       | Canonical, hreflang, JSON-LD, breadcrumb «Artículos de interés», estética Artículos Científicos en Medicina Veterinaria Aplicada al Transporte Internacional de Mascotas |
 | EN     | 26       | Misma estética; scope/footer/breadcrumb/hero en inglés; enlaces a `../articles/...-EN.html` cuando existen |
 | FR     | 26       | Misma estética; scope/footer/breadcrumb/hero en francés; enlaces a `../articles/...-FR.html` cuando existen |
 | **Total** | **78** | |
@@ -64,7 +64,7 @@ Se dejó solo texto (sin `<a>`) cuando el archivo destino **no existe** en `arti
 
 ## d) Estética
 
-- Los 78 archivos replican la estética de **Artículos Científicos** (referencia: `articles/zoovet_art10_certificado-salud-ES.html`): mismo `<head>`, meta, bloque `<style>`, tipografías Libre Baskerville + DM Sans, colores, hero, scope-box, h2 con sec-label, footer.
+- Los 78 archivos replican la estética de **Artículos Científicos en Medicina Veterinaria Aplicada al Transporte Internacional de Mascotas** (referencia: `articles/zoovet_art10_certificado-salud-ES.html`): mismo `<head>`, meta, bloque `<style>`, tipografías Libre Baskerville + DM Sans, colores, hero, scope-box, h2 con sec-label, footer.
 - Sin JS, sin tracking, sin librerías ni frameworks. Un solo H1 por página. `<strong>` según directiva.
 
 ---
@@ -89,7 +89,7 @@ Se dejó solo texto (sin `<a>`) cuando el archivo destino **no existe** en `arti
 ### Alcance
 
 - **52 archivos EN y FR** reconstruidos por completo desde los 26 ES, con traducción real y completa (no parcheo).
-- Estética idéntica a Artículos Científicos; CSS y estructura HTML intactos; sin JS nuevo.
+- Estética idéntica a Artículos Científicos en Medicina Veterinaria Aplicada al Transporte Internacional de Mascotas; CSS y estructura HTML intactos; sin JS nuevo.
 
 ### Reglas aplicadas
 

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Genera 26 EN + 26 FR a partir de los 26 ES de Artículos de interés.
-Misma estética que Artículos Científicos. Scope/footer/breadcrumb/hero en EN/FR.
+Misma estética que Artículos Científicos en Medicina Veterinaria Aplicada al Transporte Internacional de Mascotas. Scope/footer/breadcrumb/hero en EN/FR.
 Enlaces a ../articles/ con sufijo -EN.html / -FR.html solo si el archivo existe.
 """
 import json

@@ -10,7 +10,7 @@ Todos los artículos en `articles/` deben incluir esta estructura para consisten
     <div>
       <a href="../index.html" class="site-logo">ZOOVET TRAVEL</a>
       <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="../index.html">Inicio</a> / <a href="./index.html">Artículos Científicos</a> / <span>[Título corto]</span>
+        <a href="../index.html">Inicio</a> / <a href="./index.html">Artículos Científicos en Medicina Veterinaria Aplicada al Transporte Internacional de Mascotas</a> / <span>[Título corto]</span>
       </nav>
     </div>
     <div class="lang-switcher">
@@ -23,7 +23,7 @@ Todos los artículos en `articles/` deben incluir esta estructura para consisten
 
 Para versión en inglés del artículo (`*-en.html`):
 - `Inicio` → `href="../index-en.html"` y texto "Home"
-- `Artículos Científicos` → `href="./index-en.html"` y texto "Scientific Articles"
+- `Artículos Científicos en Medicina Veterinaria Aplicada al Transporte Internacional de Mascotas` → `href="./index-en.html"` y texto "Scientific Articles"
 
 ## 2. Rutas correctas
 
@@ -38,7 +38,7 @@ Para versión en inglés del artículo (`*-en.html`):
 Antes del footer del artículo:
 ```html
 <p style="margin-top: 2rem;">
-  <a href="./index.html" style="color: var(--accent); font-weight: 600;">← Volver a Artículos Científicos</a>
+  <a href="./index.html" style="color: var(--accent); font-weight: 600;">← Volver a Artículos Científicos en Medicina Veterinaria Aplicada al Transporte Internacional de Mascotas</a>
 </p>
 ```
 
