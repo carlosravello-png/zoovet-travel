@@ -85,11 +85,11 @@
       footer a { padding: 0.5rem 0; min-height: 44px; display: inline-flex; align-items: center; }
       .hero-cta a { min-height: 44px; display: inline-flex; align-items: center; justify-content: center; }
       #contacto a { min-height: 44px; display: inline-flex; align-items: center; padding: 0.5rem 0; }
-      .trust-badges span { font-size: 0.875rem; }
-    }
-    /* Menú hamburguesa móvil: 3 rayas → X, no invasivo */
-    @media (max-width: 767px) {
-      .nav-bar-desktop { display: none !important; }
+      /* Barra azul bajo hero: 4×2 simétrico, estilo suizo */
+      .nav-bar-desktop .grid { grid-template-columns: repeat(4, 1fr); }
+      .nav-bar-desktop .nav-bar-cell,
+      .nav-bar-desktop .nav-bar-cell--empty { min-height: 44px; -webkit-tap-highlight-color: rgba(255,255,255,0.15); }
+      .nav-bar-desktop .nav-bar-cell { padding: 0.625rem 0.5rem; font-size: 9px; letter-spacing: 0.06em; }
     }
     @media (min-width: 768px) {
       .hamburger-wrap { display: none !important; }
@@ -231,34 +231,17 @@
   <nav class="nav-bar-desktop bg-[#1a2e35] border-b border-white/5" aria-label="Secciones principales">
     <div class="max-w-6xl mx-auto px-2 sm:px-4 py-3">
       <div class="grid grid-cols-4 md:grid-cols-7 gap-0">
-        <a href="#exportacion" class="flex items-center justify-center py-2.5 sm:py-3 px-1 sm:px-2 border-r border-b md:border-b-0 border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat leading-tight text-center"><span>Transporte internacional de mascotas</span></a>
-        <a href="#servicios-medicos" class="flex items-center justify-center py-2.5 sm:py-3 px-1 sm:px-2 border-r border-b md:border-b-0 border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat">Servicios médicos</a>
-        <a href="#articulos-cientificos" class="flex items-center justify-center py-2.5 sm:py-3 px-1 sm:px-2 border-r border-b md:border-b-0 border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat text-center">Artículos científicos</a>
-        <a href="./zoopedia/index.html" class="flex items-center justify-center py-2.5 sm:py-3 px-1 sm:px-2 border-r border-b md:border-b-0 border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat leading-tight text-center"><span>Zoopedia de la exportación de mascotas</span></a>
-        <a href="./articulos-interes/index.html" class="flex items-center justify-center py-2.5 sm:py-3 px-1 sm:px-2 border-r border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat">Guías prácticas</a>
-        <a href="#contacto" class="flex items-center justify-center py-2.5 sm:py-3 px-1 sm:px-2 border-r border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat">Contacto</a>
-        <a href="#ubicacion" class="flex items-center justify-center py-2.5 sm:py-3 px-1 sm:px-2 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat">Ubicación</a>
+        <a href="#exportacion" class="nav-bar-cell flex items-center justify-center py-2.5 sm:py-3 px-2 border-r border-b md:border-b-0 border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat leading-tight text-center">Transporte internacional de mascotas</a>
+        <a href="#servicios-medicos" class="nav-bar-cell flex items-center justify-center py-2.5 sm:py-3 px-2 border-r border-b md:border-b-0 border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat text-center">Servicios médicos</a>
+        <a href="#articulos-cientificos" class="nav-bar-cell flex items-center justify-center py-2.5 sm:py-3 px-2 border-r border-b md:border-b-0 border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat text-center">Artículos científicos</a>
+        <a href="./zoopedia/index.html" class="nav-bar-cell flex items-center justify-center py-2.5 sm:py-3 px-2 border-r border-b md:border-b-0 border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat leading-tight text-center"><span>Zoopedia de la exportación de mascotas</span></a>
+        <a href="./articulos-interes/index.html" class="nav-bar-cell flex items-center justify-center py-2.5 sm:py-3 px-2 border-r border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat text-center">Guías prácticas</a>
+        <a href="#contacto" class="nav-bar-cell flex items-center justify-center py-2.5 sm:py-3 px-2 border-r border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat text-center">Contacto</a>
+        <a href="#ubicacion" class="nav-bar-cell flex items-center justify-center py-2.5 sm:py-3 px-2 border-r md:border-r-0 border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat text-center">Ubicación</a>
+        <span class="nav-bar-cell--empty md:hidden border-r border-white/10 min-h-[44px] flex-shrink-0" aria-hidden="true"></span>
       </div>
     </div>
   </nav>
-
-  <!-- Trust Badges - Sellos de Confianza -->
-  <section class="trust-badges py-4 sm:py-5 px-4 bg-[#F8FAFC] border-y border-[#1a2e35]/10" aria-label="Garantías">
-    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 md:gap-12 text-[#1a2e35]">
-      <div class="flex items-center gap-2 sm:gap-3">
-        <svg class="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 text-[#0C789E]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-        <span class="text-[10px] sm:text-[10px] font-medium tracking-[0.15em] uppercase">Protocolos Médicos Internacionales</span>
-      </div>
-      <div class="flex items-center gap-2 sm:gap-3">
-        <svg class="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 text-[#0C789E]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-        <span class="text-[10px] sm:text-[10px] font-medium tracking-[0.15em] uppercase">Gestión Directa SENASA</span>
-      </div>
-      <div class="flex items-center gap-2 sm:gap-3">
-        <svg class="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 text-[#0C789E]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-        <span class="text-[10px] sm:text-[10px] font-medium tracking-[0.15em] uppercase">Monitoreo de Alta Prioridad</span>
-      </div>
-    </div>
-  </section>
 
   <!-- SECCIÓN QUIÉNES SOMOS - OPTIMIZADA PARA CRAWLERS E IA -->
   <section id="quienes-somos" class="py-16 sm:py-20 md:py-24 px-4 md:px-8 bg-slate-50 font-montserrat">
@@ -304,13 +287,13 @@
 
         <div class="my-8 sm:my-10 max-w-4xl mx-auto" aria-hidden="true">
           <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-5">
-            <div class="rounded-lg overflow-hidden shadow-sm transition-all duration-300 hover:shadow-md hover:brightness-[1.03]">
+            <div class="order-1 sm:order-none rounded-lg overflow-hidden shadow-sm transition-all duration-300 hover:shadow-md hover:brightness-[1.03]">
               <img src="./images/experiencia/exp-01.webp" alt="" width="400" height="300" class="w-full aspect-[4/3] object-cover" loading="lazy">
             </div>
-            <div class="rounded-lg overflow-hidden shadow-sm transition-all duration-300 hover:shadow-md hover:brightness-[1.03]">
-              <img src="./images/experiencia/exp-02.webp" alt="" width="400" height="300" class="w-full aspect-[4/3] object-cover" loading="lazy">
+            <div class="order-3 sm:order-none col-span-2 sm:col-span-1 flex justify-center rounded-lg overflow-hidden shadow-sm transition-all duration-300 hover:shadow-md hover:brightness-[1.03]">
+              <img src="./images/experiencia/exp-02.webp" alt="" width="400" height="300" class="w-full max-w-sm sm:max-w-none aspect-[4/3] object-cover" loading="lazy">
             </div>
-            <div class="rounded-lg overflow-hidden shadow-sm transition-all duration-300 hover:shadow-md hover:brightness-[1.03]">
+            <div class="order-2 sm:order-none rounded-lg overflow-hidden shadow-sm transition-all duration-300 hover:shadow-md hover:brightness-[1.03]">
               <img src="./images/experiencia/exp-03.webp" alt="" width="400" height="300" class="w-full aspect-[4/3] object-cover" loading="lazy">
             </div>
           </div>
