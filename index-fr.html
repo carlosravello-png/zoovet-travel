@@ -81,6 +81,7 @@
     .servicio-details summary::-webkit-details-marker { display: none; }
     .servicio-details .servicio-chevron { transition: transform 0.2s ease; }
     .servicio-details[open] .servicio-chevron { transform: rotate(90deg); }
+    #section-historias-fronteras { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
   </style>
 </head>
 <body class="bg-[#F8FAFC] min-h-screen antialiased text-[#1a2e35]">
@@ -115,13 +116,29 @@
         <p class="text-sm sm:text-base md:text-lg font-semibold text-white/95 mb-8 max-w-xl mx-auto leading-relaxed font-montserrat" style="opacity: 1; letter-spacing: 0.03em;">
           Spécialistes en santé animale et logistique internationale prioritaire.
         </p>
-        <div class="flex flex-col sm:flex-row gap-3 justify-center">
+        <div class="flex flex-col sm:flex-row flex-wrap gap-3 justify-center items-center">
           <a href="#services-medicaux" class="btn-zoovet text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-none font-semibold text-xs sm:text-sm tracking-wide font-montserrat">Services médicaux</a>
-          <a href="#exportation" class="btn-cta-primary inline-block bg-[#0C789E] text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-none font-semibold text-xs sm:text-sm tracking-wide font-montserrat">Demande d'exportation</a>
+          <a href="https://wa.me/51979620402?text=Bonjour%2C%20je%20souhaite%20demander%20un%20devis%20pour%20une%20exportation%20internationale%20%C3%A0%20destination%20de%20%3A%20" target="_blank" rel="noopener noreferrer" class="btn-cta-primary inline-block bg-[#0C789E] text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-none font-semibold text-xs sm:text-sm tracking-wide font-montserrat">Devis exportation</a>
+          <a href="https://wa.me/51979620402?text=Bonjour%2C%20je%20souhaite%20obtenir%20plus%20d%27informations%20pour%20faire%20voyager%20mon%20animal%20vers%20%3A%20" target="_blank" rel="noopener noreferrer" class="inline-block border border-white/90 text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-none font-semibold text-xs sm:text-sm tracking-wide font-montserrat hover:bg-white/10 transition-all duration-300">Informations pour faire voyager mon animal</a>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- Navigation principale : sous le hero, une ligne (max 2 sur petit écran), symétrique -->
+  <nav class="bg-[#1a2e35] border-b border-white/5" aria-label="Sections principales">
+    <div class="max-w-6xl mx-auto px-2 sm:px-4 py-3">
+      <div class="grid grid-cols-4 md:grid-cols-7 gap-0">
+        <a href="#exportation" class="flex items-center justify-center py-2.5 sm:py-3 px-1 sm:px-2 border-r border-b md:border-b-0 border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat leading-tight text-center"><span>Transport international d'animaux de compagnie</span></a>
+        <a href="#services-medicaux" class="flex items-center justify-center py-2.5 sm:py-3 px-1 sm:px-2 border-r border-b md:border-b-0 border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat">Services médicaux</a>
+        <a href="#articles-scientifiques" class="flex items-center justify-center py-2.5 sm:py-3 px-1 sm:px-2 border-r border-b md:border-b-0 border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat text-center">Articles scientifiques</a>
+        <a href="./zoopedia/index-fr.html" class="flex items-center justify-center py-2.5 sm:py-3 px-1 sm:px-2 border-r border-b md:border-b-0 border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat leading-tight text-center"><span>Zoopédie de l'exportation d'animaux</span></a>
+        <a href="./articulos-interes/index-fr.html" class="flex items-center justify-center py-2.5 sm:py-3 px-1 sm:px-2 border-r border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat">Guides pratiques</a>
+        <a href="#contact" class="flex items-center justify-center py-2.5 sm:py-3 px-1 sm:px-2 border-r border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat">Contact</a>
+        <a href="#localisation" class="flex items-center justify-center py-2.5 sm:py-3 px-1 sm:px-2 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat">Localisation</a>
+      </div>
+    </div>
+  </nav>
 
   <!-- Trust Badges -->
   <section class="py-4 sm:py-5 px-4 bg-[#F8FAFC] border-y border-[#1a2e35]/10" aria-label="Garanties">
@@ -182,6 +199,20 @@
           Zoovet Travel intègre la médecine vétérinaire spécialisée à la logistique internationale de haute précision, se positionnant comme référence pour l'<strong>exportation d'animaux de compagnie depuis le Pérou</strong> et comme <strong>clinique vétérinaire spécialisée à Trujillo</strong>.
         </p>
 
+        <div class="my-8 sm:my-10 max-w-4xl mx-auto" aria-hidden="true">
+          <div class="grid grid-cols-3 gap-4 sm:gap-5">
+            <div class="rounded-lg overflow-hidden shadow-sm transition-all duration-300 hover:shadow-md hover:brightness-[1.03]">
+              <img src="./images/experiencia/exp-01.webp" alt="" width="400" height="300" class="w-full aspect-[4/3] object-cover" loading="lazy">
+            </div>
+            <div class="rounded-lg overflow-hidden shadow-sm transition-all duration-300 hover:shadow-md hover:brightness-[1.03]">
+              <img src="./images/experiencia/exp-02.webp" alt="" width="400" height="300" class="w-full aspect-[4/3] object-cover" loading="lazy">
+            </div>
+            <div class="rounded-lg overflow-hidden shadow-sm transition-all duration-300 hover:shadow-md hover:brightness-[1.03]">
+              <img src="./images/experiencia/exp-03.webp" alt="" width="400" height="300" class="w-full aspect-[4/3] object-cover" loading="lazy">
+            </div>
+          </div>
+        </div>
+
         <div id="articles-scientifiques" class="mt-10 pt-10 border-t border-[#1a2e35]/10">
           <h2 class="text-xl md:text-2xl font-bold text-gray-900 mb-4">Articles scientifiques en médecine vétérinaire appliquée au transport international d'animaux de compagnie</h2>
           <p class="text-[#1a2e35]/90 font-montserrat mb-4">Articles scientifiques en français, espagnol et anglais sur la médecine vétérinaire appliquée au transport international d'animaux de compagnie, l'exportation et la santé animale.</p>
@@ -210,23 +241,11 @@
     </div>
   </section>
 
-  <!-- Navigation -->
-  <nav class="max-w-6xl mx-auto px-4 py-6 sm:py-8 md:py-12 border-t border-b border-[#1a2e35]/10" aria-label="Sections principales">
-    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-3 sm:gap-4 md:gap-6">
-      <a href="#services-medicaux" class="flex-1 text-center py-4 px-2 text-[#1a2e35]/80 hover:text-[#1a2e35] transition-colors border-r border-[#1a2e35]/10 font-montserrat"><span class="text-xs md:text-sm font-semibold tracking-wide uppercase">Services médicaux</span></a>
-      <a href="#exportation" class="flex-1 text-center py-4 px-2 text-[#1a2e35]/80 hover:text-[#1a2e35] transition-colors border-r border-[#1a2e35]/10 font-montserrat"><span class="text-xs md:text-sm font-semibold tracking-wide uppercase">Exportation internationale</span></a>
-      <a href="#articles-scientifiques" class="flex-1 text-center py-4 px-2 text-[#1a2e35]/80 hover:text-[#1a2e35] transition-colors border-r border-[#1a2e35]/10 font-montserrat"><span class="text-xs md:text-sm font-semibold tracking-wide uppercase">Articles scientifiques en médecine vétérinaire appliquée au transport international d'animaux de compagnie</span></a>
-      <a href="./zoopedia/index-fr.html" class="flex-1 text-center py-4 px-2 text-[#1a2e35]/80 hover:text-[#1a2e35] transition-colors border-r border-[#1a2e35]/10 font-montserrat"><span class="text-xs md:text-sm font-semibold tracking-wide uppercase">La Zoopédie</span></a>
-      <a href="./articulos-interes/index-fr.html" class="flex-1 text-center py-4 px-2 text-[#1a2e35]/80 hover:text-[#1a2e35] transition-colors border-r border-[#1a2e35]/10 font-montserrat"><span class="text-xs md:text-sm font-semibold tracking-wide uppercase">Guides pratiques</span></a>
-      <a href="#contact" class="flex-1 text-center py-4 px-2 text-[#1a2e35]/80 hover:text-[#1a2e35] transition-colors border-r border-[#1a2e35]/10 font-montserrat"><span class="text-xs md:text-sm font-semibold tracking-wide uppercase">Contact</span></a>
-      <a href="#localisation" class="flex-1 text-center py-4 px-2 text-[#1a2e35]/80 hover:text-[#1a2e35] transition-colors font-montserrat"><span class="text-xs md:text-sm font-semibold tracking-wide uppercase">Localisation</span></a>
-    </div>
-  </nav>
-
   <main class="max-w-6xl mx-auto px-4 sm:px-6 pb-16 sm:pb-24 pt-8 sm:pt-12">
     <section id="services-medicaux" class="py-10 sm:py-14" aria-labelledby="services-medicaux-heading">
       <h2 id="services-medicaux-heading" class="text-lg font-semibold tracking-wide uppercase text-[#1a2e35] mb-8 font-montserrat">Services médicaux</h2>
       <div class="space-y-3 max-w-3xl">
+        <p class="text-[#1a2e35]/90 text-sm leading-relaxed font-montserrat mb-4">Nous sommes la seule clinique à Trujillo spécialisée en médecine des voyages internationaux des animaux de compagnie. Nous réalisons l'implantation de micropuce ISO 11784/11785, la vaccination antirabique avec enregistrement pour exportation, l'évaluation d'aptitude au vol, le dépistage clinique BOAS pour races brachycéphales, la coordination de la sérologie antirabique avec laboratoires agréés par l'Union européenne, l'émission du certificat de santé et la gestion du dossier auprès du SENASA. Le tout en un seul lieu, avec rigueur clinique et connaissance réglementaire à jour.</p>
         <details class="servicio-details group bg-white rounded-sm px-5 sm:px-6 py-1 font-montserrat">
           <summary class="cursor-pointer py-4 flex items-center justify-between gap-4">
             <h3 class="text-base font-semibold text-[#1a2e35] tracking-tight pr-4">Médecine préventive vétérinaire à Trujillo : vaccination, déparasitage et bilans</h3>
@@ -297,11 +316,50 @@
             <p class="mt-4 text-sm"><a href="https://wa.me/51979620402?text=Bonjour%2C%20je%20souhaite%20prendre%20rendez-vous%20pour%20%C3%A9chographie%20et%20cardiologie." target="_blank" rel="noopener noreferrer" class="text-[#0C789E] hover:underline">Contactez-nous pour organiser le bilan ; nous vous indiquerons l’examen adapté à la situation.</a></p>
           </div>
         </details>
+        <p class="text-[#1a2e35]/90 text-sm leading-relaxed font-montserrat pt-4">
+          <a href="./zoopedia/index-fr.html" class="text-base font-semibold text-[#1a2e35] hover:text-[#0C789E] hover:underline font-montserrat">La Zoopédie des voyages</a>
+        </p>
+        <p class="text-[#1a2e35]/90 text-sm leading-relaxed font-montserrat">Nous avons constitué une base éditoriale de fiches techniques vérifiées pour les principales destinations du monde — en espagnol, anglais et français — parce que l'information fiable sur les exigences d'importation d'animaux de compagnie n'était pas disponible en espagnol avec le niveau de détail qu'un vétérinaire ou un propriétaire informé doit avoir pour prendre des décisions réelles. Chaque fiche inclut la classification réglementaire de la destination, les exigences par espèce, les variations selon le pays d'origine, le calendrier minimal depuis zéro et un répertoire des autorités sanitaires avec liens officiels vérifiés.</p>
       </div>
     </section>
-    <section id="exportation" class="py-8 border-t border-[#1a2e35]/10">
-      <h2 class="text-lg font-semibold tracking-wide uppercase text-[#1a2e35] mb-6 font-montserrat">Exportation internationale d'animaux de compagnie</h2>
+    <section id="exportation" class="py-8 border-t border-[#1a2e35]/10" aria-labelledby="exportation-heading">
+      <details class="group">
+        <summary class="text-lg font-semibold tracking-wide uppercase text-[#1a2e35] font-montserrat cursor-pointer list-none flex items-center justify-between gap-2 [&::-webkit-details-marker]:hidden">
+          <span id="exportation-heading">Exportation internationale d'animaux de compagnie</span>
+          <span class="text-[#0C789E] text-sm font-normal normal-case">Cliquer pour afficher</span>
+        </summary>
+      <div class="mt-6 space-y-6 text-sm sm:text-base leading-relaxed text-[#1a2e35]/90 font-montserrat max-w-3xl">
+        <p>Douze ans d’<strong>exportation internationale d’animaux de compagnie depuis le Pérou</strong> enseignent une chose qu’aucun règlement n’écrit explicitement : le problème n’est jamais l’animal. Le problème est le dossier.</p>
+        <p>Un chien sain, vacciné, identifié par micropuce, peut rester en frontière si le vaccin a été administré avant la micropuce, si le certificat a été émis un jour en dehors de la fenêtre de validité, ou si le laboratoire de sérologie ne figure pas sur la liste agréée du pays de destination. La biologie de l’animal ne compte pas à ce contrôle. C’est la chaîne documentaire qui compte, et cette chaîne a un ordre qui ne se négocie pas.</p>
+
+        <h3 class="text-base font-semibold text-[#1a2e35] mt-8 mb-2">Ce que nous faisons</h3>
+        <p>À Zoovet Travel nous gérons l’intégralité du processus d’<strong>exportation internationale de chiens et chats</strong> depuis Trujillo, Pérou. Nous travaillons avec des animaux qui voyagent vers l’Espagne, les États-Unis, le Canada, le Royaume-Uni, l’Australie, la Nouvelle-Zélande, la France, l’Allemagne, l’Italie, le Japon et d’autres destinations aux exigences techniques spécifiques. Chaque processus commence par un audit du passé de l’animal : micropuce, vaccination antirabique, sérologie lorsque la destination l’exige, traitements antiparasitaires avec fenêtre temporelle vérifiée. La première erreur à éviter est de construire un dossier sur une base invalide.</p>
+        <p>Le Servicio Nacional de Sanidad Agraria — <strong>SENASA</strong> — est l’autorité d’origine au Pérou. Le <strong>certificat zoosanitaire d’exportation</strong> qu’il délivre, dans le cadre du TUPA CA07 et du Decreto Supremo 051-2000-AG, est le document qui clôture le processus depuis le territoire péruvien. Nous coordonnons cette démarche, l’endossement officiel et toute la séquence : de la première révision du passé jusqu’à l’embarquement.</p>
+
+        <h3 class="text-base font-semibold text-[#1a2e35] mt-8 mb-2">Pourquoi l’ordre compte plus que la volonté</h3>
+        <p>La micropuce doit être implantée <strong>avant</strong> la vaccination antirabique qui servira au voyage. Le prélèvement sérologique est réalisé au moins <strong>30 jours</strong> après cette vaccination. Certaines destinations exigent en outre un délai d’attente pouvant aller jusqu’à <strong>trois mois</strong> après la prise de sang avant d’autoriser l’entrée. Le certificat de santé a une fenêtre de validité de 10 à 30 jours selon la destination. Si l’une de ces dates ne concorde pas, le dossier ne voyage pas même si l’animal est en parfait état clinique.</p>
+        <div class="bg-amber-50 border-l-4 border-amber-500 py-3 px-4 my-4 rounded-r text-sm text-amber-900 font-montserrat">
+          <p class="mb-0">En consultation à Trujillo nous voyons souvent ce schéma : des propriétaires qui arrivent avec tout prêt, sauf que l’ordre des actes médicaux n’est pas celui exigé par le pays de destination. Reconstruire cette chronologie a un coût en temps qui dépasse souvent les trois mois. Le détecter avant qu’il ne survienne fait partie du travail.</p>
+        </div>
+
+        <p class="hidden" aria-hidden="true">Nous avons constitué une base de fiches techniques vérifiées pour les principales destinations du monde — en espagnol, anglais et français — parce que l’information fiable sur les exigences d’importation d’animaux de compagnie n’était pas disponible en espagnol avec le niveau de détail qu’un vétérinaire ou un propriétaire informé doit avoir pour prendre des décisions réelles. Chaque fiche inclut la classification réglementaire de la destination, les exigences par espèce, les variations selon le pays d’origine, le calendrier minimal depuis zéro et un répertoire des autorités sanitaires avec liens officiels vérifiés.</p>
+        <p class="hidden" aria-hidden="true"><a href="./zoopedia/index-fr.html" class="text-[#0C789E] font-semibold hover:underline">Consulter la Zoopédie de l’exportation et de l’importation internationales d’animaux de compagnie →</a></p>
+
+        <h3 class="text-base font-semibold text-[#1a2e35] mt-8 mb-2">Soins vétérinaires spécialisés à Trujillo</h3>
+        <p>Nous sommes la seule <strong>clinique vétérinaire à Trujillo</strong> spécialisée en <strong>médecine des voyages internationaux</strong> des animaux de compagnie. Nous réalisons :</p>
+        <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 list-disc pl-5 text-[#1a2e35]/90 my-4">
+          <li>Implantation de <strong>micropuce ISO 11784/11785</strong></li>
+          <li>Vaccination antirabique avec enregistrement pour exportation</li>
+          <li>Évaluation d’aptitude au vol et dépistage clinique BOAS pour races brachycéphales</li>
+          <li>Coordination de la sérologie antirabique avec laboratoires agréés par l’Union européenne</li>
+          <li>Émission du certificat de santé et gestion du dossier auprès du <strong>SENASA</strong></li>
+        </ul>
+        <p>Le tout en un seul lieu, avec rigueur clinique et connaissance réglementaire à jour. Si vous êtes à Trujillo, La Libertad ou n’importe quelle région du Pérou et souhaitez exporter votre animal, le processus commence par une consultation. Pas par l’achat du billet.</p>
+        <p class="pt-2"><a href="https://wa.me/51979620402?text=Bonjour%2C%20je%20souhaite%20demander%20un%20devis%20pour%20une%20exportation%20internationale%20%C3%A0%20destination%20de%20%3A%20" target="_blank" rel="noopener noreferrer" class="inline-block bg-[#0C789E] text-white px-4 py-2 rounded font-semibold text-sm hover:bg-[#0a6a8a] transition-colors">WhatsApp · Devis exportation</a> <a href="https://wa.me/51922083707?text=Bonjour%2C%20je%20souhaite%20demander%20un%20devis%20pour%20une%20exportation%20internationale%20%C3%A0%20destination%20de%20%3A%20" target="_blank" rel="noopener noreferrer" class="inline-block ml-2 border border-[#0C789E] text-[#0C789E] px-4 py-2 rounded font-semibold text-sm hover:bg-[#0C789E]/5 transition-colors">+51 922 083 707</a></p>
+      </div>
+      </details>
     </section>
+
     <section id="contact" class="py-8 border-t border-[#1a2e35]/10">
       <details class="group">
         <summary class="text-lg font-semibold tracking-wide uppercase text-[#1a2e35] font-montserrat cursor-pointer list-none flex items-center justify-between gap-2 [&::-webkit-details-marker]:hidden">
@@ -335,26 +393,39 @@
         </div>
       </details>
     </section>
+
+    <section id="section-historias-fronteras" class="py-10 sm:py-12 border-t border-[#1a2e35]/10 max-w-6xl mx-auto px-4 sm:px-6">
+      <h2 class="text-xl sm:text-2xl font-semibold text-[#1a2e35] mb-2">Des histoires qui ont déjà franchi les frontières</h2>
+      <p class="text-[#1a2e35]/80 text-sm sm:text-base font-normal mb-8 max-w-2xl">Exportation internationale d'animaux de compagnie dans le monde entier, avec 12 ans d'expérience et médecine vétérinaire spécialisée.</p>
+      <div class="grid grid-cols-2 lg:grid-cols-3 gap-5">
+        <div class="rounded-lg shadow-sm overflow-hidden transition-all duration-300 hover:shadow-md hover:brightness-105">
+          <img src="./images/historias/historia-01.webp" alt="Chien ou chat exporté par Zoovet Travel vers une destination internationale." width="800" height="800" class="w-full aspect-square object-cover" loading="lazy">
+        </div>
+        <div class="rounded-lg shadow-sm overflow-hidden transition-all duration-300 hover:shadow-md hover:brightness-105">
+          <img src="./images/historias/historia-02.webp" alt="Animal exporté avec logistique complète et protocole vétérinaire." width="800" height="800" class="w-full aspect-square object-cover" loading="lazy">
+        </div>
+        <div class="rounded-lg shadow-sm overflow-hidden transition-all duration-300 hover:shadow-md hover:brightness-105">
+          <img src="./images/historias/historia-03.webp" alt="Cas d'exportation internationale d'animal depuis le Pérou." width="800" height="800" class="w-full aspect-square object-cover" loading="lazy">
+        </div>
+        <div class="rounded-lg shadow-sm overflow-hidden transition-all duration-300 hover:shadow-md hover:brightness-105">
+          <img src="./images/historias/historia-04.webp" alt="Animal après exportation internationale." width="800" height="800" class="w-full aspect-square object-cover" loading="lazy">
+        </div>
+        <div class="rounded-lg shadow-sm overflow-hidden transition-all duration-300 hover:shadow-md hover:brightness-105">
+          <img src="./images/historias/historia-05.webp" alt="Exemple d'animal envoyé vers le pays de destination." width="800" height="800" class="w-full aspect-square object-cover" loading="lazy">
+        </div>
+        <div class="rounded-lg shadow-sm overflow-hidden transition-all duration-300 hover:shadow-md hover:brightness-105">
+          <img src="./images/historias/historia-06.webp" alt="Animal exporté avec médecine vétérinaire spécialisée." width="800" height="800" class="w-full aspect-square object-cover" loading="lazy">
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="bg-[#1a2e35] text-[#F8FAFC] font-montserrat border-t-[0.5px] border-white/10" role="contentinfo">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-12">
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 lg:gap-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 lg:gap-8">
         <div class="lg:col-span-1">
           <p class="text-base font-bold tracking-[0.2em] uppercase text-[#F8FAFC] mb-3">ZOOVET TRAVEL</p>
           <p class="text-sm text-[#F8FAFC]/80 leading-relaxed max-w-xs">Plus de 12 ans d'excellence en exportation internationale d'animaux de compagnie et médecine vétérinaire spécialisée.</p>
-        </div>
-        <div>
-          <p class="text-xs font-semibold tracking-wider uppercase text-[#F8FAFC]/90 mb-4">Services médicaux</p>
-          <ul class="space-y-2">
-            <li><a href="#services-medicaux" class="text-sm text-slate-400 hover:text-white transition-colors block py-2">Médecine préventive</a></li>
-            <li><a href="#services-medicaux" class="text-sm text-slate-400 hover:text-white transition-colors block py-2">Dermatologie</a></li>
-            <li><a href="#services-medicaux" class="text-sm text-slate-400 hover:text-white transition-colors block py-2">Nutrition</a></li>
-            <li><a href="#services-medicaux" class="text-sm text-slate-400 hover:text-white transition-colors block py-2">Médecine interne</a></li>
-            <li><a href="#services-medicaux" class="text-sm text-slate-400 hover:text-white transition-colors block py-2">Ophtalmologie</a></li>
-            <li><a href="#services-medicaux" class="text-sm text-slate-400 hover:text-white transition-colors block py-2">Endocrinologie</a></li>
-            <li><a href="#services-medicaux" class="text-sm text-slate-400 hover:text-white transition-colors block py-2">Diagnostic par imagerie</a></li>
-          </ul>
         </div>
         <div>
           <p class="text-xs font-semibold tracking-wider uppercase text-[#F8FAFC]/90 mb-4">Exportation</p>
@@ -380,7 +451,7 @@
     </div>
     <div class="border-t border-[#F8FAFC]/10 px-4 sm:px-6 py-4 footer-safe">
       <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-        <div class="flex items-center gap-4">
+        <div class="flex items-center gap-4 flex-wrap justify-center sm:justify-start">
           <a href="https://www.tiktok.com/@zoovet.trujillo" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-all duration-300 hover:scale-110 p-3 min-w-[44px] min-h-[44px] flex items-center justify-center" aria-label="TikTok"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"/></svg></a>
           <a href="https://www.instagram.com/zoovet.trujillo/" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-all duration-300 hover:scale-110 p-3 min-w-[44px] min-h-[44px] flex items-center justify-center" aria-label="Instagram"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0z"/></svg></a>
           <a href="https://www.facebook.com/Zoovet.Trujillo/" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-all duration-300 hover:scale-110 p-3 min-w-[44px] min-h-[44px] flex items-center justify-center" aria-label="Facebook"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>

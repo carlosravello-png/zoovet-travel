@@ -334,3 +334,66 @@ guia-articulo-vacuna-antirrabica-para-viajar-02.jpg
 
 Para reinsertar o corregir en el futuro (por si añades más artículos), puedes ejecutar desde la raíz del repo:  
 `python scripts/insert-guia-images.py` (o `node scripts/insert-guia-images.js` si tienes Node). Los scripts omiten archivos que ya contienen `guia-img`.
+
+---
+
+## Home — «Historias que ya cruzaron fronteras» (solo fotos, sin texto debajo)
+
+Sección antes del footer en `index.html` / `index-en.html` / `index-fr.html`. Solo imágenes en grid; sin captions.
+
+### Estructura visual recomendada
+
+- **Cantidad de fotos:** **6**. Dos filas en desktop, una lectura clara, sin scroll infinito y sin quedar vacío ni recargado.
+- **Grid:** 3 columnas (desktop) → 2 (tablet) → 1 (móvil). Misma estructura en los tres idiomas.
+
+```
+Desktop (≈ 1024px+):
+┌─────────┬─────────┬─────────┐
+│ foto 1  │ foto 2  │ foto 3  │
+├─────────┼─────────┼─────────┤
+│ foto 4  │ foto 5  │ foto 6  │
+└─────────┴─────────┴─────────┘
+
+Tablet (≈ 768–1023px):
+┌─────────┬─────────┐
+│ foto 1  │ foto 2  │
+├─────────┼─────────┤
+│ foto 3  │ foto 4  │
+├─────────┼─────────┤
+│ foto 5  │ foto 6  │
+└─────────┴─────────┘
+
+Móvil:
+┌─────────┐
+│ foto 1  │
+├─────────┤
+│ foto 2  │
+│  ...    │
+│ foto 6  │
+└─────────┘
+```
+
+### Especificación por imagen
+
+| Especificación | Valor |
+|----------------|--------|
+| **Cantidad** | **6** fotos |
+| **Dimensiones** | **1200 × 800 px** (ancho × alto) |
+| **Proporción** | **3:2** (el CSS usa `aspect-[3/2]` + `object-cover`) |
+| **Formato** | **WebP** (calidad 85). Buena nitidez y poco peso. |
+| **Peso máximo por imagen** | **≈ 150–200 KB** (evita scroll lento y mantiene elegancia) |
+| **Carpeta** | `images/historias/` |
+| **Nombres de archivo** | `historia-01.webp` … `historia-06.webp` |
+
+Con 6 fotos a 1200×800 y ~150–200 KB cada una, la sección entra en poco más de una ventana en desktop (dos filas) y en móvil son 6 bloques seguidos sin sensación de galería infinita. Menos de 6 queda escueto; más de 6 empieza a alargar y pierde el cierre elegante antes del footer.
+
+### Alt texts por idioma (ya aplicados en index / index-en / index-fr)
+
+| Archivo | Alt ES | Alt EN | Alt FR |
+|---------|--------|--------|--------|
+| historia-01.webp | Perro o gato exportado por Zoovet Travel a destino internacional. | Dog or cat exported by Zoovet Travel to international destination. | Chien ou chat exporté par Zoovet Travel vers une destination internationale. |
+| historia-02.webp | Mascota exportada con gestión integral y protocolo veterinario. | Pet exported with full logistics and veterinary protocol. | Animal exporté avec logistique complète et protocole vétérinaire. |
+| historia-03.webp | Caso de exportación internacional de mascota desde Perú. | International pet export case from Peru. | Cas d'exportation internationale d'animal depuis le Pérou. |
+| historia-04.webp | Mascota tras completar proceso de exportación internacional. | Pet after completing international export process. | Animal après exportation internationale. |
+| historia-05.webp | Ejemplo de mascota enviada a país de destino. | Example of pet shipped to destination country. | Exemple d'animal envoyé vers le pays de destination. |
+| historia-06.webp | Mascota exportada con medicina veterinaria especializada. | Pet exported with specialized veterinary care. | Animal exporté avec médecine vétérinaire spécialisée. |
