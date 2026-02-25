@@ -77,11 +77,36 @@
     .btn-cta-primary { transition: all 0.5s ease; }
     .btn-cta-primary:hover { transform: translateY(-4px); background-color: #0a6a8a; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25); }
     @media (max-width: 767px) {
+      .hero-cover { min-height: 360px; }
+      .hero-inner { align-items: flex-start; justify-content: center; padding-top: 1.5rem; padding-bottom: 1.5rem; }
       body { -webkit-tap-highlight-color: rgba(12, 120, 158, 0.2); }
       footer a { padding: 0.5rem 0; min-height: 44px; display: inline-flex; align-items: center; }
+      .hero-cta a { min-height: 44px; display: inline-flex; align-items: center; justify-content: center; text-align: center; }
       .nav-bar-desktop .grid { grid-template-columns: repeat(4, 1fr); }
-      .nav-bar-desktop a { min-height: 44px; padding: 0.625rem 0.375rem; font-size: 9px; letter-spacing: 0.06em; -webkit-tap-highlight-color: rgba(255,255,255,0.15); }
+      .nav-bar-desktop .nav-bar-cell,
+      .nav-bar-desktop .nav-bar-cell--empty { min-height: 44px; -webkit-tap-highlight-color: rgba(255,255,255,0.15); }
+      .nav-bar-desktop .nav-bar-cell { padding: 0.625rem 0.5rem; font-size: 9px; letter-spacing: 0.06em; }
     }
+    @media (min-width: 768px) {
+      .hamburger-wrap { display: none !important; }
+      .nav-drawer-backdrop { display: none !important; }
+    }
+    .hamburger-wrap { position: relative; z-index: 60; }
+    .hamburger-btn { display: flex; flex-direction: column; justify-content: center; align-items: center; width: 44px; height: 44px; padding: 0; border: none; background: transparent; cursor: pointer; gap: 5px; -webkit-tap-highlight-color: transparent; }
+    .hamburger-btn span { display: block; width: 20px; height: 2px; background: #1a2e35; border-radius: 1px; transition: transform 0.25s ease, opacity 0.2s ease; }
+    .hamburger-btn.is-open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+    .hamburger-btn.is-open span:nth-child(2) { opacity: 0; }
+    .hamburger-btn.is-open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+    .nav-drawer-backdrop { position: fixed; inset: 0; background: rgba(26,46,53,0.2); z-index: 45; opacity: 0; visibility: hidden; transition: opacity 0.25s ease, visibility 0.25s; }
+    .nav-drawer-backdrop.is-open { opacity: 1; visibility: visible; }
+    .nav-drawer { position: fixed; top: 0; left: 0; width: min(280px, 88vw); max-width: 280px; height: 100%; background: #F8FAFC; box-shadow: 4px 0 24px rgba(26,46,53,0.12); z-index: 50; transform: translateX(-100%); transition: transform 0.28s cubic-bezier(0.4,0,0.2,1); overflow-y: auto; padding: 3.5rem 1rem 1.5rem; font-family: 'Montserrat', sans-serif; }
+    .nav-drawer.is-open { transform: translateX(0); }
+    .nav-drawer a { display: block; padding: 0.75rem 0.5rem; color: #1a2e35; font-size: 0.8125rem; font-weight: 500; letter-spacing: 0.04em; border-bottom: 1px solid rgba(26,46,53,0.08); -webkit-tap-highlight-color: rgba(12, 120, 158, 0.15); }
+    .nav-drawer a:hover { color: #0C789E; }
+    .hero-cta a, .hero-cta .hero-cta-btn {
+      display: inline-flex; align-items: center; justify-content: center; text-align: center;
+    }
+    body.menu-open-mobile { overflow: hidden; }
     @supports (padding: max(0px)) {
       .footer-safe { padding-bottom: max(1.5rem, env(safe-area-inset-bottom)); }
     }
@@ -93,6 +118,8 @@
     .servicio-details .servicio-chevron { transition: transform 0.2s ease; }
     .servicio-details[open] .servicio-chevron { transform: rotate(90deg); }
     #section-historias-fronteras { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+    /* Texto justificado en contenido principal (estética móvil y desktop) */
+    main p, main li { text-align: justify; }
   </style>
 </head>
 <body class="bg-[#F8FAFC] min-h-screen antialiased text-[#1a2e35]">
@@ -108,17 +135,45 @@
     </ol>
   </nav>
 
-  <header class="px-4 py-6 md:py-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 max-w-6xl mx-auto">
-    <div class="text-lg sm:text-xl md:text-2xl tracking-[0.4em] text-[#1a2e35] font-montserrat"><span class="font-light">ZOOVET</span> <span class="font-bold">TRAVEL</span></div>
-    <div class="flex gap-2">
-      <a href="./index.html" class="self-start sm:self-center text-xs font-semibold tracking-widest uppercase text-[#1a2e35]/80 hover:text-[#1a2e35] border border-[#1a2e35]/30 hover:border-[#1a2e35]/50 px-3 py-2 rounded-sm transition-all duration-300" aria-label="Español" title="Español">ES</a>
-      <a href="./index-fr.html" class="self-start sm:self-center text-xs font-semibold tracking-widest uppercase text-[#1a2e35]/80 hover:text-[#1a2e35] border border-[#1a2e35]/30 hover:border-[#1a2e35]/50 px-3 py-2 rounded-sm transition-all duration-300" aria-label="Français" title="Français">FR</a>
+  <header class="px-4 py-6 md:py-8 flex flex-row items-center justify-between gap-4 max-w-6xl mx-auto">
+    <div class="flex items-center gap-3">
+      <div class="hamburger-wrap md:hidden order-first">
+        <button type="button" class="hamburger-btn" id="hamburger-btn" aria-label="Open menu" aria-expanded="false" aria-controls="nav-drawer"><span></span><span></span><span></span></button>
+      </div>
+      <div class="text-lg sm:text-xl md:text-2xl tracking-[0.4em] text-[#1a2e35] font-montserrat"><span class="font-light">ZOOVET</span> <span class="font-bold">TRAVEL</span></div>
+    </div>
+    <div class="flex items-center gap-2">
+      <a href="./index.html" class="text-xs font-semibold tracking-widest uppercase text-[#1a2e35]/80 hover:text-[#1a2e35] border border-[#1a2e35]/30 hover:border-[#1a2e35]/50 px-3 py-2 rounded-sm transition-all duration-300 min-h-[44px] inline-flex items-center justify-center" aria-label="Español" title="Español">ES</a>
+      <span class="text-xs font-semibold tracking-widest uppercase text-[#1a2e35] border border-[#0C789E] bg-[#0C789E]/10 px-3 py-2 rounded-sm min-h-[44px] inline-flex items-center justify-center" aria-current="page">EN</span>
+      <a href="./index-fr.html" class="text-xs font-semibold tracking-widest uppercase text-[#1a2e35]/80 hover:text-[#1a2e35] border border-[#1a2e35]/30 hover:border-[#1a2e35]/50 px-3 py-2 rounded-sm transition-all duration-300 min-h-[44px] inline-flex items-center justify-center" aria-label="Français" title="Français">FR</a>
     </div>
   </header>
 
+  <div class="nav-drawer-backdrop" id="nav-drawer-backdrop" aria-hidden="true"></div>
+  <nav class="nav-drawer" id="nav-drawer" aria-label="Main menu" aria-hidden="true">
+    <a href="./index-en.html#export">International pet transport</a>
+    <a href="./index-en.html#medical-services">Medical services</a>
+    <a href="./articles/index-en.html">Scientific articles</a>
+    <a href="./zoopedia/index-en.html">Zoopedia of pet export</a>
+    <a href="./articulos-interes/index-en.html">Practical guides</a>
+    <a href="https://servicios.senasa.gob.pe/consultaRequisitos/consultarRequisitos.action" target="_blank" rel="noopener noreferrer">Consulta SENASA Perú</a>
+    <a href="./index-en.html#contact">Contact</a>
+    <a href="./index-en.html#location">Location</a>
+  </nav>
+  <script>
+    (function(){
+      var btn = document.getElementById('hamburger-btn');
+      var drawer = document.getElementById('nav-drawer');
+      var backdrop = document.getElementById('nav-drawer-backdrop');
+      function open() { if(!btn||!drawer||!backdrop)return; btn.setAttribute('aria-expanded','true'); btn.setAttribute('aria-label','Close menu'); drawer.setAttribute('aria-hidden','false'); backdrop.setAttribute('aria-hidden','false'); btn.classList.add('is-open'); drawer.classList.add('is-open'); backdrop.classList.add('is-open'); document.body.classList.add('menu-open-mobile'); }
+      function close() { if(!btn||!drawer||!backdrop)return; btn.setAttribute('aria-expanded','false'); btn.setAttribute('aria-label','Open menu'); drawer.setAttribute('aria-hidden','true'); backdrop.setAttribute('aria-hidden','true'); btn.classList.remove('is-open'); drawer.classList.remove('is-open'); backdrop.classList.remove('is-open'); document.body.classList.remove('menu-open-mobile'); }
+      if(btn&&drawer&&backdrop){ btn.addEventListener('click',function(){ drawer.classList.contains('is-open')?close():open(); }); backdrop.addEventListener('click',close); drawer.querySelectorAll('a').forEach(function(a){ a.addEventListener('click',close); }); }
+    })();
+  </script>
+
   <!-- Hero - Top-Tier European Corporate Aesthetic -->
   <section class="hero-cover w-full flex items-center justify-center relative">
-    <div class="absolute inset-0 flex items-center justify-center px-4 py-8 text-center">
+    <div class="hero-inner absolute inset-0 flex items-center justify-center px-4 py-8 text-center">
       <div class="max-w-3xl mx-auto">
         <h1 class="font-bold tracking-[0.25em] text-2xl md:text-3xl lg:text-4xl text-white mb-4 font-montserrat">
           ZOOVET TRAVEL
@@ -129,14 +184,14 @@
         <p class="text-sm sm:text-base md:text-lg font-semibold text-white/95 mb-8 max-w-xl mx-auto leading-relaxed font-montserrat" style="opacity: 1; letter-spacing: 0.03em;">
           Experts in animal health and high-priority international logistics.
         </p>
-        <div class="flex flex-col sm:flex-row flex-wrap gap-3 justify-center items-center">
-          <a href="#medical-services" class="btn-zoovet text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-none font-semibold text-xs sm:text-sm tracking-wide font-montserrat">
+        <div class="hero-cta flex flex-col sm:flex-row flex-wrap gap-3 justify-center items-center">
+          <a href="#medical-services" class="btn-zoovet hero-cta-btn text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-none font-semibold text-xs sm:text-sm tracking-wide font-montserrat">
             Medical Services
           </a>
-          <a href="https://wa.me/51979620402?text=Hello%2C%20I%20would%20like%20to%20request%20a%20quote%20for%20an%20international%20export%20to%3A%20" target="_blank" rel="noopener noreferrer" class="btn-cta-primary inline-block bg-[#0C789E] text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-none font-semibold text-xs sm:text-sm tracking-wide font-montserrat">
+          <a href="https://wa.me/51979620402?text=Hello%2C%20I%20would%20like%20to%20request%20a%20quote%20for%20an%20international%20export%20to%3A%20" target="_blank" rel="noopener noreferrer" class="btn-cta-primary hero-cta-btn inline-block bg-[#0C789E] text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-none font-semibold text-xs sm:text-sm tracking-wide font-montserrat">
             Export quote
           </a>
-          <a href="https://wa.me/51979620402?text=Hello%2C%20I%20would%20like%20more%20information%20to%20travel%20with%20my%20pet%20to%3A%20" target="_blank" rel="noopener noreferrer" class="inline-block border border-white/90 text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-none font-semibold text-xs sm:text-sm tracking-wide font-montserrat hover:bg-white/10 transition-all duration-300">
+          <a href="https://wa.me/51979620402?text=Hello%2C%20I%20would%20like%20more%20information%20to%20travel%20with%20my%20pet%20to%3A%20" target="_blank" rel="noopener noreferrer" class="hero-cta-btn inline-block border border-white/90 text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-none font-semibold text-xs sm:text-sm tracking-wide font-montserrat hover:bg-white/10 transition-all duration-300">
             Information to travel with my pet
           </a>
         </div>
@@ -147,15 +202,15 @@
   <!-- Main navigation: below hero, visible on all devices (Swiss-style on mobile) -->
   <nav class="nav-bar-desktop bg-[#1a2e35] border-b border-white/5" aria-label="Main sections">
     <div class="max-w-6xl mx-auto px-2 sm:px-4 py-3">
-      <div class="grid grid-cols-4 md:grid-cols-7 gap-0">
-        <a href="#export" class="nav-bar-cell flex items-center justify-center py-2.5 sm:py-3 px-2 border-r border-b md:border-b-0 border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat leading-tight text-center">International pet transport</a>
-        <a href="#medical-services" class="nav-bar-cell flex items-center justify-center py-2.5 sm:py-3 px-2 border-r border-b md:border-b-0 border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat text-center">Medical services</a>
-        <a href="#scientific-articles" class="nav-bar-cell flex items-center justify-center py-2.5 sm:py-3 px-2 border-r border-b md:border-b-0 border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat text-center">Scientific articles</a>
+      <div class="grid grid-cols-4 md:grid-cols-8 gap-0">
+        <a href="./index-en.html#export" class="nav-bar-cell flex items-center justify-center py-2.5 sm:py-3 px-2 border-r border-b md:border-b-0 border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat leading-tight text-center">International pet transport</a>
+        <a href="./index-en.html#medical-services" class="nav-bar-cell flex items-center justify-center py-2.5 sm:py-3 px-2 border-r border-b md:border-b-0 border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat text-center">Medical services</a>
+        <a href="./articles/index-en.html" class="nav-bar-cell flex items-center justify-center py-2.5 sm:py-3 px-2 border-r border-b md:border-b-0 border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat text-center">Scientific articles</a>
         <a href="./zoopedia/index-en.html" class="nav-bar-cell flex items-center justify-center py-2.5 sm:py-3 px-2 border-r border-b md:border-b-0 border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat leading-tight text-center"><span>Zoopedia of pet export</span></a>
         <a href="./articulos-interes/index-en.html" class="nav-bar-cell flex items-center justify-center py-2.5 sm:py-3 px-2 border-r border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat text-center">Practical guides</a>
-        <a href="#contact" class="nav-bar-cell flex items-center justify-center py-2.5 sm:py-3 px-2 border-r border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat text-center">Contact</a>
-        <a href="#location" class="nav-bar-cell flex items-center justify-center py-2.5 sm:py-3 px-2 border-r md:border-r-0 border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat text-center">Location</a>
-        <span class="nav-bar-cell--empty md:hidden border-r border-white/10 min-h-[44px] flex-shrink-0" aria-hidden="true"></span>
+        <a href="https://servicios.senasa.gob.pe/consultaRequisitos/consultarRequisitos.action" target="_blank" rel="noopener noreferrer" class="nav-bar-cell flex items-center justify-center py-2.5 sm:py-3 px-2 border-r border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat text-center">Consulta SENASA Perú</a>
+        <a href="./index-en.html#contact" class="nav-bar-cell flex items-center justify-center py-2.5 sm:py-3 px-2 border-r border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat text-center">Contact</a>
+        <a href="./index-en.html#location" class="nav-bar-cell flex items-center justify-center py-2.5 sm:py-3 px-2 border-r md:border-r-0 border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat text-center">Location</a>
       </div>
     </div>
   </nav>
@@ -389,7 +444,7 @@
         <div class="mt-6 space-y-3 text-[#1a2e35]/90 font-montserrat">
           <p><strong>Zoovet Travel - Trujillo Office</strong></p>
           <p>Calle Cuba 241, Urb. El Recreo, Trujillo, La Libertad, Peru</p>
-          <a href="https://www.google.com/maps?q=-8.11585,-79.02364" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-[#0C789E] font-semibold hover:underline">
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Calle+Cuba+241,+Urb.+El+Recreo,+Trujillo,+La+Libertad,+Peru" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-[#0C789E] font-semibold hover:underline">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
             View on Google Maps
           </a>
@@ -446,7 +501,7 @@
               <span class="flex-shrink-0 mt-0.5 text-[#0C789E]" aria-hidden="true">
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
               </span>
-              <span>Calle Cuba 241, Urb. El Recreo, Trujillo</span>
+              <a href="https://www.google.com/maps/search/?api=1&amp;query=Calle+Cuba+241,+Urb.+El+Recreo,+Trujillo,+La+Libertad,+Peru" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Calle Cuba 241, Urb. El Recreo, Trujillo</a>
             </p>
             <div class="space-y-2">
               <a href="tel:044366094" class="flex items-center gap-2 hover:text-white transition-colors block">
@@ -480,7 +535,7 @@
           </a>
         </div>
         <p class="text-xs text-[#F8FAFC]/60 text-center sm:text-right">© 2026 Zoovet Travel. All rights reserved.</p>
-        <p class="text-[10px] text-[#F8FAFC]/40 font-mono mt-1.5 w-full text-center sm:text-right">Diseño y propiedad: Carlos Ravello Joo · Modelo de coherencia dinámico — MCD</p>
+        <p class="text-[10px] text-[#F8FAFC]/40 font-mono mt-1.5 w-full text-center sm:text-right">Design and ownership: Carlos Ravello Joo · Dynamic Coherence Model — MCD</p>
       </div>
     </div>
   </footer>

@@ -83,13 +83,17 @@
     @media (max-width: 767px) {
       body { -webkit-tap-highlight-color: rgba(12, 120, 158, 0.2); }
       footer a { padding: 0.5rem 0; min-height: 44px; display: inline-flex; align-items: center; }
-      .hero-cta a { min-height: 44px; display: inline-flex; align-items: center; justify-content: center; }
+      .hero-cta a { min-height: 44px; display: inline-flex; align-items: center; justify-content: center; text-align: center; }
+      .hero-cta .hero-cta-btn { min-width: 0; }
       #contacto a { min-height: 44px; display: inline-flex; align-items: center; padding: 0.5rem 0; }
       /* Barra azul bajo hero: 4×2 simétrico, estilo suizo */
       .nav-bar-desktop .grid { grid-template-columns: repeat(4, 1fr); }
       .nav-bar-desktop .nav-bar-cell,
       .nav-bar-desktop .nav-bar-cell--empty { min-height: 44px; -webkit-tap-highlight-color: rgba(255,255,255,0.15); }
       .nav-bar-desktop .nav-bar-cell { padding: 0.625rem 0.5rem; font-size: 9px; letter-spacing: 0.06em; }
+    }
+    .hero-cta a, .hero-cta .hero-cta-btn {
+      display: inline-flex; align-items: center; justify-content: center; text-align: center;
     }
     @media (min-width: 768px) {
       .hamburger-wrap { display: none !important; }
@@ -114,9 +118,9 @@
     }
     .nav-drawer-backdrop.is-open { opacity: 1; visibility: visible; }
     .nav-drawer {
-      position: fixed; top: 0; right: 0; width: min(280px, 88vw); max-width: 280px; height: 100%;
-      background: #F8FAFC; box-shadow: -4px 0 24px rgba(26,46,53,0.12); z-index: 50;
-      transform: translateX(100%); transition: transform 0.28s cubic-bezier(0.4,0,0.2,1);
+      position: fixed; top: 0; left: 0; width: min(280px, 88vw); max-width: 280px; height: 100%;
+      background: #F8FAFC; box-shadow: 4px 0 24px rgba(26,46,53,0.12); z-index: 50;
+      transform: translateX(-100%); transition: transform 0.28s cubic-bezier(0.4,0,0.2,1);
       overflow-y: auto; padding: 3.5rem 1rem 1.5rem; font-family: 'Montserrat', sans-serif;
     }
     .nav-drawer.is-open { transform: translateX(0); }
@@ -126,8 +130,6 @@
       -webkit-tap-highlight-color: rgba(12, 120, 158, 0.15);
     }
     .nav-drawer a:hover { color: #0C789E; }
-    .nav-drawer .nav-drawer-lang { margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(26,46,53,0.12); }
-    .nav-drawer .nav-drawer-lang a { border-bottom: none; }
     body.menu-open-mobile { overflow: hidden; }
     @supports (padding: max(0px)) {
       .footer-safe { padding-bottom: max(1.5rem, env(safe-area-inset-bottom)); }
@@ -142,6 +144,8 @@
     .servicio-details[open] .servicio-chevron { transform: rotate(90deg); }
     /* Historias que ya cruzaron fronteras: solo system font stack */
     #section-historias-fronteras { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+    /* Texto justificado en contenido principal (estética móvil y desktop) */
+    main p, main li { text-align: justify; }
   </style>
 </head>
 <body class="bg-[#F8FAFC] min-h-screen antialiased text-[#1a2e35]">
@@ -157,35 +161,32 @@
     </ol>
   </nav>
 
-  <header class="px-4 py-6 md:py-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 max-w-6xl mx-auto">
-    <div class="flex items-center justify-between w-full sm:w-auto">
-      <div class="text-lg sm:text-xl md:text-2xl tracking-[0.4em] text-[#1a2e35] font-montserrat"><span class="font-light">ZOOVET</span> <span class="font-bold">TRAVEL</span></div>
-      <div class="hamburger-wrap md:hidden">
+  <header class="px-4 py-6 md:py-8 flex flex-row items-center justify-between gap-4 max-w-6xl mx-auto">
+    <div class="flex items-center gap-3">
+      <div class="hamburger-wrap md:hidden order-first">
         <button type="button" class="hamburger-btn" id="hamburger-btn" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-drawer">
           <span></span><span></span><span></span>
         </button>
       </div>
+      <div class="text-lg sm:text-xl md:text-2xl tracking-[0.4em] text-[#1a2e35] font-montserrat"><span class="font-light">ZOOVET</span> <span class="font-bold">TRAVEL</span></div>
     </div>
-    <div class="hidden md:flex gap-2">
-      <a href="./index-en.html" class="self-start sm:self-center text-xs font-semibold tracking-widest uppercase text-[#1a2e35]/80 hover:text-[#1a2e35] border border-[#1a2e35]/30 hover:border-[#1a2e35]/50 px-3 py-2 rounded-sm transition-all duration-300" aria-label="English" title="English">EN</a>
-      <a href="./index-fr.html" class="self-start sm:self-center text-xs font-semibold tracking-widest uppercase text-[#1a2e35]/80 hover:text-[#1a2e35] border border-[#1a2e35]/30 hover:border-[#1a2e35]/50 px-3 py-2 rounded-sm transition-all duration-300" aria-label="Français" title="Français">FR</a>
+    <div class="flex items-center gap-2">
+      <a href="./index-en.html" class="text-xs font-semibold tracking-widest uppercase text-[#1a2e35]/80 hover:text-[#1a2e35] border border-[#1a2e35]/30 hover:border-[#1a2e35]/50 px-3 py-2 rounded-sm transition-all duration-300 min-h-[44px] inline-flex items-center justify-center" aria-label="English" title="English">EN</a>
+      <a href="./index-fr.html" class="text-xs font-semibold tracking-widest uppercase text-[#1a2e35]/80 hover:text-[#1a2e35] border border-[#1a2e35]/30 hover:border-[#1a2e35]/50 px-3 py-2 rounded-sm transition-all duration-300 min-h-[44px] inline-flex items-center justify-center" aria-label="Français" title="Français">FR</a>
     </div>
   </header>
 
   <!-- Drawer menú móvil (solo visible en pantallas pequeñas) -->
   <div class="nav-drawer-backdrop" id="nav-drawer-backdrop" aria-hidden="true"></div>
   <nav class="nav-drawer" id="nav-drawer" aria-label="Menú principal" aria-hidden="true">
-    <a href="#exportacion">Transporte internacional de mascotas</a>
-    <a href="#servicios-medicos">Servicios médicos</a>
-    <a href="#articulos-cientificos">Artículos científicos</a>
+    <a href="./index.html#exportacion">Transporte internacional de mascotas</a>
+    <a href="./index.html#servicios-medicos">Servicios médicos</a>
+    <a href="./articles/index.html">Artículos científicos</a>
     <a href="./zoopedia/index.html">Zoopedia de la exportación de mascotas</a>
     <a href="./articulos-interes/index.html">Guías prácticas</a>
-    <a href="#contacto">Contacto</a>
-    <a href="#ubicacion">Ubicación</a>
-    <div class="nav-drawer-lang">
-      <a href="./index-en.html">English — EN</a>
-      <a href="./index-fr.html">Français — FR</a>
-    </div>
+    <a href="https://servicios.senasa.gob.pe/consultaRequisitos/consultarRequisitos.action" target="_blank" rel="noopener noreferrer">Consulta SENASA Perú</a>
+    <a href="./index.html#contacto">Contacto</a>
+    <a href="./index.html#ubicacion">Ubicación</a>
   </nav>
   <script>
     (function(){
@@ -213,13 +214,13 @@
           Especialistas en salud animal y logística internacional de alta prioridad.
         </p>
         <div class="hero-cta flex flex-col sm:flex-row flex-wrap gap-3 justify-center items-center">
-          <a href="#servicios-medicos" class="btn-zoovet text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-none font-semibold text-xs sm:text-sm tracking-wide font-montserrat">
+          <a href="#servicios-medicos" class="btn-zoovet hero-cta-btn text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-none font-semibold text-xs sm:text-sm tracking-wide font-montserrat">
             Ver Servicios Médicos
           </a>
-          <a href="https://wa.me/51979620402?text=Hola%2C%20quiero%20cotizar%20una%20exportaci%C3%B3n%20internacional%20con%20destino%20a%3A%20" target="_blank" rel="noopener noreferrer" class="btn-cta-primary inline-block bg-[#0C789E] text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-none font-semibold text-xs sm:text-sm tracking-wide font-montserrat">
+          <a href="https://wa.me/51979620402?text=Hola%2C%20quiero%20cotizar%20una%20exportaci%C3%B3n%20internacional%20con%20destino%20a%3A%20" target="_blank" rel="noopener noreferrer" class="btn-cta-primary hero-cta-btn inline-block bg-[#0C789E] text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-none font-semibold text-xs sm:text-sm tracking-wide font-montserrat">
             Cotizar exportación
           </a>
-          <a href="https://wa.me/51979620402?text=Hola%2C%20solicito%20m%C3%A1s%20informaci%C3%B3n%20para%20viajar%20con%20mi%20mascota%20a%3A%20" target="_blank" rel="noopener noreferrer" class="inline-block border border-white/90 text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-none font-semibold text-xs sm:text-sm tracking-wide font-montserrat hover:bg-white/10 transition-all duration-300">
+          <a href="https://wa.me/51979620402?text=Hola%2C%20solicito%20m%C3%A1s%20informaci%C3%B3n%20para%20viajar%20con%20mi%20mascota%20a%3A%20" target="_blank" rel="noopener noreferrer" class="hero-cta-btn inline-block border border-white/90 text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-none font-semibold text-xs sm:text-sm tracking-wide font-montserrat hover:bg-white/10 transition-all duration-300">
             Información para viajar con mi mascota
           </a>
         </div>
@@ -230,15 +231,15 @@
   <!-- Navegación principal: en desktop barra completa; en móvil dentro del menú hamburguesa -->
   <nav class="nav-bar-desktop bg-[#1a2e35] border-b border-white/5" aria-label="Secciones principales">
     <div class="max-w-6xl mx-auto px-2 sm:px-4 py-3">
-      <div class="grid grid-cols-4 md:grid-cols-7 gap-0">
-        <a href="#exportacion" class="nav-bar-cell flex items-center justify-center py-2.5 sm:py-3 px-2 border-r border-b md:border-b-0 border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat leading-tight text-center">Transporte internacional de mascotas</a>
-        <a href="#servicios-medicos" class="nav-bar-cell flex items-center justify-center py-2.5 sm:py-3 px-2 border-r border-b md:border-b-0 border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat text-center">Servicios médicos</a>
-        <a href="#articulos-cientificos" class="nav-bar-cell flex items-center justify-center py-2.5 sm:py-3 px-2 border-r border-b md:border-b-0 border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat text-center">Artículos científicos</a>
+      <div class="grid grid-cols-4 md:grid-cols-8 gap-0">
+        <a href="./index.html#exportacion" class="nav-bar-cell flex items-center justify-center py-2.5 sm:py-3 px-2 border-r border-b md:border-b-0 border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat leading-tight text-center">Transporte internacional de mascotas</a>
+        <a href="./index.html#servicios-medicos" class="nav-bar-cell flex items-center justify-center py-2.5 sm:py-3 px-2 border-r border-b md:border-b-0 border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat text-center">Servicios médicos</a>
+        <a href="./articles/index.html" class="nav-bar-cell flex items-center justify-center py-2.5 sm:py-3 px-2 border-r border-b md:border-b-0 border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat text-center">Artículos científicos</a>
         <a href="./zoopedia/index.html" class="nav-bar-cell flex items-center justify-center py-2.5 sm:py-3 px-2 border-r border-b md:border-b-0 border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat leading-tight text-center"><span>Zoopedia de la exportación de mascotas</span></a>
         <a href="./articulos-interes/index.html" class="nav-bar-cell flex items-center justify-center py-2.5 sm:py-3 px-2 border-r border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat text-center">Guías prácticas</a>
-        <a href="#contacto" class="nav-bar-cell flex items-center justify-center py-2.5 sm:py-3 px-2 border-r border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat text-center">Contacto</a>
-        <a href="#ubicacion" class="nav-bar-cell flex items-center justify-center py-2.5 sm:py-3 px-2 border-r md:border-r-0 border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat text-center">Ubicación</a>
-        <span class="nav-bar-cell--empty md:hidden border-r border-white/10 min-h-[44px] flex-shrink-0" aria-hidden="true"></span>
+        <a href="https://servicios.senasa.gob.pe/consultaRequisitos/consultarRequisitos.action" target="_blank" rel="noopener noreferrer" class="nav-bar-cell flex items-center justify-center py-2.5 sm:py-3 px-2 border-r border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat text-center">Consulta SENASA Perú</a>
+        <a href="./index.html#contacto" class="nav-bar-cell flex items-center justify-center py-2.5 sm:py-3 px-2 border-r border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat text-center">Contacto</a>
+        <a href="./index.html#ubicacion" class="nav-bar-cell flex items-center justify-center py-2.5 sm:py-3 px-2 border-r md:border-r-0 border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat text-center">Ubicación</a>
       </div>
     </div>
   </nav>
@@ -484,7 +485,7 @@
         <div class="mt-6 space-y-3 text-[#1a2e35]/90 font-montserrat">
           <p><strong>Zoovet Travel - Sede Trujillo</strong></p>
           <p>Calle Cuba 241, Urb. El Recreo, Trujillo, La Libertad, Perú</p>
-          <a href="https://www.google.com/maps?q=-8.11585,-79.02364" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-[#0C789E] font-semibold hover:underline">
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Calle+Cuba+241,+Urb.+El+Recreo,+Trujillo,+La+Libertad,+Peru" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-[#0C789E] font-semibold hover:underline">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
             Ver en Google Maps
           </a>
@@ -541,7 +542,7 @@
               <span class="flex-shrink-0 mt-0.5 text-[#0C789E]" aria-hidden="true">
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
               </span>
-              <span>Calle Cuba 241, Urb. El Recreo, Trujillo</span>
+              <a href="https://www.google.com/maps/search/?api=1&amp;query=Calle+Cuba+241,+Urb.+El+Recreo,+Trujillo,+La+Libertad,+Peru" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Calle Cuba 241, Urb. El Recreo, Trujillo</a>
             </p>
             <div class="space-y-2">
               <a href="tel:044366094" class="flex items-center gap-2 hover:text-white transition-colors block">

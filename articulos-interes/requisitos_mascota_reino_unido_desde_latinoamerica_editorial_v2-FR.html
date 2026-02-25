@@ -36,6 +36,7 @@
     .breadcrumb { font-size: 0.85rem; color: var(--muted); }
     .lang-switcher { display: flex; gap: 8px; }
     .lang-switcher a { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; padding: 6px 12px; border: 1px solid var(--rule); border-radius: 3px; color: var(--mid); }
+    .lang-switcher .lang-current { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; padding: 6px 12px; border: 1px solid var(--mid); border-radius: 3px; color: var(--mid); background: var(--sky); }
     .masthead { border-bottom: 3px solid var(--deep); padding: 28px 0 16px; display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; flex-wrap: wrap; }
     .masthead-series { font-family: 'DM Sans', sans-serif; font-size: 0.72rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--mid); }
     .masthead-date { font-family: 'DM Sans', sans-serif; font-size: 0.72rem; color: var(--muted); }
@@ -53,7 +54,7 @@
     h2 { font-family: 'Libre Baskerville', serif; font-size: 1.42rem; font-weight: 700; color: var(--deep); margin: 56px 0 18px; padding-bottom: 10px; border-bottom: 2px solid var(--rule); }
     h3 { font-family: 'DM Sans', sans-serif; font-size: 1.06rem; font-weight: 700; color: var(--mid); margin: 34px 0 12px; letter-spacing: .015em; }
     h4 { font-family: 'DM Sans', sans-serif; font-size: 0.92rem; font-weight: 700; color: var(--teal); margin: 22px 0 8px; text-transform: uppercase; letter-spacing: .05em; }
-    p { margin-bottom: 1.3rem; }
+    p { margin-bottom: 1.3rem; text-align: justify; }
     strong { font-weight: 700; }
     em { font-style: italic; }
     .sec-label { font-family: 'DM Sans', sans-serif; font-size: 0.67rem; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; color: var(--muted); display: block; margin-bottom: 6px; }
@@ -63,7 +64,7 @@
     footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--rule); font-family: 'DM Sans', sans-serif; font-size: 0.78rem; color: var(--muted); }
     .font-mono { font-family: ui-monospace, monospace; }
     ul { margin-bottom: 1.3rem; padding-left: 1.5rem; }
-    li { margin-bottom: 0.5rem; }
+    li { margin-bottom: 0.5rem; text-align: justify; }
     a { color: var(--mid); text-decoration: none; }
     a:hover { text-decoration: underline; }
   
@@ -140,7 +141,7 @@
     <div class="lang-switcher">
       <a href="requisitos_mascota_reino_unido_desde_latinoamerica_editorial_v2.html" hreflang="es">ES</a>
       <a href="requisitos_mascota_reino_unido_desde_latinoamerica_editorial_v2-EN.html" hreflang="en">EN</a>
-      <a href="requisitos_mascota_reino_unido_desde_latinoamerica_editorial_v2-FR.html" hreflang="fr">FR</a>
+      <span class="lang-current" aria-current="page">FR</span>
     </div>
   </div>
 </header>
@@ -260,7 +261,7 @@
     </a>
   </div>
   <p class="cta-address">
-    Calle Cuba 241, Urb. El Recreo — Trujillo, Perú
+    <a href="https://www.google.com/maps/search/?api=1&query=Calle+Cuba+241,+Urb.+El+Recreo,+Trujillo,+La+Libertad,+Peru" target="_blank" rel="noopener noreferrer">Calle Cuba 241, Urb. El Recreo — Trujillo, Perú</a>
   </p>
 </div>
 
