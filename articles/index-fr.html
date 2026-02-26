@@ -53,11 +53,6 @@
     html {
       scroll-behavior: smooth;
     }
-
-    main p,
-    main li {
-      text-align: justify;
-    }
   </style>
 </head>
 
@@ -73,10 +68,13 @@
         d'animaux de compagnie</li>
     </ol>
   </nav>
-  <header class="px-4 py-6 md:py-8 flex flex-row flex-wrap items-center justify-between gap-4 max-w-6xl mx-auto">
-    <a href="../index-fr.html" class="text-xl font-bold tracking-[0.25em] text-[#1a2e35] font-montserrat">ZOOVET
-      TRAVEL</a>
-    <div class="flex items-center gap-2 md:gap-4">
+  <header class="px-4 py-6 md:py-8 flex flex-wrap items-center justify-between gap-4 max-w-6xl mx-auto">
+    <div class="flex items-center gap-3">
+      <a href="../index-fr.html"
+        class="text-sm sm:text-lg md:text-xl tracking-[0.25em] text-[#1a2e35] font-montserrat font-bold break-words w-full">ZOOVET
+        TRAVEL</a>
+    </div>
+    <div class="flex flex-wrap items-center gap-2 md:gap-4 shrink-0">
       <button
         class="search-btn flex items-center justify-center p-2 rounded-full hover:bg-[#e8f2fa] transition-colors text-[#1a2e35]"
         aria-label="Rechercher des articles" onclick="openSearchModal()">
@@ -97,7 +95,19 @@
           aria-current="page">FR</span>
       </div>
     </div>
+
+    <div class="hamburger-wrap md:hidden">
+      <button type="button" class="hamburger-btn" id="hamburger-btn" aria-label="Ouvrir le menu" aria-expanded="false"
+        aria-controls="nav-drawer"><span></span><span></span><span></span></button>
+    </div>
   </header>
+  <div class="nav-drawer-backdrop" id="nav-drawer-backdrop" aria-hidden="true"></div>
+  <nav class="nav-drawer" id="nav-drawer" aria-label="Menu" aria-hidden="true">
+    <a href="../index-fr.html">Accueil</a>
+    <a href="index.html">Español — ES</a>
+    <a href="index-en.html">English — EN</a>
+  </nav>
+  <script>(function () { var btn = document.getElementById('hamburger-btn'), drawer = document.getElementById('nav-drawer'), backdrop = document.getElementById('nav-drawer-backdrop'); function open() { btn.setAttribute('aria-expanded', 'true'); btn.setAttribute('aria-label', 'Fermer le menu'); drawer.setAttribute('aria-hidden', 'false'); backdrop.setAttribute('aria-hidden', 'false'); btn.classList.add('is-open'); drawer.classList.add('is-open'); backdrop.classList.add('is-open'); document.body.classList.add('menu-open-mobile'); } function close() { btn.setAttribute('aria-expanded', 'false'); btn.setAttribute('aria-label', 'Ouvrir le menu'); drawer.setAttribute('aria-hidden', 'true'); backdrop.setAttribute('aria-hidden', 'true'); btn.classList.remove('is-open'); drawer.classList.remove('is-open'); backdrop.classList.remove('is-open'); document.body.classList.remove('menu-open-mobile'); } if (btn && drawer && backdrop) { btn.addEventListener('click', function () { drawer.classList.contains('is-open') ? close() : open(); }); backdrop.addEventListener('click', close); drawer.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', close); }); } })();</script>
   <main class="max-w-6xl mx-auto px-4 py-12">
     <h1 class="text-2xl font-bold tracking-wide uppercase text-[#1a2e35] mb-6 font-montserrat">Articles scientifiques en
       médecine vétérinaire appliquée au transport international d'animaux de compagnie</h1>
