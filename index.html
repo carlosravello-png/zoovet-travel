@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Clínica veterinaria en Trujillo, Perú, con 12 años liderando la exportación internacional de mascotas y servicios médicos veterinarios especializados.">
+  <meta name="description"
+    content="Clínica veterinaria en Trujillo, Perú, con 12 años liderando la exportación internacional de mascotas y servicios médicos veterinarios especializados.">
   <meta name="theme-color" content="#0C789E">
   <title>Zoovet Travel | Centro Médico Veterinario | Exportación de Mascotas</title>
   <link rel="icon" type="image/x-icon" href="https://zoovettravel.com/images/favicon.ico">
@@ -20,11 +22,13 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://zoovettravel.com/">
   <meta property="og:title" content="Zoovet Travel | Centro Médico Veterinario | Exportación de Mascotas">
-  <meta property="og:description" content="Clínica veterinaria en Trujillo, Perú, con 12 años liderando la exportación internacional de mascotas y servicios médicos veterinarios especializados.">
+  <meta property="og:description"
+    content="Clínica veterinaria en Trujillo, Perú, con 12 años liderando la exportación internacional de mascotas y servicios médicos veterinarios especializados.">
   <meta property="og:image" content="https://zoovettravel.com/images/zoovet-travel-hero.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Zoovet Travel | Centro Médico Veterinario | Exportación de Mascotas">
-  <meta name="twitter:description" content="Clínica veterinaria en Trujillo, Perú. Exportación internacional de mascotas y servicios veterinarios especializados.">
+  <meta name="twitter:description"
+    content="Clínica veterinaria en Trujillo, Perú. Exportación internacional de mascotas y servicios veterinarios especializados.">
   <meta name="twitter:image" content="https://zoovettravel.com/images/zoovet-travel-hero.png">
 
   <!-- Montserrat - Google Fonts -->
@@ -49,9 +53,25 @@
     }
   </script>
   <style>
-    html { scroll-behavior: smooth; }
-    body { animation: fadeIn 0.5s ease-out; font-family: 'Montserrat', sans-serif; }
-    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      animation: fadeIn 0.5s ease-out;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
     .hero-cover {
       background-image: linear-gradient(rgba(26, 46, 53, 0.5), rgba(26, 46, 53, 0.5)), url('./images/zoovet-travel-hero.png?v=2');
       background-size: cover;
@@ -60,94 +80,404 @@
       aspect-ratio: 1920 / 640;
       min-height: 280px;
     }
+
     @media (max-width: 767px) {
-      .hero-cover { min-height: 360px; }
-      .hero-inner { align-items: flex-start; justify-content: center; padding-top: 1.5rem; padding-bottom: 1.5rem; }
+      .hero-cover {
+        min-height: 360px;
+      }
+
+      .hero-inner {
+        align-items: flex-start;
+        justify-content: center;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+      }
     }
+
     @media (min-width: 640px) {
-      .hero-cover { min-height: 320px; }
+      .hero-cover {
+        min-height: 320px;
+      }
     }
+
     @media (min-width: 768px) {
-      .hero-cover { min-height: 360px; }
+      .hero-cover {
+        min-height: 360px;
+      }
     }
+
     @media (min-width: 1024px) {
-      .hero-cover { min-height: 440px; }
+      .hero-cover {
+        min-height: 440px;
+      }
     }
+
     .btn-zoovet {
       background-color: #0C789E;
       transition: all 0.5s ease;
     }
-    .btn-zoovet:hover { background-color: #0a6a8a; transform: translateY(-4px); box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25); }
-    .btn-cta-primary { transition: all 0.5s ease; }
-    .btn-cta-primary:hover { transform: translateY(-4px); background-color: #0a6a8a; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25); }
+
+    .btn-zoovet:hover {
+      background-color: #0a6a8a;
+      transform: translateY(-4px);
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    }
+
+    .btn-cta-primary {
+      transition: all 0.5s ease;
+    }
+
+    .btn-cta-primary:hover {
+      transform: translateY(-4px);
+      background-color: #0a6a8a;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    }
+
     @media (max-width: 767px) {
-      body { -webkit-tap-highlight-color: rgba(12, 120, 158, 0.2); }
-      footer a { padding: 0.5rem 0; min-height: 44px; display: inline-flex; align-items: center; }
-      .hero-cta a { min-height: 44px; display: inline-flex; align-items: center; justify-content: center; text-align: center; }
-      .hero-cta .hero-cta-btn { min-width: 0; }
-      #contacto a { min-height: 44px; display: inline-flex; align-items: center; padding: 0.5rem 0; }
+      body {
+        -webkit-tap-highlight-color: rgba(12, 120, 158, 0.2);
+      }
+
+      footer a {
+        padding: 0.5rem 0;
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+      }
+
+      .hero-cta a {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .hero-cta .hero-cta-btn {
+        min-width: 0;
+      }
+
+      #contacto a {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+        padding: 0.5rem 0;
+      }
+
       /* Barra azul bajo hero: 4×2 simétrico, estilo suizo */
-      .nav-bar-desktop .grid { grid-template-columns: repeat(4, 1fr); }
+      .nav-bar-desktop .grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
       .nav-bar-desktop .nav-bar-cell,
-      .nav-bar-desktop .nav-bar-cell--empty { min-height: 44px; -webkit-tap-highlight-color: rgba(255,255,255,0.15); }
-      .nav-bar-desktop .nav-bar-cell { padding: 0.625rem 0.5rem; font-size: 9px; letter-spacing: 0.06em; }
+      .nav-bar-desktop .nav-bar-cell--empty {
+        min-height: 44px;
+        -webkit-tap-highlight-color: rgba(255, 255, 255, 0.15);
+      }
+
+      .nav-bar-desktop .nav-bar-cell {
+        padding: 0.625rem 0.5rem;
+        font-size: 9px;
+        letter-spacing: 0.06em;
+      }
     }
-    .hero-cta a, .hero-cta .hero-cta-btn {
-      display: inline-flex; align-items: center; justify-content: center; text-align: center;
+
+    .hero-cta a,
+    .hero-cta .hero-cta-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
     }
+
+    /* Search Modal Styles */
+    .search-btn {
+      color: #1a2e35;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 0.5rem;
+      border-radius: 50%;
+      transition: background 0.2s;
+    }
+
+    .search-btn:hover {
+      background: rgba(12, 120, 158, 0.1);
+      color: #0C789E;
+    }
+
+    .search-modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(26, 46, 53, 0.4);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      z-index: 100;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding-top: 10vh;
+    }
+
+    .search-modal-backdrop.is-active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .search-modal {
+      background: #ffffff;
+      border-radius: 12px;
+      width: 90%;
+      max-width: 600px;
+      box-shadow: 0 25px 50px -12px rgba(26, 46, 53, 0.3);
+      transform: translateY(-20px);
+      transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      max-height: 80vh;
+    }
+
+    .search-modal-backdrop.is-active .search-modal {
+      transform: translateY(0);
+    }
+
+    .search-header {
+      padding: 1rem 1.5rem;
+      border-bottom: 1px solid #e1e7ec;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .search-input {
+      flex: 1;
+      border: none;
+      outline: none;
+      background: transparent;
+      font-size: 1.1rem;
+      color: #1a2e35;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .search-input::placeholder {
+      color: #8fa3ad;
+    }
+
+    .search-close {
+      color: #8fa3ad;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      background: #f1f5f9;
+    }
+
+    .search-close:hover {
+      color: #1a2e35;
+      background: #e2e8f0;
+    }
+
+    .search-results {
+      padding: 0.5rem 0;
+      overflow-y: auto;
+      background: #fafaf8;
+    }
+
+    .search-result-item {
+      display: flex;
+      flex-direction: column;
+      padding: 0.75rem 1.5rem;
+      border-bottom: 1px solid #f1f5f9;
+      text-decoration: none;
+    }
+
+    .search-result-item:hover {
+      background: #f0f7f9;
+    }
+
+    .search-result-title {
+      color: #1a2e35;
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+
+    .search-result-cat {
+      color: #0C789E;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .search-empty {
+      padding: 2rem;
+      text-align: center;
+      color: #8fa3ad;
+      font-size: 0.95rem;
+    }
+
     @media (min-width: 768px) {
-      .hamburger-wrap { display: none !important; }
-      .nav-drawer-backdrop { display: none !important; }
+      .hamburger-wrap {
+        display: none !important;
+      }
+
+      .nav-drawer-backdrop {
+        display: none !important;
+      }
     }
-    .hamburger-wrap { position: relative; z-index: 60; }
+
+    .hamburger-wrap {
+      position: relative;
+      z-index: 60;
+    }
+
     .hamburger-btn {
-      display: flex; flex-direction: column; justify-content: center; align-items: center;
-      width: 44px; height: 44px; padding: 0; border: none; background: transparent;
-      cursor: pointer; gap: 5px; -webkit-tap-highlight-color: transparent;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 44px;
+      height: 44px;
+      padding: 0;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      gap: 5px;
+      -webkit-tap-highlight-color: transparent;
     }
+
     .hamburger-btn span {
-      display: block; width: 20px; height: 2px; background: #1a2e35;
-      border-radius: 1px; transition: transform 0.25s ease, opacity 0.2s ease;
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: #1a2e35;
+      border-radius: 1px;
+      transition: transform 0.25s ease, opacity 0.2s ease;
     }
-    .hamburger-btn.is-open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
-    .hamburger-btn.is-open span:nth-child(2) { opacity: 0; }
-    .hamburger-btn.is-open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+    .hamburger-btn.is-open span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .hamburger-btn.is-open span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger-btn.is-open span:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+
     .nav-drawer-backdrop {
-      position: fixed; inset: 0; background: rgba(26,46,53,0.2); z-index: 45;
-      opacity: 0; visibility: hidden; transition: opacity 0.25s ease, visibility 0.25s;
+      position: fixed;
+      inset: 0;
+      background: rgba(26, 46, 53, 0.2);
+      z-index: 45;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.25s ease, visibility 0.25s;
     }
-    .nav-drawer-backdrop.is-open { opacity: 1; visibility: visible; }
+
+    .nav-drawer-backdrop.is-open {
+      opacity: 1;
+      visibility: visible;
+    }
+
     .nav-drawer {
-      position: fixed; top: 0; left: 0; width: min(280px, 88vw); max-width: 280px; height: 100%;
-      background: #F8FAFC; box-shadow: 4px 0 24px rgba(26,46,53,0.12); z-index: 50;
-      transform: translateX(-100%); transition: transform 0.28s cubic-bezier(0.4,0,0.2,1);
-      overflow-y: auto; padding: 3.5rem 1rem 1.5rem; font-family: 'Montserrat', sans-serif;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: min(280px, 88vw);
+      max-width: 280px;
+      height: 100%;
+      background: #F8FAFC;
+      box-shadow: 4px 0 24px rgba(26, 46, 53, 0.12);
+      z-index: 50;
+      transform: translateX(-100%);
+      transition: transform 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+      overflow-y: auto;
+      padding: 3.5rem 1rem 1.5rem;
+      font-family: 'Montserrat', sans-serif;
     }
-    .nav-drawer.is-open { transform: translateX(0); }
+
+    .nav-drawer.is-open {
+      transform: translateX(0);
+    }
+
     .nav-drawer a {
-      display: block; padding: 0.75rem 0.5rem; color: #1a2e35; font-size: 0.8125rem;
-      font-weight: 500; letter-spacing: 0.04em; border-bottom: 1px solid rgba(26,46,53,0.08);
+      display: block;
+      padding: 0.75rem 0.5rem;
+      color: #1a2e35;
+      font-size: 0.8125rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      border-bottom: 1px solid rgba(26, 46, 53, 0.08);
       -webkit-tap-highlight-color: rgba(12, 120, 158, 0.15);
     }
-    .nav-drawer a:hover { color: #0C789E; }
-    body.menu-open-mobile { overflow: hidden; }
-    @supports (padding: max(0px)) {
-      .footer-safe { padding-bottom: max(1.5rem, env(safe-area-inset-bottom)); }
+
+    .nav-drawer a:hover {
+      color: #0C789E;
     }
+
+    body.menu-open-mobile {
+      overflow: hidden;
+    }
+
+    @supports (padding: max(0px)) {
+      .footer-safe {
+        padding-bottom: max(1.5rem, env(safe-area-inset-bottom));
+      }
+    }
+
     /* Servicios Médicos: acordeón suizo */
-    .servicio-details { border: 1px solid rgba(26, 46, 53, 0.12); }
-    .servicio-details:hover { border-color: rgba(26, 46, 53, 0.2); }
-    .servicio-details[open] { border-color: rgba(12, 120, 158, 0.25); }
-    .servicio-details summary { list-style: none; }
-    .servicio-details summary::-webkit-details-marker { display: none; }
-    .servicio-details .servicio-chevron { transition: transform 0.2s ease; }
-    .servicio-details[open] .servicio-chevron { transform: rotate(90deg); }
+    .servicio-details {
+      border: 1px solid rgba(26, 46, 53, 0.12);
+    }
+
+    .servicio-details:hover {
+      border-color: rgba(26, 46, 53, 0.2);
+    }
+
+    .servicio-details[open] {
+      border-color: rgba(12, 120, 158, 0.25);
+    }
+
+    .servicio-details summary {
+      list-style: none;
+    }
+
+    .servicio-details summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .servicio-details .servicio-chevron {
+      transition: transform 0.2s ease;
+    }
+
+    .servicio-details[open] .servicio-chevron {
+      transform: rotate(90deg);
+    }
+
     /* Historias que ya cruzaron fronteras: solo system font stack */
-    #section-historias-fronteras { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+    #section-historias-fronteras {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
     /* Texto justificado en contenido principal (estética móvil y desktop) */
-    main p, main li { text-align: justify; }
+    main p,
+    main li {
+      text-align: justify;
+    }
   </style>
 </head>
+
 <body class="bg-[#F8FAFC] min-h-screen antialiased text-[#1a2e35]">
   <!-- Breadcrumbs -->
   <nav aria-label="Breadcrumb" class="px-4 py-3 text-sm border-b border-[#1a2e35]/10">
@@ -164,15 +494,21 @@
   <header class="px-4 py-6 md:py-8 flex flex-row items-center justify-between gap-4 max-w-6xl mx-auto">
     <div class="flex items-center gap-3">
       <div class="hamburger-wrap md:hidden order-first">
-        <button type="button" class="hamburger-btn" id="hamburger-btn" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-drawer">
+        <button type="button" class="hamburger-btn" id="hamburger-btn" aria-label="Abrir menú" aria-expanded="false"
+          aria-controls="nav-drawer">
           <span></span><span></span><span></span>
         </button>
       </div>
-      <div class="text-lg sm:text-xl md:text-2xl tracking-[0.4em] text-[#1a2e35] font-montserrat"><span class="font-light">ZOOVET</span> <span class="font-bold">TRAVEL</span></div>
+      <div class="text-lg sm:text-xl md:text-2xl tracking-[0.4em] text-[#1a2e35] font-montserrat"><span
+          class="font-light">ZOOVET</span> <span class="font-bold">TRAVEL</span></div>
     </div>
     <div class="flex items-center gap-2">
-      <a href="./index-en.html" class="text-xs font-semibold tracking-widest uppercase text-[#1a2e35]/80 hover:text-[#1a2e35] border border-[#1a2e35]/30 hover:border-[#1a2e35]/50 px-3 py-2 rounded-sm transition-all duration-300 min-h-[44px] inline-flex items-center justify-center" aria-label="English" title="English">EN</a>
-      <a href="./index-fr.html" class="text-xs font-semibold tracking-widest uppercase text-[#1a2e35]/80 hover:text-[#1a2e35] border border-[#1a2e35]/30 hover:border-[#1a2e35]/50 px-3 py-2 rounded-sm transition-all duration-300 min-h-[44px] inline-flex items-center justify-center" aria-label="Français" title="Français">FR</a>
+      <a href="./index-en.html"
+        class="text-xs font-semibold tracking-widest uppercase text-[#1a2e35]/80 hover:text-[#1a2e35] border border-[#1a2e35]/30 hover:border-[#1a2e35]/50 px-3 py-2 rounded-sm transition-all duration-300 min-h-[44px] inline-flex items-center justify-center"
+        aria-label="English" title="English">EN</a>
+      <a href="./index-fr.html"
+        class="text-xs font-semibold tracking-widest uppercase text-[#1a2e35]/80 hover:text-[#1a2e35] border border-[#1a2e35]/30 hover:border-[#1a2e35]/50 px-3 py-2 rounded-sm transition-all duration-300 min-h-[44px] inline-flex items-center justify-center"
+        aria-label="Français" title="Français">FR</a>
     </div>
   </header>
 
@@ -184,20 +520,21 @@
     <a href="./articles/index.html">Artículos científicos</a>
     <a href="./zoopedia/index.html">Zoopedia de la exportación de mascotas</a>
     <a href="./articulos-interes/index.html">Guías prácticas</a>
-    <a href="https://servicios.senasa.gob.pe/consultaRequisitos/consultarRequisitos.action" target="_blank" rel="noopener noreferrer">Consulta SENASA Perú</a>
+    <a href="https://servicios.senasa.gob.pe/consultaRequisitos/consultarRequisitos.action" target="_blank"
+      rel="noopener noreferrer">Consulta SENASA Perú</a>
     <a href="./index.html#contacto">Contacto</a>
     <a href="./index.html#ubicacion">Ubicación</a>
   </nav>
   <script>
-    (function(){
-      var btn = document.getElementById('hamburger-btn');
-      var drawer = document.getElementById('nav-drawer');
-      var backdrop = document.getElementById('nav-drawer-backdrop');
-      function open() { btn.setAttribute('aria-expanded','true'); btn.setAttribute('aria-label','Cerrar menú'); drawer.setAttribute('aria-hidden','false'); backdrop.setAttribute('aria-hidden','false'); btn.classList.add('is-open'); drawer.classList.add('is-open'); backdrop.classList.add('is-open'); document.body.classList.add('menu-open-mobile'); }
-      function close() { btn.setAttribute('aria-expanded','false'); btn.setAttribute('aria-label','Abrir menú'); drawer.setAttribute('aria-hidden','true'); backdrop.setAttribute('aria-hidden','true'); btn.classList.remove('is-open'); drawer.classList.remove('is-open'); backdrop.classList.remove('is-open'); document.body.classList.remove('menu-open-mobile'); }
-      function toggle() { drawer.classList.contains('is-open') ? close() : open(); }
-      if(btn && drawer && backdrop){ btn.addEventListener('click', toggle); backdrop.addEventListener('click', close); drawer.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', close); }); }
-    })();
+      (function () {
+        var btn = document.getElementById('hamburger-btn');
+        var drawer = document.getElementById('nav-drawer');
+        var backdrop = document.getElementById('nav-drawer-backdrop');
+        function open() { btn.setAttribute('aria-expanded', 'true'); btn.setAttribute('aria-label', 'Cerrar menú'); drawer.setAttribute('aria-hidden', 'false'); backdrop.setAttribute('aria-hidden', 'false'); btn.classList.add('is-open'); drawer.classList.add('is-open'); backdrop.classList.add('is-open'); document.body.classList.add('menu-open-mobile'); }
+        function close() { btn.setAttribute('aria-expanded', 'false'); btn.setAttribute('aria-label', 'Abrir menú'); drawer.setAttribute('aria-hidden', 'true'); backdrop.setAttribute('aria-hidden', 'true'); btn.classList.remove('is-open'); drawer.classList.remove('is-open'); backdrop.classList.remove('is-open'); document.body.classList.remove('menu-open-mobile'); }
+        function toggle() { drawer.classList.contains('is-open') ? close() : open(); }
+        if (btn && drawer && backdrop) { btn.addEventListener('click', toggle); backdrop.addEventListener('click', close); drawer.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', close); }); }
+      })();
   </script>
 
   <!-- Hero - Elegancia Corporativa Europea -->
@@ -207,20 +544,27 @@
         <h1 class="font-bold tracking-[0.25em] text-2xl md:text-3xl lg:text-4xl text-white mb-4 font-montserrat">
           ZOOVET TRAVEL
         </h1>
-        <h2 class="text-xs sm:text-sm md:text-base leading-relaxed font-light tracking-[0.2em] text-white/95 mb-6 font-montserrat">
+        <h2
+          class="text-xs sm:text-sm md:text-base leading-relaxed font-light tracking-[0.2em] text-white/95 mb-6 font-montserrat">
           CENTRO MÉDICO VETERINARIO ESPECIALIZADO | EXPORTACIÓN INTERNACIONAL DE MASCOTAS
         </h2>
-        <p class="text-sm sm:text-base md:text-lg font-semibold text-white/95 mb-8 max-w-xl mx-auto leading-relaxed font-montserrat" style="opacity: 1; letter-spacing: 0.03em;">
+        <p class="text-sm sm:text-base md:text-lg font-semibold text-white/95 mb-8 max-w-xl mx-auto leading-relaxed font-montserrat"
+          style="opacity: 1; letter-spacing: 0.03em;">
           Especialistas en salud animal y logística internacional de alta prioridad.
         </p>
         <div class="hero-cta flex flex-col sm:flex-row flex-wrap gap-3 justify-center items-center">
-          <a href="#servicios-medicos" class="btn-zoovet hero-cta-btn text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-none font-semibold text-xs sm:text-sm tracking-wide font-montserrat">
+          <a href="#servicios-medicos"
+            class="btn-zoovet hero-cta-btn text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-none font-semibold text-xs sm:text-sm tracking-wide font-montserrat">
             Ver Servicios Médicos
           </a>
-          <a href="https://wa.me/51979620402?text=Hola%2C%20quiero%20cotizar%20una%20exportaci%C3%B3n%20internacional%20con%20destino%20a%3A%20" target="_blank" rel="noopener noreferrer" class="btn-cta-primary hero-cta-btn inline-block bg-[#0C789E] text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-none font-semibold text-xs sm:text-sm tracking-wide font-montserrat">
+          <a href="https://wa.me/51979620402?text=Hola%2C%20quiero%20cotizar%20una%20exportaci%C3%B3n%20internacional%20con%20destino%20a%3A%20"
+            target="_blank" rel="noopener noreferrer"
+            class="btn-cta-primary hero-cta-btn inline-block bg-[#0C789E] text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-none font-semibold text-xs sm:text-sm tracking-wide font-montserrat">
             Cotizar exportación
           </a>
-          <a href="https://wa.me/51979620402?text=Hola%2C%20solicito%20m%C3%A1s%20informaci%C3%B3n%20para%20viajar%20con%20mi%20mascota%20a%3A%20" target="_blank" rel="noopener noreferrer" class="hero-cta-btn inline-block border border-white/90 text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-none font-semibold text-xs sm:text-sm tracking-wide font-montserrat hover:bg-white/10 transition-all duration-300">
+          <a href="https://wa.me/51979620402?text=Hola%2C%20solicito%20m%C3%A1s%20informaci%C3%B3n%20para%20viajar%20con%20mi%20mascota%20a%3A%20"
+            target="_blank" rel="noopener noreferrer"
+            class="hero-cta-btn inline-block border border-white/90 text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-none font-semibold text-xs sm:text-sm tracking-wide font-montserrat hover:bg-white/10 transition-all duration-300">
             Información para viajar con mi mascota
           </a>
         </div>
@@ -232,14 +576,29 @@
   <nav class="nav-bar-desktop bg-[#1a2e35] border-b border-white/5" aria-label="Secciones principales">
     <div class="max-w-6xl mx-auto px-2 sm:px-4 py-3">
       <div class="grid grid-cols-4 md:grid-cols-8 gap-0">
-        <a href="./index.html#exportacion" class="nav-bar-cell flex items-center justify-center py-2.5 sm:py-3 px-2 border-r border-b md:border-b-0 border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat leading-tight text-center">Transporte internacional de mascotas</a>
-        <a href="./index.html#servicios-medicos" class="nav-bar-cell flex items-center justify-center py-2.5 sm:py-3 px-2 border-r border-b md:border-b-0 border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat text-center">Servicios médicos</a>
-        <a href="./articles/index.html" class="nav-bar-cell flex items-center justify-center py-2.5 sm:py-3 px-2 border-r border-b md:border-b-0 border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat text-center">Artículos científicos</a>
-        <a href="./zoopedia/index.html" class="nav-bar-cell flex items-center justify-center py-2.5 sm:py-3 px-2 border-r border-b md:border-b-0 border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat leading-tight text-center"><span>Zoopedia de la exportación de mascotas</span></a>
-        <a href="./articulos-interes/index.html" class="nav-bar-cell flex items-center justify-center py-2.5 sm:py-3 px-2 border-r border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat text-center">Guías prácticas</a>
-        <a href="https://servicios.senasa.gob.pe/consultaRequisitos/consultarRequisitos.action" target="_blank" rel="noopener noreferrer" class="nav-bar-cell flex items-center justify-center py-2.5 sm:py-3 px-2 border-r border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat text-center">Consulta SENASA Perú</a>
-        <a href="./index.html#contacto" class="nav-bar-cell flex items-center justify-center py-2.5 sm:py-3 px-2 border-r border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat text-center">Contacto</a>
-        <a href="./index.html#ubicacion" class="nav-bar-cell flex items-center justify-center py-2.5 sm:py-3 px-2 border-r md:border-r-0 border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat text-center">Ubicación</a>
+        <a href="./index.html#exportacion"
+          class="nav-bar-cell flex items-center justify-center py-2.5 sm:py-3 px-2 border-r border-b md:border-b-0 border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat leading-tight text-center">Transporte
+          internacional de mascotas</a>
+        <a href="./index.html#servicios-medicos"
+          class="nav-bar-cell flex items-center justify-center py-2.5 sm:py-3 px-2 border-r border-b md:border-b-0 border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat text-center">Servicios
+          médicos</a>
+        <a href="./articles/index.html"
+          class="nav-bar-cell flex items-center justify-center py-2.5 sm:py-3 px-2 border-r border-b md:border-b-0 border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat text-center">Artículos
+          científicos</a>
+        <a href="./zoopedia/index.html"
+          class="nav-bar-cell flex items-center justify-center py-2.5 sm:py-3 px-2 border-r border-b md:border-b-0 border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat leading-tight text-center"><span>Zoopedia
+            de la exportación de mascotas</span></a>
+        <a href="./articulos-interes/index.html"
+          class="nav-bar-cell flex items-center justify-center py-2.5 sm:py-3 px-2 border-r border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat text-center">Guías
+          prácticas</a>
+        <a href="https://servicios.senasa.gob.pe/consultaRequisitos/consultarRequisitos.action" target="_blank"
+          rel="noopener noreferrer"
+          class="nav-bar-cell flex items-center justify-center py-2.5 sm:py-3 px-2 border-r border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat text-center">Consulta
+          SENASA Perú</a>
+        <a href="./index.html#contacto"
+          class="nav-bar-cell flex items-center justify-center py-2.5 sm:py-3 px-2 border-r border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat text-center">Contacto</a>
+        <a href="./index.html#ubicacion"
+          class="nav-bar-cell flex items-center justify-center py-2.5 sm:py-3 px-2 border-r md:border-r-0 border-white/10 text-[9px] sm:text-[10px] font-medium tracking-wider uppercase text-white/90 hover:text-white transition-colors font-montserrat text-center">Ubicación</a>
       </div>
     </div>
   </nav>
@@ -247,26 +606,35 @@
   <!-- SECCIÓN QUIÉNES SOMOS - OPTIMIZADA PARA CRAWLERS E IA -->
   <section id="quienes-somos" class="py-16 sm:py-20 md:py-24 px-4 md:px-8 bg-slate-50 font-montserrat">
     <div class="max-w-3xl mx-auto">
-      
+
       <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-6 sm:mb-8 leading-tight">
         Zoovet Travel | Clínica Veterinaria Especializada y Exportación Internacional de Mascotas
       </h2>
 
       <div class="text-sm sm:text-base md:text-lg leading-loose space-y-6 text-slate-600 max-w-none">
         <p>
-          Zoovet Travel es una clínica veterinaria especializada con más de 12 años de experiencia en <strong>exportación internacional de mascotas</strong> y atención médica avanzada para perros y gatos. Operamos desde Trujillo, Perú, gestionando <strong>traslado internacional de mascotas</strong> hacia Estados Unidos, Europa, Canadá y Latinoamérica bajo estrictos estándares sanitarios y normativos.
+          Zoovet Travel es una clínica veterinaria especializada con más de 12 años de experiencia en
+          <strong>exportación internacional de mascotas</strong> y atención médica avanzada para perros y gatos.
+          Operamos desde Trujillo, Perú, gestionando <strong>traslado internacional de mascotas</strong> hacia Estados
+          Unidos, Europa, Canadá y Latinoamérica bajo estrictos estándares sanitarios y normativos.
         </p>
 
         <p>
-          Somos especialistas en <strong>exportar mascotas desde Perú</strong>, cumpliendo todos los requisitos sanitarios internacionales exigidos por cada país de destino, incluyendo <strong>microchip ISO</strong>, <strong>vacunación antirrábica</strong> vigente, pruebas serológicas, <strong>certificado sanitario internacional</strong> y trámites ante <strong>SENASA para exportación de mascotas</strong>.
+          Somos especialistas en <strong>exportar mascotas desde Perú</strong>, cumpliendo todos los requisitos
+          sanitarios internacionales exigidos por cada país de destino, incluyendo <strong>microchip ISO</strong>,
+          <strong>vacunación antirrábica</strong> vigente, pruebas serológicas, <strong>certificado sanitario
+            internacional</strong> y trámites ante <strong>SENASA para exportación de mascotas</strong>.
         </p>
 
         <p>
-          Durante más de una década hemos ejecutado procesos de exportación de perros y gatos sin errores documentarios ni rechazos sanitarios, consolidando un historial de cumplimiento técnico y un 100 % de clientes satisfechos en transporte internacional.
+          Durante más de una década hemos ejecutado procesos de exportación de perros y gatos sin errores documentarios
+          ni rechazos sanitarios, consolidando un historial de cumplimiento técnico y un 100 % de clientes satisfechos
+          en transporte internacional.
         </p>
 
         <p>
-          Además de nuestra experiencia en exportación internacional de mascotas, brindamos atención veterinaria de especialidad en:
+          Además de nuestra experiencia en exportación internacional de mascotas, brindamos atención veterinaria de
+          especialidad en:
         </p>
 
         <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 list-disc pl-5 text-slate-600 font-medium">
@@ -279,47 +647,76 @@
         </ul>
 
         <p>
-          Nuestro equipo está conformado por dos médicos veterinarios con experiencia clínica y formación en normativa sanitaria internacional, lo que garantiza una evaluación médica integral, control sanitario riguroso y seguimiento profesional tanto para pacientes locales como para mascotas en proceso de exportación.
+          Nuestro equipo está conformado por dos médicos veterinarios con experiencia clínica y formación en normativa
+          sanitaria internacional, lo que garantiza una evaluación médica integral, control sanitario riguroso y
+          seguimiento profesional tanto para pacientes locales como para mascotas en proceso de exportación.
         </p>
 
         <p>
-          Zoovet Travel integra medicina veterinaria especializada con logística internacional de alta precisión, posicionándose como referente en <strong>exportar mascotas desde Perú</strong> y como <strong>clínica veterinaria especializada en Trujillo</strong>.
+          Zoovet Travel integra medicina veterinaria especializada con logística internacional de alta precisión,
+          posicionándose como referente en <strong>exportar mascotas desde Perú</strong> y como <strong>clínica
+            veterinaria especializada en Trujillo</strong>.
         </p>
 
         <div class="my-8 sm:my-10 max-w-4xl mx-auto" aria-hidden="true">
           <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-5">
-            <div class="order-1 sm:order-none rounded-lg overflow-hidden shadow-sm transition-all duration-300 hover:shadow-md hover:brightness-[1.03]">
-              <img src="./images/experiencia/exp-01.webp" alt="" width="400" height="300" class="w-full aspect-[4/3] object-cover" loading="lazy">
+            <div
+              class="order-1 sm:order-none rounded-lg overflow-hidden shadow-sm transition-all duration-300 hover:shadow-md hover:brightness-[1.03]">
+              <img src="./images/experiencia/exp-01.webp" alt="" width="400" height="300"
+                class="w-full aspect-[4/3] object-cover" loading="lazy">
             </div>
-            <div class="order-3 sm:order-none col-span-2 sm:col-span-1 flex justify-center rounded-lg overflow-hidden shadow-sm transition-all duration-300 hover:shadow-md hover:brightness-[1.03]">
-              <img src="./images/experiencia/exp-02.webp" alt="" width="400" height="300" class="w-full max-w-sm sm:max-w-none aspect-[4/3] object-cover" loading="lazy">
+            <div
+              class="order-3 sm:order-none col-span-2 sm:col-span-1 flex justify-center rounded-lg overflow-hidden shadow-sm transition-all duration-300 hover:shadow-md hover:brightness-[1.03]">
+              <img src="./images/experiencia/exp-02.webp" alt="" width="400" height="300"
+                class="w-full max-w-sm sm:max-w-none aspect-[4/3] object-cover" loading="lazy">
             </div>
-            <div class="order-2 sm:order-none rounded-lg overflow-hidden shadow-sm transition-all duration-300 hover:shadow-md hover:brightness-[1.03]">
-              <img src="./images/experiencia/exp-03.webp" alt="" width="400" height="300" class="w-full aspect-[4/3] object-cover" loading="lazy">
+            <div
+              class="order-2 sm:order-none rounded-lg overflow-hidden shadow-sm transition-all duration-300 hover:shadow-md hover:brightness-[1.03]">
+              <img src="./images/experiencia/exp-03.webp" alt="" width="400" height="300"
+                class="w-full aspect-[4/3] object-cover" loading="lazy">
             </div>
           </div>
         </div>
 
         <div id="articulos-cientificos" class="mt-10 pt-10 border-t border-[#1a2e35]/10">
-          <h2 class="text-xl md:text-2xl font-bold text-gray-900 mb-4">Artículos Científicos en Medicina Veterinaria Aplicada al Transporte Internacional de Mascotas</h2>
-          <p class="text-[#1a2e35]/90 font-montserrat mb-4">Artículos científicos en español e inglés sobre medicina veterinaria, exportación de mascotas y salud animal.</p>
-          <a href="./articles/index.html" class="inline-flex items-center gap-2 text-[#0C789E] font-semibold hover:underline font-montserrat">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+          <h2 class="text-xl md:text-2xl font-bold text-gray-900 mb-4">Artículos Científicos en Medicina Veterinaria
+            Aplicada al Transporte Internacional de Mascotas</h2>
+          <p class="text-[#1a2e35]/90 font-montserrat mb-4">Artículos científicos en español e inglés sobre medicina
+            veterinaria, exportación de mascotas y salud animal.</p>
+          <a href="./articles/index.html"
+            class="inline-flex items-center gap-2 text-[#0C789E] font-semibold hover:underline font-montserrat">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+            </svg>
             Ver artículos
           </a>
           <div class="mt-6 pt-6 border-t border-[#1a2e35]/10">
-            <h3 class="text-lg font-bold text-gray-900 mb-2">La Zoopedia de la Exportación e Importación Internacional de Mascotas</h3>
-            <p class="text-[#1a2e35]/90 font-montserrat mb-3">Consulta los requisitos oficiales para importar y exportar mascotas por país. Vacunas, microchip, RNATT, certificados sanitarios, cuarentenas y regulaciones actualizadas 2026. Proyecto editorial desarrollado y verificado por Zoovet Travel.</p>
-            <a href="./zoopedia/index.html" class="inline-flex items-center gap-2 text-[#0C789E] font-semibold hover:underline font-montserrat">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0h.5a2.5 2.5 0 002.5-2.5V8M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">La Zoopedia de la Exportación e Importación Internacional
+              de Mascotas</h3>
+            <p class="text-[#1a2e35]/90 font-montserrat mb-3">Consulta los requisitos oficiales para importar y exportar
+              mascotas por país. Vacunas, microchip, RNATT, certificados sanitarios, cuarentenas y regulaciones
+              actualizadas 2026. Proyecto editorial desarrollado y verificado por Zoovet Travel.</p>
+            <a href="./zoopedia/index.html"
+              class="inline-flex items-center gap-2 text-[#0C789E] font-semibold hover:underline font-montserrat">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0h.5a2.5 2.5 0 002.5-2.5V8M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
               Ver requisitos por país
             </a>
           </div>
           <div id="articulos-de-interes" class="mt-6 pt-6 border-t border-[#1a2e35]/10">
-            <h3 class="text-lg font-bold text-gray-900 mb-2">Guías Prácticas para Viajar y Exportar Mascotas Internacionalmente</h3>
-            <p class="text-[#1a2e35]/90 font-montserrat mb-3">Guías prácticas sobre requisitos, documentación y proceso para viajar y exportar mascotas a nivel internacional.</p>
-            <a href="./articulos-interes/index.html" class="inline-flex items-center gap-2 text-[#0C789E] font-semibold hover:underline font-montserrat">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Guías Prácticas para Viajar y Exportar Mascotas
+              Internacionalmente</h3>
+            <p class="text-[#1a2e35]/90 font-montserrat mb-3">Guías prácticas sobre requisitos, documentación y proceso
+              para viajar y exportar mascotas a nivel internacional.</p>
+            <a href="./articulos-interes/index.html"
+              class="inline-flex items-center gap-2 text-[#0C789E] font-semibold hover:underline font-montserrat">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+              </svg>
               Ver Guías Prácticas
             </a>
           </div>
@@ -331,189 +728,329 @@
 
   <main class="max-w-6xl mx-auto px-4 sm:px-6 pb-16 sm:pb-24 pt-8 sm:pt-12">
     <section id="servicios-medicos" class="py-10 sm:py-14" aria-labelledby="servicios-medicos-heading">
-      <h2 id="servicios-medicos-heading" class="text-lg font-semibold tracking-wide uppercase text-[#1a2e35] mb-8 font-montserrat">Servicios Médicos</h2>
+      <h2 id="servicios-medicos-heading"
+        class="text-lg font-semibold tracking-wide uppercase text-[#1a2e35] mb-8 font-montserrat">Servicios Médicos</h2>
       <div class="space-y-3 max-w-3xl">
-        <p class="text-[#1a2e35]/90 text-sm leading-relaxed font-montserrat mb-4">Somos la única clínica en Trujillo especializada en medicina de viajes internacionales de animales de compañía. Realizamos implantación de microchip ISO 11784/11785, vacunación antirrábica con registro para exportación, evaluación de aptitud para vuelo, cribado clínico BOAS para razas braquicéfalas, coordinación de serología antirrábica con laboratorios autorizados por la Unión Europea, emisión del certificado de salud y gestión del expediente ante SENASA. Todo en un solo lugar, con criterio clínico y conocimiento regulatorio actualizado.</p>
+        <p class="text-[#1a2e35]/90 text-sm leading-relaxed font-montserrat mb-4">Somos la única clínica en Trujillo
+          especializada en medicina de viajes internacionales de animales de compañía. Realizamos implantación de
+          microchip ISO 11784/11785, vacunación antirrábica con registro para exportación, evaluación de aptitud para
+          vuelo, cribado clínico BOAS para razas braquicéfalas, coordinación de serología antirrábica con laboratorios
+          autorizados por la Unión Europea, emisión del certificado de salud y gestión del expediente ante SENASA. Todo
+          en un solo lugar, con criterio clínico y conocimiento regulatorio actualizado.</p>
         <details class="servicio-details group bg-white rounded-sm px-5 sm:px-6 py-1 font-montserrat">
           <summary class="cursor-pointer py-4 flex items-center justify-between gap-4">
-            <h3 class="text-base font-semibold text-[#1a2e35] tracking-tight pr-4">Medicina Preventiva Veterinaria en Trujillo: Vacunas, Desparasitación y Chequeos</h3>
+            <h3 class="text-base font-semibold text-[#1a2e35] tracking-tight pr-4">Medicina Preventiva Veterinaria en
+              Trujillo: Vacunas, Desparasitación y Chequeos</h3>
             <span class="servicio-chevron flex-shrink-0 text-[#0C789E]" aria-hidden="true">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
             </span>
           </summary>
           <div class="pb-5 pt-0 border-t border-[#1a2e35]/08">
-            <p class="text-[#1a2e35]/90 text-sm leading-relaxed mt-4">No esperamos a que aparezca la enfermedad. Creamos un plan preventivo según la edad, estilo de vida y riesgos reales de tu mascota: vacunación al día, control antiparasitario y chequeos periódicos para detectar problemas antes de que se compliquen.</p>
-            <p class="mt-4 text-sm"><a href="https://wa.me/51979620402?text=Hola%2C%20quisiera%20agendar%20una%20cita%20para%20medicina%20preventiva." target="_blank" rel="noopener noreferrer" class="text-[#0C789E] hover:underline">Agenda un control preventivo y te indicamos el plan ideal para tu perro o gato.</a></p>
+            <p class="text-[#1a2e35]/90 text-sm leading-relaxed mt-4">No esperamos a que aparezca la enfermedad. Creamos
+              un plan preventivo según la edad, estilo de vida y riesgos reales de tu mascota: vacunación al día,
+              control antiparasitario y chequeos periódicos para detectar problemas antes de que se compliquen.</p>
+            <p class="mt-4 text-sm"><a
+                href="https://wa.me/51979620402?text=Hola%2C%20quisiera%20agendar%20una%20cita%20para%20medicina%20preventiva."
+                target="_blank" rel="noopener noreferrer" class="text-[#0C789E] hover:underline">Agenda un control
+                preventivo y te indicamos el plan ideal para tu perro o gato.</a></p>
           </div>
         </details>
         <details class="servicio-details group bg-white rounded-sm px-5 sm:px-6 py-1 font-montserrat">
           <summary class="cursor-pointer py-4 flex items-center justify-between gap-4">
-            <h3 class="text-base font-semibold text-[#1a2e35] tracking-tight pr-4">Dermatología Veterinaria en Trujillo: Alergias, Picazón, Otitis y Problemas de Piel</h3>
+            <h3 class="text-base font-semibold text-[#1a2e35] tracking-tight pr-4">Dermatología Veterinaria en Trujillo:
+              Alergias, Picazón, Otitis y Problemas de Piel</h3>
             <span class="servicio-chevron flex-shrink-0 text-[#0C789E]" aria-hidden="true">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
             </span>
           </summary>
           <div class="pb-5 pt-0 border-t border-[#1a2e35]/08">
-            <p class="text-[#1a2e35]/90 text-sm leading-relaxed mt-4">La picazón constante, el enrojecimiento, la caída de pelo y las otitis repetidas casi nunca se resuelven &quot;con algo para la alergia&quot;. Hacemos evaluación clínica dirigida y pruebas según el caso para identificar la causa y controlar brotes de forma segura.</p>
-            <p class="mt-4 text-sm"><a href="https://wa.me/51979620402?text=Hola%2C%20quisiera%20agendar%20una%20cita%20para%20dermatolog%C3%ADa." target="_blank" rel="noopener noreferrer" class="text-[#0C789E] hover:underline">Escríbenos por la consulta dermatológica y te orientamos según los signos que ves en casa.</a></p>
+            <p class="text-[#1a2e35]/90 text-sm leading-relaxed mt-4">La picazón constante, el enrojecimiento, la caída
+              de pelo y las otitis repetidas casi nunca se resuelven &quot;con algo para la alergia&quot;. Hacemos
+              evaluación clínica dirigida y pruebas según el caso para identificar la causa y controlar brotes de forma
+              segura.</p>
+            <p class="mt-4 text-sm"><a
+                href="https://wa.me/51979620402?text=Hola%2C%20quisiera%20agendar%20una%20cita%20para%20dermatolog%C3%ADa."
+                target="_blank" rel="noopener noreferrer" class="text-[#0C789E] hover:underline">Escríbenos por la
+                consulta dermatológica y te orientamos según los signos que ves en casa.</a></p>
           </div>
         </details>
         <details class="servicio-details group bg-white rounded-sm px-5 sm:px-6 py-1 font-montserrat">
           <summary class="cursor-pointer py-4 flex items-center justify-between gap-4">
-            <h3 class="text-base font-semibold text-[#1a2e35] tracking-tight pr-4">Nutrición Veterinaria en Trujillo: Dietas para Obesidad, Gastritis, Alergias y Enfermedades Crónicas</h3>
+            <h3 class="text-base font-semibold text-[#1a2e35] tracking-tight pr-4">Nutrición Veterinaria en Trujillo:
+              Dietas para Obesidad, Gastritis, Alergias y Enfermedades Crónicas</h3>
             <span class="servicio-chevron flex-shrink-0 text-[#0C789E]" aria-hidden="true">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
             </span>
           </summary>
           <div class="pb-5 pt-0 border-t border-[#1a2e35]/08">
-            <p class="text-[#1a2e35]/90 text-sm leading-relaxed mt-4">La comida también es medicina. Ajustamos dieta y porciones con objetivos claros: controlar peso, mejorar digestión, apoyar piel y pelaje, o acompañar patologías como problemas renales o hepáticos. Planes realistas, medibles y sostenibles.</p>
-            <p class="mt-4 text-sm"><a href="https://wa.me/51979620402?text=Hola%2C%20quisiera%20agendar%20una%20cita%20para%20nutrici%C3%B3n." target="_blank" rel="noopener noreferrer" class="text-[#0C789E] hover:underline">Solicita una evaluación nutricional y sal con un plan concreto, no con suposiciones.</a></p>
+            <p class="text-[#1a2e35]/90 text-sm leading-relaxed mt-4">La comida también es medicina. Ajustamos dieta y
+              porciones con objetivos claros: controlar peso, mejorar digestión, apoyar piel y pelaje, o acompañar
+              patologías como problemas renales o hepáticos. Planes realistas, medibles y sostenibles.</p>
+            <p class="mt-4 text-sm"><a
+                href="https://wa.me/51979620402?text=Hola%2C%20quisiera%20agendar%20una%20cita%20para%20nutrici%C3%B3n."
+                target="_blank" rel="noopener noreferrer" class="text-[#0C789E] hover:underline">Solicita una evaluación
+                nutricional y sal con un plan concreto, no con suposiciones.</a></p>
           </div>
         </details>
         <details class="servicio-details group bg-white rounded-sm px-5 sm:px-6 py-1 font-montserrat">
           <summary class="cursor-pointer py-4 flex items-center justify-between gap-4">
-            <h3 class="text-base font-semibold text-[#1a2e35] tracking-tight pr-4">Medicina Interna en Trujillo: Diagnóstico Clínico para Enfermedades Digestivas, Hepáticas, Renales y Respiratorias</h3>
+            <h3 class="text-base font-semibold text-[#1a2e35] tracking-tight pr-4">Medicina Interna en Trujillo:
+              Diagnóstico Clínico para Enfermedades Digestivas, Hepáticas, Renales y Respiratorias</h3>
             <span class="servicio-chevron flex-shrink-0 text-[#0C789E]" aria-hidden="true">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
             </span>
           </summary>
           <div class="pb-5 pt-0 border-t border-[#1a2e35]/08">
-            <p class="text-[#1a2e35]/90 text-sm leading-relaxed mt-4">Cuando los síntomas se repiten o no hay una causa evidente, se necesita método. Investigamos el origen del problema con historia clínica, examen completo y pruebas según indicación para llegar a un diagnóstico real y un tratamiento efectivo, tanto en cuadros agudos como crónicos.</p>
-            <p class="mt-4 text-sm"><a href="https://wa.me/51979620402?text=Hola%2C%20quisiera%20agendar%20una%20cita%20para%20medicina%20interna." target="_blank" rel="noopener noreferrer" class="text-[#0C789E] hover:underline">Agenda una consulta de medicina interna si tu mascota lleva días con malestar o recaídas.</a></p>
+            <p class="text-[#1a2e35]/90 text-sm leading-relaxed mt-4">Cuando los síntomas se repiten o no hay una causa
+              evidente, se necesita método. Investigamos el origen del problema con historia clínica, examen completo y
+              pruebas según indicación para llegar a un diagnóstico real y un tratamiento efectivo, tanto en cuadros
+              agudos como crónicos.</p>
+            <p class="mt-4 text-sm"><a
+                href="https://wa.me/51979620402?text=Hola%2C%20quisiera%20agendar%20una%20cita%20para%20medicina%20interna."
+                target="_blank" rel="noopener noreferrer" class="text-[#0C789E] hover:underline">Agenda una consulta de
+                medicina interna si tu mascota lleva días con malestar o recaídas.</a></p>
           </div>
         </details>
         <details class="servicio-details group bg-white rounded-sm px-5 sm:px-6 py-1 font-montserrat">
           <summary class="cursor-pointer py-4 flex items-center justify-between gap-4">
-            <h3 class="text-base font-semibold text-[#1a2e35] tracking-tight pr-4">Oftalmología Veterinaria en Trujillo: Úlceras Corneales, Conjuntivitis, Cataratas y Glaucoma</h3>
+            <h3 class="text-base font-semibold text-[#1a2e35] tracking-tight pr-4">Oftalmología Veterinaria en Trujillo:
+              Úlceras Corneales, Conjuntivitis, Cataratas y Glaucoma</h3>
             <span class="servicio-chevron flex-shrink-0 text-[#0C789E]" aria-hidden="true">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
             </span>
           </summary>
           <div class="pb-5 pt-0 border-t border-[#1a2e35]/08">
-            <p class="text-[#1a2e35]/90 text-sm leading-relaxed mt-4">El ojo duele y progresa rápido. Atendemos desde irritaciones y úlceras hasta cataratas y glaucoma, con evaluación detallada para aliviar dolor, proteger la córnea y evitar pérdida de visión.</p>
-            <p class="mt-4 text-sm"><a href="https://wa.me/51979620402?text=Hola%2C%20quisiera%20agendar%20una%20cita%20para%20oftalmolog%C3%ADa." target="_blank" rel="noopener noreferrer" class="text-[#0C789E] hover:underline">Si ves ojo rojo, lagrimeo o molestia, consúltanos hoy mismo para descartar urgencias.</a></p>
+            <p class="text-[#1a2e35]/90 text-sm leading-relaxed mt-4">El ojo duele y progresa rápido. Atendemos desde
+              irritaciones y úlceras hasta cataratas y glaucoma, con evaluación detallada para aliviar dolor, proteger
+              la córnea y evitar pérdida de visión.</p>
+            <p class="mt-4 text-sm"><a
+                href="https://wa.me/51979620402?text=Hola%2C%20quisiera%20agendar%20una%20cita%20para%20oftalmolog%C3%ADa."
+                target="_blank" rel="noopener noreferrer" class="text-[#0C789E] hover:underline">Si ves ojo rojo,
+                lagrimeo o molestia, consúltanos hoy mismo para descartar urgencias.</a></p>
           </div>
         </details>
         <details class="servicio-details group bg-white rounded-sm px-5 sm:px-6 py-1 font-montserrat">
           <summary class="cursor-pointer py-4 flex items-center justify-between gap-4">
-            <h3 class="text-base font-semibold text-[#1a2e35] tracking-tight pr-4">Endocrinología Veterinaria en Trujillo: Diabetes, Tiroides, Cushing y Trastornos Hormonales</h3>
+            <h3 class="text-base font-semibold text-[#1a2e35] tracking-tight pr-4">Endocrinología Veterinaria en
+              Trujillo: Diabetes, Tiroides, Cushing y Trastornos Hormonales</h3>
             <span class="servicio-chevron flex-shrink-0 text-[#0C789E]" aria-hidden="true">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
             </span>
           </summary>
           <div class="pb-5 pt-0 border-t border-[#1a2e35]/08">
-            <p class="text-[#1a2e35]/90 text-sm leading-relaxed mt-4">Los desequilibrios hormonales cambian el metabolismo: sed excesiva, aumento de peso, caída de pelo, debilidad o infecciones recurrentes. Realizamos evaluación clínica y pruebas específicas para confirmar el diagnóstico y ajustar el control con seguimiento.</p>
-            <p class="mt-4 text-sm"><a href="https://wa.me/51979620402?text=Hola%2C%20quisiera%20agendar%20una%20cita%20para%20endocrinolog%C3%ADa." target="_blank" rel="noopener noreferrer" class="text-[#0C789E] hover:underline">Pide una evaluación endocrina si notas cambios persistentes en energía, sed o peso.</a></p>
+            <p class="text-[#1a2e35]/90 text-sm leading-relaxed mt-4">Los desequilibrios hormonales cambian el
+              metabolismo: sed excesiva, aumento de peso, caída de pelo, debilidad o infecciones recurrentes. Realizamos
+              evaluación clínica y pruebas específicas para confirmar el diagnóstico y ajustar el control con
+              seguimiento.</p>
+            <p class="mt-4 text-sm"><a
+                href="https://wa.me/51979620402?text=Hola%2C%20quisiera%20agendar%20una%20cita%20para%20endocrinolog%C3%ADa."
+                target="_blank" rel="noopener noreferrer" class="text-[#0C789E] hover:underline">Pide una evaluación
+                endocrina si notas cambios persistentes en energía, sed o peso.</a></p>
           </div>
         </details>
         <details class="servicio-details group bg-white rounded-sm px-5 sm:px-6 py-1 font-montserrat">
           <summary class="cursor-pointer py-4 flex items-center justify-between gap-4">
-            <h3 class="text-base font-semibold text-[#1a2e35] tracking-tight pr-4">Ecografía y Cardiología Veterinaria en Trujillo: Ecocardiograma, Electrocardiograma y Evaluación Clínica</h3>
+            <h3 class="text-base font-semibold text-[#1a2e35] tracking-tight pr-4">Ecografía y Cardiología Veterinaria
+              en Trujillo: Ecocardiograma, Electrocardiograma y Evaluación Clínica</h3>
             <span class="servicio-chevron flex-shrink-0 text-[#0C789E]" aria-hidden="true">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
             </span>
           </summary>
           <div class="pb-5 pt-0 border-t border-[#1a2e35]/08">
-            <p class="text-[#1a2e35]/90 text-sm leading-relaxed mt-4">Cuando necesitas respuestas, la imagen ayuda a decidir bien. Realizamos ecografías y evaluación cardiológica (ECG y ecocardiograma según el caso) para detectar hallazgos tempranos, orientar tratamientos y evaluar riesgo antes de cirugías o viajes.</p>
-            <p class="mt-4 text-sm"><a href="https://wa.me/51979620402?text=Hola%2C%20quisiera%20agendar%20una%20cita%20para%20ecograf%C3%ADa%20y%20cardiolog%C3%ADa." target="_blank" rel="noopener noreferrer" class="text-[#0C789E] hover:underline">Escríbenos para coordinar la evaluación y te indicamos qué estudio corresponde según el caso.</a></p>
+            <p class="text-[#1a2e35]/90 text-sm leading-relaxed mt-4">Cuando necesitas respuestas, la imagen ayuda a
+              decidir bien. Realizamos ecografías y evaluación cardiológica (ECG y ecocardiograma según el caso) para
+              detectar hallazgos tempranos, orientar tratamientos y evaluar riesgo antes de cirugías o viajes.</p>
+            <p class="mt-4 text-sm"><a
+                href="https://wa.me/51979620402?text=Hola%2C%20quisiera%20agendar%20una%20cita%20para%20ecograf%C3%ADa%20y%20cardiolog%C3%ADa."
+                target="_blank" rel="noopener noreferrer" class="text-[#0C789E] hover:underline">Escríbenos para
+                coordinar la evaluación y te indicamos qué estudio corresponde según el caso.</a></p>
           </div>
         </details>
         <p class="text-[#1a2e35]/90 text-sm leading-relaxed font-montserrat pt-4">
-          <a href="./zoopedia/index.html" class="text-base font-semibold text-[#1a2e35] hover:text-[#0C789E] hover:underline font-montserrat">La Zoopedia de Viajes</a>
+          <a href="./zoopedia/index.html"
+            class="text-base font-semibold text-[#1a2e35] hover:text-[#0C789E] hover:underline font-montserrat">La
+            Zoopedia de Viajes</a>
         </p>
-        <p class="text-[#1a2e35]/90 text-sm leading-relaxed font-montserrat">Hemos construido una base editorial de fichas técnicas verificadas para los principales destinos del mundo — en español, inglés y francés — porque la información confiable sobre requisitos de importación de mascotas no estaba disponible en español con el nivel de detalle que un veterinario o un propietario informado necesita para tomar decisiones reales. Cada ficha incluye clasificación regulatoria del destino, requisitos por especie, variaciones según país de origen, calendario mínimo desde cero y directorio de autoridades sanitarias con enlaces oficiales verificados.</p>
+        <p class="text-[#1a2e35]/90 text-sm leading-relaxed font-montserrat">Hemos construido una base editorial de
+          fichas técnicas verificadas para los principales destinos del mundo — en español, inglés y francés — porque la
+          información confiable sobre requisitos de importación de mascotas no estaba disponible en español con el nivel
+          de detalle que un veterinario o un propietario informado necesita para tomar decisiones reales. Cada ficha
+          incluye clasificación regulatoria del destino, requisitos por especie, variaciones según país de origen,
+          calendario mínimo desde cero y directorio de autoridades sanitarias con enlaces oficiales verificados.</p>
       </div>
     </section>
     <section id="exportacion" class="py-8 border-t border-[#1a2e35]/10" aria-labelledby="exportacion-heading">
       <details class="group">
-        <summary class="text-lg font-semibold tracking-wide uppercase text-[#1a2e35] font-montserrat cursor-pointer list-none flex items-center justify-between gap-2 [&::-webkit-details-marker]:hidden">
+        <summary
+          class="text-lg font-semibold tracking-wide uppercase text-[#1a2e35] font-montserrat cursor-pointer list-none flex items-center justify-between gap-2 [&::-webkit-details-marker]:hidden">
           <span id="exportacion-heading">Exportación Internacional de Mascotas</span>
           <span class="text-[#0C789E] text-sm font-normal normal-case">Clic para ver</span>
         </summary>
-      <div class="mt-6 space-y-6 text-sm sm:text-base leading-relaxed text-[#1a2e35]/90 font-montserrat max-w-3xl">
-        <p>Doce años trabajando en <strong>exportación internacional de mascotas desde Perú</strong> enseñan algo que ningún reglamento escribe explícitamente: el problema nunca es el animal. El problema es el expediente.</p>
-        <p>Un perro sano, vacunado, con microchip, puede quedarse en frontera si la vacuna se aplicó antes del chip, si el certificado se emitió un día fuera de ventana, o si el laboratorio de serología no figura en la lista autorizada del país de destino. La biología del animal no cuenta en ese control. Cuenta la cadena documental, y esa cadena tiene un orden que no se negocia.</p>
+        <div class="mt-6 space-y-6 text-sm sm:text-base leading-relaxed text-[#1a2e35]/90 font-montserrat max-w-3xl">
+          <p>Doce años trabajando en <strong>exportación internacional de mascotas desde Perú</strong> enseñan algo que
+            ningún reglamento escribe explícitamente: el problema nunca es el animal. El problema es el expediente.</p>
+          <p>Un perro sano, vacunado, con microchip, puede quedarse en frontera si la vacuna se aplicó antes del chip,
+            si el certificado se emitió un día fuera de ventana, o si el laboratorio de serología no figura en la lista
+            autorizada del país de destino. La biología del animal no cuenta en ese control. Cuenta la cadena
+            documental, y esa cadena tiene un orden que no se negocia.</p>
 
-        <h3 class="text-base font-semibold text-[#1a2e35] mt-8 mb-2">Lo que hacemos</h3>
-        <p>En Zoovet Travel gestionamos el proceso completo de <strong>exportación internacional de perros y gatos</strong> desde Trujillo, Perú. Trabajamos con animales que viajan a España, Estados Unidos, Canadá, Reino Unido, Australia, Nueva Zelanda, Francia, Alemania, Italia, Japón y otros destinos con requisitos técnicos específicos. Cada proceso empieza con una auditoría del historial del animal: microchip, vacunación antirrábica, serología cuando el destino la exige, tratamientos antiparasitarios con ventana temporal verificada. El primer error que hay que evitar es construir un expediente sobre una base inválida.</p>
-        <p>El Servicio Nacional de Sanidad Agraria — <strong>SENASA</strong> — es la autoridad de origen en Perú. El <strong>certificado zoosanitario de exportación</strong> que emite esa institución, bajo el procedimiento TUPA CA07 y el Decreto Supremo 051-2000-AG, es el documento que cierra el proceso desde territorio peruano. Coordinamos ese trámite, el endoso oficial y toda la secuencia: desde la primera revisión del historial hasta el embarque.</p>
+          <h3 class="text-base font-semibold text-[#1a2e35] mt-8 mb-2">Lo que hacemos</h3>
+          <p>En Zoovet Travel gestionamos el proceso completo de <strong>exportación internacional de perros y
+              gatos</strong> desde Trujillo, Perú. Trabajamos con animales que viajan a España, Estados Unidos, Canadá,
+            Reino Unido, Australia, Nueva Zelanda, Francia, Alemania, Italia, Japón y otros destinos con requisitos
+            técnicos específicos. Cada proceso empieza con una auditoría del historial del animal: microchip, vacunación
+            antirrábica, serología cuando el destino la exige, tratamientos antiparasitarios con ventana temporal
+            verificada. El primer error que hay que evitar es construir un expediente sobre una base inválida.</p>
+          <p>El Servicio Nacional de Sanidad Agraria — <strong>SENASA</strong> — es la autoridad de origen en Perú. El
+            <strong>certificado zoosanitario de exportación</strong> que emite esa institución, bajo el procedimiento
+            TUPA CA07 y el Decreto Supremo 051-2000-AG, es el documento que cierra el proceso desde territorio peruano.
+            Coordinamos ese trámite, el endoso oficial y toda la secuencia: desde la primera revisión del historial
+            hasta el embarque.
+          </p>
 
-        <h3 class="text-base font-semibold text-[#1a2e35] mt-8 mb-2">Por qué el orden importa más que la voluntad</h3>
-        <p>El microchip debe estar implantado <strong>antes</strong> de la vacuna antirrábica que se usará para viajar. La muestra serológica se toma mínimo <strong>30 días</strong> después de esa vacuna. Algunos destinos exigen además un período de espera de hasta <strong>tres meses</strong> desde la extracción de sangre antes de permitir el ingreso. El certificado de salud tiene una ventana de validez que varía entre 10 y 30 días según el destino. Si alguna de estas fechas no encaja, el expediente no viaja aunque el animal esté en perfectas condiciones clínicas.</p>
-        <div class="bg-amber-50 border-l-4 border-amber-500 py-3 px-4 my-4 rounded-r text-sm text-amber-900 font-montserrat">
-          <p class="mb-0">En consulta en Trujillo vemos este patrón con frecuencia: propietarios que llegan con todo listo, salvo que el orden de los actos médicos no es el que exige el país de destino. Reconstruir esa cronología tiene un costo en tiempo que muchas veces supera los tres meses. Detectarlo antes de que ocurra es parte del trabajo.</p>
+          <h3 class="text-base font-semibold text-[#1a2e35] mt-8 mb-2">Por qué el orden importa más que la voluntad</h3>
+          <p>El microchip debe estar implantado <strong>antes</strong> de la vacuna antirrábica que se usará para
+            viajar. La muestra serológica se toma mínimo <strong>30 días</strong> después de esa vacuna. Algunos
+            destinos exigen además un período de espera de hasta <strong>tres meses</strong> desde la extracción de
+            sangre antes de permitir el ingreso. El certificado de salud tiene una ventana de validez que varía entre 10
+            y 30 días según el destino. Si alguna de estas fechas no encaja, el expediente no viaja aunque el animal
+            esté en perfectas condiciones clínicas.</p>
+          <div
+            class="bg-amber-50 border-l-4 border-amber-500 py-3 px-4 my-4 rounded-r text-sm text-amber-900 font-montserrat">
+            <p class="mb-0">En consulta en Trujillo vemos este patrón con frecuencia: propietarios que llegan con todo
+              listo, salvo que el orden de los actos médicos no es el que exige el país de destino. Reconstruir esa
+              cronología tiene un costo en tiempo que muchas veces supera los tres meses. Detectarlo antes de que ocurra
+              es parte del trabajo.</p>
+          </div>
+
+          <h3 class="text-base font-semibold text-[#1a2e35] mt-8 mb-2">Atención veterinaria especializada en Trujillo
+          </h3>
+          <p>Somos la única <strong>clínica veterinaria en Trujillo</strong> especializada en <strong>medicina de viajes
+              internacionales</strong> de animales de compañía. Realizamos:</p>
+          <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 list-disc pl-5 text-[#1a2e35]/90 my-4">
+            <li>Implantación de <strong>microchip ISO 11784/11785</strong></li>
+            <li>Vacunación antirrábica con registro para exportación</li>
+            <li>Evaluación de aptitud para vuelo y cribado clínico BOAS para razas braquicéfalas</li>
+            <li>Coordinación de serología antirrábica con laboratorios autorizados por la Unión Europea</li>
+            <li>Emisión del certificado de salud y gestión del expediente ante <strong>SENASA</strong></li>
+          </ul>
+          <p>Todo en un solo lugar, con criterio clínico y conocimiento regulatorio actualizado. Si estás en Trujillo,
+            La Libertad o cualquier región del Perú y necesitas exportar a tu mascota, el proceso empieza con una
+            consulta. No con la compra del pasaje.</p>
+          <p class="pt-2"><a
+              href="https://wa.me/51979620402?text=Hola%2C%20quiero%20cotizar%20una%20exportación%20internacional%20con%20destino%20a%3A%20"
+              target="_blank" rel="noopener noreferrer"
+              class="inline-block bg-[#0C789E] text-white px-4 py-2 rounded font-semibold text-sm hover:bg-[#0a6a8a] transition-colors">WhatsApp
+              · Cotizar exportación</a> <a
+              href="https://wa.me/51922083707?text=Hola%2C%20quiero%20cotizar%20una%20exportación%20internacional%20con%20destino%20a%3A%20"
+              target="_blank" rel="noopener noreferrer"
+              class="inline-block ml-2 border border-[#0C789E] text-[#0C789E] px-4 py-2 rounded font-semibold text-sm hover:bg-[#0C789E]/5 transition-colors">+51
+              922 083 707</a></p>
         </div>
-
-        <h3 class="text-base font-semibold text-[#1a2e35] mt-8 mb-2">Atención veterinaria especializada en Trujillo</h3>
-        <p>Somos la única <strong>clínica veterinaria en Trujillo</strong> especializada en <strong>medicina de viajes internacionales</strong> de animales de compañía. Realizamos:</p>
-        <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 list-disc pl-5 text-[#1a2e35]/90 my-4">
-          <li>Implantación de <strong>microchip ISO 11784/11785</strong></li>
-          <li>Vacunación antirrábica con registro para exportación</li>
-          <li>Evaluación de aptitud para vuelo y cribado clínico BOAS para razas braquicéfalas</li>
-          <li>Coordinación de serología antirrábica con laboratorios autorizados por la Unión Europea</li>
-          <li>Emisión del certificado de salud y gestión del expediente ante <strong>SENASA</strong></li>
-        </ul>
-        <p>Todo en un solo lugar, con criterio clínico y conocimiento regulatorio actualizado. Si estás en Trujillo, La Libertad o cualquier región del Perú y necesitas exportar a tu mascota, el proceso empieza con una consulta. No con la compra del pasaje.</p>
-        <p class="pt-2"><a href="https://wa.me/51979620402?text=Hola%2C%20quiero%20cotizar%20una%20exportación%20internacional%20con%20destino%20a%3A%20" target="_blank" rel="noopener noreferrer" class="inline-block bg-[#0C789E] text-white px-4 py-2 rounded font-semibold text-sm hover:bg-[#0a6a8a] transition-colors">WhatsApp · Cotizar exportación</a> <a href="https://wa.me/51922083707?text=Hola%2C%20quiero%20cotizar%20una%20exportación%20internacional%20con%20destino%20a%3A%20" target="_blank" rel="noopener noreferrer" class="inline-block ml-2 border border-[#0C789E] text-[#0C789E] px-4 py-2 rounded font-semibold text-sm hover:bg-[#0C789E]/5 transition-colors">+51 922 083 707</a></p>
-      </div>
       </details>
     </section>
 
     <section id="contacto" class="py-8 border-t border-[#1a2e35]/10">
       <details class="group">
-        <summary class="text-lg font-semibold tracking-wide uppercase text-[#1a2e35] font-montserrat cursor-pointer list-none flex items-center justify-between gap-2 [&::-webkit-details-marker]:hidden">
+        <summary
+          class="text-lg font-semibold tracking-wide uppercase text-[#1a2e35] font-montserrat cursor-pointer list-none flex items-center justify-between gap-2 [&::-webkit-details-marker]:hidden">
           <span>Contacto</span>
           <span class="text-[#0C789E] text-sm font-normal normal-case">Clic para ver</span>
         </summary>
         <div class="mt-6 space-y-4 text-[#1a2e35]/90 font-montserrat">
-          <p><span class="font-semibold">Teléfonos:</span> <a href="tel:044366094" class="text-[#0C789E] hover:underline">044 366094</a></p>
+          <p><span class="font-semibold">Teléfonos:</span> <a href="tel:044366094"
+              class="text-[#0C789E] hover:underline">044 366094</a></p>
           <p class="space-y-2">
-            <a href="https://wa.me/51979620402?text=Hola%20quiero%20agendar%20una%20cita." target="_blank" rel="noopener noreferrer" class="block text-[#0C789E] hover:underline">Para área médica y recolocación de tu mascota en Latinoamérica y Canadá</a>
-            <a href="https://wa.me/51922083707?text=Hola%20quiero%20agendar%20una%20cita." target="_blank" rel="noopener noreferrer" class="block text-[#0C789E] hover:underline">Para exportación y recolocación de tu mascota: Europa, Asia, Norteamérica y Oceanía</a>
+            <a href="https://wa.me/51979620402?text=Hola%20quiero%20agendar%20una%20cita." target="_blank"
+              rel="noopener noreferrer" class="block text-[#0C789E] hover:underline">Para área médica y recolocación de
+              tu mascota en Latinoamérica y Canadá</a>
+            <a href="https://wa.me/51922083707?text=Hola%20quiero%20agendar%20una%20cita." target="_blank"
+              rel="noopener noreferrer" class="block text-[#0C789E] hover:underline">Para exportación y recolocación de
+              tu mascota: Europa, Asia, Norteamérica y Oceanía</a>
           </p>
-          <p><span class="font-semibold">Correo:</span> <a href="mailto:zoovet.trujillo@outlook.com" class="text-[#0C789E] hover:underline">zoovet.trujillo@outlook.com</a></p>
+          <p><span class="font-semibold">Correo:</span> <a href="mailto:zoovet.trujillo@outlook.com"
+              class="text-[#0C789E] hover:underline">zoovet.trujillo@outlook.com</a></p>
           <p><span class="font-semibold">Horario:</span> Lun - Sáb, 09:00 - 19:00</p>
         </div>
       </details>
     </section>
     <section id="ubicacion" class="py-8 border-t border-[#1a2e35]/10">
       <details class="group">
-        <summary class="text-lg font-semibold tracking-wide uppercase text-[#1a2e35] font-montserrat cursor-pointer list-none flex items-center justify-between gap-2 [&::-webkit-details-marker]:hidden">
+        <summary
+          class="text-lg font-semibold tracking-wide uppercase text-[#1a2e35] font-montserrat cursor-pointer list-none flex items-center justify-between gap-2 [&::-webkit-details-marker]:hidden">
           <span>Ubicación</span>
           <span class="text-[#0C789E] text-sm font-normal normal-case">Clic para ver</span>
         </summary>
         <div class="mt-6 space-y-3 text-[#1a2e35]/90 font-montserrat">
           <p><strong>Zoovet Travel - Sede Trujillo</strong></p>
           <p>Calle Cuba 241, Urb. El Recreo, Trujillo, La Libertad, Perú</p>
-          <a href="https://www.google.com/maps/search/?api=1&amp;query=Calle+Cuba+241,+Urb.+El+Recreo,+Trujillo,+La+Libertad,+Peru" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-[#0C789E] font-semibold hover:underline">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Calle+Cuba+241,+Urb.+El+Recreo,+Trujillo,+La+Libertad,+Peru"
+            target="_blank" rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 text-[#0C789E] font-semibold hover:underline">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
             Ver en Google Maps
           </a>
         </div>
       </details>
     </section>
 
-    <section id="section-historias-fronteras" class="py-10 sm:py-12 border-t border-[#1a2e35]/10 max-w-6xl mx-auto px-4 sm:px-6">
+    <section id="section-historias-fronteras"
+      class="py-10 sm:py-12 border-t border-[#1a2e35]/10 max-w-6xl mx-auto px-4 sm:px-6">
       <h2 class="text-xl sm:text-2xl font-semibold text-[#1a2e35] mb-2">Historias que ya cruzaron fronteras</h2>
-      <p class="text-[#1a2e35]/80 text-sm sm:text-base font-normal mb-8 max-w-2xl">Exportación internacional de mascotas a todo el mundo con 12 años de experiencia y medicina veterinaria especializada.</p>
+      <p class="text-[#1a2e35]/80 text-sm sm:text-base font-normal mb-8 max-w-2xl">Exportación internacional de mascotas
+        a todo el mundo con 12 años de experiencia y medicina veterinaria especializada.</p>
       <div class="grid grid-cols-2 lg:grid-cols-3 gap-5">
-        <div class="rounded-lg shadow-sm overflow-hidden transition-all duration-300 hover:shadow-md hover:brightness-105">
-          <img src="./images/historias/historia-01.webp" alt="Perro o gato exportado por Zoovet Travel a destino internacional." width="800" height="800" class="w-full aspect-square object-cover" loading="lazy">
+        <div
+          class="rounded-lg shadow-sm overflow-hidden transition-all duration-300 hover:shadow-md hover:brightness-105">
+          <img src="./images/historias/historia-01.webp"
+            alt="Perro o gato exportado por Zoovet Travel a destino internacional." width="800" height="800"
+            class="w-full aspect-square object-cover" loading="lazy">
         </div>
-        <div class="rounded-lg shadow-sm overflow-hidden transition-all duration-300 hover:shadow-md hover:brightness-105">
-          <img src="./images/historias/historia-02.webp" alt="Mascota exportada con gestión integral y protocolo veterinario." width="800" height="800" class="w-full aspect-square object-cover" loading="lazy">
+        <div
+          class="rounded-lg shadow-sm overflow-hidden transition-all duration-300 hover:shadow-md hover:brightness-105">
+          <img src="./images/historias/historia-02.webp"
+            alt="Mascota exportada con gestión integral y protocolo veterinario." width="800" height="800"
+            class="w-full aspect-square object-cover" loading="lazy">
         </div>
-        <div class="rounded-lg shadow-sm overflow-hidden transition-all duration-300 hover:shadow-md hover:brightness-105">
-          <img src="./images/historias/historia-03.webp" alt="Caso de exportación internacional de mascota desde Perú." width="800" height="800" class="w-full aspect-square object-cover" loading="lazy">
+        <div
+          class="rounded-lg shadow-sm overflow-hidden transition-all duration-300 hover:shadow-md hover:brightness-105">
+          <img src="./images/historias/historia-03.webp" alt="Caso de exportación internacional de mascota desde Perú."
+            width="800" height="800" class="w-full aspect-square object-cover" loading="lazy">
         </div>
-        <div class="rounded-lg shadow-sm overflow-hidden transition-all duration-300 hover:shadow-md hover:brightness-105">
-          <img src="./images/historias/historia-04.webp" alt="Mascota tras completar proceso de exportación internacional." width="800" height="800" class="w-full aspect-square object-cover" loading="lazy">
+        <div
+          class="rounded-lg shadow-sm overflow-hidden transition-all duration-300 hover:shadow-md hover:brightness-105">
+          <img src="./images/historias/historia-04.webp"
+            alt="Mascota tras completar proceso de exportación internacional." width="800" height="800"
+            class="w-full aspect-square object-cover" loading="lazy">
         </div>
-        <div class="rounded-lg shadow-sm overflow-hidden transition-all duration-300 hover:shadow-md hover:brightness-105">
-          <img src="./images/historias/historia-05.webp" alt="Ejemplo de mascota enviada a país de destino." width="800" height="800" class="w-full aspect-square object-cover" loading="lazy">
+        <div
+          class="rounded-lg shadow-sm overflow-hidden transition-all duration-300 hover:shadow-md hover:brightness-105">
+          <img src="./images/historias/historia-05.webp" alt="Ejemplo de mascota enviada a país de destino." width="800"
+            height="800" class="w-full aspect-square object-cover" loading="lazy">
         </div>
-        <div class="rounded-lg shadow-sm overflow-hidden transition-all duration-300 hover:shadow-md hover:brightness-105">
-          <img src="./images/historias/historia-06.webp" alt="Mascota exportada con medicina veterinaria especializada." width="800" height="800" class="w-full aspect-square object-cover" loading="lazy">
+        <div
+          class="rounded-lg shadow-sm overflow-hidden transition-all duration-300 hover:shadow-md hover:brightness-105">
+          <img src="./images/historias/historia-06.webp" alt="Mascota exportada con medicina veterinaria especializada."
+            width="800" height="800" class="w-full aspect-square object-cover" loading="lazy">
         </div>
       </div>
     </section>
@@ -524,15 +1061,21 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 lg:gap-8">
         <div class="lg:col-span-1">
           <p class="text-base font-bold tracking-[0.2em] uppercase text-[#F8FAFC] mb-3">ZOOVET TRAVEL</p>
-          <p class="text-sm text-[#F8FAFC]/80 leading-relaxed max-w-xs">Más de 12 años de excelencia en exportación internacional de mascotas y medicina veterinaria de especialidad.</p>
+          <p class="text-sm text-[#F8FAFC]/80 leading-relaxed max-w-xs">Más de 12 años de excelencia en exportación
+            internacional de mascotas y medicina veterinaria de especialidad.</p>
         </div>
         <div>
           <p class="text-xs font-semibold tracking-wider uppercase text-[#F8FAFC]/90 mb-4">Exportación</p>
           <ul class="space-y-2">
-            <li><a href="#exportacion" class="text-sm text-slate-400 hover:text-white transition-colors block py-2">Gestión SENASA</a></li>
-            <li><a href="#exportacion" class="text-sm text-slate-400 hover:text-white transition-colors block py-2">Microchip ISO</a></li>
-            <li><a href="#exportacion" class="text-sm text-slate-400 hover:text-white transition-colors block py-2">Serología de Rabia</a></li>
-            <li><a href="#exportacion" class="text-sm text-slate-400 hover:text-white transition-colors block py-2">Protocolos Internacionales</a></li>
+            <li><a href="#exportacion"
+                class="text-sm text-slate-400 hover:text-white transition-colors block py-2">Gestión SENASA</a></li>
+            <li><a href="#exportacion"
+                class="text-sm text-slate-400 hover:text-white transition-colors block py-2">Microchip ISO</a></li>
+            <li><a href="#exportacion"
+                class="text-sm text-slate-400 hover:text-white transition-colors block py-2">Serología de Rabia</a></li>
+            <li><a href="#exportacion"
+                class="text-sm text-slate-400 hover:text-white transition-colors block py-2">Protocolos
+                Internacionales</a></li>
           </ul>
         </div>
         <div>
@@ -540,21 +1083,39 @@
           <div class="space-y-4 text-sm text-slate-400">
             <p class="flex items-start gap-2">
               <span class="flex-shrink-0 mt-0.5 text-[#0C789E]" aria-hidden="true">
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
               </span>
-              <a href="https://www.google.com/maps/search/?api=1&amp;query=Calle+Cuba+241,+Urb.+El+Recreo,+Trujillo,+La+Libertad,+Peru" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Calle Cuba 241, Urb. El Recreo, Trujillo</a>
+              <a href="https://www.google.com/maps/search/?api=1&amp;query=Calle+Cuba+241,+Urb.+El+Recreo,+Trujillo,+La+Libertad,+Peru"
+                target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Calle Cuba 241,
+                Urb. El Recreo, Trujillo</a>
             </p>
             <div class="space-y-2">
               <a href="tel:044366094" class="flex items-center gap-2 hover:text-white transition-colors block">
-                <svg class="w-4 h-4 flex-shrink-0 text-[#0C789E]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                <svg class="w-4 h-4 flex-shrink-0 text-[#0C789E]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
                 044 366094
               </a>
-              <a href="https://wa.me/51979620402?text=Hola%20quiero%20agendar%20una%20cita." target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-white transition-colors block">
-                <svg class="w-4 h-4 flex-shrink-0 text-[#0C789E]" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              <a href="https://wa.me/51979620402?text=Hola%20quiero%20agendar%20una%20cita." target="_blank"
+                rel="noopener noreferrer" class="flex items-center gap-2 hover:text-white transition-colors block">
+                <svg class="w-4 h-4 flex-shrink-0 text-[#0C789E]" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                </svg>
                 +51 979620402
               </a>
-              <a href="https://wa.me/51922083707?text=Hola%20quiero%20agendar%20una%20cita." target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-white transition-colors block">
-                <svg class="w-4 h-4 flex-shrink-0 text-[#0C789E]" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              <a href="https://wa.me/51922083707?text=Hola%20quiero%20agendar%20una%20cita." target="_blank"
+                rel="noopener noreferrer" class="flex items-center gap-2 hover:text-white transition-colors block">
+                <svg class="w-4 h-4 flex-shrink-0 text-[#0C789E]" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                </svg>
                 +51 922083707
               </a>
             </div>
@@ -565,18 +1126,35 @@
     <div class="border-t border-[#F8FAFC]/10 px-4 sm:px-6 py-4 footer-safe">
       <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
         <div class="flex items-center gap-4 flex-wrap justify-center sm:justify-start">
-          <a href="https://www.tiktok.com/@zoovet.trujillo" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-all duration-300 hover:scale-110 p-3 min-w-[44px] min-h-[44px] flex items-center justify-center" aria-label="TikTok">
-            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"/></svg>
+          <a href="https://www.tiktok.com/@zoovet.trujillo" target="_blank" rel="noopener noreferrer"
+            class="text-slate-400 hover:text-white transition-all duration-300 hover:scale-110 p-3 min-w-[44px] min-h-[44px] flex items-center justify-center"
+            aria-label="TikTok">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z" />
+            </svg>
           </a>
-          <a href="https://www.instagram.com/zoovet.trujillo/" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-all duration-300 hover:scale-110 p-3 min-w-[44px] min-h-[44px] flex items-center justify-center" aria-label="Instagram">
-            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          <a href="https://www.instagram.com/zoovet.trujillo/" target="_blank" rel="noopener noreferrer"
+            class="text-slate-400 hover:text-white transition-all duration-300 hover:scale-110 p-3 min-w-[44px] min-h-[44px] flex items-center justify-center"
+            aria-label="Instagram">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+            </svg>
           </a>
-          <a href="https://www.facebook.com/Zoovet.Trujillo/" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-all duration-300 hover:scale-110 p-3 min-w-[44px] min-h-[44px] flex items-center justify-center" aria-label="Facebook">
-            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          <a href="https://www.facebook.com/Zoovet.Trujillo/" target="_blank" rel="noopener noreferrer"
+            class="text-slate-400 hover:text-white transition-all duration-300 hover:scale-110 p-3 min-w-[44px] min-h-[44px] flex items-center justify-center"
+            aria-label="Facebook">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+            </svg>
           </a>
         </div>
-        <p class="text-xs text-[#F8FAFC]/60 text-center sm:text-right">© 2026 Zoovet Travel. Todos los derechos reservados.</p>
-        <p class="text-[10px] text-[#F8FAFC]/40 font-mono mt-1.5 w-full text-center sm:text-right">Diseño y propiedad: Carlos Ravello Joo · Modelo de coherencia dinámico — MCD</p>
+        <p class="text-xs text-[#F8FAFC]/60 text-center sm:text-right">© 2026 Zoovet Travel. Todos los derechos
+          reservados.</p>
+        <p class="text-[10px] text-[#F8FAFC]/40 font-mono mt-1.5 w-full text-center sm:text-right">Diseño y propiedad:
+          Carlos Ravello Joo · Modelo de coherencia dinámico — MCD</p>
       </div>
     </div>
   </footer>
@@ -590,5 +1168,101 @@
   {"@context":"https://schema.org","@graph":[{"@type":["Organization","ProfessionalService"],"@id":"https://zoovettravel.com/#organization","name":"Zoovet Travel","foundingDate":"2013-05","taxID":"10433053678","areaServed":{"@type":"Country","name":"Peru"},"description":"Clínica veterinaria especializada en salud animal y logística internacional de exportación de mascotas desde Perú.","logo":"https://zoovettravel.com/images/zoovet-travel-hero.png","sameAs":["https://www.tiktok.com/@zoovet.trujillo","https://www.instagram.com/zoovet.trujillo/","https://www.facebook.com/Zoovet.Trujillo/"],"hasOfferCatalog":{"@type":"OfferCatalog","name":"Servicios Zoovet Travel","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Exportación Internacional - Gestión Integral SENASA","serviceType":"Certificados Zoosanitarios de Exportación (CZE)","provider":{"@id":"https://zoovettravel.com/#organization"},"areaServed":{"@type":"Country","name":"Peru"}}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Implantación de Microchip ISO 11784/11785","serviceType":"Identificación animal","provider":{"@id":"https://zoovettravel.com/#organization"},"areaServed":{"@type":"Country","name":"Peru"}}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Serología de Rabia","serviceType":"Laboratorio autorizado","provider":{"@id":"https://zoovettravel.com/#organization"},"areaServed":{"@type":"Country","name":"Peru"}}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Protocolos sanitarios por país de destino","serviceType":"USA, UE, Canadá, LATAM","provider":{"@id":"https://zoovettravel.com/#organization"},"areaServed":{"@type":"Country","name":"Peru"}}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Dermatología Veterinaria","serviceType":"Medicina Especializada","provider":{"@id":"https://zoovettravel.com/#organization"},"areaServed":{"@type":"Country","name":"Peru"}}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Nutrición Clínica","serviceType":"Medicina Especializada","provider":{"@id":"https://zoovettravel.com/#organization"},"areaServed":{"@type":"Country","name":"Peru"}}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Medicina Interna Veterinaria","serviceType":"Medicina Especializada","provider":{"@id":"https://zoovettravel.com/#organization"},"areaServed":{"@type":"Country","name":"Peru"}}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Oftalmología Veterinaria","serviceType":"Medicina Especializada","provider":{"@id":"https://zoovettravel.com/#organization"},"areaServed":{"@type":"Country","name":"Peru"}}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Endocrinología","serviceType":"Medicina Especializada","provider":{"@id":"https://zoovettravel.com/#organization"},"areaServed":{"@type":"Country","name":"Peru"}}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Ecografía Doppler","serviceType":"Diagnóstico por imágenes","provider":{"@id":"https://zoovettravel.com/#organization"},"areaServed":{"@type":"Country","name":"Peru"}}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Electrocardiograma (EKG)","serviceType":"Diagnóstico cardiovascular","provider":{"@id":"https://zoovettravel.com/#organization"},"areaServed":{"@type":"Country","name":"Peru"}}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Ecocardiograma","serviceType":"Diagnóstico cardiovascular","provider":{"@id":"https://zoovettravel.com/#organization"},"areaServed":{"@type":"Country","name":"Peru"}}}]}},{"@type":"WebSite","@id":"https://zoovettravel.com/#website","name":"Zoovet Travel","inLanguage":["es","en"],"publisher":{"@id":"https://zoovettravel.com/#organization"},"about":"International pet export from Peru"},{"@type":"VeterinaryCare","@id":"https://zoovettravel.com/#sede-trujillo","name":"Zoovet Travel - Sede Trujillo","address":{"@type":"PostalAddress","streetAddress":"Calle Cuba 241","addressLocality":"Trujillo","addressRegion":"La Libertad","postalCode":"13001","addressCountry":"PE"},"geo":{"@type":"GeoCoordinates","latitude":-8.11585,"longitude":-79.02364},"telephone":["044 366094","+51 979620402","+51 922083707"],"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"09:00","closes":"19:00"},"areaServed":[{"@type":"City","name":"Trujillo"},{"@type":"City","name":"Víctor Larco Herrera"},{"@type":"City","name":"California"},{"@type":"City","name":"San Andrés"}],"parentOrganization":{"@id":"https://zoovettravel.com/#organization"}},{"@type":"Person","name":"Carlos Eduardo Ravello Joo","jobTitle":"Founder & Administrator","description":"Gestión y logística de exportación internacional de mascotas.","worksFor":{"@id":"https://zoovettravel.com/#organization"}},{"@type":"Person","@id":"https://zoovettravel.com/#jessica-camacho","name":"Jessica Ysabel Camacho Garcia","jobTitle":"Médico Veterinaria y Zootecnista","identifier":"CMVP 12434","alumniOf":{"@type":"CollegeOrUniversity","name":"Universidad Privada Antenor Orrego"},"hasCredential":{"@type":"EducationalOccupationalCredential","credentialCategory":"CMVP","identifier":"12434","recognizedBy":{"@type":"Organization","name":"Colegio Médico Veterinario del Perú"}},"roleName":"Integrante de la Comisión de Salud Pública del CMVP La Libertad e Investigadora Académica","sameAs":["https://repositorio.upao.edu.pe/handle/20.500.12759/12474","https://carlosravello-png.github.io/zoovet-credentials/certificado-cmvp-jessica.pdf"],"hasOccupation":{"@type":"Occupation","name":"Veterinarian"},"worksFor":{"@id":"https://zoovettravel.com/#organization"}},{"@type":"Person","@id":"https://zoovettravel.com/#victor-camacho","name":"Víctor Jesús Camacho Paz","jobTitle":"Médico Veterinario Especialista en Salud Pública","identifier":"CMVP 3103","alumniOf":{"@type":"CollegeOrUniversity","name":"Universidad Nacional de Trujillo","sameAs":"https://www.unitru.edu.pe/"},"description":"Especialista en vigilancia epidemiológica con 25 años de trayectoria. Investigador de la prevalencia de Fasciola hepatica en la sierra liberteña y técnico experto en el control de brotes de Peste Bubónica y Rabia Urbana.","affiliation":[{"@type":"Organization","name":"Gerencia Regional de Salud (GERESA) La Libertad"},{"@type":"Organization","name":"Ministerio de Salud del Perú (MINSA)"}],"knowsAbout":["Zoonosis","Fasciola hepatica","Yersinia pestis","Vigilancia Epidemiológica","Rabia","Bioseguridad"],"publishingPrinciples":"https://zoovettravel.com/articles/","sameAs":["https://cmvp.org.pe","https://www.linkedin.com/in/victor-jesus-camacho-paz","https://www.dge.gob.pe/portal/docs/tools/zoonosis/zoonosis.pdf"],"worksFor":{"@id":"https://zoovettravel.com/#organization"}}]}
   </script>
   <!-- Diseño y propiedad: Carlos Ravello Joo · Modelo de coherencia dinámico - MCD -->
+  <!-- Search Modal HTML -->
+  <div class="search-modal-backdrop" id="searchModal" aria-hidden="true">
+    <div class="search-modal" role="dialog" aria-modal="true" aria-labelledby="searchModalTitle">
+      <div class="search-header">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8fa3ad"
+          stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="searchInput" class="search-input"
+          placeholder="Buscar destino, raza, veterinario o requisito..." aria-label="Escribe tu búsqueda">
+        <button class="search-close" onclick="closeSearchModal()" aria-label="Cerrar búsqueda"
+          title="Cerrar (ESC)">ESC</button>
+      </div>
+      <div class="search-results" id="searchResults">
+        <div class="search-empty">Escribe arriba para comenzar a buscar</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Search Logic Script -->
+  <script src="./scripts/search_data.js"></script>
+  <script>
+    const searchModal = document.getElementById('searchModal');
+    const searchInput = document.getElementById('searchInput');
+    const searchResults = document.getElementById('searchResults');
+    const bodyEl = document.body;
+
+    // Abrir Modal
+    function openSearchModal() {
+      searchModal.classList.add('is-active');
+      searchModal.setAttribute('aria-hidden', 'false');
+      bodyEl.style.overflow = 'hidden'; // Prevenir scroll
+      setTimeout(() => searchInput.focus(), 100);
+
+      // Close mobile drawer if open
+      if (document.getElementById('nav-drawer').classList.contains('is-open')) {
+        document.getElementById('hamburger-btn').click();
+      }
+    }
+
+    // Abrir Modal desde Mobile
+    function openSearchModalMobile() {
+      openSearchModal();
+    }
+
+    // Cerrar Modal
+    function closeSearchModal() {
+      searchModal.classList.remove('is-active');
+      searchModal.setAttribute('aria-hidden', 'true');
+      bodyEl.style.overflow = '';
+      searchInput.value = '';
+      searchResults.innerHTML = '<div class="search-empty">Escribe arriba para comenzar a buscar</div>';
+    }
+
+    // Eventos de Cierre
+    searchModal.addEventListener('click', (e) => {
+      if (e.target === searchModal) closeSearchModal();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && searchModal.classList.contains('is-active')) {
+        closeSearchModal();
+      }
+    });
+
+    // Filtro instantáneo
+    searchInput.addEventListener('input', (e) => {
+      const query = e.target.value.toLowerCase().trim();
+
+      if (!query || query.length < 2) {
+        searchResults.innerHTML = '<div class="search-empty">Escribe arriba para comenzar a buscar</div>';
+        return;
+      }
+
+      // Filtrar el data que viene de search_data.js (variable window.searchData)
+      const matches = window.searchData.filter(item => {
+        return item.title.toLowerCase().includes(query) ||
+          item.keywords.toLowerCase().includes(query) ||
+          item.category.toLowerCase().includes(query);
+      });
+
+      // Renderizar limitando a max 6 resultados
+      if (matches.length === 0) {
+        searchResults.innerHTML = '<div class="search-empty">No se encontraron artículos para esa búsqueda.</div>';
+      } else {
+        const topMatches = matches.slice(0, 6);
+        searchResults.innerHTML = topMatches.map(match => `
+          <a href="./${match.url}" class="search-result-item">
+            <span class="search-result-title">${match.title}</span>
+            <span class="search-result-cat">${match.category}</span>
+          </a>
+        `).join('');
+      }
+    });
+  </script>
 </body>
+
 </html>
