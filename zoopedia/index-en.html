@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Check official requirements to import and export pets by country. Vaccines, microchip, RNATT, health certificates, quarantine and regulations updated 2026. Editorial project developed and verified by Zoovet Travel.">
+  <meta name="description"
+    content="Check official requirements to import and export pets by country. Vaccines, microchip, RNATT, health certificates, quarantine and regulations updated 2026. Editorial project developed and verified by Zoovet Travel.">
   <title>The Zoopedia of International Pet Export and Import | Zoovet Travel</title>
   <link rel="icon" type="image/x-icon" href="https://zoovettravel.com/images/favicon.ico">
   <link rel="apple-touch-icon" href="https://zoovettravel.com/images/apple-touch-icon.png">
 
+
   <link rel="canonical" href="https://zoovettravel.com/zoopedia/index-en.html">
-  <link rel="alternate" hreflang="es" href="https://zoovettravel.com/zoopedia/">
+  <link rel="alternate" hreflang="es" href="https://zoovettravel.com/zoopedia/index.html">
   <link rel="alternate" hreflang="en" href="https://zoovettravel.com/zoopedia/index-en.html">
   <link rel="alternate" hreflang="fr" href="https://zoovettravel.com/zoopedia/index-fr.html">
-  <link rel="alternate" hreflang="x-default" href="https://zoovettravel.com/zoopedia/">
+  <link rel="alternate" hreflang="x-default" href="https://zoovettravel.com/zoopedia/index.html">
+
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://zoovettravel.com/zoopedia/index-en.html">
   <meta property="og:title" content="The Zoopedia of International Pet Export and Import | Zoovet Travel">
-  <meta property="og:description" content="Check official requirements to import and export pets by country. Vaccines, microchip, RNATT, health certificates, quarantine and regulations updated 2026. Editorial project developed and verified by Zoovet Travel.">
+  <meta property="og:description"
+    content="Check official requirements to import and export pets by country. Vaccines, microchip, RNATT, health certificates, quarantine and regulations updated 2026. Editorial project developed and verified by Zoovet Travel.">
   <meta property="og:image" content="https://zoovettravel.com/images/zoovet-travel-hero.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="The Zoopedia of International Pet Export and Import | Zoovet Travel">
-  <meta name="twitter:description" content="Check official requirements to import and export pets by country. Vaccines, microchip, RNATT, certificates, quarantine and regulations 2026. Zoovet Travel.">
+  <meta name="twitter:description"
+    content="Check official requirements to import and export pets by country. Vaccines, microchip, RNATT, certificates, quarantine and regulations 2026. Zoovet Travel.">
   <meta name="twitter:image" content="https://zoovettravel.com/images/zoovet-travel-hero.png">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://zoovettravel.com/index-en.html"},{"@type":"ListItem","position":2,"name":"The Zoopedia of International Pet Export and Import","item":"https://zoovettravel.com/zoopedia/index-en.html"}]}
@@ -43,8 +49,184 @@
       }
     }
   </script>
-  <style>body { font-family: 'Montserrat', sans-serif; } html { scroll-behavior: smooth; } main p, main li { text-align: justify; }</style>
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    main p,
+    main li {
+      text-align: justify;
+    }
+
+    .search-btn {
+      color: #1a2e35;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+      border-radius: 50%;
+      transition: background 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .search-btn:hover {
+      background: #e8f2fa;
+      color: #01243f;
+    }
+
+    .search-modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(26, 46, 53, 0.5);
+      z-index: 1000;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding-top: 10vh;
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .search-modal-backdrop.is-active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .search-modal {
+      background: #fff;
+      width: 90%;
+      max-width: 600px;
+      border-radius: 12px;
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      overflow: hidden;
+      transform: translateY(-20px);
+      opacity: 0;
+      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s;
+      display: flex;
+      flex-direction: column;
+      max-height: 80vh;
+    }
+
+    .search-modal-backdrop.is-active .search-modal {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    .search-header {
+      padding: 1rem 1.25rem;
+      border-bottom: 1px solid rgba(26, 46, 53, 0.15);
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      background: #fafaf8;
+    }
+
+    .search-input {
+      flex: 1;
+      border: none;
+      background: transparent;
+      font-size: 1rem;
+      color: #1a2e35;
+      outline: none;
+      padding: 0.5rem 0;
+      width: 100%;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .search-input::placeholder {
+      color: #5a6a7a;
+    }
+
+    .search-close {
+      background: #e8f2fa;
+      border: none;
+      padding: 0.25rem 0.5rem;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      color: #1a2e35;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 32px;
+    }
+
+    .search-close:hover {
+      background: #cdd8e3;
+      color: #01243f;
+    }
+
+    .search-results {
+      padding: 0.5rem 0;
+      overflow-y: auto;
+      flex: 1;
+    }
+
+    .search-result-item {
+      padding: 0.75rem 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+      border-bottom: 1px solid rgba(26, 46, 53, 0.1);
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+
+    .search-result-item:last-child {
+      border-bottom: none;
+    }
+
+    .search-result-item:hover {
+      background: #fafaf8;
+      text-decoration: none !important;
+    }
+
+    .search-result-title {
+      color: #1a2e35;
+      font-weight: 600;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      transition: color 0.2s;
+      display: block;
+    }
+
+    .search-result-item:hover .search-result-title {
+      color: #0C789E;
+    }
+
+    .search-result-cat {
+      color: #0C789E;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-family: 'Montserrat', sans-serif;
+      display: block;
+    }
+
+    .search-empty {
+      padding: 2rem;
+      text-align: center;
+      color: #5a6a7a;
+      font-size: 0.95rem;
+      font-family: 'Montserrat', sans-serif;
+    }
+  </style>
 </head>
+
 <body class="bg-[#F8FAFC] min-h-screen text-[#1a2e35]">
   <nav class="px-4 py-3 text-sm border-b border-[#1a2e35]/10">
     <ol class="flex gap-2 text-[#1a2e35]/70">
@@ -53,105 +235,263 @@
       <li class="text-[#1a2e35]">The Zoopedia of International Pet Export and Import</li>
     </ol>
   </nav>
-  <header class="max-w-6xl mx-auto px-4 py-6 flex justify-between items-center">
-    <a href="../index-en.html" class="text-xl font-bold tracking-[0.25em] text-[#1a2e35] font-montserrat">ZOOVET TRAVEL</a>
-    <div class="flex gap-2">
-      <a href="index.html" class="text-xs font-semibold tracking-widest uppercase text-[#1a2e35]/80 hover:text-[#1a2e35] border border-[#1a2e35]/30 px-3 py-2 rounded-sm transition-colors">ES</a>
-      <a href="index-en.html" class="text-xs font-semibold tracking-widest uppercase text-[#1a2e35] border border-[#0C789E] bg-[#0C789E]/10 px-3 py-2 rounded-sm">EN</a>
-      <a href="index-fr.html" class="text-xs font-semibold tracking-widest uppercase text-[#1a2e35]/80 hover:text-[#1a2e35] border border-[#1a2e35]/30 px-3 py-2 rounded-sm transition-colors">FR</a>
+  <header class="px-4 py-6 md:py-8 flex flex-row items-center justify-between gap-4 max-w-6xl mx-auto">
+    <div class="flex items-center gap-3">
+      <a href="../index-en.html"
+        class="text-sm sm:text-lg md:text-xl tracking-[0.25em] text-[#1a2e35] font-montserrat whitespace-nowrap font-bold">ZOOVET
+        TRAVEL</a>
+    </div>
+    <div class="flex items-center gap-2 md:gap-4">
+      <button
+        class="search-btn flex items-center justify-center p-2 rounded-full hover:bg-[#e8f2fa] transition-colors text-[#1a2e35]"
+        aria-label="Search articles" onclick="openSearchModal()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+      </button>
+      <div class="hidden md:block h-6 w-px bg-[#1a2e35]/20"></div>
+      <div class="hidden md:flex gap-1 sm:gap-2">
+        <a href="index.html"
+          class="text-xs font-semibold tracking-widest uppercase text-[#1a2e35]/80 hover:text-[#1a2e35] border border-[#1a2e35]/30 hover:border-[#1a2e35]/50 px-2 sm:px-3 py-2 rounded-sm transition-all duration-300 min-h-[44px] inline-flex items-center justify-center">ES</a>
+        <span
+          class="text-xs font-semibold tracking-widest uppercase text-[#1a2e35] border border-[#0C789E] bg-[#0C789E]/10 px-2 sm:px-3 py-2 rounded-sm transition-all duration-300 min-h-[44px] inline-flex items-center justify-center"
+          aria-current="page">EN</span>
+        <a href="index-fr.html"
+          class="text-xs font-semibold tracking-widest uppercase text-[#1a2e35]/80 hover:text-[#1a2e35] border border-[#1a2e35]/30 hover:border-[#1a2e35]/50 px-2 sm:px-3 py-2 rounded-sm transition-all duration-300 min-h-[44px] inline-flex items-center justify-center">FR</a>
+      </div>
     </div>
   </header>
   <main class="max-w-6xl mx-auto px-4 py-12">
-    <h1 class="text-2xl font-bold tracking-wide uppercase text-[#1a2e35] mb-2 font-montserrat">The Zoopedia of International Pet Export and Import</h1>
-    <p class="text-[#1a2e35]/80 font-montserrat text-sm mb-6">International Guide to Official Requirements by Country — Developed and Verified by Zoovet Travel (Permanent Update 2026)</p>
-    <p class="text-[#1a2e35]/90 font-montserrat mb-8">Check official requirements to import and export pets by country. Vaccines, microchip, RNATT, health certificates, quarantine and regulations updated 2026. Editorial project developed and verified by Zoovet Travel.</p>
+    <h1 class="text-2xl font-bold tracking-wide uppercase text-[#1a2e35] mb-2 font-montserrat">The Zoopedia of
+      International Pet Export and Import</h1>
+    <p class="text-[#1a2e35]/80 font-montserrat text-sm mb-6">International Guide to Official Requirements by Country —
+      Developed and Verified by Zoovet Travel (Permanent Update 2026)</p>
+    <p class="text-[#1a2e35]/90 font-montserrat mb-8">Check official requirements to import and export pets by country.
+      Vaccines, microchip, RNATT, health certificates, quarantine and regulations updated 2026. Editorial project
+      developed and verified by Zoovet Travel.</p>
 
     <!-- Destination list: countries will be added here -->
     <section id="destinations" class="space-y-4 mb-8" aria-label="Destinations by country">
-      <a href="eeuu-en.html" class="block p-4 border border-[#1a2e35]/20 hover:border-[#0C789E] hover:bg-[#0C789E]/5 transition-colors">
+      <a href="eeuu-en.html"
+        class="block p-4 border border-[#1a2e35]/20 hover:border-[#0C789E] hover:bg-[#0C789E]/5 transition-colors">
         <h2 class="font-bold text-[#1a2e35] mb-1">United States</h2>
-        <p class="text-sm text-[#1a2e35]/80">CDC 2024 requirements for dog and cat import from Peru and Latin America. Final Rule, RNATT, ACF.</p>
+        <p class="text-sm text-[#1a2e35]/80">CDC 2024 requirements for dog and cat import from Peru and Latin America.
+          Final Rule, RNATT, ACF.</p>
       </a>
-      <a href="japon-en.html" class="block p-4 border border-[#1a2e35]/20 hover:border-[#0C789E] hover:bg-[#0C789E]/5 transition-colors">
+      <a href="japon-en.html"
+        class="block p-4 border border-[#1a2e35]/20 hover:border-[#0C789E] hover:bg-[#0C789E]/5 transition-colors">
         <h2 class="font-bold text-[#1a2e35] mb-1">Japan</h2>
-        <p class="text-sm text-[#1a2e35]/80">AQS 2026 requirements for dog and cat import to Japan from Peru and Latin America. Model A, 180-day post-RNATT wait.</p>
+        <p class="text-sm text-[#1a2e35]/80">AQS 2026 requirements for dog and cat import to Japan from Peru and Latin
+          America. Model A, 180-day post-RNATT wait.</p>
       </a>
-      <a href="eau-en.html" class="block p-4 border border-[#1a2e35]/20 hover:border-[#0C789E] hover:bg-[#0C789E]/5 transition-colors">
+      <a href="eau-en.html"
+        class="block p-4 border border-[#1a2e35]/20 hover:border-[#0C789E] hover:bg-[#0C789E]/5 transition-colors">
         <h2 class="font-bold text-[#1a2e35] mb-1">United Arab Emirates</h2>
-        <p class="text-sm text-[#1a2e35]/80">MOCCAE 2026 requirements to import dogs and cats to UAE. Banned breeds, Manifest Cargo, 90-day wait.</p>
+        <p class="text-sm text-[#1a2e35]/80">MOCCAE 2026 requirements to import dogs and cats to UAE. Banned breeds,
+          Manifest Cargo, 90-day wait.</p>
       </a>
-      <a href="espana-en.html" class="block p-4 border border-[#1a2e35]/20 hover:border-[#0C789E] hover:bg-[#0C789E]/5 transition-colors">
+      <a href="espana-en.html"
+        class="block p-4 border border-[#1a2e35]/20 hover:border-[#0C789E] hover:bg-[#0C789E]/5 transition-colors">
         <h2 class="font-bold text-[#1a2e35] mb-1">Spain</h2>
-        <p class="text-sm text-[#1a2e35]/80">Complete MAPA and EU 2026 requirements to bring pets to Spain from Peru. SENASA certification, RNATT, EU approved labs.</p>
+        <p class="text-sm text-[#1a2e35]/80">Complete MAPA and EU 2026 requirements to bring pets to Spain from Peru.
+          SENASA certification, RNATT, EU approved labs.</p>
       </a>
-      <a href="italia-en.html" class="block p-4 border border-[#1a2e35]/20 hover:border-[#0C789E] hover:bg-[#0C789E]/5 transition-colors">
+      <a href="italia-en.html"
+        class="block p-4 border border-[#1a2e35]/20 hover:border-[#0C789E] hover:bg-[#0C789E]/5 transition-colors">
         <h2 class="font-bold text-[#1a2e35] mb-1">Italy</h2>
-        <p class="text-sm text-[#1a2e35]/80">Ministero della Salute and EU 2026 requirements for pet import to Italy. SENASA, RNATT, 90 days from sample. No EU lab in Peru.</p>
+        <p class="text-sm text-[#1a2e35]/80">Ministero della Salute and EU 2026 requirements for pet import to Italy.
+          SENASA, RNATT, 90 days from sample. No EU lab in Peru.</p>
       </a>
-      <a href="francia-en.html" class="block p-4 border border-[#1a2e35]/20 hover:border-[#0C789E] hover:bg-[#0C789E]/5 transition-colors">
+      <a href="francia-en.html"
+        class="block p-4 border border-[#1a2e35]/20 hover:border-[#0C789E] hover:bg-[#0C789E]/5 transition-colors">
         <h2 class="font-bold text-[#1a2e35] mb-1">France</h2>
-        <p class="text-sm text-[#1a2e35]/80">Ministère de l'Agriculture and EU 2026 requirements for pet import to France. SENASA, RNATT, 90 days. No EU lab in Peru.</p>
+        <p class="text-sm text-[#1a2e35]/80">Ministère de l'Agriculture and EU 2026 requirements for pet import to
+          France. SENASA, RNATT, 90 days. No EU lab in Peru.</p>
       </a>
-      <a href="australia-en.html" class="block p-4 border border-[#1a2e35]/20 hover:border-[#0C789E] hover:bg-[#0C789E]/5 transition-colors">
+      <a href="australia-en.html"
+        class="block p-4 border border-[#1a2e35]/20 hover:border-[#0C789E] hover:bg-[#0C789E]/5 transition-colors">
         <h2 class="font-bold text-[#1a2e35] mb-1">Australia</h2>
-        <p class="text-sm text-[#1a2e35]/80">Peru and Latin America are DAFF non-approved countries. Direct travel impossible: intermediate country required, minimum 12 months, Mickleham quarantine Melbourne.</p>
+        <p class="text-sm text-[#1a2e35]/80">Peru and Latin America are DAFF non-approved countries. Direct travel
+          impossible: intermediate country required, minimum 12 months, Mickleham quarantine Melbourne.</p>
       </a>
-      <a href="nueva-zelanda-en.html" class="block p-4 border border-[#1a2e35]/20 hover:border-[#0C789E] hover:bg-[#0C789E]/5 transition-colors">
+      <a href="nueva-zelanda-en.html"
+        class="block p-4 border border-[#1a2e35]/20 hover:border-[#0C789E] hover:bg-[#0C789E]/5 transition-colors">
         <h2 class="font-bold text-[#1a2e35] mb-1">New Zealand</h2>
-        <p class="text-sm text-[#1a2e35]/80">Peru and Latin America are MPI unapproved countries. Direct import impossible: 6-month intermediate country, RNATT 90 days, 10-day quarantine Auckland or Christchurch.</p>
+        <p class="text-sm text-[#1a2e35]/80">Peru and Latin America are MPI unapproved countries. Direct import
+          impossible: 6-month intermediate country, RNATT 90 days, 10-day quarantine Auckland or Christchurch.</p>
       </a>
-      <a href="union-europea-en.html" class="block p-4 border border-[#1a2e35]/20 hover:border-[#0C789E] hover:bg-[#0C789E]/5 transition-colors">
+      <a href="union-europea-en.html"
+        class="block p-4 border border-[#1a2e35]/20 hover:border-[#0C789E] hover:bg-[#0C789E]/5 transition-colors">
         <h2 class="font-bold text-[#1a2e35] mb-1">European Union (base requirements)</h2>
-        <p class="text-sm text-[#1a2e35]/80">EU 2026 requirements for any member state from non-listed countries. SENASA, RNATT, 90-day wait. Directory of 27 authorities. Finland, Ireland, Malta, Norway: mandatory antiparasitic treatment.</p>
+        <p class="text-sm text-[#1a2e35]/80">EU 2026 requirements for any member state from non-listed countries.
+          SENASA, RNATT, 90-day wait. Directory of 27 authorities. Finland, Ireland, Malta, Norway: mandatory
+          antiparasitic treatment.</p>
       </a>
-      <a href="reino-unido-en.html" class="block p-4 border border-[#1a2e35]/20 hover:border-[#0C789E] hover:bg-[#0C789E]/5 transition-colors">
+      <a href="reino-unido-en.html"
+        class="block p-4 border border-[#1a2e35]/20 hover:border-[#0C789E] hover:bg-[#0C789E]/5 transition-colors">
         <h2 class="font-bold text-[#1a2e35] mb-1">United Kingdom (Great Britain and Northern Ireland)</h2>
-        <p class="text-sm text-[#1a2e35]/80">APHA 2026 post-Brexit requirements. Great Britain Pet Health Certificate differs from EU model. SENASA, RNATT, mandatory Praziquantel. London vs Belfast: different certificates.</p>
+        <p class="text-sm text-[#1a2e35]/80">APHA 2026 post-Brexit requirements. Great Britain Pet Health Certificate
+          differs from EU model. SENASA, RNATT, mandatory Praziquantel. London vs Belfast: different certificates.</p>
       </a>
-      <a href="corea-del-sur-en.html" class="block p-4 border border-[#1a2e35]/20 hover:border-[#0C789E] hover:bg-[#0C789E]/5 transition-colors">
+      <a href="corea-del-sur-en.html"
+        class="block p-4 border border-[#1a2e35]/20 hover:border-[#0C789E] hover:bg-[#0C789E]/5 transition-colors">
         <h2 class="font-bold text-[#1a2e35] mb-1">South Korea (Republic of Korea)</h2>
-        <p class="text-sm text-[#1a2e35]/80">No post-RNATT waiting period: process from Peru in 45 days. SENASA, APQA, WOAH labs. Shortest process in Asia. Incheon, microchip control.</p>
+        <p class="text-sm text-[#1a2e35]/80">No post-RNATT waiting period: process from Peru in 45 days. SENASA, APQA,
+          WOAH labs. Shortest process in Asia. Incheon, microchip control.</p>
       </a>
-      <a href="chile-en.html" class="block p-4 border border-[#1a2e35]/20 hover:border-[#0C789E] hover:bg-[#0C789E]/5 transition-colors">
+      <a href="chile-en.html"
+        class="block p-4 border border-[#1a2e35]/20 hover:border-[#0C789E] hover:bg-[#0C789E]/5 transition-colors">
         <h2 class="font-bold text-[#1a2e35] mb-1">Chile</h2>
-        <p class="text-sm text-[#1a2e35]/80">No RNATT: process from Peru in 10 days. SAG, Resolution 6.052/2023, Echinococcus antiparasitic and digital declaration ingresoachile.cl.</p>
+        <p class="text-sm text-[#1a2e35]/80">No RNATT: process from Peru in 10 days. SAG, Resolution 6.052/2023,
+          Echinococcus antiparasitic and digital declaration ingresoachile.cl.</p>
       </a>
-      <a href="canada-en.html" class="block p-4 border border-[#1a2e35]/20 hover:border-[#0C789E] hover:bg-[#0C789E]/5 transition-colors">
+      <a href="canada-en.html"
+        class="block p-4 border border-[#1a2e35]/20 hover:border-[#0C789E] hover:bg-[#0C789E]/5 transition-colors">
         <h2 class="font-bold text-[#1a2e35] mb-1">Canada</h2>
-        <p class="text-sm text-[#1a2e35]/80">No RNATT: process from Peru in 5 days. SENASA bilingual certificate, CFIA, Health of Animals Regulations. Ontario breed alert.</p>
+        <p class="text-sm text-[#1a2e35]/80">No RNATT: process from Peru in 5 days. SENASA bilingual certificate, CFIA,
+          Health of Animals Regulations. Ontario breed alert.</p>
       </a>
-      <a href="brasil-en.html" class="block p-4 border border-[#1a2e35]/20 hover:border-[#0C789E] hover:bg-[#0C789E]/5 transition-colors">
+      <a href="brasil-en.html"
+        class="block p-4 border border-[#1a2e35]/20 hover:border-[#0C789E] hover:bg-[#0C789E]/5 transition-colors">
         <h2 class="font-bold text-[#1a2e35] mb-1">Brazil</h2>
-        <p class="text-sm text-[#1a2e35]/80">No RNATT: process from Peru in 10 days. SENASA CVI MERCOSUR model, antiparasitic 15 days before CVI issuance, VIGIAGRO Guarulhos.</p>
+        <p class="text-sm text-[#1a2e35]/80">No RNATT: process from Peru in 10 days. SENASA CVI MERCOSUR model,
+          antiparasitic 15 days before CVI issuance, VIGIAGRO Guarulhos.</p>
       </a>
-      <a href="china-en.html" class="block p-4 border border-[#1a2e35]/20 hover:border-[#0C789E] hover:bg-[#0C789E]/5 transition-colors">
+      <a href="china-en.html"
+        class="block p-4 border border-[#1a2e35]/20 hover:border-[#0C789E] hover:bg-[#0C789E]/5 transition-colors">
         <h2 class="font-bold text-[#1a2e35] mb-1">China (P.R.)</h2>
-        <p class="text-sm text-[#1a2e35]/80">No post-RNATT wait, 45 days from scratch. SENASA, GACC, GACC-accredited lab, 30-day quarantine for non-compliance, one pet per passport.</p>
+        <p class="text-sm text-[#1a2e35]/80">No post-RNATT wait, 45 days from scratch. SENASA, GACC, GACC-accredited
+          lab, 30-day quarantine for non-compliance, one pet per passport.</p>
       </a>
-      <a href="rusia-en.html" class="block p-4 border border-[#1a2e35]/20 hover:border-[#0C789E] hover:bg-[#0C789E]/5 transition-colors">
+      <a href="rusia-en.html"
+        class="block p-4 border border-[#1a2e35]/20 hover:border-[#0C789E] hover:bg-[#0C789E]/5 transition-colors">
         <h2 class="font-bold text-[#1a2e35] mb-1">Russia</h2>
-        <p class="text-sm text-[#1a2e35]/80">No RNATT for any country: 22 days from scratch. SENASA CVI Form 5a, 20-day post-vaccine wait, annual Rosselkhoznadzor criterion, 5-day window.</p>
+        <p class="text-sm text-[#1a2e35]/80">No RNATT for any country: 22 days from scratch. SENASA CVI Form 5a, 20-day
+          post-vaccine wait, annual Rosselkhoznadzor criterion, 5-day window.</p>
       </a>
-      <a href="sudafrica-en.html" class="block p-4 border border-[#1a2e35]/20 hover:border-[#0C789E] hover:bg-[#0C789E]/5 transition-colors">
+      <a href="sudafrica-en.html"
+        class="block p-4 border border-[#1a2e35]/20 hover:border-[#0C789E] hover:bg-[#0C789E]/5 transition-colors">
         <h2 class="font-bold text-[#1a2e35] mb-1">South Africa</h2>
-        <p class="text-sm text-[#1a2e35]/80">75-90 days from scratch. Mandatory 14-day quarantine, prior DALRRD Import Permit, Manifest Cargo only. SENASA, RNATT, Leptospirosis two strains.</p>
+        <p class="text-sm text-[#1a2e35]/80">75-90 days from scratch. Mandatory 14-day quarantine, prior DALRRD Import
+          Permit, Manifest Cargo only. SENASA, RNATT, Leptospirosis two strains.</p>
       </a>
-      <a href="singapur-en.html" class="block p-4 border border-[#1a2e35]/20 hover:border-[#0C789E] hover:bg-[#0C789E]/5 transition-colors">
+      <a href="singapur-en.html"
+        class="block p-4 border border-[#1a2e35]/20 hover:border-[#0C789E] hover:bg-[#0C789E]/5 transition-colors">
         <h2 class="font-bold text-[#1a2e35] mb-1">Singapore</h2>
-        <p class="text-sm text-[#1a2e35]/80">Category D: 6-month process, mandatory 30-day SAQS quarantine, RNATT, antiparasitic 2-7 days, Manifest Cargo. SENASA.</p>
+        <p class="text-sm text-[#1a2e35]/80">Category D: 6-month process, mandatory 30-day SAQS quarantine, RNATT,
+          antiparasitic 2-7 days, Manifest Cargo. SENASA.</p>
       </a>
-      <a href="india-en.html" class="block p-4 border border-[#1a2e35]/20 hover:border-[#0C789E] hover:bg-[#0C789E]/5 transition-colors">
+      <a href="india-en.html"
+        class="block p-4 border border-[#1a2e35]/20 hover:border-[#0C789E] hover:bg-[#0C789E]/5 transition-colors">
         <h2 class="font-bold text-[#1a2e35] mb-1">India</h2>
-        <p class="text-sm text-[#1a2e35]/80">No RNATT: 45 days from scratch. AQCS NOC 15 days prior, redundant microchip in SENASA certificate, antiparasitic 2-7 days. Six authorised airports.</p>
+        <p class="text-sm text-[#1a2e35]/80">No RNATT: 45 days from scratch. AQCS NOC 15 days prior, redundant microchip
+          in SENASA certificate, antiparasitic 2-7 days. Six authorised airports.</p>
       </a>
     </section>
 
-    <a href="../index-en.html#scientific-articles" class="inline-flex items-center gap-2 text-[#0C789E] font-semibold hover:underline font-montserrat">← Back to home</a>
+    <a href="../index-en.html#scientific-articles"
+      class="inline-flex items-center gap-2 text-[#0C789E] font-semibold hover:underline font-montserrat">← Back to
+      home</a>
   </main>
   <footer class="border-t border-[#1a2e35]/10 mt-12 py-6 px-4">
     <div class="max-w-6xl mx-auto">
-      <p class="text-xs text-[#1a2e35]/60 font-montserrat">© 2026 Zoovet Travel. The Zoopedia of International Pet Export and Import — Reference guide. Verify current requirements with the competent authority of the destination before travelling.</p>
+      <p class="text-xs text-[#1a2e35]/60 font-montserrat">© 2026 Zoovet Travel. The Zoopedia of International Pet
+        Export and Import — Reference guide. Verify current requirements with the competent authority of the destination
+        before travelling.</p>
     </div>
   </footer>
+
+  <div class="search-modal-backdrop" id="searchModal" aria-hidden="true">
+    <div class="search-modal" role="dialog" aria-modal="true" aria-labelledby="searchModalTitle">
+      <div class="search-header">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+          stroke="var(--muted, #5a6a7a)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="searchInput" class="search-input"
+          placeholder="Search for destination, breed, vet or requirement..." aria-label="Search articles">
+        <button class="search-close" onclick="closeSearchModal()" aria-label="Cerrar" title="ESC">ESC</button>
+      </div>
+      <div class="search-results" id="searchResults">
+        <div class="search-empty">Type above to start searching</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../scripts/search_data.js"></script>
+  <script>
+    const searchModal = document.getElementById('searchModal');
+    const searchInput = document.getElementById('searchInput');
+    const searchResults = document.getElementById('searchResults');
+    const bodyEl = document.body;
+
+    function openSearchModal() {
+      searchModal.classList.add('is-active');
+      searchModal.setAttribute('aria-hidden', 'false');
+      bodyEl.style.overflow = 'hidden';
+      setTimeout(() => searchInput.focus(), 100);
+    }
+
+    function closeSearchModal() {
+      searchModal.classList.remove('is-active');
+      searchModal.setAttribute('aria-hidden', 'true');
+      bodyEl.style.overflow = '';
+      searchInput.value = '';
+      searchResults.innerHTML = '<div class="search-empty">Type above to start searching</div>';
+    }
+
+    searchModal.addEventListener('click', (e) => {
+      if (e.target === searchModal) closeSearchModal();
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && searchModal.classList.contains('is-active')) {
+        closeSearchModal();
+      }
+    });
+
+    searchInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        const firstResult = searchResults.querySelector('.search-result-item');
+        if (firstResult) {
+          window.location.href = firstResult.getAttribute('href');
+        }
+      }
+    });
+
+    searchInput.addEventListener('input', (e) => {
+      const query = e.target.value.toLowerCase().trim();
+      if (!query || query.length < 2) {
+        searchResults.innerHTML = '<div class="search-empty">Type above to start searching</div>';
+        return;
+      }
+      if (!window.searchData) return;
+
+      const currentLang = document.documentElement.lang.split('-')[0].toLowerCase() || 'es';
+      const matches = window.searchData.filter(item => {
+        const itemLang = item.lang || 'es';
+        if (itemLang !== currentLang && itemLang !== 'any') return false;
+        return item.title.toLowerCase().includes(query) ||
+          item.keywords.toLowerCase().includes(query) ||
+          item.category.toLowerCase().includes(query);
+      });
+      if (matches.length === 0) {
+        searchResults.innerHTML = '<div class="search-empty">No articles found for that search.</div>';
+      } else {
+        const topMatches = matches.slice(0, 6);
+        searchResults.innerHTML = topMatches.map(match => `
+          <a href="../${match.url}" class="search-result-item">
+            <span class="search-result-title">${match.title}</span>
+            <span class="search-result-cat">${match.category}</span>
+          </a>
+        `).join('');
+      }
+    });
+  </script>
 </body>
+
 </html>

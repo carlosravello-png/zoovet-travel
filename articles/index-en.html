@@ -1,25 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Zoovet Travel scientific articles in English and Spanish: veterinary medicine, pet export and animal health.">
+  <meta name="description"
+    content="Zoovet Travel scientific articles in English and Spanish: veterinary medicine, pet export and animal health.">
   <title>Scientific Articles in Applied Veterinary Medicine for International Pet Transport | Zoovet Travel</title>
   <link rel="icon" type="image/x-icon" href="https://zoovettravel.com/images/favicon.ico">
   <link rel="apple-touch-icon" href="https://zoovettravel.com/images/apple-touch-icon.png">
 
+
   <link rel="canonical" href="https://zoovettravel.com/articles/index-en.html">
-  <link rel="alternate" hreflang="es" href="https://zoovettravel.com/articles/">
+  <link rel="alternate" hreflang="es" href="https://zoovettravel.com/articles/index.html">
   <link rel="alternate" hreflang="en" href="https://zoovettravel.com/articles/index-en.html">
   <link rel="alternate" hreflang="fr" href="https://zoovettravel.com/articles/index-fr.html">
-  <link rel="alternate" hreflang="x-default" href="https://zoovettravel.com/articles/">
+  <link rel="alternate" hreflang="x-default" href="https://zoovettravel.com/articles/index.html">
+
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://zoovettravel.com/articles/index-en.html">
-  <meta property="og:title" content="Scientific Articles in Applied Veterinary Medicine for International Pet Transport | Zoovet Travel">
-  <meta property="og:description" content="Zoovet Travel scientific articles in English and Spanish: veterinary medicine, pet export and animal health.">
+  <meta property="og:title"
+    content="Scientific Articles in Applied Veterinary Medicine for International Pet Transport | Zoovet Travel">
+  <meta property="og:description"
+    content="Zoovet Travel scientific articles in English and Spanish: veterinary medicine, pet export and animal health.">
   <meta property="og:image" content="https://zoovettravel.com/images/zoovet-travel-hero.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Scientific Articles in Applied Veterinary Medicine for International Pet Transport | Zoovet Travel">
+  <meta name="twitter:title"
+    content="Scientific Articles in Applied Veterinary Medicine for International Pet Transport | Zoovet Travel">
   <meta name="twitter:description" content="Scientific articles: veterinary medicine, pet export and animal health.">
   <meta name="twitter:image" content="https://zoovettravel.com/images/zoovet-travel-hero.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,8 +43,22 @@
       }
     }
   </script>
-  <style>body { font-family: 'Montserrat', sans-serif; } html { scroll-behavior: smooth; } main p, main li { text-align: justify; }</style>
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    main p,
+    main li {
+      text-align: justify;
+    }
+  </style>
 </head>
+
 <body class="bg-[#F8FAFC] min-h-screen text-[#1a2e35]">
   <nav class="px-4 py-3 text-sm border-b border-[#1a2e35]/10">
     <ol class="flex gap-2 text-[#1a2e35]/70">
@@ -46,104 +67,434 @@
       <li class="text-[#1a2e35]">Scientific Articles in Applied Veterinary Medicine for International Pet Transport</li>
     </ol>
   </nav>
-  <header class="max-w-6xl mx-auto px-4 py-6 flex justify-between items-center">
-    <a href="../index-en.html" class="text-xl font-bold tracking-[0.25em] text-[#1a2e35] font-montserrat">ZOOVET TRAVEL</a>
-    <div class="flex gap-2">
-      <a href="index.html" class="text-xs font-semibold tracking-widest uppercase text-[#1a2e35]/80 hover:text-[#1a2e35] border border-[#1a2e35]/30 px-3 py-2 rounded-sm transition-colors">ES</a>
-      <span class="text-xs font-semibold tracking-widest uppercase border border-[#0C789E] bg-[#0C789E]/10 text-[#0C789E] px-3 py-2 rounded-sm" aria-current="page">EN</span>
-      <a href="index-fr.html" class="text-xs font-semibold tracking-widest uppercase text-[#1a2e35]/80 hover:text-[#1a2e35] border border-[#1a2e35]/30 px-3 py-2 rounded-sm transition-colors">FR</a>
+  <header class="px-4 py-6 md:py-8 flex flex-row flex-wrap items-center justify-between gap-4 max-w-6xl mx-auto">
+    <a href="../index-en.html" class="text-xl font-bold tracking-[0.25em] text-[#1a2e35] font-montserrat">ZOOVET
+      TRAVEL</a>
+    <div class="flex items-center gap-2 md:gap-4">
+      <button
+        class="search-btn flex items-center justify-center p-2 rounded-full hover:bg-[#e8f2fa] transition-colors text-[#1a2e35]"
+        aria-label="Search articles" onclick="openSearchModal()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+      </button>
+      <div class="hidden md:block h-6 w-px bg-[#1a2e35]/20"></div>
+      <div class="flex flex-wrap gap-1 sm:gap-2">
+        <a href="index.html" class="text-xs font-semibold tracking-widest uppercase text-[#1a2e35]/80 hover:text-[#1a2e35] border border-[#1a2e35]/30 hover:border-[#1a2e35]/50 px-2 sm:px-3 py-2 rounded-sm transition-all duration-300 min-h-[44px] inline-flex items-center justify-center">ES</a>
+        <span class="text-xs font-semibold tracking-widest uppercase text-[#1a2e35] border border-[#0C789E] bg-[#0C789E]/10 px-2 sm:px-3 py-2 rounded-sm transition-all duration-300 min-h-[44px] inline-flex items-center justify-center" aria-current="page">EN</span>
+        <a href="index-fr.html" class="text-xs font-semibold tracking-widest uppercase text-[#1a2e35]/80 hover:text-[#1a2e35] border border-[#1a2e35]/30 hover:border-[#1a2e35]/50 px-2 sm:px-3 py-2 rounded-sm transition-all duration-300 min-h-[44px] inline-flex items-center justify-center">FR</a>
+      </div>
     </div>
+
   </header>
   <main class="max-w-6xl mx-auto px-4 py-12">
-    <h1 class="text-2xl font-bold tracking-wide uppercase text-[#1a2e35] mb-6 font-montserrat">Scientific Articles in Applied Veterinary Medicine for International Pet Transport</h1>
-    <p class="text-[#1a2e35]/90 font-montserrat mb-6">Scientific articles in English and Spanish on veterinary medicine, pet export and animal health.</p>
+    <h1 class="text-2xl font-bold tracking-wide uppercase text-[#1a2e35] mb-6 font-montserrat">Scientific Articles in
+      Applied Veterinary Medicine for International Pet Transport</h1>
+    <p class="text-[#1a2e35]/90 font-montserrat mb-6">Scientific articles in English and Spanish on veterinary medicine,
+      pet export and animal health.</p>
     <ul class="space-y-4 mb-8">
       <li>
-        <a href="./zoovet_article_v2-en.html" class="block relative p-5 border border-[#1a2e35]/15 transition-colors hover:border-[#0C789E]/40">
-          <span class="absolute top-2 right-2 text-[10px] font-mono tracking-wider text-[#1a2e35]/60 uppercase">Technical series vol. i</span>
-          <span class="font-semibold text-[#1a2e35]">Immunological and Regulatory Basis of the 30-Day Post-Primary Rabies Vaccination Interval</span>
-          <span class="block text-sm text-[#1a2e35]/70 mt-1">Serological sampling and international pet travel regulation</span>
+        <a href="./zoovet_article_v2-en.html"
+          class="block relative p-5 border border-[#1a2e35]/15 transition-colors hover:border-[#0C789E]/40">
+          <span
+            class="absolute top-2 right-2 text-[10px] font-mono tracking-wider text-[#1a2e35]/60 uppercase">Technical
+            series vol. i</span>
+          <span class="font-semibold text-[#1a2e35]">Immunological and Regulatory Basis of the 30-Day Post-Primary
+            Rabies Vaccination Interval</span>
+          <span class="block text-sm text-[#1a2e35]/70 mt-1">Serological sampling and international pet travel
+            regulation</span>
         </a>
       </li>
       <li>
-        <a href="./zoovet_article2_EN.html" class="block relative p-5 border border-[#1a2e35]/15 transition-colors hover:border-[#0C789E]/40">
-          <span class="absolute top-2 right-2 text-[10px] font-mono tracking-wider text-[#1a2e35]/60 uppercase">Technical series vol. ii</span>
+        <a href="./zoovet_article2_EN.html"
+          class="block relative p-5 border border-[#1a2e35]/15 transition-colors hover:border-[#0C789E]/40">
+          <span
+            class="absolute top-2 right-2 text-[10px] font-mono tracking-wider text-[#1a2e35]/60 uppercase">Technical
+            series vol. ii</span>
           <span class="font-semibold text-[#1a2e35]">Humoral immune response and RFFIT/FAVN methodology</span>
-          <span class="block text-sm text-[#1a2e35]/70 mt-1">Technical description of the immune response and virus neutralization test principles</span>
+          <span class="block text-sm text-[#1a2e35]/70 mt-1">Technical description of the immune response and virus
+            neutralization test principles</span>
         </a>
       </li>
       <li>
-        <a href="./zoovet_article3_braquicefalos_EN.html" class="block relative p-5 border border-[#1a2e35]/15 transition-colors hover:border-[#0C789E]/40">
-          <span class="absolute top-2 right-2 text-[10px] font-mono tracking-wider text-[#1a2e35]/60 uppercase">Technical series vol. iii</span>
-          <span class="font-semibold text-[#1a2e35]">Air transport of brachycephalic dogs: physiological risks and regulatory framework</span>
+        <a href="./zoovet_article3_braquicefalos_EN.html"
+          class="block relative p-5 border border-[#1a2e35]/15 transition-colors hover:border-[#0C789E]/40">
+          <span
+            class="absolute top-2 right-2 text-[10px] font-mono tracking-wider text-[#1a2e35]/60 uppercase">Technical
+            series vol. iii</span>
+          <span class="font-semibold text-[#1a2e35]">Air transport of brachycephalic dogs: physiological risks and
+            regulatory framework</span>
           <span class="block text-sm text-[#1a2e35]/70 mt-1">BOAS, flight conditions and airline policies</span>
         </a>
       </li>
       <li>
-        <a href="./zoovet_art4_desparasitacionEN.html" class="block relative p-5 border border-[#1a2e35]/15 transition-colors hover:border-[#0C789E]/40">
-          <span class="absolute top-2 right-2 text-[10px] font-mono tracking-wider text-[#1a2e35]/60 uppercase">Technical series vol. iv</span>
+        <a href="./zoovet_art4_desparasitacionEN.html"
+          class="block relative p-5 border border-[#1a2e35]/15 transition-colors hover:border-[#0C789E]/40">
+          <span
+            class="absolute top-2 right-2 text-[10px] font-mono tracking-wider text-[#1a2e35]/60 uppercase">Technical
+            series vol. iv</span>
           <span class="font-semibold text-[#1a2e35]">Antiparasitic interventions in international dog movements</span>
-          <span class="block text-sm text-[#1a2e35]/70 mt-1">Biology of E. multilocularis, 24–120 h treatment window and EU, UK, Australia and New Zealand regulation</span>
+          <span class="block text-sm text-[#1a2e35]/70 mt-1">Biology of E. multilocularis, 24–120 h treatment window and
+            EU, UK, Australia and New Zealand regulation</span>
         </a>
       </li>
       <li>
-        <a href="./zoovet_art5_estres-metabolico-EN.html" class="block relative p-5 border border-[#1a2e35]/15 transition-colors hover:border-[#0C789E]/40">
-          <span class="absolute top-2 right-2 text-[10px] font-mono tracking-wider text-[#1a2e35]/60 uppercase">Technical series vol. v</span>
-          <span class="font-semibold text-[#1a2e35]">Gut–brain axis and metabolic stress in dogs and cats during international transport</span>
-          <span class="block text-sm text-[#1a2e35]/70 mt-1">Neuroendocrine integration, microbiota and energy metabolism; state of evidence on psychobiotics</span>
+        <a href="./zoovet_art5_estres-metabolico-EN.html"
+          class="block relative p-5 border border-[#1a2e35]/15 transition-colors hover:border-[#0C789E]/40">
+          <span
+            class="absolute top-2 right-2 text-[10px] font-mono tracking-wider text-[#1a2e35]/60 uppercase">Technical
+            series vol. v</span>
+          <span class="font-semibold text-[#1a2e35]">Gut–brain axis and metabolic stress in dogs and cats during
+            international transport</span>
+          <span class="block text-sm text-[#1a2e35]/70 mt-1">Neuroendocrine integration, microbiota and energy
+            metabolism; state of evidence on psychobiotics</span>
         </a>
       </li>
       <li>
-        <a href="./zoovet_art6_microchip-EN.html" class="block relative p-5 border border-[#1a2e35]/15 transition-colors hover:border-[#0C789E]/40">
-          <span class="absolute top-2 right-2 text-[10px] font-mono tracking-wider text-[#1a2e35]/60 uppercase">Technical series vol. vi</span>
-          <span class="font-semibold text-[#1a2e35]">Animal identification microchip: technological basis, international regulatory framework and sanitary traceability</span>
-          <span class="block text-sm text-[#1a2e35]/70 mt-1">ISO 11784/11785, EU Reg. 576/2013, DAFF/MPI; biocompatibility and document chain</span>
+        <a href="./zoovet_art6_microchip-EN.html"
+          class="block relative p-5 border border-[#1a2e35]/15 transition-colors hover:border-[#0C789E]/40">
+          <span
+            class="absolute top-2 right-2 text-[10px] font-mono tracking-wider text-[#1a2e35]/60 uppercase">Technical
+            series vol. vi</span>
+          <span class="font-semibold text-[#1a2e35]">Animal identification microchip: technological basis, international
+            regulatory framework and sanitary traceability</span>
+          <span class="block text-sm text-[#1a2e35]/70 mt-1">ISO 11784/11785, EU Reg. 576/2013, DAFF/MPI;
+            biocompatibility and document chain</span>
         </a>
       </li>
       <li>
-        <a href="./zoovet_art7_jetlag-EN.html" class="block relative p-5 border border-[#1a2e35]/15 transition-colors hover:border-[#0C789E]/40">
-          <span class="absolute top-2 right-2 text-[10px] font-mono tracking-wider text-[#1a2e35]/60 uppercase">Technical series vol. vii</span>
-          <span class="font-semibold text-[#1a2e35]">Circadian desynchronization and transport stress in dogs and cats: the phenomenon commonly known as «jet lag»</span>
-          <span class="block text-sm text-[#1a2e35]/70 mt-1">Chronobiology, HPA/SAM axes, zeitgebers and post-transmeridian flight adaptation</span>
+        <a href="./zoovet_art7_jetlag-EN.html"
+          class="block relative p-5 border border-[#1a2e35]/15 transition-colors hover:border-[#0C789E]/40">
+          <span
+            class="absolute top-2 right-2 text-[10px] font-mono tracking-wider text-[#1a2e35]/60 uppercase">Technical
+            series vol. vii</span>
+          <span class="font-semibold text-[#1a2e35]">Circadian desynchronization and transport stress in dogs and cats:
+            the phenomenon commonly known as «jet lag»</span>
+          <span class="block text-sm text-[#1a2e35]/70 mt-1">Chronobiology, HPA/SAM axes, zeitgebers and
+            post-transmeridian flight adaptation</span>
         </a>
       </li>
       <li>
-        <a href="./zoovet_art8_hipobaria-EN.html" class="block relative p-5 border border-[#1a2e35]/15 transition-colors hover:border-[#0C789E]/40">
-          <span class="absolute top-2 right-2 text-[10px] font-mono tracking-wider text-[#1a2e35]/60 uppercase">Technical series vol. viii</span>
-          <span class="font-semibold text-[#1a2e35]">Hypobaric physiology in air transport of dogs and cats: pressurization, oxygen and physiological response in commercial flight</span>
-          <span class="block text-sm text-[#1a2e35]/70 mt-1">Partial pressure O₂, equivalent cabin altitude, BOAS, Boyle's law, thermoregulation</span>
+        <a href="./zoovet_art8_hipobaria-EN.html"
+          class="block relative p-5 border border-[#1a2e35]/15 transition-colors hover:border-[#0C789E]/40">
+          <span
+            class="absolute top-2 right-2 text-[10px] font-mono tracking-wider text-[#1a2e35]/60 uppercase">Technical
+            series vol. viii</span>
+          <span class="font-semibold text-[#1a2e35]">Hypobaric physiology in air transport of dogs and cats:
+            pressurization, oxygen and physiological response in commercial flight</span>
+          <span class="block text-sm text-[#1a2e35]/70 mt-1">Partial pressure O₂, equivalent cabin altitude, BOAS,
+            Boyle's law, thermoregulation</span>
         </a>
       </li>
       <li>
-        <a href="./zoovet_art9_certificados-vacunacion-EN.html" class="block relative p-5 border border-[#1a2e35]/15 transition-colors hover:border-[#0C789E]/40">
-          <span class="absolute top-2 right-2 text-[10px] font-mono tracking-wider text-[#1a2e35]/60 uppercase">Technical series vol. ix</span>
-          <span class="font-semibold text-[#1a2e35]">Vaccination certificates in dogs and cats: immunological basis, sanitary validity and international regulatory framework</span>
-          <span class="block text-sm text-[#1a2e35]/70 mt-1">Medical-documentary act, microchip, RNATT, EU Reg. 576/2013, UK, DAFF, MPI</span>
+        <a href="./zoovet_art9_certificados-vacunacion-EN.html"
+          class="block relative p-5 border border-[#1a2e35]/15 transition-colors hover:border-[#0C789E]/40">
+          <span
+            class="absolute top-2 right-2 text-[10px] font-mono tracking-wider text-[#1a2e35]/60 uppercase">Technical
+            series vol. ix</span>
+          <span class="font-semibold text-[#1a2e35]">Vaccination certificates in dogs and cats: immunological basis,
+            sanitary validity and international regulatory framework</span>
+          <span class="block text-sm text-[#1a2e35]/70 mt-1">Medical-documentary act, microchip, RNATT, EU Reg.
+            576/2013, UK, DAFF, MPI</span>
         </a>
       </li>
       <li>
-        <a href="./zoovet_art10_certificado-salud-EN.html" class="block relative p-5 border border-[#1a2e35]/15 transition-colors hover:border-[#0C789E]/40">
-          <span class="absolute top-2 right-2 text-[10px] font-mono tracking-wider text-[#1a2e35]/60 uppercase">Technical series vol. x</span>
-          <span class="font-semibold text-[#1a2e35]">The health certificate in international movement of dogs and cats: clinical examination, health traceability and document validity</span>
-          <span class="block text-sm text-[#1a2e35]/70 mt-1">Health certificate, fit to fly, veterinary certificate vs. officially endorsed document. EU Reg. 576/2013, AHC UK, DAFF, MPI</span>
+        <a href="./zoovet_art10_certificado-salud-EN.html"
+          class="block relative p-5 border border-[#1a2e35]/15 transition-colors hover:border-[#0C789E]/40">
+          <span
+            class="absolute top-2 right-2 text-[10px] font-mono tracking-wider text-[#1a2e35]/60 uppercase">Technical
+            series vol. x</span>
+          <span class="font-semibold text-[#1a2e35]">The health certificate in international movement of dogs and cats:
+            clinical examination, health traceability and document validity</span>
+          <span class="block text-sm text-[#1a2e35]/70 mt-1">Health certificate, fit to fly, veterinary certificate vs.
+            officially endorsed document. EU Reg. 576/2013, AHC UK, DAFF, MPI</span>
         </a>
       </li>
       <li>
-        <a href="./zoovet_art11_cuarentena-EN.html" class="block relative p-5 border border-[#1a2e35]/15 transition-colors hover:border-[#0C789E]/40">
-          <span class="absolute top-2 right-2 text-[10px] font-mono tracking-wider text-[#1a2e35]/60 uppercase">Technical series vol. xi</span>
-          <span class="font-semibold text-[#1a2e35]">Quarantine in International Dog and Cat Importation: Epidemiological Basis, Regulatory Models and Critical Failure Points</span>
-          <span class="block text-sm text-[#1a2e35]/70 mt-1">Biosecurity, three models (Australia/NZ, EU/UK, USA), CDC Dog Import Rule, DAFF, MPI</span>
+        <a href="./zoovet_art11_cuarentena-EN.html"
+          class="block relative p-5 border border-[#1a2e35]/15 transition-colors hover:border-[#0C789E]/40">
+          <span
+            class="absolute top-2 right-2 text-[10px] font-mono tracking-wider text-[#1a2e35]/60 uppercase">Technical
+            series vol. xi</span>
+          <span class="font-semibold text-[#1a2e35]">Quarantine in International Dog and Cat Importation:
+            Epidemiological Basis, Regulatory Models and Critical Failure Points</span>
+          <span class="block text-sm text-[#1a2e35]/70 mt-1">Biosecurity, three models (Australia/NZ, EU/UK, USA), CDC
+            Dog Import Rule, DAFF, MPI</span>
         </a>
       </li>
       <li>
-        <a href="./zoovet_art12_expediente-EN.html" class="block relative p-5 border border-[#1a2e35]/15 transition-colors hover:border-[#0C789E]/40">
-          <span class="absolute top-2 right-2 text-[10px] font-mono tracking-wider text-[#1a2e35]/60 uppercase">Technical series vol. xii — Closing</span>
-          <span class="font-semibold text-[#1a2e35]">The Pet Export Dossier: Complete Documentary Chain, Error Taxonomy and Reversibility</span>
-          <span class="block text-sm text-[#1a2e35]/70 mt-1">SENASA Peru, CZE, dependency chain, Class I–IV errors. Series closing article</span>
+        <a href="./zoovet_art12_expediente-EN.html"
+          class="block relative p-5 border border-[#1a2e35]/15 transition-colors hover:border-[#0C789E]/40">
+          <span
+            class="absolute top-2 right-2 text-[10px] font-mono tracking-wider text-[#1a2e35]/60 uppercase">Technical
+            series vol. xii — Closing</span>
+          <span class="font-semibold text-[#1a2e35]">The Pet Export Dossier: Complete Documentary Chain, Error Taxonomy
+            and Reversibility</span>
+          <span class="block text-sm text-[#1a2e35]/70 mt-1">SENASA Peru, CZE, dependency chain, Class I–IV errors.
+            Series closing article</span>
         </a>
       </li>
     </ul>
-    <a href="../index-en.html#scientific-articles" class="inline-flex items-center gap-2 text-[#0C789E] font-semibold hover:underline">← Back to home</a>
+    <a href="../index-en.html#scientific-articles"
+      class="inline-flex items-center gap-2 text-[#0C789E] font-semibold hover:underline">← Back to home</a>
   </main>
+
+  <!-- Search Modal HTML -->
+  <style>
+    .search-btn {
+      color: var(--zoovet-navy, #1a2e35);
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+      border-radius: 50%;
+      transition: background 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .search-btn:hover {
+      background: #e8f2fa;
+      color: #0f2340;
+    }
+
+    .search-modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(26, 46, 53, 0.5);
+      z-index: 1000;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding-top: 10vh;
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .search-modal-backdrop.is-active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .search-modal {
+      background: #fff;
+      width: 90%;
+      max-width: 600px;
+      border-radius: 12px;
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      overflow: hidden;
+      transform: translateY(-20px);
+      opacity: 0;
+      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s;
+      display: flex;
+      flex-direction: column;
+      max-height: 80vh;
+    }
+
+    .search-modal-backdrop.is-active .search-modal {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    .search-header {
+      padding: 1rem 1.25rem;
+      border-bottom: 1px solid rgba(26, 46, 53, 0.15);
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      background: #fafaf8;
+    }
+
+    .search-input {
+      flex: 1;
+      border: none;
+      background: transparent;
+      font-size: 1rem;
+      color: #1a2e35;
+      outline: none;
+      padding: 0.5rem 0;
+      width: 100%;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .search-input::placeholder {
+      color: #5a6a7a;
+    }
+
+    .search-close {
+      background: #e8f2fa;
+      border: none;
+      padding: 0.25rem 0.5rem;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      color: #1a2e35;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 32px;
+    }
+
+    .search-close:hover {
+      background: #cdd8e3;
+      color: #0f2340;
+    }
+
+    .search-results {
+      padding: 0.5rem 0;
+      overflow-y: auto;
+      flex: 1;
+    }
+
+    .search-result-item {
+      padding: 0.75rem 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+      border-bottom: 1px solid rgba(26, 46, 53, 0.1);
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+
+    .search-result-item:last-child {
+      border-bottom: none;
+    }
+
+    .search-result-item:hover {
+      background: #fafaf8;
+      text-decoration: none !important;
+    }
+
+    .search-result-title {
+      color: #1a2e35;
+      font-weight: 600;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      transition: color 0.2s;
+      display: block;
+    }
+
+    .search-result-item:hover .search-result-title {
+      color: #0C789E;
+    }
+
+    .search-result-cat {
+      color: #0C789E;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-family: 'Montserrat', sans-serif;
+      display: block;
+    }
+
+    .search-empty {
+      padding: 2rem;
+      text-align: center;
+      color: #5a6a7a;
+      font-size: 0.95rem;
+      font-family: 'Montserrat', sans-serif;
+    }
+  </style>
+
+  <div class="search-modal-backdrop" id="searchModal" aria-hidden="true">
+    <div class="search-modal" role="dialog" aria-modal="true" aria-labelledby="searchModalTitle">
+      <div class="search-header">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+          stroke="var(--muted, #5a6a7a)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="searchInput" class="search-input"
+          placeholder="Search for destination, breed, vet or requirement..." aria-label="Search articles">
+        <button class="search-close" onclick="closeSearchModal()" aria-label="Cerrar" title="ESC">ESC</button>
+      </div>
+      <div class="search-results" id="searchResults">
+        <div class="search-empty">Type above to start searching</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../scripts/search_data.js"></script>
+  <script>
+    const searchModal = document.getElementById('searchModal');
+    const searchInput = document.getElementById('searchInput');
+    const searchResults = document.getElementById('searchResults');
+    const bodyEl = document.body;
+
+    function openSearchModal() {
+      searchModal.classList.add('is-active');
+      searchModal.setAttribute('aria-hidden', 'false');
+      bodyEl.style.overflow = 'hidden';
+      setTimeout(() => searchInput.focus(), 100);
+    }
+
+    function closeSearchModal() {
+      searchModal.classList.remove('is-active');
+      searchModal.setAttribute('aria-hidden', 'true');
+      bodyEl.style.overflow = '';
+      searchInput.value = '';
+      searchResults.innerHTML = '<div class="search-empty">Type above to start searching</div>';
+    }
+
+    searchModal.addEventListener('click', (e) => {
+      if (e.target === searchModal) closeSearchModal();
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && searchModal.classList.contains('is-active')) {
+        closeSearchModal();
+      }
+    });
+
+    searchInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        const firstResult = searchResults.querySelector('.search-result-item');
+        if (firstResult) {
+          window.location.href = firstResult.getAttribute('href');
+        }
+      }
+    });
+
+    searchInput.addEventListener('input', (e) => {
+      const query = e.target.value.toLowerCase().trim();
+      if (!query || query.length < 2) {
+        searchResults.innerHTML = '<div class="search-empty">Type above to start searching</div>';
+        return;
+      }
+      if (!window.searchData) return;
+
+      const currentLang = document.documentElement.lang.split('-')[0].toLowerCase() || 'es';
+      const matches = window.searchData.filter(item => {
+        const itemLang = item.lang || 'es';
+        if (itemLang !== currentLang && itemLang !== 'any') return false;
+        return item.title.toLowerCase().includes(query) ||
+          item.keywords.toLowerCase().includes(query) ||
+          item.category.toLowerCase().includes(query);
+      });
+      if (matches.length === 0) {
+        searchResults.innerHTML = '<div class="search-empty">No articles found for that search.</div>';
+      } else {
+        const topMatches = matches.slice(0, 6);
+        searchResults.innerHTML = topMatches.map(match => `
+          <a href="../${match.url}" class="search-result-item">
+            <span class="search-result-title">${match.title}</span>
+            <span class="search-result-cat">${match.category}</span>
+          </a>
+        `).join('');
+      }
+    });
+  </script>
 </body>
+
 </html>
