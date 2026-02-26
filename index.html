@@ -503,7 +503,7 @@
           class="font-light">ZOOVET</span> <span class="font-bold">TRAVEL</span></div>
     </div>
     <div class="flex items-center gap-2 md:gap-4">
-      <button class="search-btn hidden md:flex items-center justify-center" aria-label="Buscar artículos"
+      <button class="search-btn flex items-center justify-center" aria-label="Buscar artículos"
         onclick="openSearchModal()">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -1254,6 +1254,16 @@
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape' && searchModal.classList.contains('is-active')) {
         closeSearchModal();
+      }
+    });
+
+    searchInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        const firstResult = searchResults.querySelector('.search-result-item');
+        if (firstResult) {
+          window.location.href = firstResult.getAttribute('href');
+        }
       }
     });
 

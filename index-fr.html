@@ -499,7 +499,7 @@
           class="font-light">ZOOVET</span> <span class="font-bold">TRAVEL</span></div>
     </div>
     <div class="flex items-center gap-2 md:gap-4">
-      <button class="search-btn hidden md:flex items-center justify-center" aria-label="Rechercher des articles"
+      <button class="search-btn flex items-center justify-center" aria-label="Rechercher des articles"
         onclick="openSearchModal()">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -935,7 +935,8 @@
             <strong>certificat zoosanitaire d’exportation</strong> qu’il délivre, dans le cadre du TUPA CA07 et du
             Decreto Supremo 051-2000-AG, est le document qui clôture le processus depuis le territoire péruvien. Nous
             coordonnons cette démarche, l’endossement officiel et toute la séquence : de la première révision du passé
-            jusqu’à l’embarquement.</p>
+            jusqu’à l’embarquement.
+          </p>
 
           <h3 class="text-base font-semibold text-[#1a2e35] mt-8 mb-2">Pourquoi l’ordre compte plus que la volonté</h3>
           <p>La micropuce doit être implantée <strong>avant</strong> la vaccination antirabique qui servira au voyage.
@@ -1221,6 +1222,16 @@
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape' && searchModal.classList.contains('is-active')) {
         closeSearchModal();
+      }
+    });
+
+    searchInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        const firstResult = searchResults.querySelector('.search-result-item');
+        if (firstResult) {
+          window.location.href = firstResult.getAttribute('href');
+        }
       }
     });
 
