@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Analyse médico-vétérinaire sur la sécurité de la soute en vols internationaux. Hypoxie, température et stress métabolique expliqués par la Dre Jessica Camacho.">
+  <meta name="description"
+    content="Analyse médico-vétérinaire sur la sécurité de la soute en vols internationaux. Hypoxie, température et stress métabolique expliqués par la Dre Jessica Camacho.">
   <meta name="author" content="Camacho Garcia JY — Zoovet Travel, Peru">
   <title>Est-il sûr que mon animal voyage en soute ? Risques et réalités techniques | Zoovet Travel</title>
   <link rel="icon" type="image/x-icon" href="https://zoovettravel.com/images/favicon.ico">
@@ -16,205 +18,602 @@
   <link rel="alternate" hreflang="x-default" href="https://zoovettravel.com/articulos-interes/mascotabodega.html">
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
   <meta property="og:type" content="article">
-  <meta property="og:title" content="Est-il sûr que mon animal voyage en soute ? Risques et réalités techniques | Zoovet Travel">
-  <meta property="og:description" content="Analyse médico-vétérinaire sur la sécurité de la soute en vols internationaux. Hypoxie, température et stress métabolique expliqués par la Dre Jessica Camacho.">
+  <meta property="og:title"
+    content="Est-il sûr que mon animal voyage en soute ? Risques et réalités techniques | Zoovet Travel">
+  <meta property="og:description"
+    content="Analyse médico-vétérinaire sur la sécurité de la soute en vols internationaux. Hypoxie, température et stress métabolique expliqués par la Dre Jessica Camacho.">
   <meta property="og:url" content="https://zoovettravel.com/articulos-interes/mascotabodega-FR.html">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Est-il sûr que mon animal voyage en soute ? Risques et réalités techniques | Zoovet Travel">
+  <meta name="twitter:title"
+    content="Est-il sûr que mon animal voyage en soute ? Risques et réalités techniques | Zoovet Travel">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;0,9..40,700;1,9..40,300&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;0,9..40,700;1,9..40,300&display=swap"
+    rel="stylesheet">
   <style>
-    :root { --ink: #1c1917; --deep: #0f2340; --mid: #1e4976; --teal: #0e6655; --teal-bg: #e8f5f1; --accent: #c0392b; --warm: #7b3f00; --warm-bg: #fdf6ef; --sky: #e8f2fa; --rule: #cdd8e3; --muted: #5a6a7a; --paper: #fafaf8; --white: #ffffff; --amber: #b45309; --amber-bg: #fffbeb; --violet: #5b21b6; --violet-bg: #f5f3ff; }
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-    body { font-family: 'Libre Baskerville', Georgia, serif; font-size: 17px; line-height: 1.85; color: var(--ink); background: var(--paper); max-width: 940px; margin: 0 auto; padding: 0 28px 100px; }
-    .site-header { font-family: 'DM Sans', sans-serif; background: #fff; border-bottom: 1px solid var(--rule); margin: 0 -28px 20px -28px; padding: 12px 28px 14px; }
-    .site-header-inner { max-width: 940px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; }
-    .site-header a { color: var(--mid); text-decoration: none; }
-    .site-header a:hover { text-decoration: underline; }
-    .breadcrumb { font-size: 0.85rem; color: var(--muted); }
-    .lang-switcher { display: flex; gap: 8px; }
-    .lang-switcher a { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; padding: 6px 12px; border: 1px solid var(--rule); border-radius: 3px; color: var(--mid); }
-    .lang-switcher .lang-current { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; padding: 6px 12px; border: 1px solid var(--mid); border-radius: 3px; color: var(--mid); background: var(--sky); }
-    .masthead { border-bottom: 3px solid var(--deep); padding: 28px 0 16px; display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; flex-wrap: wrap; }
-    .masthead-series { font-family: 'DM Sans', sans-serif; font-size: 0.72rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--mid); }
-    .masthead-date { font-family: 'DM Sans', sans-serif; font-size: 0.72rem; color: var(--muted); }
-    .hero { background: var(--deep); color: #fff; padding: 48px 44px 42px; margin: 0 -28px; position: relative; overflow: hidden; }
-    .hero::before { content: ''; position: absolute; top: -80px; right: -80px; width: 320px; height: 320px; background: radial-gradient(circle, rgba(255,255,255,.05) 0%, transparent 70%); pointer-events: none; }
-    .hero-tag { display: inline-block; background: var(--teal); color: #fff; font-family: 'DM Sans', sans-serif; font-size: 0.7rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; padding: 4px 12px; border-radius: 2px; margin-bottom: 20px; }
-    h1 { font-family: 'Libre Baskerville', serif; font-size: clamp(1.35rem, 3.2vw, 1.9rem); font-weight: 700; line-height: 1.3; color: #fff; margin-bottom: 18px; max-width: 760px; }
-    .hero-lead { font-family: 'DM Sans', sans-serif; font-size: 1.03rem; font-weight: 300; line-height: 1.7; color: rgba(255,255,255,.85); max-width: 700px; margin-bottom: 28px; }
-    .hero-meta { font-family: 'DM Sans', sans-serif; font-size: 0.82rem; color: rgba(255,255,255,.6); border-top: 1px solid rgba(255,255,255,.15); padding-top: 16px; }
-    .hero-meta strong { color: rgba(255,255,255,.9); }
-    .abstract-box { background: var(--sky); border-left: 4px solid var(--mid); padding: 22px 28px; margin: 32px 0; font-family: 'DM Sans', sans-serif; font-size: 0.9rem; line-height: 1.72; color: var(--deep); }
-    .abstract-box strong { display: block; font-size: 0.72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--mid); margin-bottom: 10px; }
-    .scope-box { background: var(--white); border: 1px solid var(--rule); border-left: 4px solid var(--muted); padding: 16px 22px; margin: 20px 0 36px; font-family: 'DM Sans', sans-serif; font-size: 0.84rem; color: var(--muted); line-height: 1.6; }
-    .scope-box strong { display: block; font-size: 0.7rem; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 6px; }
-    h2 { font-family: 'Libre Baskerville', serif; font-size: 1.42rem; font-weight: 700; color: var(--deep); margin: 56px 0 18px; padding-bottom: 10px; border-bottom: 2px solid var(--rule); }
-    h3 { font-family: 'DM Sans', sans-serif; font-size: 1.06rem; font-weight: 700; color: var(--mid); margin: 34px 0 12px; letter-spacing: .015em; }
-    h4 { font-family: 'DM Sans', sans-serif; font-size: 0.92rem; font-weight: 700; color: var(--teal); margin: 22px 0 8px; text-transform: uppercase; letter-spacing: .05em; }
-    p { margin-bottom: 1.3rem; text-align: justify; }
-    strong { font-weight: 700; }
-    em { font-style: italic; }
-    .sec-label { font-family: 'DM Sans', sans-serif; font-size: 0.67rem; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; color: var(--muted); display: block; margin-bottom: 6px; }
-    .ev-box { background: var(--violet-bg); border-left: 4px solid var(--violet); padding: 14px 20px; margin: 24px 0; font-family: 'DM Sans', sans-serif; font-size: 0.86rem; line-height: 1.65; color: #3b0764; }
-    .caution-box { background: var(--amber-bg); border: 1.5px solid #d97706; border-radius: 4px; padding: 18px 22px; margin: 28px 0; font-family: 'DM Sans', sans-serif; font-size: 0.88rem; line-height: 1.65; color: #78350f; }
-    .pullquote { border-left: 4px solid var(--teal); padding: 16px 28px; margin: 36px 0; background: var(--teal-bg); font-family: 'DM Sans', sans-serif; font-size: 0.96rem; line-height: 1.72; color: #0d4a3f; }
-    footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--rule); font-family: 'DM Sans', sans-serif; font-size: 0.78rem; color: var(--muted); }
-    .font-mono { font-family: ui-monospace, monospace; }
-    ul { margin-bottom: 1.3rem; padding-left: 1.5rem; }
-    li { margin-bottom: 0.5rem; text-align: justify; }
-    a { color: var(--mid); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-  
-.cta-contact {
-  background: #0f2340;
-  color: #fff;
-  padding: 28px 32px;
-  margin: 48px 0 32px;
-  border-radius: 4px;
-}
-.cta-text {
-  font-family: 'DM Sans', Arial, sans-serif;
-  font-size: 0.97rem;
-  line-height: 1.7;
-  color: rgba(255,255,255,.88);
-  margin-bottom: 20px;
-}
-.cta-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 16px;
-}
-.cta-wa {
-  display: inline-block;
-  background: #25D366;
-  color: #fff;
-  font-family: 'DM Sans', Arial, sans-serif;
-  font-size: 0.82rem;
-  font-weight: 700;
-  padding: 10px 18px;
-  border-radius: 3px;
-  text-decoration: none;
-  letter-spacing: .03em;
-}
-.cta-wa:hover { background: #1ebe5d; }
-.cta-tel {
-  display: inline-block;
-  background: transparent;
-  color: rgba(255,255,255,.75);
-  font-family: 'DM Sans', Arial, sans-serif;
-  font-size: 0.82rem;
-  font-weight: 600;
-  padding: 10px 18px;
-  border-radius: 3px;
-  border: 1px solid rgba(255,255,255,.3);
-  text-decoration: none;
-}
-.cta-tel:hover {
-  border-color: rgba(255,255,255,.7);
-  color: #fff;
-}
-.cta-address {
-  font-family: 'DM Sans', Arial, sans-serif;
-  font-size: 0.75rem;
-  color: rgba(255,255,255,.45);
-  margin: 0;
-  letter-spacing: .02em;
-}
+    :root {
+      --ink: #1c1917;
+      --deep: #0f2340;
+      --mid: #1e4976;
+      --teal: #0e6655;
+      --teal-bg: #e8f5f1;
+      --accent: #c0392b;
+      --warm: #7b3f00;
+      --warm-bg: #fdf6ef;
+      --sky: #e8f2fa;
+      --rule: #cdd8e3;
+      --muted: #5a6a7a;
+      --paper: #fafaf8;
+      --white: #ffffff;
+      --amber: #b45309;
+      --amber-bg: #fffbeb;
+      --violet: #5b21b6;
+      --violet-bg: #f5f3ff;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Libre Baskerville', Georgia, serif;
+      font-size: 17px;
+      line-height: 1.85;
+      color: var(--ink);
+      background: var(--paper);
+      max-width: 940px;
+      margin: 0 auto;
+      padding: 0 28px 100px;
+    }
+
+    .site-header {
+      font-family: 'DM Sans', sans-serif;
+      background: #fff;
+      border-bottom: 1px solid var(--rule);
+      margin: 0 -28px 20px -28px;
+      padding: 12px 28px 14px;
+    }
+
+    .site-header-inner {
+      max-width: 940px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .site-header a {
+      color: var(--mid);
+      text-decoration: none;
+    }
+
+    .site-header a:hover {
+      text-decoration: underline;
+    }
+
+    .breadcrumb {
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    .lang-switcher {
+      display: flex;
+      gap: 8px;
+    }
+
+    .lang-switcher a {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      padding: 6px 12px;
+      border: 1px solid var(--rule);
+      border-radius: 3px;
+      color: var(--mid);
+    }
+
+    .lang-switcher .lang-current {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      padding: 6px 12px;
+      border: 1px solid var(--mid);
+      border-radius: 3px;
+      color: var(--mid);
+      background: var(--sky);
+    }
+
+    .masthead {
+      border-bottom: 3px solid var(--deep);
+      padding: 28px 0 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .masthead-series {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--mid);
+    }
+
+    .masthead-date {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.72rem;
+      color: var(--muted);
+    }
+
+    .hero {
+      background: var(--deep);
+      color: #fff;
+      padding: 48px 44px 42px;
+      margin: 0 -28px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -80px;
+      right: -80px;
+      width: 320px;
+      height: 320px;
+      background: radial-gradient(circle, rgba(255, 255, 255, .05) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-tag {
+      display: inline-block;
+      background: var(--teal);
+      color: #fff;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 2px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-family: 'Libre Baskerville', serif;
+      font-size: clamp(1.35rem, 3.2vw, 1.9rem);
+      font-weight: 700;
+      line-height: 1.3;
+      color: #fff;
+      margin-bottom: 18px;
+      max-width: 760px;
+    }
+
+    .hero-lead {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1.03rem;
+      font-weight: 300;
+      line-height: 1.7;
+      color: rgba(255, 255, 255, .85);
+      max-width: 700px;
+      margin-bottom: 28px;
+    }
+
+    .hero-meta {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.82rem;
+      color: rgba(255, 255, 255, .6);
+      border-top: 1px solid rgba(255, 255, 255, .15);
+      padding-top: 16px;
+    }
+
+    .hero-meta strong {
+      color: rgba(255, 255, 255, .9);
+    }
+
+    .abstract-box {
+      background: var(--sky);
+      border-left: 4px solid var(--mid);
+      padding: 22px 28px;
+      margin: 32px 0;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.9rem;
+      line-height: 1.72;
+      color: var(--deep);
+    }
+
+    .abstract-box strong {
+      display: block;
+      font-size: 0.72rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--mid);
+      margin-bottom: 10px;
+    }
+
+    .scope-box {
+      background: var(--white);
+      border: 1px solid var(--rule);
+      border-left: 4px solid var(--muted);
+      padding: 16px 22px;
+      margin: 20px 0 36px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.84rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .scope-box strong {
+      display: block;
+      font-size: 0.7rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    h2 {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 1.42rem;
+      font-weight: 700;
+      color: var(--deep);
+      margin: 56px 0 18px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--rule);
+    }
+
+    h3 {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1.06rem;
+      font-weight: 700;
+      color: var(--mid);
+      margin: 34px 0 12px;
+      letter-spacing: .015em;
+    }
+
+    h4 {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--teal);
+      margin: 22px 0 8px;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+    }
+
+    p {
+      margin-bottom: 1.3rem;
+      text-align: justify;
+    }
+
+    strong {
+      font-weight: 700;
+    }
+
+    em {
+      font-style: italic;
+    }
+
+    .sec-label {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.67rem;
+      font-weight: 700;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: var(--muted);
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    .ev-box {
+      background: var(--violet-bg);
+      border-left: 4px solid var(--violet);
+      padding: 14px 20px;
+      margin: 24px 0;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.86rem;
+      line-height: 1.65;
+      color: #3b0764;
+    }
+
+    .caution-box {
+      background: var(--amber-bg);
+      border: 1.5px solid #d97706;
+      border-radius: 4px;
+      padding: 18px 22px;
+      margin: 28px 0;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.88rem;
+      line-height: 1.65;
+      color: #78350f;
+    }
+
+    .pullquote {
+      border-left: 4px solid var(--teal);
+      padding: 16px 28px;
+      margin: 36px 0;
+      background: var(--teal-bg);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.96rem;
+      line-height: 1.72;
+      color: #0d4a3f;
+    }
+
+    footer {
+      margin-top: 60px;
+      padding-top: 20px;
+      border-top: 1px solid var(--rule);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+
+    .font-mono {
+      font-family: ui-monospace, monospace;
+    }
+
+    ul {
+      margin-bottom: 1.3rem;
+      padding-left: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+      text-align: justify;
+    }
+
+    a {
+      color: var(--mid);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .cta-contact {
+      background: #0f2340;
+      color: #fff;
+      padding: 28px 32px;
+      margin: 48px 0 32px;
+      border-radius: 4px;
+    }
+
+    .cta-text {
+      font-family: 'DM Sans', Arial, sans-serif;
+      font-size: 0.97rem;
+      line-height: 1.7;
+      color: rgba(255, 255, 255, .88);
+      margin-bottom: 20px;
+    }
+
+    .cta-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .cta-wa {
+      display: inline-block;
+      background: #25D366;
+      color: #fff;
+      font-family: 'DM Sans', Arial, sans-serif;
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 10px 18px;
+      border-radius: 3px;
+      text-decoration: none;
+      letter-spacing: .03em;
+    }
+
+    .cta-wa:hover {
+      background: #1ebe5d;
+    }
+
+    .cta-tel {
+      display: inline-block;
+      background: transparent;
+      color: rgba(255, 255, 255, .75);
+      font-family: 'DM Sans', Arial, sans-serif;
+      font-size: 0.82rem;
+      font-weight: 600;
+      padding: 10px 18px;
+      border-radius: 3px;
+      border: 1px solid rgba(255, 255, 255, .3);
+      text-decoration: none;
+    }
+
+    .cta-tel:hover {
+      border-color: rgba(255, 255, 255, .7);
+      color: #fff;
+    }
+
+    .cta-address {
+      font-family: 'DM Sans', Arial, sans-serif;
+      font-size: 0.75rem;
+      color: rgba(255, 255, 255, .45);
+      margin: 0;
+      letter-spacing: .02em;
+    }
 
 
-    .guia-img { margin: 28px 0; max-width: 100%; }
-    .guia-img img { width: 100%; height: auto; display: block; }
+    .guia-img {
+      margin: 28px 0;
+      max-width: 100%;
+    }
 
+    .guia-img img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
   </style>
 </head>
+
 <body>
 
-<header class="site-header">
-  <div class="site-header-inner">
-    <nav class="breadcrumb" aria-label="Breadcrumb">
-      <a href="../index-fr.html">Accueil</a> &rarr; <a href="index-fr.html">Guides pratiques pour voyager et exporter des animaux à l'international</a> &rarr; <span>Est-il sûr que mon animal voyage en soute ? Risque…</span>
-    </nav>
-    <div class="lang-switcher">
-      <a href="mascotabodega.html" hreflang="es">ES</a>
-      <a href="mascotabodega-EN.html" hreflang="en">EN</a>
-      <span class="lang-current" aria-current="page">FR</span>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../index-fr.html">Accueil</a> &rarr; <a href="index-fr.html">Guides pratiques pour voyager et exporter
+          des animaux à l'international</a> &rarr; <span>Est-il sûr que mon animal voyage en soute ? Risque…</span>
+      </nav>
+      <div class="lang-switcher">
+        <a href="mascotabodega.html" hreflang="es">ES</a>
+        <a href="mascotabodega-EN.html" hreflang="en">EN</a>
+        <span class="lang-current" aria-current="page">FR</span>
+      </div>
     </div>
-  </div>
-</header>
+  </header>
 
-<header class="masthead">
-  <span class="masthead-series">Zoovet Travel · Guides pratiques pour voyager et exporter des animaux à l'international</span>
-  <span class="masthead-date">Février 2026</span>
-</header>
+  <header class="masthead">
+    <span class="masthead-series">Zoovet Travel · Guides pratiques pour voyager et exporter des animaux à
+      l'international</span>
+    <span class="masthead-date">Février 2026</span>
+  </header>
 
-<section class="hero">
-  <span class="hero-tag">Guide pratique — médecine du voyage et exportation internationale</span>
-  <h1>Est-il sûr que mon animal voyage en soute ?</h1>
-  <p class="hero-lead">Analyse médico-vétérinaire sur la sécurité de la soute en vols internationaux. Hypoxie, température et stress métabolique expliqués par la Dre Jessica Camacho.</p>
-  <div class="hero-meta">
-    <strong>Jessica Ysabel Camacho Garcia</strong>, DMV — <span class="font-mono">CMVP 12434</span> — Zoovet Travel, Trujillo, Pérou &nbsp;|&nbsp; Février 2026
-  </div>
-</section>
+  <section class="hero">
+    <span class="hero-tag">Guide pratique — médecine du voyage et exportation internationale</span>
+    <h1>Est-il sûr que mon animal voyage en soute ?</h1>
+    <p class="hero-lead">Analyse médico-vétérinaire sur la sécurité de la soute en vols internationaux. Hypoxie,
+      température et stress métabolique expliqués par la Dre Jessica Camacho.</p>
+    <div class="hero-meta">
+      <strong>Jessica Ysabel Camacho Garcia</strong>, DMV — <span class="font-mono">CMVP 12434</span> — Zoovet Travel,
+      Trujillo, Pérou &nbsp;|&nbsp; Février 2026
+    </div>
+  </section>
 
-<figure class="guia-img guia-img-lead" aria-hidden="false">
-<img src="../images/guias/guia-mascotabodega-01.jpg" alt="Animal en soute d'avion : risques et réalités techniques du transport en vols internationaux" width="1200" height="800" loading="lazy"/>
-</figure>
-<div class="scope-box">
-<strong>Déclaration de portée — lecture obligatoire</strong>
-  Cet article est un document technique descriptif. Ce n'est pas un conseil juridique ni vétérinaire individualisé. Il ne remplace pas la réglementation officielle d'aucune juridiction ni l'évaluation du vétérinaire responsable.<br><br>
-  Les exigences varient selon le pays, l'itinéraire, l'espèce et la compagnie aérienne. Les normes changent fréquemment. La vérification auprès de l'autorité sanitaire compétente du pays de destination et de transit est obligatoire avant tout processus d'exportation.<br><br>
-  La délivrance des certificats relève exclusivement du vétérinaire habilité. Cet article n'interfère pas avec ce critère professionnel.
-</div>
-<p>La sécurité d'un animal en soute ne dépend pas du hasard mais du respect strict de seuils physiologiques que la plupart des propriétaires ignorent en achetant un billet. Les décès en vol sont souvent le résultat final d'une pathologie préexistante non détectée ou d'une vulnérabilité raciale qui s'effondre face à l'hypoxie légère de la cabine pressurisée. À Trujillo nous recevons constamment des familles qui supposent que la soute est un endroit sombre et sans air, alors que le vrai danger réside dans la gestion de la température au sol et la réponse métabolique individuelle.</p>
-<h2><span class="sec-label">Section 1</span> Physique de la cabine et altitude équivalente</h2>
-<p>Les soutes des avions commerciaux modernes sont pressurisées et climatisées, maintenant une altitude équivalente de 6&nbsp;000 à 8&nbsp;000 pieds en croisière. À cette altitude, la pression partielle d'oxygène diminue, obligeant le système cardiovasculaire de l'animal à travailler davantage pour maintenir la perfusion tissulaire. Un chien avec une cardiopathie naissante ou un chat avec une maladie rénale chronique non diagnostiquée peut entrer en défaillance d'organe simplement par incapacité à compenser cette baisse d'oxygène ambiant.</p>
-<p>Le compartiment cargo maintient la même atmosphère que la cabine passagers mais manque de surveillance visuelle permettant de détecter à temps un halètement stridoreux ou une crise convulsive. La sécurité dépend d'une évaluation fit-to-fly par un vétérinaire qui comprend la loi de Boyle et l'expansion des gaz dans les cavités corporelles à l'ascension. Les détails techniques sur cette réponse sont développés dans l'article source <a href="../articles/zoovet_art8_hipobaria-FR.html">Physiologie hypobarique dans le transport aérien des chiens et chats : pressurisation, oxygène et réponse physiologique en vol commercial</a>.</p>
-<figure class="guia-img" aria-hidden="false">
-<img src="../images/guias/guia-mascotabodega-02.jpg" alt="Sécurité de la soute pour chiens et chats : hypoxie, température et stress métabolique" width="1200" height="800" loading="lazy"/>
-</figure>
-<h2><span class="sec-label">Section 2</span> Stress neuroendocrinien et cascade de cortisol</h2>
-<p>L'isolement en soute déclenche l'activation de l'axe hypothalamo-hypophyso-surrénalien (HPA), libérant des niveaux massifs de cortisol et de catécholamines dans le sang. Cette réponse de combat-fuite est particulièrement critique chez le chat, qui peut développer une lipidose hépatique après de courtes périodes d'anorexie induite par la panique du transport. Le bruit des turbines et le mouvement des chargements ne sont pas que des nuisances auditives ; ce sont des zeitgebers qui désynchronisent le rythme circadien et altèrent le microbiote intestinal, affaiblissant la barrière immunitaire de l'animal avant l'arrivée.</p>
-<p>Ce que les gens n'anticiperont pas : un animal sédaté a plus de risques de mourir en soute qu'un animal alerte, car les médicaments dépriment la capacité de thermorégulation et la réponse à l'hypoxie. La sédation pharmacologique est interdite par la plupart des compagnies et par les protocoles vétérinaires d'exportation internationale. La préparation réelle pour un voyage sûr de l'animal en soute inclut un conditionnement éthologique au transport d'au moins huit semaines pour réduire la réactivité du système nerveux central sans compromettre les fonctions vitales.</p>
-<h2><span class="sec-label">Section 3</span> Gestion de la température et points critiques au sol</h2>
-<p>Le risque thermique le plus sévère survient pendant que l'avion est au sol, où la climatisation du compartiment cargo peut être moins efficace qu'en vol. Les attentes sur le tarmac d'aéroports à températures supérieures à 27&nbsp;°C représentent une menace directe de coup de chaleur, surtout pour les races à pelage dense ou les animaux en surpoids. La compagnie a la faculté de refuser l'embarquement si les températures à l'origine, en transit ou à destination dépassent les marges de sécurité fixées par l'IATA pour protéger la vie de l'animal.</p>
-<p>Dans notre pratique à Trujillo nous avons vu comment le choix d'une escale inadaptée en climat tropical invalide toute autre mesure de sécurité prise auparavant. Un animal en stress thermique en soute perd la capacité de haleter efficacement pour refroidir son sang, ce qui mène à un œdème cérébral ou une défaillance multi-organes en quelques minutes. La sécurité est une chaîne dont le maillon faible est souvent la logistique terrestre, et non le temps passé à 30&nbsp;000 pieds.</p>
-<h2><span class="sec-label">Section 4</span> Ce qu'il convient de régler avant de commencer</h2>
-<p>L'évaluation cardiaque et respiratoire approfondie est la première étape obligatoire pour déterminer si un transport international en cargo est viable. Une auscultation rapide ne suffit pas ; des bilans biochimiques et dans beaucoup de cas des examens d'imagerie sont requis pour confirmer que le patient peut tolérer l'effort métabolique du voyage. Un animal qui arrive au comptoir avec des signes de dysbiose ou de déshydratation sera refusé par le personnel au sol, générant des coûts de reprogrammation et un stress supplémentaire pour la famille.</p>
-<p>Le transport doit respecter strictement la réglementation IATA LAR, en garantissant que l'animal puisse se tenir debout, tourner et se coucher en position naturelle sans toucher les parois. Une caisse de transport trop petite restreint le flux d'air et accélère la montée de température par chaleur radiante corporelle, devenant un piège thermique. Le matériau doit être rigide, avec fermetures métalliques et ventilation sur les quatre côtés, en assurant que l'infrastructure physique protège l'animal des chocs externes pendant la manutention des bagages.</p>
-<p>L'hydratation doit être gérée par des abreuvoirs à goutte ou des récipients congelés qui fondent progressivement, en évitant les déversements d'eau dans les premières minutes après le décollage. Un animal déshydraté a un sang plus visqueux, ce qui gêne le transport d'oxygène et augmente la susceptibilité aux événements thromboemboliques pendant le vol. La préparation nutritionnelle doit éviter les repas lourds dans les 12 heures précédant le départ, en minimisant la production de gaz intestinaux qui s'expandraient avec la basse pression, provoquant douleur abdominale intense et compression diaphragmatique.</p>
-<div class="cta-contact">
-  <p class="cta-text">Une évaluation fit-to-fly et un transporteur adapté sont essentiels pour un voyage en soute en sécurité. Zoovet Travel réalise le criblage physiologique complet et l'audit des transporteurs à Trujillo pour garantir que le processus soit sûr pour votre animal. Sa sécurité dépend de critères médicaux, pas d'hypothèses logistiques.</p>
-  <div class="cta-buttons">
-    <a class="cta-wa"
-       href="https://wa.me/51979620402"
-       target="_blank"
-       rel="noopener">
-      WhatsApp · +51 979 620 402
-    </a>
-    <a class="cta-wa"
-       href="https://wa.me/51922083707"
-       target="_blank"
-       rel="noopener">
-      WhatsApp · +51 922 083 707
-    </a>
-    <a class="cta-tel"
-       href="tel:+51044366094">
-      Appeler · 044 366094
-    </a>
+  <figure class="guia-img guia-img-lead" aria-hidden="false">
+    <img src="../images/guias/guia-mascotabodega-01.jpg"
+      alt="Animal en soute d'avion : risques et réalités techniques du transport en vols internationaux" width="1200"
+      height="800" loading="lazy" />
+  </figure>
+  <div class="scope-box">
+    <strong>Déclaration de portée — lecture obligatoire</strong>
+    Cet article est un document technique descriptif. Ce n'est pas un conseil juridique ni vétérinaire individualisé. Il
+    ne remplace pas la réglementation officielle d'aucune juridiction ni l'évaluation du vétérinaire
+    responsable.<br><br>
+    Les exigences varient selon le pays, l'itinéraire, l'espèce et la compagnie aérienne. Les normes changent
+    fréquemment. La vérification auprès de l'autorité sanitaire compétente du pays de destination et de transit est
+    obligatoire avant tout processus d'exportation.<br><br>
+    La délivrance des certificats relève exclusivement du vétérinaire habilité. Cet article n'interfère pas avec ce
+    critère professionnel.
   </div>
-  <p class="cta-address">
-    <a href="https://www.google.com/maps/search/?api=1&query=Calle+Cuba+241,+Urb.+El+Recreo,+Trujillo,+La+Libertad,+Peru" target="_blank" rel="noopener noreferrer">Calle Cuba 241, Urb. El Recreo — Trujillo, Perú</a>
+  <p>La sécurité d'un animal en soute ne dépend pas du hasard mais du respect strict de seuils physiologiques que la
+    plupart des propriétaires ignorent en achetant un billet. Les décès en vol sont souvent le résultat final d'une
+    pathologie préexistante non détectée ou d'une vulnérabilité raciale qui s'effondre face à l'hypoxie légère de la
+    cabine pressurisée. À Trujillo nous recevons constamment des familles qui supposent que la soute est un endroit
+    sombre et sans air, alors que le vrai danger réside dans la gestion de la température au sol et la réponse
+    métabolique individuelle.</p>
+  <h2><span class="sec-label">Section 1</span> Physique de la cabine et altitude équivalente</h2>
+  <p>Les soutes des avions commerciaux modernes sont pressurisées et climatisées, maintenant une altitude équivalente de
+    6&nbsp;000 à 8&nbsp;000 pieds en croisière. À cette altitude, la pression partielle d'oxygène diminue, obligeant le
+    système cardiovasculaire de l'animal à travailler davantage pour maintenir la perfusion tissulaire. Un chien avec
+    une cardiopathie naissante ou un chat avec une maladie rénale chronique non diagnostiquée peut entrer en défaillance
+    d'organe simplement par incapacité à compenser cette baisse d'oxygène ambiant.</p>
+  <p>Le compartiment cargo maintient la même atmosphère que la cabine passagers mais manque de surveillance visuelle
+    permettant de détecter à temps un halètement stridoreux ou une crise convulsive. La sécurité dépend d'une évaluation
+    fit-to-fly par un vétérinaire qui comprend la loi de Boyle et l'expansion des gaz dans les cavités corporelles à
+    l'ascension.</p>
+  <div class="abstract-box"
+    style="margin: 20px 0; background: #e8f2fa; border-left: 4px solid #1e4976; padding: 18px 24px;">
+    <strong>Approfondissement Clinique</strong>
+    La soute n'est pas dépourvue d'oxygène, mais reste un environnement hypobare. Nous détaillons la réponse
+    compensatoire du patient dans notre <a href="../articles/zoovet_art8_hipobaria-FR.html"
+      style="font-weight: 700; color: #1e4976; text-decoration: underline;">analyse physiologique sur l'hypobarie et la
+      pression cabine</a>. De plus, nous analysons l'effondrement dû à la panique dans notre revue sur le <a
+      href="../articles/zoovet_art5_estres-metabolico-FR.html"
+      style="font-weight: 700; color: #1e4976; text-decoration: underline;">stress métabolique et neuroendocrinien en
+      vol</a>.
+  </div>
+  <figure class="guia-img" aria-hidden="false">
+    <img src="../images/guias/guia-mascotabodega-02.jpg"
+      alt="Sécurité de la soute pour chiens et chats : hypoxie, température et stress métabolique" width="1200"
+      height="800" loading="lazy" />
+  </figure>
+  <h2><span class="sec-label">Section 2</span> Stress neuroendocrinien et cascade de cortisol</h2>
+  <p>L'isolement en soute déclenche l'activation de l'axe hypothalamo-hypophyso-surrénalien (HPA), libérant des niveaux
+    massifs de cortisol et de catécholamines dans le sang. Cette réponse de combat-fuite est particulièrement critique
+    chez le chat, qui peut développer une lipidose hépatique après de courtes périodes d'anorexie induite par la panique
+    du transport. Le bruit des turbines et le mouvement des chargements ne sont pas que des nuisances auditives ; ce
+    sont des zeitgebers qui désynchronisent le rythme circadien et altèrent le microbiote intestinal, affaiblissant la
+    barrière immunitaire de l'animal avant l'arrivée.</p>
+  <p>Ce que les gens n'anticiperont pas : un animal sédaté a plus de risques de mourir en soute qu'un animal alerte, car
+    les médicaments dépriment la capacité de thermorégulation et la réponse à l'hypoxie. La sédation pharmacologique est
+    interdite par la plupart des compagnies et par les protocoles vétérinaires d'exportation internationale. La
+    préparation réelle pour un voyage sûr de l'animal en soute inclut un conditionnement éthologique au transport d'au
+    moins huit semaines pour réduire la réactivité du système nerveux central sans compromettre les fonctions vitales.
   </p>
-</div><footer>
-  <p><strong>Zoovet Travel — Guides pratiques pour voyager et exporter des animaux à l'international</strong></p>
-  <p>Document de référence technique. Ne constitue pas une prescription vétérinaire ni un conseil juridique. Vérification auprès de l'autorité compétente de la destination obligatoire.</p>
-</footer>
-<script type="application/ld+json">
+  <h2><span class="sec-label">Section 3</span> Gestion de la température et points critiques au sol</h2>
+  <p>Le risque thermique le plus sévère survient pendant que l'avion est au sol, où la climatisation du compartiment
+    cargo peut être moins efficace qu'en vol. Les attentes sur le tarmac d'aéroports à températures supérieures à
+    27&nbsp;°C représentent une menace directe de coup de chaleur, surtout pour les races à pelage dense ou les animaux
+    en surpoids. La compagnie a la faculté de refuser l'embarquement si les températures à l'origine, en transit ou à
+    destination dépassent les marges de sécurité fixées par l'IATA pour protéger la vie de l'animal.</p>
+  <p>Dans notre pratique à Trujillo nous avons vu comment le choix d'une escale inadaptée en climat tropical invalide
+    toute autre mesure de sécurité prise auparavant. Un animal en stress thermique en soute perd la capacité de haleter
+    efficacement pour refroidir son sang, ce qui mène à un œdème cérébral ou une défaillance multi-organes en quelques
+    minutes. La sécurité est une chaîne dont le maillon faible est souvent la logistique terrestre, et non le temps
+    passé à 30&nbsp;000 pieds.</p>
+  <h2><span class="sec-label">Section 4</span> Ce qu'il convient de régler avant de commencer</h2>
+  <p>L'évaluation cardiaque et respiratoire approfondie est la première étape obligatoire pour déterminer si un
+    transport international en cargo est viable. Une auscultation rapide ne suffit pas ; des bilans biochimiques et dans
+    beaucoup de cas des examens d'imagerie sont requis pour confirmer que le patient peut tolérer l'effort métabolique
+    du voyage. Un animal qui arrive au comptoir avec des signes de dysbiose ou de déshydratation sera refusé par le
+    personnel au sol, générant des coûts de reprogrammation et un stress supplémentaire pour la famille.</p>
+  <p>Le transport doit respecter strictement la réglementation IATA LAR, en garantissant que l'animal puisse se tenir
+    debout, tourner et se coucher en position naturelle sans toucher les parois. Une caisse de transport trop petite
+    restreint le flux d'air et accélère la montée de température par chaleur radiante corporelle, devenant un piège
+    thermique. Le matériau doit être rigide, avec fermetures métalliques et ventilation sur les quatre côtés, en
+    assurant que l'infrastructure physique protège l'animal des chocs externes pendant la manutention des bagages.</p>
+  <p>L'hydratation doit être gérée par des abreuvoirs à goutte ou des récipients congelés qui fondent progressivement,
+    en évitant les déversements d'eau dans les premières minutes après le décollage. Un animal déshydraté a un sang plus
+    visqueux, ce qui gêne le transport d'oxygène et augmente la susceptibilité aux événements thromboemboliques pendant
+    le vol. La préparation nutritionnelle doit éviter les repas lourds dans les 12 heures précédant le départ, en
+    minimisant la production de gaz intestinaux qui s'expandraient avec la basse pression, provoquant douleur abdominale
+    intense et compression diaphragmatique.</p>
+  <div class="cta-contact">
+    <p class="cta-text">Une évaluation fit-to-fly et un transporteur adapté sont essentiels pour un voyage en soute en
+      sécurité. Zoovet Travel réalise le criblage physiologique complet et l'audit des transporteurs à Trujillo pour
+      garantir que le processus soit sûr pour votre animal. Sa sécurité dépend de critères médicaux, pas d'hypothèses
+      logistiques.</p>
+    <div class="cta-buttons">
+      <a class="cta-wa" href="https://wa.me/51979620402" target="_blank" rel="noopener">
+        WhatsApp · +51 979 620 402
+      </a>
+      <a class="cta-wa" href="https://wa.me/51922083707" target="_blank" rel="noopener">
+        WhatsApp · +51 922 083 707
+      </a>
+      <a class="cta-tel" href="tel:+51044366094">
+        Appeler · 044 366094
+      </a>
+    </div>
+    <p class="cta-address">
+      <a href="https://www.google.com/maps/search/?api=1&query=Calle+Cuba+241,+Urb.+El+Recreo,+Trujillo,+La+Libertad,+Peru"
+        target="_blank" rel="noopener noreferrer">Calle Cuba 241, Urb. El Recreo — Trujillo, Perú</a>
+    </p>
+  </div>
+  <footer>
+    <p><strong>Zoovet Travel — Guides pratiques pour voyager et exporter des animaux à l'international</strong></p>
+    <p>Document de référence technique. Ne constitue pas une prescription vétérinaire ni un conseil juridique.
+      Vérification auprès de l'autorité compétente de la destination obligatoire.</p>
+  </footer>
+  <script type="application/ld+json">
 {"@context": "https://schema.org", "@graph": [{"@type": "WebPage", "@id": "https://zoovettravel.com/articulos-interes/mascotabodega-FR.html#webpage", "url": "https://zoovettravel.com/articulos-interes/mascotabodega-FR.html", "name": "Est-il sûr que mon animal voyage en soute ? Risques et réalités techniques | Zoovet Travel", "inLanguage": "fr", "isPartOf": {"@id": "https://zoovettravel.com/#website"}}, {"@type": "Article", "@id": "https://zoovettravel.com/articulos-interes/mascotabodega-FR.html#article", "headline": "Est-il sûr que mon animal voyage en soute ? Risques et réalités techniques", "inLanguage": "fr", "datePublished": "2026-02-24", "dateModified": "2026-02-24", "author": {"@id": "https://zoovettravel.com/articulos-interes/mascotabodega-FR.html#author-jessica"}, "publisher": {"@id": "https://zoovettravel.com/#organization"}, "mainEntityOfPage": {"@id": "https://zoovettravel.com/articulos-interes/mascotabodega-FR.html#webpage"}}, {"@type": "BreadcrumbList", "@id": "https://zoovettravel.com/articulos-interes/mascotabodega-FR.html#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://zoovettravel.com/"}, {"@type": "ListItem", "position": 2, "name": "Articles d'intérêt", "item": "https://zoovettravel.com/articulos-interes/index-fr.html"}, {"@type": "ListItem", "position": 3, "name": "Est-il sûr que mon animal voyage en soute ? Risque…", "item": "https://zoovettravel.com/articulos-interes/mascotabodega-FR.html"}]}, {"@type": "Organization", "@id": "https://zoovettravel.com/#organization", "name": "Zoovet Travel", "url": "https://zoovettravel.com/", "logo": {"@type": "ImageObject", "url": "https://zoovettravel.com/images/zoovet-logo.png"}}, {"@type": "WebSite", "@id": "https://zoovettravel.com/#website", "url": "https://zoovettravel.com/", "name": "Zoovet Travel", "publisher": {"@id": "https://zoovettravel.com/#organization"}}, {"@type": "Person", "@id": "https://zoovettravel.com/articulos-interes/mascotabodega-FR.html#author-jessica", "name": "Jessica Ysabel Camacho Garcia", "jobTitle": "Médecin vétérinaire", "identifier": "CMVP 12434", "affiliation": {"@id": "https://zoovettravel.com/#organization"}}]}
 </script>
 </body>
+
 </html>
