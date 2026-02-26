@@ -1,5 +1,5 @@
 // Dictionary of Zoovet Travel articles
-const searchData = [
+window.searchData = [
   // GUÍAS PRÁCTICAS (articulos-interes/)
   {
     title: "Alimentación antes y durante el vuelo: ayuno, agua y errores que causan vómitos",

@@ -459,7 +459,29 @@
       height: auto;
       display: block;
     }
-  </style>
+  
+    /* Search Modal Styles */
+    .search-btn { color: var(--mid); background: transparent; border: none; cursor: pointer; padding: 4px; border-radius: 50%; transition: background 0.2s; display: flex; align-items: center; justify-content: center; }
+    .search-btn:hover { background: var(--sky); color: var(--deep); }
+    .search-modal-backdrop { position: fixed; inset: 0; background: rgba(15, 35, 64, 0.5); z-index: 1000; opacity: 0; visibility: hidden; transition: opacity 0.3s ease, visibility 0.3s; display: flex; align-items: flex-start; justify-content: center; padding-top: 10vh; backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); font-family: 'DM Sans', sans-serif; }
+    .search-modal-backdrop.is-active { opacity: 1; visibility: visible; }
+    .search-modal { background: #fff; width: 90%; max-width: 600px; border-radius: 12px; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); overflow: hidden; transform: translateY(-20px); opacity: 0; transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s; display: flex; flex-direction: column; max-height: 80vh; }
+    .search-modal-backdrop.is-active .search-modal { transform: translateY(0); opacity: 1; }
+    .search-header { padding: 1rem 1.25rem; border-bottom: 1px solid var(--rule); display: flex; align-items: center; gap: 0.75rem; background: var(--paper); }
+    .search-input { flex: 1; border: none; background: transparent; font-size: 1rem; color: var(--ink); outline: none; padding: 0.5rem 0; width: 100%; font-family: 'DM Sans', sans-serif; }
+    .search-input::placeholder { color: var(--muted); }
+    .search-close { background: var(--sky); border: none; padding: 0.25rem 0.5rem; border-radius: 6px; font-size: 0.75rem; color: var(--mid); cursor: pointer; transition: all 0.2s; font-weight: 600; display: flex; align-items: center; justify-content: center; min-width: 32px; }
+    .search-close:hover { background: var(--rule); color: var(--deep); }
+    .search-results { padding: 0.5rem 0; overflow-y: auto; flex: 1; }
+    .search-result-item { padding: 0.75rem 1.25rem; display: flex; flex-direction: column; gap: 0.25rem; border-bottom: 1px solid var(--rule); text-decoration: none; transition: background 0.2s; }
+    .search-result-item:last-child { border-bottom: none; }
+    .search-result-item:hover { background: var(--paper); text-decoration: none !important; }
+    .search-result-title { color: var(--ink); font-weight: 600; font-size: 0.9rem; line-height: 1.4; transition: color 0.2s; display: block; }
+    .search-result-item:hover .search-result-title { color: var(--mid); }
+    .search-result-cat { color: var(--teal); font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; font-family: 'DM Sans', sans-serif; display: block; }
+    .search-empty { padding: 2rem; text-align: center; color: var(--muted); font-size: 0.95rem; font-family: 'DM Sans', sans-serif;}
+</style>
+
 </head>
 
 <body>
@@ -470,7 +492,11 @@
         <a href="../index-fr.html">Accueil</a> &rarr; <a href="index-fr.html">Guides pratiques pour voyager et exporter
           des animaux à l'international</a> &rarr; <span>Voyager avec un chien senior : ce qui change après…</span>
       </nav>
-      <div class="lang-switcher">
+      <div class="lang-switcher" style="align-items: center;">
+        <button class="search-btn" aria-label="Rechercher des articles" onclick="openSearchModal()" title="Rechercher des articles">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+        <div style="width: 1px; height: 16px; background: var(--rule); margin: 0 4px;"></div>
         <a href="viajeanimalgeriatrico.html" hreflang="es">ES</a>
         <a href="viajeanimalgeriatrico-EN.html" hreflang="en">EN</a>
         <span class="lang-current" aria-current="page">FR</span>
@@ -650,6 +676,91 @@
   <script type="application/ld+json">
 {"@context": "https://schema.org", "@graph": [{"@type": "WebPage", "@id": "https://zoovettravel.com/articulos-interes/viajeanimalgeriatrico-FR.html#webpage", "url": "https://zoovettravel.com/articulos-interes/viajeanimalgeriatrico-FR.html", "name": "Voyager avec un chien senior : ce qui change après 8 ans | Zoovet Travel", "inLanguage": "fr", "isPartOf": {"@id": "https://zoovettravel.com/#website"}}, {"@type": "Article", "@id": "https://zoovettravel.com/articulos-interes/viajeanimalgeriatrico-FR.html#article", "headline": "Voyager avec un chien senior : ce qui change après 8 ans", "inLanguage": "fr", "datePublished": "2026-02-24", "dateModified": "2026-02-24", "author": {"@id": "https://zoovettravel.com/articulos-interes/viajeanimalgeriatrico-FR.html#author-jessica"}, "publisher": {"@id": "https://zoovettravel.com/#organization"}, "mainEntityOfPage": {"@id": "https://zoovettravel.com/articulos-interes/viajeanimalgeriatrico-FR.html#webpage"}}, {"@type": "BreadcrumbList", "@id": "https://zoovettravel.com/articulos-interes/viajeanimalgeriatrico-FR.html#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://zoovettravel.com/"}, {"@type": "ListItem", "position": 2, "name": "Articles d'intérêt", "item": "https://zoovettravel.com/articulos-interes/index-fr.html"}, {"@type": "ListItem", "position": 3, "name": "Voyager avec un chien senior : ce qui change après…", "item": "https://zoovettravel.com/articulos-interes/viajeanimalgeriatrico-FR.html"}]}, {"@type": "Organization", "@id": "https://zoovettravel.com/#organization", "name": "Zoovet Travel", "url": "https://zoovettravel.com/", "logo": {"@type": "ImageObject", "url": "https://zoovettravel.com/images/zoovet-logo.png"}}, {"@type": "WebSite", "@id": "https://zoovettravel.com/#website", "url": "https://zoovettravel.com/", "name": "Zoovet Travel", "publisher": {"@id": "https://zoovettravel.com/#organization"}}, {"@type": "Person", "@id": "https://zoovettravel.com/articulos-interes/viajeanimalgeriatrico-FR.html#author-jessica", "name": "Jessica Ysabel Camacho Garcia", "jobTitle": "Médecin vétérinaire", "identifier": "CMVP 12434", "affiliation": {"@id": "https://zoovettravel.com/#organization"}}]}
 </script>
+  <!-- Search Modal HTML -->
+  <div class="search-modal-backdrop" id="searchModal" aria-hidden="true">
+    <div class="search-modal" role="dialog" aria-modal="true" aria-labelledby="searchModalTitle">
+      <div class="search-header">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--muted)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="searchInput" class="search-input" placeholder="Rechercher destination, race, vétérinaire..." aria-label="Rechercher des articles">
+        <button class="search-close" onclick="closeSearchModal()" aria-label="Cerrar" title="ESC">ESC</button>
+      </div>
+      <div class="search-results" id="searchResults">
+        <div class="search-empty">Tapez ci-dessus pour lancer la recherche</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Search Logic Script -->
+  <script src="../scripts/search_data.js"></script>
+  <script>
+    const searchModal = document.getElementById('searchModal');
+    const searchInput = document.getElementById('searchInput');
+    const searchResults = document.getElementById('searchResults');
+    const bodyEl = document.body;
+
+    function openSearchModal() {
+      searchModal.classList.add('is-active');
+      searchModal.setAttribute('aria-hidden', 'false');
+      bodyEl.style.overflow = 'hidden';
+      setTimeout(() => searchInput.focus(), 100);
+    }
+
+    function closeSearchModal() {
+      searchModal.classList.remove('is-active');
+      searchModal.setAttribute('aria-hidden', 'true');
+      bodyEl.style.overflow = '';
+      searchInput.value = '';
+      searchResults.innerHTML = '<div class="search-empty">Tapez ci-dessus pour lancer la recherche</div>';
+    }
+
+    searchModal.addEventListener('click', (e) => {
+      if (e.target === searchModal) closeSearchModal();
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && searchModal.classList.contains('is-active')) {
+        closeSearchModal();
+      }
+    });
+
+    searchInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        const firstResult = searchResults.querySelector('.search-result-item');
+        if (firstResult) {
+          window.location.href = firstResult.getAttribute('href');
+        }
+      }
+    });
+
+    searchInput.addEventListener('input', (e) => {
+      const query = e.target.value.toLowerCase().trim();
+      if (!query || query.length < 2) {
+        searchResults.innerHTML = '<div class="search-empty">Tapez ci-dessus pour lancer la recherche</div>';
+        return;
+      }
+      if (!window.searchData) return;
+      const matches = window.searchData.filter(item => {
+        return item.title.toLowerCase().includes(query) ||
+          item.keywords.toLowerCase().includes(query) ||
+          item.category.toLowerCase().includes(query);
+      });
+      if (matches.length === 0) {
+        searchResults.innerHTML = '<div class="search-empty">Aucun article trouvé pour cette recherche.</div>';
+      } else {
+        const topMatches = matches.slice(0, 6);
+        searchResults.innerHTML = topMatches.map(match => `
+          <a href="../${match.url}" class="search-result-item">
+            <span class="search-result-title">${match.title}</span>
+            <span class="search-result-cat">${match.category}</span>
+          </a>
+        `).join('');
+      }
+    });
+  </script>
 </body>
 
 </html>
