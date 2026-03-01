@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><title>IndexNow - Enviar URLs</title></head>
+<body>
+<h1>IndexNow - Enviar URLs zoovettravel.com</h1>
+<button id="btn">Enviar 186 URLs a IndexNow</button>
+<pre id="log"></pre>
+<script>
+document.getElementById('btn').onclick = async () => {
+  const log = document.getElementById('log');
+  log.textContent = 'Enviando...';
+  try {
+    const r = await fetch('indexnow-payload.json');
+    const body = await r.json();
+    const res = await fetch('https://api.indexnow.org/IndexNow', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json; charset=utf-8' },
+      body: JSON.stringify(body)
+    });
+    log.textContent = 'HTTP ' + res.status + ' - ' + (res.ok ? 'OK' : await res.text());
+  } catch (e) {
+    log.textContent = 'Error: ' + e.message;
+  }
+};
+</script>
+</body>
+</html>
