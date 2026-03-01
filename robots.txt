@@ -1,29 +1,38 @@
+# Zoovet Travel - Permitir todos los bots principales
 User-agent: *
 Allow: /
+Disallow: /docs/
+Disallow: /.github/
+Disallow: /indexnow-payload.json
+Disallow: /indexnow-submit.html
+Disallow: /urls
+Disallow: /indexnow-send.ps1
+Disallow: /indexnow-send.bat
 
-# Secciones principales
-Allow: /articles/
-Allow: /articulos-interes/
-Allow: /zoopedia/
-
-# Bloquear carpetas que no deben indexarse
+# Google
+User-agent: Googlebot
+Allow: /
 Disallow: /docs/
 Disallow: /.github/
 
-# Crawlers específicos con prioridad
-User-agent: Googlebot
-Allow: /
-Crawl-delay: 0
-
+# Bing
 User-agent: Bingbot
 Allow: /
-Crawl-delay: 1
+Disallow: /docs/
+Disallow: /.github/
 
+# Yandex (IndexNow)
+User-agent: Yandexbot
+Allow: /
+Disallow: /docs/
+Disallow: /.github/
+
+# Redes sociales
 User-agent: facebookexternalhit
 Allow: /
 
 User-agent: Twitterbot
 Allow: /
 
-# Sitemap
+# Sitemap (obligatorio para que los bots encuentren tus URLs)
 Sitemap: https://zoovettravel.com/sitemap.xml
