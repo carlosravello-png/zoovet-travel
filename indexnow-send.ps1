@@ -24,19 +24,27 @@ $body = @{
     urlList     = $urlList
 } | ConvertTo-Json -Depth 10 -Compress
 
-$bodyBytes = [System.Text.Encoding]::UTF8.GetBytes($body)
+$jsonFile = Join-Path $env:TEMP "indexnow-payload.json"
+[System.IO.File]::WriteAllText($jsonFile, $body, [System.Text.Encoding]::UTF8)
+
+Write-Host "Enviando a IndexNow (timeout 60s)..." -ForegroundColor Cyan
 
 try {
-    $response = Invoke-RestMethod -Uri $Endpoint -Method Post -ContentType "application/json; charset=utf-8" -Body $bodyBytes
-    Write-Host "IndexNow: $urlCount URLs enviadas correctamente." -ForegroundColor Green
-    Write-Host "Respuesta: $response"
-} catch {
-    Write-Host "Error al enviar a IndexNow:" -ForegroundColor Red
-    Write-Host $_.Exception.Message
-    if ($_.Exception.Response) {
-        $reader = New-Object System.IO.StreamReader($_.Exception.Response.GetResponseStream())
-        $reader.BaseStream.Position = 0
-        Write-Host $reader.ReadToEnd()
+    $curlOutput = & curl.exe -s -w "`n%{http_code}" -X POST $Endpoint -H "Content-Type: application/json; charset=utf-8" -d "@$jsonFile" --connect-timeout 15 --max-time 60 2>&1
+    Remove-Item $jsonFile -Force -ErrorAction SilentlyContinue
+    $lines = $curlOutput -split "`n"
+    $httpCode = $lines[-1]
+    $response = ($lines[0..($lines.Length-2)] -join "`n").Trim()
+    if ($httpCode -match "200|202") {
+        Write-Host "IndexNow: $urlCount URLs enviadas correctamente. (HTTP $httpCode)" -ForegroundColor Green
+        if ($response) { Write-Host $response }
+    } else {
+        Write-Host "IndexNow devolvió HTTP $httpCode" -ForegroundColor Yellow
+        Write-Host $response
+        exit 1
     }
+} catch {
+    Remove-Item $jsonFile -Force -ErrorAction SilentlyContinue
+    Write-Host "Error: $_" -ForegroundColor Red
     exit 1
 }
