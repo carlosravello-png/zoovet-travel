@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kennels IATA para Viaje Internacional. Certificados bajo normativa LAR 2026. Envío a todo el Perú.">
+  <meta name="theme-color" content="#0C789E">
+  <title>Kennels IATA para Viaje Internacional | Zoovet Travel</title>
+  <link rel="icon" type="image/x-icon" href="https://zoovettravel.com/images/favicon.ico">
+  <link rel="apple-touch-icon" href="https://zoovettravel.com/images/apple-touch-icon.png">
+
+  <link rel="canonical" href="https://zoovettravel.com/kennels.html">
+  <link rel="alternate" hreflang="es" href="https://zoovettravel.com/kennels.html">
+  <link rel="alternate" hreflang="en" href="https://zoovettravel.com/kennels-en.html">
+  <link rel="alternate" hreflang="fr" href="https://zoovettravel.com/kennels-fr.html">
+  <link rel="alternate" hreflang="x-default" href="https://zoovettravel.com/kennels.html">
+
+  <meta property="og:type" content="product">
+  <meta property="og:url" content="https://zoovettravel.com/kennels.html">
+  <meta property="og:title" content="Kennels IATA para Viaje Internacional | Zoovet Travel">
+  <meta property="og:description" content="Kennels IATA para Viaje Internacional. Certificados bajo normativa LAR 2026. Envío a todo el Perú.">
+  <meta property="og:image" content="https://zoovettravel.com/images/og-default.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Kennels IATA certificados LAR 2026 — Zoovet Travel, Trujillo Perú">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kennels IATA para Viaje Internacional | Zoovet Travel">
+  <meta name="twitter:description" content="Kennels IATA para Viaje Internacional. Certificados bajo normativa LAR 2026. Envío a todo el Perú.">
+  <meta name="twitter:image" content="https://zoovettravel.com/images/og-default.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Montserrat', sans-serif; background-color: #F8FAFC; color: #1a2e35; }
+    .btn-zoovet { background-color: #0C789E; color: white; transition: all 0.3s ease; }
+    .btn-zoovet:hover { background-color: #0a6a8a; transform: translateY(-2px); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
+    details > summary { list-style: none; }
+    details > summary::-webkit-details-marker { display: none; }
+    .servicio-details { border: 1px solid rgba(26, 46, 53, 0.12); }
+    .servicio-details[open] { border-color: rgba(12, 120, 158, 0.25); }
+    .servicio-chevron { transition: transform 0.2s ease; }
+    .servicio-details[open] .servicio-chevron { transform: rotate(90deg); }
+  </style>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "@id": "https://zoovettravel.com/kennels.html#calculadora-iata",
+  "name": "Calculadora de Kennel IATA — Zoovet Travel",
+  "alternateName": "IATA Kennel Size Calculator",
+  "description": "Herramienta interactiva para calcular la talla de kennel IATA correcta según la raza, peso y medidas de tu mascota. Basada en normativa IATA LAR 2026. Desarrollada y mantenida por Zoovet Travel, centro médico veterinario especializado en exportación internacional de mascotas desde Trujillo, Perú.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Web",
+  "url": "https://zoovettravel.com/kennels.html",
+  "inLanguage": "es",
+  "dateCreated": "2026-03-01",
+  "dateModified": "2026-03-01",
+  "version": "1.0",
+  "isAccessibleForFree": true,
+  "isFamilyFriendly": true,
+  "keywords": "calculadora kennel IATA, talla kennel perro, kennel viaje internacional, IATA LAR 2026, kennel mascota avión, kennel braquicéfalo",
+  "author": {
+    "@type": "Organization",
+    "@id": "https://zoovettravel.com/#organization",
+    "name": "Zoovet Travel",
+    "url": "https://zoovettravel.com",
+    "logo": "https://zoovettravel.com/images/logo.png",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+51-979-620-402",
+      "contactType": "customer service",
+      "areaServed": "PE",
+      "availableLanguage": ["Spanish", "English", "French"]
+    }
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://zoovettravel.com/#organization"
+  },
+  "copyrightHolder": {
+    "@type": "Organization",
+    "@id": "https://zoovettravel.com/#organization"
+  },
+  "copyrightYear": 2026,
+  "license": "https://zoovettravel.com/kennels.html#terminos",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://zoovettravel.com/kennels.html"
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "Normativa IATA LAR 2026 para transporte de mascotas"
+  },
+  "featureList": [
+    "Cálculo por raza con medidas promedio precargadas",
+    "Cálculo manual ingresando medidas A, B, C, D",
+    "Ajuste automático para razas braquicéfalas (+10% IATA)",
+    "Subida automática de talla para braquicéfalos",
+    "Alerta de viaje individual para mascotas mayores de 14 kg",
+    "Resultado con talla L en sistema peruano",
+    "Enlace directo a WhatsApp para consulta de disponibilidad",
+    "Disponible en español, inglés y francés"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "PEN",
+    "availability": "https://schema.org/InStock"
+  }
+}
+</script>
+</head>
+<body class="bg-[#F8FAFC] min-h-screen antialiased text-[#1a2e35]">
+
+<!--
+  ================================================================
+  CALCULADORA DE KENNEL IATA — ZOOVET TRAVEL
+  ================================================================
+  Versión: 1.0
+  Fecha: 2026-03-01
+  Autor: Zoovet Travel
+  Web: https://zoovettravel.com
+  Contacto: +51 979 620 402
+
+  © 2026 Zoovet Travel. Todos los derechos reservados.
+  Propiedad intelectual de Carlos Ravello Joo.
+  Prohibida la reproducción total o parcial de esta
+  herramienta, su lógica de cálculo, estructura de datos
+  y presentación visual sin autorización expresa y por
+  escrito del titular.
+
+  Modelo matemático basado en:
+  IATA Live Animals Regulations (LAR) Edición 52, 2026.
+  Tabla de razas: datos referenciales de promedio racial.
+
+  Esta herramienta es de uso público y gratuito.
+  Su copia, redistribución o uso comercial sin
+  autorización constituye una infracción a los
+  derechos de autor según la legislación peruana
+  (Decreto Legislativo N° 822) y los tratados
+  internacionales de propiedad intelectual
+  suscritos por el Perú (Convenio de Berna,
+  ADPIC/TRIPS).
+  ================================================================
+-->
+
+  <!-- Breadcrumbs -->
+  <nav aria-label="Breadcrumb" class="px-4 py-3 text-sm border-b border-[#1a2e35]/10">
+    <ol class="flex gap-2 text-[#1a2e35]/70" itemscope itemtype="https://schema.org/BreadcrumbList">
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="./index.html" class="hover:text-[#1a2e35] transition-colors">
+          <span itemprop="name">Inicio</span>
+        </a>
+        <meta itemprop="position" content="1">
+      </li>
+      <li>/</li>
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <span itemprop="name" class="font-medium text-[#1a2e35]">Kennels IATA</span>
+        <meta itemprop="position" content="2">
+      </li>
+    </ol>
+  </nav>
+
+  <header class="px-4 py-6 md:py-8 flex flex-wrap items-center justify-between gap-4 max-w-6xl mx-auto">
+    <div class="flex items-center gap-3">
+      <a href="./index.html" class="text-lg sm:text-xl md:text-2xl tracking-[0.4em] text-[#1a2e35] font-montserrat hover:opacity-80 transition-opacity">
+        <span class="font-light">ZOOVET</span> <span class="font-bold">TRAVEL</span>
+      </a>
+    </div>
+    <div class="flex flex-wrap items-center gap-2 md:gap-4 shrink-0">
+      <div class="flex flex-wrap gap-1 sm:gap-2">
+        <a href="./kennels.html" class="text-xs font-semibold tracking-widest uppercase text-[#1a2e35] border border-[#0C789E] bg-[#0C789E]/10 px-2 sm:px-3 py-2 rounded-sm transition-all duration-300 min-h-[44px] inline-flex items-center justify-center">ES</a>
+        <a href="./kennels-en.html" class="text-xs font-semibold tracking-widest uppercase text-[#1a2e35]/80 hover:text-[#1a2e35] border border-[#1a2e35]/30 hover:border-[#1a2e35]/50 px-2 sm:px-3 py-2 rounded-sm transition-all duration-300 min-h-[44px] inline-flex items-center justify-center">EN</a>
+        <a href="./kennels-fr.html" class="text-xs font-semibold tracking-widest uppercase text-[#1a2e35]/80 hover:text-[#1a2e35] border border-[#1a2e35]/30 hover:border-[#1a2e35]/50 px-2 sm:px-3 py-2 rounded-sm transition-all duration-300 min-h-[44px] inline-flex items-center justify-center">FR</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="w-full">
+    <!-- SECCIÓN 1 - HERO -->
+    <section class="bg-[#1a2e35] py-16 md:py-24 px-4 text-center border-b-[6px] border-[#0C789E]">
+      <div class="max-w-4xl mx-auto">
+        <h1 class="text-3xl md:text-5xl font-bold mb-4 tracking-tight text-[#F8FAFC]">Kennels IATA para Viaje Internacional</h1>
+        <p class="text-lg md:text-xl text-[#F8FAFC]/90 mb-8 max-w-2xl mx-auto">Certificados bajo normativa LAR 2026. Envío a todo el Perú.</p>
+        <a href="#contacto-final" class="btn-zoovet inline-block px-8 py-4 text-sm md:text-base font-bold tracking-wide uppercase shadow-lg">
+          Consulta disponibilidad
+        </a>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 2 - INTRO -->
+    <section class="max-w-4xl mx-auto px-4 py-16">
+        <p class="text-xl md:text-2xl text-[#1a2e35] font-medium leading-relaxed text-center">
+          No todos los kennels son iguales ante una aerolínea. Un kennel incorrecto puede significar que tu mascota no aborde. Todos nuestros kennels cumplen la <a href="../articles/zoovet_article_v2.html">normativa IATA LAR 2026</a>.
+        </p>
+    </section>
+
+    <!-- SECCIÓN 3 - CALCULADORA -->
+    <section id="calculadora-iata" class="max-w-4xl mx-auto px-4 mb-20">
+      <div class="bg-white border border-[#0C789E]/30 shadow-sm rounded-sm p-8 md:p-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-[#1a2e35] mb-2" style="font-family: 'Montserrat', sans-serif;">Calculadora de Kennel IATA</h2>
+        <p class="text-sm text-[#1a2e35]/80 mb-8">Encuentra la talla correcta para tu mascota en segundos.</p>
+
+        <div class="mb-6">
+          <p class="text-xs font-semibold text-[#1a2e35]/70 uppercase tracking-wide mb-3">PASO 1 — Especie</p>
+          <div class="flex gap-3 justify-center flex-wrap">
+            <button type="button" id="zvt-btn-perro" class="zvt-species-btn px-6 py-3 rounded-sm border-2 border-[#0C789E] bg-[#0C789E] text-white font-semibold transition-all" data-tipo="perro">🐶 Perro</button>
+            <button type="button" id="zvt-btn-gato" class="zvt-species-btn px-6 py-3 rounded-sm border-2 border-[#1a2e35]/30 text-[#1a2e35] font-semibold transition-all" data-tipo="gato">🐱 Gato</button>
+          </div>
+        </div>
+
+        <div class="mb-6">
+          <p class="text-xs font-semibold text-[#1a2e35]/70 uppercase tracking-wide mb-2">PASO 2 — Raza</p>
+          <select id="zvt-select-raza" class="w-full max-w-md mx-auto block border border-[#1a2e35]/20 rounded-sm px-4 py-3 text-[#1a2e35] bg-white">
+            <option value="">Selecciona la raza de tu mascota</option>
+          </select>
+        </div>
+
+        <div class="mb-6">
+          <p class="text-xs font-semibold text-[#1a2e35]/70 uppercase tracking-wide mb-2">PASO 3 — Diagrama de medición</p>
+          <div id="zvt-svg-container" class="flex justify-center my-4">
+            <svg id="zvt-svg-diagram" width="280" height="140" viewBox="0 0 280 140" xmlns="http://www.w3.org/2000/svg" class="max-w-full h-auto">
+              <ellipse cx="140" cy="70" rx="55" ry="35" fill="#1a2e35" opacity="0.15" stroke="#1a2e35" stroke-width="1.5"/>
+              <path d="M85 70 L215 70" stroke="#0C789E" stroke-width="1.5" stroke-dasharray="4 2" marker-end="url(#zvt-arrow)"/>
+              <path d="M140 105 L140 35" stroke="#0C789E" stroke-width="1" stroke-dasharray="2 2"/>
+              <path d="M115 50 L165 50" stroke="#0C789E" stroke-width="1" stroke-dasharray="2 2"/>
+              <path d="M140 35 L140 15" stroke="#0C789E" stroke-width="1" stroke-dasharray="2 2"/>
+              <defs><marker id="zvt-arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><polygon points="0 0, 8 4, 0 8" fill="#0C789E"/></marker></defs>
+              <text x="230" y="74" font-size="12" fill="#0C789E" font-weight="bold">A</text>
+              <text x="148" y="28" font-size="11" fill="#0C789E" font-weight="bold">D</text>
+              <text x="168" y="54" font-size="11" fill="#0C789E" font-weight="bold">C</text>
+              <text x="148" y="98" font-size="11" fill="#0C789E" font-weight="bold">B</text>
+            </svg>
+          </div>
+          <p class="text-xs text-[#1a2e35]/70 mt-2">💡 Los valores se precargaron desde el promedio de la raza. Puedes ajustarlos si conoces las medidas exactas de tu mascota.</p>
+        </div>
+
+        <div class="mb-6">
+          <p class="text-xs font-semibold text-[#1a2e35]/70 uppercase tracking-wide mb-3">PASO 4 — Medidas (cm) y peso</p>
+          <div class="grid grid-cols-2 gap-4 max-w-md mx-auto mb-4">
+            <label class="text-left"><span class="text-xs text-[#1a2e35]/80">A — Largo nariz a cola (cm)</span><input type="number" id="zvt-input-a" min="1" step="0.1" placeholder="ej. 78" class="w-full border border-[#1a2e35]/20 rounded-sm px-3 py-2 mt-1"/></label>
+            <label class="text-left"><span class="text-xs text-[#1a2e35]/80">B — Suelo a codo (cm)</span><input type="number" id="zvt-input-b" min="1" step="0.1" placeholder="ej. 28" class="w-full border border-[#1a2e35]/20 rounded-sm px-3 py-2 mt-1"/></label>
+            <label class="text-left"><span class="text-xs text-[#1a2e35]/80">C — Ancho entre hombros (cm)</span><input type="number" id="zvt-input-c" min="1" step="0.1" placeholder="ej. 25" class="w-full border border-[#1a2e35]/20 rounded-sm px-3 py-2 mt-1"/></label>
+            <label class="text-left"><span class="text-xs text-[#1a2e35]/80">D — Suelo a cabeza (cm)</span><input type="number" id="zvt-input-d" min="1" step="0.1" placeholder="ej. 78" class="w-full border border-[#1a2e35]/20 rounded-sm px-3 py-2 mt-1"/></label>
+          </div>
+          <div class="max-w-md mx-auto">
+            <label class="text-left block"><span class="text-xs text-[#1a2e35]/80">Peso (kg)</span><input type="number" id="zvt-input-kg" min="0.1" step="0.1" placeholder="ej. 30" class="w-full border border-[#1a2e35]/20 rounded-sm px-3 py-2 mt-1"/></label>
+          </div>
+        </div>
+
+        <div class="mb-8">
+          <button type="button" id="zvt-btn-calcular" class="w-full max-w-md mx-auto block bg-[#0C789E] text-white font-bold py-4 rounded-sm uppercase tracking-wide" style="font-family: 'Montserrat', sans-serif;">Calcular mi kennel →</button>
+        </div>
+
+        <div id="zvt-resultado" class="hidden bg-[#1a2e35] text-white p-6 md:p-8 rounded-sm animate-[fadeIn_0.4s_ease-out]">
+          <p class="text-lg font-semibold mb-2">Tu mascota necesita:</p>
+          <p id="zvt-result-talla" class="text-3rem font-bold mb-2" style="font-family: 'Montserrat', sans-serif; font-size: 3rem; color: #0C789E;"></p>
+          <p id="zvt-result-dim" class="text-[#F8FAFC]/90 mb-1"></p>
+          <p id="zvt-result-uso" class="text-[#F8FAFC]/90 mb-3"></p>
+          <p id="zvt-result-min" class="text-xs text-[#F8FAFC]/60 mb-3"></p>
+          <div id="zvt-badge-brachy" class="hidden mt-2"><span class="inline-block bg-red-600/90 text-white text-xs font-semibold px-3 py-1 rounded-sm">⚠ <a href="../articles/zoovet_article3_braquicefalos_ES.html">Raza braquicéfala</a> — talla aumentada por normativa IATA</span></div>
+          <div id="zvt-badge-peso" class="hidden mt-2"><span class="inline-block bg-orange-500/90 text-white text-xs font-semibold px-3 py-1 rounded-sm">⚠ Más de 14 kg: viaje individual obligatorio — IATA LAR 2026</span></div>
+          <hr class="border-[#F8FAFC]/20 my-4"/>
+          <p class="text-[10px] text-[#F8FAFC]/50 text-center mb-4">© 2026 Zoovet Travel — zoovettravel.com<br/>Calculadora IATA LAR 2026 v1.0</p>
+          <a id="zvt-whatsapp" href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white font-bold py-3 px-6 rounded-sm w-full max-w-md mx-auto mb-4">💬 Consultar disponibilidad Kennel <span id="zvt-wa-talla"></span></a>
+          <p class="text-xs text-[#F8FAFC]/60 italic text-center">Medidas referenciales según IATA LAR 2026. Confirma siempre con tu aerolínea antes de viajar.<br/>© 2026 Zoovet Travel. Todos los derechos reservados.</p>
+        </div>
+      </div>
+
+      <style>@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }</style>
+      <script>
+(function(){
+  const BREED_AVERAGES = {
+    "Labrador Retriever": {A:78,B:28,C:25,D:78,kg:30,brachy:false,tipo:"perro"},
+    "Golden Retriever": {A:76,B:27,C:24,D:76,kg:29,brachy:false,tipo:"perro"},
+    "Pastor Alemán": {A:77,B:28,C:24,D:73,kg:32,brachy:false,tipo:"perro"},
+    "Bulldog Francés": {A:46,B:13,C:19,D:43,kg:11,brachy:true,tipo:"perro"},
+    "Pug": {A:46,B:12,C:18,D:38,kg:7,brachy:true,tipo:"perro"},
+    "Beagle": {A:58,B:16,C:17,D:51,kg:10,brachy:false,tipo:"perro"},
+    "Schnauzer": {A:75,B:21,C:18,D:62,kg:17,brachy:false,tipo:"perro"},
+    "Chihuahua": {A:31,B:8,C:10,D:28,kg:2,brachy:false,tipo:"perro"},
+    "Dachshund": {A:60,B:9,C:13,D:35,kg:10,brachy:false,tipo:"perro"},
+    "Shih Tzu": {A:41,B:11,C:13,D:36,kg:6,brachy:true,tipo:"perro"},
+    "Yorkshire Terrier": {A:35,B:9,C:10,D:30,kg:3,brachy:false,tipo:"perro"},
+    "Maltés": {A:39,B:8,C:10,D:34,kg:3,brachy:false,tipo:"perro"},
+    "Pitbull": {A:68,B:21,C:22,D:56,kg:24,brachy:false,tipo:"perro"},
+    "Rottweiler": {A:103,B:29,C:28,D:82,kg:48,brachy:false,tipo:"perro"},
+    "Doberman": {A:110,B:30,C:23,D:83,kg:37,brachy:false,tipo:"perro"},
+    "Husky Siberiano": {A:82,B:25,C:21,D:73,kg:22,brachy:false,tipo:"perro"},
+    "Border Collie": {A:79,B:22,C:19,D:63,kg:16,brachy:false,tipo:"perro"},
+    "Cocker Spaniel": {A:68,B:18,C:17,D:51,kg:14,brachy:false,tipo:"perro"},
+    "Gato doméstico": {A:46,B:10,C:12,D:25,kg:4.5,brachy:false,tipo:"gato"},
+    "Gato Persa": {A:41,B:9,C:14,D:25,kg:4.3,brachy:true,tipo:"gato"}
+  };
+  const KENNEL_SERIES = [
+    {label:"L50",length:50,width:38,height:35,kgMax:5,uso:"Cabina / Bodega"},
+    {label:"L60",length:60,width:43,height:40,kgMax:10,uso:"Bodega"},
+    {label:"L70",length:70,width:50,height:48,kgMax:15,uso:"Bodega"},
+    {label:"L80",length:80,width:55,height:55,kgMax:23,uso:"Bodega"},
+    {label:"L90",length:90,width:60,height:65,kgMax:31,uso:"Bodega"},
+    {label:"L100",length:100,width:68,height:75,kgMax:41,uso:"Bodega"},
+    {label:"L120",length:120,width:80,height:88,kgMax:57,uso:"Bodega"}
+  ];
+  function zvt_calcularKennel(A,B,C,D,kg,brachy){
+    var largo = A + (B/2);
+    var ancho = C * 2;
+    var alto  = D + 3;
+    if(brachy){ largo *= 1.10; ancho *= 1.10; alto *= 1.10; }
+    largo = Math.round(largo*10)/10;
+    ancho = Math.round(ancho*10)/10;
+    alto  = Math.round(alto*10)/10;
+    var idx = KENNEL_SERIES.findIndex(function(s){ return s.length >= largo && s.width >= ancho && s.height >= alto; });
+    if(idx === -1) idx = 6;
+    if(brachy && idx < 6) idx += 1;
+    return { largo: largo, ancho: ancho, alto: alto, serie: KENNEL_SERIES[idx], soloIndividual: kg > 14 };
+  }
+  function zvt_filtrarRazas(tipo){
+    var sel = document.getElementById('zvt-select-raza');
+    sel.innerHTML = '<option value="">Selecciona la raza de tu mascota</option>';
+    Object.keys(BREED_AVERAGES).forEach(function(name){
+      if(BREED_AVERAGES[name].tipo === tipo) sel.innerHTML += '<option value="'+name+'">'+name+'</option>';
+    });
+  }
+  function zvt_applyBreed(){
+    var name = document.getElementById('zvt-select-raza').value;
+    if(!name || !BREED_AVERAGES[name]) return;
+    var b = BREED_AVERAGES[name];
+    document.getElementById('zvt-input-a').value = b.A;
+    document.getElementById('zvt-input-b').value = b.B;
+    document.getElementById('zvt-input-c').value = b.C;
+    document.getElementById('zvt-input-d').value = b.D;
+    document.getElementById('zvt-input-kg').value = b.kg;
+  }
+  function zvt_setSpecies(tipo){
+    var perro = document.getElementById('zvt-btn-perro');
+    var gato = document.getElementById('zvt-btn-gato');
+    perro.className = tipo === 'perro' ? 'zvt-species-btn px-6 py-3 rounded-sm border-2 border-[#0C789E] bg-[#0C789E] text-white font-semibold transition-all' : 'zvt-species-btn px-6 py-3 rounded-sm border-2 border-[#1a2e35]/30 text-[#1a2e35] font-semibold transition-all';
+    gato.className = tipo === 'gato' ? 'zvt-species-btn px-6 py-3 rounded-sm border-2 border-[#0C789E] bg-[#0C789E] text-white font-semibold transition-all' : 'zvt-species-btn px-6 py-3 rounded-sm border-2 border-[#1a2e35]/30 text-[#1a2e35] font-semibold transition-all';
+    zvt_filtrarRazas(tipo);
+    document.getElementById('zvt-select-raza').value = '';
+    zvt_applyBreed();
+  }
+  function zvt_calcClick(){
+    var A = parseFloat(document.getElementById('zvt-input-a').value);
+    var B = parseFloat(document.getElementById('zvt-input-b').value);
+    var C = parseFloat(document.getElementById('zvt-input-c').value);
+    var D = parseFloat(document.getElementById('zvt-input-d').value);
+    var kg = parseFloat(document.getElementById('zvt-input-kg').value);
+    if(!A||A<=0||!B||B<=0||!C||C<=0||!D||D<=0||!kg||kg<=0){ alert('Ingresa todas las medidas y el peso (valores mayores a 0).'); return; }
+    var name = document.getElementById('zvt-select-raza').value;
+    var brachy = name && BREED_AVERAGES[name] ? BREED_AVERAGES[name].brachy : false;
+    var r = zvt_calcularKennel(A,B,C,D,kg,brachy);
+    document.getElementById('zvt-result-talla').textContent = 'Kennel '+r.serie.label;
+    document.getElementById('zvt-result-dim').textContent = r.serie.length + ' × ' + r.serie.width + ' × ' + r.serie.height + ' cm';
+    document.getElementById('zvt-result-uso').textContent = 'Uso: ' + r.serie.uso;
+    document.getElementById('zvt-result-min').textContent = 'Mínimo requerido por IATA: ' + r.largo + ' × ' + r.ancho + ' × ' + r.alto + ' cm';
+    document.getElementById('zvt-badge-brachy').style.display = brachy ? 'block' : 'none';
+    document.getElementById('zvt-badge-peso').style.display = r.soloIndividual ? 'block' : 'none';
+    var label = r.serie.label;
+    document.getElementById('zvt-wa-talla').textContent = label;
+    document.getElementById('zvt-whatsapp').href = 'https://wa.me/51979620402?text=' + encodeURIComponent('Hola, me interesa el Kennel '+label+' para mi mascota. La calculadora de Zoovet Travel me indicó esta talla.');
+    document.getElementById('zvt-resultado').classList.remove('hidden');
+    document.getElementById('zvt-resultado').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+  zvt_filtrarRazas('perro');
+  document.getElementById('zvt-btn-perro').addEventListener('click', function(){ zvt_setSpecies('perro'); });
+  document.getElementById('zvt-btn-gato').addEventListener('click', function(){ zvt_setSpecies('gato'); });
+  document.getElementById('zvt-select-raza').addEventListener('change', zvt_applyBreed);
+  document.getElementById('zvt-btn-calcular').addEventListener('click', zvt_calcClick);
+})();
+      </script>
+    </section>
+
+    <!-- SECCIÓN 4 - CATÁLOGO CORRIDO -->
+    <section class="max-w-5xl mx-auto px-4 mb-20">
+
+        <article class="flex flex-col md:flex-row gap-8 items-center bg-white p-6 sm:p-10 border border-[#1a2e35]/10 rounded-sm mb-12 shadow-sm">
+            
+        <div class="w-full md:w-1/2 flex-shrink-0">
+          <img src="./images/kennels/kennel-l50.webp" alt="Kennel IATA L50 para Chihuahua y razas toy — transportadora rígida certificada para vuelo nacional e internacional desde Trujillo, Perú"
+          title="Kennel L50 IATA LAR 2026 — Chihuahua, Yorkshire, Maltés — Zoovet Travel, envío a todo el Perú"
+          class="w-full h-auto object-cover rounded-sm shadow-sm border border-[#1a2e35]/10"
+          loading="lazy" width="800" height="500" decoding="async">
+        </div>
+        
+            
+        <div class="w-full md:w-1/2 flex flex-col justify-center md:pr-10">
+          <div>
+            <span class="inline-block bg-[#0C789E] text-white text-xs font-bold px-3 py-1 uppercase tracking-wider rounded-sm mb-4">IATA LAR 2026 ✓</span>
+            <h2 class="text-3xl lg:text-4xl font-bold text-[#1a2e35] mb-6">Kennel L50</h2>
+          </div>
+          
+          <ul class="space-y-4 mb-8">
+            <li class="flex items-baseline">
+              <span class="font-semibold text-[#1a2e35] min-w-[140px] uppercase tracking-wide text-xs">Dimensiones:</span>
+              <span class="text-[#1a2e35]/80 bg-[#1a2e35]/5 px-3 py-1 rounded-sm border border-[#1a2e35]/10">50 × 38 × 35 cm</span>
+            </li>
+            <li class="flex items-baseline">
+              <span class="font-semibold text-[#1a2e35] min-w-[140px] uppercase tracking-wide text-xs">Peso máximo:</span>
+              <span class="text-[#1a2e35]/80 bg-[#1a2e35]/5 px-3 py-1 rounded-sm border border-[#1a2e35]/10">hasta 5 kg</span>
+            </li>
+            <li class="flex items-baseline">
+              <span class="font-semibold text-[#1a2e35] min-w-[140px] uppercase tracking-wide text-xs">Uso:</span>
+              <span class="text-[#1a2e35]/80">Cabina/Bodega</span>
+            </li>
+            <li class="flex items-baseline">
+              <span class="font-semibold text-[#1a2e35] min-w-[140px] uppercase tracking-wide text-xs">Razas de referencia:</span>
+              <span class="text-[#1a2e35]/80">Chihuahua, Yorkshire, Maltés, Gato</span>
+            </li>
+          </ul>
+          
+          <p class="text-[#1a2e35]/90 italic mb-8 border-l-4 border-[#0C789E] pl-4">Ideal para razas toy y gatos. Apto para cabina en aerolíneas que lo permitan.</p>
+          
+          <div>
+            <a href="https://wa.me/51979620402?text=Hola,%20me%20interesa%20el%20Kennel%20L50%20para%20mi%20mascota." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 border-2 border-[#0C789E] text-[#0C789E] hover:bg-[#0C789E] hover:text-white px-6 py-3 font-bold uppercase tracking-wide transition-colors rounded-sm text-sm">
+               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" /></svg>
+              Consultar Kennel L50
+            </a>
+          </div>
+        </div>
+        
+        </article>
+        
+        <article class="flex flex-col md:flex-row-reverse gap-8 items-center bg-white p-6 sm:p-10 border border-[#1a2e35]/10 rounded-sm mb-12 shadow-sm">
+            
+        <div class="w-full md:w-1/2 flex-shrink-0">
+          <img src="./images/kennels/kennel-l60.webp" alt="Kennel IATA L60 para Beagle y Schnauzer — transportadora rígida homologada para bodega en aerolíneas internacionales, disponible en Trujillo con envío nacional"
+          title="Kennel L60 IATA LAR 2026 — Beagle, Schnauzer, Shih Tzu — Zoovet Travel, envío a todo el Perú"
+          class="w-full h-auto object-cover rounded-sm shadow-sm border border-[#1a2e35]/10"
+          loading="lazy" width="800" height="500" decoding="async">
+        </div>
+        
+            
+        <div class="w-full md:w-1/2 flex flex-col justify-center md:pl-10">
+          <div>
+            <span class="inline-block bg-[#0C789E] text-white text-xs font-bold px-3 py-1 uppercase tracking-wider rounded-sm mb-4">IATA LAR 2026 ✓</span>
+            <h2 class="text-3xl lg:text-4xl font-bold text-[#1a2e35] mb-6">Kennel L60</h2>
+          </div>
+          
+          <ul class="space-y-4 mb-8">
+            <li class="flex items-baseline">
+              <span class="font-semibold text-[#1a2e35] min-w-[140px] uppercase tracking-wide text-xs">Dimensiones:</span>
+              <span class="text-[#1a2e35]/80 bg-[#1a2e35]/5 px-3 py-1 rounded-sm border border-[#1a2e35]/10">60 × 43 × 40 cm</span>
+            </li>
+            <li class="flex items-baseline">
+              <span class="font-semibold text-[#1a2e35] min-w-[140px] uppercase tracking-wide text-xs">Peso máximo:</span>
+              <span class="text-[#1a2e35]/80 bg-[#1a2e35]/5 px-3 py-1 rounded-sm border border-[#1a2e35]/10">hasta 10 kg</span>
+            </li>
+            <li class="flex items-baseline">
+              <span class="font-semibold text-[#1a2e35] min-w-[140px] uppercase tracking-wide text-xs">Uso:</span>
+              <span class="text-[#1a2e35]/80">Bodega</span>
+            </li>
+            <li class="flex items-baseline">
+              <span class="font-semibold text-[#1a2e35] min-w-[140px] uppercase tracking-wide text-xs">Razas de referencia:</span>
+              <span class="text-[#1a2e35]/80">Beagle, Schnauzer, Shih Tzu, Dachshund</span>
+            </li>
+          </ul>
+          
+          <p class="text-[#1a2e35]/90 italic mb-8 border-l-4 border-[#0C789E] pl-4">Para razas pequeñas y medianas. <a href="../articulos-interes/mascotabodega.html">Bodega en vuelos internacionales</a>.</p>
+          
+          <div>
+            <a href="https://wa.me/51979620402?text=Hola,%20me%20interesa%20el%20Kennel%20L60%20para%20mi%20mascota." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 border-2 border-[#0C789E] text-[#0C789E] hover:bg-[#0C789E] hover:text-white px-6 py-3 font-bold uppercase tracking-wide transition-colors rounded-sm text-sm">
+               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" /></svg>
+              Consultar Kennel L60
+            </a>
+          </div>
+        </div>
+        
+        </article>
+        
+        <article class="flex flex-col md:flex-row gap-8 items-center bg-white p-6 sm:p-10 border border-[#1a2e35]/10 rounded-sm mb-12 shadow-sm">
+            
+        <div class="w-full md:w-1/2 flex-shrink-0">
+          <img src="./images/kennels/kennel-l70.webp" alt="Kennel IATA L70 para Cocker Spaniel y Border Collie — jaula de transporte aéreo certificada IATA, bodega obligatoria, envío a Lima y todo el Perú"
+          title="Kennel L70 IATA LAR 2026 — Cocker Spaniel, Border Collie — Zoovet Travel, envío a todo el Perú"
+          class="w-full h-auto object-cover rounded-sm shadow-sm border border-[#1a2e35]/10"
+          loading="lazy" width="800" height="500" decoding="async">
+        </div>
+        
+            
+        <div class="w-full md:w-1/2 flex flex-col justify-center md:pr-10">
+          <div>
+            <span class="inline-block bg-[#0C789E] text-white text-xs font-bold px-3 py-1 uppercase tracking-wider rounded-sm mb-4">IATA LAR 2026 ✓</span>
+            <h2 class="text-3xl lg:text-4xl font-bold text-[#1a2e35] mb-6">Kennel L70</h2>
+          </div>
+          
+          <ul class="space-y-4 mb-8">
+            <li class="flex items-baseline">
+              <span class="font-semibold text-[#1a2e35] min-w-[140px] uppercase tracking-wide text-xs">Dimensiones:</span>
+              <span class="text-[#1a2e35]/80 bg-[#1a2e35]/5 px-3 py-1 rounded-sm border border-[#1a2e35]/10">70 × 50 × 48 cm</span>
+            </li>
+            <li class="flex items-baseline">
+              <span class="font-semibold text-[#1a2e35] min-w-[140px] uppercase tracking-wide text-xs">Peso máximo:</span>
+              <span class="text-[#1a2e35]/80 bg-[#1a2e35]/5 px-3 py-1 rounded-sm border border-[#1a2e35]/10">hasta 15 kg</span>
+            </li>
+            <li class="flex items-baseline">
+              <span class="font-semibold text-[#1a2e35] min-w-[140px] uppercase tracking-wide text-xs">Uso:</span>
+              <span class="text-[#1a2e35]/80">Bodega</span>
+            </li>
+            <li class="flex items-baseline">
+              <span class="font-semibold text-[#1a2e35] min-w-[140px] uppercase tracking-wide text-xs">Razas de referencia:</span>
+              <span class="text-[#1a2e35]/80">Cocker Spaniel, Border Collie</span>
+            </li>
+          </ul>
+          
+          <p class="text-[#1a2e35]/90 italic mb-8 border-l-4 border-[#0C789E] pl-4">Para razas medianas activas. Bodega obligatoria.</p>
+          
+          <div>
+            <a href="https://wa.me/51979620402?text=Hola,%20me%20interesa%20el%20Kennel%20L70%20para%20mi%20mascota." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 border-2 border-[#0C789E] text-[#0C789E] hover:bg-[#0C789E] hover:text-white px-6 py-3 font-bold uppercase tracking-wide transition-colors rounded-sm text-sm">
+               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" /></svg>
+              Consultar Kennel L70
+            </a>
+          </div>
+        </div>
+        
+        </article>
+        
+        <article class="flex flex-col md:flex-row-reverse gap-8 items-center bg-white p-6 sm:p-10 border border-[#1a2e35]/10 rounded-sm mb-12 shadow-sm">
+            
+        <div class="w-full md:w-1/2 flex-shrink-0">
+          <img src="./images/kennels/kennel-l80.webp" alt="Kennel IATA L80 para Golden Retriever mediano y Pitbull — transportadora rígida para bodega de avión, certificada IATA LAR 2026, venta y envío desde Trujillo Perú"
+          title="Kennel L80 IATA LAR 2026 — Golden Retriever, Pitbull — Zoovet Travel, envío a todo el Perú"
+          class="w-full h-auto object-cover rounded-sm shadow-sm border border-[#1a2e35]/10"
+          loading="lazy" width="800" height="500" decoding="async">
+        </div>
+        
+            
+        <div class="w-full md:w-1/2 flex flex-col justify-center md:pl-10">
+          <div>
+            <span class="inline-block bg-[#0C789E] text-white text-xs font-bold px-3 py-1 uppercase tracking-wider rounded-sm mb-4">IATA LAR 2026 ✓</span>
+            <h2 class="text-3xl lg:text-4xl font-bold text-[#1a2e35] mb-6">Kennel L80</h2>
+          </div>
+          
+          <ul class="space-y-4 mb-8">
+            <li class="flex items-baseline">
+              <span class="font-semibold text-[#1a2e35] min-w-[140px] uppercase tracking-wide text-xs">Dimensiones:</span>
+              <span class="text-[#1a2e35]/80 bg-[#1a2e35]/5 px-3 py-1 rounded-sm border border-[#1a2e35]/10">80 × 55 × 55 cm</span>
+            </li>
+            <li class="flex items-baseline">
+              <span class="font-semibold text-[#1a2e35] min-w-[140px] uppercase tracking-wide text-xs">Peso máximo:</span>
+              <span class="text-[#1a2e35]/80 bg-[#1a2e35]/5 px-3 py-1 rounded-sm border border-[#1a2e35]/10">hasta 23 kg</span>
+            </li>
+            <li class="flex items-baseline">
+              <span class="font-semibold text-[#1a2e35] min-w-[140px] uppercase tracking-wide text-xs">Uso:</span>
+              <span class="text-[#1a2e35]/80">Bodega</span>
+            </li>
+            <li class="flex items-baseline">
+              <span class="font-semibold text-[#1a2e35] min-w-[140px] uppercase tracking-wide text-xs">Razas de referencia:</span>
+              <span class="text-[#1a2e35]/80">Labrador hembra, Golden mediano, Pitbull</span>
+            </li>
+          </ul>
+          
+          <p class="text-[#1a2e35]/90 italic mb-8 border-l-4 border-[#0C789E] pl-4">Para razas medianas grandes. Bodega obligatoria.</p>
+          
+          <div>
+            <a href="https://wa.me/51979620402?text=Hola,%20me%20interesa%20el%20Kennel%20L80%20para%20mi%20mascota." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 border-2 border-[#0C789E] text-[#0C789E] hover:bg-[#0C789E] hover:text-white px-6 py-3 font-bold uppercase tracking-wide transition-colors rounded-sm text-sm">
+               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" /></svg>
+              Consultar Kennel L80
+            </a>
+          </div>
+        </div>
+        
+        </article>
+        
+        <article class="flex flex-col md:flex-row gap-8 items-center bg-white p-6 sm:p-10 border border-[#1a2e35]/10 rounded-sm mb-12 shadow-sm">
+            
+        <div class="w-full md:w-1/2 flex-shrink-0">
+          <img src="./images/kennels/kennel-l90.webp" alt="Kennel IATA L90 para Labrador Retriever adulto y Golden Retriever — la talla más solicitada para vuelos internacionales desde Perú, certificada IATA LAR 2026"
+          title="Kennel L90 IATA LAR 2026 — Labrador Retriever, Golden Retriever adulto — Zoovet Travel, envío a todo el Perú"
+          class="w-full h-auto object-cover rounded-sm shadow-sm border border-[#1a2e35]/10"
+          loading="lazy" width="800" height="500" decoding="async">
+        </div>
+        
+            
+        <div class="w-full md:w-1/2 flex flex-col justify-center md:pr-10">
+          <div>
+            <span class="inline-block bg-[#0C789E] text-white text-xs font-bold px-3 py-1 uppercase tracking-wider rounded-sm mb-4">IATA LAR 2026 ✓</span>
+            <h2 class="text-3xl lg:text-4xl font-bold text-[#1a2e35] mb-6">Kennel L90</h2>
+          </div>
+          
+          <ul class="space-y-4 mb-8">
+            <li class="flex items-baseline">
+              <span class="font-semibold text-[#1a2e35] min-w-[140px] uppercase tracking-wide text-xs">Dimensiones:</span>
+              <span class="text-[#1a2e35]/80 bg-[#1a2e35]/5 px-3 py-1 rounded-sm border border-[#1a2e35]/10">90 × 60 × 65 cm</span>
+            </li>
+            <li class="flex items-baseline">
+              <span class="font-semibold text-[#1a2e35] min-w-[140px] uppercase tracking-wide text-xs">Peso máximo:</span>
+              <span class="text-[#1a2e35]/80 bg-[#1a2e35]/5 px-3 py-1 rounded-sm border border-[#1a2e35]/10">hasta 31 kg</span>
+            </li>
+            <li class="flex items-baseline">
+              <span class="font-semibold text-[#1a2e35] min-w-[140px] uppercase tracking-wide text-xs">Uso:</span>
+              <span class="text-[#1a2e35]/80">Bodega</span>
+            </li>
+            <li class="flex items-baseline">
+              <span class="font-semibold text-[#1a2e35] min-w-[140px] uppercase tracking-wide text-xs">Razas de referencia:</span>
+              <span class="text-[#1a2e35]/80">Labrador adulto, Golden adulto, Husky Siberiano</span>
+            </li>
+          </ul>
+          
+          <p class="text-[#1a2e35]/90 italic mb-8 border-l-4 border-[#0C789E] pl-4">El más solicitado. Razas grandes estándar. Bodega obligatoria.</p>
+          
+          <div>
+            <a href="https://wa.me/51979620402?text=Hola,%20me%20interesa%20el%20Kennel%20L90%20para%20mi%20mascota." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 border-2 border-[#0C789E] text-[#0C789E] hover:bg-[#0C789E] hover:text-white px-6 py-3 font-bold uppercase tracking-wide transition-colors rounded-sm text-sm">
+               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" /></svg>
+              Consultar Kennel L90
+            </a>
+          </div>
+        </div>
+        
+        </article>
+        
+        <article class="flex flex-col md:flex-row-reverse gap-8 items-center bg-white p-6 sm:p-10 border border-[#1a2e35]/10 rounded-sm mb-12 shadow-sm">
+            
+        <div class="w-full md:w-1/2 flex-shrink-0">
+          <img src="./images/kennels/kennel-l100.webp" alt="Kennel IATA L100 para Pastor Alemán y Husky Siberiano — transportadora rígida de gran tamaño para bodega de carga, certificada IATA, envío nacional Perú"
+          title="Kennel L100 IATA LAR 2026 — Pastor Alemán, Husky Siberiano — Zoovet Travel, envío a todo el Perú"
+          class="w-full h-auto object-cover rounded-sm shadow-sm border border-[#1a2e35]/10"
+          loading="lazy" width="800" height="500" decoding="async">
+        </div>
+        
+            
+        <div class="w-full md:w-1/2 flex flex-col justify-center md:pl-10">
+          <div>
+            <span class="inline-block bg-[#0C789E] text-white text-xs font-bold px-3 py-1 uppercase tracking-wider rounded-sm mb-4">IATA LAR 2026 ✓</span>
+            <h2 class="text-3xl lg:text-4xl font-bold text-[#1a2e35] mb-6">Kennel L100</h2>
+          </div>
+          
+          <ul class="space-y-4 mb-8">
+            <li class="flex items-baseline">
+              <span class="font-semibold text-[#1a2e35] min-w-[140px] uppercase tracking-wide text-xs">Dimensiones:</span>
+              <span class="text-[#1a2e35]/80 bg-[#1a2e35]/5 px-3 py-1 rounded-sm border border-[#1a2e35]/10">100 × 68 × 75 cm</span>
+            </li>
+            <li class="flex items-baseline">
+              <span class="font-semibold text-[#1a2e35] min-w-[140px] uppercase tracking-wide text-xs">Peso máximo:</span>
+              <span class="text-[#1a2e35]/80 bg-[#1a2e35]/5 px-3 py-1 rounded-sm border border-[#1a2e35]/10">hasta 41 kg</span>
+            </li>
+            <li class="flex items-baseline">
+              <span class="font-semibold text-[#1a2e35] min-w-[140px] uppercase tracking-wide text-xs">Uso:</span>
+              <span class="text-[#1a2e35]/80">Bodega</span>
+            </li>
+            <li class="flex items-baseline">
+              <span class="font-semibold text-[#1a2e35] min-w-[140px] uppercase tracking-wide text-xs">Razas de referencia:</span>
+              <span class="text-[#1a2e35]/80">Pastor Alemán, Doberman</span>
+            </li>
+          </ul>
+          
+          <p class="text-[#1a2e35]/90 italic mb-8 border-l-4 border-[#0C789E] pl-4">Para razas grandes de trabajo. Bodega obligatoria.</p>
+          
+          <div>
+            <a href="https://wa.me/51979620402?text=Hola,%20me%20interesa%20el%20Kennel%20L100%20para%20mi%20mascota." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 border-2 border-[#0C789E] text-[#0C789E] hover:bg-[#0C789E] hover:text-white px-6 py-3 font-bold uppercase tracking-wide transition-colors rounded-sm text-sm">
+               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" /></svg>
+              Consultar Kennel L100
+            </a>
+          </div>
+        </div>
+        
+        </article>
+        
+        <article class="flex flex-col md:flex-row gap-8 items-center bg-white p-6 sm:p-10 border border-[#1a2e35]/10 rounded-sm mb-12 shadow-sm">
+            
+        <div class="w-full md:w-1/2 flex-shrink-0">
+          <img src="./images/kennels/kennel-l120.webp" alt="Kennel IATA L120 para Rottweiler y Doberman — transportadora gigante certificada IATA LAR 2026 para razas grandes, bodega de carga, envío a todo el Perú desde Trujillo"
+          title="Kennel L120 IATA LAR 2026 — Rottweiler, Doberman, Gran Danés — Zoovet Travel, envío a todo el Perú"
+          class="w-full h-auto object-cover rounded-sm shadow-sm border border-[#1a2e35]/10"
+          loading="lazy" width="800" height="500" decoding="async">
+        </div>
+        
+            
+        <div class="w-full md:w-1/2 flex flex-col justify-center md:pr-10">
+          <div>
+            <span class="inline-block bg-[#0C789E] text-white text-xs font-bold px-3 py-1 uppercase tracking-wider rounded-sm mb-4">IATA LAR 2026 ✓</span>
+            <h2 class="text-3xl lg:text-4xl font-bold text-[#1a2e35] mb-6">Kennel L120</h2>
+          </div>
+          
+          <ul class="space-y-4 mb-8">
+            <li class="flex items-baseline">
+              <span class="font-semibold text-[#1a2e35] min-w-[140px] uppercase tracking-wide text-xs">Dimensiones:</span>
+              <span class="text-[#1a2e35]/80 bg-[#1a2e35]/5 px-3 py-1 rounded-sm border border-[#1a2e35]/10">120 × 80 × 88 cm</span>
+            </li>
+            <li class="flex items-baseline">
+              <span class="font-semibold text-[#1a2e35] min-w-[140px] uppercase tracking-wide text-xs">Peso máximo:</span>
+              <span class="text-[#1a2e35]/80 bg-[#1a2e35]/5 px-3 py-1 rounded-sm border border-[#1a2e35]/10">hasta 57 kg</span>
+            </li>
+            <li class="flex items-baseline">
+              <span class="font-semibold text-[#1a2e35] min-w-[140px] uppercase tracking-wide text-xs">Uso:</span>
+              <span class="text-[#1a2e35]/80">Bodega</span>
+            </li>
+            <li class="flex items-baseline">
+              <span class="font-semibold text-[#1a2e35] min-w-[140px] uppercase tracking-wide text-xs">Razas de referencia:</span>
+              <span class="text-[#1a2e35]/80">Rottweiler, Gran Danés</span>
+            </li>
+          </ul>
+          
+          <p class="text-[#1a2e35]/90 italic mb-8 border-l-4 border-[#0C789E] pl-4">Para razas gigantes. El kennel más grande de nuestra línea.</p>
+          
+          <div>
+            <a href="https://wa.me/51979620402?text=Hola,%20me%20interesa%20el%20Kennel%20L120%20para%20mi%20mascota." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 border-2 border-[#0C789E] text-[#0C789E] hover:bg-[#0C789E] hover:text-white px-6 py-3 font-bold uppercase tracking-wide transition-colors rounded-sm text-sm">
+               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" /></svg>
+              Consultar Kennel L120
+            </a>
+          </div>
+        </div>
+        
+        </article>
+        
+    </section>
+
+    <!-- SECCIÓN 5 - REQUISITOS IATA -->
+    <section class="max-w-4xl mx-auto px-4 mb-20">
+      <h2 class="text-2xl md:text-3xl font-bold mb-8 tracking-wide text-[#1a2e35] text-center">¿Qué debe tener un kennel IATA?</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="bg-white p-6 border border-[#1a2e35]/10 rounded-sm shadow-sm flex items-start gap-4">
+          <div class="text-[#0C789E] mt-1 shrink-0"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
+          <p class="font-medium text-[#1a2e35]/90 leading-relaxed">Construcción rígida con tornillos metálicos</p>
+        </div>
+        <div class="bg-white p-6 border border-[#1a2e35]/10 rounded-sm shadow-sm flex items-start gap-4">
+          <div class="text-[#0C789E] mt-1 shrink-0"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
+          <p class="font-medium text-[#1a2e35]/90 leading-relaxed">Puerta metálica con cierre doble (arriba y abajo)</p>
+        </div>
+        <div class="bg-white p-6 border border-[#1a2e35]/10 rounded-sm shadow-sm flex items-start gap-4">
+          <div class="text-[#0C789E] mt-1 shrink-0"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
+          <p class="font-medium text-[#1a2e35]/90 leading-relaxed">Ventilación en los 4 costados</p>
+        </div>
+        <div class="bg-white p-6 border border-[#1a2e35]/10 rounded-sm shadow-sm flex items-start gap-4">
+          <div class="text-[#0C789E] mt-1 shrink-0"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
+          <p class="font-medium text-[#1a2e35]/90 leading-relaxed">Dos recipientes fijados a la puerta rellenables desde el exterior sin abrir</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 6 - AVISO LEGAL -->
+    <section class="max-w-4xl mx-auto px-4 mb-20">
+      <div class="bg-[#1a2e35]/5 p-6 sm:p-8 rounded-sm text-center">
+        <p class="text-xs sm:text-sm text-[#1a2e35]/70 italic leading-relaxed max-w-3xl mx-auto">
+          Las medidas y pesos indicados son referenciales según normativa IATA LAR 2026. Las aerolíneas pueden aplicar restricciones adicionales. Consulta siempre con tu aerolínea antes de viajar. Zoovet Travel no se responsabiliza por cambios en políticas de aerolíneas.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 7 - CONTACTO / CTA -->
+    <section id="contacto-final" class="bg-[#1a2e35] py-16 px-4 text-center border-t-[4px] border-[#0C789E]">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-2xl md:text-3xl font-bold mb-6 tracking-wide text-white">¿No sabes qué talla necesita tu mascota? Escríbenos con el peso y la raza y te asesoramos sin costo.</h2>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8">
+          <a href="https://wa.me/51979620402" target="_blank" rel="noopener noreferrer" class="bg-[#25D366] text-white hover:bg-[#20bd5a] px-8 py-4 font-bold uppercase tracking-wide rounded-sm transition-colors flex items-center justify-center gap-2 w-full sm:w-auto shadow-lg hover:shadow-xl hover:-translate-y-1">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" /></svg>
+            +51 979620402
+          </a>
+          <a href="tel:044366094" class="bg-transparent border-2 border-white/20 text-white hover:bg-white/10 px-8 py-4 font-bold uppercase tracking-wide rounded-sm transition-colors flex items-center justify-center gap-2 w-full sm:w-auto">
+            044 366094
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#1a2e35] text-[#F8FAFC] font-montserrat border-t-[0.5px] border-white/10" role="contentinfo">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-12">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 lg:gap-8">
+        <div class="lg:col-span-1">
+          <p class="text-base font-bold tracking-[0.2em] uppercase text-[#F8FAFC] mb-3">ZOOVET TRAVEL</p>
+          <p class="text-sm text-[#F8FAFC]/80 leading-relaxed max-w-xs">Más de 12 años de excelencia en exportación internacional de mascotas y medicina veterinaria de especialidad.</p>
+        </div>
+        <div>
+          <p class="text-xs font-semibold tracking-wider uppercase text-[#F8FAFC]/90 mb-4">Exportación</p>
+          <ul class="space-y-2">
+            <li><a href="./index.html#exportacion" class="text-sm text-slate-400 hover:text-white transition-colors block py-2">Gestión SENASA</a></li>
+            <li><a href="./index.html#exportacion" class="text-sm text-slate-400 hover:text-white transition-colors block py-2">Microchip ISO</a></li>
+            <li><a href="./index.html#exportacion" class="text-sm text-slate-400 hover:text-white transition-colors block py-2">Serología de Rabia</a></li>
+            <li><a href="./index.html#exportacion" class="text-sm text-slate-400 hover:text-white transition-colors block py-2">Protocolos Internacionales</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-xs font-semibold tracking-wider uppercase text-[#F8FAFC]/90 mb-4">Contacto</p>
+          <div class="space-y-4 text-sm text-slate-400">
+            <p class="flex items-start gap-2">
+              <span class="flex-shrink-0 mt-0.5 text-[#0C789E]" aria-hidden="true">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+              </span>
+              <a href="https://www.google.com/maps/search/?api=1&query=Calle+Cuba+241,+Urb.+El+Recreo,+Trujillo,+La+Libertad,+Peru" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Calle Cuba 241, Urb. El Recreo, Trujillo</a>
+            </p>
+            <div class="space-y-2">
+              <a href="tel:044366094" class="flex items-center gap-2 hover:text-white transition-colors block">
+                <svg class="w-4 h-4 flex-shrink-0 text-[#0C789E]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+                044 366094
+              </a>
+              <a href="https://wa.me/51979620402" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-white transition-colors block">
+                <svg class="w-4 h-4 flex-shrink-0 text-[#0C789E]" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" /></svg>
+                +51 922083707
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-[#F8FAFC]/10 px-4 sm:px-6 py-4">
+      <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-xs text-[#F8FAFC]/60 text-center sm:text-left">© 2026 Zoovet Travel. Todos los derechos reservados.</p>
+        <p class="text-[10px] text-[#F8FAFC]/40 font-mono text-center sm:text-right">Diseño y propiedad: Carlos Ravello Joo · Modelo de coherencia dinámico — MCD</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
