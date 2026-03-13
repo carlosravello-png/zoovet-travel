@@ -204,6 +204,35 @@
         <h2 class="text-2xl md:text-3xl font-bold text-[#1a2e35] mb-2" style="font-family: 'Montserrat', sans-serif;">Calculateur de Caisse IATA</h2>
         <p class="text-sm text-[#1a2e35]/80 mb-8">Trouvez la taille idéale pour votre animal en quelques secondes.</p>
 
+        
+        <div class="mb-6" id="zvt-step-dest">
+          <p class="text-xs font-semibold text-[#1a2e35]/70 uppercase tracking-wide mb-2">ÉTAPE 0 — Destination</p>
+          <select id="zvt-select-dest" class="w-full max-w-md mx-auto block border border-[#1a2e35]/20 rounded-sm px-4 py-3 text-[#1a2e35] bg-white">
+            <option value="">Vers quel pays voyage votre animal ? (optionnel)</option>
+          <option value="Australie">Australie</option>
+          <option value="Nouvelle-Zélande">Nouvelle-Zélande</option>
+          <option value="Japon">Japon</option>
+          <option value="Singapour">Singapour</option>
+          <option value="États-Unis">États-Unis</option>
+          <option value="Canada">Canada</option>
+          <option value="Royaume-Uni">Royaume-Uni</option>
+          <option value="Espagne">Espagne</option>
+          <option value="France">France</option>
+          <option value="Allemagne">Allemagne</option>
+          <option value="Italie">Italie</option>
+          <option value="Union européenne">Union européenne</option>
+          <option value="Brésil">Brésil</option>
+          <option value="Chili">Chili</option>
+          <option value="Chine">Chine</option>
+          <option value="Inde">Inde</option>
+          <option value="Corée du Sud">Corée du Sud</option>
+          <option value="Émirats arabes unis">Émirats arabes unis</option>
+          <option value="Afrique du Sud">Afrique du Sud</option>
+          <option value="Russie">Russie</option>
+          </select>
+          <div id="zvt-dest-note" class="hidden mt-3 max-w-md mx-auto bg-[#1a2e35]/5 border-l-4 border-[#0C789E] px-4 py-3 text-sm text-[#1a2e35]/90 rounded-sm"></div>
+        </div>
+
         <div class="mb-6">
           <p class="text-xs font-semibold text-[#1a2e35]/70 uppercase tracking-wide mb-3">ÉTAPE 1 — Espèce</p>
           <div class="flex gap-3 justify-center flex-wrap">
@@ -263,6 +292,23 @@
           <p id="zvt-result-min" class="text-xs text-[#F8FAFC]/60 mb-3"></p>
           <div id="zvt-badge-brachy" class="hidden mt-2"><span class="inline-block bg-red-600/90 text-white text-xs font-semibold px-3 py-1 rounded-sm">⚠ <a href="../articles/zoovet_article3_braquicefalos_FR.html">Race brachycéphale</a> — taille augmentée selon IATA</span></div>
           <div id="zvt-badge-peso" class="hidden mt-2"><span class="inline-block bg-orange-500/90 text-white text-xs font-semibold px-3 py-1 rounded-sm">⚠ Plus de 14 kg : voyage individuel obligatoire — IATA LAR 2026</span></div>
+          
+          <div id="zvt-dest-result-note" class="hidden mt-3 bg-[#0C789E]/15 border border-[#0C789E]/40 px-4 py-3 text-sm text-white rounded-sm"></div>
+          <hr class="border-[#F8FAFC]/20 my-4"/>
+          <div class="mb-3 bg-white/10 rounded-sm p-4 text-center">
+            <p class="text-xs text-[#F8FAFC]/60 uppercase tracking-wide mb-2">Acheter une caisse IATA certifiée</p>
+            <a id="zvt-amazon-link" href="#" target="_blank" rel="noopener noreferrer sponsored"
+               class="inline-flex items-center justify-center gap-2 bg-[#FF9900] text-[#1a2e35] font-bold py-3 px-6 rounded-sm w-full max-w-md mx-auto mb-2 text-sm hover:bg-[#e88800] transition-colors">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M13.958 10.09c0 1.232.029 2.256-.591 3.351-.502.891-1.301 1.438-2.186 1.438-1.214 0-1.922-.924-1.922-2.292 0-2.692 2.415-3.182 4.699-3.182v.685zm3.186 7.705c-.209.189-.512.201-.745.076-1.047-.872-1.234-1.276-1.814-2.107-1.733 1.767-2.96 2.297-5.209 2.297-2.66 0-4.731-1.641-4.731-4.925 0-2.565 1.391-4.309 3.37-5.164 1.715-.754 4.11-.891 5.942-1.095v-.41c0-.753.06-1.642-.384-2.294-.385-.579-1.124-.819-1.775-.819-1.205 0-2.277.618-2.54 1.9-.054.285-.261.567-.549.582l-3.061-.33c-.259-.058-.548-.266-.472-.66C5.627 2.332 8.492 1 11.635 1c1.608 0 3.71.427 4.979 1.644 1.608 1.503 1.455 3.512 1.455 5.697v5.162c0 1.552.644 2.235 1.25 3.073.211.297.258.652-.01.873l-2.165 1.346z"/></svg>
+              Voir sur Amazon — Caisse <span class="zvt-amazon-talla"></span>
+            </a>
+            <p class="text-[10px] text-[#F8FAFC]/40">Lien affilié — acheter via ce lien soutient ce site sans frais supplémentaires.</p>
+          </div>
+          <button id="zvt-btn-pdf" type="button"
+            class="inline-flex items-center justify-center gap-2 bg-white/15 hover:bg-white/25 text-white font-semibold py-3 px-6 rounded-sm w-full max-w-md mx-auto mb-3 text-sm transition-colors border border-white/20">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            Télécharger la Prescription PDF
+          </button>
           <hr class="border-[#F8FAFC]/20 my-4"/>
           <p class="text-[10px] text-[#F8FAFC]/50 text-center mb-4">© 2026 Zoovet Travel — zoovettravel.com<br/>Calculateur IATA LAR 2026 v1.0</p>
           <a id="zvt-whatsapp" href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white font-bold py-3 px-6 rounded-sm w-full max-w-md mx-auto mb-4">💬 Consulter disponibilité Caisse <span id="zvt-wa-talla"></span></a>
@@ -361,10 +407,220 @@
     document.getElementById('zvt-badge-peso').style.display = r.soloIndividual ? 'block' : 'none';
     var label = r.serie.label;
     document.getElementById('zvt-wa-talla').textContent = label;
+    // Update amazon talla spans
+    document.querySelectorAll('.zvt-amazon-talla').forEach(function(el){ el.textContent = label; });
+    // Update amazon link
+    var amLink = document.getElementById('zvt-amazon-link');
+    if(amLink && ZVT_AMAZON_LINKS[label]) amLink.href = ZVT_AMAZON_LINKS[label];
+    // Update dest result note
+    var destVal = document.getElementById('zvt-select-dest').value;
+    var resNote = document.getElementById('zvt-dest-result-note');
+    if(destVal && ZVT_DEST_NOTES[destVal]){ resNote.textContent = ZVT_DEST_NOTES[destVal]; resNote.classList.remove('hidden'); } else { resNote.classList.add('hidden'); }
     document.getElementById('zvt-whatsapp').href = 'https://wa.me/51979620402?text=' + encodeURIComponent('Bonjour, je suis intéressé par la caisse '+label+' pour mon animal. Le calculateur IATA de Zoovet Travel m\'a recommandé cette taille.');
     document.getElementById('zvt-resultado').classList.remove('hidden');
     document.getElementById('zvt-resultado').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   }
+
+  // ── DESTINATION NOTES ────────────────────────────────────────────
+  var ZVT_DEST_NOTES = {
+    'Australie': '⚠ Pays non approuvé depuis le Pérou — pays intermédiaire obligatoire (min. 180 jours). Manifest Cargo uniquement. Processus total : 12-13 mois.',
+    'Nouvelle-Zélande': "⚠ Pays non approuvé depuis le Pérou. Processus identique à l'Australie avec pays intermédiaire obligatoire.",
+    'Japon': '⚠ Protocole le plus strict au monde. Minimum 180 jours depuis le dernier vaccin antirabique. Sans exception.',
+    'Singapour': '⚠ Quarantaine obligatoire 10-14 jours aux frais du propriétaire. Micropuce ISO + vaccination complète requise.',
+    'États-Unis': '⚠ Pérou = pays à haut risque de rage canine (CDC). RNATT obligatoire + réservation en Animal Care Facility.',
+    'Canada': 'Micropuce ISO + vaccin antirabique valide. Certificat officiel CFIA requis. Processus modéré.',
+    'Royaume-Uni': '⚠ Régime propre post-Brexit (DEFRA). Titre sérologique antirabique. Différent du règlement UE depuis 2021.',
+    'Espagne': "Règlement UE 576/2013. Titre sérologique antirabique obligatoire depuis le Pérou. Le passeport européen NE s'applique PAS depuis le Pérou.",
+    'France': 'Règlement UE 576/2013. Titre sérologique antirabique obligatoire depuis le Pérou.',
+    'Allemagne': 'Règlement UE 576/2013. Titre sérologique antirabique obligatoire depuis le Pérou.',
+    'Italie': 'Règlement UE 576/2013. Titre sérologique antirabique obligatoire depuis le Pérou.',
+    'Union européenne': "Règlement UE 576/2013. Titre sérologique antirabique obligatoire depuis le Pérou. S'applique à tous les États membres.",
+    'Brésil': 'Certificat SENASA + exigences MAPA Brésil SDA. Processus relativement accessible.',
+    'Chili': 'Certificat SENASA mis à jour. SAG Chili. Processus accessible. Vérifier les exigences en vigueur.',
+    'Chine': '⚠ Quarantaine obligatoire aux frais du propriétaire. Haute complexité. Consultez délais et coûts.',
+    'Inde': '⚠ Quarantaine + certification spécifique Inde. Délais variables. Processus complexe.',
+    'Corée du Sud': '⚠ Processus strict. Animal Quarantine Service. Certification spécifique requise.',
+    'Émirats arabes unis': 'MOCCAE + micropuce ISO. Vérifier les restrictions de races spécifiques.',
+    'Afrique du Sud': 'DAFF SA. Micropuce + vaccins + certificat SENASA. Complexité modérée.',
+    'Russie': 'Certificat SENASA + notification préalable à Rosselkhoznadzor. Processus variable.'
+  };
+
+  document.getElementById('zvt-select-dest').addEventListener('change', function() {
+    var dest = this.value;
+    var noteEl = document.getElementById('zvt-dest-note');
+    if (dest && ZVT_DEST_NOTES[dest]) {
+      noteEl.textContent = ZVT_DEST_NOTES[dest];
+      noteEl.classList.remove('hidden');
+    } else {
+      noteEl.classList.add('hidden');
+    }
+    // Update result note if result is visible
+    var resNote = document.getElementById('zvt-dest-result-note');
+    if (!document.getElementById('zvt-resultado').classList.contains('hidden')) {
+      if (dest && ZVT_DEST_NOTES[dest]) {
+        resNote.textContent = ZVT_DEST_NOTES[dest];
+        resNote.classList.remove('hidden');
+      } else {
+        resNote.classList.add('hidden');
+      }
+    }
+  });
+
+  // ── AMAZON PLACEHOLDER (replace # with affiliate link per size) ──
+  var ZVT_AMAZON_LINKS = {
+    'L50':  '#AMAZON-L50-LINK',
+    'L60':  '#AMAZON-L60-LINK',
+    'L70':  '#AMAZON-L70-LINK',
+    'L80':  '#AMAZON-L80-LINK',
+    'L90':  '#AMAZON-L90-LINK',
+    'L100': '#AMAZON-L100-LINK',
+    'L120': '#AMAZON-L120-LINK'
+  };
+
+  // ── PDF GENERATION (jsPDF lazy-loaded) ──────────────────────────
+  document.getElementById('zvt-btn-pdf').addEventListener('click', function() {
+    var btn = this;
+    btn.disabled = true;
+    btn.textContent = '...';
+
+    function generatePDF() {
+      var talla   = document.getElementById('zvt-result-talla').textContent;
+      var dims    = document.getElementById('zvt-result-dim').textContent;
+      var uso     = document.getElementById('zvt-result-uso').textContent;
+      var minDims = document.getElementById('zvt-result-min').textContent;
+      var raza    = document.getElementById('zvt-select-raza').value || '—';
+      var dest    = document.getElementById('zvt-select-dest').value || '';
+      var brachy  = document.getElementById('zvt-badge-brachy').style.display !== 'none';
+      var heavy   = document.getElementById('zvt-badge-peso').style.display !== 'none';
+      var today   = new Date().toLocaleDateString('es-PE', {day:'2-digit',month:'long',year:'numeric'});
+
+      var doc = new jspdf.jsPDF({ unit:'mm', format:'a5', orientation:'portrait' });
+      var W = 148, H = 210;
+
+      // Header bar
+      doc.setFillColor(26, 46, 53);
+      doc.rect(0, 0, W, 28, 'F');
+
+      // Logo text
+      doc.setFont('helvetica', 'bold');
+      doc.setFontSize(14);
+      doc.setTextColor(255, 255, 255);
+      doc.text('ZOOVET TRAVEL', 10, 11);
+
+      doc.setFont('helvetica', 'normal');
+      doc.setFontSize(7);
+      doc.setTextColor(248, 250, 252);
+      doc.text('Centro Médico Veterinario — Trujillo, Perú', 10, 17);
+      doc.text('Especialistas en exportación internacional de mascotas', 10, 22);
+
+      // Title bar
+      doc.setFillColor(12, 120, 158);
+      doc.rect(0, 28, W, 10, 'F');
+      doc.setFont('helvetica', 'bold');
+      doc.setFontSize(9);
+      doc.setTextColor(255, 255, 255);
+      doc.text('PRESCRIPTION CAISSE IATA', W/2, 35, { align:'center' });
+
+      // Date
+      doc.setFont('helvetica', 'normal');
+      doc.setFontSize(7);
+      doc.setTextColor(100, 100, 100);
+      doc.text(today, W - 10, 35, { align:'right' });
+
+      // Main kennel result
+      doc.setFillColor(247, 250, 252);
+      doc.roundedRect(8, 42, W - 16, 32, 2, 2, 'F');
+
+      doc.setFont('helvetica', 'bold');
+      doc.setFontSize(22);
+      doc.setTextColor(12, 120, 158);
+      doc.text(talla, W/2, 57, { align:'center' });
+
+      doc.setFontSize(9);
+      doc.setTextColor(26, 46, 53);
+      doc.text(dims, W/2, 65, { align:'center' });
+
+      doc.setFont('helvetica', 'normal');
+      doc.setFontSize(7);
+      doc.setTextColor(100, 100, 100);
+      doc.text(uso, W/2, 70, { align:'center' });
+
+      // Details table
+      var y = 82;
+      var rows = [
+        ['Race / Espèce', raza],
+        ['Caisse IATA recommandée', talla],
+        ['Dimensions minimales (L × l × H)', dims],
+        ['Utilisation', uso],
+        ['Dimensions minimales (L × l × H) mín.', minDims.replace('Mínimo requerido por IATA: ','').replace('Minimum required by IATA: ','').replace('Minimum requis IATA: ','')],
+      ];
+      if (dest) rows.splice(1, 0, ['Destination', dest]);
+
+      rows.forEach(function(row) {
+        doc.setFillColor(240, 246, 248);
+        doc.rect(8, y - 4, 60, 7, 'F');
+        doc.setFont('helvetica', 'bold');
+        doc.setFontSize(7);
+        doc.setTextColor(26, 46, 53);
+        doc.text(row[0], 10, y);
+
+        doc.setFont('helvetica', 'normal');
+        doc.setFontSize(7);
+        doc.setTextColor(50, 50, 50);
+        var val = doc.splitTextToSize(row[1], 65);
+        doc.text(val, 70, y);
+        y += 9;
+      });
+
+      // Badges
+      if (brachy) {
+        doc.setFillColor(185, 28, 28);
+        doc.roundedRect(8, y, W - 16, 8, 1, 1, 'F');
+        doc.setFont('helvetica', 'bold');
+        doc.setFontSize(7);
+        doc.setTextColor(255, 255, 255);
+        doc.text('★ Race brachycéphale — taille augmentée +10% (IATA LAR 2026)', W/2, y + 5.5, { align:'center' });
+        y += 11;
+      }
+      if (heavy) {
+        doc.setFillColor(234, 88, 12);
+        doc.roundedRect(8, y, W - 16, 8, 1, 1, 'F');
+        doc.setFont('helvetica', 'bold');
+        doc.setFontSize(7);
+        doc.setTextColor(255, 255, 255);
+        doc.text('⚠ Plus de 14 kg — voyage individuel obligatoire', W/2, y + 5.5, { align:'center' });
+        y += 11;
+      }
+
+      // Footer
+      doc.setFillColor(26, 46, 53);
+      doc.rect(0, H - 22, W, 22, 'F');
+      doc.setFont('helvetica', 'bold');
+      doc.setFontSize(7);
+      doc.setTextColor(12, 120, 158);
+      doc.text('WhatsApp: +51 979 620 402  |  zoovettravel.com', W/2, H - 14, { align:'center' });
+      doc.setFont('helvetica', 'normal');
+      doc.setFontSize(6);
+      doc.setTextColor(180, 200, 210);
+      doc.text('Mesures de référence selon IATA LAR 2026. Toujours confirmer avec la compagnie aérienne.', W/2, H - 8, { align:'center' });
+      doc.setTextColor(100, 130, 140);
+      doc.text('© 2026 Zoovet Travel. Calculadora IATA LAR 2026 v2.0', W/2, H - 3, { align:'center' });
+
+      doc.save('prescription-caisse-iata-zoovettravel.pdf');
+      btn.disabled = false;
+      btn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg> ✓ PDF descargado';
+    }
+
+    if (typeof jspdf === 'undefined') {
+      var s = document.createElement('script');
+      s.src = 'https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js';
+      s.onload = generatePDF;
+      document.head.appendChild(s);
+    } else {
+      generatePDF();
+    }
+  });
+
   zvt_filtrarRazas('perro');
   document.getElementById('zvt-btn-perro').addEventListener('click', function(){ zvt_setSpecies('perro'); });
   document.getElementById('zvt-btn-gato').addEventListener('click', function(){ zvt_setSpecies('gato'); });
@@ -374,7 +630,191 @@
       </script>
     </section>
 
-    <!-- SECCIÓN 4 - CATÁLOGO CORRIDO -->
+
+    <!-- TABLA SEO IATA — indexable por Google -->
+    <section class="max-w-4xl mx-auto px-4 mb-20" id="tabla-tallas-iata">
+      <h2 class="text-2xl font-bold text-[#1a2e35] mb-3" style="font-family:'Montserrat',sans-serif;">Tableau des tailles IATA par race</h2>
+      <p class="text-sm text-[#1a2e35]/70 mb-6">Référence rapide de la caisse IATA recommandée par race selon la formule LAR 2026. Les valeurs sont des moyennes raciales — utilisez la calculatrice ci-dessus pour la taille exacte de votre animal.</p>
+      <div class="overflow-x-auto rounded-sm border border-[#1a2e35]/10 shadow-sm">
+        <table class="w-full text-left border-collapse bg-white">
+          <thead>
+            <tr class="bg-[#1a2e35] text-white text-xs uppercase tracking-wide">
+              <th class="px-3 py-3">Race</th>
+              <th class="px-3 py-3">Caisse</th>
+              <th class="px-3 py-3">Dimensions (cm)</th>
+              <th class="px-3 py-3">Poids max.</th>
+              <th class="px-3 py-3">Utilisation</th>
+              <th class="px-3 py-3">Note</th>
+            </tr>
+          </thead>
+          <tbody>
+        <tr class="border-b border-[#1a2e35]/8 hover:bg-[#0C789E]/5 transition-colors">
+          <td class="px-3 py-2 font-medium text-[#1a2e35] text-sm">Chihuahua</td>
+          <td class="px-3 py-2 font-bold text-[#0C789E] text-sm">L50</td>
+          <td class="px-3 py-2 text-[#1a2e35]/80 text-sm font-mono">50×38×35</td>
+          <td class="px-3 py-2 text-[#1a2e35]/80 text-sm">jusqu'à 5 kg</td>
+          <td class="px-3 py-2 text-[#1a2e35]/70 text-sm">Cabine / Soute</td>
+          <td class="px-3 py-2 text-xs text-[#1a2e35]/30">—</td>
+        </tr>
+        <tr class="border-b border-[#1a2e35]/8 hover:bg-[#0C789E]/5 transition-colors">
+          <td class="px-3 py-2 font-medium text-[#1a2e35] text-sm">Yorkshire Terrier</td>
+          <td class="px-3 py-2 font-bold text-[#0C789E] text-sm">L50</td>
+          <td class="px-3 py-2 text-[#1a2e35]/80 text-sm font-mono">50×38×35</td>
+          <td class="px-3 py-2 text-[#1a2e35]/80 text-sm">jusqu'à 5 kg</td>
+          <td class="px-3 py-2 text-[#1a2e35]/70 text-sm">Cabine / Soute</td>
+          <td class="px-3 py-2 text-xs text-[#1a2e35]/30">—</td>
+        </tr>
+        <tr class="border-b border-[#1a2e35]/8 hover:bg-[#0C789E]/5 transition-colors">
+          <td class="px-3 py-2 font-medium text-[#1a2e35] text-sm">Maltais</td>
+          <td class="px-3 py-2 font-bold text-[#0C789E] text-sm">L60</td>
+          <td class="px-3 py-2 text-[#1a2e35]/80 text-sm font-mono">60×43×40</td>
+          <td class="px-3 py-2 text-[#1a2e35]/80 text-sm">jusqu'à 10 kg</td>
+          <td class="px-3 py-2 text-[#1a2e35]/70 text-sm">Soute</td>
+          <td class="px-3 py-2 text-xs text-[#1a2e35]/30">—</td>
+        </tr>
+        <tr class="border-b border-[#1a2e35]/8 hover:bg-[#0C789E]/5 transition-colors">
+          <td class="px-3 py-2 font-medium text-[#1a2e35] text-sm">Chat Persan</td>
+          <td class="px-3 py-2 font-bold text-[#0C789E] text-sm">L70</td>
+          <td class="px-3 py-2 text-[#1a2e35]/80 text-sm font-mono">70×50×48</td>
+          <td class="px-3 py-2 text-[#1a2e35]/80 text-sm">jusqu'à 15 kg</td>
+          <td class="px-3 py-2 text-[#1a2e35]/70 text-sm">Soute</td>
+          <td class="px-3 py-2 text-xs text-red-700 font-semibold">★ Brachycéphale</td>
+        </tr>
+        <tr class="border-b border-[#1a2e35]/8 hover:bg-[#0C789E]/5 transition-colors">
+          <td class="px-3 py-2 font-medium text-[#1a2e35] text-sm">Chat domestique</td>
+          <td class="px-3 py-2 font-bold text-[#0C789E] text-sm">L60</td>
+          <td class="px-3 py-2 text-[#1a2e35]/80 text-sm font-mono">60×43×40</td>
+          <td class="px-3 py-2 text-[#1a2e35]/80 text-sm">jusqu'à 10 kg</td>
+          <td class="px-3 py-2 text-[#1a2e35]/70 text-sm">Soute</td>
+          <td class="px-3 py-2 text-xs text-[#1a2e35]/30">—</td>
+        </tr>
+        <tr class="border-b border-[#1a2e35]/8 hover:bg-[#0C789E]/5 transition-colors">
+          <td class="px-3 py-2 font-medium text-[#1a2e35] text-sm">Shih Tzu</td>
+          <td class="px-3 py-2 font-bold text-[#0C789E] text-sm">L80</td>
+          <td class="px-3 py-2 text-[#1a2e35]/80 text-sm font-mono">80×55×55</td>
+          <td class="px-3 py-2 text-[#1a2e35]/80 text-sm">jusqu'à 23 kg</td>
+          <td class="px-3 py-2 text-[#1a2e35]/70 text-sm">Soute</td>
+          <td class="px-3 py-2 text-xs text-red-700 font-semibold">★ Brachycéphale</td>
+        </tr>
+        <tr class="border-b border-[#1a2e35]/8 hover:bg-[#0C789E]/5 transition-colors">
+          <td class="px-3 py-2 font-medium text-[#1a2e35] text-sm">Carlin (Pug)</td>
+          <td class="px-3 py-2 font-bold text-[#0C789E] text-sm">L80</td>
+          <td class="px-3 py-2 text-[#1a2e35]/80 text-sm font-mono">80×55×55</td>
+          <td class="px-3 py-2 text-[#1a2e35]/80 text-sm">jusqu'à 23 kg</td>
+          <td class="px-3 py-2 text-[#1a2e35]/70 text-sm">Soute</td>
+          <td class="px-3 py-2 text-xs text-red-700 font-semibold">★ Brachycéphale</td>
+        </tr>
+        <tr class="border-b border-[#1a2e35]/8 hover:bg-[#0C789E]/5 transition-colors">
+          <td class="px-3 py-2 font-medium text-[#1a2e35] text-sm">Bouledogue français</td>
+          <td class="px-3 py-2 font-bold text-[#0C789E] text-sm">L90</td>
+          <td class="px-3 py-2 text-[#1a2e35]/80 text-sm font-mono">90×60×65</td>
+          <td class="px-3 py-2 text-[#1a2e35]/80 text-sm">jusqu'à 31 kg</td>
+          <td class="px-3 py-2 text-[#1a2e35]/70 text-sm">Soute</td>
+          <td class="px-3 py-2 text-xs text-red-700 font-semibold">★ Brachycéphale</td>
+        </tr>
+        <tr class="border-b border-[#1a2e35]/8 hover:bg-[#0C789E]/5 transition-colors">
+          <td class="px-3 py-2 font-medium text-[#1a2e35] text-sm">Teckel</td>
+          <td class="px-3 py-2 font-bold text-[#0C789E] text-sm">L70</td>
+          <td class="px-3 py-2 text-[#1a2e35]/80 text-sm font-mono">70×50×48</td>
+          <td class="px-3 py-2 text-[#1a2e35]/80 text-sm">jusqu'à 15 kg</td>
+          <td class="px-3 py-2 text-[#1a2e35]/70 text-sm">Soute</td>
+          <td class="px-3 py-2 text-xs text-[#1a2e35]/30">—</td>
+        </tr>
+        <tr class="border-b border-[#1a2e35]/8 hover:bg-[#0C789E]/5 transition-colors">
+          <td class="px-3 py-2 font-medium text-[#1a2e35] text-sm">Beagle</td>
+          <td class="px-3 py-2 font-bold text-[#0C789E] text-sm">L80</td>
+          <td class="px-3 py-2 text-[#1a2e35]/80 text-sm font-mono">80×55×55</td>
+          <td class="px-3 py-2 text-[#1a2e35]/80 text-sm">jusqu'à 23 kg</td>
+          <td class="px-3 py-2 text-[#1a2e35]/70 text-sm">Soute</td>
+          <td class="px-3 py-2 text-xs text-[#1a2e35]/30">—</td>
+        </tr>
+        <tr class="border-b border-[#1a2e35]/8 hover:bg-[#0C789E]/5 transition-colors">
+          <td class="px-3 py-2 font-medium text-[#1a2e35] text-sm">Cocker Spaniel</td>
+          <td class="px-3 py-2 font-bold text-[#0C789E] text-sm">L80</td>
+          <td class="px-3 py-2 text-[#1a2e35]/80 text-sm font-mono">80×55×55</td>
+          <td class="px-3 py-2 text-[#1a2e35]/80 text-sm">jusqu'à 23 kg</td>
+          <td class="px-3 py-2 text-[#1a2e35]/70 text-sm">Soute</td>
+          <td class="px-3 py-2 text-xs text-[#1a2e35]/30">—</td>
+        </tr>
+        <tr class="border-b border-[#1a2e35]/8 hover:bg-[#0C789E]/5 transition-colors">
+          <td class="px-3 py-2 font-medium text-[#1a2e35] text-sm">Schnauzer</td>
+          <td class="px-3 py-2 font-bold text-[#0C789E] text-sm">L90</td>
+          <td class="px-3 py-2 text-[#1a2e35]/80 text-sm font-mono">90×60×65</td>
+          <td class="px-3 py-2 text-[#1a2e35]/80 text-sm">jusqu'à 31 kg</td>
+          <td class="px-3 py-2 text-[#1a2e35]/70 text-sm">Soute</td>
+          <td class="px-3 py-2 text-xs text-[#1a2e35]/30">—</td>
+        </tr>
+        <tr class="border-b border-[#1a2e35]/8 hover:bg-[#0C789E]/5 transition-colors">
+          <td class="px-3 py-2 font-medium text-[#1a2e35] text-sm">Border Collie</td>
+          <td class="px-3 py-2 font-bold text-[#0C789E] text-sm">L100</td>
+          <td class="px-3 py-2 text-[#1a2e35]/80 text-sm font-mono">100×68×75</td>
+          <td class="px-3 py-2 text-[#1a2e35]/80 text-sm">jusqu'à 41 kg</td>
+          <td class="px-3 py-2 text-[#1a2e35]/70 text-sm">Soute</td>
+          <td class="px-3 py-2 text-xs text-[#1a2e35]/30">—</td>
+        </tr>
+        <tr class="border-b border-[#1a2e35]/8 hover:bg-[#0C789E]/5 transition-colors">
+          <td class="px-3 py-2 font-medium text-[#1a2e35] text-sm">Pitbull</td>
+          <td class="px-3 py-2 font-bold text-[#0C789E] text-sm">L90</td>
+          <td class="px-3 py-2 text-[#1a2e35]/80 text-sm font-mono">90×60×65</td>
+          <td class="px-3 py-2 text-[#1a2e35]/80 text-sm">jusqu'à 31 kg</td>
+          <td class="px-3 py-2 text-[#1a2e35]/70 text-sm">Soute</td>
+          <td class="px-3 py-2 text-xs text-[#1a2e35]/30">—</td>
+        </tr>
+        <tr class="border-b border-[#1a2e35]/8 hover:bg-[#0C789E]/5 transition-colors">
+          <td class="px-3 py-2 font-medium text-[#1a2e35] text-sm">Husky Sibérien</td>
+          <td class="px-3 py-2 font-bold text-[#0C789E] text-sm">L120</td>
+          <td class="px-3 py-2 text-[#1a2e35]/80 text-sm font-mono">120×80×88</td>
+          <td class="px-3 py-2 text-[#1a2e35]/80 text-sm">jusqu'à 57 kg</td>
+          <td class="px-3 py-2 text-[#1a2e35]/70 text-sm">Soute</td>
+          <td class="px-3 py-2 text-xs text-[#1a2e35]/30">—</td>
+        </tr>
+        <tr class="border-b border-[#1a2e35]/8 hover:bg-[#0C789E]/5 transition-colors">
+          <td class="px-3 py-2 font-medium text-[#1a2e35] text-sm">Labrador Retriever</td>
+          <td class="px-3 py-2 font-bold text-[#0C789E] text-sm">L120</td>
+          <td class="px-3 py-2 text-[#1a2e35]/80 text-sm font-mono">120×80×88</td>
+          <td class="px-3 py-2 text-[#1a2e35]/80 text-sm">jusqu'à 57 kg</td>
+          <td class="px-3 py-2 text-[#1a2e35]/70 text-sm">Soute</td>
+          <td class="px-3 py-2 text-xs text-[#1a2e35]/30">—</td>
+        </tr>
+        <tr class="border-b border-[#1a2e35]/8 hover:bg-[#0C789E]/5 transition-colors">
+          <td class="px-3 py-2 font-medium text-[#1a2e35] text-sm">Golden Retriever</td>
+          <td class="px-3 py-2 font-bold text-[#0C789E] text-sm">L120</td>
+          <td class="px-3 py-2 text-[#1a2e35]/80 text-sm font-mono">120×80×88</td>
+          <td class="px-3 py-2 text-[#1a2e35]/80 text-sm">jusqu'à 57 kg</td>
+          <td class="px-3 py-2 text-[#1a2e35]/70 text-sm">Soute</td>
+          <td class="px-3 py-2 text-xs text-[#1a2e35]/30">—</td>
+        </tr>
+        <tr class="border-b border-[#1a2e35]/8 hover:bg-[#0C789E]/5 transition-colors">
+          <td class="px-3 py-2 font-medium text-[#1a2e35] text-sm">Berger Allemand</td>
+          <td class="px-3 py-2 font-bold text-[#0C789E] text-sm">L120</td>
+          <td class="px-3 py-2 text-[#1a2e35]/80 text-sm font-mono">120×80×88</td>
+          <td class="px-3 py-2 text-[#1a2e35]/80 text-sm">jusqu'à 57 kg</td>
+          <td class="px-3 py-2 text-[#1a2e35]/70 text-sm">Soute</td>
+          <td class="px-3 py-2 text-xs text-[#1a2e35]/30">—</td>
+        </tr>
+        <tr class="border-b border-[#1a2e35]/8 hover:bg-[#0C789E]/5 transition-colors">
+          <td class="px-3 py-2 font-medium text-[#1a2e35] text-sm">Doberman</td>
+          <td class="px-3 py-2 font-bold text-[#0C789E] text-sm">L120</td>
+          <td class="px-3 py-2 text-[#1a2e35]/80 text-sm font-mono">120×80×88</td>
+          <td class="px-3 py-2 text-[#1a2e35]/80 text-sm">jusqu'à 57 kg</td>
+          <td class="px-3 py-2 text-[#1a2e35]/70 text-sm">Soute</td>
+          <td class="px-3 py-2 text-xs text-[#1a2e35]/30">—</td>
+        </tr>
+        <tr class="border-b border-[#1a2e35]/8 hover:bg-[#0C789E]/5 transition-colors">
+          <td class="px-3 py-2 font-medium text-[#1a2e35] text-sm">Rottweiler</td>
+          <td class="px-3 py-2 font-bold text-[#0C789E] text-sm">L120</td>
+          <td class="px-3 py-2 text-[#1a2e35]/80 text-sm font-mono">120×80×88</td>
+          <td class="px-3 py-2 text-[#1a2e35]/80 text-sm">jusqu'à 57 kg</td>
+          <td class="px-3 py-2 text-[#1a2e35]/70 text-sm">Soute</td>
+          <td class="px-3 py-2 text-xs text-[#1a2e35]/30">—</td>
+        </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-xs text-[#1a2e35]/40 mt-3 text-center">★ Races brachycéphales — talla aumentada +10% según IATA LAR 2026</p>
+    </section>
+
+        <!-- SECCIÓN 4 - CATÁLOGO CORRIDO -->
     <section class="max-w-5xl mx-auto px-4 mb-20">
 
         <article class="flex flex-col md:flex-row gap-8 items-center bg-white p-6 sm:p-10 border border-[#1a2e35]/10 rounded-sm mb-12 shadow-sm">
