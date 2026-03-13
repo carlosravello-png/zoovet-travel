@@ -113,7 +113,7 @@
 }
 </script>
 </head>
-<body class="bg-[#F8FAFC] min-h-screen antialiased text-[#1a2e35]">
+<body class="bg-[#F8FAFC] min-h-screen antialiased text-[#1a2e35] overflow-x-hidden">
 
 <!--
   ================================================================
@@ -213,10 +213,10 @@
             <div>
               <p class="text-xs font-bold text-[#0C789E] uppercase tracking-wide mb-2">How to measure your dog</p>
               <ul class="text-sm text-[#1a2e35]/80 space-y-2 leading-relaxed">
-                <li><span class="font-semibold text-[#1a2e35]">A — Nose to tail length:</span> measure from the tip of the muzzle to the base of the tail (do not include the tail). In veterinary terms: from the labial plane to the first coccygeal vertebra (Cc1).</li>
-                <li><span class="font-semibold text-[#1a2e35]">B — Floor to elbow:</span> with the dog standing, measure from the floor to the elbow joint (humerus-radius). This value determines the minimum interior height of the kennel.</li>
-                <li><span class="font-semibold text-[#1a2e35]">C — Shoulder width:</span> measure the maximum width from shoulder to shoulder (glenohumeral joints on each side). Determines the interior width of the kennel.</li>
-                <li><span class="font-semibold text-[#1a2e35]">D — Floor to head:</span> with the dog standing, measure from the floor to the highest point of the head or erect ears.</li>
+                <li><span class="font-semibold text-[#1a2e35]">A — Nose to tail length:</span> from the tip of the muzzle to the base of the tail (not the tail itself). Vet term: labial plane → first coccygeal vertebra (Cc1). <em>Typical medium dog: ~78 cm (30.7 in).</em></li>
+                <li><span class="font-semibold text-[#1a2e35]">B — Floor to elbow:</span> dog standing, floor to elbow joint (humerus-radius). Determines kennel interior height. <em>Typical: ~28 cm (11 in).</em></li>
+                <li><span class="font-semibold text-[#1a2e35]">C — Shoulder width:</span> maximum width from glenohumeral joint to glenohumeral joint. Determines kennel interior width. <em>Typical: ~25 cm (9.8 in).</em></li>
+                <li><span class="font-semibold text-[#1a2e35]">D — Floor to head:</span> dog standing, floor to highest point of head or erect ears. <em>Typical: ~78 cm (30.7 in).</em></li>
               </ul>
             </div>
 
@@ -361,15 +361,23 @@
         </div>
 
         <div class="mb-6">
-          <p class="text-xs font-semibold text-[#1a2e35]/70 uppercase tracking-wide mb-3">STEP 4 — Measurements (cm) and weight</p>
+          <div class="flex items-center justify-between mb-3">
+            <p class="text-xs font-semibold text-[#1a2e35]/70 uppercase tracking-wide">STEP 4 — Measurements &amp; weight</p>
+            <div class="flex rounded-sm border border-[#1a2e35]/20 overflow-hidden text-xs font-semibold" role="group" aria-label="Unit selector">
+              <button type="button" id="zvt-unit-cm" onclick="zvtSetUnit('cm')"
+                class="px-3 py-1.5 bg-[#0C789E] text-white transition-colors">cm</button>
+              <button type="button" id="zvt-unit-in" onclick="zvtSetUnit('in')"
+                class="px-3 py-1.5 bg-white text-[#1a2e35]/50 hover:bg-[#0C789E]/10 transition-colors">in</button>
+            </div>
+          </div>
           <div class="grid grid-cols-2 gap-4 max-w-md mx-auto mb-4">
-            <label class="text-left"><span class="text-xs text-[#1a2e35]/80">A — Nose to tail (cm)</span><input type="number" id="zvt-input-a" min="1" step="0.1" placeholder="e.g. 78" class="w-full border border-[#1a2e35]/20 rounded-sm px-3 py-2 mt-1"/></label>
-            <label class="text-left"><span class="text-xs text-[#1a2e35]/80">B — Floor to elbow (cm)</span><input type="number" id="zvt-input-b" min="1" step="0.1" placeholder="e.g. 28" class="w-full border border-[#1a2e35]/20 rounded-sm px-3 py-2 mt-1"/></label>
-            <label class="text-left"><span class="text-xs text-[#1a2e35]/80">C — Shoulder width (cm)</span><input type="number" id="zvt-input-c" min="1" step="0.1" placeholder="e.g. 25" class="w-full border border-[#1a2e35]/20 rounded-sm px-3 py-2 mt-1"/></label>
-            <label class="text-left"><span class="text-xs text-[#1a2e35]/80">D — Floor to head (cm)</span><input type="number" id="zvt-input-d" min="1" step="0.1" placeholder="e.g. 78" class="w-full border border-[#1a2e35]/20 rounded-sm px-3 py-2 mt-1"/></label>
+            <label class="text-left"><span class="text-xs text-[#1a2e35]/80">A — Nose to tail (<span class="zvt-unit-label">cm</span>)</span><input type="number" id="zvt-input-a" min="0.1" step="0.1" placeholder="e.g. 78" class="w-full border border-[#1a2e35]/20 rounded-sm px-3 py-2 mt-1"/></label>
+            <label class="text-left"><span class="text-xs text-[#1a2e35]/80">B — Floor to elbow (<span class="zvt-unit-label">cm</span>)</span><input type="number" id="zvt-input-b" min="0.1" step="0.1" placeholder="e.g. 28" class="w-full border border-[#1a2e35]/20 rounded-sm px-3 py-2 mt-1"/></label>
+            <label class="text-left"><span class="text-xs text-[#1a2e35]/80">C — Shoulder width (<span class="zvt-unit-label">cm</span>)</span><input type="number" id="zvt-input-c" min="0.1" step="0.1" placeholder="e.g. 25" class="w-full border border-[#1a2e35]/20 rounded-sm px-3 py-2 mt-1"/></label>
+            <label class="text-left"><span class="text-xs text-[#1a2e35]/80">D — Floor to head (<span class="zvt-unit-label">cm</span>)</span><input type="number" id="zvt-input-d" min="0.1" step="0.1" placeholder="e.g. 78" class="w-full border border-[#1a2e35]/20 rounded-sm px-3 py-2 mt-1"/></label>
           </div>
           <div class="max-w-md mx-auto">
-            <label class="text-left block"><span class="text-xs text-[#1a2e35]/80">Weight (kg)</span><input type="number" id="zvt-input-kg" min="0.1" step="0.1" placeholder="e.g. 30" class="w-full border border-[#1a2e35]/20 rounded-sm px-3 py-2 mt-1"/></label>
+            <label class="text-left block"><span class="text-xs text-[#1a2e35]/80">Weight (lbs / <span id="zvt-kg-label">kg</span>)</span><input type="number" id="zvt-input-kg" min="0.1" step="0.1" placeholder="e.g. 30 kg / 66 lbs" class="w-full border border-[#1a2e35]/20 rounded-sm px-3 py-2 mt-1"/></label>
           </div>
         </div>
 
@@ -466,11 +474,13 @@
     var name = document.getElementById('zvt-select-raza').value;
     if(!name || !BREED_AVERAGES[name]) return;
     var b = BREED_AVERAGES[name];
-    document.getElementById('zvt-input-a').value = b.A;
-    document.getElementById('zvt-input-b').value = b.B;
-    document.getElementById('zvt-input-c').value = b.C;
-    document.getElementById('zvt-input-d').value = b.D;
-    document.getElementById('zvt-input-kg').value = b.kg;
+    var toU = function(v){ return zvtUnit==='in' ? Math.round(v/2.54*10)/10 : v; };
+    document.getElementById('zvt-input-a').value = toU(b.A);
+    document.getElementById('zvt-input-b').value = toU(b.B);
+    document.getElementById('zvt-input-c').value = toU(b.C);
+    document.getElementById('zvt-input-d').value = toU(b.D);
+    var kgVal = zvtUnit==='in' ? Math.round(b.kg*2.205*10)/10 : b.kg;
+    document.getElementById('zvt-input-kg').value = kgVal;
   }
   function zvt_setSpecies(tipo){
     var perro = document.getElementById('zvt-btn-perro');
@@ -482,19 +492,26 @@
     zvt_applyBreed();
   }
   function zvt_calcClick(){
-    var A = parseFloat(document.getElementById('zvt-input-a').value);
-    var B = parseFloat(document.getElementById('zvt-input-b').value);
-    var C = parseFloat(document.getElementById('zvt-input-c').value);
-    var D = parseFloat(document.getElementById('zvt-input-d').value);
-    var kg = parseFloat(document.getElementById('zvt-input-kg').value);
-    if(!A||A<=0||!B||B<=0||!C||C<=0||!D||D<=0||!kg||kg<=0){ alert('Enter all measurements and weight (values greater than 0).'); return; }
+    var rawA = parseFloat(document.getElementById('zvt-input-a').value);
+    var rawB = parseFloat(document.getElementById('zvt-input-b').value);
+    var rawC = parseFloat(document.getElementById('zvt-input-c').value);
+    var rawD = parseFloat(document.getElementById('zvt-input-d').value);
+    var rawKg = parseFloat(document.getElementById('zvt-input-kg').value);
+    if(!rawA||rawA<=0||!rawB||rawB<=0||!rawC||rawC<=0||!rawD||rawD<=0||!rawKg||rawKg<=0){ alert('Enter all measurements and weight (values greater than 0).'); return; }
+    var toCm = function(v){ return zvtUnit==='in' ? v*2.54 : v; };
+    var A = toCm(rawA), B = toCm(rawB), C = toCm(rawC), D = toCm(rawD);
+    var kg = zvtUnit==='in' ? rawKg/2.205 : rawKg;
     var name = document.getElementById('zvt-select-raza').value;
     var brachy = name && BREED_AVERAGES[name] ? BREED_AVERAGES[name].brachy : false;
     var r = zvt_calcularKennel(A,B,C,D,kg,brachy);
     document.getElementById('zvt-result-talla').textContent = 'Kennel '+r.serie.label;
-    document.getElementById('zvt-result-dim').textContent = r.serie.length + ' × ' + r.serie.width + ' × ' + r.serie.height + ' cm';
+    var cmL=r.serie.length, cmW=r.serie.width, cmH=r.serie.height;
+    var inL=Math.round(cmL/2.54*10)/10, inW=Math.round(cmW/2.54*10)/10, inH=Math.round(cmH/2.54*10)/10;
+    document.getElementById('zvt-result-dim').textContent = cmL+' × '+cmW+' × '+cmH+' cm  ('+inL+'" × '+inW+'" × '+inH+'")';
     document.getElementById('zvt-result-uso').textContent = 'Use: ' + r.serie.uso;
-    document.getElementById('zvt-result-min').textContent = 'IATA minimum required: ' + r.largo + ' × ' + r.ancho + ' × ' + r.alto + ' cm';
+    var mL=r.largo, mW=r.ancho, mH=r.alto;
+    var miL=Math.round(mL/2.54*10)/10, miW=Math.round(mW/2.54*10)/10, miH=Math.round(mH/2.54*10)/10;
+    document.getElementById('zvt-result-min').textContent = 'IATA minimum required: '+mL+' × '+mW+' × '+mH+' cm  ('+miL+'" × '+miW+'" × '+miH+'")';
     document.getElementById('zvt-badge-brachy').style.display = brachy ? 'block' : 'none';
     document.getElementById('zvt-badge-peso').style.display = r.soloIndividual ? 'block' : 'none';
     var label = r.serie.label;
@@ -760,7 +777,47 @@
   document.getElementById('zvt-btn-perro').addEventListener('click', function(){ zvt_setSpecies('perro'); });
   document.getElementById('zvt-btn-gato').addEventListener('click', function(){ zvt_setSpecies('gato'); });
   document.getElementById('zvt-select-raza').addEventListener('change', zvt_applyBreed);
-  document.getElementById('zvt-btn-calcular').addEventListener('click', zvt_calcClick);
+
+  // ── CM / INCH TOGGLE ──────────────────────────────────────────────────────
+  var zvtUnit = 'cm';
+  var ZVT_CM_PER_IN = 2.54;
+  var ZVT_PH = { cm:['78','28','25','78'], in:['30.7','11.0','9.8','30.7'] };
+  var ZVT_INPUTS = ['a','b','c','d'];
+
+  function zvtSetUnit(unit) {
+    if (zvtUnit === unit) return;
+    zvtUnit = unit;
+    // Convert any values currently in inputs
+    ZVT_INPUTS.forEach(function(m, i) {
+      var inp = document.getElementById('zvt-input-' + m);
+      var val = parseFloat(inp.value);
+      if (!isNaN(val) && val > 0) {
+        inp.value = unit === 'in'
+          ? Math.round(val / ZVT_CM_PER_IN * 10) / 10
+          : Math.round(val * ZVT_CM_PER_IN * 10) / 10;
+      }
+      inp.placeholder = 'e.g. ' + ZVT_PH[unit][i];
+    });
+    // Convert kg ↔ lbs
+    var kgInp = document.getElementById('zvt-input-kg');
+    var kgVal = parseFloat(kgInp.value);
+    if (!isNaN(kgVal) && kgVal > 0) {
+      kgInp.value = unit === 'in'
+        ? Math.round(kgVal * 2.205 * 10) / 10
+        : Math.round(kgVal / 2.205 * 10) / 10;
+    }
+    kgInp.placeholder = unit === 'in' ? 'e.g. 66 lbs' : 'e.g. 30 kg';
+    // Update unit labels
+    document.querySelectorAll('.zvt-unit-label').forEach(function(el) { el.textContent = unit; });
+    document.getElementById('zvt-kg-label').textContent = unit === 'in' ? 'lbs' : 'kg';
+    // Toggle button styles
+    var active   = 'px-3 py-1.5 bg-[#0C789E] text-white transition-colors';
+    var inactive = 'px-3 py-1.5 bg-white text-[#1a2e35]/50 hover:bg-[#0C789E]/10 transition-colors';
+    document.getElementById('zvt-unit-cm').className = unit === 'cm' ? active : inactive;
+    document.getElementById('zvt-unit-in').className = unit === 'in' ? active : inactive;
+  }
+
+    document.getElementById('zvt-btn-calcular').addEventListener('click', zvt_calcClick);
 })();
       </script>
     </section>
