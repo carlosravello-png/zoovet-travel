@@ -20,14 +20,14 @@ https://zoovettravel.com/zoopedia/australia-en.html
 https://zoovettravel.com/zoopedia/australia-fr.html
 
 https://zoovettravel.com/zoopedia/brasil.html
-https://zoovettravel.com/zoopedia/brasil-en.html
+
 https://zoovettravel.com/zoopedia/brasil-fr.html
 
 https://zoovettravel.com/zoopedia/canada.html
 https://zoovettravel.com/zoopedia/canada-en.html
 https://zoovettravel.com/zoopedia/canada-fr.html
 
-https://zoovettravel.com/zoopedia/chile.html
+
 https://zoovettravel.com/zoopedia/chile-en.html
 https://zoovettravel.com/zoopedia/chile-fr.html
 
@@ -40,17 +40,12 @@ https://zoovettravel.com/zoopedia/corea-del-sur-fr.html
 
 https://zoovettravel.com/zoopedia/eau.html
 https://zoovettravel.com/zoopedia/eau-en.html
-https://zoovettravel.com/zoopedia/eau-fr.html
 
-https://zoovettravel.com/zoopedia/eeuu.html
-https://zoovettravel.com/zoopedia/eeuu-en.html
-https://zoovettravel.com/zoopedia/eeuu-fr.html
 
-https://zoovettravel.com/zoopedia/espana.html
+
 https://zoovettravel.com/zoopedia/espana-en.html
-https://zoovettravel.com/zoopedia/espana-fr.html
 
-https://zoovettravel.com/zoopedia/francia.html
+
 https://zoovettravel.com/zoopedia/francia-en.html
 https://zoovettravel.com/zoopedia/francia-fr.html
 
@@ -61,11 +56,10 @@ https://zoovettravel.com/zoopedia/india-fr.html
 https://zoovettravel.com/zoopedia/italia-en.html
 https://zoovettravel.com/zoopedia/italia-fr.html
 
-https://zoovettravel.com/zoopedia/japon.html
 https://zoovettravel.com/zoopedia/japon-en.html
 https://zoovettravel.com/zoopedia/japon-fr.html
 
-https://zoovettravel.com/zoopedia/nueva-zelanda.html
+
 https://zoovettravel.com/zoopedia/nueva-zelanda-en.html
 https://zoovettravel.com/zoopedia/nueva-zelanda-fr.html
 
@@ -100,42 +94,40 @@ https://zoovettravel.com/articles/zoovet_art10_certificado-salud-EN.html
 https://zoovettravel.com/articles/zoovet_art10_certificado-salud-FR.html
 
 
-https://zoovettravel.com/articles/zoovet_art11_cuarentena-EN.html
+
 https://zoovettravel.com/articles/zoovet_art11_cuarentena-FR.html
 
 https://zoovettravel.com/articles/zoovet_art12_expediente-ES.html
-https://zoovettravel.com/articles/zoovet_art12_expediente-EN.html
+
 https://zoovettravel.com/articles/zoovet_art12_expediente-FR.html
 
 https://zoovettravel.com/articles/zoovet_art4_desparasitacionES.html
-https://zoovettravel.com/articles/zoovet_art4_desparasitacionEN.html
+
 https://zoovettravel.com/articles/zoovet_art4_desparasitacionFR.html
 
-https://zoovettravel.com/articles/zoovet_art5_estres-metabolico-EN.html
+
 https://zoovettravel.com/articles/zoovet_art5_estres-metabolico-FR.html
-https://zoovettravel.com/articles/zoovet_art6_microchip-EN.html
+
 https://zoovettravel.com/articles/zoovet_art6_microchip-FR.html
 
 https://zoovettravel.com/articles/zoovet_art7_jetlag-ES.html
 https://zoovettravel.com/articles/zoovet_art7_jetlag-EN.html
-https://zoovettravel.com/articles/zoovet_art7_jetlag-FR.html
 
-https://zoovettravel.com/articles/zoovet_art8_hipobaria-EN.html
+
 https://zoovettravel.com/articles/zoovet_art8_hipobaria-FR.html
 
 https://zoovettravel.com/articles/zoovet_art9_certificados-vacunacion-ES.html
-https://zoovettravel.com/articles/zoovet_art9_certificados-vacunacion-EN.html
+
 https://zoovettravel.com/articles/zoovet_art9_certificados-vacunacion-FR.html
 
 https://zoovettravel.com/articles/zoovet_article2_EN.html
 https://zoovettravel.com/articles/zoovet_article2_FR.html
 
-https://zoovettravel.com/articles/zoovet_article3_braquicefalos_ES.html
-https://zoovettravel.com/articles/zoovet_article3_braquicefalos_EN.html
+
 https://zoovettravel.com/articles/zoovet_article3_braquicefalos_FR.html
 
 https://zoovettravel.com/articles/zoovet_article_v2.html
-https://zoovettravel.com/articles/zoovet_article_v2-en.html
+
 https://zoovettravel.com/articles/zoovet_article_v2_FR.html
 
 
@@ -145,15 +137,12 @@ https://zoovettravel.com/articulos-interes/index.html
 https://zoovettravel.com/articulos-interes/index-en.html
 https://zoovettravel.com/articulos-interes/index-fr.html
 
-https://zoovettravel.com/articulos-interes/articulo_alimentacion_antes_durante_vuelo.html
 https://zoovettravel.com/articulos-interes/articulo_alimentacion_antes_durante_vuelo-EN.html
 https://zoovettravel.com/articulos-interes/articulo_alimentacion_antes_durante_vuelo-FR.html
 
-https://zoovettravel.com/articulos-interes/articulo_certificado_zoosanitario_senasa_trujillo.html
 https://zoovettravel.com/articulos-interes/articulo_certificado_zoosanitario_senasa_trujillo-EN.html
 https://zoovettravel.com/articulos-interes/articulo_certificado_zoosanitario_senasa_trujillo-FR.html
 
-https://zoovettravel.com/articulos-interes/articulo_cuanto_tiempo_antes_viaje_mascota.html
 https://zoovettravel.com/articulos-interes/articulo_cuanto_tiempo_antes_viaje_mascota-EN.html
 
 https://zoovettravel.com/articulos-interes/articulo_golden_labrador_cabina_bodega.html
@@ -176,7 +165,6 @@ https://zoovettravel.com/articulos-interes/como_viajar_perro_espana_desde_peru_r
 https://zoovettravel.com/articulos-interes/como_viajar_perro_espana_desde_peru_requisitos_final_v2-EN.html
 https://zoovettravel.com/articulos-interes/como_viajar_perro_espana_desde_peru_requisitos_final_v2-FR.html
 
-https://zoovettravel.com/articulos-interes/dondetramitarentrujillo.html
 https://zoovettravel.com/articulos-interes/dondetramitarentrujillo-EN.html
 https://zoovettravel.com/articulos-interes/dondetramitarentrujillo-FR.html
 
@@ -195,7 +183,7 @@ https://zoovettravel.com/articulos-interes/llevar_mascota_japon_proceso_que_poco
 https://zoovettravel.com/articulos-interes/mascotabodega-EN.html
 https://zoovettravel.com/articulos-interes/mascotabodega-FR.html
 
-https://zoovettravel.com/articulos-interes/mascotasinpapeles.html
+
 https://zoovettravel.com/articulos-interes/mascotasinpapeles-EN.html
 https://zoovettravel.com/articulos-interes/mascotasinpapeles-FR.html
 
@@ -203,7 +191,6 @@ https://zoovettravel.com/articulos-interes/prepararatuperro.html
 https://zoovettravel.com/articulos-interes/prepararatuperro-EN.html
 https://zoovettravel.com/articulos-interes/prepararatuperro-FR.html
 
-https://zoovettravel.com/articulos-interes/queeselmicrochipdondelotramitas.html
 https://zoovettravel.com/articulos-interes/queeselmicrochipdondelotramitas-EN.html
 https://zoovettravel.com/articulos-interes/queeselmicrochipdondelotramitas-FR.html
 
@@ -211,19 +198,17 @@ https://zoovettravel.com/articulos-interes/requisitos_mascota_reino_unido_desde_
 https://zoovettravel.com/articulos-interes/requisitos_mascota_reino_unido_desde_latinoamerica_editorial_v2-EN.html
 https://zoovettravel.com/articulos-interes/requisitos_mascota_reino_unido_desde_latinoamerica_editorial_v2-FR.html
 
-https://zoovettravel.com/articulos-interes/rnattviajes.html
 https://zoovettravel.com/articulos-interes/rnattviajes-EN.html
 https://zoovettravel.com/articulos-interes/rnattviajes-FR.html
 
-https://zoovettravel.com/articulos-interes/streesmascotas.html
+
 https://zoovettravel.com/articulos-interes/streesmascotas-EN.html
 https://zoovettravel.com/articulos-interes/streesmascotas-FR.html
 
-https://zoovettravel.com/articulos-interes/transportindeal.html
+
 https://zoovettravel.com/articulos-interes/transportindeal-EN.html
 https://zoovettravel.com/articulos-interes/transportindeal-FR.html
 
-https://zoovettravel.com/articulos-interes/veterimariosntrujillo.html
 https://zoovettravel.com/articulos-interes/veterimariosntrujillo-EN.html
 https://zoovettravel.com/articulos-interes/veterimariosntrujillo-FR.html
 
@@ -231,7 +216,7 @@ https://zoovettravel.com/articulos-interes/veterimariosntrujillo-FR.html
 https://zoovettravel.com/articulos-interes/viaja-chile-argentina-EN.html
 https://zoovettravel.com/articulos-interes/viaja-chile-argentina-FR.html
 
-https://zoovettravel.com/articulos-interes/viajarconpug.html
+
 https://zoovettravel.com/articulos-interes/viajarconpug-EN.html
 https://zoovettravel.com/articulos-interes/viajarconpug-FR.html
 
@@ -239,7 +224,6 @@ https://zoovettravel.com/articulos-interes/viajar_mascotas_australia_proceso_mas
 https://zoovettravel.com/articulos-interes/viajar_mascotas_australia_proceso_mas_estricto_editorial-EN.html
 https://zoovettravel.com/articulos-interes/viajar_mascotas_australia_proceso_mas_estricto_editorial-FR.html
 
-https://zoovettravel.com/articulos-interes/viajeanimalgeriatrico.html
 https://zoovettravel.com/articulos-interes/viajeanimalgeriatrico-EN.html
 https://zoovettravel.com/articulos-interes/viajeanimalgeriatrico-FR.html
 
