@@ -1280,6 +1280,27 @@ const rawSearchData = [
     "category": "Artículo Científico",
     "keywords": "titrage anticorps antirabiques, séroneutralisation RFFIT FAVN, ≥30 jours, 0,5 UI/mL, primovaccination antirabique, export international animaux de compagnie, santé animale internationale, WOAH, OMSA",
     "lang": "fr"
+  },
+  {
+    "title": "¿Es México de alto riesgo para rabia canina? Clasificación CDC 2026",
+    "url": "articulos-interes/mexico-clasificacion-cdc-rabia-canina-2026.html",
+    "category": "Artículos de Interés",
+    "keywords": "mexico clasificacion cdc rabia canina 2026, paises alto riesgo rabia canina cdc mexico, requisitos perro mexico eeuu 2026, formulario importacion cdc perros mexico, certificado aphis gusano barrenador mexico, es mexico alto riesgo rabia cdc, llevar perro de mexico a eeuu 2026, mexico bajo riesgo rabia canina cdc",
+    "lang": "es"
+  },
+  {
+    "title": "Is Mexico High-Risk for Dog Rabies? CDC Classification 2026",
+    "url": "articulos-interes/mexico-cdc-dog-rabies-classification-2026.html",
+    "category": "Artículos de Interés",
+    "keywords": "is mexico high-risk for dog rabies cdc 2026, is mexico low-risk for dog rabies cdc 2026, cdc high-risk countries dog rabies mexico 2026, cdc dog rabies risk classification mexico, dog import usa from mexico requirements 2026, cdc dog import form mexico, usda aphis screwworm certificate mexico, bring dog from mexico to usa 2026",
+    "lang": "en"
+  },
+  {
+    "title": "Le Mexique est-il à haut risque de rage canine ? Classification CDC 2026",
+    "url": "articulos-interes/mexique-classification-cdc-rage-canine-2026.html",
+    "category": "Artículos de Interés",
+    "keywords": "mexique classification cdc rage canine 2026, pays haut risque rage canine cdc mexique, conditions entree chien mexique usa 2026, formulaire importation cdc chiens mexique, certificat aphis ver crochet mexique, mexique haut risque rage cdc, voyager avec chien mexique usa 2026",
+    "lang": "fr"
   }
 ];
 
