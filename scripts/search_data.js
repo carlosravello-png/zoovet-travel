@@ -274,6 +274,27 @@ const rawSearchData = [
     "lang": "es"
   },
   {
+    "title": "México: Clasificación CDC Rabia Canina 2026 y Requisitos de Importación de Mascotas",
+    "url": "zoopedia/mexico.html",
+    "category": "Zoopedia",
+    "keywords": "mexico riesgo rabia canina cdc 2026, clasificacion cdc rabia canina mexico 2026, mexico bajo riesgo rabia perros cdc, viajar perro mexico estados unidos cdc 2026, formulario importacion perros cdc mexico, inspeccion gusano barrenador aphis mexico perros, requisitos importacion mascotas mexico senasica 2026, llevar mascota mexico desde peru, requisitos perro mexico 2026, senasica certificado veterinario exportacion, sin FAVN mexico estados unidos, sin RNATT mexico senasica, prueba rabia mexico perros",
+    "lang": "es"
+  },
+  {
+    "title": "Mexico: CDC Dog Rabies Risk Classification 2026 & Pet Import Requirements",
+    "url": "zoopedia/mexico-en.html",
+    "category": "Zoopedia",
+    "keywords": "mexico cdc canine rabies risk 2026, cdc dog import mexico low risk, mexico not on cdc high risk list, no FAVN required mexico usa dogs, cdc dog import form mexico, USDA APHIS screwworm inspection mexico dogs, SENASICA pet import mexico requirements, bring pet to mexico from peru, mexico pet travel 2026, screwworm cochliomyia hominivorax mexico dogs usa, cdc dog import form free mexico",
+    "lang": "en"
+  },
+  {
+    "title": "Mexique : Classification CDC Rage Canine 2026 et Conditions d'Importation d'Animaux",
+    "url": "zoopedia/mexico-fr.html",
+    "category": "Zoopedia",
+    "keywords": "mexique risque rage canine cdc 2026, classification cdc rage canine mexique 2026, mexique faible risque rage chiens cdc, voyager chien mexique etats-unis cdc 2026, formulaire importation chiens cdc mexique, inspection ver du bouquet aphis mexique chiens, conditions importation animaux mexique senasica 2026, amener animal mexique depuis perou, conditions chien mexique 2026, senasica certificat veterinaire exportation, sans FAVN mexique etats-unis, sans RNATT mexique senasica",
+    "lang": "fr"
+  },
+  {
     "title": "Pet Import Italy from Peru &amp; Latin America",
     "url": "zoopedia/italia-en.html",
     "category": "Zoopedia",
