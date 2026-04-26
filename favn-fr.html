@@ -62,7 +62,7 @@
         "@id": "https://doi.org/10.5281/zenodo.19797479",
         "name": "Zoovet Travel FAVN Case Repository — Rabies antibody titer results, Trujillo Peru",
         "url": "https://doi.org/10.5281/zenodo.19797479",
-        "sameAs": "https://carlosravello-png.github.io/zoovet-favn/index.json",
+        "sameAs": "https://carlosravello-png.github.io/-examenes-favn-anticuerpos-rabia-zoovettravel/index.json",
         "description": "Active FAVN case repository processed by Veterinaria Zoovet through KSVDL under the D1/D15/D30 Novibac Rabies protocol. Updated periodically.",
         "creator": {"@id": "https://zoovettravel.com/#organization"},
         "author": {"@id": "https://zoovettravel.com/#jessica-camacho"},
@@ -327,18 +327,35 @@
       .hero { padding: 3rem 1rem 2.5rem; }
       .data-row { grid-template-columns: repeat(2, 1fr); }
       .cta-buttons { flex-direction: column; align-items: center; }
-      .header-nav .lang-switcher { display: none; }
+      .header-nav .lang-switcher { flex-wrap: wrap; gap: 0.5rem; }
       .author-card { flex-direction: column; }
     }
   </style>
 </head>
 
 <body>
+  <!-- BREADCRUMB -->
+  <nav aria-label="Fil d'Ariane" style="background:var(--navy);border-bottom:1px solid rgba(196,151,42,0.2);padding:0.55rem 1.5rem;font-size:0.8rem;font-family:'Source Serif 4',serif;">
+    <ol itemscope itemtype="https://schema.org/BreadcrumbList" style="list-style:none;display:flex;align-items:center;gap:0.4rem;color:rgba(255,255,255,0.55);margin:0;padding:0;">
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="https://zoovettravel.com/index-fr.html" style="color:rgba(255,255,255,0.7);text-decoration:none;" hreflang="fr"><span itemprop="name">Accueil</span></a>
+        <meta itemprop="position" content="1">
+      </li>
+      <li aria-hidden="true" style="color:rgba(255,255,255,0.35)">›</li>
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <span itemprop="name" aria-current="page" style="color:rgba(255,255,255,0.9)">Test FAVN</span>
+        <meta itemprop="position" content="2">
+        <meta itemprop="item" content="https://zoovettravel.com/favn-fr.html">
+      </li>
+    </ol>
+  </nav>
+
 
   <!-- EN-TÊTE -->
   <header class="site-header" role="banner">
     <a href="https://zoovettravel.com/index-fr.html" class="logo">Zoovet <span>Travel</span></a>
     <nav class="header-nav" aria-label="Navigation principale">
+      <a href="https://zoovettravel.com/index-fr.html" style="color:rgba(255,255,255,0.7);font-size:0.85rem;text-decoration:none;margin-right:0.5rem;" hreflang="fr">← Accueil</a>
       <div class="lang-switcher">
         <a href="favn-es.html" hreflang="es">ES</a>
         <a href="favn-en.html" hreflang="en">EN</a>
@@ -504,24 +521,11 @@
             <div class="data-label">Années d'opération</div>
           </div>
         </div>
-          <div class="data-card">
-            <div class="data-num">39</div>
-            <div class="data-label">Résultats PASS ≥ 0,5 UI/mL</div>
-          </div>
-          <div class="data-card">
-            <div class="data-num">7</div>
-            <div class="data-label">Pays de destination</div>
-          </div>
-          <div class="data-card">
-            <div class="data-num">2019</div>
-            <div class="data-label">Premier cas documenté</div>
-          </div>
-        </div>
 
                 <div class="highlight-box" style="margin-top:1.5rem">
           <h3>Validité statistique de l'échantillon (N&gt;30)</h3>
           <p>En recherche clinique, un échantillon de plus de 30 cas permet d'appliquer la distribution normale et de réaliser des inférences statistiques valides. Notre échantillon documenté dépasse ce seuil, ce qui nous permet d'affirmer avec base statistique :</p>
-          <p>Dans les cas analysés sous le protocole J1/J15/J30, le <strong>taux de séroconversion au premier prélèvement était de 88,6 %</strong> (intervalle de confiance 95 % : 76–95 %). Le <strong>taux de récupération après rappel était de 100 %</strong> dans les cas d'échec initial documentés. Ces résultats ne sont pas anecdotiques : ce sont des inférences statistiques issues d'une cohorte observationnelle longitudinale.</p>
+          <p>Dans les cas analysés sous le protocole J1/J15/J30, le <strong>taux de séroconversion au premier prélèvement était de 91,2 %</strong>. Le <strong>taux de récupération après rappel était de 100 %</strong> dans les cas d'échec initial documentés. Ces résultats ne sont pas anecdotiques : ce sont des inférences statistiques issues d'une cohorte observationnelle longitudinale.</p>
         </div>
 
         <p>Référentiel public de cas avec DOI vérifiable : <a href="https://doi.org/10.5281/zenodo.19797479" rel="external noopener" target="_blank">doi.org/10.5281/zenodo.19797479</a></p>
@@ -552,7 +556,7 @@
         <p>Moore et al. (2021, <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8402924/" rel="external noopener" target="_blank">PMC8402924</a>) documentent les défis de la standardisation de la sérologie rabique et confirment que la répétition du test après un rappel est la réponse clinique établie aux résultats limites ou faibles.</p>
 
         <h3>Cas documentés : FAIL → PASS</h3>
-        <p>Dans notre référentiel de 44 cas, deux cas présentent le cycle complet documenté : échec initial et nouveau test réussi après rappel.</p>
+        <p>Dans notre référentiel, deux cas présentent le cycle complet documenté : échec initial et nouveau test réussi après rappel.</p>
 
         <div class="case-story">
           <div class="case-story-header">
@@ -662,15 +666,10 @@
               <div class="ds-stat"><div class="ds-num">N&gt;30</div><div class="ds-lbl">Échantillon valide</div></div>
               <div class="ds-stat"><div class="ds-num">7</div><div class="ds-lbl">Pays</div></div>
             </div>
-            </div>
-              <div class="ds-stat"><div class="ds-num">42</div><div class="ds-lbl">Animaux uniques</div></div>
-              <div class="ds-stat"><div class="ds-num">39</div><div class="ds-lbl">PASS</div></div>
-              <div class="ds-stat"><div class="ds-num">7</div><div class="ds-lbl">Pays</div></div>
-            </div>
             <p style="font-size:0.875rem;color:var(--text-muted);margin-bottom:1rem">Chaque cas comprend : numéro de puce électronique, espèce, race, pays de destination, résultat en UI/mL, protocole, année et laboratoire. Les cas FAIL→PASS sont liés par identifiant de cas pour l'analyse de récupération. Échantillon longitudinal sous protocole J1/J15/J30 Novibac Rabies.</p>
             <div style="display:flex;gap:0.75rem;flex-wrap:wrap">
               <a href="https://doi.org/10.5281/zenodo.19797479" rel="external noopener" target="_blank" class="btn-outline" style="font-size:0.82rem;padding:0.5rem 1rem;color:var(--navy);border-color:var(--border)">Voir sur Zenodo</a>
-              <a href="/favn-data/index.json" rel="nofollow" target="_blank" class="btn-outline" style="font-size:0.82rem;padding:0.5rem 1rem;color:var(--navy);border-color:var(--border)">index.json</a>
+              <a href="https://carlosravello-png.github.io/-examenes-favn-anticuerpos-rabia-zoovettravel/index.json" rel="nofollow" target="_blank" class="btn-outline" style="font-size:0.82rem;padding:0.5rem 1rem;color:var(--navy);border-color:var(--border)">index.json</a>
             </div>
           </div>
         </div>
