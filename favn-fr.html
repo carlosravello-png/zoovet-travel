@@ -358,6 +358,37 @@
       .header-nav .lang-switcher { flex-wrap: wrap; gap: 0.5rem; }
       .author-card { flex-direction: column; }
     }
+
+    /* ── MOBILE RESPONSIVE ── */
+    html, body { max-width: 100%; overflow-x: hidden; }
+
+    .table-scroll {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      margin: 1.5rem 0;
+    }
+    .table-scroll .protocol-table { margin: 0; }
+
+    img { max-width: 100%; height: auto; }
+
+    @media (max-width: 480px) {
+      .site-header { padding: 0 1rem; }
+      .header-nav a:not(.btn-contact) { display: none; }
+      .lang-switcher { gap: 0.35rem; }
+      .hero { padding: 2.5rem 1rem 2rem; }
+      .hero h1 { font-size: 1.6rem; }
+      .container, .container-wide { padding: 0 1rem; }
+      .section { padding: 2.5rem 0; }
+      .highlight-box { padding: 1.25rem; }
+      .data-row { grid-template-columns: repeat(2, 1fr); }
+      .risk-table td:first-child { width: auto; font-size: 0.82rem; }
+      .risk-table td:nth-child(2) { width: auto; font-size: 0.82rem; }
+      .risk-table td:nth-child(3) { font-size: 0.82rem; }
+      .protocol-table th, .protocol-table td { padding: 0.55rem 0.65rem; font-size: 0.82rem; }
+      .case-story-header { flex-wrap: wrap; gap: 0.5rem; }
+      .cta-buttons { flex-direction: column; align-items: center; }
+      .titer-change { flex-wrap: wrap; gap: 0.5rem; }
+    }
   </style>
 </head>
 
@@ -504,7 +535,7 @@
 
         <h3>Le protocole Zoovet Travel — Novibac Rabies J1/J15/J30</h3>
 
-        <table class="protocol-table" role="table" aria-label="Protocole de vaccination Zoovet Travel">
+        <div class="table-scroll"><table class="protocol-table" role="table" aria-label="Protocole de vaccination Zoovet Travel">
           <thead>
             <tr>
               <th>Jour</th>
@@ -530,6 +561,7 @@
             </tr>
           </tbody>
         </table>
+        </div>
 
         <h3>Résultats cliniques de Zoovet Travel avec ce protocole</h3>
 
@@ -588,7 +620,7 @@
 
         <p>Ce que cela signifie en pratique : si le sérum arrive à KSVDL rougeâtre ou opaque (hémolyse par rupture des globules rouges) ou laiteux (lipémie due aux graisses dans le sang, évitable avec un jeûne), la culture cellulaire utilisée par le test FAVN ne peut pas fonctionner. KSVDL facture le test complet car le travail cellulaire a déjà commencé. Le propriétaire reçoit un rapport marqué « toxic » sans autre explication. Il faut recommencer la prise de sang, le réenvoi international et payer à nouveau le test complet.</p>
 
-        <table class="protocol-table risk-table" role="table" aria-label="Causes d'échantillon toxic et prévention">
+        <div class="table-scroll"><table class="protocol-table risk-table" role="table" aria-label="Causes d'échantillon toxic et prévention">
           <thead>
             <tr><th>Cause</th><th>Aspect de l'échantillon</th><th>Prévention (KSVDL + Zoovet)</th></tr>
           </thead>
@@ -599,6 +631,7 @@
             <tr><td><strong>Volume insuffisant</strong></td><td>—</td><td>Minimum 1-2 mL de sérum clair dans un tube incassable de 3-5 mL, étiqueté avec le numéro de puce de l'animal.</td></tr>
           </tbody>
         </table>
+        </div>
 
         <div class="case-story">
           <div class="case-story-header">
@@ -629,7 +662,7 @@
           <p style="font-size:0.88rem;color:rgba(255,255,255,0.7)">Échantillon de 8 011 chiens de moins d'1 an, sans antécédent de vaccination antirabique, envoyés à des laboratoires de référence dont KSVDL. Seuil évalué : ≥0,5 UI/mL par FAVN.</p>
         </div>
 
-        <table class="protocol-table risk-table" role="table" aria-label="Facteurs de risque d'échec au test FAVN selon Wallace et al. 2017">
+        <div class="table-scroll"><table class="protocol-table risk-table" role="table" aria-label="Facteurs de risque d'échec au test FAVN selon Wallace et al. 2017">
           <thead>
             <tr><th>Facteur de risque</th><th>Impact mesuré (Wallace 2017, n=8 011)</th><th>Recommandation Zoovet</th></tr>
           </thead>
@@ -661,6 +694,7 @@
             </tr>
           </tbody>
         </table>
+        </div>
 
         <div class="case-story">
           <div class="case-story-header">

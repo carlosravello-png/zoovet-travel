@@ -764,6 +764,37 @@
       .header-nav .lang-switcher { flex-wrap: wrap; gap: 0.5rem; }
       .author-card { flex-direction: column; }
     }
+
+    /* ── MOBILE RESPONSIVE ── */
+    html, body { max-width: 100%; overflow-x: hidden; }
+
+    .table-scroll {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      margin: 1.5rem 0;
+    }
+    .table-scroll .protocol-table { margin: 0; }
+
+    img { max-width: 100%; height: auto; }
+
+    @media (max-width: 480px) {
+      .site-header { padding: 0 1rem; }
+      .header-nav a:not(.btn-contact) { display: none; }
+      .lang-switcher { gap: 0.35rem; }
+      .hero { padding: 2.5rem 1rem 2rem; }
+      .hero h1 { font-size: 1.6rem; }
+      .container, .container-wide { padding: 0 1rem; }
+      .section { padding: 2.5rem 0; }
+      .highlight-box { padding: 1.25rem; }
+      .data-row { grid-template-columns: repeat(2, 1fr); }
+      .risk-table td:first-child { width: auto; font-size: 0.82rem; }
+      .risk-table td:nth-child(2) { width: auto; font-size: 0.82rem; }
+      .risk-table td:nth-child(3) { font-size: 0.82rem; }
+      .protocol-table th, .protocol-table td { padding: 0.55rem 0.65rem; font-size: 0.82rem; }
+      .case-story-header { flex-wrap: wrap; gap: 0.5rem; }
+      .cta-buttons { flex-direction: column; align-items: center; }
+      .titer-change { flex-wrap: wrap; gap: 0.5rem; }
+    }
   </style>
 </head>
 
@@ -910,7 +941,7 @@
 
         <h3>The Zoovet Travel Protocol — Novibac Rabies D1/D15/D30</h3>
 
-        <table class="protocol-table" role="table" aria-label="Zoovet Travel vaccination protocol">
+        <div class="table-scroll"><table class="protocol-table" role="table" aria-label="Zoovet Travel vaccination protocol">
           <thead>
             <tr>
               <th>Day</th>
@@ -936,6 +967,7 @@
             </tr>
           </tbody>
         </table>
+        </div>
 
         <h3>Clinical results from Zoovet Travel with this protocol</h3>
 
@@ -994,7 +1026,7 @@
 
         <p>What this means in practice: if serum arrives at KSVDL reddish or cloudy (hemolysis from red blood cell rupture) or milky (lipemia from fat in blood, preventable with fasting), the cell culture used by the FAVN test cannot function. KSVDL charges the full test because the cellular work has already begun. The owner receives a report marked "toxic" with no further explanation. The entire process — blood draw, international shipping, full test fee — must be repeated.</p>
 
-        <table class="protocol-table risk-table" role="table" aria-label="Toxic sample causes and prevention">
+        <div class="table-scroll"><table class="protocol-table risk-table" role="table" aria-label="Toxic sample causes and prevention">
           <thead>
             <tr><th>Cause</th><th>How the sample looks</th><th>Prevention (KSVDL + Zoovet)</th></tr>
           </thead>
@@ -1005,6 +1037,7 @@
             <tr><td><strong>Insufficient volume</strong></td><td>—</td><td>Minimum 1-2 mL of clear serum in a 3-5 mL unbreakable tube, labeled with the animal's microchip number.</td></tr>
           </tbody>
         </table>
+        </div>
 
         <div class="case-story">
           <div class="case-story-header">
@@ -1035,7 +1068,7 @@
           <p style="font-size:0.88rem;color:rgba(255,255,255,0.7)">Sample of 8,011 dogs under 1 year of age, no prior rabies vaccination history, submitted to reference laboratories including KSVDL. Threshold: ≥0.5 IU/mL by FAVN. The most cited study in the literature on FAVN failure risk factors.</p>
         </div>
 
-        <table class="protocol-table risk-table" role="table" aria-label="FAVN failure risk factors according to Wallace et al. 2017">
+        <div class="table-scroll"><table class="protocol-table risk-table" role="table" aria-label="FAVN failure risk factors according to Wallace et al. 2017">
           <thead>
             <tr><th>Risk factor</th><th>Measured impact (Wallace 2017, n=8,011)</th><th>Zoovet recommendation</th></tr>
           </thead>
@@ -1067,6 +1100,7 @@
             </tr>
           </tbody>
         </table>
+        </div>
 
         <p style="font-size:0.875rem;color:var(--text-muted);font-style:italic">In our 13 years of case history, we observe higher frequency of low results in large breeds and very young puppies, even under the D1/D15/D30 Novibac protocol. This is consistent with the findings of Wallace et al. (2017) and reinforces the importance of early planning when the destination country has strict deadlines (Hawaii, Japan).</p>
 

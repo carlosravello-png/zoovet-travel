@@ -273,6 +273,11 @@
 
     main p, main li { text-align: justify; }
     @supports (padding: max(0px)) { .footer-safe { padding-bottom: max(1.5rem, env(safe-area-inset-bottom)); } }
+  
+    /* ── MOBILE OVERFLOW FIX ── */
+    html, body { max-width: 100%; overflow-x: hidden; }
+    * { box-sizing: border-box; }
+    img { max-width: 100%; height: auto; }
   </style>
 </head>
 

@@ -826,6 +826,37 @@
       .header-nav .lang-switcher { flex-wrap: wrap; gap: 0.5rem; }
       .author-card { flex-direction: column; }
     }
+
+    /* ── MOBILE RESPONSIVE ── */
+    html, body { max-width: 100%; overflow-x: hidden; }
+
+    .table-scroll {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      margin: 1.5rem 0;
+    }
+    .table-scroll .protocol-table { margin: 0; }
+
+    img { max-width: 100%; height: auto; }
+
+    @media (max-width: 480px) {
+      .site-header { padding: 0 1rem; }
+      .header-nav a:not(.btn-contact) { display: none; }
+      .lang-switcher { gap: 0.35rem; }
+      .hero { padding: 2.5rem 1rem 2rem; }
+      .hero h1 { font-size: 1.6rem; }
+      .container, .container-wide { padding: 0 1rem; }
+      .section { padding: 2.5rem 0; }
+      .highlight-box { padding: 1.25rem; }
+      .data-row { grid-template-columns: repeat(2, 1fr); }
+      .risk-table td:first-child { width: auto; font-size: 0.82rem; }
+      .risk-table td:nth-child(2) { width: auto; font-size: 0.82rem; }
+      .risk-table td:nth-child(3) { font-size: 0.82rem; }
+      .protocol-table th, .protocol-table td { padding: 0.55rem 0.65rem; font-size: 0.82rem; }
+      .case-story-header { flex-wrap: wrap; gap: 0.5rem; }
+      .cta-buttons { flex-direction: column; align-items: center; }
+      .titer-change { flex-wrap: wrap; gap: 0.5rem; }
+    }
   </style>
 </head>
 <body>
@@ -971,7 +1002,7 @@
 
         <h3>El Protocolo Zoovet Travel — Novibac Rabies D1/D15/D30</h3>
 
-        <table class="protocol-table" role="table" aria-label="Protocolo de vacunación Zoovet Travel">
+        <div class="table-scroll"><table class="protocol-table" role="table" aria-label="Protocolo de vacunación Zoovet Travel">
           <thead>
             <tr>
               <th>Día</th>
@@ -997,6 +1028,7 @@
             </tr>
           </tbody>
         </table>
+        </div>
 
         <h3>Resultados clínicos de Zoovet Travel con este protocolo</h3>
 
@@ -1058,7 +1090,7 @@
 
         <p>En climas cálidos como Lima y Trujillo, la lipemia es un riesgo adicional en verano: animales que comen justo antes de la extracción, temperaturas altas durante el transporte al laboratorio, y manejo deficiente del suero aumentan el riesgo significativamente.</p>
 
-        <table class="protocol-table risk-table" role="table" aria-label="Causas de muestra tóxica y cómo prevenirlas">
+        <div class="table-scroll"><table class="protocol-table risk-table" role="table" aria-label="Causas de muestra tóxica y cómo prevenirlas">
           <thead>
             <tr>
               <th>Causa</th>
@@ -1089,6 +1121,7 @@
             </tr>
           </tbody>
         </table>
+        </div>
 
         <div class="case-story">
           <div class="case-story-header">
@@ -1120,7 +1153,7 @@
           <p style="font-size:0.88rem;color:rgba(255,255,255,0.7)">Muestra de 8.011 perros menores de 1 año, sin historial previo de vacunación antirrábica, enviados a laboratorios de referencia incluyendo KSVDL. Umbral evaluado: ≥0.5 IU/mL por FAVN. El estudio más citado en la literatura sobre factores de fracaso en la prueba FAVN.</p>
         </div>
 
-        <table class="protocol-table risk-table" role="table" aria-label="Factores de riesgo de fracaso en la prueba FAVN según Wallace et al. 2017">
+        <div class="table-scroll"><table class="protocol-table risk-table" role="table" aria-label="Factores de riesgo de fracaso en la prueba FAVN según Wallace et al. 2017">
           <thead>
             <tr>
               <th>Factor de riesgo</th>
@@ -1156,6 +1189,7 @@
             </tr>
           </tbody>
         </table>
+        </div>
 
         <p style="font-size:0.875rem;color:var(--text-muted);font-style:italic">En nuestra casuística de 13 años, observamos mayor frecuencia de resultados bajos en razas grandes y cachorros muy jóvenes, incluso bajo el protocolo D1/D15/D30 Novibac. Esto es consistente con los hallazgos de Wallace et al. (2017) y refuerza la importancia de la planificación anticipada cuando el destino tiene plazos estrictos (Hawaii, Japón).</p>
 
