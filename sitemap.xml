@@ -2033,4 +2033,36 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://zoovettravel.com/viajar-sin-favn-eeuu-fr.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zoovettravel.com/viajar-sin-favn-eeuu.html" />
   </url>
+
+  <!-- responsabilidad-veterinario cluster -->
+  <url>
+    <loc>https://zoovettravel.com/responsabilidad-veterinario.html</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/responsabilidad-veterinario.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://zoovettravel.com/responsabilidad-veterinario-en.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zoovettravel.com/responsabilidad-veterinario-fr.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zoovettravel.com/responsabilidad-veterinario.html" />
+  </url>
+  <url>
+    <loc>https://zoovettravel.com/responsabilidad-veterinario-en.html</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/responsabilidad-veterinario.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://zoovettravel.com/responsabilidad-veterinario-en.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zoovettravel.com/responsabilidad-veterinario-fr.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zoovettravel.com/responsabilidad-veterinario.html" />
+  </url>
+  <url>
+    <loc>https://zoovettravel.com/responsabilidad-veterinario-fr.html</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/responsabilidad-veterinario.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://zoovettravel.com/responsabilidad-veterinario-en.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zoovettravel.com/responsabilidad-veterinario-fr.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zoovettravel.com/responsabilidad-veterinario.html" />
+  </url>
 </urlset>
