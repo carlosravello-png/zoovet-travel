@@ -595,3 +595,762 @@ img, video { max-width: 100%; height: auto; }
 .text-white\/40{color:rgb(255 255 255 / 0.4)}
 .hover\:text-white\/70:hover{color:rgb(255 255 255 / 0.7)}
 .space-y-1\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.375rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.375rem * var(--tw-space-y-reverse))}
+
+/* === FIX v2: missing utility classes for index/zoopedia/serologia visual integrity === */
+.bg-\[\#0C789E\]{background-color:rgb(12 120 158)}
+.text-\[\#0C789E\]{color:rgb(12 120 158)}
+.border-\[\#0C789E\]{border-color:rgb(12 120 158)}
+.hover\:bg-\[\#0C789E\]:hover{background-color:rgb(12 120 158)}
+.hover\:text-\[\#0C789E\]:hover{color:rgb(12 120 158)}
+.hover\:border-\[\#0C789E\]:hover{border-color:rgb(12 120 158)}
+.group:hover .group-hover\:bg-\[\#0C789E\]{background-color:rgb(12 120 158)}
+.group:hover .group-hover\:text-\[\#0C789E\]{color:rgb(12 120 158)}
+.group:hover .group-hover\:border-\[\#0C789E\]{border-color:rgb(12 120 158)}
+.bg-\[\#1a2e35\]{background-color:rgb(26 46 53)}
+.text-\[\#1a2e35\]{color:rgb(26 46 53)}
+.border-\[\#1a2e35\]{border-color:rgb(26 46 53)}
+.hover\:bg-\[\#1a2e35\]:hover{background-color:rgb(26 46 53)}
+.hover\:text-\[\#1a2e35\]:hover{color:rgb(26 46 53)}
+.hover\:border-\[\#1a2e35\]:hover{border-color:rgb(26 46 53)}
+.group:hover .group-hover\:bg-\[\#1a2e35\]{background-color:rgb(26 46 53)}
+.group:hover .group-hover\:text-\[\#1a2e35\]{color:rgb(26 46 53)}
+.group:hover .group-hover\:border-\[\#1a2e35\]{border-color:rgb(26 46 53)}
+.bg-\[\#4ab8e0\]{background-color:rgb(74 184 224)}
+.text-\[\#4ab8e0\]{color:rgb(74 184 224)}
+.border-\[\#4ab8e0\]{border-color:rgb(74 184 224)}
+.hover\:bg-\[\#4ab8e0\]:hover{background-color:rgb(74 184 224)}
+.hover\:text-\[\#4ab8e0\]:hover{color:rgb(74 184 224)}
+.hover\:border-\[\#4ab8e0\]:hover{border-color:rgb(74 184 224)}
+.group:hover .group-hover\:bg-\[\#4ab8e0\]{background-color:rgb(74 184 224)}
+.group:hover .group-hover\:text-\[\#4ab8e0\]{color:rgb(74 184 224)}
+.group:hover .group-hover\:border-\[\#4ab8e0\]{border-color:rgb(74 184 224)}
+.bg-\[\#4a6572\]{background-color:rgb(74 101 114)}
+.text-\[\#4a6572\]{color:rgb(74 101 114)}
+.border-\[\#4a6572\]{border-color:rgb(74 101 114)}
+.hover\:bg-\[\#4a6572\]:hover{background-color:rgb(74 101 114)}
+.hover\:text-\[\#4a6572\]:hover{color:rgb(74 101 114)}
+.hover\:border-\[\#4a6572\]:hover{border-color:rgb(74 101 114)}
+.group:hover .group-hover\:bg-\[\#4a6572\]{background-color:rgb(74 101 114)}
+.group:hover .group-hover\:text-\[\#4a6572\]{color:rgb(74 101 114)}
+.group:hover .group-hover\:border-\[\#4a6572\]{border-color:rgb(74 101 114)}
+.bg-\[\#F8FAFC\]{background-color:rgb(248 250 252)}
+.text-\[\#F8FAFC\]{color:rgb(248 250 252)}
+.border-\[\#F8FAFC\]{border-color:rgb(248 250 252)}
+.hover\:bg-\[\#F8FAFC\]:hover{background-color:rgb(248 250 252)}
+.hover\:text-\[\#F8FAFC\]:hover{color:rgb(248 250 252)}
+.hover\:border-\[\#F8FAFC\]:hover{border-color:rgb(248 250 252)}
+.group:hover .group-hover\:bg-\[\#F8FAFC\]{background-color:rgb(248 250 252)}
+.group:hover .group-hover\:text-\[\#F8FAFC\]{color:rgb(248 250 252)}
+.group:hover .group-hover\:border-\[\#F8FAFC\]{border-color:rgb(248 250 252)}
+.bg-\[\#0a6a8a\]{background-color:rgb(10 106 138)}
+.text-\[\#0a6a8a\]{color:rgb(10 106 138)}
+.border-\[\#0a6a8a\]{border-color:rgb(10 106 138)}
+.hover\:bg-\[\#0a6a8a\]:hover{background-color:rgb(10 106 138)}
+.hover\:text-\[\#0a6a8a\]:hover{color:rgb(10 106 138)}
+.hover\:border-\[\#0a6a8a\]:hover{border-color:rgb(10 106 138)}
+.group:hover .group-hover\:bg-\[\#0a6a8a\]{background-color:rgb(10 106 138)}
+.group:hover .group-hover\:text-\[\#0a6a8a\]{color:rgb(10 106 138)}
+.group:hover .group-hover\:border-\[\#0a6a8a\]{border-color:rgb(10 106 138)}
+.bg-\[\#e8f2fa\]{background-color:rgb(232 242 250)}
+.text-\[\#e8f2fa\]{color:rgb(232 242 250)}
+.border-\[\#e8f2fa\]{border-color:rgb(232 242 250)}
+.hover\:bg-\[\#e8f2fa\]:hover{background-color:rgb(232 242 250)}
+.hover\:text-\[\#e8f2fa\]:hover{color:rgb(232 242 250)}
+.hover\:border-\[\#e8f2fa\]:hover{border-color:rgb(232 242 250)}
+.group:hover .group-hover\:bg-\[\#e8f2fa\]{background-color:rgb(232 242 250)}
+.group:hover .group-hover\:text-\[\#e8f2fa\]{color:rgb(232 242 250)}
+.group:hover .group-hover\:border-\[\#e8f2fa\]{border-color:rgb(232 242 250)}
+.bg-\[\#f0f4f8\]{background-color:rgb(240 244 248)}
+.text-\[\#f0f4f8\]{color:rgb(240 244 248)}
+.border-\[\#f0f4f8\]{border-color:rgb(240 244 248)}
+.hover\:bg-\[\#f0f4f8\]:hover{background-color:rgb(240 244 248)}
+.hover\:text-\[\#f0f4f8\]:hover{color:rgb(240 244 248)}
+.hover\:border-\[\#f0f4f8\]:hover{border-color:rgb(240 244 248)}
+.group:hover .group-hover\:bg-\[\#f0f4f8\]{background-color:rgb(240 244 248)}
+.group:hover .group-hover\:text-\[\#f0f4f8\]{color:rgb(240 244 248)}
+.group:hover .group-hover\:border-\[\#f0f4f8\]{border-color:rgb(240 244 248)}
+.bg-\[\#0C789E\]\/5{background-color:rgb(12 120 158 / 0.05)}
+.text-\[\#0C789E\]\/5{color:rgb(12 120 158 / 0.05)}
+.border-\[\#0C789E\]\/5{border-color:rgb(12 120 158 / 0.05)}
+.hover\:bg-\[\#0C789E\]\/5:hover{background-color:rgb(12 120 158 / 0.05)}
+.hover\:text-\[\#0C789E\]\/5:hover{color:rgb(12 120 158 / 0.05)}
+.hover\:border-\[\#0C789E\]\/5:hover{border-color:rgb(12 120 158 / 0.05)}
+.bg-\[\#0C789E\]\/10{background-color:rgb(12 120 158 / 0.1)}
+.text-\[\#0C789E\]\/10{color:rgb(12 120 158 / 0.1)}
+.border-\[\#0C789E\]\/10{border-color:rgb(12 120 158 / 0.1)}
+.hover\:bg-\[\#0C789E\]\/10:hover{background-color:rgb(12 120 158 / 0.1)}
+.hover\:text-\[\#0C789E\]\/10:hover{color:rgb(12 120 158 / 0.1)}
+.hover\:border-\[\#0C789E\]\/10:hover{border-color:rgb(12 120 158 / 0.1)}
+.bg-\[\#0C789E\]\/15{background-color:rgb(12 120 158 / 0.15)}
+.text-\[\#0C789E\]\/15{color:rgb(12 120 158 / 0.15)}
+.border-\[\#0C789E\]\/15{border-color:rgb(12 120 158 / 0.15)}
+.hover\:bg-\[\#0C789E\]\/15:hover{background-color:rgb(12 120 158 / 0.15)}
+.hover\:text-\[\#0C789E\]\/15:hover{color:rgb(12 120 158 / 0.15)}
+.hover\:border-\[\#0C789E\]\/15:hover{border-color:rgb(12 120 158 / 0.15)}
+.bg-\[\#0C789E\]\/20{background-color:rgb(12 120 158 / 0.2)}
+.text-\[\#0C789E\]\/20{color:rgb(12 120 158 / 0.2)}
+.border-\[\#0C789E\]\/20{border-color:rgb(12 120 158 / 0.2)}
+.hover\:bg-\[\#0C789E\]\/20:hover{background-color:rgb(12 120 158 / 0.2)}
+.hover\:text-\[\#0C789E\]\/20:hover{color:rgb(12 120 158 / 0.2)}
+.hover\:border-\[\#0C789E\]\/20:hover{border-color:rgb(12 120 158 / 0.2)}
+.bg-\[\#0C789E\]\/30{background-color:rgb(12 120 158 / 0.3)}
+.text-\[\#0C789E\]\/30{color:rgb(12 120 158 / 0.3)}
+.border-\[\#0C789E\]\/30{border-color:rgb(12 120 158 / 0.3)}
+.hover\:bg-\[\#0C789E\]\/30:hover{background-color:rgb(12 120 158 / 0.3)}
+.hover\:text-\[\#0C789E\]\/30:hover{color:rgb(12 120 158 / 0.3)}
+.hover\:border-\[\#0C789E\]\/30:hover{border-color:rgb(12 120 158 / 0.3)}
+.bg-\[\#0C789E\]\/40{background-color:rgb(12 120 158 / 0.4)}
+.text-\[\#0C789E\]\/40{color:rgb(12 120 158 / 0.4)}
+.border-\[\#0C789E\]\/40{border-color:rgb(12 120 158 / 0.4)}
+.hover\:bg-\[\#0C789E\]\/40:hover{background-color:rgb(12 120 158 / 0.4)}
+.hover\:text-\[\#0C789E\]\/40:hover{color:rgb(12 120 158 / 0.4)}
+.hover\:border-\[\#0C789E\]\/40:hover{border-color:rgb(12 120 158 / 0.4)}
+.bg-\[\#0C789E\]\/50{background-color:rgb(12 120 158 / 0.5)}
+.text-\[\#0C789E\]\/50{color:rgb(12 120 158 / 0.5)}
+.border-\[\#0C789E\]\/50{border-color:rgb(12 120 158 / 0.5)}
+.hover\:bg-\[\#0C789E\]\/50:hover{background-color:rgb(12 120 158 / 0.5)}
+.hover\:text-\[\#0C789E\]\/50:hover{color:rgb(12 120 158 / 0.5)}
+.hover\:border-\[\#0C789E\]\/50:hover{border-color:rgb(12 120 158 / 0.5)}
+.bg-\[\#0C789E\]\/60{background-color:rgb(12 120 158 / 0.6)}
+.text-\[\#0C789E\]\/60{color:rgb(12 120 158 / 0.6)}
+.border-\[\#0C789E\]\/60{border-color:rgb(12 120 158 / 0.6)}
+.hover\:bg-\[\#0C789E\]\/60:hover{background-color:rgb(12 120 158 / 0.6)}
+.hover\:text-\[\#0C789E\]\/60:hover{color:rgb(12 120 158 / 0.6)}
+.hover\:border-\[\#0C789E\]\/60:hover{border-color:rgb(12 120 158 / 0.6)}
+.bg-\[\#0C789E\]\/70{background-color:rgb(12 120 158 / 0.7)}
+.text-\[\#0C789E\]\/70{color:rgb(12 120 158 / 0.7)}
+.border-\[\#0C789E\]\/70{border-color:rgb(12 120 158 / 0.7)}
+.hover\:bg-\[\#0C789E\]\/70:hover{background-color:rgb(12 120 158 / 0.7)}
+.hover\:text-\[\#0C789E\]\/70:hover{color:rgb(12 120 158 / 0.7)}
+.hover\:border-\[\#0C789E\]\/70:hover{border-color:rgb(12 120 158 / 0.7)}
+.bg-\[\#0C789E\]\/80{background-color:rgb(12 120 158 / 0.8)}
+.text-\[\#0C789E\]\/80{color:rgb(12 120 158 / 0.8)}
+.border-\[\#0C789E\]\/80{border-color:rgb(12 120 158 / 0.8)}
+.hover\:bg-\[\#0C789E\]\/80:hover{background-color:rgb(12 120 158 / 0.8)}
+.hover\:text-\[\#0C789E\]\/80:hover{color:rgb(12 120 158 / 0.8)}
+.hover\:border-\[\#0C789E\]\/80:hover{border-color:rgb(12 120 158 / 0.8)}
+.bg-\[\#0C789E\]\/90{background-color:rgb(12 120 158 / 0.9)}
+.text-\[\#0C789E\]\/90{color:rgb(12 120 158 / 0.9)}
+.border-\[\#0C789E\]\/90{border-color:rgb(12 120 158 / 0.9)}
+.hover\:bg-\[\#0C789E\]\/90:hover{background-color:rgb(12 120 158 / 0.9)}
+.hover\:text-\[\#0C789E\]\/90:hover{color:rgb(12 120 158 / 0.9)}
+.hover\:border-\[\#0C789E\]\/90:hover{border-color:rgb(12 120 158 / 0.9)}
+.bg-\[\#0C789E\]\/95{background-color:rgb(12 120 158 / 0.95)}
+.text-\[\#0C789E\]\/95{color:rgb(12 120 158 / 0.95)}
+.border-\[\#0C789E\]\/95{border-color:rgb(12 120 158 / 0.95)}
+.hover\:bg-\[\#0C789E\]\/95:hover{background-color:rgb(12 120 158 / 0.95)}
+.hover\:text-\[\#0C789E\]\/95:hover{color:rgb(12 120 158 / 0.95)}
+.hover\:border-\[\#0C789E\]\/95:hover{border-color:rgb(12 120 158 / 0.95)}
+.bg-\[\#1a2e35\]\/5{background-color:rgb(26 46 53 / 0.05)}
+.text-\[\#1a2e35\]\/5{color:rgb(26 46 53 / 0.05)}
+.border-\[\#1a2e35\]\/5{border-color:rgb(26 46 53 / 0.05)}
+.hover\:bg-\[\#1a2e35\]\/5:hover{background-color:rgb(26 46 53 / 0.05)}
+.hover\:text-\[\#1a2e35\]\/5:hover{color:rgb(26 46 53 / 0.05)}
+.hover\:border-\[\#1a2e35\]\/5:hover{border-color:rgb(26 46 53 / 0.05)}
+.bg-\[\#1a2e35\]\/10{background-color:rgb(26 46 53 / 0.1)}
+.text-\[\#1a2e35\]\/10{color:rgb(26 46 53 / 0.1)}
+.border-\[\#1a2e35\]\/10{border-color:rgb(26 46 53 / 0.1)}
+.hover\:bg-\[\#1a2e35\]\/10:hover{background-color:rgb(26 46 53 / 0.1)}
+.hover\:text-\[\#1a2e35\]\/10:hover{color:rgb(26 46 53 / 0.1)}
+.hover\:border-\[\#1a2e35\]\/10:hover{border-color:rgb(26 46 53 / 0.1)}
+.bg-\[\#1a2e35\]\/15{background-color:rgb(26 46 53 / 0.15)}
+.text-\[\#1a2e35\]\/15{color:rgb(26 46 53 / 0.15)}
+.border-\[\#1a2e35\]\/15{border-color:rgb(26 46 53 / 0.15)}
+.hover\:bg-\[\#1a2e35\]\/15:hover{background-color:rgb(26 46 53 / 0.15)}
+.hover\:text-\[\#1a2e35\]\/15:hover{color:rgb(26 46 53 / 0.15)}
+.hover\:border-\[\#1a2e35\]\/15:hover{border-color:rgb(26 46 53 / 0.15)}
+.bg-\[\#1a2e35\]\/20{background-color:rgb(26 46 53 / 0.2)}
+.text-\[\#1a2e35\]\/20{color:rgb(26 46 53 / 0.2)}
+.border-\[\#1a2e35\]\/20{border-color:rgb(26 46 53 / 0.2)}
+.hover\:bg-\[\#1a2e35\]\/20:hover{background-color:rgb(26 46 53 / 0.2)}
+.hover\:text-\[\#1a2e35\]\/20:hover{color:rgb(26 46 53 / 0.2)}
+.hover\:border-\[\#1a2e35\]\/20:hover{border-color:rgb(26 46 53 / 0.2)}
+.bg-\[\#1a2e35\]\/30{background-color:rgb(26 46 53 / 0.3)}
+.text-\[\#1a2e35\]\/30{color:rgb(26 46 53 / 0.3)}
+.border-\[\#1a2e35\]\/30{border-color:rgb(26 46 53 / 0.3)}
+.hover\:bg-\[\#1a2e35\]\/30:hover{background-color:rgb(26 46 53 / 0.3)}
+.hover\:text-\[\#1a2e35\]\/30:hover{color:rgb(26 46 53 / 0.3)}
+.hover\:border-\[\#1a2e35\]\/30:hover{border-color:rgb(26 46 53 / 0.3)}
+.bg-\[\#1a2e35\]\/40{background-color:rgb(26 46 53 / 0.4)}
+.text-\[\#1a2e35\]\/40{color:rgb(26 46 53 / 0.4)}
+.border-\[\#1a2e35\]\/40{border-color:rgb(26 46 53 / 0.4)}
+.hover\:bg-\[\#1a2e35\]\/40:hover{background-color:rgb(26 46 53 / 0.4)}
+.hover\:text-\[\#1a2e35\]\/40:hover{color:rgb(26 46 53 / 0.4)}
+.hover\:border-\[\#1a2e35\]\/40:hover{border-color:rgb(26 46 53 / 0.4)}
+.bg-\[\#1a2e35\]\/50{background-color:rgb(26 46 53 / 0.5)}
+.text-\[\#1a2e35\]\/50{color:rgb(26 46 53 / 0.5)}
+.border-\[\#1a2e35\]\/50{border-color:rgb(26 46 53 / 0.5)}
+.hover\:bg-\[\#1a2e35\]\/50:hover{background-color:rgb(26 46 53 / 0.5)}
+.hover\:text-\[\#1a2e35\]\/50:hover{color:rgb(26 46 53 / 0.5)}
+.hover\:border-\[\#1a2e35\]\/50:hover{border-color:rgb(26 46 53 / 0.5)}
+.bg-\[\#1a2e35\]\/60{background-color:rgb(26 46 53 / 0.6)}
+.text-\[\#1a2e35\]\/60{color:rgb(26 46 53 / 0.6)}
+.border-\[\#1a2e35\]\/60{border-color:rgb(26 46 53 / 0.6)}
+.hover\:bg-\[\#1a2e35\]\/60:hover{background-color:rgb(26 46 53 / 0.6)}
+.hover\:text-\[\#1a2e35\]\/60:hover{color:rgb(26 46 53 / 0.6)}
+.hover\:border-\[\#1a2e35\]\/60:hover{border-color:rgb(26 46 53 / 0.6)}
+.bg-\[\#1a2e35\]\/70{background-color:rgb(26 46 53 / 0.7)}
+.text-\[\#1a2e35\]\/70{color:rgb(26 46 53 / 0.7)}
+.border-\[\#1a2e35\]\/70{border-color:rgb(26 46 53 / 0.7)}
+.hover\:bg-\[\#1a2e35\]\/70:hover{background-color:rgb(26 46 53 / 0.7)}
+.hover\:text-\[\#1a2e35\]\/70:hover{color:rgb(26 46 53 / 0.7)}
+.hover\:border-\[\#1a2e35\]\/70:hover{border-color:rgb(26 46 53 / 0.7)}
+.bg-\[\#1a2e35\]\/80{background-color:rgb(26 46 53 / 0.8)}
+.text-\[\#1a2e35\]\/80{color:rgb(26 46 53 / 0.8)}
+.border-\[\#1a2e35\]\/80{border-color:rgb(26 46 53 / 0.8)}
+.hover\:bg-\[\#1a2e35\]\/80:hover{background-color:rgb(26 46 53 / 0.8)}
+.hover\:text-\[\#1a2e35\]\/80:hover{color:rgb(26 46 53 / 0.8)}
+.hover\:border-\[\#1a2e35\]\/80:hover{border-color:rgb(26 46 53 / 0.8)}
+.bg-\[\#1a2e35\]\/90{background-color:rgb(26 46 53 / 0.9)}
+.text-\[\#1a2e35\]\/90{color:rgb(26 46 53 / 0.9)}
+.border-\[\#1a2e35\]\/90{border-color:rgb(26 46 53 / 0.9)}
+.hover\:bg-\[\#1a2e35\]\/90:hover{background-color:rgb(26 46 53 / 0.9)}
+.hover\:text-\[\#1a2e35\]\/90:hover{color:rgb(26 46 53 / 0.9)}
+.hover\:border-\[\#1a2e35\]\/90:hover{border-color:rgb(26 46 53 / 0.9)}
+.bg-\[\#1a2e35\]\/95{background-color:rgb(26 46 53 / 0.95)}
+.text-\[\#1a2e35\]\/95{color:rgb(26 46 53 / 0.95)}
+.border-\[\#1a2e35\]\/95{border-color:rgb(26 46 53 / 0.95)}
+.hover\:bg-\[\#1a2e35\]\/95:hover{background-color:rgb(26 46 53 / 0.95)}
+.hover\:text-\[\#1a2e35\]\/95:hover{color:rgb(26 46 53 / 0.95)}
+.hover\:border-\[\#1a2e35\]\/95:hover{border-color:rgb(26 46 53 / 0.95)}
+.bg-\[\#4ab8e0\]\/5{background-color:rgb(74 184 224 / 0.05)}
+.text-\[\#4ab8e0\]\/5{color:rgb(74 184 224 / 0.05)}
+.border-\[\#4ab8e0\]\/5{border-color:rgb(74 184 224 / 0.05)}
+.hover\:bg-\[\#4ab8e0\]\/5:hover{background-color:rgb(74 184 224 / 0.05)}
+.hover\:text-\[\#4ab8e0\]\/5:hover{color:rgb(74 184 224 / 0.05)}
+.hover\:border-\[\#4ab8e0\]\/5:hover{border-color:rgb(74 184 224 / 0.05)}
+.bg-\[\#4ab8e0\]\/10{background-color:rgb(74 184 224 / 0.1)}
+.text-\[\#4ab8e0\]\/10{color:rgb(74 184 224 / 0.1)}
+.border-\[\#4ab8e0\]\/10{border-color:rgb(74 184 224 / 0.1)}
+.hover\:bg-\[\#4ab8e0\]\/10:hover{background-color:rgb(74 184 224 / 0.1)}
+.hover\:text-\[\#4ab8e0\]\/10:hover{color:rgb(74 184 224 / 0.1)}
+.hover\:border-\[\#4ab8e0\]\/10:hover{border-color:rgb(74 184 224 / 0.1)}
+.bg-\[\#4ab8e0\]\/15{background-color:rgb(74 184 224 / 0.15)}
+.text-\[\#4ab8e0\]\/15{color:rgb(74 184 224 / 0.15)}
+.border-\[\#4ab8e0\]\/15{border-color:rgb(74 184 224 / 0.15)}
+.hover\:bg-\[\#4ab8e0\]\/15:hover{background-color:rgb(74 184 224 / 0.15)}
+.hover\:text-\[\#4ab8e0\]\/15:hover{color:rgb(74 184 224 / 0.15)}
+.hover\:border-\[\#4ab8e0\]\/15:hover{border-color:rgb(74 184 224 / 0.15)}
+.bg-\[\#4ab8e0\]\/20{background-color:rgb(74 184 224 / 0.2)}
+.text-\[\#4ab8e0\]\/20{color:rgb(74 184 224 / 0.2)}
+.border-\[\#4ab8e0\]\/20{border-color:rgb(74 184 224 / 0.2)}
+.hover\:bg-\[\#4ab8e0\]\/20:hover{background-color:rgb(74 184 224 / 0.2)}
+.hover\:text-\[\#4ab8e0\]\/20:hover{color:rgb(74 184 224 / 0.2)}
+.hover\:border-\[\#4ab8e0\]\/20:hover{border-color:rgb(74 184 224 / 0.2)}
+.bg-\[\#4ab8e0\]\/30{background-color:rgb(74 184 224 / 0.3)}
+.text-\[\#4ab8e0\]\/30{color:rgb(74 184 224 / 0.3)}
+.border-\[\#4ab8e0\]\/30{border-color:rgb(74 184 224 / 0.3)}
+.hover\:bg-\[\#4ab8e0\]\/30:hover{background-color:rgb(74 184 224 / 0.3)}
+.hover\:text-\[\#4ab8e0\]\/30:hover{color:rgb(74 184 224 / 0.3)}
+.hover\:border-\[\#4ab8e0\]\/30:hover{border-color:rgb(74 184 224 / 0.3)}
+.bg-\[\#4ab8e0\]\/40{background-color:rgb(74 184 224 / 0.4)}
+.text-\[\#4ab8e0\]\/40{color:rgb(74 184 224 / 0.4)}
+.border-\[\#4ab8e0\]\/40{border-color:rgb(74 184 224 / 0.4)}
+.hover\:bg-\[\#4ab8e0\]\/40:hover{background-color:rgb(74 184 224 / 0.4)}
+.hover\:text-\[\#4ab8e0\]\/40:hover{color:rgb(74 184 224 / 0.4)}
+.hover\:border-\[\#4ab8e0\]\/40:hover{border-color:rgb(74 184 224 / 0.4)}
+.bg-\[\#4ab8e0\]\/50{background-color:rgb(74 184 224 / 0.5)}
+.text-\[\#4ab8e0\]\/50{color:rgb(74 184 224 / 0.5)}
+.border-\[\#4ab8e0\]\/50{border-color:rgb(74 184 224 / 0.5)}
+.hover\:bg-\[\#4ab8e0\]\/50:hover{background-color:rgb(74 184 224 / 0.5)}
+.hover\:text-\[\#4ab8e0\]\/50:hover{color:rgb(74 184 224 / 0.5)}
+.hover\:border-\[\#4ab8e0\]\/50:hover{border-color:rgb(74 184 224 / 0.5)}
+.bg-\[\#4ab8e0\]\/60{background-color:rgb(74 184 224 / 0.6)}
+.text-\[\#4ab8e0\]\/60{color:rgb(74 184 224 / 0.6)}
+.border-\[\#4ab8e0\]\/60{border-color:rgb(74 184 224 / 0.6)}
+.hover\:bg-\[\#4ab8e0\]\/60:hover{background-color:rgb(74 184 224 / 0.6)}
+.hover\:text-\[\#4ab8e0\]\/60:hover{color:rgb(74 184 224 / 0.6)}
+.hover\:border-\[\#4ab8e0\]\/60:hover{border-color:rgb(74 184 224 / 0.6)}
+.bg-\[\#4ab8e0\]\/70{background-color:rgb(74 184 224 / 0.7)}
+.text-\[\#4ab8e0\]\/70{color:rgb(74 184 224 / 0.7)}
+.border-\[\#4ab8e0\]\/70{border-color:rgb(74 184 224 / 0.7)}
+.hover\:bg-\[\#4ab8e0\]\/70:hover{background-color:rgb(74 184 224 / 0.7)}
+.hover\:text-\[\#4ab8e0\]\/70:hover{color:rgb(74 184 224 / 0.7)}
+.hover\:border-\[\#4ab8e0\]\/70:hover{border-color:rgb(74 184 224 / 0.7)}
+.bg-\[\#4ab8e0\]\/80{background-color:rgb(74 184 224 / 0.8)}
+.text-\[\#4ab8e0\]\/80{color:rgb(74 184 224 / 0.8)}
+.border-\[\#4ab8e0\]\/80{border-color:rgb(74 184 224 / 0.8)}
+.hover\:bg-\[\#4ab8e0\]\/80:hover{background-color:rgb(74 184 224 / 0.8)}
+.hover\:text-\[\#4ab8e0\]\/80:hover{color:rgb(74 184 224 / 0.8)}
+.hover\:border-\[\#4ab8e0\]\/80:hover{border-color:rgb(74 184 224 / 0.8)}
+.bg-\[\#4ab8e0\]\/90{background-color:rgb(74 184 224 / 0.9)}
+.text-\[\#4ab8e0\]\/90{color:rgb(74 184 224 / 0.9)}
+.border-\[\#4ab8e0\]\/90{border-color:rgb(74 184 224 / 0.9)}
+.hover\:bg-\[\#4ab8e0\]\/90:hover{background-color:rgb(74 184 224 / 0.9)}
+.hover\:text-\[\#4ab8e0\]\/90:hover{color:rgb(74 184 224 / 0.9)}
+.hover\:border-\[\#4ab8e0\]\/90:hover{border-color:rgb(74 184 224 / 0.9)}
+.bg-\[\#4ab8e0\]\/95{background-color:rgb(74 184 224 / 0.95)}
+.text-\[\#4ab8e0\]\/95{color:rgb(74 184 224 / 0.95)}
+.border-\[\#4ab8e0\]\/95{border-color:rgb(74 184 224 / 0.95)}
+.hover\:bg-\[\#4ab8e0\]\/95:hover{background-color:rgb(74 184 224 / 0.95)}
+.hover\:text-\[\#4ab8e0\]\/95:hover{color:rgb(74 184 224 / 0.95)}
+.hover\:border-\[\#4ab8e0\]\/95:hover{border-color:rgb(74 184 224 / 0.95)}
+.bg-\[\#4a6572\]\/5{background-color:rgb(74 101 114 / 0.05)}
+.text-\[\#4a6572\]\/5{color:rgb(74 101 114 / 0.05)}
+.border-\[\#4a6572\]\/5{border-color:rgb(74 101 114 / 0.05)}
+.hover\:bg-\[\#4a6572\]\/5:hover{background-color:rgb(74 101 114 / 0.05)}
+.hover\:text-\[\#4a6572\]\/5:hover{color:rgb(74 101 114 / 0.05)}
+.hover\:border-\[\#4a6572\]\/5:hover{border-color:rgb(74 101 114 / 0.05)}
+.bg-\[\#4a6572\]\/10{background-color:rgb(74 101 114 / 0.1)}
+.text-\[\#4a6572\]\/10{color:rgb(74 101 114 / 0.1)}
+.border-\[\#4a6572\]\/10{border-color:rgb(74 101 114 / 0.1)}
+.hover\:bg-\[\#4a6572\]\/10:hover{background-color:rgb(74 101 114 / 0.1)}
+.hover\:text-\[\#4a6572\]\/10:hover{color:rgb(74 101 114 / 0.1)}
+.hover\:border-\[\#4a6572\]\/10:hover{border-color:rgb(74 101 114 / 0.1)}
+.bg-\[\#4a6572\]\/15{background-color:rgb(74 101 114 / 0.15)}
+.text-\[\#4a6572\]\/15{color:rgb(74 101 114 / 0.15)}
+.border-\[\#4a6572\]\/15{border-color:rgb(74 101 114 / 0.15)}
+.hover\:bg-\[\#4a6572\]\/15:hover{background-color:rgb(74 101 114 / 0.15)}
+.hover\:text-\[\#4a6572\]\/15:hover{color:rgb(74 101 114 / 0.15)}
+.hover\:border-\[\#4a6572\]\/15:hover{border-color:rgb(74 101 114 / 0.15)}
+.bg-\[\#4a6572\]\/20{background-color:rgb(74 101 114 / 0.2)}
+.text-\[\#4a6572\]\/20{color:rgb(74 101 114 / 0.2)}
+.border-\[\#4a6572\]\/20{border-color:rgb(74 101 114 / 0.2)}
+.hover\:bg-\[\#4a6572\]\/20:hover{background-color:rgb(74 101 114 / 0.2)}
+.hover\:text-\[\#4a6572\]\/20:hover{color:rgb(74 101 114 / 0.2)}
+.hover\:border-\[\#4a6572\]\/20:hover{border-color:rgb(74 101 114 / 0.2)}
+.bg-\[\#4a6572\]\/30{background-color:rgb(74 101 114 / 0.3)}
+.text-\[\#4a6572\]\/30{color:rgb(74 101 114 / 0.3)}
+.border-\[\#4a6572\]\/30{border-color:rgb(74 101 114 / 0.3)}
+.hover\:bg-\[\#4a6572\]\/30:hover{background-color:rgb(74 101 114 / 0.3)}
+.hover\:text-\[\#4a6572\]\/30:hover{color:rgb(74 101 114 / 0.3)}
+.hover\:border-\[\#4a6572\]\/30:hover{border-color:rgb(74 101 114 / 0.3)}
+.bg-\[\#4a6572\]\/40{background-color:rgb(74 101 114 / 0.4)}
+.text-\[\#4a6572\]\/40{color:rgb(74 101 114 / 0.4)}
+.border-\[\#4a6572\]\/40{border-color:rgb(74 101 114 / 0.4)}
+.hover\:bg-\[\#4a6572\]\/40:hover{background-color:rgb(74 101 114 / 0.4)}
+.hover\:text-\[\#4a6572\]\/40:hover{color:rgb(74 101 114 / 0.4)}
+.hover\:border-\[\#4a6572\]\/40:hover{border-color:rgb(74 101 114 / 0.4)}
+.bg-\[\#4a6572\]\/50{background-color:rgb(74 101 114 / 0.5)}
+.text-\[\#4a6572\]\/50{color:rgb(74 101 114 / 0.5)}
+.border-\[\#4a6572\]\/50{border-color:rgb(74 101 114 / 0.5)}
+.hover\:bg-\[\#4a6572\]\/50:hover{background-color:rgb(74 101 114 / 0.5)}
+.hover\:text-\[\#4a6572\]\/50:hover{color:rgb(74 101 114 / 0.5)}
+.hover\:border-\[\#4a6572\]\/50:hover{border-color:rgb(74 101 114 / 0.5)}
+.bg-\[\#4a6572\]\/60{background-color:rgb(74 101 114 / 0.6)}
+.text-\[\#4a6572\]\/60{color:rgb(74 101 114 / 0.6)}
+.border-\[\#4a6572\]\/60{border-color:rgb(74 101 114 / 0.6)}
+.hover\:bg-\[\#4a6572\]\/60:hover{background-color:rgb(74 101 114 / 0.6)}
+.hover\:text-\[\#4a6572\]\/60:hover{color:rgb(74 101 114 / 0.6)}
+.hover\:border-\[\#4a6572\]\/60:hover{border-color:rgb(74 101 114 / 0.6)}
+.bg-\[\#4a6572\]\/70{background-color:rgb(74 101 114 / 0.7)}
+.text-\[\#4a6572\]\/70{color:rgb(74 101 114 / 0.7)}
+.border-\[\#4a6572\]\/70{border-color:rgb(74 101 114 / 0.7)}
+.hover\:bg-\[\#4a6572\]\/70:hover{background-color:rgb(74 101 114 / 0.7)}
+.hover\:text-\[\#4a6572\]\/70:hover{color:rgb(74 101 114 / 0.7)}
+.hover\:border-\[\#4a6572\]\/70:hover{border-color:rgb(74 101 114 / 0.7)}
+.bg-\[\#4a6572\]\/80{background-color:rgb(74 101 114 / 0.8)}
+.text-\[\#4a6572\]\/80{color:rgb(74 101 114 / 0.8)}
+.border-\[\#4a6572\]\/80{border-color:rgb(74 101 114 / 0.8)}
+.hover\:bg-\[\#4a6572\]\/80:hover{background-color:rgb(74 101 114 / 0.8)}
+.hover\:text-\[\#4a6572\]\/80:hover{color:rgb(74 101 114 / 0.8)}
+.hover\:border-\[\#4a6572\]\/80:hover{border-color:rgb(74 101 114 / 0.8)}
+.bg-\[\#4a6572\]\/90{background-color:rgb(74 101 114 / 0.9)}
+.text-\[\#4a6572\]\/90{color:rgb(74 101 114 / 0.9)}
+.border-\[\#4a6572\]\/90{border-color:rgb(74 101 114 / 0.9)}
+.hover\:bg-\[\#4a6572\]\/90:hover{background-color:rgb(74 101 114 / 0.9)}
+.hover\:text-\[\#4a6572\]\/90:hover{color:rgb(74 101 114 / 0.9)}
+.hover\:border-\[\#4a6572\]\/90:hover{border-color:rgb(74 101 114 / 0.9)}
+.bg-\[\#4a6572\]\/95{background-color:rgb(74 101 114 / 0.95)}
+.text-\[\#4a6572\]\/95{color:rgb(74 101 114 / 0.95)}
+.border-\[\#4a6572\]\/95{border-color:rgb(74 101 114 / 0.95)}
+.hover\:bg-\[\#4a6572\]\/95:hover{background-color:rgb(74 101 114 / 0.95)}
+.hover\:text-\[\#4a6572\]\/95:hover{color:rgb(74 101 114 / 0.95)}
+.hover\:border-\[\#4a6572\]\/95:hover{border-color:rgb(74 101 114 / 0.95)}
+.bg-\[\#F8FAFC\]\/5{background-color:rgb(248 250 252 / 0.05)}
+.text-\[\#F8FAFC\]\/5{color:rgb(248 250 252 / 0.05)}
+.border-\[\#F8FAFC\]\/5{border-color:rgb(248 250 252 / 0.05)}
+.hover\:bg-\[\#F8FAFC\]\/5:hover{background-color:rgb(248 250 252 / 0.05)}
+.hover\:text-\[\#F8FAFC\]\/5:hover{color:rgb(248 250 252 / 0.05)}
+.hover\:border-\[\#F8FAFC\]\/5:hover{border-color:rgb(248 250 252 / 0.05)}
+.bg-\[\#F8FAFC\]\/10{background-color:rgb(248 250 252 / 0.1)}
+.text-\[\#F8FAFC\]\/10{color:rgb(248 250 252 / 0.1)}
+.border-\[\#F8FAFC\]\/10{border-color:rgb(248 250 252 / 0.1)}
+.hover\:bg-\[\#F8FAFC\]\/10:hover{background-color:rgb(248 250 252 / 0.1)}
+.hover\:text-\[\#F8FAFC\]\/10:hover{color:rgb(248 250 252 / 0.1)}
+.hover\:border-\[\#F8FAFC\]\/10:hover{border-color:rgb(248 250 252 / 0.1)}
+.bg-\[\#F8FAFC\]\/15{background-color:rgb(248 250 252 / 0.15)}
+.text-\[\#F8FAFC\]\/15{color:rgb(248 250 252 / 0.15)}
+.border-\[\#F8FAFC\]\/15{border-color:rgb(248 250 252 / 0.15)}
+.hover\:bg-\[\#F8FAFC\]\/15:hover{background-color:rgb(248 250 252 / 0.15)}
+.hover\:text-\[\#F8FAFC\]\/15:hover{color:rgb(248 250 252 / 0.15)}
+.hover\:border-\[\#F8FAFC\]\/15:hover{border-color:rgb(248 250 252 / 0.15)}
+.bg-\[\#F8FAFC\]\/20{background-color:rgb(248 250 252 / 0.2)}
+.text-\[\#F8FAFC\]\/20{color:rgb(248 250 252 / 0.2)}
+.border-\[\#F8FAFC\]\/20{border-color:rgb(248 250 252 / 0.2)}
+.hover\:bg-\[\#F8FAFC\]\/20:hover{background-color:rgb(248 250 252 / 0.2)}
+.hover\:text-\[\#F8FAFC\]\/20:hover{color:rgb(248 250 252 / 0.2)}
+.hover\:border-\[\#F8FAFC\]\/20:hover{border-color:rgb(248 250 252 / 0.2)}
+.bg-\[\#F8FAFC\]\/30{background-color:rgb(248 250 252 / 0.3)}
+.text-\[\#F8FAFC\]\/30{color:rgb(248 250 252 / 0.3)}
+.border-\[\#F8FAFC\]\/30{border-color:rgb(248 250 252 / 0.3)}
+.hover\:bg-\[\#F8FAFC\]\/30:hover{background-color:rgb(248 250 252 / 0.3)}
+.hover\:text-\[\#F8FAFC\]\/30:hover{color:rgb(248 250 252 / 0.3)}
+.hover\:border-\[\#F8FAFC\]\/30:hover{border-color:rgb(248 250 252 / 0.3)}
+.bg-\[\#F8FAFC\]\/40{background-color:rgb(248 250 252 / 0.4)}
+.text-\[\#F8FAFC\]\/40{color:rgb(248 250 252 / 0.4)}
+.border-\[\#F8FAFC\]\/40{border-color:rgb(248 250 252 / 0.4)}
+.hover\:bg-\[\#F8FAFC\]\/40:hover{background-color:rgb(248 250 252 / 0.4)}
+.hover\:text-\[\#F8FAFC\]\/40:hover{color:rgb(248 250 252 / 0.4)}
+.hover\:border-\[\#F8FAFC\]\/40:hover{border-color:rgb(248 250 252 / 0.4)}
+.bg-\[\#F8FAFC\]\/50{background-color:rgb(248 250 252 / 0.5)}
+.text-\[\#F8FAFC\]\/50{color:rgb(248 250 252 / 0.5)}
+.border-\[\#F8FAFC\]\/50{border-color:rgb(248 250 252 / 0.5)}
+.hover\:bg-\[\#F8FAFC\]\/50:hover{background-color:rgb(248 250 252 / 0.5)}
+.hover\:text-\[\#F8FAFC\]\/50:hover{color:rgb(248 250 252 / 0.5)}
+.hover\:border-\[\#F8FAFC\]\/50:hover{border-color:rgb(248 250 252 / 0.5)}
+.bg-\[\#F8FAFC\]\/60{background-color:rgb(248 250 252 / 0.6)}
+.text-\[\#F8FAFC\]\/60{color:rgb(248 250 252 / 0.6)}
+.border-\[\#F8FAFC\]\/60{border-color:rgb(248 250 252 / 0.6)}
+.hover\:bg-\[\#F8FAFC\]\/60:hover{background-color:rgb(248 250 252 / 0.6)}
+.hover\:text-\[\#F8FAFC\]\/60:hover{color:rgb(248 250 252 / 0.6)}
+.hover\:border-\[\#F8FAFC\]\/60:hover{border-color:rgb(248 250 252 / 0.6)}
+.bg-\[\#F8FAFC\]\/70{background-color:rgb(248 250 252 / 0.7)}
+.text-\[\#F8FAFC\]\/70{color:rgb(248 250 252 / 0.7)}
+.border-\[\#F8FAFC\]\/70{border-color:rgb(248 250 252 / 0.7)}
+.hover\:bg-\[\#F8FAFC\]\/70:hover{background-color:rgb(248 250 252 / 0.7)}
+.hover\:text-\[\#F8FAFC\]\/70:hover{color:rgb(248 250 252 / 0.7)}
+.hover\:border-\[\#F8FAFC\]\/70:hover{border-color:rgb(248 250 252 / 0.7)}
+.bg-\[\#F8FAFC\]\/80{background-color:rgb(248 250 252 / 0.8)}
+.text-\[\#F8FAFC\]\/80{color:rgb(248 250 252 / 0.8)}
+.border-\[\#F8FAFC\]\/80{border-color:rgb(248 250 252 / 0.8)}
+.hover\:bg-\[\#F8FAFC\]\/80:hover{background-color:rgb(248 250 252 / 0.8)}
+.hover\:text-\[\#F8FAFC\]\/80:hover{color:rgb(248 250 252 / 0.8)}
+.hover\:border-\[\#F8FAFC\]\/80:hover{border-color:rgb(248 250 252 / 0.8)}
+.bg-\[\#F8FAFC\]\/90{background-color:rgb(248 250 252 / 0.9)}
+.text-\[\#F8FAFC\]\/90{color:rgb(248 250 252 / 0.9)}
+.border-\[\#F8FAFC\]\/90{border-color:rgb(248 250 252 / 0.9)}
+.hover\:bg-\[\#F8FAFC\]\/90:hover{background-color:rgb(248 250 252 / 0.9)}
+.hover\:text-\[\#F8FAFC\]\/90:hover{color:rgb(248 250 252 / 0.9)}
+.hover\:border-\[\#F8FAFC\]\/90:hover{border-color:rgb(248 250 252 / 0.9)}
+.bg-\[\#F8FAFC\]\/95{background-color:rgb(248 250 252 / 0.95)}
+.text-\[\#F8FAFC\]\/95{color:rgb(248 250 252 / 0.95)}
+.border-\[\#F8FAFC\]\/95{border-color:rgb(248 250 252 / 0.95)}
+.hover\:bg-\[\#F8FAFC\]\/95:hover{background-color:rgb(248 250 252 / 0.95)}
+.hover\:text-\[\#F8FAFC\]\/95:hover{color:rgb(248 250 252 / 0.95)}
+.hover\:border-\[\#F8FAFC\]\/95:hover{border-color:rgb(248 250 252 / 0.95)}
+.bg-\[\#0a6a8a\]\/5{background-color:rgb(10 106 138 / 0.05)}
+.text-\[\#0a6a8a\]\/5{color:rgb(10 106 138 / 0.05)}
+.border-\[\#0a6a8a\]\/5{border-color:rgb(10 106 138 / 0.05)}
+.hover\:bg-\[\#0a6a8a\]\/5:hover{background-color:rgb(10 106 138 / 0.05)}
+.hover\:text-\[\#0a6a8a\]\/5:hover{color:rgb(10 106 138 / 0.05)}
+.hover\:border-\[\#0a6a8a\]\/5:hover{border-color:rgb(10 106 138 / 0.05)}
+.bg-\[\#0a6a8a\]\/10{background-color:rgb(10 106 138 / 0.1)}
+.text-\[\#0a6a8a\]\/10{color:rgb(10 106 138 / 0.1)}
+.border-\[\#0a6a8a\]\/10{border-color:rgb(10 106 138 / 0.1)}
+.hover\:bg-\[\#0a6a8a\]\/10:hover{background-color:rgb(10 106 138 / 0.1)}
+.hover\:text-\[\#0a6a8a\]\/10:hover{color:rgb(10 106 138 / 0.1)}
+.hover\:border-\[\#0a6a8a\]\/10:hover{border-color:rgb(10 106 138 / 0.1)}
+.bg-\[\#0a6a8a\]\/15{background-color:rgb(10 106 138 / 0.15)}
+.text-\[\#0a6a8a\]\/15{color:rgb(10 106 138 / 0.15)}
+.border-\[\#0a6a8a\]\/15{border-color:rgb(10 106 138 / 0.15)}
+.hover\:bg-\[\#0a6a8a\]\/15:hover{background-color:rgb(10 106 138 / 0.15)}
+.hover\:text-\[\#0a6a8a\]\/15:hover{color:rgb(10 106 138 / 0.15)}
+.hover\:border-\[\#0a6a8a\]\/15:hover{border-color:rgb(10 106 138 / 0.15)}
+.bg-\[\#0a6a8a\]\/20{background-color:rgb(10 106 138 / 0.2)}
+.text-\[\#0a6a8a\]\/20{color:rgb(10 106 138 / 0.2)}
+.border-\[\#0a6a8a\]\/20{border-color:rgb(10 106 138 / 0.2)}
+.hover\:bg-\[\#0a6a8a\]\/20:hover{background-color:rgb(10 106 138 / 0.2)}
+.hover\:text-\[\#0a6a8a\]\/20:hover{color:rgb(10 106 138 / 0.2)}
+.hover\:border-\[\#0a6a8a\]\/20:hover{border-color:rgb(10 106 138 / 0.2)}
+.bg-\[\#0a6a8a\]\/30{background-color:rgb(10 106 138 / 0.3)}
+.text-\[\#0a6a8a\]\/30{color:rgb(10 106 138 / 0.3)}
+.border-\[\#0a6a8a\]\/30{border-color:rgb(10 106 138 / 0.3)}
+.hover\:bg-\[\#0a6a8a\]\/30:hover{background-color:rgb(10 106 138 / 0.3)}
+.hover\:text-\[\#0a6a8a\]\/30:hover{color:rgb(10 106 138 / 0.3)}
+.hover\:border-\[\#0a6a8a\]\/30:hover{border-color:rgb(10 106 138 / 0.3)}
+.bg-\[\#0a6a8a\]\/40{background-color:rgb(10 106 138 / 0.4)}
+.text-\[\#0a6a8a\]\/40{color:rgb(10 106 138 / 0.4)}
+.border-\[\#0a6a8a\]\/40{border-color:rgb(10 106 138 / 0.4)}
+.hover\:bg-\[\#0a6a8a\]\/40:hover{background-color:rgb(10 106 138 / 0.4)}
+.hover\:text-\[\#0a6a8a\]\/40:hover{color:rgb(10 106 138 / 0.4)}
+.hover\:border-\[\#0a6a8a\]\/40:hover{border-color:rgb(10 106 138 / 0.4)}
+.bg-\[\#0a6a8a\]\/50{background-color:rgb(10 106 138 / 0.5)}
+.text-\[\#0a6a8a\]\/50{color:rgb(10 106 138 / 0.5)}
+.border-\[\#0a6a8a\]\/50{border-color:rgb(10 106 138 / 0.5)}
+.hover\:bg-\[\#0a6a8a\]\/50:hover{background-color:rgb(10 106 138 / 0.5)}
+.hover\:text-\[\#0a6a8a\]\/50:hover{color:rgb(10 106 138 / 0.5)}
+.hover\:border-\[\#0a6a8a\]\/50:hover{border-color:rgb(10 106 138 / 0.5)}
+.bg-\[\#0a6a8a\]\/60{background-color:rgb(10 106 138 / 0.6)}
+.text-\[\#0a6a8a\]\/60{color:rgb(10 106 138 / 0.6)}
+.border-\[\#0a6a8a\]\/60{border-color:rgb(10 106 138 / 0.6)}
+.hover\:bg-\[\#0a6a8a\]\/60:hover{background-color:rgb(10 106 138 / 0.6)}
+.hover\:text-\[\#0a6a8a\]\/60:hover{color:rgb(10 106 138 / 0.6)}
+.hover\:border-\[\#0a6a8a\]\/60:hover{border-color:rgb(10 106 138 / 0.6)}
+.bg-\[\#0a6a8a\]\/70{background-color:rgb(10 106 138 / 0.7)}
+.text-\[\#0a6a8a\]\/70{color:rgb(10 106 138 / 0.7)}
+.border-\[\#0a6a8a\]\/70{border-color:rgb(10 106 138 / 0.7)}
+.hover\:bg-\[\#0a6a8a\]\/70:hover{background-color:rgb(10 106 138 / 0.7)}
+.hover\:text-\[\#0a6a8a\]\/70:hover{color:rgb(10 106 138 / 0.7)}
+.hover\:border-\[\#0a6a8a\]\/70:hover{border-color:rgb(10 106 138 / 0.7)}
+.bg-\[\#0a6a8a\]\/80{background-color:rgb(10 106 138 / 0.8)}
+.text-\[\#0a6a8a\]\/80{color:rgb(10 106 138 / 0.8)}
+.border-\[\#0a6a8a\]\/80{border-color:rgb(10 106 138 / 0.8)}
+.hover\:bg-\[\#0a6a8a\]\/80:hover{background-color:rgb(10 106 138 / 0.8)}
+.hover\:text-\[\#0a6a8a\]\/80:hover{color:rgb(10 106 138 / 0.8)}
+.hover\:border-\[\#0a6a8a\]\/80:hover{border-color:rgb(10 106 138 / 0.8)}
+.bg-\[\#0a6a8a\]\/90{background-color:rgb(10 106 138 / 0.9)}
+.text-\[\#0a6a8a\]\/90{color:rgb(10 106 138 / 0.9)}
+.border-\[\#0a6a8a\]\/90{border-color:rgb(10 106 138 / 0.9)}
+.hover\:bg-\[\#0a6a8a\]\/90:hover{background-color:rgb(10 106 138 / 0.9)}
+.hover\:text-\[\#0a6a8a\]\/90:hover{color:rgb(10 106 138 / 0.9)}
+.hover\:border-\[\#0a6a8a\]\/90:hover{border-color:rgb(10 106 138 / 0.9)}
+.bg-\[\#0a6a8a\]\/95{background-color:rgb(10 106 138 / 0.95)}
+.text-\[\#0a6a8a\]\/95{color:rgb(10 106 138 / 0.95)}
+.border-\[\#0a6a8a\]\/95{border-color:rgb(10 106 138 / 0.95)}
+.hover\:bg-\[\#0a6a8a\]\/95:hover{background-color:rgb(10 106 138 / 0.95)}
+.hover\:text-\[\#0a6a8a\]\/95:hover{color:rgb(10 106 138 / 0.95)}
+.hover\:border-\[\#0a6a8a\]\/95:hover{border-color:rgb(10 106 138 / 0.95)}
+.bg-\[\#e8f2fa\]\/5{background-color:rgb(232 242 250 / 0.05)}
+.text-\[\#e8f2fa\]\/5{color:rgb(232 242 250 / 0.05)}
+.border-\[\#e8f2fa\]\/5{border-color:rgb(232 242 250 / 0.05)}
+.hover\:bg-\[\#e8f2fa\]\/5:hover{background-color:rgb(232 242 250 / 0.05)}
+.hover\:text-\[\#e8f2fa\]\/5:hover{color:rgb(232 242 250 / 0.05)}
+.hover\:border-\[\#e8f2fa\]\/5:hover{border-color:rgb(232 242 250 / 0.05)}
+.bg-\[\#e8f2fa\]\/10{background-color:rgb(232 242 250 / 0.1)}
+.text-\[\#e8f2fa\]\/10{color:rgb(232 242 250 / 0.1)}
+.border-\[\#e8f2fa\]\/10{border-color:rgb(232 242 250 / 0.1)}
+.hover\:bg-\[\#e8f2fa\]\/10:hover{background-color:rgb(232 242 250 / 0.1)}
+.hover\:text-\[\#e8f2fa\]\/10:hover{color:rgb(232 242 250 / 0.1)}
+.hover\:border-\[\#e8f2fa\]\/10:hover{border-color:rgb(232 242 250 / 0.1)}
+.bg-\[\#e8f2fa\]\/15{background-color:rgb(232 242 250 / 0.15)}
+.text-\[\#e8f2fa\]\/15{color:rgb(232 242 250 / 0.15)}
+.border-\[\#e8f2fa\]\/15{border-color:rgb(232 242 250 / 0.15)}
+.hover\:bg-\[\#e8f2fa\]\/15:hover{background-color:rgb(232 242 250 / 0.15)}
+.hover\:text-\[\#e8f2fa\]\/15:hover{color:rgb(232 242 250 / 0.15)}
+.hover\:border-\[\#e8f2fa\]\/15:hover{border-color:rgb(232 242 250 / 0.15)}
+.bg-\[\#e8f2fa\]\/20{background-color:rgb(232 242 250 / 0.2)}
+.text-\[\#e8f2fa\]\/20{color:rgb(232 242 250 / 0.2)}
+.border-\[\#e8f2fa\]\/20{border-color:rgb(232 242 250 / 0.2)}
+.hover\:bg-\[\#e8f2fa\]\/20:hover{background-color:rgb(232 242 250 / 0.2)}
+.hover\:text-\[\#e8f2fa\]\/20:hover{color:rgb(232 242 250 / 0.2)}
+.hover\:border-\[\#e8f2fa\]\/20:hover{border-color:rgb(232 242 250 / 0.2)}
+.bg-\[\#e8f2fa\]\/30{background-color:rgb(232 242 250 / 0.3)}
+.text-\[\#e8f2fa\]\/30{color:rgb(232 242 250 / 0.3)}
+.border-\[\#e8f2fa\]\/30{border-color:rgb(232 242 250 / 0.3)}
+.hover\:bg-\[\#e8f2fa\]\/30:hover{background-color:rgb(232 242 250 / 0.3)}
+.hover\:text-\[\#e8f2fa\]\/30:hover{color:rgb(232 242 250 / 0.3)}
+.hover\:border-\[\#e8f2fa\]\/30:hover{border-color:rgb(232 242 250 / 0.3)}
+.bg-\[\#e8f2fa\]\/40{background-color:rgb(232 242 250 / 0.4)}
+.text-\[\#e8f2fa\]\/40{color:rgb(232 242 250 / 0.4)}
+.border-\[\#e8f2fa\]\/40{border-color:rgb(232 242 250 / 0.4)}
+.hover\:bg-\[\#e8f2fa\]\/40:hover{background-color:rgb(232 242 250 / 0.4)}
+.hover\:text-\[\#e8f2fa\]\/40:hover{color:rgb(232 242 250 / 0.4)}
+.hover\:border-\[\#e8f2fa\]\/40:hover{border-color:rgb(232 242 250 / 0.4)}
+.bg-\[\#e8f2fa\]\/50{background-color:rgb(232 242 250 / 0.5)}
+.text-\[\#e8f2fa\]\/50{color:rgb(232 242 250 / 0.5)}
+.border-\[\#e8f2fa\]\/50{border-color:rgb(232 242 250 / 0.5)}
+.hover\:bg-\[\#e8f2fa\]\/50:hover{background-color:rgb(232 242 250 / 0.5)}
+.hover\:text-\[\#e8f2fa\]\/50:hover{color:rgb(232 242 250 / 0.5)}
+.hover\:border-\[\#e8f2fa\]\/50:hover{border-color:rgb(232 242 250 / 0.5)}
+.bg-\[\#e8f2fa\]\/60{background-color:rgb(232 242 250 / 0.6)}
+.text-\[\#e8f2fa\]\/60{color:rgb(232 242 250 / 0.6)}
+.border-\[\#e8f2fa\]\/60{border-color:rgb(232 242 250 / 0.6)}
+.hover\:bg-\[\#e8f2fa\]\/60:hover{background-color:rgb(232 242 250 / 0.6)}
+.hover\:text-\[\#e8f2fa\]\/60:hover{color:rgb(232 242 250 / 0.6)}
+.hover\:border-\[\#e8f2fa\]\/60:hover{border-color:rgb(232 242 250 / 0.6)}
+.bg-\[\#e8f2fa\]\/70{background-color:rgb(232 242 250 / 0.7)}
+.text-\[\#e8f2fa\]\/70{color:rgb(232 242 250 / 0.7)}
+.border-\[\#e8f2fa\]\/70{border-color:rgb(232 242 250 / 0.7)}
+.hover\:bg-\[\#e8f2fa\]\/70:hover{background-color:rgb(232 242 250 / 0.7)}
+.hover\:text-\[\#e8f2fa\]\/70:hover{color:rgb(232 242 250 / 0.7)}
+.hover\:border-\[\#e8f2fa\]\/70:hover{border-color:rgb(232 242 250 / 0.7)}
+.bg-\[\#e8f2fa\]\/80{background-color:rgb(232 242 250 / 0.8)}
+.text-\[\#e8f2fa\]\/80{color:rgb(232 242 250 / 0.8)}
+.border-\[\#e8f2fa\]\/80{border-color:rgb(232 242 250 / 0.8)}
+.hover\:bg-\[\#e8f2fa\]\/80:hover{background-color:rgb(232 242 250 / 0.8)}
+.hover\:text-\[\#e8f2fa\]\/80:hover{color:rgb(232 242 250 / 0.8)}
+.hover\:border-\[\#e8f2fa\]\/80:hover{border-color:rgb(232 242 250 / 0.8)}
+.bg-\[\#e8f2fa\]\/90{background-color:rgb(232 242 250 / 0.9)}
+.text-\[\#e8f2fa\]\/90{color:rgb(232 242 250 / 0.9)}
+.border-\[\#e8f2fa\]\/90{border-color:rgb(232 242 250 / 0.9)}
+.hover\:bg-\[\#e8f2fa\]\/90:hover{background-color:rgb(232 242 250 / 0.9)}
+.hover\:text-\[\#e8f2fa\]\/90:hover{color:rgb(232 242 250 / 0.9)}
+.hover\:border-\[\#e8f2fa\]\/90:hover{border-color:rgb(232 242 250 / 0.9)}
+.bg-\[\#e8f2fa\]\/95{background-color:rgb(232 242 250 / 0.95)}
+.text-\[\#e8f2fa\]\/95{color:rgb(232 242 250 / 0.95)}
+.border-\[\#e8f2fa\]\/95{border-color:rgb(232 242 250 / 0.95)}
+.hover\:bg-\[\#e8f2fa\]\/95:hover{background-color:rgb(232 242 250 / 0.95)}
+.hover\:text-\[\#e8f2fa\]\/95:hover{color:rgb(232 242 250 / 0.95)}
+.hover\:border-\[\#e8f2fa\]\/95:hover{border-color:rgb(232 242 250 / 0.95)}
+.bg-\[\#f0f4f8\]\/5{background-color:rgb(240 244 248 / 0.05)}
+.text-\[\#f0f4f8\]\/5{color:rgb(240 244 248 / 0.05)}
+.border-\[\#f0f4f8\]\/5{border-color:rgb(240 244 248 / 0.05)}
+.hover\:bg-\[\#f0f4f8\]\/5:hover{background-color:rgb(240 244 248 / 0.05)}
+.hover\:text-\[\#f0f4f8\]\/5:hover{color:rgb(240 244 248 / 0.05)}
+.hover\:border-\[\#f0f4f8\]\/5:hover{border-color:rgb(240 244 248 / 0.05)}
+.bg-\[\#f0f4f8\]\/10{background-color:rgb(240 244 248 / 0.1)}
+.text-\[\#f0f4f8\]\/10{color:rgb(240 244 248 / 0.1)}
+.border-\[\#f0f4f8\]\/10{border-color:rgb(240 244 248 / 0.1)}
+.hover\:bg-\[\#f0f4f8\]\/10:hover{background-color:rgb(240 244 248 / 0.1)}
+.hover\:text-\[\#f0f4f8\]\/10:hover{color:rgb(240 244 248 / 0.1)}
+.hover\:border-\[\#f0f4f8\]\/10:hover{border-color:rgb(240 244 248 / 0.1)}
+.bg-\[\#f0f4f8\]\/15{background-color:rgb(240 244 248 / 0.15)}
+.text-\[\#f0f4f8\]\/15{color:rgb(240 244 248 / 0.15)}
+.border-\[\#f0f4f8\]\/15{border-color:rgb(240 244 248 / 0.15)}
+.hover\:bg-\[\#f0f4f8\]\/15:hover{background-color:rgb(240 244 248 / 0.15)}
+.hover\:text-\[\#f0f4f8\]\/15:hover{color:rgb(240 244 248 / 0.15)}
+.hover\:border-\[\#f0f4f8\]\/15:hover{border-color:rgb(240 244 248 / 0.15)}
+.bg-\[\#f0f4f8\]\/20{background-color:rgb(240 244 248 / 0.2)}
+.text-\[\#f0f4f8\]\/20{color:rgb(240 244 248 / 0.2)}
+.border-\[\#f0f4f8\]\/20{border-color:rgb(240 244 248 / 0.2)}
+.hover\:bg-\[\#f0f4f8\]\/20:hover{background-color:rgb(240 244 248 / 0.2)}
+.hover\:text-\[\#f0f4f8\]\/20:hover{color:rgb(240 244 248 / 0.2)}
+.hover\:border-\[\#f0f4f8\]\/20:hover{border-color:rgb(240 244 248 / 0.2)}
+.bg-\[\#f0f4f8\]\/30{background-color:rgb(240 244 248 / 0.3)}
+.text-\[\#f0f4f8\]\/30{color:rgb(240 244 248 / 0.3)}
+.border-\[\#f0f4f8\]\/30{border-color:rgb(240 244 248 / 0.3)}
+.hover\:bg-\[\#f0f4f8\]\/30:hover{background-color:rgb(240 244 248 / 0.3)}
+.hover\:text-\[\#f0f4f8\]\/30:hover{color:rgb(240 244 248 / 0.3)}
+.hover\:border-\[\#f0f4f8\]\/30:hover{border-color:rgb(240 244 248 / 0.3)}
+.bg-\[\#f0f4f8\]\/40{background-color:rgb(240 244 248 / 0.4)}
+.text-\[\#f0f4f8\]\/40{color:rgb(240 244 248 / 0.4)}
+.border-\[\#f0f4f8\]\/40{border-color:rgb(240 244 248 / 0.4)}
+.hover\:bg-\[\#f0f4f8\]\/40:hover{background-color:rgb(240 244 248 / 0.4)}
+.hover\:text-\[\#f0f4f8\]\/40:hover{color:rgb(240 244 248 / 0.4)}
+.hover\:border-\[\#f0f4f8\]\/40:hover{border-color:rgb(240 244 248 / 0.4)}
+.bg-\[\#f0f4f8\]\/50{background-color:rgb(240 244 248 / 0.5)}
+.text-\[\#f0f4f8\]\/50{color:rgb(240 244 248 / 0.5)}
+.border-\[\#f0f4f8\]\/50{border-color:rgb(240 244 248 / 0.5)}
+.hover\:bg-\[\#f0f4f8\]\/50:hover{background-color:rgb(240 244 248 / 0.5)}
+.hover\:text-\[\#f0f4f8\]\/50:hover{color:rgb(240 244 248 / 0.5)}
+.hover\:border-\[\#f0f4f8\]\/50:hover{border-color:rgb(240 244 248 / 0.5)}
+.bg-\[\#f0f4f8\]\/60{background-color:rgb(240 244 248 / 0.6)}
+.text-\[\#f0f4f8\]\/60{color:rgb(240 244 248 / 0.6)}
+.border-\[\#f0f4f8\]\/60{border-color:rgb(240 244 248 / 0.6)}
+.hover\:bg-\[\#f0f4f8\]\/60:hover{background-color:rgb(240 244 248 / 0.6)}
+.hover\:text-\[\#f0f4f8\]\/60:hover{color:rgb(240 244 248 / 0.6)}
+.hover\:border-\[\#f0f4f8\]\/60:hover{border-color:rgb(240 244 248 / 0.6)}
+.bg-\[\#f0f4f8\]\/70{background-color:rgb(240 244 248 / 0.7)}
+.text-\[\#f0f4f8\]\/70{color:rgb(240 244 248 / 0.7)}
+.border-\[\#f0f4f8\]\/70{border-color:rgb(240 244 248 / 0.7)}
+.hover\:bg-\[\#f0f4f8\]\/70:hover{background-color:rgb(240 244 248 / 0.7)}
+.hover\:text-\[\#f0f4f8\]\/70:hover{color:rgb(240 244 248 / 0.7)}
+.hover\:border-\[\#f0f4f8\]\/70:hover{border-color:rgb(240 244 248 / 0.7)}
+.bg-\[\#f0f4f8\]\/80{background-color:rgb(240 244 248 / 0.8)}
+.text-\[\#f0f4f8\]\/80{color:rgb(240 244 248 / 0.8)}
+.border-\[\#f0f4f8\]\/80{border-color:rgb(240 244 248 / 0.8)}
+.hover\:bg-\[\#f0f4f8\]\/80:hover{background-color:rgb(240 244 248 / 0.8)}
+.hover\:text-\[\#f0f4f8\]\/80:hover{color:rgb(240 244 248 / 0.8)}
+.hover\:border-\[\#f0f4f8\]\/80:hover{border-color:rgb(240 244 248 / 0.8)}
+.bg-\[\#f0f4f8\]\/90{background-color:rgb(240 244 248 / 0.9)}
+.text-\[\#f0f4f8\]\/90{color:rgb(240 244 248 / 0.9)}
+.border-\[\#f0f4f8\]\/90{border-color:rgb(240 244 248 / 0.9)}
+.hover\:bg-\[\#f0f4f8\]\/90:hover{background-color:rgb(240 244 248 / 0.9)}
+.hover\:text-\[\#f0f4f8\]\/90:hover{color:rgb(240 244 248 / 0.9)}
+.hover\:border-\[\#f0f4f8\]\/90:hover{border-color:rgb(240 244 248 / 0.9)}
+.bg-\[\#f0f4f8\]\/95{background-color:rgb(240 244 248 / 0.95)}
+.text-\[\#f0f4f8\]\/95{color:rgb(240 244 248 / 0.95)}
+.border-\[\#f0f4f8\]\/95{border-color:rgb(240 244 248 / 0.95)}
+.hover\:bg-\[\#f0f4f8\]\/95:hover{background-color:rgb(240 244 248 / 0.95)}
+.hover\:text-\[\#f0f4f8\]\/95:hover{color:rgb(240 244 248 / 0.95)}
+.hover\:border-\[\#f0f4f8\]\/95:hover{border-color:rgb(240 244 248 / 0.95)}
+.border-\[\#1a2e35\]\/08{border-color:rgb(26 46 53 / 0.08)}
+.bg-white\/5{background-color:rgb(255 255 255 / 0.05)}
+.text-white\/5{color:rgb(255 255 255 / 0.05)}
+.border-white\/5{border-color:rgb(255 255 255 / 0.05)}
+.hover\:bg-white\/5:hover{background-color:rgb(255 255 255 / 0.05)}
+.hover\:text-white\/5:hover{color:rgb(255 255 255 / 0.05)}
+.hover\:border-white\/5:hover{border-color:rgb(255 255 255 / 0.05)}
+.bg-white\/10{background-color:rgb(255 255 255 / 0.10)}
+.text-white\/10{color:rgb(255 255 255 / 0.10)}
+.border-white\/10{border-color:rgb(255 255 255 / 0.10)}
+.hover\:bg-white\/10:hover{background-color:rgb(255 255 255 / 0.10)}
+.hover\:text-white\/10:hover{color:rgb(255 255 255 / 0.10)}
+.hover\:border-white\/10:hover{border-color:rgb(255 255 255 / 0.10)}
+.bg-white\/20{background-color:rgb(255 255 255 / 0.20)}
+.text-white\/20{color:rgb(255 255 255 / 0.20)}
+.border-white\/20{border-color:rgb(255 255 255 / 0.20)}
+.hover\:bg-white\/20:hover{background-color:rgb(255 255 255 / 0.20)}
+.hover\:text-white\/20:hover{color:rgb(255 255 255 / 0.20)}
+.hover\:border-white\/20:hover{border-color:rgb(255 255 255 / 0.20)}
+.bg-white\/30{background-color:rgb(255 255 255 / 0.30)}
+.text-white\/30{color:rgb(255 255 255 / 0.30)}
+.border-white\/30{border-color:rgb(255 255 255 / 0.30)}
+.hover\:bg-white\/30:hover{background-color:rgb(255 255 255 / 0.30)}
+.hover\:text-white\/30:hover{color:rgb(255 255 255 / 0.30)}
+.hover\:border-white\/30:hover{border-color:rgb(255 255 255 / 0.30)}
+.bg-white\/40{background-color:rgb(255 255 255 / 0.40)}
+.text-white\/40{color:rgb(255 255 255 / 0.40)}
+.border-white\/40{border-color:rgb(255 255 255 / 0.40)}
+.hover\:bg-white\/40:hover{background-color:rgb(255 255 255 / 0.40)}
+.hover\:text-white\/40:hover{color:rgb(255 255 255 / 0.40)}
+.hover\:border-white\/40:hover{border-color:rgb(255 255 255 / 0.40)}
+.bg-white\/50{background-color:rgb(255 255 255 / 0.50)}
+.text-white\/50{color:rgb(255 255 255 / 0.50)}
+.border-white\/50{border-color:rgb(255 255 255 / 0.50)}
+.hover\:bg-white\/50:hover{background-color:rgb(255 255 255 / 0.50)}
+.hover\:text-white\/50:hover{color:rgb(255 255 255 / 0.50)}
+.hover\:border-white\/50:hover{border-color:rgb(255 255 255 / 0.50)}
+.bg-white\/60{background-color:rgb(255 255 255 / 0.60)}
+.text-white\/60{color:rgb(255 255 255 / 0.60)}
+.border-white\/60{border-color:rgb(255 255 255 / 0.60)}
+.hover\:bg-white\/60:hover{background-color:rgb(255 255 255 / 0.60)}
+.hover\:text-white\/60:hover{color:rgb(255 255 255 / 0.60)}
+.hover\:border-white\/60:hover{border-color:rgb(255 255 255 / 0.60)}
+.bg-white\/70{background-color:rgb(255 255 255 / 0.70)}
+.text-white\/70{color:rgb(255 255 255 / 0.70)}
+.border-white\/70{border-color:rgb(255 255 255 / 0.70)}
+.hover\:bg-white\/70:hover{background-color:rgb(255 255 255 / 0.70)}
+.hover\:text-white\/70:hover{color:rgb(255 255 255 / 0.70)}
+.hover\:border-white\/70:hover{border-color:rgb(255 255 255 / 0.70)}
+.bg-white\/80{background-color:rgb(255 255 255 / 0.80)}
+.text-white\/80{color:rgb(255 255 255 / 0.80)}
+.border-white\/80{border-color:rgb(255 255 255 / 0.80)}
+.hover\:bg-white\/80:hover{background-color:rgb(255 255 255 / 0.80)}
+.hover\:text-white\/80:hover{color:rgb(255 255 255 / 0.80)}
+.hover\:border-white\/80:hover{border-color:rgb(255 255 255 / 0.80)}
+.bg-white\/90{background-color:rgb(255 255 255 / 0.90)}
+.text-white\/90{color:rgb(255 255 255 / 0.90)}
+.border-white\/90{border-color:rgb(255 255 255 / 0.90)}
+.hover\:bg-white\/90:hover{background-color:rgb(255 255 255 / 0.90)}
+.hover\:text-white\/90:hover{color:rgb(255 255 255 / 0.90)}
+.hover\:border-white\/90:hover{border-color:rgb(255 255 255 / 0.90)}
+.bg-white\/95{background-color:rgb(255 255 255 / 0.95)}
+.text-white\/95{color:rgb(255 255 255 / 0.95)}
+.border-white\/95{border-color:rgb(255 255 255 / 0.95)}
+.hover\:bg-white\/95:hover{background-color:rgb(255 255 255 / 0.95)}
+.hover\:text-white\/95:hover{color:rgb(255 255 255 / 0.95)}
+.hover\:border-white\/95:hover{border-color:rgb(255 255 255 / 0.95)}
+.hover\:border-white:hover{border-color:rgb(255 255 255)}
+.hover\:text-white:hover{color:rgb(255 255 255)}
+.grid-cols-5{grid-template-columns:repeat(5,minmax(0,1fr))}
+.grid-cols-7{grid-template-columns:repeat(7,minmax(0,1fr))}
+.grid-cols-8{grid-template-columns:repeat(8,minmax(0,1fr))}
+.grid-cols-9{grid-template-columns:repeat(9,minmax(0,1fr))}
+.grid-cols-10{grid-template-columns:repeat(10,minmax(0,1fr))}
+@media(min-width:640px){.sm\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.sm\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(min-width:768px){.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.md\:grid-cols-10{grid-template-columns:repeat(10,minmax(0,1fr))}.md\:block{display:block}.md\:hidden{display:none}.md\:grid{display:grid}.md\:px-8{padding-left:2rem;padding-right:2rem}.md\:py-8{padding-top:2rem;padding-bottom:2rem}.md\:py-24{padding-top:6rem;padding-bottom:6rem}.md\:text-base{font-size:1rem;line-height:1.5rem}.md\:text-lg{font-size:1.125rem;line-height:1.75rem}.md\:text-xl{font-size:1.25rem;line-height:1.75rem}.md\:text-2xl{font-size:1.5rem;line-height:2rem}.md\:text-3xl{font-size:1.875rem;line-height:2.25rem}.md\:text-4xl{font-size:2.25rem;line-height:2.5rem}.md\:gap-4{gap:1rem}.md\:border-b-0{border-bottom-width:0px}.md\:border-r-0{border-right-width:0px}}
+@media(min-width:1024px){.lg\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.lg\:col-span-1{grid-column:span 1 / span 1}.lg\:gap-8{gap:2rem}.lg\:text-4xl{font-size:2.25rem;line-height:2.5rem}.lg\:text-5xl{font-size:3rem;line-height:1}}
+.tracking-\[0\.2em\]{letter-spacing:0.2em}
+.tracking-\[0\.25em\]{letter-spacing:0.25em}
+.tracking-\[0\.3em\]{letter-spacing:0.3em}
+.tracking-\[0\.4em\]{letter-spacing:0.4em}
+.tracking-widets{letter-spacing:0.1em}
+.text-\[9px\]{font-size:9px;line-height:1.2}
+.text-\[10px\]{font-size:10px;line-height:1.2}
+.gap-1\.5{gap:0.375rem}
+.m-0{margin:0}
+.mb-1\.5{margin-bottom:0.375rem}
+.mb-5{margin-bottom:1.25rem}
+.mt-0\.5{margin-top:0.125rem}
+.mt-1\.5{margin-top:0.375rem}
+.px-7{padding-left:1.75rem;padding-right:1.75rem}
+.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}
+.py-3\.5{padding-top:0.875rem;padding-bottom:0.875rem}
+.py-5{padding-top:1.25rem;padding-bottom:1.25rem}
+.py-14{padding-top:3.5rem;padding-bottom:3.5rem}
+.space-y-1\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.375rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.375rem * var(--tw-space-y-reverse))}
+.space-y-5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.25rem * var(--tw-space-y-reverse))}
+.min-h-\[44px\]{min-height:44px}
+.min-w-\[44px\]{min-width:44px}
+.border-t-\[0\.5px\]{border-top-width:0.5px}
+.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);backdrop-filter:blur(4px)}
+.aspect-\[4\/3\]{aspect-ratio:4/3}
+.hover\:brightness-105:hover{filter:brightness(1.05)}
+.hover\:brightness-\[1\.03\]:hover{filter:brightness(1.03)}
+.hover\:scale-110:hover{transform:scale(1.10)}
+.hover\:shadow-md:hover{box-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1),0 2px 4px -2px rgb(0 0 0 / 0.1)}
+.hover\:underline:hover{text-decoration-line:underline}
+.group:hover .group-hover\:gap-2\.5{gap:0.625rem}
+.\[\&\:\:-webkit-details-marker\]\:hidden::-webkit-details-marker{display:none}
