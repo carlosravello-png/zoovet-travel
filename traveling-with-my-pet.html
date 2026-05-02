@@ -44,7 +44,11 @@
         "inLanguage": "en",
         "datePublished": "2026-05-02",
         "dateModified": "2026-05-02",
-        "author": {"@id": "https://zoovettravel.com/#vet-jess-camacho"},
+        "author": [
+          {"@id": "https://zoovettravel.com/#jessica-camacho"},
+          {"@id": "https://zoovettravel.com/#carlos-ravello"},
+          {"@id": "https://zoovettravel.com/#victor-camacho"}
+        ],
         "isPartOf": {"@id": "https://zoovettravel.com/#website"},
         "breadcrumb": {"@id": "https://zoovettravel.com/traveling-with-my-pet.html#breadcrumb"},
         "mainEntity": {"@id": "https://zoovettravel.com/traveling-with-my-pet.html#process"},
@@ -230,29 +234,107 @@
           {"@type":"ContactPoint","telephone":"+51-979-620-402","contactType":"customer service","availableLanguage":["Spanish","English","French"],"contactOption":"TollFree"},
           {"@type":"ContactPoint","telephone":"+51-44-366094","contactType":"customer service","availableLanguage":["Spanish"]}
         ],
-        "employee": {"@id": "https://zoovettravel.com/#vet-jess-camacho"}
+        "founder": [
+          {"@id": "https://zoovettravel.com/#carlos-ravello"},
+          {"@id": "https://zoovettravel.com/#jessica-camacho"}
+        ],
+        "employee": [
+          {"@id": "https://zoovettravel.com/#carlos-ravello"},
+          {"@id": "https://zoovettravel.com/#jessica-camacho"},
+          {"@id": "https://zoovettravel.com/#victor-camacho"}
+        ]
       },
       {
         "@type": "Person",
-        "@id": "https://zoovettravel.com/#vet-jess-camacho",
-        "name": "Jessica Camacho",
-        "honorificPrefix": "Dr.",
-        "jobTitle": "Veterinarian — Specialist in International Pet Export",
+        "@id": "https://zoovettravel.com/#carlos-ravello",
+        "name": "Carlos Eduardo Ravello Joo",
+        "jobTitle": "Founder and General Manager",
+        "description": "Founder of Zoovet Travel. Responsible for strategy, commercial management and legal representation of the clinic. Developed the international regulatory knowledge system underpinning each export process. Creator and editorial architect of Zoopedia — the trilingual technical guide for international pet export.",
+        "url": "https://carlosravello.com",
+        "sameAs": [
+          "https://carlosravello.com/#person",
+          "https://www.linkedin.com/in/carlos-ravello-joo-3a1047262/"
+        ],
         "worksFor": {"@id": "https://zoovettravel.com/#organization"},
+        "founder": {"@id": "https://zoovettravel.com/#organization"},
+        "knowsAbout": [
+          "Semantic positioning and Google Knowledge Graph",
+          "Editorial web architecture and semantic SEO",
+          "International zoosanitary regulations for pet export",
+          "Veterinary clinic strategy and management",
+          "Schema.org structured markup"
+        ]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://zoovettravel.com/#jessica-camacho",
+        "name": "Jessica Ysabel Camacho Garcia",
+        "honorificPrefix": "Dr.",
+        "jobTitle": "Veterinarian and Zootechnician — Co-founder and Clinical Director",
+        "identifier": [
+          {"@type": "PropertyValue", "propertyID": "CMVP", "value": "12434"},
+          {"@type": "PropertyValue", "propertyID": "ORCID", "value": "0009-0002-6837-5311"}
+        ],
+        "alumniOf": {"@type": "CollegeOrUniversity", "name": "Universidad Privada Antenor Orrego"},
+        "hasCredential": {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "degree",
+          "name": "Licensed Veterinarian — CMVP 12434, Colegio Médico Veterinario del Perú",
+          "identifier": "CMVP 12434",
+          "recognizedBy": {"@type": "Organization", "name": "Colegio Médico Veterinario del Perú"}
+        },
         "knowsAbout": [
           "International pet export from Peru",
           "FAVN and RNATT rabies serology",
           "SENASA sanitary export certificates",
           "International veterinary regulations (EU, USA, Australia, Japan)",
           "ISO 11784/11785 microchip",
-          "IATA kennels for air transport of animals"
+          "IATA kennels for air transport of animals",
+          "Veterinary internal medicine",
+          "Veterinary dermatology",
+          "Animal welfare during air transport"
         ],
-        "hasCredential": {
-          "@type": "EducationalOccupationalCredential",
-          "credentialCategory": "degree",
-          "name": "Licensed Veterinarian — Colegio Médico Veterinario del Perú",
-          "recognizedBy": {"@type": "Organization", "name": "Colegio Médico Veterinario del Perú"}
-        }
+        "sameAs": [
+          "https://jessica-camacho.com/#person",
+          "https://orcid.org/0009-0002-6837-5311",
+          "https://www.linkedin.com/in/jessica-camacho-b1a76923b",
+          "https://repositorio.upao.edu.pe/handle/20.500.12759/12474",
+          "https://doi.org/10.5281/zenodo.19243363",
+          "https://doi.org/10.5281/zenodo.19243198",
+          "https://doi.org/10.5281/zenodo.19243496",
+          "https://doi.org/10.5281/zenodo.19243638"
+        ],
+        "worksFor": {"@id": "https://zoovettravel.com/#organization"},
+        "founder": {"@id": "https://zoovettravel.com/#organization"}
+      },
+      {
+        "@type": "Person",
+        "@id": "https://zoovettravel.com/#victor-camacho",
+        "name": "Víctor Jesús Camacho Paz",
+        "honorificPrefix": "Dr.",
+        "jobTitle": "Veterinarian Specialist in Public Health and Zoonoses — Scientific Adviser",
+        "identifier": {"@type": "PropertyValue", "propertyID": "CMVP", "value": "3103"},
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Universidad Nacional de Cajamarca",
+          "sameAs": "https://www.unc.edu.pe/"
+        },
+        "affiliation": [
+          {"@type": "Organization", "name": "Gerencia Regional de Salud (GERESA) La Libertad"},
+          {"@type": "Organization", "name": "Ministerio de Salud del Perú (MINSA)"}
+        ],
+        "knowsAbout": [
+          "Zoonoses and urban rabies",
+          "Veterinary epidemiology and outbreak control",
+          "Animal public health",
+          "Epidemiological surveillance — 25 years of experience",
+          "Fasciola hepatica",
+          "Rabies protocols for pet export"
+        ],
+        "sameAs": [
+          "https://www.linkedin.com/in/victor-jesus-camacho-paz"
+        ],
+        "worksFor": {"@id": "https://zoovettravel.com/#organization"}
       }
     ]
   }

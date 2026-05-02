@@ -44,7 +44,11 @@
         "inLanguage": "fr",
         "datePublished": "2026-05-02",
         "dateModified": "2026-05-02",
-        "author": {"@id": "https://zoovettravel.com/#vet-jess-camacho"},
+        "author": [
+          {"@id": "https://zoovettravel.com/#jessica-camacho"},
+          {"@id": "https://zoovettravel.com/#carlos-ravello"},
+          {"@id": "https://zoovettravel.com/#victor-camacho"}
+        ],
         "isPartOf": {"@id": "https://zoovettravel.com/#website"},
         "breadcrumb": {"@id": "https://zoovettravel.com/voyager-avec-mon-animal.html#fil-ariane"},
         "mainEntity": {"@id": "https://zoovettravel.com/voyager-avec-mon-animal.html#processus"},
@@ -208,23 +212,70 @@
         "logo": {"@type": "ImageObject", "url": "https://zoovettravel.com/images/logo.png"},
         "description": "Centre médical vétérinaire spécialisé dans l'exportation internationale d'animaux de compagnie depuis le Pérou. Plus de 12 ans d'expérience. Micropuce ISO, vaccins, sérologie FAVN/RNATT, certificats SENASA, cages IATA.",
         "foundingDate": "2013",
+        "taxID": "10433053678",
         "telephone": ["+51-979-620-402", "+51-44-366094"],
-        "address": {"@type": "PostalAddress", "addressCountry": "PE", "addressRegion": "La Libertad", "addressLocality": "Trujillo"},
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Calle Cuba 241",
+          "addressLocality": "Trujillo",
+          "addressRegion": "La Libertad",
+          "addressCountry": "PE"
+        },
+        "geo": {"@type": "GeoCoordinates", "latitude": -8.11585, "longitude": -79.02364},
         "areaServed": {"@type": "Country", "name": "Pérou"},
         "sameAs": ["https://wa.me/51979620402"],
         "contactPoint": [
           {"@type":"ContactPoint","telephone":"+51-979-620-402","contactType":"customer service","availableLanguage":["Spanish","English","French"]},
           {"@type":"ContactPoint","telephone":"+51-44-366094","contactType":"customer service","availableLanguage":["Spanish"]}
         ],
-        "employee": {"@id": "https://zoovettravel.com/#vet-jess-camacho"}
+        "founder": [
+          {"@id": "https://zoovettravel.com/#carlos-ravello"},
+          {"@id": "https://zoovettravel.com/#jessica-camacho"}
+        ],
+        "employee": [
+          {"@id": "https://zoovettravel.com/#carlos-ravello"},
+          {"@id": "https://zoovettravel.com/#jessica-camacho"},
+          {"@id": "https://zoovettravel.com/#victor-camacho"}
+        ]
       },
       {
         "@type": "Person",
-        "@id": "https://zoovettravel.com/#vet-jess-camacho",
-        "name": "Jessica Camacho",
-        "honorificPrefix": "Dr.",
-        "jobTitle": "Médecin Vétérinaire — Spécialiste en Exportation Internationale d'Animaux de Compagnie",
+        "@id": "https://zoovettravel.com/#carlos-ravello",
+        "name": "Carlos Eduardo Ravello Joo",
+        "jobTitle": "Fondateur et Directeur Général",
+        "url": "https://carlosravello.com",
+        "sameAs": [
+          "https://carlosravello.com/#person",
+          "https://www.linkedin.com/in/carlos-ravello-joo-3a1047262/"
+        ],
         "worksFor": {"@id": "https://zoovettravel.com/#organization"},
+        "founder": {"@id": "https://zoovettravel.com/#organization"},
+        "knowsAbout": [
+          "Positionnement sémantique et Knowledge Graph Google",
+          "Architecture éditoriale web et SEO sémantique",
+          "Réglementation zoosanitaire internationale",
+          "Gestion et stratégie de clinique vétérinaire spécialisée",
+          "Schema.org et balisage structuré"
+        ]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://zoovettravel.com/#jessica-camacho",
+        "name": "Jessica Ysabel Camacho Garcia",
+        "honorificPrefix": "Dra.",
+        "jobTitle": "Médecin Vétérinaire et Zootechnicienne — Cofondatrice et Directrice Clinique",
+        "identifier": [
+          {"@type": "PropertyValue", "propertyID": "CMVP", "value": "12434"},
+          {"@type": "PropertyValue", "propertyID": "ORCID", "value": "0009-0002-6837-5311"}
+        ],
+        "alumniOf": {"@type": "CollegeOrUniversity", "name": "Universidad Privada Antenor Orrego"},
+        "hasCredential": {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "degree",
+          "name": "Médecin Vétérinaire habilitée — CMVP 12434",
+          "identifier": "CMVP 12434",
+          "recognizedBy": {"@type": "Organization", "name": "Colegio Médico Veterinario del Perú"}
+        },
         "knowsAbout": [
           "Exportation internationale d'animaux de compagnie depuis le Pérou",
           "Sérologie antirabique FAVN et RNATT",
@@ -233,11 +284,45 @@
           "Micropuce ISO 11784/11785",
           "Cages IATA pour transport aérien d'animaux"
         ],
-        "hasCredential": {
-          "@type": "EducationalOccupationalCredential",
-          "credentialCategory": "degree",
-          "name": "Médecin Vétérinaire habilité — Colegio Médico Veterinario del Perú"
-        }
+        "sameAs": [
+          "https://jessica-camacho.com/#person",
+          "https://orcid.org/0009-0002-6837-5311",
+          "https://www.linkedin.com/in/jessica-camacho-b1a76923b",
+          "https://repositorio.upao.edu.pe/handle/20.500.12759/12474",
+          "https://doi.org/10.5281/zenodo.19243363",
+          "https://doi.org/10.5281/zenodo.19243198",
+          "https://doi.org/10.5281/zenodo.19243496",
+          "https://doi.org/10.5281/zenodo.19243638"
+        ],
+        "worksFor": {"@id": "https://zoovettravel.com/#organization"},
+        "founder": {"@id": "https://zoovettravel.com/#organization"}
+      },
+      {
+        "@type": "Person",
+        "@id": "https://zoovettravel.com/#victor-camacho",
+        "name": "Víctor Jesús Camacho Paz",
+        "honorificPrefix": "Dr.",
+        "jobTitle": "Médecin Vétérinaire Spécialiste en Santé Publique et Zoonoses — Conseiller Scientifique",
+        "identifier": {"@type": "PropertyValue", "propertyID": "CMVP", "value": "3103"},
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Universidad Nacional de Cajamarca",
+          "sameAs": "https://www.unc.edu.pe/"
+        },
+        "affiliation": [
+          {"@type": "Organization", "name": "Gerencia Regional de Salud (GERESA) La Libertad"},
+          {"@type": "Organization", "name": "Ministerio de Salud del Perú (MINSA)"}
+        ],
+        "knowsAbout": [
+          "Zoonoses et rage urbaine",
+          "Épidémiologie vétérinaire et contrôle des foyers",
+          "Santé publique animale",
+          "Surveillance épidémiologique — 25 ans d'expérience",
+          "Fasciola hepatica",
+          "Protocoles de rage pour l'exportation d'animaux de compagnie"
+        ],
+        "sameAs": ["https://www.linkedin.com/in/victor-jesus-camacho-paz"],
+        "worksFor": {"@id": "https://zoovettravel.com/#organization"}
       }
     ]
   }
