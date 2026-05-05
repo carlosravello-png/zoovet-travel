@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Méthodologie du Planificateur de Voyage pour Animaux : calcul de l'Indice de Cohérence Dynamique (ICD-Travel), règles du feu tricolore, sources officielles par pays, hypothèses du modèle et application du Modèle de Cohérence Dynamique (MCD) de Carlos Eduardo Ravello Joo.">
+  <meta name="theme-color" content="#0C789E">
+  <meta name="author" content="Carlos Eduardo Ravello Joo">
+  <title>Méthodologie du Planificateur · MCD appliqué · Zoovet Travel</title>
+
+  <link rel="icon" type="image/x-icon" href="https://zoovettravel.com/images/favicon.ico">
+  <link rel="canonical" href="https://zoovettravel.com/planificateur-voyage-animal/methodologie.html">
+  <link rel="alternate" hreflang="es" href="https://zoovettravel.com/planificador-viaje-mascota/metodologia.html">
+  <link rel="alternate" hreflang="en" href="https://zoovettravel.com/pet-travel-planner/methodology.html">
+  <link rel="alternate" hreflang="fr" href="https://zoovettravel.com/planificateur-voyage-animal/methodologie.html">
+  <link rel="alternate" hreflang="x-default" href="https://zoovettravel.com/planificador-viaje-mascota/metodologia.html">
+
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://zoovettravel.com/planificateur-voyage-animal/methodologie.html">
+  <meta property="og:title" content="Méthodologie du Planificateur · MCD appliqué · Zoovet Travel">
+  <meta property="og:description" content="Comment l'ICD-Travel est calculé, sources officielles par pays, règles du feu tricolore et application du MCD.">
+  <meta property="og:image" content="https://zoovettravel.com/images/og-default.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/tailwind.css">
+  <link rel="stylesheet" href="../planificador-viaje-mascota/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "TechArticle",
+        "@id": "https://zoovettravel.com/planificateur-voyage-animal/methodologie.html#article",
+        "headline": "Méthodologie du Planificateur de Voyage pour Animaux — MCD appliqué",
+        "name": "Méthodologie du Planificateur de Voyage pour Animaux",
+        "description": "Documentation technique expliquant comment le Planificateur calcule l'Indice de Cohérence Dynamique (ICD-Travel) sur trois axes — physiologique, cognitif et directionnel — en appliquant le Modèle de Cohérence Dynamique (MCD) au système zoosanitaire.",
+        "author": { "@id": "https://carlosravello.com/#person" },
+        "creator": { "@id": "https://carlosravello.com/#person" },
+        "publisher": { "@id": "https://zoovettravel.com/#organization" },
+        "datePublished": "2026-05-04",
+        "dateModified": "2026-05-04",
+        "inLanguage": "fr",
+        "isBasedOn": { "@id": "https://carlosravello.com/#mcd-framework" },
+        "mainEntityOfPage": "https://zoovettravel.com/planificateur-voyage-animal/methodologie.html",
+        "image": "https://zoovettravel.com/images/og-default.png",
+        "articleSection": "Documentation technique",
+        "about": [
+          { "@id": "https://carlosravello.com/#mcd-framework" },
+          "Systèmes zoosanitaires",
+          "Export international d'animaux de compagnie",
+          "Schema engineering"
+        ]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://carlosravello.com/#person",
+        "name": "Carlos Eduardo Ravello Joo",
+        "url": "https://carlosravello.com",
+        "sameAs": [
+          "https://carlosravello.com/#person",
+          "https://www.linkedin.com/in/carlos-ravello-joo-3a1047262/",
+          "https://github.com/carlosravello-png"
+        ]
+      },
+      {
+        "@type": ["CreativeWork", "ResearchProject"],
+        "@id": "https://carlosravello.com/#mcd-framework",
+        "name": "Modèle de Cohérence Dynamique (MCD)",
+        "alternateName": "MCD",
+        "url": "https://carlosravello.com",
+        "creator": { "@id": "https://carlosravello.com/#person" },
+        "author": { "@id": "https://carlosravello.com/#person" }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://zoovettravel.com/#organization",
+        "name": "Zoovet Travel",
+        "url": "https://zoovettravel.com",
+        "logo": "https://zoovettravel.com/images/zoovet-logo.png"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://zoovettravel.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Planificateur de Voyage", "item": "https://zoovettravel.com/planificateur-voyage-animal/" },
+          { "@type": "ListItem", "position": 3, "name": "Méthodologie", "item": "https://zoovettravel.com/planificateur-voyage-animal/methodologie.html" }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body class="font-montserrat bg-[#F8FAFC] text-[#1a2e35]">
+
+  <!-- NAV -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-[#1a2e35]/10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
+      <a href="../index.html" class="text-base sm:text-lg md:text-xl tracking-[0.4em] text-[#1a2e35] font-bold hover:opacity-80">ZOOVET TRAVEL</a>
+      <nav class="hidden md:flex items-center gap-6 text-xs font-semibold tracking-widest uppercase text-[#1a2e35]/70">
+        <a href="../index.html" class="hover:text-[#0C789E]">Accueil</a>
+        <a href="./index.html" class="hover:text-[#0C789E]">Planificateur</a>
+        <a href="../zoopedia/index.html" class="hover:text-[#0C789E]">Zoopedia</a>
+        <a href="../about-fr.html" class="hover:text-[#0C789E]">À propos</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <nav aria-label="Fil d'Ariane" class="max-w-4xl mx-auto px-4 sm:px-6 pt-6 text-xs text-[#1a2e35]/60">
+    <ol class="flex flex-wrap gap-2">
+      <li><a href="../index.html" class="hover:text-[#0C789E]">Accueil</a></li>
+      <li>›</li>
+      <li><a href="./index.html" class="hover:text-[#0C789E]">Planificateur de Voyage</a></li>
+      <li>›</li>
+      <li class="text-[#1a2e35] font-semibold">Méthodologie</li>
+    </ol>
+  </nav>
+
+  <article class="max-w-3xl mx-auto px-4 sm:px-6 py-12 prose prose-slate">
+    <p class="text-xs font-semibold tracking-[0.25em] uppercase text-[#0C789E] mb-3">Documentation technique · v1.0.0 · 2026-05-04</p>
+    <h1 class="text-3xl sm:text-4xl font-bold text-[#1a2e35] mb-6 leading-tight">Méthodologie du Planificateur de Voyage pour Animaux</h1>
+
+    <p class="text-base text-[#1a2e35]/80 leading-relaxed mb-8">
+      Cette page documente comment le Planificateur calcule l'<strong>Indice de Cohérence Dynamique (ICD-Travel)</strong>, les hypothèses retenues, les sources officielles consultées et les raisons pour lesquelles le <strong>Modèle de Cohérence Dynamique (MCD)</strong> est appliqué au système zoosanitaire d'exportation internationale d'animaux de compagnie.
+    </p>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         CADRE THÉORIQUE — backlink doré vers carlosravello.com
+         ═══════════════════════════════════════════════════════════ -->
+    <h2 class="text-xl font-bold text-[#1a2e35] mt-10 mb-4">1. Cadre théorique</h2>
+    <p class="text-sm text-[#1a2e35]/85 leading-relaxed mb-4">
+      Ce planificateur est une <strong>application de terrain</strong> du <a href="https://carlosravello.com" rel="me author noopener" class="text-[#0C789E] underline hover:no-underline font-semibold">Modèle de Cohérence Dynamique (MCD)</a>, cadre interdisciplinaire développé par <a href="https://carlosravello.com" rel="me author noopener" class="text-[#0C789E] underline hover:no-underline font-semibold">Carlos Eduardo Ravello Joo</a>.
+    </p>
+    <p class="text-sm text-[#1a2e35]/85 leading-relaxed mb-4">
+      Le MCD postule que la persistance fonctionnelle des systèmes complexes — humains, organisationnels ou artificiels — repose sur la capacité à maintenir la cohérence entre trois domaines interdépendants : <em>énergie</em> (physiologie), <em>information</em> (cognition) et <em>but</em> (sens). Le cadre intègre des apports de l'autopoïèse (Maturana, Varela), de la thermodynamique des systèmes loin de l'équilibre (Prigogine), de la théorie générale des systèmes (Bertalanffy, Morin), de la cybernétique de l'observateur (Shannon, Wiener, Bateson, von Foerster) et des neurosciences cognitives (Damasio, Kahneman, Dehaene).
+    </p>
+    <p class="text-sm text-[#1a2e35]/85 leading-relaxed mb-4">
+      Deux formulations propres au MCD sont particulièrement pertinentes pour cette application :
+    </p>
+    <blockquote class="border-l-4 border-[#0C789E] bg-[#F8FAFC] p-4 my-4 italic text-sm text-[#1a2e35]/85">
+      <strong>Paradoxe de Ravello :</strong> « Un système atteint sa cohérence maximale lorsqu'il accepte sa propre incohérence comme une partie du flux dynamique qui le soutient. »
+    </blockquote>
+    <blockquote class="border-l-4 border-[#0C789E] bg-[#F8FAFC] p-4 my-4 italic text-sm text-[#1a2e35]/85">
+      <strong>Loi de Ravello :</strong> « Tout système cherche la cohérence entre ce qu'il sait, ce qu'il ressent et ce qu'il fait. Lorsque l'un de ces vecteurs se désajuste, le système compense avec de l'énergie, du temps ou de l'identité. »
+    </blockquote>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         APPLICATION AU SYSTÈME ZOOSANITAIRE
+         ═══════════════════════════════════════════════════════════ -->
+    <h2 class="text-xl font-bold text-[#1a2e35] mt-10 mb-4">2. Application au système zoosanitaire</h2>
+    <p class="text-sm text-[#1a2e35]/85 leading-relaxed mb-4">
+      Dans le système « animal + propriétaire + autorités + destination », la cohérence dynamique est évaluée sur trois axes opérationnalisés :
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
+      <div class="border border-[#1a2e35]/10 p-4 bg-white">
+        <p class="text-xs font-bold uppercase tracking-widest text-[#0C789E] mb-2">Axe E · Physiologique</p>
+        <p class="text-sm text-[#1a2e35]/80">Âge biologique, micropuce ISO, vaccin antirabique en cours, FAVN/RNATT, état clinique général.</p>
+      </div>
+      <div class="border border-[#1a2e35]/10 p-4 bg-white">
+        <p class="text-xs font-bold uppercase tracking-widest text-[#0C789E] mb-2">Axe C · Information</p>
+        <p class="text-sm text-[#1a2e35]/80">Certificat sanitaire, dossier vétérinaire, réglementation SENASA, exigences du pays de destination, permis d'importation.</p>
+      </div>
+      <div class="border border-[#1a2e35]/10 p-4 bg-white">
+        <p class="text-xs font-bold uppercase tracking-widest text-[#0C789E] mb-2">Axe P · Directionnel</p>
+        <p class="text-sm text-[#1a2e35]/80">Destination concrète, date de voyage cible, délai disponible, faisabilité temporelle globale.</p>
+      </div>
+    </div>
+    <p class="text-sm text-[#1a2e35]/85 leading-relaxed mb-4">
+      L'<strong>ICD-Travel</strong> est la synthèse numérique (0-100) de la synchronie entre les trois axes. Lorsque les trois sont cohérents dans le temps, le feu est vert. Lorsque l'un se désynchronise, orange (compensation dynamique possible). Lorsque deux ou plus s'effondrent, rouge (incohérence structurelle — voyage impossible).
+    </p>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         RÈGLES DU FEU TRICOLORE
+         ═══════════════════════════════════════════════════════════ -->
+    <h2 class="text-xl font-bold text-[#1a2e35] mt-10 mb-4">3. Règles du feu tricolore</h2>
+    <h3 class="text-base font-bold text-red-700 mt-6 mb-2">🔴 ROUGE — incohérence structurelle</h3>
+    <ul class="text-sm text-[#1a2e35]/85 list-disc list-inside space-y-1">
+      <li>Âge de l'animal le jour du voyage &lt; âge minimum absolu de la destination</li>
+      <li>Vaccin antirabique &lt; 21 jours avant le voyage (délai impossible)</li>
+      <li>FAVN non réalisé et il reste &lt; 90 jours avant le voyage (180 pour Japon/Australie)</li>
+      <li>Quarantaine obligatoire non réservée et délai serré</li>
+      <li>Permis d'importation obligatoire non obtenu et délai insuffisant</li>
+      <li>Micropuce absente ET destination l'exige comme bloquant ET vaccin déjà administré (revaccination nécessaire) ET délai court</li>
+    </ul>
+    <h3 class="text-base font-bold text-yellow-700 mt-6 mb-2">🟡 ORANGE — compensation dynamique</h3>
+    <ul class="text-sm text-[#1a2e35]/85 list-disc list-inside space-y-1">
+      <li>Vaccin antirabique entre 21 et 29 jours avant le voyage (zone grise légale)</li>
+      <li>Il reste entre 30 et 90 jours avant le voyage sans blocage grave</li>
+      <li>Micropuce absente mais temps suffisant pour poser + revacciner si la destination l'exige</li>
+    </ul>
+    <p class="text-sm text-[#1a2e35]/85 mt-3 leading-relaxed">
+      <strong>Important :</strong> le feu orange n'est pas un feu vert. Il signifie que la viabilité reste à l'appréciation de l'officier sanitaire du pays de destination. Dans la pratique de terrain de Zoovet Travel (2013-2026), l'orange équivaut presque toujours à un NON.
+    </p>
+    <h3 class="text-base font-bold text-green-700 mt-6 mb-2">🟢 VERT — cohérence confirmée</h3>
+    <ul class="text-sm text-[#1a2e35]/85 list-disc list-inside space-y-1">
+      <li>Plus de 90 jours avant le voyage</li>
+      <li>Toutes les exigences de la destination remplies avec l'ordre et les délais corrects</li>
+      <li>Âge minimum atteint avec marge</li>
+    </ul>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         HYPOTHÈSES ET LIMITES
+         ═══════════════════════════════════════════════════════════ -->
+    <h2 class="text-xl font-bold text-[#1a2e35] mt-10 mb-4">4. Hypothèses du modèle</h2>
+    <ul class="text-sm text-[#1a2e35]/85 space-y-3">
+      <li><strong>Vaccin rappel :</strong> le modèle suppose que le vaccin antirabique est un rappel. La primo-vaccination n'est pas considérée comme valide à l'exportation ; le calcul des délais démarre à la deuxième dose ou au dernier rappel.</li>
+      <li><strong>Date de référence :</strong> tous les délais sont calculés par rapport à la date de voyage (ETD) déclarée par l'utilisateur.</li>
+      <li><strong>Ordre micropuce → vaccin → FAVN :</strong> universel. Si la destination exige cet ordre et qu'il n'a pas été respecté, le propriétaire est tenu de revacciner — sans exception.</li>
+      <li><strong>Validité du certificat sanitaire :</strong> 5 jours réels (règle SENASA Pérou), indépendamment de ce qu'indique le guide du pays de destination.</li>
+      <li><strong>Endossement SENASA :</strong> 1 jour (de un jour à l'autre, en pratique courante).</li>
+      <li><strong>Vaccin 30 jours vs 21 jours :</strong> légalement la plupart des destinations acceptent 21 jours, mais les critères variables du SENASA Pérou et des officiers font que 30 jours est le minimum recommandé.</li>
+      <li><strong>FAVN/RNATT — délai d'attente :</strong> 90 jours en général, 180 jours pour le Japon et l'Australie, comptés depuis le prélèvement jusqu'à l'entrée dans le pays de destination.</li>
+    </ul>
+
+    <h2 class="text-xl font-bold text-[#1a2e35] mt-10 mb-4">5. Ce que ce planificateur ne calcule PAS</h2>
+    <ul class="text-sm text-[#1a2e35]/85 list-disc list-inside space-y-1">
+      <li>Compagnies aériennes, restrictions cabine/soute, frais d'expédition</li>
+      <li>Restrictions spécifiques par race (au-delà des âges minimaux)</li>
+      <li>Conjonctures douanières temporaires</li>
+      <li>Coût des démarches administratives</li>
+      <li>Prix du FAVN ou de la quarantaine</li>
+    </ul>
+    <p class="text-sm text-[#1a2e35]/85 mt-3 leading-relaxed">
+      Pour tout ce qui précède, contactez l'équipe Zoovet Travel : <a href="https://wa.me/51979620402" class="text-[#0C789E] underline">+51 979 620 402</a>.
+    </p>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         SOURCES OFFICIELLES
+         ═══════════════════════════════════════════════════════════ -->
+    <h2 class="text-xl font-bold text-[#1a2e35] mt-10 mb-4">6. Sources officielles par destination</h2>
+    <p class="text-sm text-[#1a2e35]/80 mb-4">Règles zoosanitaires consultées le <strong>4 mai 2026</strong> :</p>
+    <table class="w-full text-xs border-collapse">
+      <thead>
+        <tr class="bg-[#F8FAFC] border-b border-[#1a2e35]/10">
+          <th class="text-left py-2 px-2 font-bold uppercase tracking-widest text-[#1a2e35]/70">Pays</th>
+          <th class="text-left py-2 px-2 font-bold uppercase tracking-widest text-[#1a2e35]/70">Autorité</th>
+        </tr>
+      </thead>
+      <tbody class="text-[#1a2e35]/85">
+        <tr class="border-b border-[#1a2e35]/5"><td class="py-2 px-2">Allemagne, Espagne, France, Italie</td><td class="py-2 px-2">Règlement UE 576/2013 + ministères nationaux</td></tr>
+        <tr class="border-b border-[#1a2e35]/5"><td class="py-2 px-2">Royaume-Uni</td><td class="py-2 px-2">DEFRA · gov.uk/bring-pet-to-great-britain</td></tr>
+        <tr class="border-b border-[#1a2e35]/5"><td class="py-2 px-2">États-Unis</td><td class="py-2 px-2">CDC + USDA APHIS</td></tr>
+        <tr class="border-b border-[#1a2e35]/5"><td class="py-2 px-2">Canada</td><td class="py-2 px-2">ACIA · inspection.canada.ca</td></tr>
+        <tr class="border-b border-[#1a2e35]/5"><td class="py-2 px-2">Australie</td><td class="py-2 px-2">DAFF · agriculture.gov.au</td></tr>
+        <tr class="border-b border-[#1a2e35]/5"><td class="py-2 px-2">Japon</td><td class="py-2 px-2">MAFF / Service de quarantaine animale</td></tr>
+        <tr class="border-b border-[#1a2e35]/5"><td class="py-2 px-2">Nouvelle-Zélande</td><td class="py-2 px-2">MPI · mpi.govt.nz</td></tr>
+        <tr class="border-b border-[#1a2e35]/5"><td class="py-2 px-2">Chine</td><td class="py-2 px-2">GACC Annonce [2019] n° 5</td></tr>
+        <tr class="border-b border-[#1a2e35]/5"><td class="py-2 px-2">Corée du Sud</td><td class="py-2 px-2">QIA / APQA</td></tr>
+        <tr class="border-b border-[#1a2e35]/5"><td class="py-2 px-2">Émirats Arabes Unis</td><td class="py-2 px-2">MOCCAE · moccae.gov.ae</td></tr>
+        <tr class="border-b border-[#1a2e35]/5"><td class="py-2 px-2">Inde</td><td class="py-2 px-2">DAHD · dahd.gov.in</td></tr>
+        <tr class="border-b border-[#1a2e35]/5"><td class="py-2 px-2">Russie</td><td class="py-2 px-2">Россельхознадзор (Rosselkhoznadzor)</td></tr>
+        <tr class="border-b border-[#1a2e35]/5"><td class="py-2 px-2">Singapour</td><td class="py-2 px-2">AVS / NParks</td></tr>
+        <tr class="border-b border-[#1a2e35]/5"><td class="py-2 px-2">Afrique du Sud</td><td class="py-2 px-2">DALRRD</td></tr>
+        <tr class="border-b border-[#1a2e35]/5"><td class="py-2 px-2">Argentine, Brésil, Chili, Colombie, Mexique</td><td class="py-2 px-2">SENASA AR, MAPA BR, SAG, ICA, SENASICA</td></tr>
+        <tr><td class="py-2 px-2">Origine Pérou (tous)</td><td class="py-2 px-2">SENASA Pérou + pratique opérationnelle Zoovet Travel 2013-2026</td></tr>
+      </tbody>
+    </table>
+    <p class="text-xs text-[#1a2e35]/60 mt-3 leading-relaxed">
+      Les URLs spécifiques par destination sont disponibles dans le fichier <a href="../planificador-viaje-mascota/rules.json" class="text-[#0C789E] underline">rules.json</a> (champ <code class="text-xs bg-[#F8FAFC] px-1">fuente_oficial</code> de chaque nœud). Prochaine révision prévue : 4 août 2026.
+    </p>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         RIGUEUR DOCUMENTAIRE
+         ═══════════════════════════════════════════════════════════ -->
+    <h2 class="text-xl font-bold text-[#1a2e35] mt-10 mb-4">7. Rigueur documentaire</h2>
+    <p class="text-sm text-[#1a2e35]/85 leading-relaxed mb-3">
+      Chaque PDF généré inclut : l'horodatage de génération, la version du rules.json utilisée, la citation des sources officielles et un avertissement légal complet. Le fichier <a href="../planificador-viaje-mascota/rules.json" class="text-[#0C789E] underline">rules.json</a> est versionné (semver), avec date de dernière mise à jour, date de prochaine révision, journal des modifications et mainteneur déclaré.
+    </p>
+    <p class="text-sm text-[#1a2e35]/85 leading-relaxed">
+      Cet outil est strictement informatif et indicatif. Il ne constitue pas un avis vétérinaire, ne remplace pas la consultation avec un vétérinaire habilité ni la vérification directe auprès du SENASA Pérou et de l'autorité sanitaire du pays de destination.
+    </p>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         AUTEUR
+         ═══════════════════════════════════════════════════════════ -->
+    <h2 class="text-xl font-bold text-[#1a2e35] mt-10 mb-4">8. Auteur</h2>
+    <p class="text-sm text-[#1a2e35]/85 leading-relaxed">
+      Concept, architecture technique, schema engineering et stratégie SEO : <a href="https://carlosravello.com" rel="me author noopener" class="text-[#0C789E] underline font-semibold">Carlos Eduardo Ravello Joo</a>. Cadre théorique appliqué : <a href="https://carlosravello.com" rel="me author noopener" class="text-[#0C789E] underline font-semibold">Modèle de Cohérence Dynamique (MCD)</a>. Plateforme éditrice : Zoovet Travel.
+    </p>
+
+    <div class="mt-12 flex flex-wrap gap-3">
+      <a href="./index.html" class="bg-[#0C789E] text-white font-bold text-sm tracking-widest uppercase px-6 py-3 hover:bg-[#0a6a8a]">← Utiliser le planificateur</a>
+      <a href="../planificador-viaje-mascota/rules.json" class="border border-[#1a2e35]/30 text-[#1a2e35] font-bold text-sm tracking-widest uppercase px-6 py-3 hover:bg-[#1a2e35] hover:text-white">Voir rules.json brut</a>
+    </div>
+  </article>
+
+  <footer class="bg-[#1a2e35] text-[#F8FAFC] mt-16">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-10">
+      <div class="border-t border-white/10 pt-6 text-xs text-[#F8FAFC]/50 leading-relaxed">
+        <p>
+          Architecture, schema engineering et stratégie SEO :
+          <a href="https://carlosravello.com" rel="me author noopener" class="text-[#F8FAFC]/80 hover:text-white underline underline-offset-2">Carlos Eduardo Ravello Joo</a>
+          · Application de terrain du
+          <a href="https://carlosravello.com" rel="me author noopener" class="text-[#F8FAFC]/80 hover:text-white underline underline-offset-2">Modèle de Cohérence Dynamique (MCD)</a>.
+        </p>
+        <p class="mt-2">© 2013-2026 Zoovet Travel · RUC 10433053678 · v1.0.0</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

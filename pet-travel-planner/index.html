@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Technical pet travel planner for international trips. Calculate your reverse timeline, viability traffic light and full SENASA + destination authority paperwork plan. 22 countries covered. Zoosanitary data updated 2026.">
+  <meta name="keywords" content="pet travel planner, international pet export Peru, pet travel timeline calculator, SENASA Peru calculator, FAVN titer test calculation, zoosanitary requirements by country">
+  <meta name="theme-color" content="#0C789E">
+  <meta name="author" content="Carlos Eduardo Ravello Joo">
+  <title>Pet Travel Planner — 22 Countries · Zoovet Travel</title>
+
+  <link rel="icon" type="image/x-icon" href="https://zoovettravel.com/images/favicon.ico">
+  <link rel="apple-touch-icon" href="https://zoovettravel.com/images/apple-touch-icon.png">
+
+  <link rel="canonical" href="https://zoovettravel.com/pet-travel-planner/">
+  <link rel="alternate" hreflang="es" href="https://zoovettravel.com/planificador-viaje-mascota/">
+  <link rel="alternate" hreflang="en" href="https://zoovettravel.com/pet-travel-planner/">
+  <link rel="alternate" hreflang="fr" href="https://zoovettravel.com/planificateur-voyage-animal/">
+  <link rel="alternate" hreflang="x-default" href="https://zoovettravel.com/planificador-viaje-mascota/">
+
+  <!-- Open Graph + Twitter Card -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://zoovettravel.com/pet-travel-planner/">
+  <meta property="og:title" content="Pet Travel Planner — Zoovet Travel">
+  <meta property="og:description" content="Calculate your reverse timeline, viability traffic light and full paperwork plan to export your pet from Peru to 22 countries.">
+  <meta property="og:image" content="https://zoovettravel.com/images/og-default.png">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Pet Travel Planner — Zoovet Travel">
+  <meta name="twitter:description" content="Calculate your reverse timeline and full paperwork plan to export your pet from Peru.">
+  <meta name="twitter:image" content="https://zoovettravel.com/images/og-default.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../assets/tailwind.css">
+  <link rel="stylesheet" href="../planificador-viaje-mascota/styles.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.10/pdfmake.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.10/vfs_fonts.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://zoovettravel.com/pet-travel-planner/#webapp",
+        "name": "Pet Travel Planner",
+        "alternateName": "Zoovet Travel Pet Planner",
+        "url": "https://zoovettravel.com/pet-travel-planner/",
+        "description": "Web tool that computes the reverse export timeline for pets, evaluating coherence between biological age, vaccine/clinical status, microchip, FAVN/titer test, health certificate, SENASA endorsement, import permits and quarantine requirements across 22 destination countries. Applies the Dynamic Coherence Model (MCD) to the zoosanitary system.",
+        "applicationCategory": "TravelApplication",
+        "applicationSubCategory": "Veterinary planning tool",
+        "operatingSystem": "Any (web)",
+        "browserRequirements": "Requires JavaScript",
+        "inLanguage": "en",
+        "isAccessibleForFree": true,
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "creator": { "@id": "https://carlosravello.com/#person" },
+        "author": { "@id": "https://carlosravello.com/#person" },
+        "publisher": { "@id": "https://zoovettravel.com/#organization" },
+        "provider": { "@id": "https://zoovettravel.com/#organization" },
+        "isBasedOn": { "@id": "https://carlosravello.com/#mcd-framework" },
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Pet owners planning international travel from Peru"
+        },
+        "featureList": [
+          "Reverse timeline calculation for 22 countries",
+          "Viability traffic light (Green / Amber / Red) based on Dynamic Coherence Index",
+          "Legal minimum age validation by destination",
+          "Microchip → vaccine → FAVN order verification",
+          "Downloadable PDF plan",
+          "WhatsApp QR for Zoovet Travel consultation",
+          "Legal disclaimer and official source citations",
+          "Shareable reproducible URL"
+        ],
+        "softwareVersion": "1.0.0",
+        "dateCreated": "2026-05-04",
+        "dateModified": "2026-05-04",
+        "datePublished": "2026-05-04",
+        "license": "https://zoovettravel.com/pet-travel-planner/#disclaimer",
+        "potentialAction": { "@type": "UseAction", "target": "https://zoovettravel.com/pet-travel-planner/" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://carlosravello.com/#person",
+        "name": "Carlos Eduardo Ravello Joo",
+        "url": "https://carlosravello.com",
+        "jobTitle": "Technical SEO strategist, web architect and founder",
+        "description": "Founder of Zoovet Travel. Author of the Dynamic Coherence Model (MCD). Designer of the technical architecture, schema engineering and SEO strategy of the Zoovet Travel ecosystem.",
+        "knowsAbout": ["Dynamic Coherence Model (MCD)", "Adaptive complex systems", "Schema.org engineering", "Technical SEO strategy", "Trilingual web architecture", "Knowledge graph optimization", "International pet export"],
+        "subjectOf": { "@id": "https://carlosravello.com/#mcd-framework" },
+        "sameAs": ["https://carlosravello.com/#person", "https://www.linkedin.com/in/carlos-ravello-joo-3a1047262/", "https://github.com/carlosravello-png"],
+        "worksFor": { "@id": "https://zoovettravel.com/#organization" },
+        "founder": { "@id": "https://zoovettravel.com/#organization" }
+      },
+      {
+        "@type": ["CreativeWork", "ResearchProject"],
+        "@id": "https://carlosravello.com/#mcd-framework",
+        "name": "Dynamic Coherence Model (MCD)",
+        "alternateName": "MCD",
+        "url": "https://carlosravello.com",
+        "creator": { "@id": "https://carlosravello.com/#person" },
+        "author": { "@id": "https://carlosravello.com/#person" },
+        "inLanguage": "es",
+        "description": "Interdisciplinary theoretical framework postulating that the functional persistence of complex systems depends on the coherence between three interdependent domains: energy (physiology), information (cognition) and purpose (meaning). Integrates autopoiesis, dissipative thermodynamics, complexity theory, cybernetics and cognitive neuroscience. Includes the Ravello Paradox, Ravello's Law and the pseudo-ratio Ω."
+      },
+      {
+        "@type": ["Organization", "ProfessionalService", "VeterinaryCare"],
+        "@id": "https://zoovettravel.com/#organization",
+        "name": "Zoovet Travel",
+        "url": "https://zoovettravel.com",
+        "logo": "https://zoovettravel.com/images/zoovet-logo.png",
+        "taxID": "10433053678",
+        "telephone": ["+51 922 083 707", "+51 979 620 402", "044 366094"],
+        "email": "contacto@zoovettravel.com",
+        "address": { "@type": "PostalAddress", "streetAddress": "Calle Cuba 241", "addressLocality": "Trujillo", "addressRegion": "La Libertad", "postalCode": "13001", "addressCountry": "PE" }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://zoovettravel.com/pet-travel-planner/#webpage",
+        "url": "https://zoovettravel.com/pet-travel-planner/",
+        "name": "Pet Travel Planner — Zoovet Travel",
+        "inLanguage": "en",
+        "datePublished": "2026-05-04",
+        "dateModified": "2026-05-04",
+        "breadcrumb": { "@id": "https://zoovettravel.com/pet-travel-planner/#breadcrumb" },
+        "mainEntity": { "@id": "https://zoovettravel.com/pet-travel-planner/#webapp" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://zoovettravel.com/pet-travel-planner/#breadcrumb",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zoovettravel.com/index-en.html" },
+          { "@type": "ListItem", "position": 2, "name": "Pet Travel Planner", "item": "https://zoovettravel.com/pet-travel-planner/" }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://zoovettravel.com/pet-travel-planner/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What exactly does this tool calculate?",
+            "acceptedAnswer": { "@type": "Answer", "text": "The Planner computes your pet's reverse export timeline: legal minimum age by destination, rabies vaccine deadline, FAVN/titer test window, health certificate validity, SENASA endorsement and destination country permits/quarantines. It returns a viability traffic light (Green, Amber or Red) and a full PDF plan." }
+          },
+          {
+            "@type": "Question",
+            "name": "Does this tool replace a veterinary consultation?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No. It is strictly informational. It does not replace consultation with a licensed veterinarian, nor direct verification with SENASA Peru and the destination country sanitary authority. The final decision on animal admission rests exclusively with the destination country's sanitary and customs officials." }
+          },
+          {
+            "@type": "Question",
+            "name": "Why does the planner require 30 days for the rabies vaccine if guides say 21?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Legally most destinations accept 21 days, but SENASA Peru and the variable criteria of destination country officials make 30 days the recommended minimum to avoid rejection. The amber light (vaccine 21-29 days) implies officer's discretion — in practice almost always NO." }
+          },
+          {
+            "@type": "Question",
+            "name": "Why is the health certificate only valid for 5 days?",
+            "acceptedAnswer": { "@type": "Answer", "text": "SENASA Peru, as the issuing authority, only validates the health certificate for 5 real days, regardless of what the destination country guide states. Without SENASA validity there is no CZE endorsement and the pet cannot travel." }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the Dynamic Coherence Model (MCD) and why is it mentioned here?",
+            "acceptedAnswer": { "@type": "Answer", "text": "The MCD is a theoretical framework developed by Carlos Eduardo Ravello Joo postulating that the functional persistence of complex systems depends on coherence between three axes: energy, information and purpose. This planner is a field application of the MCD to the zoosanitary system: the traffic light computes a Dynamic Coherence Index between the pet's age and clinical status (axis E), documentation and regulations (axis C) and the planned destination and date (axis P)." }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body class="font-montserrat bg-[#F8FAFC] text-[#1a2e35]" data-theme="light">
+
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-[#1a2e35]/10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
+      <a href="../index-en.html" class="text-base sm:text-lg md:text-xl tracking-[0.4em] text-[#1a2e35] font-bold hover:opacity-80 transition-opacity">
+        ZOOVET TRAVEL
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-xs font-semibold tracking-widest uppercase text-[#1a2e35]/70">
+        <a href="../index-en.html" class="hover:text-[#0C789E] transition-colors">Home</a>
+        <a href="../zoopedia/index.html" class="hover:text-[#0C789E] transition-colors">Zoopedia</a>
+        <a href="../kennels-en.html" class="hover:text-[#0C789E] transition-colors">Kennels</a>
+        <a href="../about-en.html" class="hover:text-[#0C789E] transition-colors">About</a>
+        <a href="https://wa.me/51979620402" target="_blank" rel="noopener noreferrer" class="text-[#0C789E] border border-[#0C789E] px-4 py-2 hover:bg-[#0C789E] hover:text-white transition-all">WhatsApp</a>
+      </nav>
+      <button id="mobile-menu-btn" class="md:hidden text-[#1a2e35]" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+    <div id="mobile-drawer" class="hidden md:hidden bg-white border-b border-[#1a2e35]/10">
+      <nav class="max-w-6xl mx-auto px-4 py-4 flex flex-col gap-3 text-sm font-semibold uppercase tracking-widest text-[#1a2e35]/70">
+        <a href="../index-en.html">Home</a>
+        <a href="../zoopedia/index.html">Zoopedia</a>
+        <a href="../kennels-en.html">Kennels</a>
+        <a href="../about-en.html">About</a>
+        <a href="https://wa.me/51979620402" target="_blank" rel="noopener noreferrer" class="text-[#0C789E]">WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <nav aria-label="Breadcrumb" class="max-w-6xl mx-auto px-4 sm:px-6 pt-6 text-xs text-[#1a2e35]/60">
+    <ol class="flex flex-wrap gap-2">
+      <li><a href="../index-en.html" class="hover:text-[#0C789E]">Home</a></li>
+      <li>›</li>
+      <li class="text-[#1a2e35] font-semibold">Pet Travel Planner</li>
+    </ol>
+  </nav>
+
+  <section class="max-w-4xl mx-auto px-4 sm:px-6 pt-8 pb-12">
+    <p class="text-xs font-semibold tracking-[0.25em] uppercase text-[#0C789E] mb-3">Tool · Version 1.0 · 22 Countries</p>
+    <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1a2e35] leading-tight mb-4">
+      Pet Travel Planner
+    </h1>
+    <p class="text-base sm:text-lg text-[#1a2e35]/75 leading-relaxed mb-6 max-w-3xl">
+      Calculate the <strong>complete reverse timeline</strong> to export your pet from Peru to 22 destinations. Real-time validation of legal minimum age, rabies vaccine, FAVN/titer test, health certificate, SENASA endorsement and destination country permits. Returns a <strong>viability traffic light</strong> and a <strong>downloadable PDF plan</strong>.
+    </p>
+    <div class="flex flex-wrap gap-3 text-xs text-[#1a2e35]/60">
+      <span class="px-3 py-1 bg-[#0C789E]/10 text-[#0C789E] border border-[#0C789E]/20">Data updated May 2026</span>
+      <span class="px-3 py-1 bg-[#0C789E]/10 text-[#0C789E] border border-[#0C789E]/20">22 destination countries</span>
+      <span class="px-3 py-1 bg-[#0C789E]/10 text-[#0C789E] border border-[#0C789E]/20">Official sources cited</span>
+      <a href="./methodology.html" class="px-3 py-1 border border-[#1a2e35]/30 text-[#1a2e35]/80 hover:bg-[#1a2e35] hover:text-white transition-all">View methodology →</a>
+    </div>
+  </section>
+
+  <section class="max-w-4xl mx-auto px-4 sm:px-6 mb-8" id="disclaimer">
+    <div class="border-l-4 border-[#0C789E] bg-[#0C789E]/5 p-4 sm:p-5">
+      <p class="text-xs font-bold uppercase tracking-widest text-[#0C789E] mb-2">Legal notice</p>
+      <p class="text-sm text-[#1a2e35]/80 leading-relaxed">
+        This tool is <strong>strictly informational and advisory</strong>. It does not constitute veterinary advice, does not replace consultation with a licensed veterinarian, and does not substitute direct verification with SENASA Peru and the destination country sanitary authority. International zoosanitary regulations may change without notice and the final decision on animal admission rests exclusively with the destination country's sanitary and customs officials. Use of this planner does not generate liability for Carlos Eduardo Ravello Joo or Zoovet Travel. For a binding assessment, contact Zoovet Travel: <a href="https://wa.me/51922083707" class="underline">+51 922 083 707</a> / <a href="https://wa.me/51979620402" class="underline">+51 979 620 402</a>.
+      </p>
+    </div>
+  </section>
+
+  <section id="form-section" class="max-w-4xl mx-auto px-4 sm:px-6 mb-12">
+    <div class="bg-white border border-[#1a2e35]/10 p-6 sm:p-8 shadow-sm">
+      <h2 class="text-xl sm:text-2xl font-bold text-[#1a2e35] mb-2">Your pet and travel details</h2>
+      <p class="text-sm text-[#1a2e35]/60 mb-6">Fill in all 9 fields. The planner will calculate your traffic light and plan in seconds.</p>
+
+      <form id="planner-form" class="grid grid-cols-1 md:grid-cols-2 gap-5">
+
+        <div>
+          <label for="nombre_mascota" class="block text-xs font-semibold uppercase tracking-widest text-[#1a2e35]/70 mb-2">Pet name *</label>
+          <input type="text" id="nombre_mascota" name="nombre_mascota" required maxlength="40" class="w-full border border-[#1a2e35]/20 px-4 py-3 text-sm focus:outline-none focus:border-[#0C789E] focus:ring-1 focus:ring-[#0C789E] transition-colors" placeholder="e.g. Luna">
+        </div>
+
+        <div>
+          <label for="especie" class="block text-xs font-semibold uppercase tracking-widest text-[#1a2e35]/70 mb-2">Species *</label>
+          <select id="especie" name="especie" required class="w-full border border-[#1a2e35]/20 px-4 py-3 text-sm focus:outline-none focus:border-[#0C789E] bg-white">
+            <option value="">Select</option>
+            <option value="perro">Dog</option>
+            <option value="gato">Cat</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="raza" class="block text-xs font-semibold uppercase tracking-widest text-[#1a2e35]/70 mb-2">Breed *</label>
+          <input type="text" id="raza" name="raza" required maxlength="40" class="w-full border border-[#1a2e35]/20 px-4 py-3 text-sm focus:outline-none focus:border-[#0C789E]" placeholder="e.g. Mixed, Labrador, Persian">
+        </div>
+
+        <div>
+          <label for="peso" class="block text-xs font-semibold uppercase tracking-widest text-[#1a2e35]/70 mb-2">Weight (kg) *</label>
+          <input type="number" id="peso" name="peso" required min="0.3" max="100" step="0.1" class="w-full border border-[#1a2e35]/20 px-4 py-3 text-sm focus:outline-none focus:border-[#0C789E]" placeholder="e.g. 12.5">
+        </div>
+
+        <div>
+          <label for="edad_meses" class="block text-xs font-semibold uppercase tracking-widest text-[#1a2e35]/70 mb-2">Pet age (months) *</label>
+          <input type="number" id="edad_meses" name="edad_meses" required min="0" max="240" step="1" class="w-full border border-[#1a2e35]/20 px-4 py-3 text-sm focus:outline-none focus:border-[#0C789E]" placeholder="e.g. 14">
+        </div>
+
+        <div>
+          <label for="destino" class="block text-xs font-semibold uppercase tracking-widest text-[#1a2e35]/70 mb-2">Destination country *</label>
+          <select id="destino" name="destino" required class="w-full border border-[#1a2e35]/20 px-4 py-3 text-sm focus:outline-none focus:border-[#0C789E] bg-white">
+            <option value="">Select destination</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="fecha_viaje" class="block text-xs font-semibold uppercase tracking-widest text-[#1a2e35]/70 mb-2">Estimated travel date *</label>
+          <input type="date" id="fecha_viaje" name="fecha_viaje" required class="w-full border border-[#1a2e35]/20 px-4 py-3 text-sm focus:outline-none focus:border-[#0C789E]">
+        </div>
+
+        <div></div>
+
+        <fieldset class="md:col-span-2 border border-[#1a2e35]/15 p-4">
+          <legend class="text-xs font-semibold uppercase tracking-widest text-[#1a2e35]/70 px-2">ISO Microchip</legend>
+          <div class="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
+            <label class="flex items-center gap-2 text-sm"><input type="radio" name="microchip" value="si" class="accent-[#0C789E]"> Yes, already implanted</label>
+            <label class="flex items-center gap-2 text-sm"><input type="radio" name="microchip" value="no" checked class="accent-[#0C789E]"> Not yet</label>
+            <div class="flex-1 w-full sm:w-auto">
+              <input type="date" id="fecha_microchip" name="fecha_microchip" disabled class="w-full border border-[#1a2e35]/20 px-3 py-2 text-sm focus:outline-none focus:border-[#0C789E] disabled:bg-[#F8FAFC] disabled:text-[#1a2e35]/40" placeholder="Implantation date">
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="md:col-span-2 border border-[#1a2e35]/15 p-4">
+          <legend class="text-xs font-semibold uppercase tracking-widest text-[#1a2e35]/70 px-2">Valid rabies vaccine</legend>
+          <div class="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
+            <label class="flex items-center gap-2 text-sm"><input type="radio" name="vacuna" value="si" class="accent-[#0C789E]"> Yes</label>
+            <label class="flex items-center gap-2 text-sm"><input type="radio" name="vacuna" value="no" checked class="accent-[#0C789E]"> No</label>
+            <div class="flex-1 w-full sm:w-auto">
+              <input type="date" id="fecha_vacuna" name="fecha_vacuna" disabled class="w-full border border-[#1a2e35]/20 px-3 py-2 text-sm focus:outline-none focus:border-[#0C789E] disabled:bg-[#F8FAFC] disabled:text-[#1a2e35]/40" placeholder="Date of last dose">
+            </div>
+          </div>
+          <p class="text-xs text-[#1a2e35]/50 mt-2">We assume a booster vaccine. Initial vaccination is not considered valid for export; the count starts from the second dose or last booster.</p>
+        </fieldset>
+
+        <fieldset class="md:col-span-2 border border-[#1a2e35]/15 p-4">
+          <legend class="text-xs font-semibold uppercase tracking-widest text-[#1a2e35]/70 px-2">Internal and external deworming</legend>
+          <div class="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
+            <label class="flex items-center gap-2 text-sm"><input type="radio" name="desparasitacion" value="si" class="accent-[#0C789E]"> Yes</label>
+            <label class="flex items-center gap-2 text-sm"><input type="radio" name="desparasitacion" value="no" checked class="accent-[#0C789E]"> No</label>
+            <div class="flex-1 w-full sm:w-auto">
+              <input type="date" id="fecha_desparasitacion" name="fecha_desparasitacion" disabled class="w-full border border-[#1a2e35]/20 px-3 py-2 text-sm focus:outline-none focus:border-[#0C789E] disabled:bg-[#F8FAFC] disabled:text-[#1a2e35]/40" placeholder="Application date">
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="md:col-span-2 flex flex-col sm:flex-row gap-3 mt-2">
+          <button type="submit" class="flex-1 bg-[#0C789E] text-white font-bold text-sm tracking-widest uppercase py-4 hover:bg-[#0a6a8a] transition-colors">
+            Calculate my traffic light
+          </button>
+          <button type="reset" class="px-6 py-4 border border-[#1a2e35]/20 text-[#1a2e35]/70 text-sm uppercase tracking-widest hover:bg-[#1a2e35]/5 transition-colors">
+            Clear
+          </button>
+        </div>
+
+      </form>
+    </div>
+  </section>
+
+  <section id="result-section" class="max-w-4xl mx-auto px-4 sm:px-6 mb-12 hidden">
+    <div id="semaforo-container" class="bg-white border-2 p-6 sm:p-8 shadow-md">
+    </div>
+  </section>
+
+  <section class="max-w-4xl mx-auto px-4 sm:px-6 py-12 border-t border-[#1a2e35]/10">
+    <h2 class="text-xl sm:text-2xl font-bold text-[#1a2e35] mb-4">How does the traffic light work?</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+      <div class="border-l-4 border-green-500 bg-green-50 p-4">
+        <p class="text-xs font-bold uppercase tracking-widest text-green-700 mb-1">Green</p>
+        <p class="text-sm text-[#1a2e35]/80">More than 90 days to travel and all destination requirements met with correct order and deadlines.</p>
+      </div>
+      <div class="border-l-4 border-yellow-500 bg-yellow-50 p-4">
+        <p class="text-xs font-bold uppercase tracking-widest text-yellow-700 mb-1">Amber</p>
+        <p class="text-sm text-[#1a2e35]/80">Between 30 and 90 days, or vaccine in the grey zone (21-29 days). Left to the officer's discretion — in practice almost always NO.</p>
+      </div>
+      <div class="border-l-4 border-red-600 bg-red-50 p-4">
+        <p class="text-xs font-bold uppercase tracking-widest text-red-700 mb-1">Red</p>
+        <p class="text-sm text-[#1a2e35]/80">Blocker impossible to resolve within the timeframe: insufficient age, FAVN absent with little time, quarantine not booked.</p>
+      </div>
+    </div>
+    <p class="text-sm text-[#1a2e35]/70 leading-relaxed">
+      The traffic light engine is based on the <a href="./methodology.html" class="text-[#0C789E] underline hover:no-underline"><strong>Dynamic Coherence Model (MCD)</strong></a>, a theoretical framework developed by <a href="https://carlosravello.com" rel="me author noopener" class="text-[#0C789E] underline hover:no-underline">Carlos Eduardo Ravello Joo</a>. The calculation evaluates coherence between three axes: <em>biological age and clinical status</em> (E), <em>documentation and regulations</em> (C) and <em>destination + travel date</em> (P). <a href="./methodology.html" class="text-[#0C789E] underline hover:no-underline">Read the full methodology →</a>
+    </p>
+  </section>
+
+  <section class="max-w-4xl mx-auto px-4 sm:px-6 py-12 border-t border-[#1a2e35]/10">
+    <h2 class="text-xl sm:text-2xl font-bold text-[#1a2e35] mb-6">Frequently asked questions</h2>
+    <div class="space-y-4">
+      <details class="border border-[#1a2e35]/10 p-4 group">
+        <summary class="cursor-pointer font-semibold text-[#1a2e35] flex justify-between items-center list-none">
+          <span>What exactly does this tool calculate?</span>
+          <span class="text-[#0C789E] group-open:rotate-180 transition-transform">▼</span>
+        </summary>
+        <p class="mt-3 text-sm text-[#1a2e35]/75 leading-relaxed">The Planner computes your pet's reverse export timeline: legal minimum age by destination, rabies vaccine deadline, FAVN/titer test window, health certificate validity, SENASA endorsement and destination country permits/quarantines. It returns a viability traffic light and a full PDF plan.</p>
+      </details>
+      <details class="border border-[#1a2e35]/10 p-4 group">
+        <summary class="cursor-pointer font-semibold text-[#1a2e35] flex justify-between items-center list-none">
+          <span>Why require 30 days for the vaccine if guides say 21?</span>
+          <span class="text-[#0C789E] group-open:rotate-180 transition-transform">▼</span>
+        </summary>
+        <p class="mt-3 text-sm text-[#1a2e35]/75 leading-relaxed">Legally most destinations accept 21 days, but SENASA Peru and variable officer criteria make 30 days the recommended minimum to avoid rejection. The amber light (vaccine 21-29 days) implies officer's discretion — in practice almost always NO.</p>
+      </details>
+      <details class="border border-[#1a2e35]/10 p-4 group">
+        <summary class="cursor-pointer font-semibold text-[#1a2e35] flex justify-between items-center list-none">
+          <span>Why is the health certificate only valid for 5 days?</span>
+          <span class="text-[#0C789E] group-open:rotate-180 transition-transform">▼</span>
+        </summary>
+        <p class="mt-3 text-sm text-[#1a2e35]/75 leading-relaxed">SENASA Peru, as the issuing authority, only validates the health certificate for 5 real days, regardless of what the destination country guide states. Without SENASA validity there is no CZE endorsement and the pet cannot travel.</p>
+      </details>
+      <details class="border border-[#1a2e35]/10 p-4 group">
+        <summary class="cursor-pointer font-semibold text-[#1a2e35] flex justify-between items-center list-none">
+          <span>What do I do if I get a red light?</span>
+          <span class="text-[#0C789E] group-open:rotate-180 transition-transform">▼</span>
+        </summary>
+        <p class="mt-3 text-sm text-[#1a2e35]/75 leading-relaxed">If the traffic light is red, contact us via WhatsApp at <a href="https://wa.me/51922083707" class="text-[#0C789E] underline">+51 922 083 707</a>. There are still options — postpone date, change destination, adjust plan. Don't make decisions without us.</p>
+      </details>
+      <details class="border border-[#1a2e35]/10 p-4 group">
+        <summary class="cursor-pointer font-semibold text-[#1a2e35] flex justify-between items-center list-none">
+          <span>What is the Dynamic Coherence Model (MCD)?</span>
+          <span class="text-[#0C789E] group-open:rotate-180 transition-transform">▼</span>
+        </summary>
+        <p class="mt-3 text-sm text-[#1a2e35]/75 leading-relaxed">A theoretical framework developed by <a href="https://carlosravello.com" rel="me author noopener" class="text-[#0C789E] underline">Carlos Eduardo Ravello Joo</a> postulating that the functional persistence of complex systems depends on coherence between three axes: energy, information and purpose. This planner is a field application of the MCD to the zoosanitary system. <a href="./methodology.html" class="text-[#0C789E] underline">Read more in the methodology →</a></p>
+      </details>
+    </div>
+  </section>
+
+  <footer class="bg-[#1a2e35] text-[#F8FAFC] mt-16">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-10">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-8">
+        <div>
+          <p class="text-xs font-semibold uppercase tracking-widest text-[#F8FAFC]/60 mb-3">Zoovet Travel</p>
+          <p class="text-sm text-[#F8FAFC]/80 leading-relaxed">Veterinary medical centre specialised in international pet export. 12+ years, Trujillo, Peru.</p>
+          <p class="text-xs text-[#F8FAFC]/60 mt-3">Calle Cuba 241, Urb. El Recreo, Trujillo · Mon–Sat 09:00–19:00</p>
+        </div>
+        <div>
+          <p class="text-xs font-semibold uppercase tracking-widest text-[#F8FAFC]/60 mb-3">Contact</p>
+          <a href="https://wa.me/51922083707" class="block text-sm text-[#F8FAFC]/80 hover:text-white">WhatsApp emergency: +51 922 083 707</a>
+          <a href="https://wa.me/51979620402" class="block text-sm text-[#F8FAFC]/80 hover:text-white">WhatsApp consultations: +51 979 620 402</a>
+          <a href="mailto:contacto@zoovettravel.com" class="block text-sm text-[#F8FAFC]/80 hover:text-white">contacto@zoovettravel.com</a>
+        </div>
+        <div>
+          <p class="text-xs font-semibold uppercase tracking-widest text-[#F8FAFC]/60 mb-3">Resources</p>
+          <a href="../index-en.html" class="block text-sm text-[#F8FAFC]/80 hover:text-white">Home</a>
+          <a href="../zoopedia/index.html" class="block text-sm text-[#F8FAFC]/80 hover:text-white">Zoopedia (20 countries)</a>
+          <a href="../about-en.html" class="block text-sm text-[#F8FAFC]/80 hover:text-white">About Zoovet</a>
+          <a href="./methodology.html" class="block text-sm text-[#F8FAFC]/80 hover:text-white">Planner methodology</a>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-6 text-xs text-[#F8FAFC]/50 leading-relaxed">
+        <p>
+          Architecture, schema engineering and SEO strategy:
+          <a href="https://carlosravello.com" rel="me author noopener" class="text-[#F8FAFC]/80 hover:text-white underline underline-offset-2">Carlos Eduardo Ravello Joo</a>
+          · Field application of the
+          <a href="https://carlosravello.com" rel="me author noopener" class="text-[#F8FAFC]/80 hover:text-white underline underline-offset-2">Dynamic Coherence Model (MCD)</a>.
+        </p>
+        <p class="mt-2">
+          © 2013-2026 Zoovet Travel · RUC 10433053678. Zoosanitary data updated 4 May 2026 · v1.0.0. This tool is informational and advisory; it does not replace veterinary consultation or official ruling.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float Button -->
+  <a id="whatsapp-float" href="https://wa.me/51979620402" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Zoovet Travel">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zM6.597 20.13c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.149-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479s1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
+  </a>
+
+  <script src="./app.js" defer></script>
+  <script>
+    document.getElementById('mobile-menu-btn')?.addEventListener('click', () => {
+      document.getElementById('mobile-drawer')?.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
