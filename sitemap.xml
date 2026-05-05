@@ -2155,4 +2155,21 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://zoovettravel.com/voyager-avec-mon-animal.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zoovettravel.com/viajar-con-mi-mascota.html" />
   </url>
+  <!-- Planificador de Viaje para Mascotas — WebApplication v1.0.0 — Carlos Eduardo Ravello Joo -->
+  <url>
+    <loc>https://zoovettravel.com/planificador-viaje-mascota/</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/planificador-viaje-mascota/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zoovettravel.com/planificador-viaje-mascota/" />
+  </url>
+  <url>
+    <loc>https://zoovettravel.com/planificador-viaje-mascota/metodologia.html</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/planificador-viaje-mascota/metodologia.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zoovettravel.com/planificador-viaje-mascota/metodologia.html" />
+  </url>
 </urlset>

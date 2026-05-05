@@ -1,0 +1,496 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "last_updated": "2026-05-04",
+    "next_review_date": "2026-08-04",
+    "maintainer": {
+      "name": "Carlos Eduardo Ravello Joo",
+      "url": "https://carlosravello.com",
+      "role": "Arquitectura, schema engineering y estrategia SEO"
+    },
+    "based_on_framework": {
+      "name": "Modelo de Coherencia Dinámica (MCD)",
+      "author": "Carlos Eduardo Ravello Joo",
+      "url": "https://carlosravello.com",
+      "description": "El planificador opera como aplicación de campo del MCD al sistema zoosanitario de exportación internacional. El semáforo computa el Índice de Coherencia Dinámica (ICD) sobre tres ejes: Energía/Fisiológico (E), Cognición/Información (C) y Direccional/Teleológico (P)."
+    },
+    "publisher": {
+      "name": "Zoovet Travel",
+      "legal_name": "Zoovet Travel - Sede Trujillo",
+      "url": "https://zoovettravel.com",
+      "taxID": "10433053678",
+      "address": "Calle Cuba 241, Trujillo, La Libertad, Perú"
+    },
+    "fuente_origen": "SENASA Perú · práctica operativa Zoovet Travel 2013-2026",
+    "fuentes_destino": "Autoridades sanitarias oficiales de cada país destino. URL específica en cada nodo.",
+    "nota_legal": "Datos estrictamente informativos y orientativos. No reemplaza consulta veterinaria ni dictamen oficial. Verificar siempre con SENASA Perú y autoridad sanitaria del país destino antes de viajar. Las normativas pueden cambiar sin previo aviso.",
+    "supuestos": {
+      "vacuna_es_booster": "Asumimos siempre vacuna antirrábica de refuerzo (booster). La primovacunación no se considera válida para exportación; el conteo de plazos parte desde la segunda dosis o última de refuerzo.",
+      "fecha_referencia": "Todos los plazos cuentan contra la fecha de viaje (ETD) que el usuario declara.",
+      "microchip_antes_vacuna": "Universal: el microchip debe instalarse ANTES de la vacuna antirrábica. Si la vacuna fue antes que el microchip, los destinos UE/UK/Australia/Japón exigen revacunar.",
+      "tomar_muestra_favn": "La muestra para FAVN/RNATT se toma 30 días después de la segunda dosis o última de refuerzo de vacuna antirrábica.",
+      "endoso_senasa": "El endoso del Certificado Zoosanitario de Exportación (CZE) se gestiona típicamente de un día para otro.",
+      "vigencia_certificado_salud_real_peru": "5 días reales, sin importar lo que indiquen guías de país destino. SENASA Perú solo valida 5 días de vigencia."
+    },
+    "reglas_origen_peru": {
+      "edad_minima_absoluta_semanas": 17,
+      "vacuna_dias_antes_viaje_minimo": 30,
+      "certificado_salud_dias_vigencia": 5,
+      "endoso_senasa_dias_antes_viaje_minimo": 1,
+      "favn_dias_espera_general": 90,
+      "favn_dias_espera_japon_australia": 180,
+      "salvedad_legal_vacuna": "Legalmente la mayoría de destinos acepta vacuna 21 días antes. En la práctica de SENASA Perú y por criterio del oficial del país destino, 30 días es el mínimo para evitar rechazos. La luz ámbar (vacuna 21-29 días) implica criterio del oficial — en la realidad equivale a NO."
+    },
+    "logica_semaforo": {
+      "rojo": [
+        "Edad de la mascota al día del viaje < edad_minima_absoluta del destino",
+        "Vacuna antirrábica < 21 días antes del viaje (umbral imposible)",
+        "FAVN no realizado y faltan < dias_espera_destino al viaje",
+        "Cuarentena obligatoria no reservada y plazo apretado",
+        "Permiso de importación obligatorio no obtenido y plazo insuficiente",
+        "Microchip ausente Y destino lo exige bloqueante Y vacuna ya aplicada (toca revacunar) Y plazo justo"
+      ],
+      "ambar": [
+        "Vacuna antirrábica entre 21 y 29 días antes del viaje (zona gris legal — criterio oficial)",
+        "Faltan entre 30 y 90 días al viaje sin bloqueantes graves",
+        "Microchip ausente pero hay tiempo de instalar + revacunar si destino lo exige"
+      ],
+      "verde": [
+        "Faltan más de 90 días al viaje",
+        "Todos los requisitos del destino cumplidos con orden y plazos correctos",
+        "Edad mínima cumplida con margen"
+      ]
+    },
+    "changelog": [
+      {
+        "version": "1.0.0",
+        "date": "2026-05-04",
+        "author": "Carlos Eduardo Ravello Joo",
+        "changes": "Versión inicial. 22 países cubiertos. Reglas SENASA Perú aplicadas universalmente: vacuna 30 días, certificado salud 5 días, endoso 1 día, FAVN 90/180 días desde toma de muestra."
+      }
+    ]
+  },
+  "destinos": {
+    "Alemania": {
+      "codigo_iso": "DE",
+      "region": "Unión Europea",
+      "fuente_oficial": {
+        "nombre": "Reglamento UE 576/2013 + Bundesministerium für Ernährung und Landwirtschaft (BMEL)",
+        "url": "https://www.bmel.de/EN/topics/animals/pets/pets_node.html",
+        "fecha_consulta": "2026-05-04"
+      },
+      "edad_minima_semanas": 22,
+      "microchip": { "dias_antes_viaje_minimo": 0, "es_bloqueante": true, "producto_especifico": "ISO 11784/11785 antes de vacuna antirrábica" },
+      "vacuna_antirrabica": { "dias_antes_viaje_minimo": 30, "dias_vigencia_maxima": 365, "es_bloqueante": true },
+      "titer_test": { "dias_antes_viaje_minimo": 90, "es_bloqueante": true, "producto_especifico": "FAVN/RNATT ≥0.5 IU/ml en laboratorio autorizado UE" },
+      "desparasitacion": { "es_bloqueante": false, "producto_especifico": "Echinococcus solo en casos específicos" },
+      "certificado_salud": { "dias_antes_viaje_minimo": 5, "dias_vigencia_maxima": 5, "es_bloqueante": true, "producto_especifico": "Modelo UE endosado por SENASA" },
+      "tramites_senasa": { "dias_antes_viaje_minimo": 1, "es_bloqueante": true, "producto_especifico": "CZE endosado" },
+      "cuarentena": { "es_bloqueante": false, "producto_especifico": "Solo por incumplimiento" },
+      "permiso_importacion": { "es_bloqueante": false },
+      "notas": "Marco UE. Perú = país no listado. Algunas razas con restricciones adicionales."
+    },
+    "Argentina": {
+      "codigo_iso": "AR",
+      "region": "Sudamérica",
+      "fuente_oficial": {
+        "nombre": "SENASA Argentina",
+        "url": "https://www.argentina.gob.ar/senasa",
+        "fecha_consulta": "2026-05-04"
+      },
+      "edad_minima_semanas": 17,
+      "microchip": { "es_bloqueante": false, "producto_especifico": "Recomendado ISO" },
+      "vacuna_antirrabica": { "dias_antes_viaje_minimo": 30, "dias_vigencia_maxima": 365, "es_bloqueante": true },
+      "titer_test": { "es_bloqueante": false },
+      "desparasitacion": { "dias_antes_viaje_minimo": 15, "es_bloqueante": true, "producto_especifico": "Amplio espectro" },
+      "certificado_salud": { "dias_antes_viaje_minimo": 5, "dias_vigencia_maxima": 5, "es_bloqueante": true, "producto_especifico": "CVI Internacional" },
+      "tramites_senasa": { "dias_antes_viaje_minimo": 1, "es_bloqueante": true, "producto_especifico": "CZE" },
+      "cuarentena": { "es_bloqueante": false, "producto_especifico": "Solo inspección de arribo" },
+      "permiso_importacion": { "es_bloqueante": false },
+      "notas": "Accesible dentro de Latam."
+    },
+    "Australia": {
+      "codigo_iso": "AU",
+      "region": "Oceanía",
+      "fuente_oficial": {
+        "nombre": "Department of Agriculture, Fisheries and Forestry (DAFF)",
+        "url": "https://www.agriculture.gov.au/biosecurity-trade/cats-dogs",
+        "fecha_consulta": "2026-05-04"
+      },
+      "edad_minima_semanas": 32,
+      "microchip": { "es_bloqueante": true, "producto_especifico": "ISO antes de vacuna antirrábica" },
+      "vacuna_antirrabica": { "dias_antes_viaje_minimo": 30, "dias_vigencia_maxima": 365, "es_bloqueante": true },
+      "titer_test": { "dias_antes_viaje_minimo": 180, "es_bloqueante": true, "producto_especifico": "FAVN/RNATT ≥0.5 IU/ml + 180 días de espera desde toma de muestra" },
+      "desparasitacion": { "dias_antes_viaje_minimo": 30, "es_bloqueante": true, "producto_especifico": "Interna y externa específica" },
+      "certificado_salud": { "dias_antes_viaje_minimo": 5, "dias_vigencia_maxima": 5, "es_bloqueante": true, "producto_especifico": "Específico Australia + Import Permit" },
+      "tramites_senasa": { "dias_antes_viaje_minimo": 1, "es_bloqueante": true, "producto_especifico": "CZE endosado" },
+      "cuarentena": { "dias_antes_viaje_minimo": 30, "es_bloqueante": true, "producto_especifico": "30+ días obligatoria en facility post-arrival" },
+      "permiso_importacion": { "dias_antes_viaje_minimo": 40, "es_bloqueante": true, "producto_especifico": "DAFF Import Permit (gestionarlo con anticipación)" },
+      "notas": "Proceso 7-12+ meses. Uno de los más estrictos del mundo."
+    },
+    "Brasil": {
+      "codigo_iso": "BR",
+      "region": "Sudamérica",
+      "fuente_oficial": {
+        "nombre": "Ministério da Agricultura, Pecuária e Abastecimento (MAPA)",
+        "url": "https://www.gov.br/agricultura/pt-br",
+        "fecha_consulta": "2026-05-04"
+      },
+      "edad_minima_semanas": 17,
+      "microchip": { "es_bloqueante": false, "producto_especifico": "Recomendado" },
+      "vacuna_antirrabica": { "dias_antes_viaje_minimo": 30, "dias_vigencia_maxima": 365, "es_bloqueante": true },
+      "titer_test": { "es_bloqueante": false },
+      "desparasitacion": { "dias_antes_viaje_minimo": 15, "es_bloqueante": true, "producto_especifico": "Amplio espectro interna/externa" },
+      "certificado_salud": { "dias_antes_viaje_minimo": 5, "dias_vigencia_maxima": 5, "es_bloqueante": true, "producto_especifico": "CVI oficial endosado" },
+      "tramites_senasa": { "dias_antes_viaje_minimo": 1, "es_bloqueante": true, "producto_especifico": "CZE" },
+      "cuarentena": { "es_bloqueante": false },
+      "permiso_importacion": { "es_bloqueante": false },
+      "notas": "Brasil no requiere permiso de importación previo para perros y gatos."
+    },
+    "Canadá": {
+      "codigo_iso": "CA",
+      "region": "Norteamérica",
+      "fuente_oficial": {
+        "nombre": "Canadian Food Inspection Agency (CFIA)",
+        "url": "https://inspection.canada.ca/animal-health/terrestrial-animals/imports/pets/eng",
+        "fecha_consulta": "2026-05-04"
+      },
+      "edad_minima_semanas": 17,
+      "microchip": { "es_bloqueante": false, "producto_especifico": "Recomendado ISO" },
+      "vacuna_antirrabica": { "dias_antes_viaje_minimo": 30, "dias_vigencia_maxima": 365, "es_bloqueante": true },
+      "titer_test": { "es_bloqueante": false },
+      "desparasitacion": { "es_bloqueante": false, "producto_especifico": "No requerimiento federal" },
+      "certificado_salud": { "dias_antes_viaje_minimo": 5, "dias_vigencia_maxima": 5, "es_bloqueante": true },
+      "tramites_senasa": { "dias_antes_viaje_minimo": 1, "es_bloqueante": true, "producto_especifico": "CZE endosado" },
+      "cuarentena": { "es_bloqueante": false },
+      "permiso_importacion": { "es_bloqueante": false },
+      "notas": "Uno de los procesos más simples desde Perú."
+    },
+    "Chile": {
+      "codigo_iso": "CL",
+      "region": "Sudamérica",
+      "fuente_oficial": {
+        "nombre": "Servicio Agrícola y Ganadero (SAG)",
+        "url": "https://www.sag.gob.cl",
+        "fecha_consulta": "2026-05-04"
+      },
+      "edad_minima_semanas": 17,
+      "microchip": { "es_bloqueante": true, "producto_especifico": "ISO" },
+      "vacuna_antirrabica": { "dias_antes_viaje_minimo": 30, "dias_vigencia_maxima": 365, "es_bloqueante": true },
+      "titer_test": { "es_bloqueante": false },
+      "desparasitacion": { "dias_antes_viaje_minimo": 30, "es_bloqueante": true, "producto_especifico": "Interna y externa amplio espectro" },
+      "certificado_salud": { "dias_antes_viaje_minimo": 5, "dias_vigencia_maxima": 5, "es_bloqueante": true },
+      "tramites_senasa": { "dias_antes_viaje_minimo": 1, "es_bloqueante": true, "producto_especifico": "CZE" },
+      "cuarentena": { "es_bloqueante": false },
+      "permiso_importacion": { "es_bloqueante": false },
+      "notas": "Accesible. Proceso ~30 días si todo está en regla."
+    },
+    "China": {
+      "codigo_iso": "CN",
+      "region": "Asia",
+      "fuente_oficial": {
+        "nombre": "General Administration of Customs of China (GACC) — Announcement [2019] No. 5",
+        "url": "https://english.beijing.gov.cn/latest/lawsandpolicies/202104/t20210407_2346645.html",
+        "fecha_consulta": "2026-05-04"
+      },
+      "edad_minima_semanas": 22,
+      "microchip": { "es_bloqueante": true, "producto_especifico": "ISO 11784/11785 antes de vacuna antirrábica" },
+      "vacuna_antirrabica": { "dias_antes_viaje_minimo": 30, "dias_vigencia_maxima": 365, "es_bloqueante": true, "producto_especifico": "Mínimo 2 dosis lifetime, vigente. China no reconoce vacunas multi-anuales." },
+      "titer_test": { "dias_antes_viaje_minimo": 0, "dias_vigencia_maxima": 365, "es_bloqueante": true, "producto_especifico": "FAVN ≥0.5 IU/ml. Tomar el mismo día o después de la 2da vacuna. Vigente 1 año." },
+      "desparasitacion": { "es_bloqueante": false },
+      "certificado_salud": { "dias_antes_viaje_minimo": 5, "dias_vigencia_maxima": 5, "es_bloqueante": true, "producto_especifico": "14 días según GACC, pero SENASA Perú limita a 5 días" },
+      "tramites_senasa": { "dias_antes_viaje_minimo": 1, "es_bloqueante": true, "producto_especifico": "CZE" },
+      "cuarentena": { "dias_antes_viaje_minimo": 0, "es_bloqueante": true, "producto_especifico": "30 días obligatoria en facility designado por GACC" },
+      "permiso_importacion": { "es_bloqueante": false },
+      "notas": "Solo 1 mascota por persona. Cuarentena 30 días no negociable."
+    },
+    "Colombia": {
+      "codigo_iso": "CO",
+      "region": "Sudamérica",
+      "fuente_oficial": {
+        "nombre": "Instituto Colombiano Agropecuario (ICA)",
+        "url": "https://www.ica.gov.co",
+        "fecha_consulta": "2026-05-04"
+      },
+      "edad_minima_semanas": 17,
+      "microchip": { "es_bloqueante": false, "producto_especifico": "Recomendado ISO" },
+      "vacuna_antirrabica": { "dias_antes_viaje_minimo": 30, "dias_vigencia_maxima": 365, "es_bloqueante": true },
+      "titer_test": { "es_bloqueante": false },
+      "desparasitacion": { "dias_antes_viaje_minimo": 30, "es_bloqueante": true, "producto_especifico": "Interna y externa" },
+      "certificado_salud": { "dias_antes_viaje_minimo": 5, "dias_vigencia_maxima": 5, "es_bloqueante": true },
+      "tramites_senasa": { "dias_antes_viaje_minimo": 1, "es_bloqueante": true, "producto_especifico": "CZE" },
+      "cuarentena": { "es_bloqueante": false },
+      "permiso_importacion": { "es_bloqueante": false },
+      "notas": "Latam. Proceso relativamente simple."
+    },
+    "Corea_del_Sur": {
+      "codigo_iso": "KR",
+      "region": "Asia",
+      "fuente_oficial": {
+        "nombre": "Animal and Plant Quarantine Agency (QIA / APQA)",
+        "url": "https://www.qia.go.kr/english/html/Animal_livestock/02AnimalLivestock_007-8.jsp",
+        "fecha_consulta": "2026-05-04"
+      },
+      "edad_minima_semanas": 22,
+      "microchip": { "es_bloqueante": true, "producto_especifico": "ISO" },
+      "vacuna_antirrabica": { "dias_antes_viaje_minimo": 30, "dias_vigencia_maxima": 365, "es_bloqueante": true },
+      "titer_test": { "dias_antes_viaje_minimo": 0, "dias_vigencia_maxima": 730, "es_bloqueante": true, "producto_especifico": "FAVN ≥0.5 IU/ml. Vigencia 24 meses. NO requiere espera post-titer (a diferencia de UE/Japón). Perú = país no controlado para rabia." },
+      "desparasitacion": { "es_bloqueante": false },
+      "certificado_salud": { "dias_antes_viaje_minimo": 5, "dias_vigencia_maxima": 5, "es_bloqueante": true },
+      "tramites_senasa": { "dias_antes_viaje_minimo": 1, "es_bloqueante": true, "producto_especifico": "CZE" },
+      "cuarentena": { "es_bloqueante": false, "producto_especifico": "Cuarentena solo si titer falla o documentos incompletos" },
+      "permiso_importacion": { "es_bloqueante": false },
+      "notas": "A diferencia de UE/Japón, Corea no exige período de espera tras la toma de muestra del titer."
+    },
+    "EAU": {
+      "codigo_iso": "AE",
+      "region": "Asia / Medio Oriente",
+      "fuente_oficial": {
+        "nombre": "Ministry of Climate Change and Environment (MOCCAE)",
+        "url": "https://www.moccae.gov.ae/en/services/import-permit-pets",
+        "fecha_consulta": "2026-05-04"
+      },
+      "edad_minima_semanas": 22,
+      "microchip": { "es_bloqueante": true, "producto_especifico": "ISO" },
+      "vacuna_antirrabica": { "dias_antes_viaje_minimo": 30, "dias_vigencia_maxima": 365, "es_bloqueante": true },
+      "titer_test": { "dias_antes_viaje_minimo": 90, "dias_vigencia_maxima": 365, "es_bloqueante": true, "producto_especifico": "RSNT ≥0.5 IU/ml. Entre 3 y 12 meses antes del viaje. Perú = país de alto riesgo." },
+      "desparasitacion": { "es_bloqueante": false },
+      "certificado_salud": { "dias_antes_viaje_minimo": 5, "dias_vigencia_maxima": 5, "es_bloqueante": true },
+      "tramites_senasa": { "dias_antes_viaje_minimo": 1, "es_bloqueante": true, "producto_especifico": "CZE" },
+      "cuarentena": { "es_bloqueante": false },
+      "permiso_importacion": { "dias_antes_viaje_minimo": 0, "dias_vigencia_maxima": 90, "es_bloqueante": true, "producto_especifico": "Import Permit MOCCAE válido 90 días" },
+      "vacunas_adicionales_obligatorias": "Perros: Distemper, Parvovirus, Hepatitis, Leptospirosis. Gatos: FVRCP (Rinotraqueítis Viral Felina, Calicivirus, Panleucopenia)",
+      "notas": "Solo 2 mascotas/año por persona."
+    },
+    "España": {
+      "codigo_iso": "ES",
+      "region": "Unión Europea",
+      "fuente_oficial": {
+        "nombre": "Ministerio de Agricultura, Pesca y Alimentación (MAPA) + Reg UE 576/2013",
+        "url": "https://www.mapa.gob.es",
+        "fecha_consulta": "2026-05-04"
+      },
+      "edad_minima_semanas": 22,
+      "microchip": { "es_bloqueante": true, "producto_especifico": "ISO 11784/11785 antes de vacuna antirrábica" },
+      "vacuna_antirrabica": { "dias_antes_viaje_minimo": 30, "dias_vigencia_maxima": 365, "es_bloqueante": true },
+      "titer_test": { "dias_antes_viaje_minimo": 90, "es_bloqueante": true, "producto_especifico": "FAVN/RNATT ≥0.5 IU/ml en laboratorio autorizado UE" },
+      "desparasitacion": { "es_bloqueante": false, "producto_especifico": "Echinococcus solo en algunos casos" },
+      "certificado_salud": { "dias_antes_viaje_minimo": 5, "dias_vigencia_maxima": 5, "es_bloqueante": true, "producto_especifico": "Modelo UE + endoso SENASA" },
+      "tramites_senasa": { "dias_antes_viaje_minimo": 1, "es_bloqueante": true, "producto_especifico": "CZE endosado" },
+      "cuarentena": { "es_bloqueante": false, "producto_especifico": "Solo por incumplimiento" },
+      "permiso_importacion": { "es_bloqueante": false },
+      "notas": "Perú = país no listado UE. Proceso 4-6 meses totales."
+    },
+    "Estados_Unidos": {
+      "codigo_iso": "US",
+      "region": "Norteamérica",
+      "fuente_oficial": {
+        "nombre": "CDC + USDA APHIS",
+        "url": "https://www.cdc.gov/importation/dogs/index.html",
+        "fecha_consulta": "2026-05-04"
+      },
+      "edad_minima_semanas": 24,
+      "microchip": { "es_bloqueante": true, "producto_especifico": "ISO requerido por CDC para perros desde 1-ago-2024" },
+      "vacuna_antirrabica": { "dias_antes_viaje_minimo": 30, "dias_vigencia_maxima": 365, "es_bloqueante": true },
+      "titer_test": { "es_bloqueante": false, "producto_especifico": "Condicional. Perú = país de alto riesgo para CDC; verificar requisitos vigentes." },
+      "desparasitacion": { "es_bloqueante": false },
+      "certificado_salud": { "dias_antes_viaje_minimo": 5, "dias_vigencia_maxima": 5, "es_bloqueante": true, "producto_especifico": "USDA-endosado" },
+      "tramites_senasa": { "dias_antes_viaje_minimo": 1, "es_bloqueante": true, "producto_especifico": "CZE" },
+      "cuarentena": { "es_bloqueante": false },
+      "permiso_importacion": { "es_bloqueante": false, "producto_especifico": "CDC Dog Import Form obligatorio para perros" },
+      "notas": "Perú = país de alto riesgo de rabia canina para CDC. Solo entrada por aeropuertos específicos. CDC Dog Import Form obligatorio."
+    },
+    "Francia": {
+      "codigo_iso": "FR",
+      "region": "Unión Europea",
+      "fuente_oficial": {
+        "nombre": "Ministère de l'Agriculture + Reg UE 576/2013",
+        "url": "https://agriculture.gouv.fr",
+        "fecha_consulta": "2026-05-04"
+      },
+      "edad_minima_semanas": 22,
+      "microchip": { "es_bloqueante": true, "producto_especifico": "ISO 11784/11785 antes de vacuna" },
+      "vacuna_antirrabica": { "dias_antes_viaje_minimo": 30, "dias_vigencia_maxima": 365, "es_bloqueante": true },
+      "titer_test": { "dias_antes_viaje_minimo": 90, "es_bloqueante": true, "producto_especifico": "FAVN/RNATT ≥0.5 IU/ml en lab autorizado UE" },
+      "desparasitacion": { "es_bloqueante": false, "producto_especifico": "No para Francia continental" },
+      "certificado_salud": { "dias_antes_viaje_minimo": 5, "dias_vigencia_maxima": 5, "es_bloqueante": true, "producto_especifico": "Modelo UE + endoso SENASA" },
+      "tramites_senasa": { "dias_antes_viaje_minimo": 1, "es_bloqueante": true, "producto_especifico": "CZE endosado" },
+      "cuarentena": { "es_bloqueante": false },
+      "permiso_importacion": { "es_bloqueante": false },
+      "notas": "Marco UE. Proceso similar a España e Italia."
+    },
+    "India": {
+      "codigo_iso": "IN",
+      "region": "Asia",
+      "fuente_oficial": {
+        "nombre": "Department of Animal Husbandry and Dairying (DAHD)",
+        "url": "https://dahd.gov.in",
+        "fecha_consulta": "2026-05-04"
+      },
+      "edad_minima_semanas": 17,
+      "microchip": { "es_bloqueante": true, "producto_especifico": "Obligatorio" },
+      "vacuna_antirrabica": { "dias_antes_viaje_minimo": 30, "dias_vigencia_maxima": 365, "es_bloqueante": true, "producto_especifico": "Mínimo 1 mes antes del embarque, max 12 meses" },
+      "titer_test": { "es_bloqueante": false },
+      "desparasitacion": { "es_bloqueante": false },
+      "certificado_salud": { "dias_antes_viaje_minimo": 5, "dias_vigencia_maxima": 5, "es_bloqueante": true, "producto_especifico": "Cert oficial libre de enfermedades infecciosas" },
+      "tramites_senasa": { "dias_antes_viaje_minimo": 1, "es_bloqueante": true, "producto_especifico": "CZE" },
+      "cuarentena": { "es_bloqueante": false, "producto_especifico": "Solo si documentos incompletos" },
+      "permiso_importacion": { "es_bloqueante": false },
+      "notas": "Máximo 2 mascotas por pasajero."
+    },
+    "Italia": {
+      "codigo_iso": "IT",
+      "region": "Unión Europea",
+      "fuente_oficial": {
+        "nombre": "Ministero della Salute + Reg UE 576/2013",
+        "url": "https://www.salute.gov.it",
+        "fecha_consulta": "2026-05-04"
+      },
+      "edad_minima_semanas": 22,
+      "microchip": { "es_bloqueante": true, "producto_especifico": "ISO 11784/11785 antes de vacuna" },
+      "vacuna_antirrabica": { "dias_antes_viaje_minimo": 30, "dias_vigencia_maxima": 365, "es_bloqueante": true },
+      "titer_test": { "dias_antes_viaje_minimo": 90, "es_bloqueante": true, "producto_especifico": "FAVN/RNATT ≥0.5 IU/ml" },
+      "desparasitacion": { "es_bloqueante": false, "producto_especifico": "Variable según región" },
+      "certificado_salud": { "dias_antes_viaje_minimo": 5, "dias_vigencia_maxima": 5, "es_bloqueante": true, "producto_especifico": "Modelo UE" },
+      "tramites_senasa": { "dias_antes_viaje_minimo": 1, "es_bloqueante": true, "producto_especifico": "CZE" },
+      "cuarentena": { "es_bloqueante": false },
+      "permiso_importacion": { "es_bloqueante": false },
+      "notas": "Marco UE completo."
+    },
+    "Japón": {
+      "codigo_iso": "JP",
+      "region": "Asia",
+      "fuente_oficial": {
+        "nombre": "Ministry of Agriculture, Forestry and Fisheries (MAFF) / Animal Quarantine Service (AQS)",
+        "url": "https://www.maff.go.jp/aqs/english/animal/dog/import-other.html",
+        "fecha_consulta": "2026-05-04"
+      },
+      "edad_minima_semanas": 32,
+      "microchip": { "es_bloqueante": true, "producto_especifico": "ISO antes de vacuna" },
+      "vacuna_antirrabica": { "dias_antes_viaje_minimo": 30, "dias_vigencia_maxima": 365, "es_bloqueante": true, "producto_especifico": "Mínimo 2 dosis separadas 30 días" },
+      "titer_test": { "dias_antes_viaje_minimo": 180, "es_bloqueante": true, "producto_especifico": "FAVN ≥0.5 IU/ml + 180 días de espera desde toma de muestra" },
+      "desparasitacion": { "dias_antes_viaje_minimo": 30, "es_bloqueante": false },
+      "certificado_salud": { "dias_antes_viaje_minimo": 5, "dias_vigencia_maxima": 5, "es_bloqueante": true, "producto_especifico": "Específico Japón + notificación previa AQS" },
+      "tramites_senasa": { "dias_antes_viaje_minimo": 1, "es_bloqueante": true, "producto_especifico": "CZE" },
+      "cuarentena": { "es_bloqueante": true, "producto_especifico": "12 horas a 180 días según cumplimiento documental" },
+      "permiso_importacion": { "es_bloqueante": false, "producto_especifico": "Notificación previa a AQS 40 días antes" },
+      "notas": "Los 180 días post-titer son la regla más estricta del mundo junto con Australia."
+    },
+    "México": {
+      "codigo_iso": "MX",
+      "region": "Norteamérica",
+      "fuente_oficial": {
+        "nombre": "SENASICA",
+        "url": "https://www.gob.mx/senasica",
+        "fecha_consulta": "2026-05-04"
+      },
+      "edad_minima_semanas": 17,
+      "microchip": { "es_bloqueante": false, "producto_especifico": "Recomendado" },
+      "vacuna_antirrabica": { "dias_antes_viaje_minimo": 30, "dias_vigencia_maxima": 365, "es_bloqueante": true },
+      "titer_test": { "es_bloqueante": false },
+      "desparasitacion": { "dias_antes_viaje_minimo": 30, "es_bloqueante": true },
+      "certificado_salud": { "dias_antes_viaje_minimo": 5, "dias_vigencia_maxima": 5, "es_bloqueante": true },
+      "tramites_senasa": { "dias_antes_viaje_minimo": 1, "es_bloqueante": true, "producto_especifico": "CZE" },
+      "cuarentena": { "es_bloqueante": false },
+      "permiso_importacion": { "es_bloqueante": false },
+      "notas": "Sencillo dentro de Latam."
+    },
+    "Nueva_Zelanda": {
+      "codigo_iso": "NZ",
+      "region": "Oceanía",
+      "fuente_oficial": {
+        "nombre": "Ministry for Primary Industries (MPI)",
+        "url": "https://www.mpi.govt.nz/bring-send-to-nz/pets-travelling-to-nz/bringing-cats-and-dogs-to-nz",
+        "fecha_consulta": "2026-05-04"
+      },
+      "edad_minima_semanas": 22,
+      "microchip": { "es_bloqueante": true, "producto_especifico": "ISO" },
+      "vacuna_antirrabica": { "dias_antes_viaje_minimo": 30, "dias_vigencia_maxima": 365, "es_bloqueante": true },
+      "titer_test": { "dias_antes_viaje_minimo": 90, "dias_vigencia_maxima": 540, "es_bloqueante": true, "producto_especifico": "RNATT ≥0.5 IU/ml. Tomar 3-4 sem post-vacuna. Espera 90 días desde toma de muestra. Vigente 18 meses." },
+      "desparasitacion": { "es_bloqueante": false },
+      "certificado_salud": { "dias_antes_viaje_minimo": 5, "dias_vigencia_maxima": 5, "es_bloqueante": true },
+      "tramites_senasa": { "dias_antes_viaje_minimo": 1, "es_bloqueante": true, "producto_especifico": "CZE" },
+      "cuarentena": { "dias_antes_viaje_minimo": 0, "es_bloqueante": true, "producto_especifico": "Mínimo 10 días en facility aprobada MPI" },
+      "permiso_importacion": { "dias_antes_viaje_minimo": 42, "es_bloqueante": true, "producto_especifico": "MPI Import Permit. ~30 días hábiles de procesamiento. Solicitar ≥6 semanas antes." },
+      "notas": "Perú = Categoría 3 para MPI."
+    },
+    "Reino_Unido": {
+      "codigo_iso": "GB",
+      "region": "Europa",
+      "fuente_oficial": {
+        "nombre": "Department for Environment, Food & Rural Affairs (DEFRA)",
+        "url": "https://www.gov.uk/bring-pet-to-great-britain",
+        "fecha_consulta": "2026-05-04"
+      },
+      "edad_minima_semanas": 22,
+      "microchip": { "es_bloqueante": true, "producto_especifico": "ISO 11784/11785 antes de vacuna" },
+      "vacuna_antirrabica": { "dias_antes_viaje_minimo": 30, "dias_vigencia_maxima": 365, "es_bloqueante": true },
+      "titer_test": { "dias_antes_viaje_minimo": 90, "es_bloqueante": true, "producto_especifico": "FAVN/RNATT ≥0.5 IU/ml + 90 días de espera desde toma" },
+      "desparasitacion": { "dias_antes_viaje_minimo": 1, "dias_vigencia_maxima": 5, "es_bloqueante": true, "producto_especifico": "Praziquantel (Echinococcus). Aplicar 24-120 h antes de la entrada. Solo perros." },
+      "certificado_salud": { "dias_antes_viaje_minimo": 5, "dias_vigencia_maxima": 5, "es_bloqueante": true, "producto_especifico": "Animal Health Certificate (AHC) o equivalente" },
+      "tramites_senasa": { "dias_antes_viaje_minimo": 1, "es_bloqueante": true, "producto_especifico": "CZE endosado" },
+      "cuarentena": { "es_bloqueante": false, "producto_especifico": "Hasta 6 meses si incumplimiento documental" },
+      "permiso_importacion": { "es_bloqueante": false },
+      "notas": "Tapeworm (Praziquantel) es crítico para perros. Sin esto, no hay entrada."
+    },
+    "Rusia": {
+      "codigo_iso": "RU",
+      "region": "Europa / Asia",
+      "fuente_oficial": {
+        "nombre": "Россельхознадзор (Rosselkhoznadzor)",
+        "url": "https://fsvps.gov.ru/en",
+        "fecha_consulta": "2026-05-04"
+      },
+      "edad_minima_semanas": 17,
+      "microchip": { "es_bloqueante": true, "producto_especifico": "ISO 11784/11785" },
+      "vacuna_antirrabica": { "dias_antes_viaje_minimo": 30, "dias_vigencia_maxima": 365, "es_bloqueante": true },
+      "titer_test": { "es_bloqueante": false },
+      "desparasitacion": { "es_bloqueante": false },
+      "certificado_salud": { "dias_antes_viaje_minimo": 5, "dias_vigencia_maxima": 5, "es_bloqueante": true, "producto_especifico": "Veterinary Certificate Form No. 1 dentro de 5 días previos" },
+      "tramites_senasa": { "dias_antes_viaje_minimo": 1, "es_bloqueante": true, "producto_especifico": "CZE" },
+      "cuarentena": { "es_bloqueante": false },
+      "permiso_importacion": { "es_bloqueante": false },
+      "vacunas_adicionales_obligatorias": "Perros: Distemper, Hepatitis, Parvovirus, Adenovirus, Leptospirosis. Gatos: Calicivirus, Panleucopenia.",
+      "notas": "Origen debe estar libre de rabia 6 meses."
+    },
+    "Singapur": {
+      "codigo_iso": "SG",
+      "region": "Asia",
+      "fuente_oficial": {
+        "nombre": "Animal & Veterinary Service (AVS / NParks)",
+        "url": "https://www.nparks.gov.sg/avs",
+        "fecha_consulta": "2026-05-04"
+      },
+      "edad_minima_semanas": 22,
+      "microchip": { "es_bloqueante": true, "producto_especifico": "ISO" },
+      "vacuna_antirrabica": { "dias_antes_viaje_minimo": 30, "dias_vigencia_maxima": 365, "es_bloqueante": true },
+      "titer_test": { "dias_antes_viaje_minimo": 90, "es_bloqueante": true, "producto_especifico": "FAVN/RNATT ≥0.5 IU/ml. Perú = categoría alta de riesgo." },
+      "desparasitacion": { "dias_antes_viaje_minimo": 30, "es_bloqueante": true, "producto_especifico": "Específica" },
+      "certificado_salud": { "dias_antes_viaje_minimo": 5, "dias_vigencia_maxima": 5, "es_bloqueante": true, "producto_especifico": "Veterinario oficial" },
+      "tramites_senasa": { "dias_antes_viaje_minimo": 1, "es_bloqueante": true, "producto_especifico": "CZE" },
+      "cuarentena": { "dias_antes_viaje_minimo": 0, "es_bloqueante": true, "producto_especifico": "30 días en facility AVS (puede ser home-quarantine según categoría)" },
+      "permiso_importacion": { "dias_antes_viaje_minimo": 30, "es_bloqueante": true, "producto_especifico": "Import Licence AVS" },
+      "notas": "Proceso complejo y costoso. Categoría alta de riesgo para Perú."
+    },
+    "Sudáfrica": {
+      "codigo_iso": "ZA",
+      "region": "África",
+      "fuente_oficial": {
+        "nombre": "Department of Agriculture, Land Reform and Rural Development (DALRRD)",
+        "url": "https://www.dalrrd.gov.za",
+        "fecha_consulta": "2026-05-04"
+      },
+      "edad_minima_semanas": 17,
+      "microchip": { "es_bloqueante": true, "producto_especifico": "ISO antes de vacuna antirrábica" },
+      "vacuna_antirrabica": { "dias_antes_viaje_minimo": 30, "dias_vigencia_maxima": 365, "es_bloqueante": true },
+      "titer_test": { "es_bloqueante": false, "producto_especifico": "DALRRD NO requiere titer de rabia" },
+      "desparasitacion": { "es_bloqueante": false },
+      "certificado_salud": { "dias_antes_viaje_minimo": 5, "dias_vigencia_maxima": 5, "es_bloqueante": true },
+      "tramites_senasa": { "dias_antes_viaje_minimo": 1, "es_bloqueante": true, "producto_especifico": "CZE" },
+      "cuarentena": { "es_bloqueante": false },
+      "permiso_importacion": { "dias_antes_viaje_minimo": 30, "es_bloqueante": true, "producto_especifico": "DALRRD Veterinary Import Permit" },
+      "blood_tests_perros": "5 pruebas serológicas negativas dentro de 30 días previos al viaje (perros). DALRRD las define específicamente.",
+      "notas": "Sin titer de rabia, pero sí 5 blood tests negativos para perros."
+    }
+  }
+}

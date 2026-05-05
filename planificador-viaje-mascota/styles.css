@@ -1,0 +1,167 @@
+/* ════════════════════════════════════════════════════════════════════
+   Planificador de Viaje para Mascotas — estilos específicos
+   Diseño y arquitectura: Carlos Eduardo Ravello Joo · carlosravello.com
+   Aplicación de campo del Modelo de Coherencia Dinámica (MCD)
+   ════════════════════════════════════════════════════════════════════ */
+
+html { scroll-behavior: smooth; }
+body { font-family: 'Montserrat', sans-serif; }
+
+/* Form summary chevron */
+details > summary { list-style: none; }
+details > summary::-webkit-details-marker { display: none; }
+
+/* ────────── SEMÁFORO ────────── */
+.semaforo-light {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  margin: 0 auto;
+  box-shadow: inset 0 4px 8px rgba(0,0,0,0.2);
+  opacity: 0.25;
+  transition: all 0.4s ease;
+}
+.semaforo-light.active {
+  opacity: 1;
+  box-shadow: inset 0 4px 8px rgba(0,0,0,0.2), 0 0 30px currentColor;
+  animation: pulse 2s ease-in-out infinite;
+}
+.semaforo-light.green   { background: #10b981; color: #10b981; }
+.semaforo-light.yellow  { background: #f59e0b; color: #f59e0b; }
+.semaforo-light.red     { background: #dc2626; color: #dc2626; }
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+/* ────────── RESULTADO CONTAINER (border color por semáforo) ────────── */
+#semaforo-container.green-result  { border-color: #10b981; }
+#semaforo-container.yellow-result { border-color: #f59e0b; }
+#semaforo-container.red-result    { border-color: #dc2626; background: linear-gradient(180deg, #fef2f2 0%, #ffffff 100%); }
+
+/* ────────── ICD-Travel score ────────── */
+.icd-score {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  letter-spacing: -0.02em;
+}
+.icd-eje {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid rgba(26,46,53,0.1);
+  background: rgba(248,250,252,0.5);
+}
+.icd-eje-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: rgba(26,46,53,0.5);
+  margin-bottom: 0.25rem;
+}
+.icd-eje-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a2e35;
+}
+.icd-eje-status {
+  font-size: 0.7rem;
+  margin-top: 0.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.icd-eje-status.ok    { color: #10b981; }
+.icd-eje-status.warn  { color: #f59e0b; }
+.icd-eje-status.fail  { color: #dc2626; }
+
+/* ────────── TIMELINE INVERSO ────────── */
+.timeline-row {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 1rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(26,46,53,0.08);
+  font-size: 0.85rem;
+}
+.timeline-row:last-child { border-bottom: none; }
+.timeline-row .date  { font-weight: 600; color: #0C789E; min-width: 110px; }
+.timeline-row .task  { color: #1a2e35; }
+.timeline-row .org   { font-size: 0.7rem; color: rgba(26,46,53,0.5); text-transform: uppercase; letter-spacing: 0.05em; }
+
+/* ────────── CTA URGENTE (rojo) ────────── */
+.urgent-cta {
+  background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+  color: white;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  text-align: center;
+  border: 2px solid #7f1d1d;
+}
+.urgent-cta h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+.urgent-cta a.btn {
+  display: inline-block;
+  background: white;
+  color: #b91c1c;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+.urgent-cta a.btn:hover { transform: scale(1.05); }
+
+/* ────────── QR ────────── */
+#qr-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+#qr-container img,
+#qr-container canvas {
+  border: 4px solid white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* ────────── DARK MODE (auto + toggle) ────────── */
+@media (prefers-color-scheme: dark) {
+  body[data-theme="auto"] {
+    background-color: #0f1c21;
+    color: #e8eef1;
+  }
+  body[data-theme="auto"] header { background: rgba(15,28,33,0.95); border-color: rgba(255,255,255,0.1); }
+  body[data-theme="auto"] .bg-white { background: #1a2e35; color: #e8eef1; }
+  body[data-theme="auto"] input, body[data-theme="auto"] select {
+    background: #243640; color: #e8eef1; border-color: rgba(255,255,255,0.15);
+  }
+}
+
+/* ────────── RESPONSIVE ────────── */
+@media (max-width: 640px) {
+  .semaforo-light { width: 60px; height: 60px; font-size: 1.8rem; }
+  .icd-score { font-size: 2.25rem; }
+  .timeline-row { grid-template-columns: 1fr; }
+  .timeline-row .date { min-width: auto; }
+}
+
+/* ────────── PRINT STYLES (PDF preview en pantalla) ────────── */
+@media print {
+  header, footer, #whatsapp-float, #form-section { display: none !important; }
+  body { background: white; color: black; }
+}
