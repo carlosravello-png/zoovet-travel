@@ -676,4 +676,27 @@
       $('#fecha_microchip').disabled = false;
       $('#fecha_microchip').value = p.get('fmc') || '';
     }
-    if (p.get('vc') 
+    if (p.get('vc') === '1') {
+      f.vacuna.value = 'si';
+      $('#fecha_vacuna').disabled = false;
+      $('#fecha_vacuna').value = p.get('fvc') || '';
+    }
+    if (p.get('dp') === '1') {
+      f.desparasitacion.value = 'si';
+      $('#fecha_desparasitacion').disabled = false;
+      $('#fecha_desparasitacion').value = p.get('fdp') || '';
+    }
+  }
+
+  function sharePlan() {
+    const url = window.location.href;
+    if (navigator.share) {
+      navigator.share({ title: 'Mi plan de viaje · Zoovet Travel', url });
+    } else {
+      navigator.clipboard.writeText(url).then(() => {
+        alert('URL del plan copiada al portapapeles.');
+      });
+    }
+  }
+
+})(); 

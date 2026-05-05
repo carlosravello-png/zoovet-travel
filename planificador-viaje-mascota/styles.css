@@ -4,6 +4,7 @@
    Aplicación de campo del Modelo de Coherencia Dinámica (MCD)
    ════════════════════════════════════════════════════════════════════ */
 
+html, body { overflow-x: hidden; max-width: 100%; }
 html { scroll-behavior: smooth; }
 body { font-family: 'Montserrat', sans-serif; }
 
