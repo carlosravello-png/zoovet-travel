@@ -24,7 +24,7 @@
   const $$ = (sel) => document.querySelectorAll(sel);
   const fmtDate = (d) => {
     if (!(d instanceof Date) || isNaN(d)) return '—';
-    return d.toLocaleDateString('es-PE', { year: 'numeric', month: 'short', day: 'numeric' });
+    return d.toLocaleDateString('es-PE', { day: 'numeric', month: 'long', year: 'numeric' });
   };
   const fmtDateISO = (d) => d.toISOString().split('T')[0];
   const daysBetween = (a, b) => Math.round((b - a) / (1000 * 60 * 60 * 24));
@@ -214,9 +214,35 @@
     // ── EJE C: Cognición / Información ──
     const ejeC = { issues: [], status: 'ok' };
 
-    // FAVN/Titer
-    if (dest.titer_test && dest.titer_test.es_bloqueante) {
+    // Australia — importación directa desde Perú no permitida
+    if (dest.importacion_directa_desde_peru === false) {
+      ejeC.status = 'fail';
+      ejeC.issues.push({
+        severity: 'red',
+        msg: `Australia NO acepta importación directa desde Perú. Perú es país no aprobado por DAFF. Se requiere residencia previa ≥6 meses en un país Grupo 3 aprobado (EE.UU., UK, Alemania, etc.). Proceso total: mínimo 12 meses. Consulta con Zoovet Travel para evaluar rutas alternativas.`,
+        topic: 'australia-no-directo'
+      });
+    }
+
+    // Aeropuertos válidos (EE.UU., Japón, Nueva Zelanda)
+    if (dest.aeropuertos_validos && dest.aeropuertos_validos.length > 0) {
+      ejeC.issues.push({
+        severity: 'info',
+        msg: `${dest.codigo_iso} solo acepta mascotas por estos aeropuertos: ${dest.aeropuertos_validos.join(', ')}. Verifica tu vuelo antes de comprar boletos.`,
+        topic: 'aeropuerto'
+      });
+    }
+
+    // FAVN/Titer — con diferenciación por especie
+    const favcBloqueante = (() => {
+      if (!dest.titer_test) return false;
+      if (d.especie === 'perro' && dest.titer_test.es_bloqueante_perro !== undefined) return dest.titer_test.es_bloqueante_perro;
+      if (d.especie === 'gato' && dest.titer_test.es_bloqueante_gato !== undefined) return dest.titer_test.es_bloqueante_gato;
+      return dest.titer_test.es_bloqueante;
+    })();
+    if (dest.titer_test && favcBloqueante) {
       const diasEsperaFAVN = dest.titer_test.dias_antes_viaje_minimo || reglas.favn_dias_espera_general;
+      const especieLabel = d.especie === 'perro' ? 'Para perros' : d.especie === 'gato' ? 'Para gatos' : '';
       if (diasAlViaje < diasEsperaFAVN) {
         ejeC.status = 'fail';
         ejeC.issues.push({
@@ -228,7 +254,7 @@
         ejeC.status = ejeC.status === 'fail' ? 'fail' : 'warn';
         ejeC.issues.push({
           severity: 'yellow',
-          msg: `Plazo justo para FAVN. Tomar muestra HOY mismo (${fmtDate(today())}) — debe ir a USA, regresar y endosarse.`,
+          msg: `Plazo justo para FAVN${especieLabel ? ' (' + especieLabel + ')' : ''}. Tomar muestra HOY mismo (${fmtDate(today())}) — debe ir al laboratorio, regresar el resultado y endosarse.`,
           topic: 'favn-justo'
         });
       }
@@ -447,7 +473,7 @@
     }
 
     // Disclaimer compacto
-    html += `<p class="text-xs text-[#1a2e35]/50 text-center mt-6 leading-relaxed">Resultado generado por el Planificador v${VERSION} · ${fmtDate(today())}. Información orientativa. <a href="./metodologia.html" class="underline">Ver metodología</a> · Validar con autoridad oficial antes de viajar.</p>`;
+    html += `<p class="text-xs text-[#1a2e35]/50 text-center mt-6 leading-relaxed">Resultado generado por el Planificador v${VERSION} · ${fmtDate(today())}. Información orientativa. Validar con autoridad oficial antes de viajar.</p>`;
 
     c.innerHTML = html;
     $('#result-section').classList.remove('hidden');
@@ -650,27 +676,4 @@
       $('#fecha_microchip').disabled = false;
       $('#fecha_microchip').value = p.get('fmc') || '';
     }
-    if (p.get('vc') === '1') {
-      f.vacuna.value = 'si';
-      $('#fecha_vacuna').disabled = false;
-      $('#fecha_vacuna').value = p.get('fvc') || '';
-    }
-    if (p.get('dp') === '1') {
-      f.desparasitacion.value = 'si';
-      $('#fecha_desparasitacion').disabled = false;
-      $('#fecha_desparasitacion').value = p.get('fdp') || '';
-    }
-  }
-
-  function sharePlan() {
-    const url = window.location.href;
-    if (navigator.share) {
-      navigator.share({ title: 'Mi plan de viaje · Zoovet Travel', url });
-    } else {
-      navigator.clipboard.writeText(url).then(() => {
-        alert('URL del plan copiada al portapapeles.');
-      });
-    }
-  }
-
-})();
+    if (p.get('vc') 
