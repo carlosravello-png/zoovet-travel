@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Planificador técnico de viaje internacional para mascotas. Calcula tu timeline inverso, semáforo de viabilidad y plan de trámites SENASA + autoridad destino. 22 países cubiertos. Datos zoosanitarios actualizados a 2026.">
+  <meta name="description" content="Calcula ahora si tu mascota viaja en tu fecha exacta. Valida SENASA, FAVN, microchip y requisitos de 22 países. Semáforo en tiempo real + PDF. Desde Perú y países de alto riesgo.">
   <meta name="keywords" content="planificador viaje mascota, exportación mascota Perú, timeline viaje internacional perro gato, SENASA Peru calculadora, FAVN serología cálculo, requisitos zoosanitarios país destino">
   <meta name="theme-color" content="#0C789E">
   <meta name="author" content="Carlos Eduardo Ravello Joo">
@@ -23,7 +23,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://zoovettravel.com/planificador-viaje-mascota/">
   <meta property="og:title" content="Planificador de Viaje para Mascotas — Zoovet Travel">
-  <meta property="og:description" content="Calcula timeline inverso, semáforo de viabilidad y plan completo de trámites para exportar tu mascota desde Perú a 22 países.">
+  <meta property="og:description" content="Calcula ahora si tu mascota viaja en tu fecha exacta. Valida SENASA, FAVN, microchip y requisitos de 22 países. Semáforo en tiempo real + PDF.">
   <meta property="og:image" content="https://zoovettravel.com/images/og-default.png">
   <meta property="og:locale" content="es_PE">
   <meta name="twitter:card" content="summary_large_image">
@@ -247,14 +247,6 @@
               "@type": "Answer",
               "text": "SENASA Perú, como autoridad emisora, solo valida el certificado de salud durante 5 días reales, sin importar lo que indique la guía del país destino. Sin esa validez SENASA no hay endoso del Certificado Zoosanitario de Exportación (CZE) y la mascota no viaja."
             }
-          },
-          {
-            "@type": "Question",
-            "name": "¿Qué es el Modelo de Coherencia Dinámica (MCD) y por qué se menciona aquí?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "El MCD es un marco teórico desarrollado por Carlos Eduardo Ravello Joo que postula que la persistencia funcional de sistemas complejos depende de la coherencia entre tres ejes: energía, información y propósito. Este planificador es una aplicación de campo del MCD al sistema zoosanitario: el semáforo computa un Índice de Coherencia Dinámica entre la edad y estado clínico de la mascota (eje E), la documentación y normativa (eje C) y el destino y fecha planeada (eje P)."
-            }
           }
         ]
       }
@@ -279,6 +271,13 @@
         <a href="../zoopedia/index.html" class="hover:text-[#0C789E] transition-colors">Zoopedia</a>
         <a href="../kennels.html" class="hover:text-[#0C789E] transition-colors">Kennels</a>
         <a href="../about.html" class="hover:text-[#0C789E] transition-colors">Nosotros</a>
+        <div class="flex items-center gap-1 border-l border-[#1a2e35]/20 pl-4">
+          <span class="text-[#0C789E] font-bold">ES</span>
+          <span class="text-[#1a2e35]/30">·</span>
+          <a href="../pet-travel-planner/" class="hover:text-[#0C789E] transition-colors" hreflang="en" aria-label="English version">EN</a>
+          <span class="text-[#1a2e35]/30">·</span>
+          <a href="../planificateur-voyage-animal/" class="hover:text-[#0C789E] transition-colors" hreflang="fr" aria-label="Version française">FR</a>
+        </div>
         <a href="https://wa.me/51979620402" target="_blank" rel="noopener noreferrer" class="text-[#0C789E] border border-[#0C789E] px-4 py-2 hover:bg-[#0C789E] hover:text-white transition-all">WhatsApp</a>
       </nav>
       <button id="mobile-menu-btn" class="md:hidden text-[#1a2e35]" aria-label="Menú">
@@ -292,6 +291,12 @@
         <a href="../zoopedia/index.html">Zoopedia</a>
         <a href="../kennels.html">Kennels</a>
         <a href="../about.html">Nosotros</a>
+        <a href="../planificador-viaje-mascota/" class="text-[#0C789E]">Planificador de Viaje</a>
+        <div class="flex items-center gap-3 pt-1 border-t border-[#1a2e35]/10">
+          <span class="text-[#0C789E] font-bold">ES</span>
+          <a href="../pet-travel-planner/" hreflang="en" class="hover:text-[#0C789E]">EN</a>
+          <a href="../planificateur-voyage-animal/" hreflang="fr" class="hover:text-[#0C789E]">FR</a>
+        </div>
         <a href="https://wa.me/51979620402" target="_blank" rel="noopener noreferrer" class="text-[#0C789E]">WhatsApp</a>
       </nav>
     </div>
@@ -314,8 +319,11 @@
     <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1a2e35] leading-tight mb-4">
       Planificador de Viaje para Mascotas
     </h1>
-    <p class="text-base sm:text-lg text-[#1a2e35]/75 leading-relaxed mb-6 max-w-3xl">
-      Calcula el <strong>timeline inverso completo</strong> para exportar tu mascota desde Perú a 22 destinos. Validación en tiempo real de edad mínima legal, vacuna antirrábica, FAVN/RNATT, certificado de salud, endoso SENASA y permisos del país destino. Devuelve un <strong>semáforo de viabilidad</strong> y un <strong>plan PDF descargable</strong>.
+    <p class="text-base sm:text-lg text-[#1a2e35]/75 leading-relaxed mb-4 max-w-3xl">
+      Calcula el <strong>timeline inverso completo</strong> para exportar tu mascota desde Perú a 22 destinos. Validación en tiempo real: edad mínima legal, vacuna antirrábica, <strong>FAVN/RNATT</strong>, microchip, certificado de salud, endoso SENASA y permisos del país destino. Resultado inmediato: <strong>semáforo de viabilidad rojo/amarillo/verde</strong> y plan PDF descargable.
+    </p>
+    <p class="text-sm text-[#1a2e35]/60 leading-relaxed mb-6 max-w-3xl">
+      Diseñamos este planificador porque no existía. Ninguna herramienta gratuita calculaba en tiempo real si tu mascota puede volar en tu fecha exacta desde un país de alto riesgo zoosanitario. También es referencia orientativa si viajas desde <strong>Colombia, México, Argentina, Brasil, Bolivia, Ecuador, Venezuela, Paraguay, República Dominicana, Filipinas</strong> u otro país clasificado de alto riesgo por <strong>CDC y DAFF</strong> — los plazos del FAVN, la vacuna y la cuarentena son los mismos; solo cambia tu autoridad veterinaria local. <em>Verifica siempre con ella y con la autoridad del país destino.</em>
     </p>
     <div class="flex flex-wrap gap-3 text-xs text-[#1a2e35]/60">
       <span class="px-3 py-1 bg-[#0C789E]/10 text-[#0C789E] border border-[#0C789E]/20">Datos actualizados a mayo 2026</span>
@@ -526,15 +534,6 @@
         </summary>
         <p class="mt-3 text-sm text-[#1a2e35]/75 leading-relaxed">
           Si el semáforo es rojo, llámanos por WhatsApp al <a href="https://wa.me/51922083707" class="text-[#0C789E] underline">+51 922 083 707</a>. Aún hay opciones — postergar fecha, cambiar destino, ajustar plan. No tomes decisiones sin nosotros.
-        </p>
-      </details>
-      <details class="border border-[#1a2e35]/10 p-4 group">
-        <summary class="cursor-pointer font-semibold text-[#1a2e35] flex justify-between items-center list-none">
-          <span>¿Qué es el Modelo de Coherencia Dinámica (MCD)?</span>
-          <span class="text-[#0C789E] group-open:rotate-180 transition-transform">▼</span>
-        </summary>
-        <p class="mt-3 text-sm text-[#1a2e35]/75 leading-relaxed">
-          Es un marco teórico desarrollado por <a href="https://carlosravello.com" rel="me author noopener" class="text-[#0C789E] underline">Carlos Eduardo Ravello Joo</a> que postula que la persistencia funcional de sistemas complejos depende de la coherencia entre tres ejes: energía, información y propósito. Este planificador es una aplicación de campo de ese modelo al sistema zoosanitario.
         </p>
       </details>
     </div>
