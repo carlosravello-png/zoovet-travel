@@ -21,7 +21,7 @@
   const $$ = (sel) => document.querySelectorAll(sel);
   const fmtDate = (d) => {
     if (!(d instanceof Date) || isNaN(d)) return '—';
-    return d.toLocaleDateString('fr-FR', { year: 'numeric', month: 'short', day: 'numeric' });
+    return d.toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' });
   };
   const fmtDateISO = (d) => d.toISOString().split('T')[0];
   const daysBetween = (a, b) => Math.round((b - a) / (1000 * 60 * 60 * 24));
@@ -187,8 +187,35 @@
 
     const ejeC = { issues: [], status: 'ok' };
 
-    if (dest.titer_test && dest.titer_test.es_bloqueante) {
+    // Australie — importation directe depuis le Pérou non autorisée
+    if (dest.importacion_directa_desde_peru === false) {
+      ejeC.status = 'fail';
+      ejeC.issues.push({
+        severity: 'red',
+        msg: `L'Australie N'ACCEPTE PAS l'importation directe depuis le Pérou. Le Pérou est un pays non approuvé par le DAFF. Une résidence préalable d'au moins 6 mois dans un pays du Groupe 3 approuvé (États-Unis, Royaume-Uni, Allemagne, etc.) est requise. Processus total : minimum 12 mois. Contactez Zoovet Travel pour évaluer des itinéraires alternatifs.`,
+        topic: 'australia-no-directo'
+      });
+    }
+
+    // Aéroports valides (États-Unis, Japon, Nouvelle-Zélande)
+    if (dest.aeropuertos_validos && dest.aeropuertos_validos.length > 0) {
+      ejeC.issues.push({
+        severity: 'info',
+        msg: `${dest.codigo_iso} n'accepte les animaux que par ces aéroports : ${dest.aeropuertos_validos.join(', ')}. Vérifiez votre vol avant d'acheter les billets.`,
+        topic: 'aeropuerto'
+      });
+    }
+
+    // FAVN/Titre — avec différenciation par espèce
+    const favcBloqueante = (() => {
+      if (!dest.titer_test) return false;
+      if (d.especie === 'perro' && dest.titer_test.es_bloqueante_perro !== undefined) return dest.titer_test.es_bloqueante_perro;
+      if (d.especie === 'gato' && dest.titer_test.es_bloqueante_gato !== undefined) return dest.titer_test.es_bloqueante_gato;
+      return dest.titer_test.es_bloqueante;
+    })();
+    if (dest.titer_test && favcBloqueante) {
       const diasEsperaFAVN = dest.titer_test.dias_antes_viaje_minimo || reglas.favn_dias_espera_general;
+      const especieLabel = d.especie === 'perro' ? 'Pour les chiens' : d.especie === 'gato' ? 'Pour les chats' : '';
       if (diasAlViaje < diasEsperaFAVN) {
         ejeC.status = 'fail';
         ejeC.issues.push({
@@ -200,7 +227,7 @@
         ejeC.status = ejeC.status === 'fail' ? 'fail' : 'warn';
         ejeC.issues.push({
           severity: 'yellow',
-          msg: `Délai FAVN serré. Prélever AUJOURD'HUI (${fmtDate(today())}) — l'échantillon doit partir, les résultats revenir et être visés.`,
+          msg: `Délai FAVN serré${especieLabel ? ' (' + especieLabel + ')' : ''}. Prélever AUJOURD'HUI (${fmtDate(today())}) — l'échantillon doit partir, les résultats revenir et être visés.`,
           topic: 'favn-justo'
         });
       }
@@ -403,7 +430,7 @@
       `;
     }
 
-    html += `<p class="text-xs text-[#1a2e35]/50 text-center mt-6 leading-relaxed">Résultat généré par le Planificateur v${VERSION} · ${fmtDate(today())}. Informations indicatives. <a href="./methodologie.html" class="underline">Voir la méthodologie</a> · Vérifier auprès des autorités officielles avant de voyager.</p>`;
+    html += `<p class="text-xs text-[#1a2e35]/50 text-center mt-6 leading-relaxed">Résultat généré par le Planificateur v${VERSION} · ${fmtDate(today())}. Informations indicatives. Vérifier auprès des autorités officielles avant de voyager.</p>`;
 
     c.innerHTML = html;
     $('#result-section').classList.remove('hidden');
