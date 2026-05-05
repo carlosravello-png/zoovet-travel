@@ -37,7 +37,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="../assets/tailwind.css">
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./styles.css?v=1.1.0">
 
   <!-- pdfmake (PDF generation) -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.10/pdfmake.min.js"></script>
@@ -394,7 +394,8 @@
 
         <div>
           <label for="fecha_viaje" class="block text-xs font-semibold uppercase tracking-widest text-[#1a2e35]/70 mb-2">Fecha estimada de viaje *</label>
-          <input type="date" id="fecha_viaje" name="fecha_viaje" required class="w-full border border-[#1a2e35]/20 px-4 py-3 text-sm focus:outline-none focus:border-[#0C789E]">
+          <input type="date" id="fecha_viaje" name="fecha_viaje" required lang="es" class="w-full border border-[#1a2e35]/20 px-4 py-3 text-sm focus:outline-none focus:border-[#0C789E]">
+          <p class="text-xs text-[#1a2e35]/40 mt-1">Formato: DD/MM/AAAA — el selector usa el idioma de tu sistema operativo</p>
         </div>
 
         <div></div>
@@ -585,7 +586,7 @@
   </a>
 
   <!-- Lógica de la app -->
-  <script src="./app.js" defer></script>
+  <script src="./app.js?v=1.1.0" defer></script>
 
   <!-- Mobile menu toggle -->
   <script>

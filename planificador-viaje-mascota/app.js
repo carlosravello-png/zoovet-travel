@@ -38,7 +38,7 @@
   // ═════════════════════════════════════════════════════════════════
   document.addEventListener('DOMContentLoaded', async () => {
     try {
-      const res = await fetch('./rules.json');
+      const res = await fetch('./rules.json?v=1.1.1');
       RULES = await res.json();
       populateDestinos();
       setupForm();

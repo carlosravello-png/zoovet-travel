@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "1.0.0",
-    "last_updated": "2026-05-04",
+    "version": "1.1.1",
+    "last_updated": "2026-05-05",
     "next_review_date": "2026-08-04",
     "maintainer": {
       "name": "Carlos Eduardo Ravello Joo",
@@ -63,6 +63,12 @@
     },
     "changelog": [
       {
+        "version": "1.1.0",
+        "date": "2026-05-05",
+        "author": "Carlos Eduardo Ravello Joo",
+        "changes": "Correcciones críticas: Australia marcado como no aprobado para importación directa desde Perú (requiere país intermedio Grupo 3 ≥6 meses). EE.UU.: FAVN bloqueante para perros, cuarentena condicional 28 días, CDC Form obligatorio, 6 aeropuertos válidos, edad mínima 26 semanas. Países UE (DE/ES/FR/IT): edad mínima corregida a 30 semanas por cadena titer. NZ: aeropuertos AKL/CHC. Japón: aeropuertos NRT/KIX/NGO/HND/FUK/CTS. Diferenciación perro/gato en reglas EE.UU."
+      },
+      {
         "version": "1.0.0",
         "date": "2026-05-04",
         "author": "Carlos Eduardo Ravello Joo",
@@ -77,9 +83,9 @@
       "fuente_oficial": {
         "nombre": "Reglamento UE 576/2013 + Bundesministerium für Ernährung und Landwirtschaft (BMEL)",
         "url": "https://www.bmel.de/EN/topics/animals/pets/pets_node.html",
-        "fecha_consulta": "2026-05-04"
+        "fecha_consulta": "2026-05-05"
       },
-      "edad_minima_semanas": 22,
+      "edad_minima_semanas": 30,
       "microchip": { "dias_antes_viaje_minimo": 0, "es_bloqueante": true, "producto_especifico": "ISO 11784/11785 antes de vacuna antirrábica" },
       "vacuna_antirrabica": { "dias_antes_viaje_minimo": 30, "dias_vigencia_maxima": 365, "es_bloqueante": true },
       "titer_test": { "dias_antes_viaje_minimo": 90, "es_bloqueante": true, "producto_especifico": "FAVN/RNATT ≥0.5 IU/ml en laboratorio autorizado UE" },
@@ -117,16 +123,17 @@
         "url": "https://www.agriculture.gov.au/biosecurity-trade/cats-dogs",
         "fecha_consulta": "2026-05-04"
       },
+      "importacion_directa_desde_peru": false,
       "edad_minima_semanas": 32,
       "microchip": { "es_bloqueante": true, "producto_especifico": "ISO antes de vacuna antirrábica" },
       "vacuna_antirrabica": { "dias_antes_viaje_minimo": 30, "dias_vigencia_maxima": 365, "es_bloqueante": true },
-      "titer_test": { "dias_antes_viaje_minimo": 180, "es_bloqueante": true, "producto_especifico": "FAVN/RNATT ≥0.5 IU/ml + 180 días de espera desde toma de muestra" },
+      "titer_test": { "dias_antes_viaje_minimo": 180, "es_bloqueante": true, "producto_especifico": "FAVN/RNATT ≥0.5 IU/ml + 180 días de espera desde toma de muestra. Lab aprobado DAFF (ej. Kansas State USA o VLA UK — no existe lab aprobado DAFF en Perú)." },
       "desparasitacion": { "dias_antes_viaje_minimo": 30, "es_bloqueante": true, "producto_especifico": "Interna y externa específica" },
-      "certificado_salud": { "dias_antes_viaje_minimo": 5, "dias_vigencia_maxima": 5, "es_bloqueante": true, "producto_especifico": "Específico Australia + Import Permit" },
+      "certificado_salud": { "dias_antes_viaje_minimo": 5, "dias_vigencia_maxima": 5, "es_bloqueante": true, "producto_especifico": "Específico Australia + Import Permit vía BICON" },
       "tramites_senasa": { "dias_antes_viaje_minimo": 1, "es_bloqueante": true, "producto_especifico": "CZE endosado" },
-      "cuarentena": { "dias_antes_viaje_minimo": 30, "es_bloqueante": true, "producto_especifico": "30+ días obligatoria en facility post-arrival" },
-      "permiso_importacion": { "dias_antes_viaje_minimo": 40, "es_bloqueante": true, "producto_especifico": "DAFF Import Permit (gestionarlo con anticipación)" },
-      "notas": "Proceso 7-12+ meses. Uno de los más estrictos del mundo."
+      "cuarentena": { "dias_antes_viaje_minimo": 10, "es_bloqueante": true, "producto_especifico": "10 días mínimo en Mickleham (Melbourne) si pasa identity check; 30 días si no. Solo entrada por Melbourne Airport (MEL). Transporte como carga manifestada." },
+      "permiso_importacion": { "dias_antes_viaje_minimo": 42, "es_bloqueante": true, "producto_especifico": "DAFF Import Permit vía portal BICON — tramitar ≥6 semanas antes" },
+      "notas": "⚠ PERÚ NO APROBADO PARA IMPORTACIÓN DIRECTA. Perú es país no aprobado por DAFF. Se requiere residencia previa ≥6 meses en un país Grupo 3 aprobado (EE.UU., UK, Alemania, etc.) antes de poder ingresar a Australia. Proceso total: 12+ meses mínimo."
     },
     "Brasil": {
       "codigo_iso": "BR",
@@ -268,9 +275,9 @@
       "fuente_oficial": {
         "nombre": "Ministerio de Agricultura, Pesca y Alimentación (MAPA) + Reg UE 576/2013",
         "url": "https://www.mapa.gob.es",
-        "fecha_consulta": "2026-05-04"
+        "fecha_consulta": "2026-05-05"
       },
-      "edad_minima_semanas": 22,
+      "edad_minima_semanas": 30,
       "microchip": { "es_bloqueante": true, "producto_especifico": "ISO 11784/11785 antes de vacuna antirrábica" },
       "vacuna_antirrabica": { "dias_antes_viaje_minimo": 30, "dias_vigencia_maxima": 365, "es_bloqueante": true },
       "titer_test": { "dias_antes_viaje_minimo": 90, "es_bloqueante": true, "producto_especifico": "FAVN/RNATT ≥0.5 IU/ml en laboratorio autorizado UE" },
@@ -289,16 +296,17 @@
         "url": "https://www.cdc.gov/importation/dogs/index.html",
         "fecha_consulta": "2026-05-04"
       },
-      "edad_minima_semanas": 24,
-      "microchip": { "es_bloqueante": true, "producto_especifico": "ISO requerido por CDC para perros desde 1-ago-2024" },
+      "edad_minima_semanas": 26,
+      "microchip": { "es_bloqueante": true, "producto_especifico": "ISO requerido por CDC para perros. Debe instalarse ANTES de la vacuna antirrábica." },
       "vacuna_antirrabica": { "dias_antes_viaje_minimo": 30, "dias_vigencia_maxima": 365, "es_bloqueante": true },
-      "titer_test": { "es_bloqueante": false, "producto_especifico": "Condicional. Perú = país de alto riesgo para CDC; verificar requisitos vigentes." },
+      "titer_test": { "es_bloqueante": true, "es_bloqueante_perro": true, "es_bloqueante_gato": false, "dias_antes_viaje_minimo": 45, "producto_especifico": "PERROS: FAVN/RNATT ≥0.5 IU/ml en lab aprobado CDC. Muestra: ≥30 días post-vacuna y ≥45 días antes del viaje. Sin FAVN válido → cuarentena 28 días en CDC facility (costo del dueño). GATOS: no exigido federalmente." },
       "desparasitacion": { "es_bloqueante": false },
-      "certificado_salud": { "dias_antes_viaje_minimo": 5, "dias_vigencia_maxima": 5, "es_bloqueante": true, "producto_especifico": "USDA-endosado" },
+      "certificado_salud": { "dias_antes_viaje_minimo": 5, "dias_vigencia_maxima": 5, "es_bloqueante": true, "producto_especifico": "USDA APHIS-endosado" },
       "tramites_senasa": { "dias_antes_viaje_minimo": 1, "es_bloqueante": true, "producto_especifico": "CZE" },
-      "cuarentena": { "es_bloqueante": false },
-      "permiso_importacion": { "es_bloqueante": false, "producto_especifico": "CDC Dog Import Form obligatorio para perros" },
-      "notas": "Perú = país de alto riesgo de rabia canina para CDC. Solo entrada por aeropuertos específicos. CDC Dog Import Form obligatorio."
+      "cuarentena": { "dias_antes_viaje_minimo": 28, "es_bloqueante": true, "producto_especifico": "28 días en CDC Animal Care Facility (ACF) — SOLO para perros sin FAVN válido. Reserva obligatoria ANTES de volar. Costo asumido por el dueño." },
+      "aeropuertos_validos": ["ATL", "JFK", "LAX", "MIA", "IAD", "SFO"],
+      "permiso_importacion": { "dias_antes_viaje_minimo": 1, "es_bloqueante": true, "producto_especifico": "CDC Dog Import Form — obligatorio para TODOS los perros. Completar antes de volar en CDC website. Gatos: no requerido federalmente." },
+      "notas": "Perú = país de alto riesgo de rabia canina para CDC. PERROS: microchip + FAVN + CDC Form + reserva en ACF + solo 6 aeropuertos (ATL, JFK, LAX, MIA, IAD, SFO). GATOS: proceso más simple, sin FAVN federal."
     },
     "Francia": {
       "codigo_iso": "FR",
@@ -306,9 +314,9 @@
       "fuente_oficial": {
         "nombre": "Ministère de l'Agriculture + Reg UE 576/2013",
         "url": "https://agriculture.gouv.fr",
-        "fecha_consulta": "2026-05-04"
+        "fecha_consulta": "2026-05-05"
       },
-      "edad_minima_semanas": 22,
+      "edad_minima_semanas": 30,
       "microchip": { "es_bloqueante": true, "producto_especifico": "ISO 11784/11785 antes de vacuna" },
       "vacuna_antirrabica": { "dias_antes_viaje_minimo": 30, "dias_vigencia_maxima": 365, "es_bloqueante": true },
       "titer_test": { "dias_antes_viaje_minimo": 90, "es_bloqueante": true, "producto_especifico": "FAVN/RNATT ≥0.5 IU/ml en lab autorizado UE" },
@@ -344,9 +352,9 @@
       "fuente_oficial": {
         "nombre": "Ministero della Salute + Reg UE 576/2013",
         "url": "https://www.salute.gov.it",
-        "fecha_consulta": "2026-05-04"
+        "fecha_consulta": "2026-05-05"
       },
-      "edad_minima_semanas": 22,
+      "edad_minima_semanas": 30,
       "microchip": { "es_bloqueante": true, "producto_especifico": "ISO 11784/11785 antes de vacuna" },
       "vacuna_antirrabica": { "dias_antes_viaje_minimo": 30, "dias_vigencia_maxima": 365, "es_bloqueante": true },
       "titer_test": { "dias_antes_viaje_minimo": 90, "es_bloqueante": true, "producto_especifico": "FAVN/RNATT ≥0.5 IU/ml" },
@@ -374,7 +382,8 @@
       "tramites_senasa": { "dias_antes_viaje_minimo": 1, "es_bloqueante": true, "producto_especifico": "CZE" },
       "cuarentena": { "es_bloqueante": true, "producto_especifico": "12 horas a 180 días según cumplimiento documental" },
       "permiso_importacion": { "es_bloqueante": false, "producto_especifico": "Notificación previa a AQS 40 días antes" },
-      "notas": "Los 180 días post-titer son la regla más estricta del mundo junto con Australia."
+      "aeropuertos_validos": ["NRT", "KIX", "NGO", "HND", "FUK", "CTS"],
+      "notas": "Los 180 días post-titer son la regla más estricta del mundo junto con Australia. Entrada solo por aeropuertos designados: NRT, KIX, NGO, HND, FUK, CTS."
     },
     "México": {
       "codigo_iso": "MX",
@@ -412,7 +421,8 @@
       "tramites_senasa": { "dias_antes_viaje_minimo": 1, "es_bloqueante": true, "producto_especifico": "CZE" },
       "cuarentena": { "dias_antes_viaje_minimo": 0, "es_bloqueante": true, "producto_especifico": "Mínimo 10 días en facility aprobada MPI" },
       "permiso_importacion": { "dias_antes_viaje_minimo": 42, "es_bloqueante": true, "producto_especifico": "MPI Import Permit. ~30 días hábiles de procesamiento. Solicitar ≥6 semanas antes." },
-      "notas": "Perú = Categoría 3 para MPI."
+      "aeropuertos_validos": ["AKL", "CHC"],
+      "notas": "Perú = Categoría 3 para MPI. Entrada solo por Auckland (AKL) o Christchurch (CHC)."
     },
     "Reino_Unido": {
       "codigo_iso": "GB",
