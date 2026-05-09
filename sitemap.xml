@@ -2186,4 +2186,35 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://zoovettravel.com/planificateur-voyage-animal/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zoovettravel.com/planificador-viaje-mascota/" />
   </url>
+  <!-- Requisitos zoosanitarios por país — Dataset estático trilingual ES/EN/FR -->
+  <url>
+    <loc>https://zoovettravel.com/planificador-viaje-mascota/requisitos-por-pais/</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/planificador-viaje-mascota/requisitos-por-pais/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://zoovettravel.com/pet-travel-planner/requirements-by-country/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zoovettravel.com/planificateur-voyage-animal/exigences-par-pays/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zoovettravel.com/planificador-viaje-mascota/requisitos-por-pais/" />
+  </url>
+  <url>
+    <loc>https://zoovettravel.com/pet-travel-planner/requirements-by-country/</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/planificador-viaje-mascota/requisitos-por-pais/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://zoovettravel.com/pet-travel-planner/requirements-by-country/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zoovettravel.com/planificateur-voyage-animal/exigences-par-pays/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zoovettravel.com/planificador-viaje-mascota/requisitos-por-pais/" />
+  </url>
+  <url>
+    <loc>https://zoovettravel.com/planificateur-voyage-animal/exigences-par-pays/</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/planificador-viaje-mascota/requisitos-por-pais/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://zoovettravel.com/pet-travel-planner/requirements-by-country/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zoovettravel.com/planificateur-voyage-animal/exigences-par-pays/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zoovettravel.com/planificador-viaje-mascota/requisitos-por-pais/" />
+  </url>
 </urlset>

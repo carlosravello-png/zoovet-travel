@@ -60,6 +60,16 @@
         "author": { "@id": "https://carlosravello.com/#person" },
         "publisher": { "@id": "https://zoovettravel.com/#organization" },
         "isBasedOn": { "@id": "https://carlosravello.com/#mcd-framework" },
+        "featureList": [
+          "Calcul du calendrier inversé couvrant 22 pays de destination",
+          "Feu de viabilité (Vert / Orange / Rouge) basé sur l'Indice de Cohérence Dynamique",
+          "Validation de l'âge légal minimum par pays de destination",
+          "Vérification de l'ordre puce électronique → vaccin → test FAVN",
+          "Génération d'un PDF téléchargeable avec le plan complet",
+          "QR vers WhatsApp Zoovet Travel pour gestion du dossier",
+          "Avertissement légal et citation des sources officielles",
+          "URL partageable et reproductible"
+        ],
         "softwareVersion": "1.0.0",
         "dateCreated": "2026-05-04",
         "dateModified": "2026-05-04",
@@ -137,6 +147,46 @@
             "@type": "Question",
             "name": "Pourquoi le certificat de santé n'est-il valable que 5 jours ?",
             "acceptedAnswer": { "@type": "Answer", "text": "Le SENASA Pérou, en tant qu'autorité émettrice, ne valide le certificat de santé que pendant 5 jours réels, quelle que soit la durée indiquée par le guide du pays de destination. Sans cette validité SENASA, il n'y a pas de visa du CZE et l'animal ne voyage pas." }
+          }
+        ]
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://zoovettravel.com/planificateur-voyage-animal/#howto",
+        "name": "Comment calculer le calendrier de voyage international pour votre animal",
+        "description": "Étapes pour utiliser le Planificateur de Voyage pour Animaux de Zoovet Travel et obtenir votre feu de viabilité (Vert/Orange/Rouge) et un plan PDF téléchargeable avec les démarches exactes pour exporter votre animal depuis le Pérou.",
+        "totalTime": "PT2M",
+        "estimatedCost": { "@type": "MonetaryAmount", "currency": "EUR", "value": "0" },
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": "1",
+            "name": "Sélectionnez le pays de destination et les détails du voyage",
+            "text": "Choisissez le pays de destination parmi les 22 disponibles, l'espèce de votre animal, sa date de naissance et votre date de voyage envisagée."
+          },
+          {
+            "@type": "HowToStep",
+            "position": "2",
+            "name": "Déclarez l'état documentaire actuel de votre animal",
+            "text": "Indiquez si votre animal possède déjà une puce électronique ISO, un vaccin antirabique valide et/ou un test FAVN/RNATT, avec leurs dates exactes."
+          },
+          {
+            "@type": "HowToStep",
+            "position": "3",
+            "name": "Lancez le calcul du calendrier inversé",
+            "text": "Appuyez sur 'Calculer' pour que le planificateur évalue si les délais zoosanitaires exigés par le pays de destination sont compatibles avec votre date de voyage déclarée."
+          },
+          {
+            "@type": "HowToStep",
+            "position": "4",
+            "name": "Lisez votre feu de viabilité",
+            "text": "Vous recevrez Vert (viable à votre date), Orange (zone de risque, dépend de l'officiel) ou Rouge (bloquant impossible à résoudre à temps). Le planificateur détaille exactement quelle étape empêche le voyage et combien de jours manquent ou restent."
+          },
+          {
+            "@type": "HowToStep",
+            "position": "5",
+            "name": "Téléchargez votre plan PDF et contactez Zoovet Travel",
+            "text": "Générez le PDF avec votre calendrier complet, les dates clés et les démarches en attente. Partagez-le avec votre vétérinaire ou écrivez-nous via WhatsApp pour gérer votre dossier d'exportation depuis le Pérou."
           }
         ]
       }
@@ -412,6 +462,20 @@
         <p class="text-xs text-[#1a2e35]/50 mt-1">Taxonomie des erreurs et documents corrigeables.</p>
       </a>
     </div>
+  </section>
+
+  <!-- Données de référence : exigences par pays -->
+  <section class="max-w-6xl mx-auto px-4 sm:px-6 pb-8">
+    <a href="exigences-par-pays/" class="group flex items-center gap-4 border border-[#0C789E]/30 bg-[#0C789E]/5 p-5 hover:bg-[#0C789E]/10 transition-colors">
+      <div class="shrink-0 w-10 h-10 rounded-full bg-[#0C789E]/10 flex items-center justify-center text-[#0C789E]">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+      </div>
+      <div>
+        <p class="text-xs font-semibold uppercase tracking-widest text-[#0C789E] mb-0.5">Données de référence</p>
+        <p class="text-sm font-semibold text-[#1a2e35] group-hover:text-[#0C789E] transition-colors">Tableau complet : exigences zoosanitaires par pays de destination →</p>
+        <p class="text-xs text-[#1a2e35]/50 mt-0.5">FAVN, quarantaine, vaccin antirabique et âge minimum pour 20 pays. Données actualisées 2026.</p>
+      </div>
+    </a>
   </section>
 
   <footer class="bg-[#1a2e35] text-[#F8FAFC] mt-16">
