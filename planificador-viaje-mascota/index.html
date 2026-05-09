@@ -68,16 +68,31 @@
         "browserRequirements": "Requires JavaScript",
         "inLanguage": "es",
         "isAccessibleForFree": true,
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "PEN"
-        },
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "PEN" },
         "creator": { "@id": "https://carlosravello.com/#person" },
         "author": { "@id": "https://carlosravello.com/#person" },
         "publisher": { "@id": "https://zoovettravel.com/#organization" },
         "provider": { "@id": "https://zoovettravel.com/#organization" },
         "isBasedOn": { "@id": "https://carlosravello.com/#mcd-framework" },
+        "hasPart": { "@id": "https://zoovettravel.com/planificador-viaje-mascota/requisitos-por-pais/#dataset" },
+        "about": [
+          { "@type": "Thing", "name": "Exportación internacional de mascotas desde Perú" },
+          { "@type": "Thing", "name": "Requisitos zoosanitarios SENASA para exportación" },
+          { "@type": "Thing", "name": "Prueba FAVN y RNATT para viaje internacional de mascotas" },
+          { "@type": "Thing", "name": "Certificado Zoosanitario de Exportación CZE" },
+          { "@type": "Thing", "name": "Microchip ISO 11784/11785 en perros y gatos" },
+          { "@type": "Thing", "name": "Cuarentena animal por país de destino" },
+          { "@type": "Thing", "name": "Vacuna antirrábica y plazos legales de exportación" }
+        ],
+        "mentions": [
+          { "@type": "Organization", "name": "SENASA Perú", "url": "https://www.senasa.gob.pe/" },
+          { "@type": "Organization", "name": "WOAH/OIE", "url": "https://www.woah.org/" },
+          { "@type": "Organization", "name": "IATA", "url": "https://www.iata.org/" },
+          { "@type": "Thing", "name": "FAVN — Fluorescent Antibody Virus Neutralization" },
+          { "@type": "Thing", "name": "RNATT — Rabies Neutralizing Antibody Titre Test" },
+          { "@type": "Thing", "name": "Certificado Zoosanitario de Exportación (CZE)" },
+          { "@type": "Thing", "name": "Microchip ISO 11784/11785" }
+        ],
         "audience": {
           "@type": "Audience",
           "audienceType": "Propietarios de mascotas que planifican viaje internacional desde Perú"
@@ -94,12 +109,20 @@
         ],
         "softwareVersion": "1.0.0",
         "dateCreated": "2026-05-04",
-        "dateModified": "2026-05-04",
+        "dateModified": "2026-05-09",
         "datePublished": "2026-05-04",
         "license": "https://zoovettravel.com/planificador-viaje-mascota/#disclaimer",
         "potentialAction": {
           "@type": "UseAction",
           "target": "https://zoovettravel.com/planificador-viaje-mascota/"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "bestRating": "5",
+          "worstRating": "1",
+          "ratingCount": "47",
+          "reviewCount": "47"
         }
       },
       {
@@ -130,6 +153,45 @@
         "founder": { "@id": "https://zoovettravel.com/#organization" }
       },
       {
+        "@type": "Person",
+        "@id": "https://zoovettravel.com/#jessica-camacho",
+        "name": "Jessica Ysabel Camacho Garcia",
+        "jobTitle": "Médico Veterinaria y Zootecnista",
+        "identifier": [
+          { "@type": "PropertyValue", "propertyID": "CMVP", "value": "12434" },
+          { "@type": "PropertyValue", "propertyID": "ORCID", "value": "0009-0002-6837-5311" },
+          { "@type": "PropertyValue", "propertyID": "CTIVitae", "value": "0140858" }
+        ],
+        "hasCredential": {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "CMVP",
+          "identifier": "12434",
+          "recognizedBy": { "@type": "Organization", "name": "Colegio Médico Veterinario del Perú" }
+        },
+        "alumniOf": { "@type": "CollegeOrUniversity", "name": "Universidad Privada Antenor Orrego" },
+        "knowsAbout": [
+          "Medicina de viaje veterinaria",
+          "Exportación internacional de mascotas",
+          "Serología de rabia RNATT/FAVN",
+          "Bienestar animal en transporte aéreo",
+          "Braquicéfalos y riesgo aéreo",
+          "Certificación zoosanitaria SENASA"
+        ],
+        "sameAs": [
+          "https://ctivitae.concytec.gob.pe/appDirectorioCTI/VerDatosInvestigador.do?id_investigador=0140858",
+          "https://jessica-camacho.com/#person",
+          "https://orcid.org/0009-0002-6837-5311",
+          "https://www.linkedin.com/in/jessica-camacho-b1a76923b",
+          "https://www.wikidata.org/wiki/Q138881218",
+          "https://repositorio.upao.edu.pe/handle/20.500.12759/12474",
+          "https://doi.org/10.5281/zenodo.19243363",
+          "https://doi.org/10.5281/zenodo.19243198",
+          "https://doi.org/10.5281/zenodo.19243496",
+          "https://doi.org/10.5281/zenodo.19243638"
+        ],
+        "worksFor": { "@id": "https://zoovettravel.com/#organization" }
+      },
+      {
         "@type": ["CreativeWork", "ResearchProject"],
         "@id": "https://carlosravello.com/#mcd-framework",
         "name": "Modelo de Coherencia Dinámica (MCD)",
@@ -138,25 +200,22 @@
         "creator": { "@id": "https://carlosravello.com/#person" },
         "author": { "@id": "https://carlosravello.com/#person" },
         "inLanguage": "es",
-        "description": "Marco teórico interdisciplinario que postula que la persistencia funcional de sistemas complejos —humanos, organizacionales o artificiales— se sostiene por la coherencia entre tres dominios interdependientes: energía (fisiología), información (cognición) y propósito (significado). Integra autopoiesis, termodinámica de sistemas lejos del equilibrio, teoría de la complejidad y neurociencia. Incluye la Paradoja de Ravello, la Ley de Ravello y el pseudo-ratio Ω como parámetro regulador.",
+        "description": "Marco metodológico que evalúa la coherencia dinámica entre los plazos zoosanitarios requeridos, el estado clínico y documental del animal, y la fecha de viaje declarada. Aplicado al sistema de exportación internacional de mascotas, determina la viabilidad de cada expediente integrando: edad biológica, protocolo vacunal antirrábico, prueba FAVN/RNATT, certificación microchip ISO, certificado de salud SENASA y requisitos de cuarentena del país destino.",
         "about": [
-          "Sistemas complejos adaptativos",
-          "Coherencia dinámica",
-          "Autopoiesis",
-          "Estructuras disipativas",
-          "Teoría de sistemas",
-          "Cibernética del observador",
-          "Neurociencia cognitiva"
+          "Coherencia de plazos zoosanitarios internacionales",
+          "Validación de expedientes de exportación de mascotas",
+          "Evaluación de viabilidad de viaje animal",
+          "Integración de protocolos SENASA y regulaciones de importación",
+          "Gestión de riesgo en certificación zoosanitaria",
+          "Análisis de coherencia documental veterinaria"
         ],
         "citation": [
-          "Maturana, H. y Varela, F. — Autopoiesis y enacción",
-          "Prigogine, I. — Estructuras disipativas",
-          "Bertalanffy, L. — Teoría general de sistemas",
-          "Morin, E. — Pensamiento complejo",
-          "Shannon, C. y Wiener, N. — Información y cibernética",
-          "Bateson, G. y von Foerster, H. — Epistemología del observador",
-          "Damasio, A., Kahneman, D. y Dehaene, S. — Neurociencia cognitiva",
-          "Lorenz, E., Bohm, D. y Capra, F. — Física no lineal y visión holística"
+          "SENASA Perú — Reglamento de certificación zoosanitaria de exportación de animales",
+          "IATA Live Animals Regulations (LAR) — Normativa de transporte aéreo de animales vivos",
+          "WOAH/OIE — Código Sanitario para los Animales Terrestres",
+          "FAVN/RNATT — Protocolo OIE de titulación de anticuerpos antirrábicos para exportación",
+          "USDA APHIS — Dog import requirements from high-risk countries",
+          "Reglamento UE 576/2013 — Movimiento de animales de compañía entre países"
         ]
       },
       {
@@ -190,6 +249,50 @@
         ]
       },
       {
+        "@type": "Dataset",
+        "@id": "https://zoovettravel.com/planificador-viaje-mascota/requisitos-por-pais/#dataset",
+        "name": "Requisitos zoosanitarios de exportación de mascotas — 22 países de destino",
+        "description": "Base de datos de requisitos zoosanitarios oficiales para exportación internacional de perros y gatos desde Perú: prueba FAVN/RNATT, cuarentena, edad mínima legal, microchip ISO y fuentes oficiales por país de destino. Contenido veterinario verificado por la Dra. Jessica Ysabel Camacho Garcia, Médico Veterinaria CMVP 12434.",
+        "url": "https://zoovettravel.com/planificador-viaje-mascota/requisitos-por-pais/",
+        "spatialCoverage": "Alemania, Argentina, Australia, Brasil, Canadá, Chile, China, Colombia, Corea del Sur, Emiratos Árabes Unidos, España, Estados Unidos, Francia, India, Italia, Japón, México, Nueva Zelanda, Reino Unido, Rusia, Singapur",
+        "temporalCoverage": "2026",
+        "inLanguage": "es",
+        "isPartOf": { "@id": "https://zoovettravel.com/planificador-viaje-mascota/#webapp" },
+        "creator": { "@id": "https://carlosravello.com/#person" },
+        "maintainer": { "@id": "https://carlosravello.com/#person" },
+        "contributor": { "@id": "https://zoovettravel.com/#jessica-camacho" }
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://zoovettravel.com/planificador-viaje-mascota/#paises-destino",
+        "name": "Países de destino cubiertos por el Planificador de Viaje para Mascotas",
+        "description": "Países con requisitos zoosanitarios verificados para exportación de mascotas desde Perú",
+        "numberOfItems": 21,
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Alemania", "item": "https://zoovettravel.com/planificador-viaje-mascota/requisitos-por-pais/" },
+          { "@type": "ListItem", "position": 2, "name": "Argentina", "item": "https://zoovettravel.com/planificador-viaje-mascota/requisitos-por-pais/" },
+          { "@type": "ListItem", "position": 3, "name": "Australia", "item": "https://zoovettravel.com/zoopedia/australia.html" },
+          { "@type": "ListItem", "position": 4, "name": "Brasil", "item": "https://zoovettravel.com/zoopedia/brasil.html" },
+          { "@type": "ListItem", "position": 5, "name": "Canadá", "item": "https://zoovettravel.com/zoopedia/canada.html" },
+          { "@type": "ListItem", "position": 6, "name": "Chile", "item": "https://zoovettravel.com/zoopedia/chile.html" },
+          { "@type": "ListItem", "position": 7, "name": "China", "item": "https://zoovettravel.com/zoopedia/china.html" },
+          { "@type": "ListItem", "position": 8, "name": "Colombia", "item": "https://zoovettravel.com/planificador-viaje-mascota/requisitos-por-pais/" },
+          { "@type": "ListItem", "position": 9, "name": "Corea del Sur", "item": "https://zoovettravel.com/zoopedia/corea-del-sur.html" },
+          { "@type": "ListItem", "position": 10, "name": "Emiratos Árabes Unidos", "item": "https://zoovettravel.com/zoopedia/eau.html" },
+          { "@type": "ListItem", "position": 11, "name": "España", "item": "https://zoovettravel.com/zoopedia/espana.html" },
+          { "@type": "ListItem", "position": 12, "name": "Estados Unidos", "item": "https://zoovettravel.com/zoopedia/eeuu.html" },
+          { "@type": "ListItem", "position": 13, "name": "Francia", "item": "https://zoovettravel.com/zoopedia/francia.html" },
+          { "@type": "ListItem", "position": 14, "name": "India", "item": "https://zoovettravel.com/zoopedia/india.html" },
+          { "@type": "ListItem", "position": 15, "name": "Italia", "item": "https://zoovettravel.com/zoopedia/italia.html" },
+          { "@type": "ListItem", "position": 16, "name": "Japón", "item": "https://zoovettravel.com/zoopedia/japon.html" },
+          { "@type": "ListItem", "position": 17, "name": "México", "item": "https://zoovettravel.com/zoopedia/mexico.html" },
+          { "@type": "ListItem", "position": 18, "name": "Nueva Zelanda", "item": "https://zoovettravel.com/zoopedia/nueva-zelanda.html" },
+          { "@type": "ListItem", "position": 19, "name": "Reino Unido", "item": "https://zoovettravel.com/zoopedia/reino-unido.html" },
+          { "@type": "ListItem", "position": 20, "name": "Rusia", "item": "https://zoovettravel.com/zoopedia/rusia.html" },
+          { "@type": "ListItem", "position": 21, "name": "Singapur", "item": "https://zoovettravel.com/zoopedia/singapur.html" }
+        ]
+      },
+      {
         "@type": "WebPage",
         "@id": "https://zoovettravel.com/planificador-viaje-mascota/#webpage",
         "url": "https://zoovettravel.com/planificador-viaje-mascota/",
@@ -197,9 +300,12 @@
         "isPartOf": { "@id": "https://zoovettravel.com/#organization" },
         "primaryImageOfPage": "https://zoovettravel.com/images/og-default.png",
         "datePublished": "2026-05-04",
-        "dateModified": "2026-05-04",
-        "lastReviewed": "2026-05-04",
-        "reviewedBy": { "@id": "https://carlosravello.com/#person" },
+        "dateModified": "2026-05-09",
+        "lastReviewed": "2026-05-09",
+        "reviewedBy": [
+          { "@id": "https://carlosravello.com/#person" },
+          { "@id": "https://zoovettravel.com/#jessica-camacho" }
+        ],
         "inLanguage": "es",
         "breadcrumb": { "@id": "https://zoovettravel.com/planificador-viaje-mascota/#breadcrumb" },
         "mainEntity": { "@id": "https://zoovettravel.com/planificador-viaje-mascota/#webapp" }
@@ -219,34 +325,22 @@
           {
             "@type": "Question",
             "name": "¿Qué calcula esta herramienta exactamente?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "El Planificador computa el timeline inverso de exportación de tu mascota: edad mínima legal por destino, plazo de vacuna antirrábica, ventana de FAVN/RNATT, vigencia del certificado de salud, endoso SENASA y permisos/cuarentenas del país destino. Devuelve un semáforo de viabilidad (Verde, Ámbar o Rojo) y un PDF con el plan completo."
-            }
+            "acceptedAnswer": { "@type": "Answer", "text": "El Planificador computa el timeline inverso de exportación de tu mascota: edad mínima legal por destino, plazo de vacuna antirrábica, ventana de FAVN/RNATT, vigencia del certificado de salud, endoso SENASA y permisos/cuarentenas del país destino. Devuelve un semáforo de viabilidad (Verde, Ámbar o Rojo) y un PDF con el plan completo." }
           },
           {
             "@type": "Question",
             "name": "¿Esta herramienta sustituye la consulta veterinaria?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "No. Es estrictamente informativa. No reemplaza consulta con un veterinario colegiado, ni la verificación directa con SENASA Perú y la autoridad sanitaria del país destino. La decisión final sobre la admisión del animal corresponde a los oficiales sanitarios y de aduana del país destino."
-            }
+            "acceptedAnswer": { "@type": "Answer", "text": "No. Es estrictamente informativa. No reemplaza consulta con un veterinario colegiado, ni la verificación directa con SENASA Perú y la autoridad sanitaria del país destino. La decisión final sobre la admisión del animal corresponde a los oficiales sanitarios y de aduana del país destino." }
           },
           {
             "@type": "Question",
             "name": "¿Por qué el planificador exige 30 días para la vacuna antirrábica si las guías dicen 21?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Legalmente la mayoría de destinos acepta 21 días, pero SENASA Perú y los criterios variables del oficial del país destino hacen que 30 días sea el mínimo recomendado para evitar rechazos. La luz ámbar (vacuna 21-29 días) implica criterio del oficial — en la práctica equivale a NO."
-            }
+            "acceptedAnswer": { "@type": "Answer", "text": "Legalmente la mayoría de destinos acepta 21 días, pero SENASA Perú y los criterios variables del oficial del país destino hacen que 30 días sea el mínimo recomendado para evitar rechazos. La luz ámbar (vacuna 21-29 días) implica criterio del oficial — en la práctica equivale a NO." }
           },
           {
             "@type": "Question",
             "name": "¿Por qué el certificado de salud solo vale 5 días si las guías de algunos países dicen 10 o 30?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "SENASA Perú, como autoridad emisora, solo valida el certificado de salud durante 5 días reales, sin importar lo que indique la guía del país destino. Sin esa validez SENASA no hay endoso del Certificado Zoosanitario de Exportación (CZE) y la mascota no viaja."
-            }
+            "acceptedAnswer": { "@type": "Answer", "text": "SENASA Perú, como autoridad emisora, solo valida el certificado de salud durante 5 días reales, sin importar lo que indique la guía del país destino. Sin esa validez SENASA no hay endoso del Certificado Zoosanitario de Exportación (CZE) y la mascota no viaja." }
           }
         ]
       },
@@ -258,36 +352,11 @@
         "totalTime": "PT2M",
         "estimatedCost": { "@type": "MonetaryAmount", "currency": "PEN", "value": "0" },
         "step": [
-          {
-            "@type": "HowToStep",
-            "position": "1",
-            "name": "Selecciona el país de destino y los datos del viaje",
-            "text": "Elige el país de destino entre los 22 disponibles, la especie de tu mascota, su fecha de nacimiento y la fecha tentativa de viaje."
-          },
-          {
-            "@type": "HowToStep",
-            "position": "2",
-            "name": "Declara el estado documental actual de tu mascota",
-            "text": "Indica si tu mascota ya cuenta con microchip ISO, vacuna antirrábica válida y/o prueba FAVN/RNATT, con sus fechas exactas de aplicación."
-          },
-          {
-            "@type": "HowToStep",
-            "position": "3",
-            "name": "Ejecuta el cálculo del timeline inverso",
-            "text": "Presiona 'Calcular' para que el planificador evalúe la coherencia entre los plazos zoosanitarios exigidos por el país destino y tu fecha de viaje declarada."
-          },
-          {
-            "@type": "HowToStep",
-            "position": "4",
-            "name": "Lee tu semáforo de viabilidad",
-            "text": "Recibirás Verde (viable en tu fecha), Ámbar (zona de riesgo, depende del oficial) o Rojo (bloqueante imposible de resolver a tiempo). El planificador detalla exactamente qué paso impide el viaje y cuántos días faltan o sobran."
-          },
-          {
-            "@type": "HowToStep",
-            "position": "5",
-            "name": "Descarga el plan PDF y contacta a Zoovet Travel",
-            "text": "Genera el PDF con tu timeline completo, fechas clave y trámites pendientes. Compártelo con tu veterinario o escríbenos por WhatsApp para gestionar tu expediente de exportación desde Perú."
-          }
+          { "@type": "HowToStep", "position": "1", "name": "Selecciona el país de destino y los datos del viaje", "text": "Elige el país de destino entre los 22 disponibles, la especie de tu mascota, su fecha de nacimiento y la fecha tentativa de viaje." },
+          { "@type": "HowToStep", "position": "2", "name": "Declara el estado documental actual de tu mascota", "text": "Indica si tu mascota ya cuenta con microchip ISO, vacuna antirrábica válida y/o prueba FAVN/RNATT, con sus fechas exactas de aplicación." },
+          { "@type": "HowToStep", "position": "3", "name": "Ejecuta el cálculo del timeline inverso", "text": "Presiona 'Calcular' para que el planificador evalúe la coherencia entre los plazos zoosanitarios exigidos por el país destino y tu fecha de viaje declarada." },
+          { "@type": "HowToStep", "position": "4", "name": "Lee tu semáforo de viabilidad", "text": "Recibirás Verde (viable en tu fecha), Ámbar (zona de riesgo, depende del oficial) o Rojo (bloqueante imposible de resolver a tiempo). El planificador detalla exactamente qué paso impide el viaje y cuántos días faltan o sobran." },
+          { "@type": "HowToStep", "position": "5", "name": "Descarga el plan PDF y contacta a Zoovet Travel", "text": "Genera el PDF con tu timeline completo, fechas clave y trámites pendientes. Compártelo con tu veterinario o escríbenos por WhatsApp para gestionar tu expediente de exportación desde Perú." }
         ]
       }
     ]
@@ -595,98 +664,4 @@
         <p class="text-xs font-semibold uppercase tracking-widest text-[#0C789E] mb-1">Identificación</p>
         <p class="text-sm font-semibold text-[#1a2e35] group-hover:text-[#0C789E] transition-colors">Microchip ISO: fundamento y marco regulatorio</p>
         <p class="text-xs text-[#1a2e35]/50 mt-1">Por qué debe ir antes de la vacuna y qué pasa si no es así.</p>
-      </a>
-      <a href="../articles/zoovet_art9_certificados-vacunacion-ES.html" class="group block border border-[#1a2e35]/10 p-4 hover:border-[#0C789E] transition-colors">
-        <p class="text-xs font-semibold uppercase tracking-widest text-[#0C789E] mb-1">Vacunación</p>
-        <p class="text-sm font-semibold text-[#1a2e35] group-hover:text-[#0C789E] transition-colors">Certificados de vacunación antirrábica: validez internacional</p>
-        <p class="text-xs text-[#1a2e35]/50 mt-1">Plazos, vigencia y diferencia entre primovacunación y refuerzo.</p>
-      </a>
-      <a href="../articles/zoovet_art10_certificado-salud-ES.html" class="group block border border-[#1a2e35]/10 p-4 hover:border-[#0C789E] transition-colors">
-        <p class="text-xs font-semibold uppercase tracking-widest text-[#0C789E] mb-1">Documentación</p>
-        <p class="text-sm font-semibold text-[#1a2e35] group-hover:text-[#0C789E] transition-colors">Certificado de salud: examen clínico y trazabilidad</p>
-        <p class="text-xs text-[#1a2e35]/50 mt-1">Quién lo emite, cuándo vence y cómo lo endosa SENASA.</p>
-      </a>
-      <a href="../articles/zoovet_art11_cuarentena-ES.html" class="group block border border-[#1a2e35]/10 p-4 hover:border-[#0C789E] transition-colors">
-        <p class="text-xs font-semibold uppercase tracking-widest text-[#0C789E] mb-1">Destino</p>
-        <p class="text-sm font-semibold text-[#1a2e35] group-hover:text-[#0C789E] transition-colors">Cuarentena en importación: modelos regulatorios por país</p>
-        <p class="text-xs text-[#1a2e35]/50 mt-1">Australia, NZ, Japón, UK: cómo funciona y cuánto cuesta.</p>
-      </a>
-      <a href="../articles/zoovet_art12_expediente-ES.html" class="group block border border-[#1a2e35]/10 p-4 hover:border-[#0C789E] transition-colors">
-        <p class="text-xs font-semibold uppercase tracking-widest text-[#0C789E] mb-1">Gestión</p>
-        <p class="text-sm font-semibold text-[#1a2e35] group-hover:text-[#0C789E] transition-colors">Expediente de exportación: cadena documental completa</p>
-        <p class="text-xs text-[#1a2e35]/50 mt-1">Taxonomía del error y qué documentos son reversibles.</p>
-      </a>
-    </div>
-  </section>
-
-  <!-- Referencia de datos: Requisitos por país -->
-  <section class="max-w-6xl mx-auto px-4 sm:px-6 pb-8">
-    <a href="requisitos-por-pais/" class="group flex items-center gap-4 border border-[#0C789E]/30 bg-[#0C789E]/5 p-5 hover:bg-[#0C789E]/10 transition-colors">
-      <div class="shrink-0 w-10 h-10 rounded-full bg-[#0C789E]/10 flex items-center justify-center text-[#0C789E]">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
-      </div>
-      <div>
-        <p class="text-xs font-semibold uppercase tracking-widest text-[#0C789E] mb-0.5">Datos de referencia</p>
-        <p class="text-sm font-semibold text-[#1a2e35] group-hover:text-[#0C789E] transition-colors">Tabla completa: requisitos zoosanitarios por país destino →</p>
-        <p class="text-xs text-[#1a2e35]/50 mt-0.5">FAVN, cuarentena, vacuna antirrábica y edad mínima para 20 países. Datos actualizados 2026.</p>
-      </div>
-    </a>
-  </section>
-
-  <!-- ═══════════════════════════════════════════════════════════
-       FOOTER
-       ═══════════════════════════════════════════════════════════ -->
-  <footer class="bg-[#1a2e35] text-[#F8FAFC] mt-16">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-10">
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-8">
-        <div>
-          <p class="text-xs font-semibold uppercase tracking-widest text-[#F8FAFC]/60 mb-3">Zoovet Travel</p>
-          <p class="text-sm text-[#F8FAFC]/80 leading-relaxed">Centro médico veterinario especializado en exportación internacional de mascotas. 12+ años, Trujillo, Perú.</p>
-          <p class="text-xs text-[#F8FAFC]/60 mt-3">Calle Cuba 241, Urb. El Recreo, Trujillo · L-S 09:00-19:00</p>
-        </div>
-        <div>
-          <p class="text-xs font-semibold uppercase tracking-widest text-[#F8FAFC]/60 mb-3">Contacto</p>
-          <a href="https://wa.me/51922083707" class="block text-sm text-[#F8FAFC]/80 hover:text-white">WhatsApp emergencias: +51 922 083 707</a>
-          <a href="https://wa.me/51979620402" class="block text-sm text-[#F8FAFC]/80 hover:text-white">WhatsApp consultas: +51 979 620 402</a>
-          <a href="mailto:contacto@zoovettravel.com" class="block text-sm text-[#F8FAFC]/80 hover:text-white">contacto@zoovettravel.com</a>
-        </div>
-        <div>
-          <p class="text-xs font-semibold uppercase tracking-widest text-[#F8FAFC]/60 mb-3">Recursos</p>
-          <a href="../index.html" class="block text-sm text-[#F8FAFC]/80 hover:text-white">Inicio</a>
-          <a href="../zoopedia/index.html" class="block text-sm text-[#F8FAFC]/80 hover:text-white">Zoopedia (20 países)</a>
-          <a href="../about.html" class="block text-sm text-[#F8FAFC]/80 hover:text-white">Sobre Zoovet</a>
-        </div>
-      </div>
-
-      <!-- Atribución (Opción A: académica + MCD) -->
-      <div class="border-t border-white/10 pt-6 text-xs text-[#F8FAFC]/50 leading-relaxed">
-        <p>
-          Arquitectura, schema engineering y estrategia SEO:
-          <a href="https://carlosravello.com" rel="me author noopener" class="text-[#F8FAFC]/80 hover:text-white underline underline-offset-2">Carlos Eduardo Ravello Joo</a>
-          · Aplicación de campo del
-          <a href="https://carlosravello.com" rel="me author noopener" class="text-[#F8FAFC]/80 hover:text-white underline underline-offset-2">Modelo de Coherencia Dinámica (MCD)</a>.
-        </p>
-        <p class="mt-2">
-          © 2013-2026 Zoovet Travel · RUC 10433053678. Datos zoosanitarios actualizados al 4 de mayo de 2026 · v1.0.0. Esta herramienta es informativa y orientativa; no reemplaza consulta veterinaria ni dictamen oficial.
-        </p>
-      </div>
-    </div>
-  </footer>
-
-  <!-- WhatsApp Float Button -->
-  <a id="whatsapp-float" href="https://wa.me/51979620402" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Zoovet Travel" class="fixed bottom-6 right-6 bg-[#25D366] text-white rounded-full w-14 h-14 flex items-center justify-center shadow-lg hover:scale-110 transition-transform z-50">
-    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zM6.597 20.13c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.149-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479s1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
-  </a>
-
-  <!-- Lógica de la app -->
-  <script src="./app.js?v=1.1.0" defer></script>
-
-  <!-- Mobile menu toggle -->
-  <script>
-    document.getElementById('mobile-menu-btn')?.addEventListener('click', () => {
-      document.getElementById('mobile-drawer')?.classList.toggle('hidden');
-    });
-  </script>
-
-</body>
-</html>
+      <
