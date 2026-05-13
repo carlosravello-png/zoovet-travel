@@ -1,0 +1,386 @@
+{
+  "total_paginas_por_categoria": {
+    "zoopedia": 63,
+    "articulo_cientifico": 39,
+    "pagina_raza": 9,
+    "pagina_servicio": 37,
+    "pagina_pais": 24,
+    "otro": 54
+  },
+  "total_paginas_por_idioma": {
+    "en": 74,
+    "es": 78,
+    "fr": 74
+  },
+  "schema": {
+    "paginas_con_json_ld": 222,
+    "paginas_sin_json_ld": 4,
+    "paginas_con_json_ld_invalido": 2
+  },
+  "paginas_huerfanas_total": 4,
+  "top_20_terminos_tecnicos": [
+    {
+      "termino": "RNATT",
+      "frecuencia_paginas": 86
+    },
+    {
+      "termino": "microchip",
+      "frecuencia_paginas": 84
+    },
+    {
+      "termino": "SENASA",
+      "frecuencia_paginas": 72
+    },
+    {
+      "termino": "rabies",
+      "frecuencia_paginas": 45
+    },
+    {
+      "termino": "FAVN",
+      "frecuencia_paginas": 34
+    },
+    {
+      "termino": "quarantine",
+      "frecuencia_paginas": 32
+    },
+    {
+      "termino": "health certificate",
+      "frecuencia_paginas": 30
+    },
+    {
+      "termino": "ISO",
+      "frecuencia_paginas": 28
+    },
+    {
+      "termino": "cuarentena",
+      "frecuencia_paginas": 27
+    },
+    {
+      "termino": "rabia",
+      "frecuencia_paginas": 26
+    },
+    {
+      "termino": "CDC",
+      "frecuencia_paginas": 17
+    },
+    {
+      "termino": "IATA",
+      "frecuencia_paginas": 12
+    },
+    {
+      "termino": "MPI",
+      "frecuencia_paginas": 12
+    },
+    {
+      "termino": "serología",
+      "frecuencia_paginas": 11
+    },
+    {
+      "termino": "APHA",
+      "frecuencia_paginas": 10
+    },
+    {
+      "termino": "576/2013",
+      "frecuencia_paginas": 9
+    },
+    {
+      "termino": "APHIS",
+      "frecuencia_paginas": 9
+    },
+    {
+      "termino": "USDA",
+      "frecuencia_paginas": 9
+    },
+    {
+      "termino": "certificado sanitario",
+      "frecuencia_paginas": 8
+    },
+    {
+      "termino": "MAPA",
+      "frecuencia_paginas": 8
+    }
+  ],
+  "gaps_cobertura_linguistica": {
+    "total_temas_incompletos": 19,
+    "muestra_max_50": [
+      {
+        "clave_tema": "PREVIEW_SEO_ZOOPEDIA",
+        "faltan_idiomas": [
+          "en",
+          "fr"
+        ],
+        "presentes": [
+          "es"
+        ]
+      },
+      {
+        "clave_tema": "articles/zoovet_art4_desparasitacionEN",
+        "faltan_idiomas": [
+          "es",
+          "fr"
+        ],
+        "presentes": [
+          "en"
+        ]
+      },
+      {
+        "clave_tema": "articles/zoovet_art4_desparasitacionES",
+        "faltan_idiomas": [
+          "en",
+          "fr"
+        ],
+        "presentes": [
+          "es"
+        ]
+      },
+      {
+        "clave_tema": "articles/zoovet_art4_desparasitacionFR",
+        "faltan_idiomas": [
+          "en",
+          "es"
+        ],
+        "presentes": [
+          "fr"
+        ]
+      },
+      {
+        "clave_tema": "articulos-interes/mexico-cdc-dog-rabies-classification-2026",
+        "faltan_idiomas": [
+          "es",
+          "fr"
+        ],
+        "presentes": [
+          "en"
+        ]
+      },
+      {
+        "clave_tema": "articulos-interes/mexico-clasificacion-cdc-rabia-canina-2026",
+        "faltan_idiomas": [
+          "en",
+          "fr"
+        ],
+        "presentes": [
+          "es"
+        ]
+      },
+      {
+        "clave_tema": "articulos-interes/mexique-classification-cdc-rage-canine-2026",
+        "faltan_idiomas": [
+          "en",
+          "es"
+        ],
+        "presentes": [
+          "fr"
+        ]
+      },
+      {
+        "clave_tema": "google65c09db8e18af7da",
+        "faltan_idiomas": [
+          "en",
+          "fr"
+        ],
+        "presentes": [
+          "es"
+        ]
+      },
+      {
+        "clave_tema": "indexnow-submit",
+        "faltan_idiomas": [
+          "en",
+          "fr"
+        ],
+        "presentes": [
+          "es"
+        ]
+      },
+      {
+        "clave_tema": "original_index",
+        "faltan_idiomas": [
+          "en",
+          "fr"
+        ],
+        "presentes": [
+          "es"
+        ]
+      },
+      {
+        "clave_tema": "pet-travel-planner/index",
+        "faltan_idiomas": [
+          "es",
+          "fr"
+        ],
+        "presentes": [
+          "en"
+        ]
+      },
+      {
+        "clave_tema": "pet-travel-planner/requirements-by-country/index",
+        "faltan_idiomas": [
+          "es",
+          "fr"
+        ],
+        "presentes": [
+          "en"
+        ]
+      },
+      {
+        "clave_tema": "planificador-viaje-mascota/index",
+        "faltan_idiomas": [
+          "en",
+          "fr"
+        ],
+        "presentes": [
+          "es"
+        ]
+      },
+      {
+        "clave_tema": "planificador-viaje-mascota/requisitos-por-pais/index",
+        "faltan_idiomas": [
+          "en",
+          "fr"
+        ],
+        "presentes": [
+          "es"
+        ]
+      },
+      {
+        "clave_tema": "planificateur-voyage-animal/exigences-par-pays/index",
+        "faltan_idiomas": [
+          "en",
+          "es"
+        ],
+        "presentes": [
+          "fr"
+        ]
+      },
+      {
+        "clave_tema": "planificateur-voyage-animal/index",
+        "faltan_idiomas": [
+          "en",
+          "es"
+        ],
+        "presentes": [
+          "fr"
+        ]
+      },
+      {
+        "clave_tema": "traveling-with-my-pet",
+        "faltan_idiomas": [
+          "es",
+          "fr"
+        ],
+        "presentes": [
+          "en"
+        ]
+      },
+      {
+        "clave_tema": "viajar-con-mi-mascota",
+        "faltan_idiomas": [
+          "en",
+          "fr"
+        ],
+        "presentes": [
+          "es"
+        ]
+      },
+      {
+        "clave_tema": "voyager-avec-mon-animal",
+        "faltan_idiomas": [
+          "en",
+          "es"
+        ],
+        "presentes": [
+          "fr"
+        ]
+      }
+    ]
+  },
+  "densidad_enlaces_internos_html_por_categoria": {
+    "zoopedia": {
+      "promedio_enlaces_internos_html": 23.67,
+      "total_enlaces_internos_html": 1491,
+      "paginas": 63
+    },
+    "articulo_cientifico": {
+      "promedio_enlaces_internos_html": 10.03,
+      "total_enlaces_internos_html": 391,
+      "paginas": 39
+    },
+    "pagina_raza": {
+      "promedio_enlaces_internos_html": 6.67,
+      "total_enlaces_internos_html": 60,
+      "paginas": 9
+    },
+    "pagina_servicio": {
+      "promedio_enlaces_internos_html": 34.0,
+      "total_enlaces_internos_html": 1258,
+      "paginas": 37
+    },
+    "pagina_pais": {
+      "promedio_enlaces_internos_html": 5.5,
+      "total_enlaces_internos_html": 132,
+      "paginas": 24
+    },
+    "otro": {
+      "promedio_enlaces_internos_html": 6.54,
+      "total_enlaces_internos_html": 353,
+      "paginas": 54
+    }
+  },
+  "categorias_mayor_densidad_enlaces": [
+    {
+      "categoria": "pagina_servicio",
+      "promedio_enlaces_internos_html": 34.0,
+      "total_enlaces_internos_html": 1258,
+      "paginas": 37
+    },
+    {
+      "categoria": "zoopedia",
+      "promedio_enlaces_internos_html": 23.67,
+      "total_enlaces_internos_html": 1491,
+      "paginas": 63
+    },
+    {
+      "categoria": "articulo_cientifico",
+      "promedio_enlaces_internos_html": 10.03,
+      "total_enlaces_internos_html": 391,
+      "paginas": 39
+    }
+  ],
+  "categorias_menor_densidad_enlaces": [
+    {
+      "categoria": "pagina_pais",
+      "promedio_enlaces_internos_html": 5.5,
+      "total_enlaces_internos_html": 132,
+      "paginas": 24
+    },
+    {
+      "categoria": "otro",
+      "promedio_enlaces_internos_html": 6.54,
+      "total_enlaces_internos_html": 353,
+      "paginas": 54
+    },
+    {
+      "categoria": "pagina_raza",
+      "promedio_enlaces_internos_html": 6.67,
+      "total_enlaces_internos_html": 60,
+      "paginas": 9
+    }
+  ],
+  "inteligencia_estrategica": {
+    "fortalezas": [
+      "Vocabulario regulatorio repetido en zoopedia y serie tecnica: base para glosario y entidades.",
+      "Estructura trilingue en muchas rutas: activo para internacionalizacion SEO."
+    ],
+    "riesgos": [
+      "Huerfanas reducen descubrimiento interno.",
+      "Sin JSON-LD se pierden rich results.",
+      "Temas con idiomas incompletos fragmentan senal de producto."
+    ],
+    "oportunidades_prioritarias": [
+      "Glosario desde terminos_tecnicos_frecuencia.json.",
+      "Enlaces hub -> huerfanas.",
+      "JSON-LD primero en zoopedia y articles."
+    ]
+  }
+}

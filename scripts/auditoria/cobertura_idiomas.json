@@ -1,0 +1,1668 @@
+{
+  "temas": [
+    {
+      "clave_tema": "PREVIEW_SEO_ZOOPEDIA",
+      "es": [
+        "PREVIEW_SEO_ZOOPEDIA.html"
+      ],
+      "en": [],
+      "fr": [],
+      "idiomas_presentes": [
+        "es"
+      ],
+      "cobertura_completa": false
+    },
+    {
+      "clave_tema": "about",
+      "es": [
+        "about.html"
+      ],
+      "en": [
+        "about-en.html"
+      ],
+      "fr": [
+        "about-fr.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "articles/index",
+      "es": [
+        "articles/index.html"
+      ],
+      "en": [
+        "articles/index-en.html"
+      ],
+      "fr": [
+        "articles/index-fr.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "articles/zoovet_art10_certificado-salud",
+      "es": [
+        "articles/zoovet_art10_certificado-salud-ES.html"
+      ],
+      "en": [
+        "articles/zoovet_art10_certificado-salud-EN.html"
+      ],
+      "fr": [
+        "articles/zoovet_art10_certificado-salud-FR.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "articles/zoovet_art11_cuarentena",
+      "es": [
+        "articles/zoovet_art11_cuarentena-ES.html"
+      ],
+      "en": [
+        "articles/zoovet_art11_cuarentena-EN.html"
+      ],
+      "fr": [
+        "articles/zoovet_art11_cuarentena-FR.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "articles/zoovet_art12_expediente",
+      "es": [
+        "articles/zoovet_art12_expediente-ES.html"
+      ],
+      "en": [
+        "articles/zoovet_art12_expediente-EN.html"
+      ],
+      "fr": [
+        "articles/zoovet_art12_expediente-FR.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "articles/zoovet_art4_desparasitacionEN",
+      "es": [],
+      "en": [
+        "articles/zoovet_art4_desparasitacionEN.html"
+      ],
+      "fr": [],
+      "idiomas_presentes": [
+        "en"
+      ],
+      "cobertura_completa": false
+    },
+    {
+      "clave_tema": "articles/zoovet_art4_desparasitacionES",
+      "es": [
+        "articles/zoovet_art4_desparasitacionES.html"
+      ],
+      "en": [],
+      "fr": [],
+      "idiomas_presentes": [
+        "es"
+      ],
+      "cobertura_completa": false
+    },
+    {
+      "clave_tema": "articles/zoovet_art4_desparasitacionFR",
+      "es": [],
+      "en": [],
+      "fr": [
+        "articles/zoovet_art4_desparasitacionFR.html"
+      ],
+      "idiomas_presentes": [
+        "fr"
+      ],
+      "cobertura_completa": false
+    },
+    {
+      "clave_tema": "articles/zoovet_art5_estres-metabolico",
+      "es": [
+        "articles/zoovet_art5_estres-metabolico-ES.html"
+      ],
+      "en": [
+        "articles/zoovet_art5_estres-metabolico-EN.html"
+      ],
+      "fr": [
+        "articles/zoovet_art5_estres-metabolico-FR.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "articles/zoovet_art6_microchip",
+      "es": [
+        "articles/zoovet_art6_microchip-ES.html"
+      ],
+      "en": [
+        "articles/zoovet_art6_microchip-EN.html"
+      ],
+      "fr": [
+        "articles/zoovet_art6_microchip-FR.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "articles/zoovet_art7_jetlag",
+      "es": [
+        "articles/zoovet_art7_jetlag-ES.html"
+      ],
+      "en": [
+        "articles/zoovet_art7_jetlag-EN.html"
+      ],
+      "fr": [
+        "articles/zoovet_art7_jetlag-FR.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "articles/zoovet_art8_hipobaria",
+      "es": [
+        "articles/zoovet_art8_hipobaria-ES.html"
+      ],
+      "en": [
+        "articles/zoovet_art8_hipobaria-EN.html"
+      ],
+      "fr": [
+        "articles/zoovet_art8_hipobaria-FR.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "articles/zoovet_art9_certificados-vacunacion",
+      "es": [
+        "articles/zoovet_art9_certificados-vacunacion-ES.html"
+      ],
+      "en": [
+        "articles/zoovet_art9_certificados-vacunacion-EN.html"
+      ],
+      "fr": [
+        "articles/zoovet_art9_certificados-vacunacion-FR.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "articles/zoovet_article2",
+      "es": [
+        "articles/zoovet_article2_ES.html"
+      ],
+      "en": [
+        "articles/zoovet_article2_EN.html"
+      ],
+      "fr": [
+        "articles/zoovet_article2_FR.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "articles/zoovet_article3_braquicefalos",
+      "es": [
+        "articles/zoovet_article3_braquicefalos_ES.html"
+      ],
+      "en": [
+        "articles/zoovet_article3_braquicefalos_EN.html"
+      ],
+      "fr": [
+        "articles/zoovet_article3_braquicefalos_FR.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "articles/zoovet_article_v2",
+      "es": [
+        "articles/zoovet_article_v2.html"
+      ],
+      "en": [
+        "articles/zoovet_article_v2-en.html"
+      ],
+      "fr": [
+        "articles/zoovet_article_v2_FR.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "articulos-interes/articulo_alimentacion_antes_durante_vuelo",
+      "es": [
+        "articulos-interes/articulo_alimentacion_antes_durante_vuelo.html"
+      ],
+      "en": [
+        "articulos-interes/articulo_alimentacion_antes_durante_vuelo-EN.html"
+      ],
+      "fr": [
+        "articulos-interes/articulo_alimentacion_antes_durante_vuelo-FR.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "articulos-interes/articulo_certificado_zoosanitario_senasa_trujillo",
+      "es": [
+        "articulos-interes/articulo_certificado_zoosanitario_senasa_trujillo.html"
+      ],
+      "en": [
+        "articulos-interes/articulo_certificado_zoosanitario_senasa_trujillo-EN.html"
+      ],
+      "fr": [
+        "articulos-interes/articulo_certificado_zoosanitario_senasa_trujillo-FR.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "articulos-interes/articulo_cuanto_tiempo_antes_viaje_mascota",
+      "es": [
+        "articulos-interes/articulo_cuanto_tiempo_antes_viaje_mascota.html"
+      ],
+      "en": [
+        "articulos-interes/articulo_cuanto_tiempo_antes_viaje_mascota-EN.html"
+      ],
+      "fr": [
+        "articulos-interes/articulo_cuanto_tiempo_antes_viaje_mascota-FR.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "articulos-interes/articulo_golden_labrador_cabina_bodega",
+      "es": [
+        "articulos-interes/articulo_golden_labrador_cabina_bodega.html"
+      ],
+      "en": [
+        "articulos-interes/articulo_golden_labrador_cabina_bodega-EN.html"
+      ],
+      "fr": [
+        "articulos-interes/articulo_golden_labrador_cabina_bodega-FR.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "articulos-interes/articulo_rechazo_aduana_mascota",
+      "es": [
+        "articulos-interes/articulo_rechazo_aduana_mascota.html"
+      ],
+      "en": [
+        "articulos-interes/articulo_rechazo_aduana_mascota-EN.html"
+      ],
+      "fr": [
+        "articulos-interes/articulo_rechazo_aduana_mascota-FR.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "articulos-interes/articulo_vacuna_antirrabica_para_viajar",
+      "es": [
+        "articulos-interes/articulo_vacuna_antirrabica_para_viajar.html"
+      ],
+      "en": [
+        "articulos-interes/articulo_vacuna_antirrabica_para_viajar-EN.html"
+      ],
+      "fr": [
+        "articulos-interes/articulo_vacuna_antirrabica_para_viajar-FR.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "articulos-interes/bulldog_frances",
+      "es": [
+        "articulos-interes/bulldog_frances.html"
+      ],
+      "en": [
+        "articulos-interes/bulldog_frances-EN.html"
+      ],
+      "fr": [
+        "articulos-interes/bulldog_frances-FR.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "articulos-interes/como_viajar_perro_espana_desde_peru_requisitos_final_v2",
+      "es": [
+        "articulos-interes/como_viajar_perro_espana_desde_peru_requisitos_final_v2.html"
+      ],
+      "en": [
+        "articulos-interes/como_viajar_perro_espana_desde_peru_requisitos_final_v2-EN.html"
+      ],
+      "fr": [
+        "articulos-interes/como_viajar_perro_espana_desde_peru_requisitos_final_v2-FR.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "articulos-interes/dondetramitarentrujillo",
+      "es": [
+        "articulos-interes/dondetramitarentrujillo.html"
+      ],
+      "en": [
+        "articulos-interes/dondetramitarentrujillo-EN.html"
+      ],
+      "fr": [
+        "articulos-interes/dondetramitarentrujillo-FR.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "articulos-interes/gatosbodegaavion",
+      "es": [
+        "articulos-interes/gatosbodegaavion.html"
+      ],
+      "en": [
+        "articulos-interes/gatosbodegaavion-EN.html"
+      ],
+      "fr": [
+        "articulos-interes/gatosbodegaavion-FR.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "articulos-interes/index",
+      "es": [
+        "articulos-interes/index.html"
+      ],
+      "en": [
+        "articulos-interes/index-en.html"
+      ],
+      "fr": [
+        "articulos-interes/index-fr.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "articulos-interes/llevar_gato_estados_unidos_desde_peru_guia_2026_editorial_v2",
+      "es": [
+        "articulos-interes/llevar_gato_estados_unidos_desde_peru_guia_2026_editorial_v2.html"
+      ],
+      "en": [
+        "articulos-interes/llevar_gato_estados_unidos_desde_peru_guia_2026_editorial_v2-EN.html"
+      ],
+      "fr": [
+        "articulos-interes/llevar_gato_estados_unidos_desde_peru_guia_2026_editorial_v2-FR.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "articulos-interes/llevar_mascota_japon_proceso_que_pocos_intentan",
+      "es": [
+        "articulos-interes/llevar_mascota_japon_proceso_que_pocos_intentan.html"
+      ],
+      "en": [
+        "articulos-interes/llevar_mascota_japon_proceso_que_pocos_intentan-EN.html"
+      ],
+      "fr": [
+        "articulos-interes/llevar_mascota_japon_proceso_que_pocos_intentan-FR.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "articulos-interes/mascotabodega",
+      "es": [
+        "articulos-interes/mascotabodega.html"
+      ],
+      "en": [
+        "articulos-interes/mascotabodega-EN.html"
+      ],
+      "fr": [
+        "articulos-interes/mascotabodega-FR.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "articulos-interes/mascotasinpapeles",
+      "es": [
+        "articulos-interes/mascotasinpapeles.html"
+      ],
+      "en": [
+        "articulos-interes/mascotasinpapeles-EN.html"
+      ],
+      "fr": [
+        "articulos-interes/mascotasinpapeles-FR.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "articulos-interes/mexico-cdc-dog-rabies-classification-2026",
+      "es": [],
+      "en": [
+        "articulos-interes/mexico-cdc-dog-rabies-classification-2026.html"
+      ],
+      "fr": [],
+      "idiomas_presentes": [
+        "en"
+      ],
+      "cobertura_completa": false
+    },
+    {
+      "clave_tema": "articulos-interes/mexico-clasificacion-cdc-rabia-canina-2026",
+      "es": [
+        "articulos-interes/mexico-clasificacion-cdc-rabia-canina-2026.html"
+      ],
+      "en": [],
+      "fr": [],
+      "idiomas_presentes": [
+        "es"
+      ],
+      "cobertura_completa": false
+    },
+    {
+      "clave_tema": "articulos-interes/mexique-classification-cdc-rage-canine-2026",
+      "es": [],
+      "en": [],
+      "fr": [
+        "articulos-interes/mexique-classification-cdc-rage-canine-2026.html"
+      ],
+      "idiomas_presentes": [
+        "fr"
+      ],
+      "cobertura_completa": false
+    },
+    {
+      "clave_tema": "articulos-interes/prepararatuperro",
+      "es": [
+        "articulos-interes/prepararatuperro.html"
+      ],
+      "en": [
+        "articulos-interes/prepararatuperro-EN.html"
+      ],
+      "fr": [
+        "articulos-interes/prepararatuperro-FR.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "articulos-interes/queeselmicrochipdondelotramitas",
+      "es": [
+        "articulos-interes/queeselmicrochipdondelotramitas.html"
+      ],
+      "en": [
+        "articulos-interes/queeselmicrochipdondelotramitas-EN.html"
+      ],
+      "fr": [
+        "articulos-interes/queeselmicrochipdondelotramitas-FR.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "articulos-interes/requisitos_mascota_reino_unido_desde_latinoamerica_editorial_v2",
+      "es": [
+        "articulos-interes/requisitos_mascota_reino_unido_desde_latinoamerica_editorial_v2.html"
+      ],
+      "en": [
+        "articulos-interes/requisitos_mascota_reino_unido_desde_latinoamerica_editorial_v2-EN.html"
+      ],
+      "fr": [
+        "articulos-interes/requisitos_mascota_reino_unido_desde_latinoamerica_editorial_v2-FR.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "articulos-interes/rnattviajes",
+      "es": [
+        "articulos-interes/rnattviajes.html"
+      ],
+      "en": [
+        "articulos-interes/rnattviajes-EN.html"
+      ],
+      "fr": [
+        "articulos-interes/rnattviajes-FR.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "articulos-interes/streesmascotas",
+      "es": [
+        "articulos-interes/streesmascotas.html"
+      ],
+      "en": [
+        "articulos-interes/streesmascotas-EN.html"
+      ],
+      "fr": [
+        "articulos-interes/streesmascotas-FR.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "articulos-interes/transportindeal",
+      "es": [
+        "articulos-interes/transportindeal.html"
+      ],
+      "en": [
+        "articulos-interes/transportindeal-EN.html"
+      ],
+      "fr": [
+        "articulos-interes/transportindeal-FR.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "articulos-interes/veterimariosntrujillo",
+      "es": [
+        "articulos-interes/veterimariosntrujillo.html"
+      ],
+      "en": [
+        "articulos-interes/veterimariosntrujillo-EN.html"
+      ],
+      "fr": [
+        "articulos-interes/veterimariosntrujillo-FR.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "articulos-interes/viaja-chile-argentina",
+      "es": [
+        "articulos-interes/viaja-chile-argentina.html"
+      ],
+      "en": [
+        "articulos-interes/viaja-chile-argentina-EN.html"
+      ],
+      "fr": [
+        "articulos-interes/viaja-chile-argentina-FR.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "articulos-interes/viajar_mascotas_australia_proceso_mas_estricto_editorial",
+      "es": [
+        "articulos-interes/viajar_mascotas_australia_proceso_mas_estricto_editorial.html"
+      ],
+      "en": [
+        "articulos-interes/viajar_mascotas_australia_proceso_mas_estricto_editorial-EN.html"
+      ],
+      "fr": [
+        "articulos-interes/viajar_mascotas_australia_proceso_mas_estricto_editorial-FR.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "articulos-interes/viajarconpug",
+      "es": [
+        "articulos-interes/viajarconpug.html"
+      ],
+      "en": [
+        "articulos-interes/viajarconpug-EN.html"
+      ],
+      "fr": [
+        "articulos-interes/viajarconpug-FR.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "articulos-interes/viajeanimalgeriatrico",
+      "es": [
+        "articulos-interes/viajeanimalgeriatrico.html"
+      ],
+      "en": [
+        "articulos-interes/viajeanimalgeriatrico-EN.html"
+      ],
+      "fr": [
+        "articulos-interes/viajeanimalgeriatrico-FR.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "articulos-interes/zoovet_canada_exportacion",
+      "es": [
+        "articulos-interes/zoovet_canada_exportacion.html"
+      ],
+      "en": [
+        "articulos-interes/zoovet_canada_exportacion-EN.html"
+      ],
+      "fr": [
+        "articulos-interes/zoovet_canada_exportacion-FR.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "cargo",
+      "es": [
+        "cargo.html"
+      ],
+      "en": [
+        "cargo-en.html"
+      ],
+      "fr": [
+        "cargo-fr.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "exportar-perro-requisitos",
+      "es": [
+        "exportar-perro-requisitos.html"
+      ],
+      "en": [
+        "exportar-perro-requisitos-en.html"
+      ],
+      "fr": [
+        "exportar-perro-requisitos-fr.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "favn",
+      "es": [
+        "favn-es.html"
+      ],
+      "en": [
+        "favn-en.html"
+      ],
+      "fr": [
+        "favn-fr.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "google65c09db8e18af7da",
+      "es": [
+        "google65c09db8e18af7da.html"
+      ],
+      "en": [],
+      "fr": [],
+      "idiomas_presentes": [
+        "es"
+      ],
+      "cobertura_completa": false
+    },
+    {
+      "clave_tema": "index",
+      "es": [
+        "index.html"
+      ],
+      "en": [
+        "index-en.html"
+      ],
+      "fr": [
+        "index-fr.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "indexnow-submit",
+      "es": [
+        "indexnow-submit.html"
+      ],
+      "en": [],
+      "fr": [],
+      "idiomas_presentes": [
+        "es"
+      ],
+      "cobertura_completa": false
+    },
+    {
+      "clave_tema": "kennels",
+      "es": [
+        "kennels.html"
+      ],
+      "en": [
+        "kennels-en.html"
+      ],
+      "fr": [
+        "kennels-fr.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "original_index",
+      "es": [
+        "original_index.html"
+      ],
+      "en": [],
+      "fr": [],
+      "idiomas_presentes": [
+        "es"
+      ],
+      "cobertura_completa": false
+    },
+    {
+      "clave_tema": "pet-travel-planner/index",
+      "es": [],
+      "en": [
+        "pet-travel-planner/index.html"
+      ],
+      "fr": [],
+      "idiomas_presentes": [
+        "en"
+      ],
+      "cobertura_completa": false
+    },
+    {
+      "clave_tema": "pet-travel-planner/requirements-by-country/index",
+      "es": [],
+      "en": [
+        "pet-travel-planner/requirements-by-country/index.html"
+      ],
+      "fr": [],
+      "idiomas_presentes": [
+        "en"
+      ],
+      "cobertura_completa": false
+    },
+    {
+      "clave_tema": "planificador-viaje-mascota/index",
+      "es": [
+        "planificador-viaje-mascota/index.html"
+      ],
+      "en": [],
+      "fr": [],
+      "idiomas_presentes": [
+        "es"
+      ],
+      "cobertura_completa": false
+    },
+    {
+      "clave_tema": "planificador-viaje-mascota/requisitos-por-pais/index",
+      "es": [
+        "planificador-viaje-mascota/requisitos-por-pais/index.html"
+      ],
+      "en": [],
+      "fr": [],
+      "idiomas_presentes": [
+        "es"
+      ],
+      "cobertura_completa": false
+    },
+    {
+      "clave_tema": "planificateur-voyage-animal/exigences-par-pays/index",
+      "es": [],
+      "en": [],
+      "fr": [
+        "planificateur-voyage-animal/exigences-par-pays/index.html"
+      ],
+      "idiomas_presentes": [
+        "fr"
+      ],
+      "cobertura_completa": false
+    },
+    {
+      "clave_tema": "planificateur-voyage-animal/index",
+      "es": [],
+      "en": [],
+      "fr": [
+        "planificateur-voyage-animal/index.html"
+      ],
+      "idiomas_presentes": [
+        "fr"
+      ],
+      "cobertura_completa": false
+    },
+    {
+      "clave_tema": "responsabilidad-veterinario",
+      "es": [
+        "responsabilidad-veterinario.html"
+      ],
+      "en": [
+        "responsabilidad-veterinario-en.html"
+      ],
+      "fr": [
+        "responsabilidad-veterinario-fr.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "serologia-rabia-mascotas-peru",
+      "es": [
+        "serologia-rabia-mascotas-peru.html"
+      ],
+      "en": [
+        "serologia-rabia-mascotas-peru-en.html"
+      ],
+      "fr": [
+        "serologia-rabia-mascotas-peru-fr.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "traveling-with-my-pet",
+      "es": [],
+      "en": [
+        "traveling-with-my-pet.html"
+      ],
+      "fr": [],
+      "idiomas_presentes": [
+        "en"
+      ],
+      "cobertura_completa": false
+    },
+    {
+      "clave_tema": "viajar-con-mi-mascota",
+      "es": [
+        "viajar-con-mi-mascota.html"
+      ],
+      "en": [],
+      "fr": [],
+      "idiomas_presentes": [
+        "es"
+      ],
+      "cobertura_completa": false
+    },
+    {
+      "clave_tema": "viajar-sin-favn-eeuu",
+      "es": [
+        "viajar-sin-favn-eeuu.html"
+      ],
+      "en": [
+        "viajar-sin-favn-eeuu-en.html"
+      ],
+      "fr": [
+        "viajar-sin-favn-eeuu-fr.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "voyager-avec-mon-animal",
+      "es": [],
+      "en": [],
+      "fr": [
+        "voyager-avec-mon-animal.html"
+      ],
+      "idiomas_presentes": [
+        "fr"
+      ],
+      "cobertura_completa": false
+    },
+    {
+      "clave_tema": "zoopedia/australia",
+      "es": [
+        "zoopedia/australia.html"
+      ],
+      "en": [
+        "zoopedia/australia-en.html"
+      ],
+      "fr": [
+        "zoopedia/australia-fr.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "zoopedia/brasil",
+      "es": [
+        "zoopedia/brasil.html"
+      ],
+      "en": [
+        "zoopedia/brasil-en.html"
+      ],
+      "fr": [
+        "zoopedia/brasil-fr.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "zoopedia/canada",
+      "es": [
+        "zoopedia/canada.html"
+      ],
+      "en": [
+        "zoopedia/canada-en.html"
+      ],
+      "fr": [
+        "zoopedia/canada-fr.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "zoopedia/chile",
+      "es": [
+        "zoopedia/chile.html"
+      ],
+      "en": [
+        "zoopedia/chile-en.html"
+      ],
+      "fr": [
+        "zoopedia/chile-fr.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "zoopedia/china",
+      "es": [
+        "zoopedia/china.html"
+      ],
+      "en": [
+        "zoopedia/china-en.html"
+      ],
+      "fr": [
+        "zoopedia/china-fr.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "zoopedia/corea-del-sur",
+      "es": [
+        "zoopedia/corea-del-sur.html"
+      ],
+      "en": [
+        "zoopedia/corea-del-sur-en.html"
+      ],
+      "fr": [
+        "zoopedia/corea-del-sur-fr.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "zoopedia/eau",
+      "es": [
+        "zoopedia/eau.html"
+      ],
+      "en": [
+        "zoopedia/eau-en.html"
+      ],
+      "fr": [
+        "zoopedia/eau-fr.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "zoopedia/eeuu",
+      "es": [
+        "zoopedia/eeuu.html"
+      ],
+      "en": [
+        "zoopedia/eeuu-en.html"
+      ],
+      "fr": [
+        "zoopedia/eeuu-fr.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "zoopedia/espana",
+      "es": [
+        "zoopedia/espana.html"
+      ],
+      "en": [
+        "zoopedia/espana-en.html"
+      ],
+      "fr": [
+        "zoopedia/espana-fr.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "zoopedia/francia",
+      "es": [
+        "zoopedia/francia.html"
+      ],
+      "en": [
+        "zoopedia/francia-en.html"
+      ],
+      "fr": [
+        "zoopedia/francia-fr.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "zoopedia/index",
+      "es": [
+        "zoopedia/index.html"
+      ],
+      "en": [
+        "zoopedia/index-en.html"
+      ],
+      "fr": [
+        "zoopedia/index-fr.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "zoopedia/india",
+      "es": [
+        "zoopedia/india.html"
+      ],
+      "en": [
+        "zoopedia/india-en.html"
+      ],
+      "fr": [
+        "zoopedia/india-fr.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "zoopedia/italia",
+      "es": [
+        "zoopedia/italia.html"
+      ],
+      "en": [
+        "zoopedia/italia-en.html"
+      ],
+      "fr": [
+        "zoopedia/italia-fr.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "zoopedia/japon",
+      "es": [
+        "zoopedia/japon.html"
+      ],
+      "en": [
+        "zoopedia/japon-en.html"
+      ],
+      "fr": [
+        "zoopedia/japon-fr.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "zoopedia/mexico",
+      "es": [
+        "zoopedia/mexico.html"
+      ],
+      "en": [
+        "zoopedia/mexico-en.html"
+      ],
+      "fr": [
+        "zoopedia/mexico-fr.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "zoopedia/nueva-zelanda",
+      "es": [
+        "zoopedia/nueva-zelanda.html"
+      ],
+      "en": [
+        "zoopedia/nueva-zelanda-en.html"
+      ],
+      "fr": [
+        "zoopedia/nueva-zelanda-fr.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "zoopedia/reino-unido",
+      "es": [
+        "zoopedia/reino-unido.html"
+      ],
+      "en": [
+        "zoopedia/reino-unido-en.html"
+      ],
+      "fr": [
+        "zoopedia/reino-unido-fr.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "zoopedia/rusia",
+      "es": [
+        "zoopedia/rusia.html"
+      ],
+      "en": [
+        "zoopedia/rusia-en.html"
+      ],
+      "fr": [
+        "zoopedia/rusia-fr.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "zoopedia/singapur",
+      "es": [
+        "zoopedia/singapur.html"
+      ],
+      "en": [
+        "zoopedia/singapur-en.html"
+      ],
+      "fr": [
+        "zoopedia/singapur-fr.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "zoopedia/sudafrica",
+      "es": [
+        "zoopedia/sudafrica.html"
+      ],
+      "en": [
+        "zoopedia/sudafrica-en.html"
+      ],
+      "fr": [
+        "zoopedia/sudafrica-fr.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    },
+    {
+      "clave_tema": "zoopedia/union-europea",
+      "es": [
+        "zoopedia/union-europea.html"
+      ],
+      "en": [
+        "zoopedia/union-europea-en.html"
+      ],
+      "fr": [
+        "zoopedia/union-europea-fr.html"
+      ],
+      "idiomas_presentes": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "cobertura_completa": true
+    }
+  ],
+  "temas_cobertura_incompleta": [
+    {
+      "clave_tema": "PREVIEW_SEO_ZOOPEDIA",
+      "faltan_idiomas": [
+        "en",
+        "fr"
+      ],
+      "presentes": [
+        "es"
+      ]
+    },
+    {
+      "clave_tema": "articles/zoovet_art4_desparasitacionEN",
+      "faltan_idiomas": [
+        "es",
+        "fr"
+      ],
+      "presentes": [
+        "en"
+      ]
+    },
+    {
+      "clave_tema": "articles/zoovet_art4_desparasitacionES",
+      "faltan_idiomas": [
+        "en",
+        "fr"
+      ],
+      "presentes": [
+        "es"
+      ]
+    },
+    {
+      "clave_tema": "articles/zoovet_art4_desparasitacionFR",
+      "faltan_idiomas": [
+        "en",
+        "es"
+      ],
+      "presentes": [
+        "fr"
+      ]
+    },
+    {
+      "clave_tema": "articulos-interes/mexico-cdc-dog-rabies-classification-2026",
+      "faltan_idiomas": [
+        "es",
+        "fr"
+      ],
+      "presentes": [
+        "en"
+      ]
+    },
+    {
+      "clave_tema": "articulos-interes/mexico-clasificacion-cdc-rabia-canina-2026",
+      "faltan_idiomas": [
+        "en",
+        "fr"
+      ],
+      "presentes": [
+        "es"
+      ]
+    },
+    {
+      "clave_tema": "articulos-interes/mexique-classification-cdc-rage-canine-2026",
+      "faltan_idiomas": [
+        "en",
+        "es"
+      ],
+      "presentes": [
+        "fr"
+      ]
+    },
+    {
+      "clave_tema": "google65c09db8e18af7da",
+      "faltan_idiomas": [
+        "en",
+        "fr"
+      ],
+      "presentes": [
+        "es"
+      ]
+    },
+    {
+      "clave_tema": "indexnow-submit",
+      "faltan_idiomas": [
+        "en",
+        "fr"
+      ],
+      "presentes": [
+        "es"
+      ]
+    },
+    {
+      "clave_tema": "original_index",
+      "faltan_idiomas": [
+        "en",
+        "fr"
+      ],
+      "presentes": [
+        "es"
+      ]
+    },
+    {
+      "clave_tema": "pet-travel-planner/index",
+      "faltan_idiomas": [
+        "es",
+        "fr"
+      ],
+      "presentes": [
+        "en"
+      ]
+    },
+    {
+      "clave_tema": "pet-travel-planner/requirements-by-country/index",
+      "faltan_idiomas": [
+        "es",
+        "fr"
+      ],
+      "presentes": [
+        "en"
+      ]
+    },
+    {
+      "clave_tema": "planificador-viaje-mascota/index",
+      "faltan_idiomas": [
+        "en",
+        "fr"
+      ],
+      "presentes": [
+        "es"
+      ]
+    },
+    {
+      "clave_tema": "planificador-viaje-mascota/requisitos-por-pais/index",
+      "faltan_idiomas": [
+        "en",
+        "fr"
+      ],
+      "presentes": [
+        "es"
+      ]
+    },
+    {
+      "clave_tema": "planificateur-voyage-animal/exigences-par-pays/index",
+      "faltan_idiomas": [
+        "en",
+        "es"
+      ],
+      "presentes": [
+        "fr"
+      ]
+    },
+    {
+      "clave_tema": "planificateur-voyage-animal/index",
+      "faltan_idiomas": [
+        "en",
+        "es"
+      ],
+      "presentes": [
+        "fr"
+      ]
+    },
+    {
+      "clave_tema": "traveling-with-my-pet",
+      "faltan_idiomas": [
+        "es",
+        "fr"
+      ],
+      "presentes": [
+        "en"
+      ]
+    },
+    {
+      "clave_tema": "viajar-con-mi-mascota",
+      "faltan_idiomas": [
+        "en",
+        "fr"
+      ],
+      "presentes": [
+        "es"
+      ]
+    },
+    {
+      "clave_tema": "voyager-avec-mon-animal",
+      "faltan_idiomas": [
+        "en",
+        "es"
+      ],
+      "presentes": [
+        "fr"
+      ]
+    }
+  ],
+  "total_temas": 88,
+  "total_incompletos": 19
+}

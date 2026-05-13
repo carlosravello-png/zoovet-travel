@@ -1,0 +1,33 @@
+{
+  "paginas": [
+    {
+      "ruta": "PREVIEW_SEO_ZOOPEDIA.html",
+      "categoria": "otro",
+      "prioridad_sugerida": "baja",
+      "titulo": "Preview SEO Zoopedia — 60 cambios propuestos",
+      "lang": "es"
+    },
+    {
+      "ruta": "google65c09db8e18af7da.html",
+      "categoria": "otro",
+      "prioridad_sugerida": "baja",
+      "titulo": "",
+      "lang": "es"
+    },
+    {
+      "ruta": "indexnow-submit.html",
+      "categoria": "otro",
+      "prioridad_sugerida": "baja",
+      "titulo": "IndexNow - Enviar URLs",
+      "lang": "es"
+    },
+    {
+      "ruta": "original_index.html",
+      "categoria": "otro",
+      "prioridad_sugerida": "baja",
+      "titulo": "",
+      "lang": "es"
+    }
+  ],
+  "total": 4
+}
