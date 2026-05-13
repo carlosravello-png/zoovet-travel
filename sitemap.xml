@@ -2217,4 +2217,187 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://zoovettravel.com/planificateur-voyage-animal/exigences-par-pays/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zoovettravel.com/planificador-viaje-mascota/requisitos-por-pais/" />
   </url>
+
+
+  <!-- GLOSARIO REGULATORIO -->
+  <url>
+    <loc>https://zoovettravel.com/glosario/</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/glosario/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://zoovettravel.com/glosario/index-en.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zoovettravel.com/glosario/index-fr.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zoovettravel.com/glosario/" />
+  </url>
+  <url>
+    <loc>https://zoovettravel.com/glosario/index-en.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/glosario/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://zoovettravel.com/glosario/index-en.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zoovettravel.com/glosario/index-fr.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zoovettravel.com/glosario/" />
+  </url>
+  <url>
+    <loc>https://zoovettravel.com/glosario/index-fr.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/glosario/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://zoovettravel.com/glosario/index-en.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zoovettravel.com/glosario/index-fr.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zoovettravel.com/glosario/" />
+  </url>
+  <url>
+    <loc>https://zoovettravel.com/glosario/favn.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/glosario/favn.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://zoovettravel.com/glosario/favn-en.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zoovettravel.com/glosario/favn-fr.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zoovettravel.com/glosario/favn.html" />
+  </url>
+  <url>
+    <loc>https://zoovettravel.com/glosario/favn-en.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/glosario/favn.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://zoovettravel.com/glosario/favn-en.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zoovettravel.com/glosario/favn-fr.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zoovettravel.com/glosario/favn.html" />
+  </url>
+  <url>
+    <loc>https://zoovettravel.com/glosario/favn-fr.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/glosario/favn.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://zoovettravel.com/glosario/favn-en.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zoovettravel.com/glosario/favn-fr.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zoovettravel.com/glosario/favn.html" />
+  </url>
+  <url>
+    <loc>https://zoovettravel.com/glosario/microchip-iso.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.78</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/glosario/microchip-iso.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://zoovettravel.com/glosario/microchip-iso-en.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zoovettravel.com/glosario/microchip-iso-fr.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zoovettravel.com/glosario/microchip-iso.html" />
+  </url>
+  <url>
+    <loc>https://zoovettravel.com/glosario/microchip-iso-en.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.78</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/glosario/microchip-iso.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://zoovettravel.com/glosario/microchip-iso-en.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zoovettravel.com/glosario/microchip-iso-fr.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zoovettravel.com/glosario/microchip-iso.html" />
+  </url>
+  <url>
+    <loc>https://zoovettravel.com/glosario/microchip-iso-fr.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.78</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/glosario/microchip-iso.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://zoovettravel.com/glosario/microchip-iso-en.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zoovettravel.com/glosario/microchip-iso-fr.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zoovettravel.com/glosario/microchip-iso.html" />
+  </url>
+  <url>
+    <loc>https://zoovettravel.com/glosario/senasa.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.78</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/glosario/senasa.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://zoovettravel.com/glosario/senasa-en.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zoovettravel.com/glosario/senasa-fr.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zoovettravel.com/glosario/senasa.html" />
+  </url>
+  <url>
+    <loc>https://zoovettravel.com/glosario/senasa-en.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.78</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/glosario/senasa.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://zoovettravel.com/glosario/senasa-en.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zoovettravel.com/glosario/senasa-fr.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zoovettravel.com/glosario/senasa.html" />
+  </url>
+  <url>
+    <loc>https://zoovettravel.com/glosario/senasa-fr.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.78</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/glosario/senasa.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://zoovettravel.com/glosario/senasa-en.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zoovettravel.com/glosario/senasa-fr.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zoovettravel.com/glosario/senasa.html" />
+  </url>
+  <url>
+    <loc>https://zoovettravel.com/glosario/cuarentena.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.78</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/glosario/cuarentena.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://zoovettravel.com/glosario/cuarentena-en.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zoovettravel.com/glosario/cuarentena-fr.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zoovettravel.com/glosario/cuarentena.html" />
+  </url>
+  <url>
+    <loc>https://zoovettravel.com/glosario/cuarentena-en.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.78</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/glosario/cuarentena.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://zoovettravel.com/glosario/cuarentena-en.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zoovettravel.com/glosario/cuarentena-fr.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zoovettravel.com/glosario/cuarentena.html" />
+  </url>
+  <url>
+    <loc>https://zoovettravel.com/glosario/cuarentena-fr.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.78</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/glosario/cuarentena.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://zoovettravel.com/glosario/cuarentena-en.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zoovettravel.com/glosario/cuarentena-fr.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zoovettravel.com/glosario/cuarentena.html" />
+  </url>
+  <url>
+    <loc>https://zoovettravel.com/glosario/serologia-antirrabica.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.76</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/glosario/serologia-antirrabica.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://zoovettravel.com/glosario/serologia-antirrabica-en.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zoovettravel.com/glosario/serologia-antirrabica-fr.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zoovettravel.com/glosario/serologia-antirrabica.html" />
+  </url>
+  <url>
+    <loc>https://zoovettravel.com/glosario/serologia-antirrabica-en.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.76</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/glosario/serologia-antirrabica.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://zoovettravel.com/glosario/serologia-antirrabica-en.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zoovettravel.com/glosario/serologia-antirrabica-fr.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zoovettravel.com/glosario/serologia-antirrabica.html" />
+  </url>
+  <url>
+    <loc>https://zoovettravel.com/glosario/serologia-antirrabica-fr.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.76</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/glosario/serologia-antirrabica.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://zoovettravel.com/glosario/serologia-antirrabica-en.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zoovettravel.com/glosario/serologia-antirrabica-fr.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zoovettravel.com/glosario/serologia-antirrabica.html" />
+  </url>
 </urlset>
