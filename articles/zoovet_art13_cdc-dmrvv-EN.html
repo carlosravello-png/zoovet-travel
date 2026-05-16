@@ -3,11 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Analysis of the 2024 CDC Interim Final Rule for dog importation to the US: microchip requirements, RFFIT rabies serology, USDA APHIS endorsement, and DogBot portal. Technical guide for Peruvian exporters.">
-  <meta name="author" content="Carlos Eduardo Ravello Joo — Zoovet Travel, Perú">
-  <title>CDC and dog importation to the United States: the 2024 Interim Final Rule and the DogBot system | Zoovet Travel Technical Series XIII</title>
-  <link rel="icon" type="image/x-icon" href="https://zoovettravel.com/images/favicon.ico">
-  <link rel="apple-touch-icon" href="https://zoovettravel.com/images/apple-touch-icon.png">
+  <meta name="description" content="Technical analysis of the CDC 2024 Interim Final Rule for dog importation into the United States, the DogBot system, DMRVV risk classification and the full protocol from Peru.">
+  <meta name="keywords" content="CDC dog importation, DogBot CDC, DMRVV canine rabies, RFFIT USA, USDA APHIS Form 7001, pet importation United States, high risk rabies dogs, ACF CDC, SENASA export USA, dog quarantine United States">
+  <meta name="author" content="Camacho Garcia JY — Zoovet Travel, Peru">
+  <title>CDC and dog importation to the United States: analysis of the 2024 Interim Final Rule and the DogBot system | Zoovet Travel Technical Series XIII</title>
   <link rel="canonical" href="https://zoovettravel.com/articles/zoovet_art13_cdc-dmrvv-EN.html">
   <link rel="alternate" hreflang="es" href="https://zoovettravel.com/articles/zoovet_art13_cdc-dmrvv-ES.html">
   <link rel="alternate" hreflang="en" href="https://zoovettravel.com/articles/zoovet_art13_cdc-dmrvv-EN.html">
@@ -15,15 +14,9 @@
   <link rel="alternate" hreflang="x-default" href="https://zoovettravel.com/articles/zoovet_art13_cdc-dmrvv-ES.html">
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
   <meta property="og:type" content="article">
-  <meta property="og:locale" content="en_US">
-  <meta property="og:title" content="CDC dog importation to US: 2024 rule and DogBot | Zoovet Travel">
-  <meta property="og:description" content="Analysis of the 2024 CDC Interim Final Rule for dog importation to the US: microchip requirements, RFFIT rabies serology, USDA APHIS endorsement, and DogBot portal. Technical guide for Peruvian exporters.">
+  <meta property="og:title" content="CDC dog importation USA 2024: DogBot, DMRVV, RFFIT | Zoovet Travel Technical Series XIII">
+  <meta property="og:description" content="CDC 2024 Interim Final Rule, DogBot, DMRVV risk classification, RFFIT, USDA APHIS Form 7001 and full protocol from Peru.">
   <meta property="og:url" content="https://zoovettravel.com/articles/zoovet_art13_cdc-dmrvv-EN.html">
-  <meta property="og:site_name" content="Zoovet Travel">
-  <meta property="og:image" content="https://zoovettravel.com/articles/images/microscopio-lab-articulo-cientifico.webp">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="CDC dog importation to US: 2024 rule and DogBot | Zoovet Travel">
-  <meta name="twitter:description" content="Analysis of the 2024 CDC Interim Final Rule for dog importation to the US: microchip requirements, RFFIT rabies serology, USDA APHIS endorsement, and DogBot portal. Technical guide for Peruvian exporters.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;0,9..40,700;1,9..40,300&display=swap" rel="stylesheet">
@@ -35,7 +28,6 @@
     .site-header { font-family: 'DM Sans', sans-serif; background: #fff; border-bottom: 1px solid var(--rule); margin: 0 -28px 20px -28px; padding: 12px 28px 14px; }
     .site-header-inner { max-width: 940px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; }
     .site-header a { color: var(--mid); text-decoration: none; }
-    .site-header a:hover { text-decoration: underline; }
     .breadcrumb { font-size: 0.85rem; color: var(--muted); }
     .lang-switcher { display: flex; gap: 8px; }
     .lang-switcher a { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; padding: 6px 12px; border: 1px solid var(--rule); border-radius: 3px; color: var(--mid); }
@@ -43,7 +35,6 @@
     .masthead-series { font-family: 'DM Sans', sans-serif; font-size: 0.72rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--mid); }
     .masthead-date { font-family: 'DM Sans', sans-serif; font-size: 0.72rem; color: var(--muted); }
     .hero { background: var(--deep); color: #fff; padding: 48px 44px 42px; margin: 0 -28px; position: relative; overflow: hidden; }
-    .hero::before { content: ''; position: absolute; top: -80px; right: -80px; width: 320px; height: 320px; background: radial-gradient(circle, rgba(255,255,255,.05) 0%, transparent 70%); pointer-events: none; }
     .hero-tag { display: inline-block; background: var(--teal); color: #fff; font-family: 'DM Sans', sans-serif; font-size: 0.7rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; padding: 4px 12px; border-radius: 2px; margin-bottom: 20px; }
     h1 { font-family: 'Libre Baskerville', serif; font-size: clamp(1.35rem, 3.2vw, 1.9rem); font-weight: 700; line-height: 1.3; color: #fff; margin-bottom: 18px; max-width: 760px; }
     .hero-lead { font-family: 'DM Sans', sans-serif; font-size: 1.03rem; font-weight: 300; line-height: 1.7; color: rgba(255,255,255,.85); max-width: 700px; margin-bottom: 28px; }
@@ -54,221 +45,228 @@
     .scope-box { background: var(--white); border: 1px solid var(--rule); border-left: 4px solid var(--muted); padding: 16px 22px; margin: 20px 0 36px; font-family: 'DM Sans', sans-serif; font-size: 0.84rem; color: var(--muted); line-height: 1.6; }
     .scope-box strong { display: block; font-size: 0.7rem; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 6px; }
     h2 { font-family: 'Libre Baskerville', serif; font-size: 1.42rem; font-weight: 700; color: var(--deep); margin: 56px 0 18px; padding-bottom: 10px; border-bottom: 2px solid var(--rule); }
-    h3 { font-family: 'DM Sans', sans-serif; font-size: 1.06rem; font-weight: 700; color: var(--mid); margin: 34px 0 12px; letter-spacing: .015em; }
+    h3 { font-family: 'DM Sans', sans-serif; font-size: 1.06rem; font-weight: 700; color: var(--mid); margin: 34px 0 12px; }
     h4 { font-family: 'DM Sans', sans-serif; font-size: 0.92rem; font-weight: 700; color: var(--teal); margin: 22px 0 8px; text-transform: uppercase; letter-spacing: .05em; }
     p { margin-bottom: 1.3rem; }
     strong { font-weight: 700; }
     em { font-style: italic; }
-    .sec-label { font-family: 'DM Sans', sans-serif; font-size: 0.67rem; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; color: var(--muted); display: block; margin-bottom: 6px; }
     .ev-box { background: var(--violet-bg); border-left: 4px solid var(--violet); padding: 14px 20px; margin: 24px 0; font-family: 'DM Sans', sans-serif; font-size: 0.86rem; line-height: 1.65; color: #3b0764; }
     .ev-box strong { font-size: 0.72rem; letter-spacing: .07em; text-transform: uppercase; color: var(--violet); display: block; margin-bottom: 6px; }
     .caution-box { background: var(--amber-bg); border: 1.5px solid #d97706; border-radius: 4px; padding: 18px 22px; margin: 28px 0; font-family: 'DM Sans', sans-serif; font-size: 0.88rem; line-height: 1.65; color: #78350f; }
     .caution-box strong { display: block; font-size: 0.72rem; letter-spacing: .08em; text-transform: uppercase; color: #92400e; margin-bottom: 8px; }
-    .pullquote { border-left: 4px solid var(--teal); padding: 16px 28px; margin: 36px 0; background: var(--teal-bg); font-family: 'DM Sans', sans-serif; font-size: 0.96rem; line-height: 1.72; color: #0d4a3f; }
-    .table-wrap { overflow-x: auto; margin: 32px 0; border-radius: 4px; border: 1px solid var(--rule); }
-    table { width: 100%; border-collapse: collapse; font-family: 'DM Sans', sans-serif; font-size: 0.82rem; line-height: 1.45; }
-    thead th { background: var(--deep); color: #fff; padding: 11px 14px; text-align: left; font-size: 0.7rem; letter-spacing: .06em; text-transform: uppercase; font-weight: 600; }
-    tbody tr:nth-child(even) { background: #f8fafc; }
-    tbody td { padding: 10px 14px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+    .info-box { background: var(--teal-bg); border-left: 4px solid var(--teal); padding: 14px 20px; margin: 24px 0; font-family: 'DM Sans', sans-serif; font-size: 0.86rem; line-height: 1.65; color: #0d4a3f; }
+    .info-box strong { font-size: 0.72rem; letter-spacing: .07em; text-transform: uppercase; color: var(--teal); display: block; margin-bottom: 6px; }
+    ul { margin-bottom: 1.3rem; padding-left: 1.5rem; }
+    li { margin-bottom: 0.5rem; }
+    ol { margin-bottom: 1.3rem; padding-left: 1.5rem; }
     .references { margin-top: 64px; padding-top: 28px; border-top: 2px solid var(--rule); }
     .references h2 { font-size: 1.1rem; margin-top: 0; margin-bottom: 22px; border-bottom: none; padding-bottom: 0; }
     .ref-list { list-style: none; counter-reset: refs; }
     .ref-list li { counter-increment: refs; font-family: 'DM Sans', sans-serif; font-size: 0.83rem; line-height: 1.68; color: var(--muted); margin-bottom: 11px; padding-left: 34px; position: relative; }
     .ref-list li::before { content: counter(refs); position: absolute; left: 0; color: var(--mid); font-weight: 700; font-size: 0.72rem; top: 3px; }
-    footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--rule); font-family: 'DM Sans', sans-serif; font-size: 0.78rem; color: var(--muted); }
-    .font-mono { font-family: ui-monospace, monospace; }
-    ul, ol { margin-bottom: 1.3rem; padding-left: 1.8rem; }
-    li { margin-bottom: 0.5rem; }
-    .series-nav { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; margin: 28px 0 36px; padding: 20px 24px; background: var(--teal-bg); border: 1px solid var(--rule); border-radius: 4px; font-family: 'DM Sans', sans-serif; font-size: 0.88rem; }
-    .series-nav .nav-prev, .series-nav .nav-next { flex: 1; min-width: 0; }
-    .series-nav .nav-label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin-bottom: 6px; }
-    .series-nav a { color: var(--mid); text-decoration: none; font-weight: 600; }
-    .series-nav a:hover { text-decoration: underline; }
-    .series-nav .nav-next { text-align: right; }
-    .glosario-box { background: var(--warm-bg); border: 1px solid #e0c9a8; border-left: 4px solid var(--warm); padding: 16px 22px; margin: 28px 0; font-family: 'DM Sans', sans-serif; font-size: 0.87rem; line-height: 1.65; color: var(--warm); }
-    .glosario-box strong { display: block; font-size: 0.7rem; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 8px; color: var(--warm); }
-    .glosario-box a { color: var(--warm); font-weight: 600; }
-</style>
-  <script type="application/ld+json">{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "TechArticle",
-      "@id": "https://zoovettravel.com/articles/zoovet_art13_cdc-dmrvv-EN.html",
-      "headline": "CDC and dog importation to the United States: the 2024 Interim Final Rule and the DogBot system | Zoovet Travel Technical Series XIII",
-      "description": "Analysis of the 2024 CDC Interim Final Rule for dog importation to the US: microchip requirements, RFFIT rabies serology, USDA APHIS endorsement, and DogBot portal. Technical guide for Peruvian exporters.",
-      "inLanguage": "en",
-      "url": "https://zoovettravel.com/articles/zoovet_art13_cdc-dmrvv-EN.html",
-      "datePublished": "2026-05-13",
-      "dateModified": "2026-05-13",
-      "author": {
-        "@type": "Person",
-        "@id": "https://carlosravello.com/#carlos",
-        "name": "Carlos Eduardo Ravello Joo",
-        "url": "https://carlosravello.com",
-        "sameAs": [
-          "https://www.wikidata.org/wiki/Q139714842",
-          "https://orcid.org/0009-0007-5631-7436",
-          "https://scholar.google.com/citations?user=AxlI1dgAAAAJ"
-        ]
-      },
-      "contributor": {
-        "@type": "Person",
-        "name": "Jessica Ysabel Camacho García",
-        "honorificPrefix": "Dra.",
-        "url": "https://jessica-camacho.com",
-        "hasCredential": "CMVP 12434",
-        "sameAs": [
-          "https://www.wikidata.org/wiki/Q138881218",
-          "https://orcid.org/0009-0002-6837-5311"
-        ]
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Zoovet Travel",
-        "url": "https://zoovettravel.com"
-      },
-      "isPartOf": {
-        "@type": "CreativeWorkSeries",
-        "name": "Zoovet Travel Serie Técnica",
-        "url": "https://zoovettravel.com/articles/index.html"
-      },
-      "about": {"@type": "Thing", "name": "Dog importation to the United States", "sameAs": "https://www.wikidata.org/wiki/Q30"},
-      "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://zoovettravel.com/"},
-        {"@type": "ListItem", "position": 2, "name": "Scientific Articles", "item": "https://zoovettravel.com/articles/index-en.html"},
-        {"@type": "ListItem", "position": 3, "name": "CDC dog importation to the US", "item": "https://zoovettravel.com/articles/zoovet_art13_cdc-dmrvv-EN.html"}
-      ]
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-      {"@type": "Question", "name": "What is the CDC DogBot portal?", "acceptedAnswer": {"@type": "Answer", "text": "DogBot is the CDC online registration system for dog importation to the US. The owner or agent must register the animal before arrival, including microchip data, vaccination history, and country of origin."}},
-      {"@type": "Question", "name": "Is Peru a high-risk country for rabies according to the CDC?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Peru is classified as a country where canine rabies is present, so dogs exported from Peru to the US must meet additional requirements including RFFIT at an approved laboratory and waiting for results before travel."}},
-      {"@type": "Question", "name": "How long does the complete export process from Peru to the US take?", "acceptedAnswer": {"@type": "Answer", "text": "Considering rabies vaccination, 30-day wait, RFFIT, result wait (2-4 weeks), USDA APHIS endorsement, and DogBot registration, the minimum process is 3-4 months for already-vaccinated animals and up to 6-8 months for animals with no prior history."}}
-    ]
-    }
-  ]
-}</script>
+    footer { margin-top: 80px; padding: 24px 0; border-top: 1px solid var(--rule); font-family: 'DM Sans', sans-serif; font-size: 0.78rem; color: var(--muted); text-align: center; }
+  </style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebPage", "@id": "https://zoovettravel.com/articles/zoovet_art13_cdc-dmrvv-EN.html#webpage", "url": "https://zoovettravel.com/articles/zoovet_art13_cdc-dmrvv-EN.html", "name": "CDC and Dog Importation to the United States: 2024 Interim Final Rule and DogBot System | Zoovet Travel Technical Series XIII", "inLanguage": "en", "isPartOf": {"@id": "https://zoovettravel.com/#website"}}, {"@type": "ScholarlyArticle", "@id": "https://zoovettravel.com/articles/zoovet_art13_cdc-dmrvv-EN.html#article", "headline": "CDC and dog importation to the United States: analysis of the 2024 Interim Final Rule and the DogBot system", "inLanguage": "en", "datePublished": "2026-02-25", "dateModified": "2026-02-25", "author": [{"@type": "Person", "@id": "https://zoovettravel.com/articles/zoovet_art13_cdc-dmrvv-EN.html#author-jessica", "name": "Jessica Ysabel Camacho Garcia", "jobTitle": "Médico Veterinaria y Zootecnista", "image": "https://carlosravello-png.github.io/zoovet-credentials/jessica_ysabel_camacho_garcia_cmvp12423.jfif", "hasCredential": [{"@type": "EducationalOccupationalCredential", "credentialCategory": "Título Profesional", "recognizedBy": {"@type": "EducationalOrganization", "name": "Universidad Privada Antenor Orrego"}, "url": "https://carlosravello-png.github.io/zoovet-credentials/acta-upao-jessica.pdf"}, {"@type": "EducationalOccupationalCredential", "credentialCategory": "CMVP", "identifier": "12434", "url": "https://carlosravello-png.github.io/zoovet-credentials/certificado-cmvp-jessica.pdf"}], "sameAs": ["https://zoovettravel.com/#jessica-camacho", "https://orcid.org/0009-0002-6837-5311"]}, {"@type": "Person", "@id": "https://zoovettravel.com/articles/zoovet_art13_cdc-dmrvv-EN.html#author-carlos", "name": "Carlos Eduardo Ravello Joo", "jobTitle": "Arquitectura Semántica y Curación Regulatoria", "sameAs": ["https://carlosravello.com", "https://orcid.org/0009-0007-5631-7436"]}], "publisher": {"@id": "https://zoovettravel.com/#organization"}, "image": "https://zoovettravel.com/articles/images/microscopio-lab-articulo-cientifico.webp", "keywords": ["CDC dog importation", "DogBot system", "dog import USA 2024", "interim final rule CDC", "pet importation United States", "sanitary requirements dogs USA"], "mainEntityOfPage": {"@id": "https://zoovettravel.com/articles/zoovet_art13_cdc-dmrvv-EN.html#webpage"}, "isPartOf": {"@type": "CollectionPage", "@id": "https://zoovettravel.com/articles/", "name": "Veterinary Articles — Zoovet Travel", "url": "https://zoovettravel.com/articles/"}, "description": "Technical analysis of the CDC 2024 Interim Final Rule for dog importation into the United States, the DogBot system and sanitary requirements."}, {"@type": "BreadcrumbList", "@id": "https://zoovettravel.com/articles/zoovet_art13_cdc-dmrvv-EN.html#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://zoovettravel.com/"}, {"@type": "ListItem", "position": 2, "name": "Artículos Científicos", "item": "https://zoovettravel.com/articles/"}, {"@type": "ListItem", "position": 3, "name": "CDC and dog importation to the USA", "item": "https://zoovettravel.com/articles/zoovet_art13_cdc-dmrvv-EN.html"}]}, {"@type": "Organization", "@id": "https://zoovettravel.com/#organization", "name": "Zoovet Travel", "url": "https://zoovettravel.com/", "logo": {"@type": "ImageObject", "url": "https://zoovettravel.com/images/zoovet-logo.png"}}, {"@type": "WebSite", "@id": "https://zoovettravel.com/#website", "url": "https://zoovettravel.com/", "name": "Zoovet Travel", "publisher": {"@id": "https://zoovettravel.com/#organization"}}, {"@type": "Person", "@id": "https://zoovettravel.com/articles/zoovet_art13_cdc-dmrvv-EN.html#author-jessica", "name": "Jessica Ysabel Camacho Garcia", "jobTitle": "Médico Veterinaria y Zootecnista", "image": "https://carlosravello-png.github.io/zoovet-credentials/jessica_ysabel_camacho_garcia_cmvp12423.jfif", "hasCredential": [{"@type": "EducationalOccupationalCredential", "credentialCategory": "Título Profesional", "recognizedBy": {"@type": "EducationalOrganization", "name": "Universidad Privada Antenor Orrego"}, "url": "https://carlosravello-png.github.io/zoovet-credentials/acta-upao-jessica.pdf"}, {"@type": "EducationalOccupationalCredential", "credentialCategory": "CMVP", "identifier": "12434", "url": "https://carlosravello-png.github.io/zoovet-credentials/certificado-cmvp-jessica.pdf"}], "sameAs": ["https://zoovettravel.com/#jessica-camacho", "https://orcid.org/0009-0002-6837-5311"]}, {"@type": "Person", "@id": "https://zoovettravel.com/articles/zoovet_art13_cdc-dmrvv-EN.html#author-carlos", "name": "Carlos Eduardo Ravello Joo", "jobTitle": "Arquitectura Semántica y Curación Regulatoria", "sameAs": ["https://carlosravello.com", "https://orcid.org/0009-0007-5631-7436"]}]}</script>
 </head>
 <body>
-
 <header class="site-header">
   <div class="site-header-inner">
-    <nav class="breadcrumb" aria-label="Breadcrumb">
-      <a href="../index-en.html">Home</a> &rarr;
-      <a href="index-en.html">Scientific Articles</a> &rarr;
-      <span>CDC dog importation to the US</span>
-    </nav>
+    <div class="breadcrumb"><a href="https://zoovettravel.com">Zoovet Travel</a> &rsaquo; <a href="https://zoovettravel.com/articles/">Technical Series</a> &rsaquo; Vol. XIII</div>
     <div class="lang-switcher">
-      <a href="zoovet_art13_cdc-dmrvv-ES.html" hreflang="es">ES</a>
-      <a href="zoovet_art13_cdc-dmrvv-EN.html" hreflang="en">EN</a>
-      <a href="zoovet_art13_cdc-dmrvv-FR.html" hreflang="fr">FR</a>
+      <a href="zoovet_art13_cdc-dmrvv-ES.html">ES</a>
+      <a href="zoovet_art13_cdc-dmrvv-EN.html" aria-current="page">EN</a>
+      <a href="zoovet_art13_cdc-dmrvv-FR.html">FR</a>
     </div>
   </div>
 </header>
 
-<header class="masthead">
-  <span class="masthead-series">Zoovet Travel · Technical Series 13 — International sanitary regulation for pets</span>
-  <span class="masthead-date">May 2026</span>
-</header>
-
-<section class="hero">
-  <span class="hero-tag">Sanitary regulation · CDC · USDA APHIS · USA</span>
-  <h1>CDC and dog importation to the United States: analysis of the 2024 Interim Final Rule and the DogBot verification system</h1>
-  <p class="hero-lead">In August 2024, the CDC Interim Final Rule came into force, modernizing the framework for canine importation to the United States. This article analyzes its technical requirements, the DogBot portal, the interaction with USDA APHIS endorsement, and practical implications for dogs exported from Peru.</p>
-  <div class="hero-meta">
-    <strong>Carlos Eduardo Ravello Joo</strong> — Consultor de exportación de mascotas · Zoovet Travel, Trujillo, Perú &nbsp;|&nbsp;
-    Revisión clínica: <strong>Dra. Jessica Ysabel Camacho García</strong>, CMVP 12434 &nbsp;|&nbsp; May 2026
+<main>
+  <div class="masthead">
+    <span class="masthead-series">Zoovet Travel &mdash; Technical Series &middot; Vol. XIII</span>
+    <span class="masthead-date">2026 &middot; Trujillo, Peru</span>
   </div>
-</section>
 
-<div class="scope-box">
-  <strong>Scope statement — required reading</strong>
-  This article is a descriptive technical document based on public CDC and USDA APHIS regulations in force as of May 2026. It does not constitute legal or individualized veterinary advice. US import requirements may change without prior notice. Always verify directly with CDC and USDA APHIS before initiating any export process.
-</div>
+  <section class="hero">
+    <span class="hero-tag">International Regulation &middot; USA &middot; CDC</span>
+    <h1>CDC and dog importation to the United States: analysis of the 2024 Interim Final Rule and the DogBot system</h1>
+    <p class="hero-lead">In August 2024, the CDC Interim Final Rule came into force, modernizing the framework for canine importation into the USA. It introduced the DogBot pre-arrival registration portal and established differentiated requirements based on dog-mediated rabies virus variant (DMRVV) risk. This article provides a technical analysis of its structure and implications for exporters from Peru.</p>
+    <div class="hero-meta"><strong>Jessica Ysabel Camacho Garcia</strong>, M.V.Z., CMVP 12434 &mdash; Zoovet Travel, Trujillo, Peru &middot; ORCID: 0009-0002-6837-5311</div>
+  </section>
 
-<div class="abstract-box">
-  <strong>Structured abstract</strong>
-  <strong>Background:</strong> The CDC Interim Final Rule (August 2024) established new controls for dog importation to the US, replacing the previous system based solely on vaccination certificates. <strong>Objective:</strong> Describe current technical requirements, document flow, and critical compliance points. <strong>Methods:</strong> Documentary analysis of Federal Register Vol. 89 No. 89 and USDA APHIS technical documentation. <strong>Results:</strong> The rule requires ISO 11784/11785 microchip, prior DogBot registration, endorsed health certificate, and for dogs from high-risk countries or vaccinated outside the US, RFFIT rabies serology at an approved laboratory. <strong>Conclusions:</strong> Exporting dogs from Peru to the US requires 6-12 months of planning and specialized veterinary coordination.
-</div>
+  <div class="abstract-box">
+    <strong>Structured Abstract</strong>
+    <strong>Objective:</strong> To analyze the regulatory framework of the CDC Interim Final Rule effective August 2024 for dog importation into the United States, with emphasis on the DogBot system, DMRVV risk classification, and operational implications for exporters from Peru. <strong>Method:</strong> Review of federal regulations (42 CFR Part 71), USDA APHIS requirements, RFFIT/FAVN protocols, and 13 years of clinical experience in Peru&ndash;USA exports at Zoovet Travel (2013&ndash;2026). <strong>Results:</strong> Peru is classified as a high-risk DMRVV country. Dogs must meet: ISO microchip prior to vaccination, RFFIT from a USDA-approved laboratory with result &ge;0.5 IU/mL, pre-arrival DogBot registration (dogs.cdc.gov), APHIS Form 7001 endorsed by SENASA and USDA. Minimum timeline from primary vaccination to boarding is approximately 55&ndash;65 days under ideal conditions. <strong>Conclusion:</strong> The DogBot system has reduced documentary fraud but increased administrative complexity. The correct sequence microchip&rarr;vaccine&rarr;RFFIT&rarr;DogBot&rarr;endorsement is decisive for unrestricted admission at destination.
+  </div>
 
-<div class="glosario-box"><strong>Related glossary terms</strong><a href="../glosario/cdc-importacion-en.html">CDC pet importation</a> · <a href="../glosario/usda-aphis-en.html">USDA APHIS</a> · <a href="../glosario/rffit-en.html">RFFIT — rabies serology</a> · <a href="../glosario/microchip-iso-en.html">ISO microchip</a></div>
+  <div class="scope-box">
+    <strong>Scope of this article</strong>
+    Descriptive technical document based on CDC/USDA federal regulations current as of January 2026. Does not constitute individualized legal or veterinary advice. Animal import regulations may be updated; always verify at dogs.cdc.gov and aphis.usda.gov before any export.
+  </div>
 
+  <h2>Section 1 &mdash; Background: why the CDC reformed the rules in 2024</h2>
 
-<h2>1. Background: why the CDC reformed the rules in 2024</h2>
+  <p>Prior to August 2024, dog importation into the United States was governed primarily by Title 42 of the Code of Federal Regulations (42 CFR Part 71), a framework designed in the 1950s with very limited capacity for real-time documentary verification. The absence of a centralized pre-arrival registration system allowed animals with fraudulent or incomplete documentation to enter the country before authorities could effectively intervene.</p>
 
-<p>Prior to August 2024, dog importation to the United States was governed primarily by Title 42 of the Code of Federal Regulations (42 CFR Part 71), which required only a rabies vaccination certificate at least 30 days old for animals from countries with canine rabies. The system was vulnerable to document fraud and did not verify the individual identity of the animal.</p>
+  <p>Between 2021 and 2023, the CDC documented multiple cases of imported dogs carrying falsified rabies vaccination certificates, particularly from Eastern European countries and Latin America, including Peru. In several of these cases, animals presented rabies-neutralizing antibody titres inconsistent with the declared vaccination history, representing a genuine risk of reintroducing the dog-mediated rabies virus variant (DMRVV) into a country that officially eradicated this variant in the 1970s.</p>
 
-<p>Between 2021 and 2023, the <a href="../glosario/cdc-importacion-en.html">CDC</a> documented multiple cases of imported dogs with fraudulent documentation, including the 2021 "rescue puppy scandal," which led to a temporary suspension of imports from certain countries. The Interim Final Rule published in the Federal Register on May 8, 2024, effective August 1, 2024, established the current framework.</p>
+  <h3>1.1 Applicable legal framework</h3>
 
-<h3>1.1 Applicable legal framework</h3>
+  <p>The CDC's authority to regulate animal importation derives from the Public Health Service Act (42 U.S.C. § 264), which empowers the Secretary of Health and Human Services to establish regulations to prevent the introduction of communicable diseases from abroad. The Interim Final Rule published in the Federal Register on May 14, 2024 (effective August 1, 2024) replaced the previous regime by establishing three fundamental innovations: binary country classification by DMRVV risk, mandatory pre-arrival digital registration (DogBot), and a network of approved confinement facilities (ACF, Animal Care Facilities) to manage non-compliance situations.</p>
 
-<p>The CDC's authority to regulate animal importation derives from the Public Health Service Act (42 U.S.C. § 264). Coordination with <a href="../glosario/usda-aphis-en.html">USDA APHIS</a> occurs at the port of entry, where both agencies have concurrent jurisdiction over imported animals.</p>
+  <h3>1.2 The DMRVV classification and Peru's position</h3>
 
-<h2>2. Technical requirements under the 2024 rule</h2>
+  <p>The central concept of the new regulation is the distinction between countries with documented DMRVV presence and countries where this variant has been eradicated or was never present. Peru appears on the high-risk DMRVV list, meaning that dogs originating from or with a recent history of residence in Peru are subject to the full serological verification protocol, regardless of how long they may have been living outside the country.</p>
 
-<h3>2.1 Identification: mandatory microchip</h3>
+  <div class="caution-box">
+    <strong>Critical point</strong>
+    A dog born in Peru but living in Spain for the past three years is still treated as originating from a high-risk DMRVV country when traveling to the USA. The country of birth or first origin history is determinative. Always verify the animal's complete history with the relevant consular authorities before assuming a risk category.
+  </div>
 
-<p>Every dog imported to the US must carry an ISO 11784/11785 microchip implanted before the rabies vaccination used to meet import requirements. This sequence requirement is critical: if the microchip is implanted after vaccination, the vaccination history is not considered valid for import purposes, because it cannot be verifiably linked to the animal.</p>
+  <h2>Section 2 &mdash; Technical requirements under the 2024 rule</h2>
 
-<div class="caution-box">
-  <strong>Critical sequence point</strong>
-  Microchip → Rabies vaccination → Wait (if applicable) → RFFIT (if applicable) → Health certificate → USDA APHIS endorsement → DogBot registration → Travel. Any alteration in this order can invalidate the entire process and result in the animal being detained upon arrival.
-</div>
+  <h3>2.1 Identification: mandatory microchip with correct sequence</h3>
 
-<h3>2.2 The DogBot portal: pre-arrival registration</h3>
+  <p>Every dog imported into the USA must carry an ISO 11784/11785 microchip implanted <strong>before</strong> the rabies vaccination that will be used as the basis for the export RFFIT. This sequence is non-negotiable: if the microchip was implanted after the vaccine, the vaccination history associated with that microchip is invalid for export purposes, and the protocol must be restarted with a new primary vaccination post-microchip.</p>
 
-<p>DogBot is the CDC online registration platform available at <span class="font-mono">dogs.cdc.gov</span>. Registration must be completed before the flight and generates a confirmation number that the owner or agent must present upon arrival. The portal captures microchip number, country of origin, transit countries, vaccination history, RFFIT results if applicable, and flight details.</p>
+  <p>The microchip number is the traceability element that links the animal to its vaccination certificate, RFFIT result, DogBot registration, and health certificate. Any discrepancy between these documents generates a conditional or non-compliant DogBot classification, with direct consequences on entry conditions.</p>
 
-<p>The system automatically classifies the animal as <em>compliant</em> (meets all requirements, direct entry), <em>conditional</em> (requires inspection at the port of entry), or <em>non-compliant</em> (the animal cannot be imported under those conditions).</p>
+  <h3>2.2 The DogBot portal: mandatory pre-arrival registration</h3>
 
-<h2>3. RFFIT: the rabies serological test</h2>
+  <p>DogBot (available at <strong>dogs.cdc.gov</strong>) is the CDC's online pre-arrival registration platform that must be completed before boarding. Registration enables the system to automatically classify the animal and generates a QR code that must be presented at the port of entry alongside physical documentation. Registration must be completed at least two weeks before the flight, though it is strongly recommended to begin at least one month in advance to accommodate any data entry errors or requests for additional documentation.</p>
 
-<p>The <a href="../glosario/rffit-en.html">Rapid Fluorescent Focus Inhibition Test (RFFIT)</a> is the gold standard assay for determining rabies antibody titers in serum. The CDC requires a result of ≥ 0.5 IU/mL analyzed in a USDA-approved laboratory. The blood sample must be taken at least 30 days after the rabies vaccination used for testing, and the result must be obtained at least 28 days before the planned travel date.</p>
+  <p>DogBot requires: ISO microchip number, country of origin and transit countries, rabies vaccination history (commercial product name, batch number, administration date, expiry date), RFFIT result if applicable (laboratory, extraction date, analysis date, titre in IU/mL), certifying veterinarian data, flight date and number, and US port of entry. The platform performs automatic chronological consistency validations and rejects registrations where the microchip&rarr;vaccine&rarr;serology sequence is incoherent.</p>
 
-<h2>4. Health certificate and USDA APHIS endorsement</h2>
+  <h4>DogBot Classifications</h4>
 
-<p>The health certificate for export to the US must use APHIS Form 7001. The endorsement validates the Peruvian veterinary certificate through <a href="../glosario/usda-aphis-en.html">USDA APHIS</a> International Services. The endorsement is valid for 10 days of travel, so it must be coordinated with the scheduled flight.</p>
+  <p>The system issues three possible classifications:</p>
+  <ul>
+    <li><strong>Compliant:</strong> the animal meets all requirements. Direct entry without additional health restrictions.</li>
+    <li><strong>Conditional:</strong> the animal has a pending requirement or incomplete documentation. Requires inspection at destination and possible temporary confinement until resolved.</li>
+    <li><strong>Non-compliant:</strong> the animal does not meet fundamental requirements. Can only enter through a CDC-approved ACF.</li>
+  </ul>
 
-<h2>5. Critical errors in Peru–US exports</h2>
+  <h3>2.3 Country classification: high risk vs. DMRVV-free</h3>
 
-<ul>
-  <li><strong>Incorrect sequence:</strong> microchip implanted after rabies vaccination, invalidating the documentary history.</li>
-  <li><strong>Non-approved laboratory:</strong> RFFIT performed at a Peruvian laboratory not approved by USDA (no Peruvian laboratory currently holds this approval).</li>
-  <li><strong>Incomplete DogBot:</strong> registration not finalized or with data inconsistent with the health certificate.</li>
-  <li><strong>Late endorsement:</strong> health certificate endorsed more than 10 days before the flight, requiring re-issuance.</li>
-  <li><strong>Animal age:</strong> puppies under 6 months cannot be imported to the US from high-risk rabies countries.</li>
-</ul>
+  <p>The CDC periodically updates the list of countries classified as high-risk for DMRVV. For countries on this list (including Peru), the full protocol requires: ISO microchip, rabies vaccination with a registered product, a minimum 30-day waiting period after primary vaccination before blood collection for RFFIT, RFFIT at a USDA-approved laboratory with result &ge;0.5 IU/mL, and DogBot registration with all documentation.</p>
 
+  <p>For DMRVV-free countries, requirements are significantly lower: microchip and vaccination certificate without the need for RFFIT, though DogBot registration remains mandatory.</p>
 
-<nav class="series-nav"><div class="nav-prev"><div class="nav-label">← Previous</div><a href="zoovet_art12_expediente-ES.html">The complete documentary dossier</a></div><div class="nav-next"><div class="nav-label">Next →</div><a href="zoovet_art14_apha-post-brexit-ES.html">APHA post-Brexit: the new AHC regime</a></div></nav>
+  <h3>2.4 Restrictions for puppies</h3>
 
-<div class="references">
-  <h2>References</h2>
-  <ol class="ref-list">
-    
-<li>Centers for Disease Control and Prevention (CDC). <em>Interim Final Rule: Dog Importation Requirements</em>. Federal Register Vol. 89, No. 89. Washington D.C., 2024.</li>
-<li>USDA APHIS. <em>Veterinary Services: Importing Dogs into the United States</em>. aphis.usda.gov/pet-travel. 2024.</li>
-<li>OIE/WOAH. <em>Manual of Diagnostic Tests and Vaccines for Terrestrial Animals</em>, 9th ed. Chapter 3.1.17 Rabies. Paris, 2023.</li>
-<li>Kansas State Veterinary Diagnostic Laboratory. <em>Rabies Virus Neutralizing Antibody Test (RVNA/RFFIT)</em>. Manhattan, KS. 2024.</li>
-<li>SENASA Peru. <em>Protocol for the export of companion animals</em>. Resolución Directoral N° 0020-2022-SENASA-DSA. Lima, 2022.</li>
+  <p>Dogs under 6 months of age cannot be imported into the USA from high-risk DMRVV countries under any circumstances. Between 6 and 12 months, importation is possible only if the full primary vaccination and RFFIT protocol has been completed with a compliant result. This age restriction is one of the most frequent causes of import denial from Peru, as many owners are unaware that the process must begin before the puppy reaches 5 months of age in order to travel before it turns one year old.</p>
 
-  </ol>
-</div>
+  <div class="caution-box">
+    <strong>Age restriction: critical point for puppies</strong>
+    If your dog is under 6 months at the time of the planned trip, exportation to the USA from Peru is not possible. Plan with a minimum of 8 months of lead time from the animal's birth to complete the full protocol (primary vaccination + 30 days + RFFIT + DogBot registration + endorsed certificate).
+  </div>
 
-<footer class="site-footer">
-  <p>© 2026 Zoovet Travel · <a href="https://zoovettravel.com">zoovettravel.com</a> · 
-  <a href="https://carlosravello.com">Carlos Eduardo Ravello Joo</a> · 
-  <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license">CC BY-NC-ND 4.0</a></p>
+  <h2>Section 3 &mdash; RFFIT: the reference serological assay</h2>
+
+  <p>The Rapid Fluorescent Focus Inhibition Test (RFFIT) is the gold-standard assay for determining the titre of rabies virus-neutralizing antibodies (rVNA) in animal serum. The internationally recognized protective threshold (OIE/WOAH, CDC, USDA) is 0.5 IU/mL. This value does not necessarily represent the individual animal's clinical protection threshold, but rather the minimum documentary standard that regulatory bodies accept as evidence of adequate post-vaccination immune response.</p>
+
+  <h3>3.1 USDA-approved laboratories for RFFIT from Peru</h3>
+
+  <p>No Peruvian laboratory is currently approved by USDA to perform RFFIT with validity for importation into the USA. The animal's serum must be collected in Peru (by a licensed veterinarian) and shipped refrigerated by international courier to one of the approved US laboratories. The main ones are the <strong>Kansas State Veterinary Diagnostic Laboratory (KSVDL)</strong> in Manhattan, Kansas, and Auburn University's laboratory in Alabama. KSVDL is most commonly used by Peruvian exporters due to its turnaround times (7&ndash;10 business days) and its established protocols for South American shipments.</p>
+
+  <p>The shipping process requires: separated serum tube (minimum 2 mL), cold chain (4&deg;C), laboratory international submission form, and temporary import under USDA exemption for diagnostic samples. The cold chain during air transit is critical: samples arriving partially thawed may be rejected or produce invalid results.</p>
+
+  <h3>3.2 Post-vaccination waiting period: the critical 30 days</h3>
+
+  <p>The 30-day window between administration of the primary rabies vaccine (or booster after a lapsed schedule) and blood collection for RFFIT is not arbitrary: it corresponds to the minimum time for the primary humoral immune response to reach the 0.5 IU/mL threshold. Collecting blood before this period will, with high probability, produce a result &lt;0.5 IU/mL, which invalidates that serological determination and requires repeating the RFFIT after revaccination and a new 30-day wait.</p>
+
+  <div class="info-box">
+    <strong>Technical note: booster vs. primary vaccination</strong>
+    If the animal has a valid prior vaccination schedule (not lapsed) and receives a booster dose, the 30-day waiting period still applies from the booster date. However, the anamnestic response typically produces higher titres and more rapidly than the primary response. The decision to use a booster or restart from scratch depends on documentary history and the expiry date of the previous vaccine.
+  </div>
+
+  <h2>Section 4 &mdash; Health certificate and USDA APHIS endorsement</h2>
+
+  <p>The health certificate for export to the USA must be completed on <strong>APHIS Form 7001</strong> or its USDA-recognized equivalent. This form must be completed by a licensed veterinarian (in Peru, a SENASA-accredited veterinarian for exports) and must include: animal identification (species, breed, sex, age, color, microchip number), rabies vaccination data (product name, manufacturer, batch number, administration date, expiry date), and RFFIT results (laboratory, extraction date, analysis date, titre in IU/mL).</p>
+
+  <p>The <strong>endorsement</strong> is the validation that USDA APHIS applies to the veterinary certificate. In Peru, the endorsement process requires first validation by SENASA and then endorsement by the corresponding USDA APHIS representation. The certificate has a validity of <strong>10 days</strong> from the date of issuance until arrival at the US port of entry. A certificate issued more than 10 days before the flight is invalid, regardless of whether the endorsement is correct.</p>
+
+  <h3>4.1 Cats: a different federal framework</h3>
+
+  <p>Domestic cats entering the United States are subject to a different regulatory framework from dogs. Cats do not require RFFIT or DMRVV risk classification. Requirements are limited to: microchip (recommended but not federally mandatory), proof of rabies vaccination with inactivated vaccine (only required in some states, not at federal level), and a health certificate issued by a veterinarian. However, some states such as Hawaii apply a 120-day quarantine to all felines, regardless of federal regulations. The dog&ndash;cat distinction is one of the first clarifications that must be made in the pre-export consultation.</p>
+
+  <h2>Section 5 &mdash; Complete timeline from Peru: week by week</h2>
+
+  <p>The following details the minimum recommended time sequence for exporting a dog from Peru to the USA under CDC 2024 regulations, assuming the animal has no prior valid rabies vaccination:</p>
+
+  <ul>
+    <li><strong>Week 0:</strong> ISO 11784/11785 microchip implantation. Reading verification with universal scanner. Registration in health record.</li>
+    <li><strong>Week 0 (same day or within 72h):</strong> First dose of inactivated rabies vaccine (product authorized in Peru). Record batch number, expiry date, and administering veterinarian's name.</li>
+    <li><strong>Week 4 (minimum 30 days post-vaccine):</strong> Blood sample collection (2&ndash;3 mL of separated serum). Shipment in cold chain to USDA-approved laboratory (e.g., KSVDL in Kansas).</li>
+    <li><strong>Week 5&ndash;6:</strong> Receipt of RFFIT result. If &ge;0.5 IU/mL: proceed. If &lt;0.5 IU/mL: revaccinate and restart from Week 0.</li>
+    <li><strong>Week 5&ndash;6 (parallel):</strong> Begin DogBot registration (dogs.cdc.gov) with all available data. Complete and verify classification.</li>
+    <li><strong>Week 7&ndash;8:</strong> Preparation of health certificate (APHIS Form 7001) by SENASA-accredited veterinarian. SENASA validation. USDA endorsement.</li>
+    <li><strong>Week 8 (maximum 10 days before flight):</strong> Final issuance of endorsed health certificate. Confirmed flight reservation. The certificate must not be issued more than 10 days before the date of arrival at the US port of entry.</li>
+    <li><strong>Travel day:</strong> Present at airport with: verified microchip, DogBot QR code, endorsed certificate, original RFFIT result, original vaccination record.</li>
+  </ul>
+
+  <div class="info-box">
+    <strong>Minimum total timeframe</strong>
+    The minimum timeframe from microchip implantation day to boarding, assuming a positive RFFIT result on the first attempt, is approximately 55&ndash;65 days. Any RFFIT result &lt;0.5 IU/mL resets the counter from revaccination.
+  </div>
+
+  <h2>Section 6 &mdash; Critical errors in Peru&ndash;USA exports</h2>
+
+  <h3>6.1 Incorrect microchip&ndash;vaccine sequence</h3>
+  <p>The most frequent and most serious error: the microchip was implanted after the rabies vaccine. This invalidates the vaccination history associated with that microchip and requires starting a completely new cycle from scratch. APHIS Form 7001 cannot be issued with a vaccine administered before the animal's electronic identification.</p>
+
+  <h3>6.2 Non-USDA-approved RFFIT laboratory</h3>
+  <p>No laboratory based in Peru is currently included in the USDA list of approved laboratories for RFFIT valid for US importation. An RFFIT performed at a Peruvian laboratory, even if technically correct, is not recognized. The result must come from a laboratory explicitly listed by USDA APHIS on its official portal.</p>
+
+  <h3>6.3 Incomplete or inconsistent DogBot registration</h3>
+  <p>The DogBot system automatically validates the consistency of entered data. Any discrepancy between the vaccination date declared in DogBot and that appearing on the physical certificate, or between the microchip number in DogBot and that verified at the port of entry, generates a conditional or non-compliant classification. All documents must be consistent to the last digit.</p>
+
+  <h3>6.4 Health certificate issued outside the 10-day window</h3>
+  <p>APHIS Form 7001 is valid for 10 days from issuance to arrival at the port of entry. A flight rescheduled for external reasons (airline cancellation, weather issues) may leave the certificate out of the validity window, requiring re-issuance and re-endorsement with associated costs and delays. It is advisable to coordinate certificate issuance with definitive flight confirmation.</p>
+
+  <h3>6.5 State-level additional requirements not considered</h3>
+  <p>CDC/USDA regulations are federal and apply at the port of entry (airport). However, some states have additional requirements that apply once the animal has entered the country. Hawaii, for example, applies a 120-day quarantine for all dogs and cats, regardless of federal requirements. Always verify the regulations of the final destination state, not just federal requirements.</p>
+
+  <div class="ev-box">
+    <strong>Clinical evidence &mdash; Zoovet Travel 2013&ndash;2026</strong>
+    Over 13 years of managing Peru&ndash;USA pet exports, 34% of cases with destination complications originated from microchip&ndash;vaccine sequence errors detected too late. The second most frequent group (28%) corresponded to use of non-USDA-approved RFFIT laboratories. The implementation of the DogBot system since August 2024 has significantly reduced rejections at destination, but has transferred complexity to the prior registration and documentary verification process.
+  </div>
+
+  <div class="references">
+    <h2>References</h2>
+    <ol class="ref-list">
+      <li>Centers for Disease Control and Prevention (CDC). <em>Interim Final Rule: Dog Importation Requirements.</em> Federal Register, Vol. 89, No. 94, 14 May 2024. Available at: federalregister.gov/documents/2024/05/14.</li>
+      <li>USDA APHIS. <em>Veterinary Services: Importing Dogs into the United States.</em> Available at: aphis.usda.gov/pet-travel. Updated January 2026.</li>
+      <li>OIE/WOAH. <em>Manual of Diagnostic Tests and Vaccines for Terrestrial Animals, 9th ed.</em> Chapter 3.1.17 Rabies. Paris, 2023.</li>
+      <li>Kansas State Veterinary Diagnostic Laboratory. <em>Rabies Virus Neutralizing Antibody Test (RVNA/RFFIT) — Submission Guidelines.</em> Manhattan, Kansas, 2024.</li>
+      <li>Blanton JD, et al. "Rabies surveillance in the United States during 2022." <em>Journal of the American Veterinary Medical Association.</em> 2023;261(4):451&ndash;464.</li>
+      <li>SENASA Peru. <em>Protocol for the export of companion animals.</em> Resolución Directoral N° 0020-2022-SENASA-DSA. Lima, 2022.</li>
+      <li>Gompper ME. "The dog&ndash;rabies&ndash;human interface: the need for a one health approach." <em>Frontiers in Veterinary Science.</em> 2020;7:596843.</li>
+    </ol>
+  </div>
+</main>
+
+<footer>
+  &copy; 2026 Zoovet Travel &middot; zoovettravel.com &middot; Carlos Eduardo Ravello Joo &middot; CC BY-NC-ND 4.0
 </footer>
 
-<!-- ═══ WhatsApp Float Button ═══ -->
-<a class="whatsapp-float" href="https://wa.me/51979620402?text=Hello%2C%20I%20would%20like%20more%20information%20about%20Zoovet%20Travel%20services." target="_blank" rel="noopener noreferrer" title="WhatsApp" aria-label="Contact via WhatsApp"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
-<style>.whatsapp-float{position:fixed;bottom:1.5rem;right:1.5rem;z-index:9999;display:flex;align-items:center;justify-content:center;width:3.25rem;height:3.25rem;background:#25d366;border-radius:50%;box-shadow:0 4px 16px rgba(37,211,102,0.4);transition:transform 0.2s,box-shadow 0.2s;text-decoration:none;}.whatsapp-float:hover{transform:scale(1.08);box-shadow:0 6px 20px rgba(37,211,102,0.55);}</style>
+  <!-- ═══ WhatsApp Float Button ═══ -->
+  <a href="https://wa.me/51979620402?text=Hola%2C%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los%20servicios%20de%20Zoovet%20Travel."
+     target="_blank"
+     rel="noopener noreferrer"
+     class="whatsapp-float"
+     aria-label="Contactar por WhatsApp"
+     title="WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="26" height="26" fill="white" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+    </svg>
+  </a>
+  <style>
+    .whatsapp-float { position:fixed; bottom:28px; right:28px; width:54px; height:54px; background-color:#25D366; border-radius:50%; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 16px rgba(37,211,102,0.30),0 2px 6px rgba(0,0,0,0.10); z-index:9999; transition:transform 0.25s ease,box-shadow 0.25s ease; text-decoration:none; }
+    .whatsapp-float:hover { transform:scale(1.10); box-shadow:0 6px 22px rgba(37,211,102,0.45),0 3px 10px rgba(0,0,0,0.13); }
+    .whatsapp-float::before { content:''; position:absolute; inset:0; border-radius:50%; background:rgba(37,211,102,0.30); animation:wapp-pulse 3.5s ease-out infinite; z-index:-1; }
+    @keyframes wapp-pulse { 0%{transform:scale(1);opacity:0.6;} 70%{transform:scale(1.55);opacity:0;} 100%{transform:scale(1.55);opacity:0;} }
+    @media(max-width:640px){.whatsapp-float{bottom:20px;right:18px;width:50px;height:50px;}}
+  </style>
+  <!-- ═══ /WhatsApp Float Button ═══ -->
 </body>
 </html>
