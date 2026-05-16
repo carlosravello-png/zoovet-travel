@@ -16,7 +16,6 @@ INSTRUCCIONES GSC:
   3. https://zoovettravel.com/glosario/index-fr.html
 
 --- B. GLOSARIO — Términos ES (25) ---
-  4. https://zoovettravel.com/glosario/apha.html
   5. https://zoovettravel.com/glosario/apqa.html
   6. https://zoovettravel.com/glosario/cdc-importacion.html
   7. https://zoovettravel.com/glosario/certificado-sanitario-exportacion.html
@@ -24,23 +23,21 @@ INSTRUCCIONES GSC:
   9. https://zoovettravel.com/glosario/cuarentena.html
  10. https://zoovettravel.com/glosario/cvi.html
  11. https://zoovettravel.com/glosario/dalrrd.html
- 12. https://zoovettravel.com/glosario/favn.html
+ 
  13. https://zoovettravel.com/glosario/fit-to-fly.html
  14. https://zoovettravel.com/glosario/gacc.html
- 15. https://zoovettravel.com/glosario/hipobaria.html
- 16. https://zoovettravel.com/glosario/iata-lar.html
+ 
  17. https://zoovettravel.com/glosario/mapa.html
  18. https://zoovettravel.com/glosario/microchip-iso.html
  19. https://zoovettravel.com/glosario/mpi.html
- 20. https://zoovettravel.com/glosario/oie-woah.html
+
  21. https://zoovettravel.com/glosario/rabia.html
- 22. https://zoovettravel.com/glosario/reglamento-ue-576-2013.html
+ 
  23. https://zoovettravel.com/glosario/rffit.html
  24. https://zoovettravel.com/glosario/sag.html
- 25. https://zoovettravel.com/glosario/senasa.html
+ 
  26. https://zoovettravel.com/glosario/senasica.html
- 27. https://zoovettravel.com/glosario/serologia-antirrabica.html
- 28. https://zoovettravel.com/glosario/usda-aphis.html
+
 
 --- C. GLOSARIO — Términos EN (25) ---
  29. https://zoovettravel.com/glosario/apha-en.html
@@ -53,7 +50,7 @@ INSTRUCCIONES GSC:
  36. https://zoovettravel.com/glosario/dalrrd-en.html
  37. https://zoovettravel.com/glosario/favn-en.html
  38. https://zoovettravel.com/glosario/fit-to-fly-en.html
- 39. https://zoovettravel.com/glosario/gacc-en.html
+ 
  40. https://zoovettravel.com/glosario/hipobaria-en.html
  41. https://zoovettravel.com/glosario/iata-lar-en.html
  42. https://zoovettravel.com/glosario/index-en.html
@@ -74,8 +71,8 @@ INSTRUCCIONES GSC:
  55. https://zoovettravel.com/glosario/apha-fr.html
  56. https://zoovettravel.com/glosario/apqa-fr.html
  57. https://zoovettravel.com/glosario/cdc-importacion-fr.html
- 58. https://zoovettravel.com/glosario/certificado-sanitario-exportacion-fr.html
- 59. https://zoovettravel.com/glosario/cfia-fr.html
+ 58. 
+ 
  60. https://zoovettravel.com/glosario/cuarentena-fr.html
  61. https://zoovettravel.com/glosario/cvi-fr.html
  62. https://zoovettravel.com/glosario/dalrrd-fr.html
