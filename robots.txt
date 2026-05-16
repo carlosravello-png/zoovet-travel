@@ -12,6 +12,7 @@ Disallow: /indexnow-send.bat
 # Google
 User-agent: Googlebot
 Allow: /
+Allow: /papers/
 Disallow: /docs/
 Disallow: /.github/
 
@@ -33,6 +34,13 @@ Allow: /
 
 User-agent: Twitterbot
 Allow: /
+
+# Google Scholar
+User-agent: Googlebot-Scholar
+Allow: /
+Allow: /papers/
+Disallow: /docs/
+Disallow: /.github/
 
 # Sitemap (obligatorio para que los bots encuentren tus URLs)
 Sitemap: https://zoovettravel.com/sitemap.xml
