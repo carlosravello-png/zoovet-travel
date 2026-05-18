@@ -5,6 +5,8 @@ Disallow: /docs/
 Disallow: /.github/
 Disallow: /indexnow-payload.json
 Disallow: /indexnow-submit.html
+Disallow: /original_index.html
+Disallow: /PREVIEW_SEO_ZOOPEDIA.html
 Disallow: /urls
 Disallow: /indexnow-send.ps1
 Disallow: /indexnow-send.bat
@@ -15,6 +17,9 @@ Allow: /
 Allow: /papers/
 Disallow: /docs/
 Disallow: /.github/
+Disallow: /indexnow-submit.html
+Disallow: /original_index.html
+Disallow: /PREVIEW_SEO_ZOOPEDIA.html
 
 # Bing
 User-agent: Bingbot
