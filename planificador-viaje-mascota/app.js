@@ -734,26 +734,7 @@
             stack: [
               { text: '¿ALGUNA PREGUNTA?',                        fontSize: 8, bold: true, color: '#111827', alignment: 'center' },
               { text: 'ESCÍBE NOS 24H · CUALQUIER IDIOMA', fontSize: 7, bold: true, color: '#111827', alignment: 'center', margin: [0, 2, 0, 4] },
-              { canvas: [
-                { type: 'rect', x: 18, y: 0,  w: 50, h: 50, lineWidth: 1.5, lineColor: '#0F1E36', color: '#F8F9FA' },
-                { type: 'rect', x: 23, y: 5,  w: 9,  h: 9,  color: '#0F1E36' },
-                { type: 'rect', x: 24, y: 6,  w: 7,  h: 7,  color: '#FFFFFF' },
-                { type: 'rect', x: 25, y: 7,  w: 5,  h: 5,  color: '#0F1E36' },
-                { type: 'rect', x: 37, y: 5,  w: 3,  h: 3,  color: '#0F1E36' },
-                { type: 'rect', x: 41, y: 5,  w: 2,  h: 2,  color: '#0F1E36' },
-                { type: 'rect', x: 54, y: 5,  w: 9,  h: 9,  color: '#0F1E36' },
-                { type: 'rect', x: 55, y: 6,  w: 7,  h: 7,  color: '#FFFFFF' },
-                { type: 'rect', x: 56, y: 7,  w: 5,  h: 5,  color: '#0F1E36' },
-                { type: 'rect', x: 23, y: 36, w: 9,  h: 9,  color: '#0F1E36' },
-                { type: 'rect', x: 24, y: 37, w: 7,  h: 7,  color: '#FFFFFF' },
-                { type: 'rect', x: 25, y: 38, w: 5,  h: 5,  color: '#0F1E36' },
-                { type: 'rect', x: 37, y: 36, w: 3,  h: 3,  color: '#0F1E36' },
-                { type: 'rect', x: 41, y: 38, w: 4,  h: 4,  color: '#0F1E36' },
-                { type: 'rect', x: 37, y: 20, w: 8,  h: 8,  color: '#0F1E36' },
-                { type: 'rect', x: 54, y: 36, w: 9,  h: 9,  color: '#0F1E36' },
-                { type: 'rect', x: 55, y: 37, w: 7,  h: 7,  color: '#FFFFFF' },
-                { type: 'rect', x: 56, y: 38, w: 5,  h: 5,  color: '#0F1E36' }
-              ]},
+              { image: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHQAAAB0CAIAAADb+IFwAAACeElEQVR4nO3dwVHEMAxGYZahADqgDPo/bhl0QAfh6osGaaQXe+B9R8hms/9oxOLYzuO6rhcxXndfwF9muCDDBRkuyHBBhgsyXNBb9Iv3j8/xN/v+ev76XtExkepr7/xcVi7IcEGGCwp77qraB1fVHhf10Og81WMyP8/IfC4rF2S4IMMFpXruKtNrOt83ox5a7Y+d78tT57RyQYYLMlxQuefSMr0v6sVT/XqKlQsyXJDhgo7ruZ3xhKj/7mLlggwXZLigcs+9s5fR47nVY6qsXJDhggwXlOq5xL3+VXVMIHN8dYyCYOWCDBdkuKDHrjURnfkJ1XPuYuWCDBdkuKCw53a+P0am5ucS88kynLdwEMMFGS4o1XMz6LUMxHmmen3EygUZLshwQeWxheo81upYQWeeLPE9t/NZrFyQ4YIMFzR2D6261ou+f1V9r+rcBtehbWa4IMMFIeO59PHV1955/SsrF2S4IMMFlcdz6fkAmTHTqWvL/F3prG2zckGGCzJcUGuPG2IOwGljwZFM/7VyQYYLMlxQa4+bzv/1xB5g9P44jucexHBBhgsaW/tbnXs7te8tvWduZz8HKxdkuCDDBR29Dm1qjS/d0yNWLshwQYYL2vaciM7/+537bJ39HDLXtrJyQYYLMlzQtudEdPbAnZpbFpla92zlggwXZLigbc+JyJyzM0acOX9k6l6clQsyXJDhgo7bs3w19fyeqTkVrv09iOGCDBd0RM+t3isjxhOI9WxWLshwQYYL2vaciM55Or2YmPMQsXJBhgsyXNDYXo4Zu/Ymv/M5FysrF2S4IMMFbZuf+x9YuSDDBRkuyHBBhgsyXJDhgn4Aj8SgKqWneXAAAAAASUVORK5CYII=', width: 50, height: 50, alignment: 'center' },
               { text: 'WA: +51 922 083 707', fontSize: 7, bold: true, color: '#111827', alignment: 'center', margin: [0, 4, 0, 0] }
             ],
             margin: [4, 8, 10, 8]
