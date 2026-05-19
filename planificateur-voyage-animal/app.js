@@ -441,142 +441,412 @@
 
   function generarPDF(d, r) {
     const destinoLabel = $('#destino').options[$('#destino').selectedIndex].text;
-    const colorMap = { green: ['#10b981', 'VERT', '✓ VOYAGE RÉALISABLE'], yellow: ['#f59e0b', 'ORANGE', '⚠ ZONE GRISE — DÉCISION OFFICIELLE'], red: ['#dc2626', 'ROUGE', '⛔ NON RÉALISABLE — ACTION URGENTE'] };
-    const [colorHex, colorLabel, colorTitle] = colorMap[r.color];
-    const allIssues = [...r.ejes.E.issues, ...r.ejes.C.issues, ...r.ejes.P.issues];
 
-    const docDefinition = {
-      pageSize: 'A4',
-      pageMargins: [40, 60, 40, 80],
-      info: {
-        title: `Plan de voyage · ${d.nombre} → ${destinoLabel}`,
-        author: 'Carlos Eduardo Ravello Joo',
-        subject: 'Plan zoosanitaire d\'exportation internationale d\'animal',
-        creator: 'Planificateur de Voyage pour Animaux · Zoovet Travel'
+    const sem = {
+      green:  { bg: '#E8F5E9', fg: '#1E4620', title: 'AUTORISÉ POUR MANIFESTE (VERT)',        sub: 'TOUTES LES EXIGENCES ZOOSANITAIRES SATISFAITES' },
+      yellow: { bg: '#FEFCBF', fg: '#B7791F', title: 'ZONE GRISE — DÉCISION DE L\'AGENT', sub: 'AMBRE · RÉVISION REQUISE'               },
+      red:    { bg: '#FFF5F5', fg: '#63171D', title: 'NON VIABLE — ACTION URGENTE',             sub: 'ROUGE · BLOCAGES CRITIQUES'                 }
+    };
+    const col = sem[r.color];
+
+    const fmtU = (dt) => {
+      if (!dt || isNaN(dt)) return '—';
+      return dt.toLocaleDateString('fr-FR', { day: '2-digit', month: 'short', year: 'numeric' }).toUpperCase();
+    };
+
+    const refYear = new Date().getFullYear();
+    const refId   = `ZVT-BC-${refYear}-${Math.random().toString(36).substr(2,4).toUpperCase()}`;
+
+    const pageHeader = {
+      margin: [0, 0, 0, 0],
+      table: {
+        widths: ['auto', '*', 'auto'],
+        body: [[
+          {
+            stack: [
+              { text: 'ZOOVET TRAVEL', fontSize: 22, bold: true, color: '#FFFFFF' },
+              { text: 'BorderCheck · Système International d\'Autorisation pour Animaux', fontSize: 8, bold: true, color: '#A99260', margin: [0, 2, 0, 0] },
+              { text: 'MANIFESTE INTERNATIONAL D\'AUTORISATION POUR ANIMAUX', fontSize: 6.5, color: '#D1D5DB', margin: [0, 3, 0, 0] }
+            ],
+            margin: [24, 12, 0, 12],
+            border: [false, false, false, false]
+          },
+          { text: '', border: [false, false, false, false] },
+          {
+            stack: [
+              { text: `RÉFÉRENCE: ${refId}`,            fontSize: 7, color: '#FFFFFF' },
+              { text: `DATE: ${fmtU(today())}`,                    fontSize: 7, color: '#FFFFFF' },
+              { text: 'ÉTAT: MANIFESTE OFFICIEL',             fontSize: 7, color: '#FFFFFF' },
+              { text: `DESTINATION: ${destinoLabel.toUpperCase()}`, fontSize: 7, color: '#FFFFFF' }
+            ],
+            alignment: 'right',
+            margin: [0, 12, 24, 12],
+            border: [false, false, false, false]
+          }
+        ]]
       },
-      footer: (currentPage, pageCount) => ({
-        margin: [40, 20, 40, 0],
-        stack: [
-          { text: 'Informations indicatives. Ne remplace pas un avis vétérinaire ni une décision officielle. Vérifier toujours auprès du SENASA Pérou et de l\'autorité du pays de destination avant de voyager.', fontSize: 7, color: '#666', alignment: 'center', margin: [0,0,0,4] },
-          { columns: [
-            { text: `Généré le ${fmtDate(today())} · Planificateur v${VERSION}`, fontSize: 7, color: '#999' },
-            { text: `Page ${currentPage} sur ${pageCount}`, fontSize: 7, color: '#999', alignment: 'center' },
-            { text: 'Conception : Carlos Ravello Joo · carlosravello.com', fontSize: 7, color: '#999', alignment: 'right' }
-          ]}
-        ]
-      }),
-      content: buildPDFContent(d, r, destinoLabel, colorHex, colorLabel, colorTitle, allIssues),
-      defaultStyle: { font: 'Roboto', fontSize: 10, color: '#1a2e35' },
-      styles: {
-        h1: { fontSize: 22, bold: true, color: '#1a2e35', margin: [0, 0, 0, 8] },
-        h2: { fontSize: 14, bold: true, color: '#0C789E', margin: [0, 16, 0, 8] },
-        small: { fontSize: 8, color: '#666' },
-        label: { fontSize: 8, color: '#999', bold: true }
+      layout: {
+        fillColor:     () => '#0F1E36',
+        hLineWidth:    () => 0,
+        vLineWidth:    () => 0,
+        paddingTop:    () => 0,
+        paddingBottom: () => 0,
+        paddingLeft:   () => 0,
+        paddingRight:  () => 0
       }
     };
 
-    pdfMake.createPdf(docDefinition).download(`plan-voyage-${slug(d.nombre)}-${slug(destinoLabel)}.pdf`);
+    const docDefinition = {
+      pageSize: 'A4',
+      pageMargins: [24, 84, 24, 44],
+      info: {
+        title:   `BorderCheck · ${d.nombre} → ${destinoLabel}`,
+        author:  'Zoovet Travel',
+        subject: 'Manifeste International d\'Autorisation pour Animaux',
+        creator: 'BorderCheck by Zoovet Travel'
+      },
+      header: () => pageHeader,
+      footer: (pg, total) => ({
+        margin: [24, 6, 24, 0],
+        stack: [
+          { canvas: [{ type: 'line', x1: 0, y1: 0, x2: 547, y2: 0, lineWidth: 1, lineColor: '#A99260' }] },
+          { margin: [0, 3, 0, 0], columns: [
+            { text: 'Guide indicatif uniquement. Confirmez auprès de la compagnie et de l\'autorité vétérinaire. zoovettravel.com', fontSize: 6, color: '#64748B' },
+            { text: `ZVT-BC-${refYear} // PAGE ${pg} SUR ${total}`, fontSize: 7, bold: true, color: '#111827', alignment: 'center' },
+            { text: 'zoovettravel.com | +51 922 083 707', fontSize: 7, bold: true, color: '#111827', alignment: 'right' }
+          ]}
+        ]
+      }),
+      content: buildPDFContent(d, r, destinoLabel, col, fmtU),
+      defaultStyle: { font: 'Roboto', fontSize: 9, color: '#111827' }
+    };
+
+    pdfMake.createPdf(docDefinition).download(`BorderCheck-${slug(d.nombre)}-${slug(destinoLabel)}.pdf`);
   }
 
-  function buildPDFContent(d, r, destinoLabel, colorHex, colorLabel, colorTitle, allIssues) {
+  function buildPDFContent(d, r, destinoLabel, col, fmtU) {
+    const dest    = r.destinoData;
     const content = [];
 
-    content.push(
-      { text: 'ZOOVET TRAVEL', fontSize: 18, bold: true, color: '#1a2e35', characterSpacing: 4, alignment: 'center', margin: [0, 0, 0, 4] },
-      { text: 'Centre médical vétérinaire · 12+ ans d\'exportation internationale d\'animaux', fontSize: 9, color: '#666', alignment: 'center', margin: [0, 0, 0, 30] },
-      { text: 'PLAN DE VOYAGE INTERNATIONAL', fontSize: 12, bold: true, color: '#0C789E', characterSpacing: 2, alignment: 'center', margin: [0, 0, 0, 16] },
-      { canvas: [{ type: 'rect', x: 80, y: 0, w: 360, h: 90, color: colorHex }], margin: [0, 0, 0, -90] },
-      { text: colorTitle, fontSize: 18, bold: true, color: 'white', alignment: 'center', margin: [0, 36, 0, 0] },
-      { text: `Feu de signalisation : ${colorLabel}`, fontSize: 10, color: 'white', alignment: 'center', margin: [0, 0, 0, 30] },
-      { text: ' ', margin: [0, 12, 0, 0] },
-      { table: {
-        widths: ['*', '*'],
-        body: [
-          [{ text: 'ANIMAL', style: 'label' }, { text: 'DESTINATION', style: 'label' }],
-          [{ text: `${d.nombre} (${d.especie}, ${d.raza})`, fontSize: 12, bold: true }, { text: destinoLabel, fontSize: 12, bold: true }],
-          [{ text: 'ÂGE AU VOYAGE', style: 'label', margin: [0,8,0,0] }, { text: 'DATE DE VOYAGE', style: 'label', margin: [0,8,0,0] }],
-          [{ text: `${r.edadAlViaje} semaines`, fontSize: 11 }, { text: fmtDate(d.fecha_viaje), fontSize: 11 }],
-          [{ text: 'POIDS', style: 'label', margin: [0,8,0,0] }, { text: 'JOURS AVANT LE VOYAGE', style: 'label', margin: [0,8,0,0] }],
-          [{ text: `${d.peso} kg`, fontSize: 11 }, { text: `${r.diasAlViaje} jours`, fontSize: 11 }]
-        ]
-      }, layout: 'noBorders', margin: [0, 16, 0, 16] },
-      { text: 'INDICE DE COHÉRENCE DYNAMIQUE (ICD-Travel)', style: 'label', alignment: 'center' },
-      { text: `${r.icdScore.total}/100`, fontSize: 32, bold: true, color: colorHex, alignment: 'center' },
-      { text: `Axe E (Physiologique) : ${r.icdScore.E}  ·  Axe C (Information) : ${r.icdScore.C}  ·  Axe P (Directionnel) : ${r.icdScore.P}`, fontSize: 9, color: '#666', alignment: 'center', margin: [0, 0, 0, 16] }
+    const vacClear = d.vacuna.tiene && !r.ejes.E.issues.some(i =>
+      ['vacuna', 'vacuna-tarde', 'vacuna-vencida'].includes(i.topic) && i.severity === 'red'
     );
+    const favsRequired = !!(dest.titer_test && (
+      dest.titer_test.es_bloqueante ||
+      dest.titer_test.es_bloqueante_perro ||
+      dest.titer_test.es_bloqueante_gato
+    ));
+    const favsBlocked = r.ejes.C.issues.some(i => i.topic === 'favn' && i.severity === 'red');
 
-    if (r.color !== 'red') {
-      content.push({ text: '', pageBreak: 'after' });
-      content.push({ text: 'CALENDRIER INVERSÉ', style: 'h2' });
-      content.push({ text: 'Actions à exécuter dans l\'ordre, comptées à rebours depuis la date de voyage :', fontSize: 9, color: '#666', margin: [0,0,0,12] });
-      const tableBody = [
-        [{ text: 'DATE', style: 'label', fillColor: '#F8FAFC' }, { text: 'ACTION', style: 'label', fillColor: '#F8FAFC' }, { text: 'AUTORITÉ', style: 'label', fillColor: '#F8FAFC' }]
-      ];
-      r.timeline.forEach(t => {
-        tableBody.push([
-          { text: fmtDate(t.date), fontSize: 9, color: '#0C789E', bold: true },
-          { text: t.task, fontSize: 9 },
-          { text: t.org, fontSize: 8, color: '#666' }
-        ]);
+    const secTitle = (txt, mt) => ({ text: txt, fontSize: 10, bold: true, color: '#A99260', margin: [0, mt !== undefined ? mt : 14, 0, 5] });
+    const lbl      = (txt)     => ({ text: txt, fontSize: 7, bold: true, color: '#A99260' });
+    const val      = (txt)     => ({ text: txt, fontSize: 10, bold: true, color: '#111827', margin: [0, 2, 0, 0] });
+
+    // 1 · ÉTAT
+    content.push({
+      table: {
+        widths: ['*', 'auto'],
+        body: [[
+          { text: `ÉTAT: ${col.title}`, fontSize: 13, bold: true, color: col.fg, margin: [10, 12, 0, 12] },
+          { text: col.sub, fontSize: 7, bold: true, color: col.fg, alignment: 'right', margin: [0, 14, 10, 12] }
+        ]]
+      },
+      layout: {
+        fillColor:  () => col.bg,
+        hLineWidth: () => 0.5,
+        vLineWidth: (i) => i === 0 ? 4 : 0,
+        hLineColor: () => '#E2E8F0',
+        vLineColor: (i) => i === 0 ? col.fg : 'transparent'
+      },
+      margin: [0, 0, 0, 10]
+    });
+
+    // 2 · Avertissement
+    content.push({
+      table: {
+        widths: ['*'],
+        body: [[{
+          text: 'Ce document est un guide indicatif uniquement. Les exigences peuvent changer sans préavis — confirmez toujours auprès de votre compagnie aérienne et de l\'autorité vétérinaire officielle du pays de destination.',
+          fontSize: 8, color: '#64748B', margin: [10, 8, 10, 8]
+        }]]
+      },
+      layout: {
+        hLineWidth: () => 0,
+        vLineWidth: (i) => i === 0 ? 2 : 0,
+        vLineColor: () => '#A99260'
+      },
+      margin: [0, 0, 0, 10]
+    });
+
+    // 3 · DONNÉES DU PASSAGER
+    content.push(secTitle('DONNÉES DU PASSAGER'));
+    content.push({
+      table: {
+        widths: ['*', '*', '*'],
+        body: [
+          [lbl('NOM / ESPÈCE / RACE'), lbl('ÂGE / POIDS'), lbl('MICROPUCE ISO (15 CHIFFRES)')],
+          [val(`${d.nombre.toUpperCase()} / ${d.especie.toUpperCase()} / ${d.raza.toUpperCase()}`),
+           val(`${d.edad_meses} MOIS / ${d.peso} KG`),
+           val(d.microchip.tiene ? '✓ IMPLANTÉE' : 'NON ENREGISTRÉE')]
+        ]
+      },
+      layout: {
+        hLineWidth: () => 0.5, vLineWidth: () => 0.5,
+        hLineColor: () => '#E2E8F0', vLineColor: () => '#E2E8F0'
+      },
+      margin: [0, 0, 0, 10]
+    });
+
+    // 4 · ITINÉRAIRE ET DESTINATION
+    content.push(secTitle('ITINÉRAIRE ET DESTINATION'));
+    content.push({
+      table: {
+        widths: ['*', '*', '*'],
+        body: [
+          [lbl('ORIGINE (PORT DE DÉPART)'), lbl('DESTINATION (PORT D\'ENTRÉE)'), lbl('DATE DE VOL PRÉVUE')],
+          [val('PÉROU (LIM)'), val(destinoLabel.toUpperCase()), val(fmtU(d.fecha_viaje))]
+        ]
+      },
+      layout: {
+        hLineWidth: () => 0.5, vLineWidth: () => 0.5,
+        hLineColor: () => '#E2E8F0', vLineColor: () => '#E2E8F0'
+      },
+      margin: [0, 0, 0, 10]
+    });
+
+    // 5 · CALENDRIER DE CONFORMITÉ
+    content.push(secTitle('CALENDRIER DE CONFORMITÉ'));
+
+    const statusCell = (ok) => ({ text: ok ? 'AUTORISÉ' : 'EN ATTENTE', fontSize: 8, bold: true, color: ok ? '#1E4620' : '#B7791F' });
+
+    const compRows = [[
+      { text: 'EXIGENCE',        fontSize: 7, bold: true, color: '#FFFFFF', fillColor: '#0F1E36', margin: [4,6,4,6] },
+      { text: 'ÉTAT',       fontSize: 7, bold: true, color: '#FFFFFF', fillColor: '#0F1E36', margin: [4,6,4,6] },
+      { text: 'ACTION / DÉTAIL', fontSize: 7, bold: true, color: '#FFFFFF', fillColor: '#0F1E36', margin: [4,6,4,6] },
+      { text: 'DATE',            fontSize: 7, bold: true, color: '#FFFFFF', fillColor: '#0F1E36', margin: [4,6,4,6] }
+    ]];
+
+    let ri = 0;
+    const addRow = (req, ok, action, date) => {
+      const bg = ri++ % 2 === 0 ? '#FFFFFF' : '#F8F9FA';
+      compRows.push([
+        { text: req,    fontSize: 8, bold: true, fillColor: bg, margin: [4,6,4,6] },
+        { ...statusCell(ok),          fillColor: bg, margin: [4,6,4,6] },
+        { text: action, fontSize: 7,  fillColor: bg, margin: [4,6,4,6] },
+        { text: date,   fontSize: 8,  fillColor: bg, margin: [4,6,4,6] }
+      ]);
+    };
+
+    if (dest.microchip && dest.microchip.es_bloqueante) {
+      addRow('IMPLANTATION MICROPUCE', d.microchip.tiene,
+        d.microchip.tiene ? 'AVANT VACCINATION' : 'IMPLANTATION REQUISE',
+        d.microchip.fecha ? fmtU(d.microchip.fecha) : '—');
+    }
+    addRow('VACCIN ANTIRABIQUE', vacClear,
+      vacClear ? 'VALIDE >30J, <1AN' : d.vacuna.tiene ? 'VÉRIFIER VALIDITÉ' : 'APPLICATION REQUISE',
+      d.vacuna.fecha ? fmtU(d.vacuna.fecha) : '—');
+    if (favsRequired) {
+      addRow('TEST TITRATION FAVN RNATT', !favsBlocked,
+        !favsBlocked ? 'TITRE: ≥0,5 UI/ML' : 'ÉCHANTILLON REQUIS EN URGENCE', '—');
+      if (dest.titer_test.dias_antes_viaje_minimo >= 90) {
+        addRow(`PÉRIODE D\'ATTENTE UE ${dest.titer_test.dias_antes_viaje_minimo} JOURS`,
+          r.diasAlViaje > dest.titer_test.dias_antes_viaje_minimo,
+          'DÉLAI MINIMUM POST-TITRATION', '—');
+      }
+    }
+    addRow('CERTIFICAT SANITAIRE OFFICIEL', false,
+      'CONSULTATION VÉT / ÉMISSION J-5', fmtU(subDays(d.fecha_viaje, 5)));
+    addRow('ENDOSSEMENT SENASA EXPORT', false,
+      'RENDEZ-VOUS CACHET OFFICIEL', fmtU(subDays(d.fecha_viaje, 2)));
+
+    content.push({
+      table: { widths: ['33%', '15%', '32%', '20%'], body: compRows },
+      layout: {
+        hLineWidth: () => 0.5, vLineWidth: () => 0.5,
+        hLineColor: () => '#E2E8F0', vLineColor: () => '#E2E8F0'
+      },
+      margin: [0, 0, 0, 10]
+    });
+
+    // 6 · PROCHAINES ÉTAPES OBLIGATOIRES
+    content.push(secTitle('PROCHAINES ÉTAPES OBLIGATOIRES'));
+    content.push({
+      table: {
+        widths: ['*', 96],
+        body: [[
+          {
+            stack: [
+              { text: '1. CERTIFICAT SANITAIRE OFFICIEL', fontSize: 8, bold: true, margin: [0, 0, 0, 3] },
+              { text: `DOIT ÊTRE DÉLIV RÉ PAR UN VÉTÉRINAIRE AGRÉÉ AU PLUS TÔT LE ${fmtU(subDays(d.fecha_viaje, 5))} (J-5).`, fontSize: 7, margin: [0, 0, 0, 8] },
+              { text: '2. ENDOSSEMENT CZE SENASA', fontSize: 8, bold: true, margin: [0, 0, 0, 3] },
+              { text: `PRENDRE RDV AUPRÈS DE SENASA PÉROU ENTRE LE ${fmtU(subDays(d.fecha_viaje, 2))} ET LE ${fmtU(subDays(d.fecha_viaje, 1))}.`, fontSize: 7 }
+            ],
+            margin: [10, 10, 8, 10]
+          },
+          {
+            stack: [
+              { text: 'UNE QUESTION?',                              fontSize: 8, bold: true, color: '#111827', alignment: 'center' },
+              { text: 'ÉCRIVEZ-NOUS 24H · TOUTE LANGUE', fontSize: 7, bold: true, color: '#111827', alignment: 'center', margin: [0, 2, 0, 4] },
+              { canvas: [
+                { type: 'rect', x: 18, y: 0,  w: 50, h: 50, lineWidth: 1.5, lineColor: '#0F1E36', color: '#F8F9FA' },
+                { type: 'rect', x: 23, y: 5,  w: 9,  h: 9,  color: '#0F1E36' },
+                { type: 'rect', x: 24, y: 6,  w: 7,  h: 7,  color: '#FFFFFF' },
+                { type: 'rect', x: 25, y: 7,  w: 5,  h: 5,  color: '#0F1E36' },
+                { type: 'rect', x: 37, y: 5,  w: 3,  h: 3,  color: '#0F1E36' },
+                { type: 'rect', x: 41, y: 5,  w: 2,  h: 2,  color: '#0F1E36' },
+                { type: 'rect', x: 54, y: 5,  w: 9,  h: 9,  color: '#0F1E36' },
+                { type: 'rect', x: 55, y: 6,  w: 7,  h: 7,  color: '#FFFFFF' },
+                { type: 'rect', x: 56, y: 7,  w: 5,  h: 5,  color: '#0F1E36' },
+                { type: 'rect', x: 23, y: 36, w: 9,  h: 9,  color: '#0F1E36' },
+                { type: 'rect', x: 24, y: 37, w: 7,  h: 7,  color: '#FFFFFF' },
+                { type: 'rect', x: 25, y: 38, w: 5,  h: 5,  color: '#0F1E36' },
+                { type: 'rect', x: 37, y: 36, w: 3,  h: 3,  color: '#0F1E36' },
+                { type: 'rect', x: 41, y: 38, w: 4,  h: 4,  color: '#0F1E36' },
+                { type: 'rect', x: 37, y: 20, w: 8,  h: 8,  color: '#0F1E36' },
+                { type: 'rect', x: 54, y: 36, w: 9,  h: 9,  color: '#0F1E36' },
+                { type: 'rect', x: 55, y: 37, w: 7,  h: 7,  color: '#FFFFFF' },
+                { type: 'rect', x: 56, y: 38, w: 5,  h: 5,  color: '#0F1E36' }
+              ]},
+              { text: 'WA: +51 922 083 707', fontSize: 7, bold: true, color: '#111827', alignment: 'center', margin: [0, 4, 0, 0] }
+            ],
+            margin: [4, 8, 10, 8]
+          }
+        ]]
+      },
+      layout: {
+        hLineWidth: () => 0.5,
+        vLineWidth: (i) => i === 0 ? 4 : 0.5,
+        hLineColor: () => '#E2E8F0',
+        vLineColor: (i) => i === 0 ? '#A99260' : '#E2E8F0'
+      }
+    });
+
+    // PAGE 2
+    content.push({ text: '', pageBreak: 'before' });
+
+    // 7 · CHECKLIST DU JOUR DU VOYAGE
+    content.push(secTitle('CHECKLIST DU JOUR DU VOYAGE', 0));
+    content.push({
+      table: {
+        widths: ['33.3%', '33.3%', '33.4%'],
+        body: [[
+          {
+            stack: [
+              { text: 'DOCUMENTS (ORIGINAUX + COPIES)', fontSize: 7, bold: true, color: '#A99260', margin: [0, 0, 0, 5] },
+              { text: '■  Certificat sanitaire / d\'exportation',     fontSize: 6.5, margin: [0, 2, 0, 0] },
+              { text: '■  Carnet de vaccination complet',             fontSize: 6.5, margin: [0, 2, 0, 0] },
+              { text: '■  Certificat d\'implantation micropuce',      fontSize: 6.5, margin: [0, 2, 0, 0] },
+              { text: '■  Résultats test de titration FAVN',     fontSize: 6.5, margin: [0, 2, 0, 0] },
+              { text: '■  Passeport ou permis d\'exportation',        fontSize: 6.5, margin: [0, 2, 0, 0] },
+              { text: '       (selon exigence de destination)',            fontSize: 6.5, color: '#64748B' }
+            ],
+            margin: [8, 8, 8, 8]
+          },
+          {
+            stack: [
+              { text: 'TRANSPORTEUR — RÈGLES IATA', fontSize: 7, bold: true, color: '#A99260', margin: [0, 0, 0, 5] },
+              { text: '■  Caisse IATA correctement ventilée',      fontSize: 6.5, margin: [0, 2, 0, 0] },
+              { text: '■  Literie absorbante dans la caisse',          fontSize: 6.5, margin: [0, 2, 0, 0] },
+              { text: '■  Distributeur d\'eau anti-renversement',      fontSize: 6.5, margin: [0, 2, 0, 0] },
+              { text: '■  Jeûne 4–6 h avant le départ', fontSize: 6.5, margin: [0, 2, 0, 0] },
+              { text: '■  Aucun objet en vrac dans la caisse',         fontSize: 6.5, margin: [0, 2, 0, 0] },
+              { text: '■  Caisse étiquetée avec les coordonnées', fontSize: 6.5, margin: [0, 2, 0, 0] }
+            ],
+            margin: [8, 8, 8, 8]
+          },
+          {
+            stack: [
+              { text: 'CONSEILS', fontSize: 7, bold: true, color: '#A99260', margin: [0, 0, 0, 5] },
+              { text: '→  Arriver à l\'aéroport 4–5 h avant',  fontSize: 6.5, margin: [0, 2, 0, 0] },
+              { text: '→  Confirmer la politique animaux 48h',          fontSize: 6.5, margin: [0, 2, 0, 0] },
+              { text: '→  Vérifier la météo à destination', fontSize: 6.5, margin: [0, 2, 0, 0] },
+              { text: '→  Consulter le vétérinaire 24–48h avant', fontSize: 6.5, margin: [0, 2, 0, 0] },
+              { text: '→  Ne jamais séder sans accord vét.',  fontSize: 6.5, margin: [0, 2, 0, 0] }
+            ],
+            margin: [8, 8, 8, 8]
+          }
+        ]]
+      },
+      layout: {
+        hLineWidth: () => 0.5, vLineWidth: () => 0.5,
+        hLineColor: () => '#E2E8F0', vLineColor: () => '#E2E8F0'
+      },
+      margin: [0, 0, 0, 14]
+    });
+
+    // 8 · CALENDRIER VISUEL
+    content.push(secTitle('CALENDRIER DE CONFORMITÉ — VUE D\'ENSEMBLE'));
+
+    const nodes = [];
+    if (dest.microchip && dest.microchip.es_bloqueante) {
+      nodes.push({ label: 'MICROPUCE',                  date: d.microchip.fecha ? fmtU(d.microchip.fecha) : '—', status: d.microchip.tiene ? 'cleared' : 'pending' });
+    }
+    nodes.push({ label: 'VACCIN ANTIRABIQUE',           date: d.vacuna.fecha   ? fmtU(d.vacuna.fecha)    : '—', status: vacClear     ? 'cleared' : 'pending' });
+    if (favsRequired) {
+      nodes.push({ label: 'TEST FAVN',                  date: '—', status: !favsBlocked ? 'cleared' : 'pending' });
+    }
+    nodes.push({ label: 'CERTIFICAT VÉT.',         date: fmtU(subDays(d.fecha_viaje, 5)), status: 'pending' });
+    nodes.push({ label: 'JOUR DU VOYAGE',               date: fmtU(d.fecha_viaje),             status: 'flight'  });
+
+    const cw        = 547;
+    const pad       = 28;
+    const lineY     = 20;
+    const n         = nodes.length;
+    const nodeX     = nodes.map((_, i) => pad + (i / (n - 1)) * (cw - 2 * pad));
+    const firstPend = nodes.findIndex(nd => nd.status !== 'cleared');
+
+    const shapes = [];
+    shapes.push({ type: 'line', x1: 0, y1: 0, x2: 0.1, y2: 40, lineWidth: 0.1, lineColor: 'white' });
+    for (let i = 0; i < n - 1; i++) {
+      const dashed = firstPend >= 0 && i >= firstPend;
+      shapes.push({
+        type: 'line', x1: nodeX[i], y1: lineY, x2: nodeX[i + 1], y2: lineY,
+        lineWidth: 2, lineColor: '#0F1E36',
+        ...(dashed ? { dash: { length: 6, space: 3 } } : {})
       });
-      content.push({ table: { widths: ['auto', '*', 'auto'], body: tableBody }, layout: 'lightHorizontalLines' });
-
-      content.push({ text: '', pageBreak: 'after' });
-      content.push({ text: 'LISTE DE CONTRÔLE DOCUMENTAIRE', style: 'h2' });
-      content.push({ text: 'Cocher au fur et à mesure de l\'obtention :', fontSize: 9, color: '#666', margin: [0,0,0,12] });
-      const checklist = [
-        '☐ Puce ISO 11784/11785 implantée et fonctionnelle',
-        '☐ Vaccin antirabique valide (minimum 30 jours avant le voyage)',
-        '☐ Carnet de vaccinations complet, signé par un vétérinaire agréé'
-      ];
-      if (r.destinoData.titer_test && r.destinoData.titer_test.es_bloqueante) {
-        checklist.push('☐ Test FAVN/sérologique en laboratoire agréé (≥0,5 UI/ml)');
-      }
-      if (r.destinoData.desparasitacion && r.destinoData.desparasitacion.es_bloqueante) {
-        checklist.push(`☐ Déparasitage documenté (${r.destinoData.desparasitacion.producto_especifico || 'standard'})`);
-      }
-      checklist.push(
-        '☐ Certificat de santé émis par vétérinaire agréé (valable 5 jours)',
-        '☐ CZE visé par SENASA Pérou',
-        '☐ Réservation de voyage confirmée'
-      );
-      if (r.destinoData.permiso_importacion && r.destinoData.permiso_importacion.es_bloqueante) {
-        checklist.push(`☐ Permis d'importation obtenu (${r.destinoData.permiso_importacion.producto_especifico || ''})`);
-      }
-      if (r.destinoData.cuarentena && r.destinoData.cuarentena.es_bloqueante) {
-        checklist.push(`☐ Quarantaine à l'arrivée réservée (${r.destinoData.cuarentena.producto_especifico || ''})`);
-      }
-      checklist.forEach(item => content.push({ text: item, fontSize: 10, margin: [0, 4, 0, 0] }));
-
-      content.push({ text: 'SOURCE OFFICIELLE DU PAYS DE DESTINATION', style: 'h2' });
-      content.push({ text: r.destinoData.fuente_oficial.nombre, fontSize: 10, bold: true });
-      content.push({ text: r.destinoData.fuente_oficial.url, fontSize: 9, color: '#0C789E' });
-      content.push({ text: `Consulté le : ${r.destinoData.fuente_oficial.fecha_consulta}`, style: 'small' });
     }
+    nodes.forEach((nd, i) => {
+      if (nd.status === 'cleared') {
+        shapes.push({ type: 'ellipse', x: nodeX[i], y: lineY, r1: 8, r2: 8, color: '#1E4620' });
+      } else if (nd.status === 'pending') {
+        shapes.push({ type: 'ellipse', x: nodeX[i], y: lineY, r1: 8, r2: 8, color: '#FFFFFF', lineColor: '#B7791F', lineWidth: 1.5 });
+        shapes.push({ type: 'ellipse', x: nodeX[i], y: lineY, r1: 4, r2: 4, color: '#B7791F' });
+      } else {
+        shapes.push({ type: 'ellipse', x: nodeX[i], y: lineY, r1: 10, r2: 10, color: '#0F1E36' });
+      }
+    });
 
-    content.push({ text: '', pageBreak: 'after' });
-    content.push({ text: 'DIAGNOSTIC', style: 'h2' });
-    if (allIssues.length === 0) {
-      content.push({ text: 'Aucune observation critique. Votre voyage satisfait à toutes les exigences.', fontSize: 10, color: '#10b981' });
-    } else {
-      allIssues.forEach(i => {
-        const c = i.severity === 'red' ? '#dc2626' : i.severity === 'yellow' ? '#f59e0b' : '#1a2e35';
-        content.push({ text: `• ${i.msg}`, fontSize: 9, color: c, margin: [0, 4, 0, 0] });
-      });
-    }
+    content.push({
+      columns: nodes.map((nd, i) => ({
+        text: nd.label, fontSize: 7, bold: true, color: '#111827',
+        alignment: i === 0 ? 'left' : i === n - 1 ? 'right' : 'center'
+      })),
+      margin: [0, 0, 0, 2]
+    });
+    content.push({ canvas: shapes, margin: [0, 2, 0, 2] });
+    content.push({
+      columns: nodes.map((nd, i) => ({
+        text: nd.date, fontSize: 7, color: '#64748B',
+        alignment: i === 0 ? 'left' : i === n - 1 ? 'right' : 'center'
+      })),
+      margin: [0, 2, 0, 16]
+    });
 
-    content.push({ text: r.color === 'red' ? '⚠ ACTION URGENTE' : '📞 PROCHAINE ÉTAPE', style: 'h2' });
-    if (r.color === 'red') {
-      content.push({ text: 'Ne prenez pas de décision sans nous. Contactez-nous MAINTENANT et nous évaluerons les options réelles : reporter la date, changer de destination, ajuster le plan.', fontSize: 11, color: '#dc2626', bold: true, margin: [0, 0, 0, 8] });
-      content.push({ text: 'WhatsApp urgence : +51 922 083 707', fontSize: 14, color: '#0C789E', bold: true });
-    } else {
-      content.push({ text: 'Coordonnez l\'exécution de votre plan avec notre équipe :', fontSize: 11, margin: [0, 0, 0, 8] });
-      content.push({ text: 'WhatsApp consultations : +51 979 620 402', fontSize: 14, color: '#0C789E', bold: true });
-    }
-    content.push({ text: 'Calle Cuba 241, Trujillo · Lun–Sam 09h00–19h00 · contacto@zoovettravel.com', style: 'small', margin: [0, 4, 0, 0] });
-
-    content.push({ text: 'AVERTISSEMENT JURIDIQUE', style: 'h2' });
-    content.push({ text: 'Cet outil est strictement informatif et indicatif. Il ne constitue pas un avis vétérinaire, ne remplace pas la consultation d\'un vétérinaire agréé et ne se substitue pas à la vérification directe auprès du SENASA Pérou et de l\'autorité sanitaire du pays de destination. Les réglementations zoosanitaires internationales peuvent changer sans préavis et la décision finale concernant l\'admission de tout animal appartient exclusivement aux officiels sanitaires et douaniers du pays de destination.', fontSize: 8, color: '#666', alignment: 'justify' });
+    // 9 · Attribution
+    content.push({
+      table: {
+        widths: ['*'],
+        body: [[{
+          text: 'DOCUMENT GÉNÉRÉ PAR L\'ALGORITHME BORDERCHECK · ZOOVET TRAVEL · zoovettravel.com',
+          fontSize: 8, bold: true, alignment: 'center', color: '#111827', margin: [0, 8, 0, 8]
+        }]]
+      },
+      layout: {
+        hLineWidth: () => 1, vLineWidth: () => 1,
+        hLineColor: () => '#A99260', vLineColor: () => '#A99260',
+        fillColor:  () => '#F8F9FA'
+      }
+    });
 
     return content;
   }

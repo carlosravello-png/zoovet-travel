@@ -468,158 +468,434 @@
   }
 
   // ═════════════════════════════════════════════════════════════════
-  // PDF (pdfmake)
+  // PDF (pdfmake) — BorderCheck Aeronautical Design v2
+  // Spec: pdfmake_spec.txt · Design: Antigravity / Carlos Ravello
   // ═════════════════════════════════════════════════════════════════
   function generarPDF(d, r) {
     const destinoLabel = $('#destino').options[$('#destino').selectedIndex].text;
-    const colorMap = { green: ['#10b981', 'GREEN', '✓ TRAVEL VIABLE'], yellow: ['#f59e0b', 'AMBER', '⚠ GREY ZONE — OFFICER\'S DISCRETION'], red: ['#dc2626', 'RED', '⛔ NOT VIABLE — URGENT ACTION'] };
-    const [colorHex, colorLabel, colorTitle] = colorMap[r.color];
 
-    const allIssues = [...r.ejes.E.issues, ...r.ejes.C.issues, ...r.ejes.P.issues];
+    // ── Spec colour palette ──
+    const sem = {
+      green:  { bg: '#E8F5E9', fg: '#1E4620', title: 'CLEARED FOR MANIFEST (GREEN)',       sub: 'ALL ZOOSANITARY REQS MET'   },
+      yellow: { bg: '#FEFCBF', fg: '#B7791F', title: 'GREY ZONE — OFFICER\'S DISCRETION', sub: 'AMBER · REVIEW REQUIRED'     },
+      red:    { bg: '#FFF5F5', fg: '#63171D', title: 'NOT VIABLE — URGENT ACTION',         sub: 'RED · CRITICAL BLOCKERS'    }
+    };
+    const col = sem[r.color];
 
-    const docDefinition = {
-      pageSize: 'A4',
-      pageMargins: [40, 60, 40, 80],
-      info: {
-        title: `Travel plan · ${d.nombre} → ${destinoLabel}`,
-        author: 'Carlos Eduardo Ravello Joo',
-        subject: 'International pet export zoosanitary plan',
-        creator: 'Pet Travel Planner · Zoovet Travel'
+    // ── Date formatter: "10 JAN 2024" ──
+    const fmtU = (dt) => {
+      if (!dt || isNaN(dt)) return '—';
+      return dt.toLocaleDateString('en-US', { day: '2-digit', month: 'short', year: 'numeric' }).toUpperCase();
+    };
+
+    const refYear = new Date().getFullYear();
+    const refId   = `ZVT-BC-${refYear}-${Math.random().toString(36).substr(2,4).toUpperCase()}`;
+
+    // ── Full-width navy header (repeats on every page) ──
+    const pageHeader = {
+      margin: [0, 0, 0, 0],
+      table: {
+        widths: ['auto', '*', 'auto'],
+        body: [[
+          {
+            stack: [
+              { text: 'ZOOVET TRAVEL', fontSize: 22, bold: true, color: '#FFFFFF' },
+              { text: 'BorderCheck · International Pet Relocation Clearance System', fontSize: 8, bold: true, color: '#A99260', margin: [0, 2, 0, 0] },
+              { text: 'INTERNATIONAL PET RELOCATION CLEARANCE MANIFEST', fontSize: 6.5, color: '#D1D5DB', margin: [0, 3, 0, 0] }
+            ],
+            margin: [24, 12, 0, 12],
+            border: [false, false, false, false]
+          },
+          { text: '', border: [false, false, false, false] },
+          {
+            stack: [
+              { text: `REF: ${refId}`,            fontSize: 7, color: '#FFFFFF' },
+              { text: `DATE: ${fmtU(today())}`,   fontSize: 7, color: '#FFFFFF' },
+              { text: 'STATUS: OFFICIAL MANIFEST',fontSize: 7, color: '#FFFFFF' },
+              { text: `DEST: ${destinoLabel.toUpperCase()}`, fontSize: 7, color: '#FFFFFF' }
+            ],
+            alignment: 'right',
+            margin: [0, 12, 24, 12],
+            border: [false, false, false, false]
+          }
+        ]]
       },
-      footer: (currentPage, pageCount) => ({
-        margin: [40, 20, 40, 0],
-        stack: [
-          { text: 'Informational only. Does not replace veterinary advice or official ruling. Always verify with SENASA Peru and the destination country authority before traveling.', fontSize: 7, color: '#666', alignment: 'center', margin: [0,0,0,4] },
-          { columns: [
-            { text: `Generated on ${fmtDate(today())} · Planner v${VERSION}`, fontSize: 7, color: '#999' },
-            { text: `Page ${currentPage} of ${pageCount}`, fontSize: 7, color: '#999', alignment: 'center' },
-            { text: 'Design: Carlos Ravello Joo · carlosravello.com', fontSize: 7, color: '#999', alignment: 'right' }
-          ]}
-        ]
-      }),
-      content: buildPDFContent(d, r, destinoLabel, colorHex, colorLabel, colorTitle, allIssues),
-      defaultStyle: { font: 'Roboto', fontSize: 10, color: '#1a2e35' },
-      styles: {
-        h1: { fontSize: 22, bold: true, color: '#1a2e35', margin: [0, 0, 0, 8] },
-        h2: { fontSize: 14, bold: true, color: '#0C789E', margin: [0, 16, 0, 8] },
-        small: { fontSize: 8, color: '#666' },
-        label: { fontSize: 8, color: '#999', bold: true }
+      layout: {
+        fillColor:     () => '#0F1E36',
+        hLineWidth:    () => 0,
+        vLineWidth:    () => 0,
+        paddingTop:    () => 0,
+        paddingBottom: () => 0,
+        paddingLeft:   () => 0,
+        paddingRight:  () => 0
       }
     };
 
-    pdfMake.createPdf(docDefinition).download(`travel-plan-${slug(d.nombre)}-${slug(destinoLabel)}.pdf`);
+    const docDefinition = {
+      pageSize: 'A4',
+      pageMargins: [24, 84, 24, 44],
+      info: {
+        title:   `BorderCheck · ${d.nombre} → ${destinoLabel}`,
+        author:  'Zoovet Travel',
+        subject: 'International Pet Relocation Clearance Manifest',
+        creator: 'BorderCheck by Zoovet Travel'
+      },
+      header: () => pageHeader,
+      footer: (pg, total) => ({
+        margin: [24, 6, 24, 0],
+        stack: [
+          { canvas: [{ type: 'line', x1: 0, y1: 0, x2: 547, y2: 0, lineWidth: 1, lineColor: '#A99260' }] },
+          { margin: [0, 3, 0, 0], columns: [
+            { text: 'Advisory guide only. Confirm with airline and destination authority. zoovettravel.com', fontSize: 6, color: '#64748B' },
+            { text: `ZVT-BC-${refYear} // PAGE ${pg} OF ${total}`, fontSize: 7, bold: true, color: '#111827', alignment: 'center' },
+            { text: 'zoovettravel.com | +51 922 083 707', fontSize: 7, bold: true, color: '#111827', alignment: 'right' }
+          ]}
+        ]
+      }),
+      content: buildPDFContent(d, r, destinoLabel, col, fmtU),
+      defaultStyle: { font: 'Roboto', fontSize: 9, color: '#111827' }
+    };
+
+    pdfMake.createPdf(docDefinition).download(`BorderCheck-${slug(d.nombre)}-${slug(destinoLabel)}.pdf`);
   }
 
-  function buildPDFContent(d, r, destinoLabel, colorHex, colorLabel, colorTitle, allIssues) {
+  function buildPDFContent(d, r, destinoLabel, col, fmtU) {
+    const dest    = r.destinoData;
     const content = [];
 
-    content.push(
-      { text: 'ZOOVET TRAVEL', fontSize: 18, bold: true, color: '#1a2e35', characterSpacing: 4, alignment: 'center', margin: [0, 0, 0, 4] },
-      { text: 'Veterinary Medical Centre · 12+ years in international pet export', fontSize: 9, color: '#666', alignment: 'center', margin: [0, 0, 0, 30] },
-      { text: 'INTERNATIONAL TRAVEL PLAN', fontSize: 12, bold: true, color: '#0C789E', characterSpacing: 2, alignment: 'center', margin: [0, 0, 0, 16] },
-
-      { canvas: [{ type: 'rect', x: 80, y: 0, w: 360, h: 90, color: colorHex }], margin: [0, 0, 0, -90] },
-      { text: colorTitle, fontSize: 18, bold: true, color: 'white', alignment: 'center', margin: [0, 36, 0, 0] },
-      { text: `Traffic light: ${colorLabel}`, fontSize: 10, color: 'white', alignment: 'center', margin: [0, 0, 0, 30] },
-
-      { text: ' ', margin: [0, 12, 0, 0] },
-
-      { table: {
-        widths: ['*', '*'],
-        body: [
-          [{ text: 'PET', style: 'label' }, { text: 'DESTINATION', style: 'label' }],
-          [{ text: `${d.nombre} (${d.especie}, ${d.raza})`, fontSize: 12, bold: true }, { text: destinoLabel, fontSize: 12, bold: true }],
-          [{ text: 'AGE AT TRAVEL', style: 'label', margin: [0,8,0,0] }, { text: 'TRAVEL DATE', style: 'label', margin: [0,8,0,0] }],
-          [{ text: `${r.edadAlViaje} weeks`, fontSize: 11 }, { text: fmtDate(d.fecha_viaje), fontSize: 11 }],
-          [{ text: 'WEIGHT', style: 'label', margin: [0,8,0,0] }, { text: 'DAYS TO TRAVEL', style: 'label', margin: [0,8,0,0] }],
-          [{ text: `${d.peso} kg`, fontSize: 11 }, { text: `${r.diasAlViaje} days`, fontSize: 11 }]
-        ]
-      }, layout: 'noBorders', margin: [0, 16, 0, 16] },
-
-      { text: 'DYNAMIC COHERENCE INDEX (ICD-Travel)', style: 'label', alignment: 'center' },
-      { text: `${r.icdScore.total}/100`, fontSize: 32, bold: true, color: colorHex, alignment: 'center' },
-      { text: `Axis E (Physiological): ${r.icdScore.E}  ·  Axis C (Information): ${r.icdScore.C}  ·  Axis P (Directional): ${r.icdScore.P}`, fontSize: 9, color: '#666', alignment: 'center', margin: [0, 0, 0, 16] }
+    // ── Derived status flags (used in both pages) ──
+    const vacClear = d.vacuna.tiene && !r.ejes.E.issues.some(i =>
+      ['vacuna', 'vacuna-tarde', 'vacuna-vencida'].includes(i.topic) && i.severity === 'red'
     );
+    const favsRequired = !!(dest.titer_test && (
+      dest.titer_test.es_bloqueante ||
+      dest.titer_test.es_bloqueante_perro ||
+      dest.titer_test.es_bloqueante_gato
+    ));
+    const favsBlocked = r.ejes.C.issues.some(i => i.topic === 'favn' && i.severity === 'red');
 
-    if (r.color !== 'red') {
-      content.push({ text: '', pageBreak: 'after' });
-      content.push({ text: 'REVERSE TIMELINE', style: 'h2' });
-      content.push({ text: 'Actions to execute in order, counted backwards from the travel date:', fontSize: 9, color: '#666', margin: [0,0,0,12] });
+    // ── Mini helpers ──
+    const secTitle = (txt, mt) => ({ text: txt, fontSize: 10, bold: true, color: '#A99260', margin: [0, mt !== undefined ? mt : 14, 0, 5] });
+    const lbl      = (txt)     => ({ text: txt, fontSize: 7, bold: true, color: '#A99260' });
+    const val      = (txt)     => ({ text: txt, fontSize: 10, bold: true, color: '#111827', margin: [0, 2, 0, 0] });
 
-      const tableBody = [
-        [{ text: 'DATE', style: 'label', fillColor: '#F8FAFC' }, { text: 'ACTION', style: 'label', fillColor: '#F8FAFC' }, { text: 'AUTHORITY', style: 'label', fillColor: '#F8FAFC' }]
-      ];
-      r.timeline.forEach(t => {
-        tableBody.push([
-          { text: fmtDate(t.date), fontSize: 9, color: '#0C789E', bold: true },
-          { text: t.task, fontSize: 9 },
-          { text: t.org, fontSize: 8, color: '#666' }
-        ]);
+    // ═══════════════════════════════════
+    // PAGE 1
+    // ═══════════════════════════════════
+
+    // 1 · STATUS box
+    content.push({
+      table: {
+        widths: ['*', 'auto'],
+        body: [[
+          { text: `STATUS: ${col.title}`, fontSize: 13, bold: true, color: col.fg, margin: [10, 12, 0, 12] },
+          { text: col.sub, fontSize: 7, bold: true, color: col.fg, alignment: 'right', margin: [0, 14, 10, 12] }
+        ]]
+      },
+      layout: {
+        fillColor:  () => col.bg,
+        hLineWidth: () => 0.5,
+        vLineWidth: (i) => i === 0 ? 4 : 0,
+        hLineColor: () => '#E2E8F0',
+        vLineColor: (i) => i === 0 ? col.fg : 'transparent'
+      },
+      margin: [0, 0, 0, 10]
+    });
+
+    // 2 · Disclaimer
+    content.push({
+      table: {
+        widths: ['*'],
+        body: [[{
+          text: 'This document is an advisory guide only. Requirements may change without notice — always confirm with your airline and the official veterinary authority of the destination country.',
+          fontSize: 8, color: '#64748B', margin: [10, 8, 10, 8]
+        }]]
+      },
+      layout: {
+        hLineWidth: () => 0,
+        vLineWidth: (i) => i === 0 ? 2 : 0,
+        vLineColor: () => '#A99260'
+      },
+      margin: [0, 0, 0, 10]
+    });
+
+    // 3 · PASSENGER DETAILS
+    content.push(secTitle('PASSENGER DETAILS'));
+    content.push({
+      table: {
+        widths: ['*', '*', '*'],
+        body: [
+          [lbl('NAME / SPECIES / BREED'), lbl('AGE / WEIGHT'), lbl('MICROCHIP ISO (15 DIGITS)')],
+          [val(`${d.nombre.toUpperCase()} / ${d.especie.toUpperCase()} / ${d.raza.toUpperCase()}`),
+           val(`${d.edad_meses} MONTHS / ${d.peso} KG`),
+           val(d.microchip.tiene ? '✓ IMPLANTED' : 'NOT REGISTERED')]
+        ]
+      },
+      layout: {
+        hLineWidth: () => 0.5, vLineWidth: () => 0.5,
+        hLineColor: () => '#E2E8F0', vLineColor: () => '#E2E8F0'
+      },
+      margin: [0, 0, 0, 10]
+    });
+
+    // 4 · ROUTING & DESTINATION
+    content.push(secTitle('ROUTING & DESTINATION'));
+    content.push({
+      table: {
+        widths: ['*', '*', '*'],
+        body: [
+          [lbl('ORIGIN (PORT OF EXIT)'), lbl('DESTINATION (PORT OF ENTRY)'), lbl('INTENDED FLIGHT DATE')],
+          [val('PERU (LIM)'), val(destinoLabel.toUpperCase()), val(fmtU(d.fecha_viaje))]
+        ]
+      },
+      layout: {
+        hLineWidth: () => 0.5, vLineWidth: () => 0.5,
+        hLineColor: () => '#E2E8F0', vLineColor: () => '#E2E8F0'
+      },
+      margin: [0, 0, 0, 10]
+    });
+
+    // 5 · COMPLIANCE TIMELINE TABLE
+    content.push(secTitle('COMPLIANCE TIMELINE'));
+
+    const statusCell = (ok) => ({ text: ok ? 'CLEARED' : 'PENDING', fontSize: 8, bold: true, color: ok ? '#1E4620' : '#B7791F' });
+
+    const compRows = [[
+      { text: 'REQUIREMENT',   fontSize: 7, bold: true, color: '#FFFFFF', fillColor: '#0F1E36', margin: [4,6,4,6] },
+      { text: 'STATUS',        fontSize: 7, bold: true, color: '#FFFFFF', fillColor: '#0F1E36', margin: [4,6,4,6] },
+      { text: 'ACTION / DETAIL', fontSize: 7, bold: true, color: '#FFFFFF', fillColor: '#0F1E36', margin: [4,6,4,6] },
+      { text: 'DATE',          fontSize: 7, bold: true, color: '#FFFFFF', fillColor: '#0F1E36', margin: [4,6,4,6] }
+    ]];
+
+    let ri = 0;
+    const addRow = (req, ok, action, date) => {
+      const bg = ri++ % 2 === 0 ? '#FFFFFF' : '#F8F9FA';
+      compRows.push([
+        { text: req,    fontSize: 8, bold: true, fillColor: bg, margin: [4,6,4,6] },
+        { ...statusCell(ok),          fillColor: bg, margin: [4,6,4,6] },
+        { text: action, fontSize: 7,  fillColor: bg, margin: [4,6,4,6] },
+        { text: date,   fontSize: 8,  fillColor: bg, margin: [4,6,4,6] }
+      ]);
+    };
+
+    if (dest.microchip && dest.microchip.es_bloqueante) {
+      addRow('MICROCHIP IMPLANTATION', d.microchip.tiene,
+        d.microchip.tiene ? 'PRIOR TO VAX' : 'IMPLANTATION REQUIRED',
+        d.microchip.fecha ? fmtU(d.microchip.fecha) : '—');
+    }
+    addRow('RABIES VACCINATION', vacClear,
+      vacClear ? 'VALID >30D, <1Y' : d.vacuna.tiene ? 'CHECK VALIDITY' : 'APPLICATION REQUIRED',
+      d.vacuna.fecha ? fmtU(d.vacuna.fecha) : '—');
+    if (favsRequired) {
+      addRow('FAVN RNATT TITER TEST', !favsBlocked,
+        !favsBlocked ? 'TITER: ≥0.5 IU/ML' : 'SAMPLE REQUIRED URGENTLY', '—');
+      if (dest.titer_test.dias_antes_viaje_minimo >= 90) {
+        addRow(`EU ${dest.titer_test.dias_antes_viaje_minimo}-DAY WAITING PERIOD`,
+          r.diasAlViaje > dest.titer_test.dias_antes_viaje_minimo,
+          'MIN. ELAPSED POST-TITER', '—');
+      }
+    }
+    addRow('OFFICIAL HEALTH CERTIFICATE', false,
+      'VET CONSULT / ISSUE D-5', fmtU(subDays(d.fecha_viaje, 5)));
+    addRow('SENASA EXPORT ENDORSEMENT', false,
+      'GOV SEAL APPOINTMENT', fmtU(subDays(d.fecha_viaje, 2)));
+
+    content.push({
+      table: { widths: ['33%', '15%', '32%', '20%'], body: compRows },
+      layout: {
+        hLineWidth: () => 0.5, vLineWidth: () => 0.5,
+        hLineColor: () => '#E2E8F0', vLineColor: () => '#E2E8F0'
+      },
+      margin: [0, 0, 0, 10]
+    });
+
+    // 6 · MANDATORY NEXT STEPS + QR
+    content.push(secTitle('MANDATORY NEXT STEPS'));
+    content.push({
+      table: {
+        widths: ['*', 96],
+        body: [[
+          {
+            stack: [
+              { text: '1. OFFICIAL HEALTH CERTIFICATE', fontSize: 8, bold: true, margin: [0, 0, 0, 3] },
+              { text: `MUST BE ISSUED BY A REGISTERED VET NO EARLIER THAN ${fmtU(subDays(d.fecha_viaje, 5))} (D-5).`, fontSize: 7, margin: [0, 0, 0, 8] },
+              { text: '2. SENASA CZE ENDORSEMENT', fontSize: 8, bold: true, margin: [0, 0, 0, 3] },
+              { text: `BOOK APPOINTMENT WITH SENASA PERU BETWEEN ${fmtU(subDays(d.fecha_viaje, 2))} AND ${fmtU(subDays(d.fecha_viaje, 1))}.`, fontSize: 7 }
+            ],
+            margin: [10, 10, 8, 10]
+          },
+          {
+            stack: [
+              { text: 'ANY QUESTION?',                   fontSize: 8, bold: true, color: '#111827', alignment: 'center' },
+              { text: 'WRITE TO US 24H · ANY LANGUAGE', fontSize: 7, bold: true, color: '#111827', alignment: 'center', margin: [0, 2, 0, 4] },
+              { canvas: [
+                { type: 'rect', x: 18, y: 0,  w: 50, h: 50, lineWidth: 1.5, lineColor: '#0F1E36', color: '#F8F9FA' },
+                { type: 'rect', x: 23, y: 5,  w: 9,  h: 9,  color: '#0F1E36' },
+                { type: 'rect', x: 24, y: 6,  w: 7,  h: 7,  color: '#FFFFFF' },
+                { type: 'rect', x: 25, y: 7,  w: 5,  h: 5,  color: '#0F1E36' },
+                { type: 'rect', x: 37, y: 5,  w: 3,  h: 3,  color: '#0F1E36' },
+                { type: 'rect', x: 41, y: 5,  w: 2,  h: 2,  color: '#0F1E36' },
+                { type: 'rect', x: 54, y: 5,  w: 9,  h: 9,  color: '#0F1E36' },
+                { type: 'rect', x: 55, y: 6,  w: 7,  h: 7,  color: '#FFFFFF' },
+                { type: 'rect', x: 56, y: 7,  w: 5,  h: 5,  color: '#0F1E36' },
+                { type: 'rect', x: 23, y: 36, w: 9,  h: 9,  color: '#0F1E36' },
+                { type: 'rect', x: 24, y: 37, w: 7,  h: 7,  color: '#FFFFFF' },
+                { type: 'rect', x: 25, y: 38, w: 5,  h: 5,  color: '#0F1E36' },
+                { type: 'rect', x: 37, y: 36, w: 3,  h: 3,  color: '#0F1E36' },
+                { type: 'rect', x: 41, y: 38, w: 4,  h: 4,  color: '#0F1E36' },
+                { type: 'rect', x: 37, y: 20, w: 8,  h: 8,  color: '#0F1E36' },
+                { type: 'rect', x: 54, y: 36, w: 9,  h: 9,  color: '#0F1E36' },
+                { type: 'rect', x: 55, y: 37, w: 7,  h: 7,  color: '#FFFFFF' },
+                { type: 'rect', x: 56, y: 38, w: 5,  h: 5,  color: '#0F1E36' }
+              ]},
+              { text: 'WA: +51 922 083 707', fontSize: 7, bold: true, color: '#111827', alignment: 'center', margin: [0, 4, 0, 0] }
+            ],
+            margin: [4, 8, 10, 8]
+          }
+        ]]
+      },
+      layout: {
+        hLineWidth: () => 0.5,
+        vLineWidth: (i) => i === 0 ? 4 : 0.5,
+        hLineColor: () => '#E2E8F0',
+        vLineColor: (i) => i === 0 ? '#A99260' : '#E2E8F0'
+      }
+    });
+
+    // ═══════════════════════════════════
+    // PAGE 2
+    // ═══════════════════════════════════
+    content.push({ text: '', pageBreak: 'before' });
+
+    // 7 · TRAVEL DAY CHECKLIST
+    content.push(secTitle('TRAVEL DAY CHECKLIST', 0));
+    content.push({
+      table: {
+        widths: ['33.3%', '33.3%', '33.4%'],
+        body: [[
+          {
+            stack: [
+              { text: 'DOCUMENTS (ORIGINALS + COPIES)', fontSize: 7, bold: true, color: '#A99260', margin: [0, 0, 0, 5] },
+              { text: '\u25A0  Official health / export cert.',   fontSize: 6.5, margin: [0, 2, 0, 0] },
+              { text: '\u25A0  Vaccination record booklet',       fontSize: 6.5, margin: [0, 2, 0, 0] },
+              { text: '\u25A0  Microchip implantation cert.',     fontSize: 6.5, margin: [0, 2, 0, 0] },
+              { text: '\u25A0  FAVN titer test results',          fontSize: 6.5, margin: [0, 2, 0, 0] },
+              { text: '\u25A0  Pet passport or export permit',    fontSize: 6.5, margin: [0, 2, 0, 0] },
+              { text: '       (as required by destination)',       fontSize: 6.5, color: '#64748B' }
+            ],
+            margin: [8, 8, 8, 8]
+          },
+          {
+            stack: [
+              { text: 'CARRIER \u2014 IATA REGULATIONS', fontSize: 7, bold: true, color: '#A99260', margin: [0, 0, 0, 5] },
+              { text: '\u25A0  IATA travel crate, properly vented',    fontSize: 6.5, margin: [0, 2, 0, 0] },
+              { text: '\u25A0  Absorbent bedding inside crate',         fontSize: 6.5, margin: [0, 2, 0, 0] },
+              { text: '\u25A0  Non-spill water dispenser',              fontSize: 6.5, margin: [0, 2, 0, 0] },
+              { text: '\u25A0  No food 4\u20136 hours before departure', fontSize: 6.5, margin: [0, 2, 0, 0] },
+              { text: '\u25A0  No toys or loose objects inside',        fontSize: 6.5, margin: [0, 2, 0, 0] },
+              { text: '\u25A0  Crate labeled with owner details',       fontSize: 6.5, margin: [0, 2, 0, 0] }
+            ],
+            margin: [8, 8, 8, 8]
+          },
+          {
+            stack: [
+              { text: 'TIPS', fontSize: 7, bold: true, color: '#A99260', margin: [0, 0, 0, 5] },
+              { text: '\u2192  Arrive at airport 4\u20135 hrs before', fontSize: 6.5, margin: [0, 2, 0, 0] },
+              { text: '\u2192  Confirm live animal policy 48h',         fontSize: 6.5, margin: [0, 2, 0, 0] },
+              { text: '\u2192  Check weather at destination',           fontSize: 6.5, margin: [0, 2, 0, 0] },
+              { text: '\u2192  Visit vet 24\u201348h before travel',   fontSize: 6.5, margin: [0, 2, 0, 0] },
+              { text: '\u2192  Never sedate without vet approval',      fontSize: 6.5, margin: [0, 2, 0, 0] }
+            ],
+            margin: [8, 8, 8, 8]
+          }
+        ]]
+      },
+      layout: {
+        hLineWidth: () => 0.5, vLineWidth: () => 0.5,
+        hLineColor: () => '#E2E8F0', vLineColor: () => '#E2E8F0'
+      },
+      margin: [0, 0, 0, 14]
+    });
+
+    // 8 · COMPLIANCE TIMELINE VISUAL
+    content.push(secTitle('COMPLIANCE TIMELINE \u2014 VISUAL OVERVIEW'));
+
+    const nodes = [];
+    if (dest.microchip && dest.microchip.es_bloqueante) {
+      nodes.push({ label: 'MICROCHIP',         date: d.microchip.fecha ? fmtU(d.microchip.fecha) : '\u2014', status: d.microchip.tiene ? 'cleared' : 'pending' });
+    }
+    nodes.push({ label: 'RABIES VACCINE',      date: d.vacuna.fecha   ? fmtU(d.vacuna.fecha)    : '\u2014', status: vacClear     ? 'cleared' : 'pending' });
+    if (favsRequired) {
+      nodes.push({ label: 'TITER TEST (FAVN)', date: '\u2014', status: !favsBlocked ? 'cleared' : 'pending' });
+    }
+    nodes.push({ label: 'VET CERTIFICATE',     date: fmtU(subDays(d.fecha_viaje, 5)), status: 'pending' });
+    nodes.push({ label: 'TRAVEL DAY',          date: fmtU(d.fecha_viaje),             status: 'flight'  });
+
+    const cw        = 547;
+    const pad       = 28;
+    const lineY     = 20;
+    const n         = nodes.length;
+    const nodeX     = nodes.map((_, i) => pad + (i / (n - 1)) * (cw - 2 * pad));
+    const firstPend = nodes.findIndex(nd => nd.status !== 'cleared');
+
+    const shapes = [];
+    shapes.push({ type: 'line', x1: 0, y1: 0, x2: 0.1, y2: 40, lineWidth: 0.1, lineColor: 'white' });
+    for (let i = 0; i < n - 1; i++) {
+      const dashed = firstPend >= 0 && i >= firstPend;
+      shapes.push({
+        type: 'line', x1: nodeX[i], y1: lineY, x2: nodeX[i + 1], y2: lineY,
+        lineWidth: 2, lineColor: '#0F1E36',
+        ...(dashed ? { dash: { length: 6, space: 3 } } : {})
       });
-      content.push({ table: { widths: ['auto', '*', 'auto'], body: tableBody }, layout: 'lightHorizontalLines' });
-
-      content.push({ text: '', pageBreak: 'after' });
-      content.push({ text: 'DOCUMENT CHECKLIST', style: 'h2' });
-      content.push({ text: 'Check off each item as it is obtained:', fontSize: 9, color: '#666', margin: [0,0,0,12] });
-      const checklist = [
-        '☐ ISO 11784/11785 microchip implanted and functional',
-        '☐ Valid rabies vaccine (minimum 30 days before travel)',
-        '☐ Complete vaccination record signed by licensed veterinarian'
-      ];
-      if (r.destinoData.titer_test && r.destinoData.titer_test.es_bloqueante) {
-        checklist.push('☐ FAVN/Titer test at authorised lab (≥0.5 IU/ml)');
-      }
-      if (r.destinoData.desparasitacion && r.destinoData.desparasitacion.es_bloqueante) {
-        checklist.push(`☐ Deworming documented (${r.destinoData.desparasitacion.producto_especifico || 'standard'})`);
-      }
-      checklist.push(
-        '☐ Health Certificate issued by licensed veterinarian (valid 5 days)',
-        '☐ CZE endorsed by SENASA Peru',
-        '☐ Travel booking confirmed'
-      );
-      if (r.destinoData.permiso_importacion && r.destinoData.permiso_importacion.es_bloqueante) {
-        checklist.push(`☐ Import permit obtained (${r.destinoData.permiso_importacion.producto_especifico || ''})`);
-      }
-      if (r.destinoData.cuarentena && r.destinoData.cuarentena.es_bloqueante) {
-        checklist.push(`☐ Post-arrival quarantine booked (${r.destinoData.cuarentena.producto_especifico || ''})`);
-      }
-      checklist.forEach(item => content.push({ text: item, fontSize: 10, margin: [0, 4, 0, 0] }));
-
-      content.push({ text: 'OFFICIAL DESTINATION SOURCE', style: 'h2' });
-      content.push({ text: r.destinoData.fuente_oficial.nombre, fontSize: 10, bold: true });
-      content.push({ text: r.destinoData.fuente_oficial.url, fontSize: 9, color: '#0C789E' });
-      content.push({ text: `Consulted: ${r.destinoData.fuente_oficial.fecha_consulta}`, style: 'small' });
     }
+    nodes.forEach((nd, i) => {
+      if (nd.status === 'cleared') {
+        shapes.push({ type: 'ellipse', x: nodeX[i], y: lineY, r1: 8, r2: 8, color: '#1E4620' });
+      } else if (nd.status === 'pending') {
+        shapes.push({ type: 'ellipse', x: nodeX[i], y: lineY, r1: 8, r2: 8, color: '#FFFFFF', lineColor: '#B7791F', lineWidth: 1.5 });
+        shapes.push({ type: 'ellipse', x: nodeX[i], y: lineY, r1: 4, r2: 4, color: '#B7791F' });
+      } else {
+        shapes.push({ type: 'ellipse', x: nodeX[i], y: lineY, r1: 10, r2: 10, color: '#0F1E36' });
+      }
+    });
 
-    content.push({ text: '', pageBreak: 'after' });
-    content.push({ text: 'DIAGNOSIS', style: 'h2' });
-    if (allIssues.length === 0) {
-      content.push({ text: 'No critical findings. Your trip meets all requirements.', fontSize: 10, color: '#10b981' });
-    } else {
-      allIssues.forEach(i => {
-        const c = i.severity === 'red' ? '#dc2626' : i.severity === 'yellow' ? '#f59e0b' : '#1a2e35';
-        content.push({ text: `• ${i.msg}`, fontSize: 9, color: c, margin: [0, 4, 0, 0] });
-      });
-    }
+    content.push({
+      columns: nodes.map((nd, i) => ({
+        text: nd.label, fontSize: 7, bold: true, color: '#111827',
+        alignment: i === 0 ? 'left' : i === n - 1 ? 'right' : 'center'
+      })),
+      margin: [0, 0, 0, 2]
+    });
+    content.push({ canvas: shapes, margin: [0, 2, 0, 2] });
+    content.push({
+      columns: nodes.map((nd, i) => ({
+        text: nd.date, fontSize: 7, color: '#64748B',
+        alignment: i === 0 ? 'left' : i === n - 1 ? 'right' : 'center'
+      })),
+      margin: [0, 2, 0, 16]
+    });
 
-    content.push({ text: r.color === 'red' ? '⚠ URGENT ACTION' : '📞 NEXT STEP', style: 'h2' });
-    if (r.color === 'red') {
-      content.push({ text: 'Do not make decisions without us. Contact us NOW and we will evaluate real options: postpone date, change destination, adjust the plan.', fontSize: 11, color: '#dc2626', bold: true, margin: [0, 0, 0, 8] });
-      content.push({ text: 'WhatsApp emergency: +51 922 083 707', fontSize: 14, color: '#0C789E', bold: true });
-    } else {
-      content.push({ text: 'Coordinate the execution of your plan with our team:', fontSize: 11, margin: [0, 0, 0, 8] });
-      content.push({ text: 'WhatsApp consultations: +51 979 620 402', fontSize: 14, color: '#0C789E', bold: true });
-    }
-    content.push({ text: 'Calle Cuba 241, Trujillo · Mon–Sat 09:00–19:00 · contacto@zoovettravel.com', style: 'small', margin: [0, 4, 0, 0] });
-
-    content.push({ text: 'LEGAL DISCLAIMER', style: 'h2' });
-    content.push({ text: 'This tool is strictly informational and advisory. It does not constitute veterinary advice, does not replace consultation with a licensed veterinarian, and does not substitute direct verification with SENASA Peru and the sanitary authority of the destination country. International zoosanitary regulations may change without notice and the final decision on the admission of any animal rests exclusively with the sanitary and customs officials of the destination country. Use of this planner does not generate liability for Carlos Eduardo Ravello Joo or Zoovet Travel for decisions based solely on this result.', fontSize: 8, color: '#666', alignment: 'justify' });
+    // 9 · Attribution box
+    content.push({
+      table: {
+        widths: ['*'],
+        body: [[{
+          text: 'DOCUMENT GENERATED BY BORDERCHECK ALGORITHM \u00B7 ZOOVET TRAVEL \u00B7 zoovettravel.com',
+          fontSize: 8, bold: true, alignment: 'center', color: '#111827', margin: [0, 8, 0, 8]
+        }]]
+      },
+      layout: {
+        hLineWidth: () => 1, vLineWidth: () => 1,
+        hLineColor: () => '#A99260', vLineColor: () => '#A99260',
+        fillColor:  () => '#F8F9FA'
+      }
+    });
 
     return content;
   }
 
   // ═════════════════════════════════════════════════════════════════
-  // SHARE URL — reproducible params
+  // SHARE URL \u2014 reproducible params
   // ═════════════════════════════════════════════════════════════════
   function updateURL(d) {
     const params = new URLSearchParams({
@@ -666,7 +942,7 @@
   function sharePlan() {
     const url = window.location.href;
     if (navigator.share) {
-      navigator.share({ title: 'My travel plan · Zoovet Travel', url });
+      navigator.share({ title: 'My travel plan \u00B7 Zoovet Travel', url });
     } else {
       navigator.clipboard.writeText(url).then(() => {
         alert('Plan URL copied to clipboard.');
