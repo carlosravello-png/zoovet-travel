@@ -1,2 +1,15 @@
 # Claude Cowork — worktrees y archivos internos
 .claude/
+
+# Scripts de generación — solo corren localmente, no se sirven en web
+papers/*.py
+papers/__pycache__/
+papers/__pycache__zoove-travel/
+zoopedia-audit.py
+zoopedia-audit-report.html
+
+# Archivos de prueba generados durante desarrollo
+papers/art08-test.pdf
+papers/brand_new_*.pdf
+papers/copy_new_*.pdf
+papers/test_*.pdf
