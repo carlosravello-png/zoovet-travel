@@ -1641,7 +1641,7 @@
   </url>
   <url>
     <loc>https://zoovettravel.com/articles/zoovet_art5_estres-metabolico-ES.html</loc>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/articles/zoovet_art5_estres-metabolico-ES.html" />
@@ -1651,7 +1651,7 @@
   </url>
   <url>
     <loc>https://zoovettravel.com/articles/zoovet_art5_estres-metabolico-EN.html</loc>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/articles/zoovet_art5_estres-metabolico-ES.html" />
@@ -1661,7 +1661,7 @@
   </url>
   <url>
     <loc>https://zoovettravel.com/articles/zoovet_art5_estres-metabolico-FR.html</loc>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/articles/zoovet_art5_estres-metabolico-ES.html" />
@@ -1821,7 +1821,7 @@
   </url>
   <url>
     <loc>https://zoovettravel.com/articles/zoovet_article3_braquicefalos_ES.html</loc>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/articles/zoovet_article3_braquicefalos_ES.html" />
@@ -1831,7 +1831,7 @@
   </url>
   <url>
     <loc>https://zoovettravel.com/articles/zoovet_article3_braquicefalos_EN.html</loc>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/articles/zoovet_article3_braquicefalos_ES.html" />
@@ -1841,7 +1841,7 @@
   </url>
   <url>
     <loc>https://zoovettravel.com/articles/zoovet_article3_braquicefalos_FR.html</loc>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/articles/zoovet_article3_braquicefalos_ES.html" />
@@ -3173,6 +3173,42 @@
   <url>
     <loc>https://zoovettravel.com/papers/art02-rffit-favn-FR.pdf</loc>
     <lastmod>2026-05-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://zoovettravel.com/papers/art03-braquicefalos-es.pdf</loc>
+    <lastmod>2026-05-24</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://zoovettravel.com/papers/art03-braquicefalos-en.pdf</loc>
+    <lastmod>2026-05-24</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://zoovettravel.com/papers/art03-braquicefalos-fr.pdf</loc>
+    <lastmod>2026-05-24</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://zoovettravel.com/papers/art05-eje-intestino-cerebro-es.pdf</loc>
+    <lastmod>2026-05-24</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://zoovettravel.com/papers/art05-eje-intestino-cerebro-en.pdf</loc>
+    <lastmod>2026-05-24</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://zoovettravel.com/papers/art05-eje-intestino-cerebro-fr.pdf</loc>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
