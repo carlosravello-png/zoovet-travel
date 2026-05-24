@@ -1731,7 +1731,7 @@
   </url>
   <url>
     <loc>https://zoovettravel.com/articles/zoovet_art8_hipobaria-ES.html</loc>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/articles/zoovet_art8_hipobaria-ES.html" />
@@ -1741,7 +1741,7 @@
   </url>
   <url>
     <loc>https://zoovettravel.com/articles/zoovet_art8_hipobaria-EN.html</loc>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/articles/zoovet_art8_hipobaria-ES.html" />
@@ -1751,7 +1751,7 @@
   </url>
   <url>
     <loc>https://zoovettravel.com/articles/zoovet_art8_hipobaria-FR.html</loc>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/articles/zoovet_art8_hipobaria-ES.html" />
@@ -3173,6 +3173,24 @@
   <url>
     <loc>https://zoovettravel.com/papers/art02-rffit-favn-FR.pdf</loc>
     <lastmod>2026-05-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://zoovettravel.com/papers/art08-hipobaria-es.pdf</loc>
+    <lastmod>2026-05-24</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://zoovettravel.com/papers/art08-hipobaria-en.pdf</loc>
+    <lastmod>2026-05-24</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://zoovettravel.com/papers/art08-hipobaria-fr.pdf</loc>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
