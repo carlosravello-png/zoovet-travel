@@ -1,0 +1,129 @@
+# Especificación Técnica para pdfmake: Aeronautical Clearance Document
+
+Esta especificación detalla las reglas de diseño para la implementación de BorderCheck en **pdfmake**. No hay valores de diseño que deban adivinarse. Todo está matemáticamente proporcionado para una hoja A4 estándar de la industria.
+
+## 1. SISTEMA DE DISEÑO BASE
+
+### 1.1 Colores Exactos (HEX)
+- **Fondo del Documento (Paper):** `#F8F9FA`
+- **Deep Navy (Cajas principales, Header):** `#0F1E36`
+- **Muted Gold (Acentos, Borders, Separadores):** `#A99260`
+- **Blanco Puro (Celdas interiores, Textos Header):** `#FFFFFF`
+- **Texto Primario (Body/Valores):** `#111827`
+- **Texto Secundario (Labels/Legales):** `#64748B`
+- **Hairlines (Bordes Generales):** `#E2E8F0`
+
+### 1.2 Paleta de Estados (Semáforo)
+- **Verde (CLEARED):** Fondo `#E8F5E9` | Texto y Bordes `#1E4620`
+- **Ámbar (WARNING/PENDING):** Fondo `#FEFCBF` | Texto y Bordes `#B7791F`
+- **Rojo (BLOCKED - *No usado en la muestra pero documentado*):** Fondo `#FFF5F5` | Texto y Bordes `#63171D`
+
+### 1.3 Tipografía
+- **Main (Sans-Serif):** `Helvetica` (o `Roboto` si usas la fuente default de pdfmake).
+  - *Uso:* Títulos, encabezados, labels, textos estructurales.
+- **Mono (Serif/Mono):** `Courier` (o equivalente monospace en pdfmake).
+  - *Uso:* Datos introducidos por el usuario, fechas, IDs, disclaimers técnicos, código aeronáutico.
+
+### 1.4 Formato de Página
+- **Tamaño:** `A4` [595.28, 841.89] puntos.
+- **Márgenes Globales (pageMargins):** `[24, 0, 24, 24]` (Left, Top, Right, Bottom). *El Top margin es 0 en pdfmake para que el Header Navy ocupe el full width superior, usando márgenes internos en el layout.*
+
+---
+
+## 2. ESTRUCTURAS GLOBALES
+
+### 2.1 Header Full-Width (Repetido en Pág 1 y Pág 2)
+- **Alto:** `80pt`.
+- **Fondo:** `#0F1E36`.
+- **Layout:** Tres columnas virtuales.
+  - **Izquierda:** 
+    - `ZOOVET TRAVEL` (Helvetica Bold 26pt, `#FFFFFF`)
+    - Subtítulo herramienta (Helvetica Bold 9pt, `#A99260`)
+  - **Centro:** Subtítulo documento en el centro de la hoja (Helvetica Bold 8pt, `#D1D5DB`).
+  - **Derecha:** Bloque de metadatos alineado a la derecha en 4 líneas (Courier 7pt, `#FFFFFF`).
+
+### 2.2 Section Titles (Títulos de cada bloque)
+- **Estilo:** Helvetica Bold 10pt, `#A99260`.
+- **Espaciado:** `marginTop: 15pt, marginBottom: 5pt` o espaciado explícito antes de la tabla/caja inferior.
+
+### 2.3 Footer
+- **Separador superior:** Línea sólida de grosor `1pt`, color `#A99260`. Margen respecto al contenido: `10pt`.
+- **Layout (3 columnas):**
+  - **Izquierda:** Disclaimer legal (Courier 6pt, `#64748B`).
+  - **Centro:** Folio dinámico ej. `ZVT-BC-2026 // PAGE 1 OF 2` (Courier Bold 8pt, `#111827`).
+  - **Derecha:** Dominio y teléfono `zoovettravel.com | +51 922 083 707` (Helvetica Bold 7pt, `#111827`).
+
+---
+
+## 3. PÁGINA 1 — DESGLOSE POR BLOQUES
+
+### 3.1 STATUS Box (El Semáforo)
+- **Caja:** Alto `40pt`, Margen superior debajo del header: `24pt`. Borde total `0.5pt` `#E2E8F0`. 
+- **Fondo:** El color del estado (ej. `#E8F5E9`).
+- **Borde Izquierdo:** Línea sólida gruesa de `4pt` del color de texto del estado (`#1E4620`).
+- **Textos:** 
+  - Izquierda: Estado principal (Helvetica Bold 14pt, color estado).
+  - Derecha: Leyenda secundaria (Courier Bold 8pt, color estado).
+
+### 3.2 Disclaimer Aeronáutico
+- **Caja:** Alto `30pt`, sin borde arriba/abajo/derecha.
+- **Fondo:** Transparente (o `#F8F9FA` implícito).
+- **Borde Izquierdo:** Línea de `2pt`, color `#A99260`.
+- **Padding:** `marginLeft: 10pt` respecto a la línea izquierda.
+- **Texto:** Courier 8pt, `#64748B`. Múltiples líneas permitidas.
+
+### 3.3 Tablas PASSENGER DETAILS y ROUTING
+- **Caja:** Alto total `45pt`. Fondo `#FFFFFF`.
+- **Bordes:** Exterior e interior de celdas `0.5pt`, `#E2E8F0`.
+- **Estructura (3 columnas):** `[33.3%, 33.3%, 33.4%]`.
+- **Textos por celda (2 filas apiladas):**
+  - Label: Helvetica Bold 7pt, `#A99260`.
+  - Valor: Helvetica Bold 10pt (Cols 1 y 2) y Courier Bold 10pt (Col 3). Textos `#111827`.
+
+### 3.4 COMPLIANCE TIMELINE (Tabla paso a paso)
+- **Cabecera (Header Row):** 
+  - Alto `20pt`, Fondo `#0F1E36`. Textos Helvetica Bold 7pt `#FFFFFF`.
+- **Estructura (4 Columnas):** `[33%, 15%, 32%, 20%]`.
+- **Filas de Datos:**
+  - Alto `25pt`. Zebra striping: Filas pares fondo `#FFFFFF`, impares `#F8F9FA`. Bordes `0.5pt` `#E2E8F0`.
+  - Requisito (Col 1): Helvetica Bold 8pt, `#111827`.
+  - Status (Col 2): Courier Bold 8pt. Color condicional `#1E4620` (Verde) o `#B7791F` (Ámbar).
+  - Detalle (Col 3): Helvetica 7pt, `#111827`.
+  - Fecha (Col 4): Courier 8pt, `#111827`.
+
+### 3.5 MANDATORY NEXT STEPS + QR
+- **Caja:** Alto `65pt`. Fondo `#FFFFFF`, borde `0.5pt` `#E2E8F0`.
+- **Borde Izquierdo:** `4pt` `#A99260`.
+- **Estructura visual:** 
+  - Lado Izquierdo (Items de texto): Stack vertical. Títulos en Helvetica Bold 8pt (`#111827`), descripciones en Courier 7pt (`#111827`).
+  - Lado Derecho (Código QR): Un bloque encapsulado flotando/alineado a la derecha. Cuadro QR de `45x45pt` con borde `1pt` `#0F1E36`. Al lado de él (o encima/debajo), Textos de CTA en Helvetica Bold 8pt y Courier Bold 7pt.
+
+---
+
+## 4. PÁGINA 2 — DESGLOSE POR BLOQUES
+
+### 4.1 TRAVEL DAY CHECKLIST
+- **Caja Tabular:** Alto aprox `145pt`. Fondo `#FFFFFF`. Bordes generales e internos (divisiones) `0.5pt` `#E2E8F0`.
+- **Estructura (3 Columnas):** `[33.3%, 33.3%, 33.4%]`.
+- **Textos:**
+  - Títulos de columna: Helvetica Bold 7pt, `#A99260`. Padding top de columna.
+  - Items del Checklist: Courier 6.5pt, `#111827`. Renderizar las casillas vacías usando caracteres Unicode (como `\u2610`) o un SVG pequeño. Interlineado apretado para emular la apariencia de un "Air Waybill".
+
+### 4.2 COMPLIANCE TIMELINE — VISUAL OVERVIEW
+Para replicar el gráfico vectorial del timeline con canvas en pdfmake:
+- **Eje Principal (Línea Horizontal):** 
+  - Centrado verticalmente respecto a su sección.
+  - Color `#0F1E36`, Grosor `2pt`. 
+  - Tramos Completados: Línea Sólida. Tramos Pendientes: Línea Dashed (patrón `dash: { length: 6, space: 3 }`).
+- **Nodos:** Separación equitativa horizontalmente (ej. dividiendo el ancho interior entre `N-1`).
+  - **Nodo CLEARED:** Círculo `r=8pt`, Fill `#1E4620`, sin borde extra.
+  - **Nodo PENDING:** Círculo `r=8pt`, Fill `#FFFFFF`, Borde de `1pt` en `#B7791F`. Círculo interior `r=4pt` Fill `#B7791F`.
+  - **Nodo FLIGHT:** Círculo `r=14pt`, Fill `#0F1E36`, sin borde extra. Círculo interior blanco (o el ícono SVG de un avión centrado en el medio).
+- **Etiquetas de Nodos:**
+  - Superior (Nombre del paso): Helvetica Bold 7pt, `#111827`. Margen superior respecto al nodo `~25pt`.
+  - Inferior (Fecha): Courier 8pt, `#64748B`. Margen inferior respecto al nodo `~30pt`.
+- **Aviso inferior ("Document Generated by..."):**
+  - Caja en la base del timeline. Alto `25pt`. Borde `1pt` `#A99260`. Textos Helvetica Bold 8pt centrados. Fondo `#F8F9FA`.
+
+---
+*Fin de especificaciones. Las medidas relativas (%) o por puntos garantizan un renderizado responsive que no se desarmará en el build a PDF.*

@@ -920,28 +920,4 @@
     f.fecha_viaje.value = p.get('fv') || '';
     if (p.get('mc') === '1') { f.microchip.value = 'si'; $('#fecha_microchip').disabled = false; $('#fecha_microchip').value = p.get('fmc') || ''; }
     if (p.get('vc') === '1') { f.vacuna.value = 'si'; $('#fecha_vacuna').disabled = false; $('#fecha_vacuna').value = p.get('fvc') || ''; }
-    if (p.get('dp') === '1') { f.desparasitacion.value = 'si'; $('#fecha_desparasitacion').disabled = false; $('#fecha_desparasitacion').value = p.get('fdp') || ''; }
-    if (p.get('fa') === '1') {
-      $$('input[name="favn"]').forEach(r => { if (r.value === 'si') r.checked = true; });
-      const fdEl = document.getElementById('favn-detail');
-      if (fdEl) fdEl.style.display = '';
-      const fmEl = document.getElementById('fecha_muestra_favn');
-      if (fmEl) { fmEl.disabled = false; fmEl.value = p.get('ffa') || ''; }
-      if (p.get('rfa')) {
-        $$('input[name="resultado_favn"]').forEach(r => { if (r.value === p.get('rfa')) r.checked = true; });
-      }
-    }
-  }
-
-  function sharePlan() {
-    const url = window.location.href;
-    if (navigator.share) {
-      navigator.share({ title: 'Mon plan de voyage · Zoovet Travel', url });
-    } else {
-      navigator.clipboard.writeText(url).then(() => {
-        alert('URL du plan copiée dans le presse-papiers.');
-      });
-    }
-  }
-
-})();
+    if (p.get('dp') === '1') { f.desparasi

@@ -363,7 +363,7 @@
       "vacuna_antirrabica": { "dias_antes_viaje_minimo": 30, "dias_vigencia_maxima": 365, "es_bloqueante": true },
       "titer_test": { "dias_antes_viaje_minimo": 90, "es_bloqueante": true, "producto_especifico": "FAVN/RNATT ≥0.5 IU/ml" },
       "desparasitacion": { "es_bloqueante": false, "producto_especifico": "Variable según región" },
-      "certificado_salud": { "dias_antes_viaje_minimo": 5, "dias_vigencia_maxima": 5, "es_bloqueante": true, "producto_especifico": "Modelo UE" },
+      "certificado_salud": { "dias_antes_viaje_minimo": 5, "dias_vigencia_maxima": 5, "es_bloqueante": true, "producto_especifico": "Modelo UE + endoso SENASA" },
       "tramites_senasa": { "dias_antes_viaje_minimo": 1, "es_bloqueante": true, "producto_especifico": "CZE" },
       "cuarentena": { "es_bloqueante": false },
       "permiso_importacion": { "es_bloqueante": false },
@@ -385,9 +385,13 @@
       "certificado_salud": { "dias_antes_viaje_minimo": 5, "dias_vigencia_maxima": 5, "es_bloqueante": true, "producto_especifico": "Específico Japón + notificación previa AQS" },
       "tramites_senasa": { "dias_antes_viaje_minimo": 1, "es_bloqueante": true, "producto_especifico": "CZE" },
       "cuarentena": { "es_bloqueante": true, "producto_especifico": "12 horas a 180 días según cumplimiento documental" },
-      "permiso_importacion": { "es_bloqueante": false, "producto_especifico": "Notificación previa a AQS 40 días antes" },
+      "permiso_importacion": { "es_bloqueante": true, "dias_antes_viaje_minimo": 40, "producto_especifico": "Notificación y aprobación previa al AQS — obligatoria 40 días antes del vuelo. El certificado de salud específico de Japón debe enviarse al AQS en este plazo." },
       "aeropuertos_validos": ["NRT", "KIX", "NGO", "HND", "FUK", "CTS"],
-      "notas": "Los 180 días post-titer son la regla más estricta del mundo junto con Australia. Entrada solo por aeropuertos designados: NRT, KIX, NGO, HND, FUK, CTS."
+      "notas": "Los 180 días post-titer son la regla más estricta del mundo junto con Australia. Entrada solo por aeropuertos designados: NRT, KIX, NGO, HND, FUK, CTS.",
+      "nota_adicional": {
+        "titulo": "⚠ Paso obligatorio: Notificación previa al AQS — Servicio de Cuarentena Animal de Japón",
+        "texto": "Japón exige notificar al AQS con al menos 40 días de anticipación Y obtener aprobación antes de volar. El certificado de salud específico de Japón debe enviarse al AQS dentro de ese plazo — sin aprobación previa, el animal no puede embarcar. Al llegar, la cuarentena varía: 12 horas si toda la documentación es perfecta, hasta 180 días si algún documento falla o está incompleto. Cada estación de cuarentena tiene su propio veterinario y capacidad limitada. Todos los costos de cuarentena corren a cargo del propietario."
+      }
     },
     "México": {
       "codigo_iso": "MX",
@@ -445,7 +449,11 @@
       "tramites_senasa": { "dias_antes_viaje_minimo": 1, "es_bloqueante": true, "producto_especifico": "CZE endosado" },
       "cuarentena": { "es_bloqueante": false, "producto_especifico": "Hasta 6 meses si incumplimiento documental" },
       "permiso_importacion": { "es_bloqueante": false },
-      "notas": "Tapeworm (Praziquantel) es crítico para perros. Sin esto, no hay entrada."
+      "notas": "Tapeworm (Praziquantel) es crítico para perros. Sin esto, no hay entrada.",
+      "nota_adicional": {
+        "titulo": "⚠ Aviso crítico para perros: Desparasitación con Praziquantel (Tapeworm)",
+        "texto": "El Reino Unido exige que todos los perros reciban tratamiento con Praziquantel certificado por un veterinario en una ventana de 24 a 120 horas antes de la LLEGADA al UK — no de la salida desde Lima. Si tu vuelo tiene escalas, calcula desde la hora de aterrizaje en UK hacia atrás. Sin este tratamiento documentado no hay entrada posible. Gatos: exentos de este requisito. El certificado de salud (AHC) debe reflejar la fecha y dosis del tratamiento."
+      }
     },
     "Rusia": {
       "codigo_iso": "RU",
@@ -479,32 +487,4 @@
       "microchip": { "es_bloqueante": true, "producto_especifico": "ISO" },
       "vacuna_antirrabica": { "dias_antes_viaje_minimo": 30, "dias_vigencia_maxima": 365, "es_bloqueante": true },
       "titer_test": { "dias_antes_viaje_minimo": 90, "es_bloqueante": true, "producto_especifico": "FAVN/RNATT ≥0.5 IU/ml. Perú = categoría alta de riesgo." },
-      "desparasitacion": { "dias_antes_viaje_minimo": 30, "es_bloqueante": true, "producto_especifico": "Específica" },
-      "certificado_salud": { "dias_antes_viaje_minimo": 5, "dias_vigencia_maxima": 5, "es_bloqueante": true, "producto_especifico": "Veterinario oficial" },
-      "tramites_senasa": { "dias_antes_viaje_minimo": 1, "es_bloqueante": true, "producto_especifico": "CZE" },
-      "cuarentena": { "dias_antes_viaje_minimo": 0, "es_bloqueante": true, "producto_especifico": "30 días en facility AVS (puede ser home-quarantine según categoría)" },
-      "permiso_importacion": { "dias_antes_viaje_minimo": 30, "es_bloqueante": true, "producto_especifico": "Import Licence AVS" },
-      "notas": "Proceso complejo y costoso. Categoría alta de riesgo para Perú."
-    },
-    "Sudáfrica": {
-      "codigo_iso": "ZA",
-      "region": "África",
-      "fuente_oficial": {
-        "nombre": "Department of Agriculture, Land Reform and Rural Development (DALRRD)",
-        "url": "https://www.dalrrd.gov.za",
-        "fecha_consulta": "2026-05-04"
-      },
-      "edad_minima_semanas": 17,
-      "microchip": { "es_bloqueante": true, "producto_especifico": "ISO antes de vacuna antirrábica" },
-      "vacuna_antirrabica": { "dias_antes_viaje_minimo": 30, "dias_vigencia_maxima": 365, "es_bloqueante": true },
-      "titer_test": { "es_bloqueante": false, "producto_especifico": "DALRRD NO requiere titer de rabia" },
-      "desparasitacion": { "es_bloqueante": false },
-      "certificado_salud": { "dias_antes_viaje_minimo": 5, "dias_vigencia_maxima": 5, "es_bloqueante": true },
-      "tramites_senasa": { "dias_antes_viaje_minimo": 1, "es_bloqueante": true, "producto_especifico": "CZE" },
-      "cuarentena": { "es_bloqueante": false },
-      "permiso_importacion": { "dias_antes_viaje_minimo": 30, "es_bloqueante": true, "producto_especifico": "DALRRD Veterinary Import Permit" },
-      "blood_tests_perros": "5 pruebas serológicas negativas dentro de 30 días previos al viaje (perros). DALRRD las define específicamente.",
-      "notas": "Sin titer de rabia, pero sí 5 blood tests negativos para perros."
-    }
-  }
-}
+      "desparasitacion": { "dias_antes_viaje_minimo": 30, "es_bloqueante": tr
