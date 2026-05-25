@@ -480,6 +480,20 @@
       html += '</ul></div>';
     }
 
+    // Banner nota adicional (ej. ACF reservation EE.UU.)
+    if (r.destinoData.nota_adicional) {
+      const na = r.destinoData.nota_adicional;
+      html += `
+        <div class="border-l-4 border-[#0C789E] bg-[#dceef5] p-5 mb-6 flex gap-4 items-start">
+          <span class="text-2xl leading-none mt-0.5">📋</span>
+          <div>
+            <p class="text-sm font-bold text-[#0C789E] uppercase tracking-wider mb-1">${na.titulo}</p>
+            <p class="text-sm text-[#1a2e35]/85 leading-relaxed">${na.texto}</p>
+          </div>
+        </div>
+      `;
+    }
+
     // CTA según color
     if (r.color === 'red') {
       html += `
