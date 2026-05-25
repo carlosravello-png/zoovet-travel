@@ -304,9 +304,9 @@
       "certificado_salud": { "dias_antes_viaje_minimo": 5, "dias_vigencia_maxima": 5, "es_bloqueante": true, "producto_especifico": "USDA APHIS-endosado" },
       "tramites_senasa": { "dias_antes_viaje_minimo": 1, "es_bloqueante": true, "producto_especifico": "CZE" },
       "cuarentena": { "dias_antes_viaje_minimo": 28, "es_bloqueante": true, "producto_especifico": "28 días en CDC Animal Care Facility (ACF) — SOLO para perros sin FAVN válido. Reserva obligatoria ANTES de volar. Costo asumido por el dueño." },
-      "aeropuertos_validos": ["ATL", "JFK", "LAX", "MIA", "IAD", "SFO"],
+      "aeropuertos_validos": ["ATL", "BOS", "ORD", "DFW", "DTW", "JFK", "LAX", "MIA", "EWR", "SFO", "SEA", "IAD"],
       "permiso_importacion": { "dias_antes_viaje_minimo": 1, "es_bloqueante": true, "producto_especifico": "CDC Dog Import Form — obligatorio para TODOS los perros. Completar antes de volar en CDC website. Gatos: no requerido federalmente." },
-      "notas": "Perú = país de alto riesgo de rabia canina para CDC. PERROS: microchip + FAVN + CDC Form + reserva en ACF + solo 6 aeropuertos (ATL, JFK, LAX, MIA, IAD, SFO). GATOS: proceso más simple, sin FAVN federal."
+      "notas": "Perú = país de alto riesgo de rabia canina para CDC. PERROS: microchip + FAVN + CDC Form + reserva en ACF + solo 12 aeropuertos aprobados. GATOS: proceso más simple, sin FAVN federal."
     },
     "Francia": {
       "codigo_iso": "FR",

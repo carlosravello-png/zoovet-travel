@@ -391,7 +391,10 @@
   <section id="form-section" class="max-w-4xl mx-auto px-4 sm:px-6 mb-12">
     <div class="bg-white border border-[#1a2e35]/10 p-6 sm:p-8 shadow-sm">
       <h2 class="text-xl sm:text-2xl font-bold text-[#1a2e35] mb-2">Datos de tu mascota y viaje</h2>
-      <p class="text-sm text-[#1a2e35]/60 mb-6">Completa los 9 campos. El planificador calculará tu semáforo y plan en segundos.</p>
+      <div class="bg-red-50 border-l-4 border-red-500 p-4 mb-5">
+        <p class="text-sm font-bold text-red-700 mb-1">⚠ Todos los campos son obligatorios <span class="text-red-500">*</span></p>
+        <p class="text-xs text-red-600">Para obtener un diagnóstico preciso debes ingresar los datos <strong>reales y actuales</strong> de tu mascota. Un dato incorrecto o incompleto puede generar un semáforo erróneo. Si no tienes el dato exacto, selecciona "No" o déjalo sin fecha.</p>
+      </div>
 
       <form id="planner-form" class="grid grid-cols-1 md:grid-cols-2 gap-5">
 
@@ -442,7 +445,7 @@
 
         <!-- Microchip -->
         <fieldset class="md:col-span-2 border border-[#1a2e35]/15 p-4">
-          <legend class="text-xs font-semibold uppercase tracking-widest text-[#1a2e35]/70 px-2">Microchip ISO</legend>
+          <legend class="text-xs font-semibold uppercase tracking-widest text-[#1a2e35]/70 px-2">Microchip ISO <span class="text-red-500">*</span></legend>
           <div class="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
             <label class="flex items-center gap-2 text-sm">
               <input type="radio" name="microchip" value="si" class="accent-[#0C789E]"> Sí, ya tiene
@@ -458,7 +461,7 @@
 
         <!-- Vacuna antirrábica -->
         <fieldset class="md:col-span-2 border border-[#1a2e35]/15 p-4">
-          <legend class="text-xs font-semibold uppercase tracking-widest text-[#1a2e35]/70 px-2">Vacuna antirrábica vigente</legend>
+          <legend class="text-xs font-semibold uppercase tracking-widest text-[#1a2e35]/70 px-2">Vacuna antirrábica vigente <span class="text-red-500">*</span></legend>
           <div class="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
             <label class="flex items-center gap-2 text-sm">
               <input type="radio" name="vacuna" value="si" class="accent-[#0C789E]"> Sí
@@ -476,7 +479,7 @@
         <!-- FAVN / Titulación serológica -->
         <fieldset class="md:col-span-2 border border-[#1a2e35]/15 p-4">
           <legend class="text-xs font-semibold uppercase tracking-widest text-[#1a2e35]/70 px-2">
-            FAVN / Titulación serológica
+            FAVN / Titulación serológica <span class="text-red-500">*</span>
             <span class="ml-1 inline-flex items-center justify-center w-4 h-4 rounded-full bg-[#0C789E]/20 text-[#0C789E] text-xs font-bold cursor-help align-middle" title="Indica la fecha de extracción de sangre (Serum Draw Date) del reporte oficial del laboratorio (KSVDL). Solo obligatorio para destinos que lo exigen: EE.UU., UE, Japón, EAU, Nueva Zelanda, Singapur.">?</span>
           </legend>
           <div class="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
@@ -509,7 +512,7 @@
 
         <!-- Desparasitación -->
         <fieldset class="md:col-span-2 border border-[#1a2e35]/15 p-4">
-          <legend class="text-xs font-semibold uppercase tracking-widest text-[#1a2e35]/70 px-2">Desparasitación interna y externa</legend>
+          <legend class="text-xs font-semibold uppercase tracking-widest text-[#1a2e35]/70 px-2">Desparasitación interna y externa <span class="text-red-500">*</span></legend>
           <div class="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
             <label class="flex items-center gap-2 text-sm">
               <input type="radio" name="desparasitacion" value="si" class="accent-[#0C789E]"> Sí

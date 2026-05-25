@@ -195,10 +195,10 @@
           topic: 'microchip-orden'
         });
       } else {
-        ejeE.status = ejeE.status === 'fail' ? 'fail' : 'warn';
+        ejeE.status = 'fail';
         ejeE.issues.push({
-          severity: 'yellow',
-          msg: `Microchip ausente. ${dest.codigo_iso} lo exige como bloqueante. Instalación inmediata requerida.`,
+          severity: 'red',
+          msg: `Microchip ausente. ${dest.codigo_iso} lo exige como bloqueante para TODAS las modalidades de ingreso. Sin chip no es posible entrar, ni por vía FAVN ni por cuarentena. Instalación inmediata requerida.`,
           topic: 'microchip'
         });
       }
@@ -270,6 +270,9 @@
         if (d.favn.resultado === 'fallido') {
           ejeC.status = 'fail';
           ejeC.issues.push({ severity: 'red', msg: 'FAVN/RNATT fallido (resultado < 0.5 IU/mL). Se requiere revacunación y nueva toma de muestra. Contactar Zoovet Travel para nuevo protocolo.', topic: 'favn-fallido' });
+        } else if (!d.microchip.tiene) {
+          ejeC.status = 'fail';
+          ejeC.issues.push({ severity: 'red', msg: 'FAVN declarado pero sin microchip registrado. La CDC exige que el chip esté implantado ANTES de la toma de muestra. Sin chip el test es inválido.', topic: 'favn-sin-chip' });
         } else if (d.favn.fecha_muestra && d.microchip.fecha && d.favn.fecha_muestra < d.microchip.fecha) {
           ejeC.status = 'fail';
           ejeC.issues.push({ severity: 'red', msg: `La toma de muestra FAVN (${fmtDate(d.favn.fecha_muestra)}) es anterior al microchip (${fmtDate(d.microchip.fecha)}). El test no es válido sin chip previo.`, topic: 'favn-orden-chip' });
