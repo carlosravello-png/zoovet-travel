@@ -85,13 +85,13 @@
 
     // FAVN: mostrar/ocultar sección de detalle
     $$('input[name="favn"]').forEach(r => r.addEventListener('change', e => {
-      const detail = $('#favn-detail');
-      const fechaInput = $('#fecha_muestra_favn');
+      const detail = document.getElementById('favn-detail');
+      const fechaInput = document.getElementById('fecha_muestra_favn');
       if (e.target.value === 'si') {
-        detail.classList.remove('hidden');
+        detail.style.display = '';
         fechaInput.disabled = false;
       } else {
-        detail.classList.add('hidden');
+        detail.style.display = 'none';
         fechaInput.disabled = true;
         fechaInput.value = '';
         $$('input[name="resultado_favn"]').forEach(rb => { rb.checked = false; });
@@ -114,7 +114,7 @@
     $('#planner-form').addEventListener('reset', () => {
       $('#result-section').classList.add('hidden');
       ['fecha_microchip', 'fecha_vacuna', 'fecha_desparasitacion', 'fecha_muestra_favn'].forEach(id => { $(`#${id}`).disabled = true; });
-      $('#favn-detail').classList.add('hidden');
+      const fd = document.getElementById('favn-detail'); if (fd) fd.style.display = 'none';
       history.replaceState(null, '', PLANNER_URL);
     });
 
@@ -137,9 +137,9 @@
       vacuna: { tiene: f.vacuna.value === 'si', fecha: f.vacuna.value === 'si' && f.fecha_vacuna.value ? new Date(f.fecha_vacuna.value + 'T12:00:00') : null },
       desparasitacion: { tiene: f.desparasitacion.value === 'si', fecha: f.desparasitacion.value === 'si' && f.fecha_desparasitacion.value ? new Date(f.fecha_desparasitacion.value + 'T12:00:00') : null },
       favn: {
-        tiene: f.favn.value === 'si',
-        fecha_muestra: f.favn.value === 'si' && f.fecha_muestra_favn.value ? new Date(f.fecha_muestra_favn.value + 'T12:00:00') : null,
-        resultado: f.favn.value === 'si' ? (f.resultado_favn.value || null) : null
+        tiene: f.favn ? f.favn.value === 'si' : false,
+        fecha_muestra: (f.favn && f.favn.value === 'si' && f.fecha_muestra_favn && f.fecha_muestra_favn.value) ? new Date(f.fecha_muestra_favn.value + 'T12:00:00') : null,
+        resultado: (f.favn && f.favn.value === 'si' && f.resultado_favn) ? (f.resultado_favn.value || null) : null
       }
     };
   }
@@ -265,24 +265,15 @@
       const diasEsperaFAVN = dest.titer_test.dias_antes_viaje_minimo ?? reglas.favn_dias_espera_general;
       const especieLabel = d.especie === 'perro' ? 'Para perros' : d.especie === 'gato' ? 'Para gatos' : '';
 
-      if (d.favn.tiene) {
+      if (d.favn && d.favn.tiene) {
         // Usuario declara tener FAVN — evaluar resultado y orden
         if (d.favn.resultado === 'fallido') {
           ejeC.status = 'fail';
-          ejeC.issues.push({
-            severity: 'red',
-            msg: `FAVN/RNATT fallido (resultado < 0.5 IU/mL). Se requiere revacunación y nueva toma de muestra. Contactar Zoovet Travel para nuevo protocolo.`,
-            topic: 'favn-fallido'
-          });
+          ejeC.issues.push({ severity: 'red', msg: 'FAVN/RNATT fallido (resultado < 0.5 IU/mL). Se requiere revacunación y nueva toma de muestra. Contactar Zoovet Travel para nuevo protocolo.', topic: 'favn-fallido' });
         } else if (d.favn.fecha_muestra && d.microchip.fecha && d.favn.fecha_muestra < d.microchip.fecha) {
           ejeC.status = 'fail';
-          ejeC.issues.push({
-            severity: 'red',
-            msg: `La toma de muestra FAVN (${fmtDate(d.favn.fecha_muestra)}) es anterior al microchip (${fmtDate(d.microchip.fecha)}). El test no es válido sin chip previo. Verificar fechas.`,
-            topic: 'favn-orden-chip'
-          });
+          ejeC.issues.push({ severity: 'red', msg: `La toma de muestra FAVN (${fmtDate(d.favn.fecha_muestra)}) es anterior al microchip (${fmtDate(d.microchip.fecha)}). El test no es válido sin chip previo.`, topic: 'favn-orden-chip' });
         } else {
-          // FAVN aprobado y orden correcta
           const renovadaDespues = d.vacuna.fecha && d.favn.fecha_muestra && d.vacuna.fecha > d.favn.fecha_muestra;
           const infoMsg = renovadaDespues
             ? `FAVN/RNATT aprobado (≥0.5 IU/mL). Vacunación renovada el ${fmtDate(d.vacuna.fecha)}, posterior a la toma de muestra. Válido mientras la vacuna esté vigente.`
@@ -290,27 +281,15 @@
           ejeC.issues.push({ severity: 'info', msg: infoMsg, topic: 'favn-ok' });
         }
       } else {
-        // FAVN no realizado aún — lógica temporal
+        // FAVN no declarado — lógica temporal
         if (diasAlViaje < diasEsperaFAVN) {
           ejeC.status = 'fail';
-          ejeC.issues.push({
-            severity: 'red',
-            msg: `${dest.codigo_iso} exige FAVN/RNATT con espera de ${diasEsperaFAVN} días desde la toma de muestra. Faltan solo ${diasAlViaje} días al viaje. Bloqueante temporal.`,
-            topic: 'favn'
-          });
+          ejeC.issues.push({ severity: 'red', msg: `${dest.codigo_iso} exige FAVN/RNATT con espera de ${diasEsperaFAVN} días desde la toma de muestra. Faltan solo ${diasAlViaje} días al viaje. Bloqueante temporal.`, topic: 'favn' });
         } else if (diasAlViaje < (diasEsperaFAVN + 30)) {
           ejeC.status = ejeC.status === 'fail' ? 'fail' : 'warn';
-          ejeC.issues.push({
-            severity: 'yellow',
-            msg: `Plazo justo para FAVN${especieLabel ? ' (' + especieLabel + ')' : ''}. Tomar muestra HOY mismo (${fmtDate(today())}) — debe ir al laboratorio, regresar el resultado y endosarse.`,
-            topic: 'favn-justo'
-          });
+          ejeC.issues.push({ severity: 'yellow', msg: `Plazo justo para FAVN${especieLabel ? ' (' + especieLabel + ')' : ''}. Tomar muestra HOY mismo (${fmtDate(today())}) — debe ir al laboratorio, regresar el resultado y endosarse.`, topic: 'favn-justo' });
         } else {
-          ejeC.issues.push({
-            severity: 'info',
-            msg: `FAVN/RNATT requerido${especieLabel ? ' — ' + especieLabel : ''}. Programar toma de muestra antes del ${fmtDate(subDays(d.fecha_viaje, diasEsperaFAVN))}. Laboratorio aprobado: KSVDL (Kansas State).`,
-            topic: 'favn-pendiente'
-          });
+          ejeC.issues.push({ severity: 'info', msg: `FAVN/RNATT requerido${especieLabel ? ' — ' + especieLabel : ''}. Programar toma de muestra antes del ${fmtDate(subDays(d.fecha_viaje, diasEsperaFAVN))}. Laboratorio aprobado: KSVDL (Kansas State).`, topic: 'favn-pendiente' });
         }
       }
     }
@@ -647,7 +626,7 @@
     const favsBlocked = r.ejes.C.issues.some(i =>
       ['favn', 'favn-fallido', 'favn-orden-chip'].includes(i.topic) && i.severity === 'red'
     );
-    const favsDeclaredOk = d.favn.tiene && d.favn.resultado === 'aprobado' && !favsBlocked;
+    const favsDeclaredOk = !!(d.favn && d.favn.tiene && d.favn.resultado === 'aprobado' && !favsBlocked);
 
     const secTitle = (txt, mt) => ({ text: txt, fontSize: 10, bold: true, color: '#A99260', margin: [0, mt !== undefined ? mt : 14, 0, 5] });
     const lbl      = (txt)     => ({ text: txt, fontSize: 7, bold: true, color: '#A99260' });
@@ -757,12 +736,8 @@
       vacClear ? 'VIGENTE >30D, <1A' : d.vacuna.tiene ? 'VERIFICAR VALIDEZ' : 'APLICACIÓN REQUERIDA',
       d.vacuna.fecha ? fmtU(d.vacuna.fecha) : '—');
     if (favsRequired) {
-      const favStatusMsg = favsDeclaredOk
-        ? 'TÍTULO: ≥0.5 IU/ML'
-        : (favsBlocked ? 'MUESTRA REQUERIDA URGENTE' : 'PENDIENTE — NO DECLARADO');
-      addRow('TEST FAVN RNATT TITULACIÓN', favsDeclaredOk,
-        favStatusMsg,
-        d.favn.fecha_muestra ? fmtU(d.favn.fecha_muestra) : '—');
+      const favStatusMsg = favsDeclaredOk ? 'TÍTULO: ≥0.5 IU/ML' : (favsBlocked ? 'MUESTRA REQUERIDA URGENTE' : 'PENDIENTE — NO DECLARADO');
+      addRow('TEST FAVN RNATT TITULACIÓN', favsDeclaredOk, favStatusMsg, d.favn && d.favn.fecha_muestra ? fmtU(d.favn.fecha_muestra) : '—');
       if (dest.titer_test.dias_antes_viaje_minimo >= 90) {
         addRow(`PERIODO DE ESPERA ${dest.titer_test.dias_antes_viaje_minimo} DÍAS UE`,
           r.diasAlViaje > dest.titer_test.dias_antes_viaje_minimo,
@@ -879,7 +854,7 @@
     }
     nodes.push({ label: 'VACUNA ANTIRRÁBICA',         date: d.vacuna.fecha   ? fmtU(d.vacuna.fecha)    : '—', status: vacClear     ? 'cleared' : 'pending' });
     if (favsRequired) {
-      nodes.push({ label: 'TEST FAVN', date: d.favn.fecha_muestra ? fmtU(d.favn.fecha_muestra) : '—', status: favsDeclaredOk ? 'cleared' : 'pending' });
+      nodes.push({ label: 'TEST FAVN', date: d.favn && d.favn.fecha_muestra ? fmtU(d.favn.fecha_muestra) : '—', status: favsDeclaredOk ? 'cleared' : 'pending' });
     }
     nodes.push({ label: 'CERTIFICADO VET.',           date: fmtU(subDays(d.fecha_viaje, 5)), status: 'pending' });
     nodes.push({ label: 'DÍA DE VIAJE',          date: fmtU(d.fecha_viaje),             status: 'flight'  });
@@ -957,9 +932,9 @@
       ...(d.vacuna.fecha && { fvc: fmtDateISO(d.vacuna.fecha) }),
       dp: d.desparasitacion.tiene ? '1' : '0',
       ...(d.desparasitacion.fecha && { fdp: fmtDateISO(d.desparasitacion.fecha) }),
-      fa: d.favn.tiene ? '1' : '0',
-      ...(d.favn.fecha_muestra && { ffa: fmtDateISO(d.favn.fecha_muestra) }),
-      ...(d.favn.resultado && { rfa: d.favn.resultado })
+      fa: d.favn && d.favn.tiene ? '1' : '0',
+      ...(d.favn && d.favn.fecha_muestra && { ffa: fmtDateISO(d.favn.fecha_muestra) }),
+      ...(d.favn && d.favn.resultado && { rfa: d.favn.resultado })
     });
     history.replaceState(null, '', `${PLANNER_URL}?${params.toString()}`);
   }
@@ -992,9 +967,10 @@
     }
     if (p.get('fa') === '1') {
       $$('input[name="favn"]').forEach(r => { if (r.value === 'si') r.checked = true; });
-      $('#favn-detail').classList.remove('hidden');
-      $('#fecha_muestra_favn').disabled = false;
-      $('#fecha_muestra_favn').value = p.get('ffa') || '';
+      const fdEl = document.getElementById('favn-detail');
+      if (fdEl) fdEl.style.display = '';
+      const fmEl = document.getElementById('fecha_muestra_favn');
+      if (fmEl) { fmEl.disabled = false; fmEl.value = p.get('ffa') || ''; }
       if (p.get('rfa')) {
         $$('input[name="resultado_favn"]').forEach(r => { if (r.value === p.get('rfa')) r.checked = true; });
       }
