@@ -209,7 +209,21 @@
       "tramites_senasa": { "dias_antes_viaje_minimo": 1, "es_bloqueante": true, "producto_especifico": "CZE" },
       "cuarentena": { "dias_antes_viaje_minimo": 0, "es_bloqueante": true, "producto_especifico": "30 días obligatoria en facility designado por GACC" },
       "permiso_importacion": { "es_bloqueante": false },
-      "notas": "Solo 1 mascota por persona. Cuarentena 30 días no negociable."
+      "notas": "Solo 1 mascota por persona. Cuarentena 30 días no negociable.",
+      "nota_adicional": {
+        "es": {
+          "titulo": "⚠ Avisos obligatorios: Cuarentena GACC + límite de 1 mascota",
+          "texto": "China exige cuarentena obligatoria de 30 días en facility designada por el GACC al llegar — no negociable bajo ningún concepto. Límite oficial: solo 1 mascota por persona. El FAVN tiene validez de 1 año — si vence antes del viaje debe repetirse. China no reconoce vacunas antirrábicas multi-anuales: solo acepta vacunación anual vigente."
+        },
+        "en": {
+          "titulo": "⚠ Mandatory notices: GACC quarantine + 1 pet limit",
+          "texto": "China requires a mandatory 30-day quarantine at a GACC-designated facility upon arrival — non-negotiable under any circumstances. Official limit: 1 pet per person only. FAVN is valid for 1 year — if it expires before travel, it must be repeated. China does not recognize multi-year rabies vaccines: only current annual vaccination is accepted."
+        },
+        "fr": {
+          "titulo": "⚠ Avis obligatoires : Quarantaine GACC + limite d'1 animal",
+          "texto": "La Chine exige une quarantaine obligatoire de 30 jours dans une installation désignée par le GACC à l'arrivée — sans exception. Limite officielle : 1 animal par personne uniquement. Le FAVN est valable 1 an — s'il expire avant le voyage, il doit être renouvelé. La Chine ne reconnaît pas les vaccins antirabiques pluriannuels : seule la vaccination annuelle en cours de validité est acceptée."
+        }
+      }
     },
     "Colombia": {
       "codigo_iso": "CO",
@@ -267,7 +281,21 @@
       "cuarentena": { "es_bloqueante": false },
       "permiso_importacion": { "dias_antes_viaje_minimo": 0, "dias_vigencia_maxima": 90, "es_bloqueante": true, "producto_especifico": "Import Permit MOCCAE válido 90 días" },
       "vacunas_adicionales_obligatorias": "Perros: Distemper, Parvovirus, Hepatitis, Leptospirosis. Gatos: FVRCP (Rinotraqueítis Viral Felina, Calicivirus, Panleucopenia)",
-      "notas": "Solo 2 mascotas/año por persona."
+      "notas": "Solo 2 mascotas/año por persona.",
+      "nota_adicional": {
+        "es": {
+          "titulo": "⚠ Avisos obligatorios: Import Permit MOCCAE",
+          "texto": "EAU exige un Import Permit online del MOCCAE antes de volar — válido por 90 días desde su emisión. Gestionarlo con anticipación. Límite oficial: máximo 2 mascotas por persona por año calendario."
+        },
+        "en": {
+          "titulo": "⚠ Mandatory notice: MOCCAE Import Permit",
+          "texto": "UAE requires an online MOCCAE Import Permit before flying — valid for 90 days from issuance. Obtain it in advance. Official limit: maximum 2 pets per person per calendar year."
+        },
+        "fr": {
+          "titulo": "⚠ Avis obligatoire : Permis d'importation MOCCAE",
+          "texto": "Les EAU exigent un permis d'importation MOCCAE en ligne avant de voler — valable 90 jours à compter de sa délivrance. À obtenir à l'avance. Limite officielle : maximum 2 animaux par personne et par année civile."
+        }
+      }
     },
     "España": {
       "codigo_iso": "ES",
@@ -442,121 +470,4 @@
       },
       "edad_minima_semanas": 22,
       "microchip": { "es_bloqueante": true, "producto_especifico": "ISO" },
-      "vacuna_antirrabica": { "dias_antes_viaje_minimo": 30, "dias_vigencia_maxima": 365, "es_bloqueante": true },
-      "titer_test": { "dias_antes_viaje_minimo": 90, "dias_vigencia_maxima": 540, "es_bloqueante": true, "producto_especifico": "RNATT ≥0.5 IU/ml. Tomar 3-4 sem post-vacuna. Espera 90 días desde toma de muestra. Vigente 18 meses." },
-      "desparasitacion": { "es_bloqueante": false },
-      "certificado_salud": { "dias_antes_viaje_minimo": 5, "dias_vigencia_maxima": 5, "es_bloqueante": true },
-      "tramites_senasa": { "dias_antes_viaje_minimo": 1, "es_bloqueante": true, "producto_especifico": "CZE" },
-      "cuarentena": { "dias_antes_viaje_minimo": 0, "es_bloqueante": true, "producto_especifico": "Mínimo 10 días en facility aprobada MPI" },
-      "permiso_importacion": { "dias_antes_viaje_minimo": 42, "es_bloqueante": true, "producto_especifico": "MPI Import Permit. ~30 días hábiles de procesamiento. Solicitar ≥6 semanas antes." },
-      "aeropuertos_validos": ["AKL", "CHC"],
-      "notas": "Perú = Categoría 3 para MPI. Entrada solo por Auckland (AKL) o Christchurch (CHC).",
-      "nota_adicional": {
-        "es": {
-          "titulo": "⚠ Pasos obligatorios: Import Permit MPI + Cuarentena en facility aprobada",
-          "texto": "Nueva Zelanda exige dos gestiones previas al vuelo: (1) Import Permit del MPI — solicitar con al menos 6 semanas de anticipación, procesamiento ~30 días hábiles, sin él no se puede embarcar. (2) Reserva en una facility de cuarentena aprobada por MPI — cuarentena mínima de 10 días obligatoria para todos los perros y gatos al llegar, independientemente de que la documentación sea perfecta. Cada facility tiene su propio veterinario y capacidad limitada. Todos los costos corren a cargo del propietario. Entrada solo por Auckland (AKL) o Christchurch (CHC)."
-        },
-        "en": {
-          "titulo": "⚠ Mandatory steps: MPI Import Permit + Quarantine at an approved facility",
-          "texto": "New Zealand requires two steps before flying: (1) MPI Import Permit — apply at least 6 weeks in advance, processing takes ~30 business days; without it you cannot board. (2) Reservation at an MPI-approved quarantine facility — a minimum 10-day quarantine is mandatory for all dogs and cats upon arrival, even with perfect documentation. Each facility has its own veterinarian and limited capacity. All costs are the owner's responsibility. Entry only through Auckland (AKL) or Christchurch (CHC)."
-        },
-        "fr": {
-          "titulo": "⚠ Étapes obligatoires : Permis d'importation MPI + Quarantaine dans une installation agréée",
-          "texto": "La Nouvelle-Zélande exige deux démarches avant le vol : (1) Permis d'importation MPI — à demander au moins 6 semaines à l'avance, traitement ~30 jours ouvrables ; sans lui, l'embarquement est impossible. (2) Réservation dans une installation de quarantaine agréée MPI — quarantaine minimale de 10 jours obligatoire pour tous les chiens et chats à l'arrivée, même avec une documentation parfaite. Chaque installation dispose de son propre vétérinaire et d'une capacité limitée. Tous les frais sont à la charge du propriétaire. Entrée uniquement par Auckland (AKL) ou Christchurch (CHC)."
-        }
-      }
-    },
-    "Reino_Unido": {
-      "codigo_iso": "GB",
-      "region": "Europa",
-      "fuente_oficial": {
-        "nombre": "Department for Environment, Food & Rural Affairs (DEFRA)",
-        "url": "https://www.gov.uk/bring-pet-to-great-britain",
-        "fecha_consulta": "2026-05-04"
-      },
-      "edad_minima_semanas": 22,
-      "microchip": { "es_bloqueante": true, "producto_especifico": "ISO 11784/11785 antes de vacuna" },
-      "vacuna_antirrabica": { "dias_antes_viaje_minimo": 30, "dias_vigencia_maxima": 365, "es_bloqueante": true },
-      "titer_test": { "dias_antes_viaje_minimo": 90, "es_bloqueante": true, "producto_especifico": "FAVN/RNATT ≥0.5 IU/ml + 90 días de espera desde toma" },
-      "desparasitacion": { "dias_antes_viaje_minimo": 1, "dias_vigencia_maxima": 5, "es_bloqueante": true, "producto_especifico": "Praziquantel (Echinococcus). Aplicar 24-120 h antes de la entrada. Solo perros." },
-      "certificado_salud": { "dias_antes_viaje_minimo": 5, "dias_vigencia_maxima": 5, "es_bloqueante": true, "producto_especifico": "Animal Health Certificate (AHC) o equivalente" },
-      "tramites_senasa": { "dias_antes_viaje_minimo": 1, "es_bloqueante": true, "producto_especifico": "CZE endosado" },
-      "cuarentena": { "es_bloqueante": false, "producto_especifico": "Hasta 6 meses si incumplimiento documental" },
-      "permiso_importacion": { "es_bloqueante": false },
-      "notas": "Tapeworm (Praziquantel) es crítico para perros. Sin esto, no hay entrada.",
-      "nota_adicional": {
-        "es": {
-          "titulo": "⚠ Aviso crítico para perros: Desparasitación con Praziquantel (Tapeworm)",
-          "texto": "El Reino Unido exige que todos los perros reciban tratamiento con Praziquantel certificado por un veterinario en una ventana de 24 a 120 horas antes de la LLEGADA al UK — no de la salida desde Lima. Si tu vuelo tiene escalas, calcula desde la hora de aterrizaje en UK hacia atrás. Sin este tratamiento documentado no hay entrada posible. Gatos: exentos de este requisito. El certificado de salud (AHC) debe reflejar la fecha y dosis del tratamiento."
-        },
-        "en": {
-          "titulo": "⚠ Critical notice for dogs: Tapeworm treatment with Praziquantel",
-          "texto": "The UK requires all dogs to receive a veterinarian-certified Praziquantel treatment within a window of 24 to 120 hours before ARRIVAL in the UK — not before departure from Lima. If your flight has layovers, calculate backwards from your UK landing time. Without this documented treatment, entry is not possible. Cats: exempt from this requirement. The Animal Health Certificate (AHC) must record the date and dose of the treatment."
-        },
-        "fr": {
-          "titulo": "⚠ Avertissement critique pour les chiens : Traitement antiparasitaire au Praziquantel (Ténia)",
-          "texto": "Le Royaume-Uni exige que tous les chiens reçoivent un traitement au Praziquantel certifié par un vétérinaire dans une fenêtre de 24 à 120 heures avant l'ARRIVÉE au Royaume-Uni — pas avant le départ de Lima. Si votre vol a des escales, calculez à rebours depuis l'heure d'atterrissage au Royaume-Uni. Sans ce traitement documenté, l'entrée est impossible. Chats : exemptés de cette exigence. Le certificat sanitaire (AHC) doit mentionner la date et la dose du traitement."
-        }
-      }
-    },
-    "Rusia": {
-      "codigo_iso": "RU",
-      "region": "Europa / Asia",
-      "fuente_oficial": {
-        "nombre": "Россельхознадзор (Rosselkhoznadzor)",
-        "url": "https://fsvps.gov.ru/en",
-        "fecha_consulta": "2026-05-04"
-      },
-      "edad_minima_semanas": 17,
-      "microchip": { "es_bloqueante": true, "producto_especifico": "ISO 11784/11785" },
-      "vacuna_antirrabica": { "dias_antes_viaje_minimo": 30, "dias_vigencia_maxima": 365, "es_bloqueante": true },
-      "titer_test": { "es_bloqueante": false },
-      "desparasitacion": { "es_bloqueante": false },
-      "certificado_salud": { "dias_antes_viaje_minimo": 5, "dias_vigencia_maxima": 5, "es_bloqueante": true, "producto_especifico": "Veterinary Certificate Form No. 1 dentro de 5 días previos" },
-      "tramites_senasa": { "dias_antes_viaje_minimo": 1, "es_bloqueante": true, "producto_especifico": "CZE" },
-      "cuarentena": { "es_bloqueante": false },
-      "permiso_importacion": { "es_bloqueante": false },
-      "vacunas_adicionales_obligatorias": "Perros: Distemper, Hepatitis, Parvovirus, Adenovirus, Leptospirosis. Gatos: Calicivirus, Panleucopenia.",
-      "notas": "Origen debe estar libre de rabia 6 meses."
-    },
-    "Singapur": {
-      "codigo_iso": "SG",
-      "region": "Asia",
-      "fuente_oficial": {
-        "nombre": "Animal & Veterinary Service (AVS / NParks)",
-        "url": "https://www.nparks.gov.sg/avs",
-        "fecha_consulta": "2026-05-04"
-      },
-      "edad_minima_semanas": 22,
-      "microchip": { "es_bloqueante": true, "producto_especifico": "ISO" },
-      "vacuna_antirrabica": { "dias_antes_viaje_minimo": 30, "dias_vigencia_maxima": 365, "es_bloqueante": true },
-      "titer_test": { "dias_antes_viaje_minimo": 90, "es_bloqueante": true, "producto_especifico": "FAVN/RNATT ≥0.5 IU/ml. Perú = categoría alta de riesgo." },
-      "desparasitacion": { "dias_antes_viaje_minimo": 30, "es_bloqueante": true, "producto_especifico": "Específica" },
-      "certificado_salud": { "dias_antes_viaje_minimo": 5, "dias_vigencia_maxima": 5, "es_bloqueante": true, "producto_especifico": "Veterinario oficial" },
-      "tramites_senasa": { "dias_antes_viaje_minimo": 1, "es_bloqueante": true, "producto_especifico": "CZE" },
-      "cuarentena": { "dias_antes_viaje_minimo": 0, "es_bloqueante": true, "producto_especifico": "30 días en facility AVS (puede ser home-quarantine según categoría)" },
-      "permiso_importacion": { "dias_antes_viaje_minimo": 30, "es_bloqueante": true, "producto_especifico": "Import Licence AVS" },
-      "notas": "Proceso complejo y costoso. Categoría alta de riesgo para Perú."
-    },
-    "Sudáfrica": {
-      "codigo_iso": "ZA",
-      "region": "África",
-      "fuente_oficial": {
-        "nombre": "Department of Agriculture, Land Reform and Rural Development (DALRRD)",
-        "url": "https://www.dalrrd.gov.za",
-        "fecha_consulta": "2026-05-04"
-      },
-      "edad_minima_semanas": 17,
-      "microchip": { "es_bloqueante": true, "producto_especifico": "ISO antes de vacuna antirrábica" },
-      "vacuna_antirrabica": { "dias_antes_viaje_minimo": 30, "dias_vigencia_maxima": 365, "es_bloqueante": true },
-      "titer_test": { "es_bloqueante": false, "producto_especifico": "DALRRD NO requiere titer de rabia" },
-      "desparasitacion": { "es_bloqueante": false },
-      "certificado_salud": { "dias_antes_viaje_minimo": 5, "dias_vigencia_maxima": 5, "es_bloqueante": true },
-      "tramites_senasa": { "dias_antes_viaje_minimo": 1, "es_bloqueante": true, "producto_especifico": "CZE" },
-      "cuarentena": { "es_bloqueante": false },
-      "permiso_importacion": { "dias_antes_viaje_minimo": 30, "es_bloqueante": true, "producto_especifico": "DALRRD Veterinary Import Permit" },
-      "blood_tests_perros": "5 pruebas serológicas negativas dentro de 30 días previos al viaje (perros). DALRRD las define específicamente.",
-      "notas": "Sin titer de rabia, pero sí 5 blood tests negativos para perros."
-    }
-  }
-}
+      "vacuna_antirrabica": { "dias_antes_via
