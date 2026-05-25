@@ -468,7 +468,7 @@
 
     // Additional notice banner (e.g. ACF reservation for US)
     if (r.destinoData.nota_adicional) {
-      const na = r.destinoData.nota_adicional;
+      const na = r.destinoData.nota_adicional.en;
       html += `
         <div class="border-l-4 border-[#0C789E] bg-[#dceef5] p-5 mb-6 flex gap-4 items-start">
           <span class="text-2xl leading-none mt-0.5">📋</span>
@@ -976,4 +976,30 @@
     }
     if (p.get('dp') === '1') {
       f.desparasitacion.value = 'si';
-      $('#f
+      $('#fecha_desparasitacion').disabled = false;
+      $('#fecha_desparasitacion').value = p.get('fdp') || '';
+    }
+    if (p.get('fa') === '1') {
+      $$('input[name="favn"]').forEach(r => { if (r.value === 'si') r.checked = true; });
+      const fdEl = document.getElementById('favn-detail');
+      if (fdEl) fdEl.style.display = '';
+      const fmEl = document.getElementById('fecha_muestra_favn');
+      if (fmEl) { fmEl.disabled = false; fmEl.value = p.get('ffa') || ''; }
+      if (p.get('rfa')) {
+        $$('input[name="resultado_favn"]').forEach(r => { if (r.value === p.get('rfa')) r.checked = true; });
+      }
+    }
+  }
+
+  function sharePlan() {
+    const url = window.location.href;
+    if (navigator.share) {
+      navigator.share({ title: 'My travel plan \u00B7 Zoovet Travel', url });
+    } else {
+      navigator.clipboard.writeText(url).then(() => {
+        alert('Plan URL copied to clipboard.');
+      });
+    }
+  }
+
+})();

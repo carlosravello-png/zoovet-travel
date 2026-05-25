@@ -308,8 +308,18 @@
       "permiso_importacion": { "dias_antes_viaje_minimo": 1, "es_bloqueante": true, "producto_especifico": "CDC Dog Import Form — obligatorio para TODOS los perros. Completar antes de volar en CDC website. Gatos: no requerido federalmente." },
       "notas": "Perú = país de alto riesgo de rabia canina para CDC. PERROS: microchip + FAVN + CDC Form + reserva en ACF + solo 12 aeropuertos aprobados. GATOS: proceso más simple, sin FAVN federal.",
       "nota_adicional": {
-        "titulo": "⚠ Paso obligatorio: Reserva en ACF (Instalación de Cuidado Animal registrada)",
-        "texto": "EE.UU. exige una reserva previa en una CDC Animal Care Facility (ACF) en el aeropuerto de llegada. Debe hacerse con al menos 30 días de anticipación. Cada ACF tiene su propio veterinario y agenda — la disponibilidad no está garantizada. Todos los perros pasan por examen + revacunación obligatoria. Si no tiene FAVN válido, también incluye 28 días de cuarentena. Todos los costos corren a cargo del propietario."
+        "es": {
+          "titulo": "⚠ Paso obligatorio: Reserva en ACF (Instalación de Cuidado Animal registrada)",
+          "texto": "EE.UU. exige una reserva previa en una CDC Animal Care Facility (ACF) en el aeropuerto de llegada. Debe hacerse con al menos 30 días de anticipación. Cada ACF tiene su propio veterinario y agenda — la disponibilidad no está garantizada. Todos los perros pasan por examen + revacunación obligatoria. Si no tiene FAVN válido, también incluye 28 días de cuarentena. Todos los costos corren a cargo del propietario."
+        },
+        "en": {
+          "titulo": "⚠ Mandatory step: Reservation at a CDC-registered Animal Care Facility (ACF)",
+          "texto": "The U.S. requires a prior reservation at a CDC-registered Animal Care Facility (ACF) at the arrival airport — at least 30 days in advance. Each ACF has its own veterinarian and schedule; availability is not guaranteed. All dogs must undergo examination and re-vaccination. Without a valid FAVN titer, a 28-day quarantine at the ACF is also required. All costs are the owner's responsibility."
+        },
+        "fr": {
+          "titulo": "⚠ Étape obligatoire : Réservation dans une installation de soins animaux agréée CDC (ACF)",
+          "texto": "Les États-Unis exigent une réservation préalable dans une installation de soins animaux agréée CDC (ACF) à l'aéroport d'arrivée — au moins 30 jours à l'avance. Chaque ACF dispose de son propre vétérinaire et calendrier ; la disponibilité n'est pas garantie. Tous les chiens doivent passer un examen et une revaccination. Sans titrage FAVN valide, une quarantaine de 28 jours à l'ACF est également requise. Tous les frais sont à la charge du propriétaire."
+        }
       }
     },
     "Francia": {
@@ -389,8 +399,18 @@
       "aeropuertos_validos": ["NRT", "KIX", "NGO", "HND", "FUK", "CTS"],
       "notas": "Los 180 días post-titer son la regla más estricta del mundo junto con Australia. Entrada solo por aeropuertos designados: NRT, KIX, NGO, HND, FUK, CTS.",
       "nota_adicional": {
-        "titulo": "⚠ Paso obligatorio: Notificación previa al AQS — Servicio de Cuarentena Animal de Japón",
-        "texto": "Japón exige notificar al AQS con al menos 40 días de anticipación Y obtener aprobación antes de volar. El certificado de salud específico de Japón debe enviarse al AQS dentro de ese plazo — sin aprobación previa, el animal no puede embarcar. Al llegar, la cuarentena varía: 12 horas si toda la documentación es perfecta, hasta 180 días si algún documento falla o está incompleto. Cada estación de cuarentena tiene su propio veterinario y capacidad limitada. Todos los costos de cuarentena corren a cargo del propietario."
+        "es": {
+          "titulo": "⚠ Paso obligatorio: Notificación previa al AQS — Servicio de Cuarentena Animal de Japón",
+          "texto": "Japón exige notificar al AQS con al menos 40 días de anticipación Y obtener aprobación antes de volar. El certificado de salud específico de Japón debe enviarse al AQS dentro de ese plazo — sin aprobación previa, el animal no puede embarcar. Al llegar, la cuarentena varía: 12 horas si toda la documentación es perfecta, hasta 180 días si algún documento falla o está incompleto. Cada estación de cuarentena tiene su propio veterinario y capacidad limitada. Todos los costos de cuarentena corren a cargo del propietario."
+        },
+        "en": {
+          "titulo": "⚠ Mandatory step: Prior notification to AQS — Japan Animal Quarantine Service",
+          "texto": "Japan requires notifying the AQS at least 40 days in advance AND obtaining approval before flying. Japan's specific health certificate must be submitted to the AQS within that timeframe — without prior approval, the animal cannot board. Upon arrival, quarantine varies: 12 hours if all documentation is perfect, up to 180 days if any document is missing or invalid. Each quarantine station has its own veterinarian and limited capacity. All quarantine costs are the owner's responsibility."
+        },
+        "fr": {
+          "titulo": "⚠ Étape obligatoire : Notification préalable à l'AQS — Service de quarantaine animale du Japon",
+          "texto": "Le Japon exige de notifier l'AQS au moins 40 jours à l'avance ET d'obtenir une approbation avant de voler. Le certificat sanitaire spécifique au Japon doit être soumis à l'AQS dans ce délai — sans approbation préalable, l'animal ne peut pas embarquer. À l'arrivée, la quarantaine varie : 12 heures si toute la documentation est parfaite, jusqu'à 180 jours si un document manque ou est invalide. Chaque station de quarantaine dispose de son propre vétérinaire et d'une capacité limitée. Tous les frais de quarantaine sont à la charge du propriétaire."
+        }
       }
     },
     "México": {
@@ -430,7 +450,21 @@
       "cuarentena": { "dias_antes_viaje_minimo": 0, "es_bloqueante": true, "producto_especifico": "Mínimo 10 días en facility aprobada MPI" },
       "permiso_importacion": { "dias_antes_viaje_minimo": 42, "es_bloqueante": true, "producto_especifico": "MPI Import Permit. ~30 días hábiles de procesamiento. Solicitar ≥6 semanas antes." },
       "aeropuertos_validos": ["AKL", "CHC"],
-      "notas": "Perú = Categoría 3 para MPI. Entrada solo por Auckland (AKL) o Christchurch (CHC)."
+      "notas": "Perú = Categoría 3 para MPI. Entrada solo por Auckland (AKL) o Christchurch (CHC).",
+      "nota_adicional": {
+        "es": {
+          "titulo": "⚠ Pasos obligatorios: Import Permit MPI + Cuarentena en facility aprobada",
+          "texto": "Nueva Zelanda exige dos gestiones previas al vuelo: (1) Import Permit del MPI — solicitar con al menos 6 semanas de anticipación, procesamiento ~30 días hábiles, sin él no se puede embarcar. (2) Reserva en una facility de cuarentena aprobada por MPI — cuarentena mínima de 10 días obligatoria para todos los perros y gatos al llegar, independientemente de que la documentación sea perfecta. Cada facility tiene su propio veterinario y capacidad limitada. Todos los costos corren a cargo del propietario. Entrada solo por Auckland (AKL) o Christchurch (CHC)."
+        },
+        "en": {
+          "titulo": "⚠ Mandatory steps: MPI Import Permit + Quarantine at an approved facility",
+          "texto": "New Zealand requires two steps before flying: (1) MPI Import Permit — apply at least 6 weeks in advance, processing takes ~30 business days; without it you cannot board. (2) Reservation at an MPI-approved quarantine facility — a minimum 10-day quarantine is mandatory for all dogs and cats upon arrival, even with perfect documentation. Each facility has its own veterinarian and limited capacity. All costs are the owner's responsibility. Entry only through Auckland (AKL) or Christchurch (CHC)."
+        },
+        "fr": {
+          "titulo": "⚠ Étapes obligatoires : Permis d'importation MPI + Quarantaine dans une installation agréée",
+          "texto": "La Nouvelle-Zélande exige deux démarches avant le vol : (1) Permis d'importation MPI — à demander au moins 6 semaines à l'avance, traitement ~30 jours ouvrables ; sans lui, l'embarquement est impossible. (2) Réservation dans une installation de quarantaine agréée MPI — quarantaine minimale de 10 jours obligatoire pour tous les chiens et chats à l'arrivée, même avec une documentation parfaite. Chaque installation dispose de son propre vétérinaire et d'une capacité limitée. Tous les frais sont à la charge du propriétaire. Entrée uniquement par Auckland (AKL) ou Christchurch (CHC)."
+        }
+      }
     },
     "Reino_Unido": {
       "codigo_iso": "GB",
@@ -451,8 +485,18 @@
       "permiso_importacion": { "es_bloqueante": false },
       "notas": "Tapeworm (Praziquantel) es crítico para perros. Sin esto, no hay entrada.",
       "nota_adicional": {
-        "titulo": "⚠ Aviso crítico para perros: Desparasitación con Praziquantel (Tapeworm)",
-        "texto": "El Reino Unido exige que todos los perros reciban tratamiento con Praziquantel certificado por un veterinario en una ventana de 24 a 120 horas antes de la LLEGADA al UK — no de la salida desde Lima. Si tu vuelo tiene escalas, calcula desde la hora de aterrizaje en UK hacia atrás. Sin este tratamiento documentado no hay entrada posible. Gatos: exentos de este requisito. El certificado de salud (AHC) debe reflejar la fecha y dosis del tratamiento."
+        "es": {
+          "titulo": "⚠ Aviso crítico para perros: Desparasitación con Praziquantel (Tapeworm)",
+          "texto": "El Reino Unido exige que todos los perros reciban tratamiento con Praziquantel certificado por un veterinario en una ventana de 24 a 120 horas antes de la LLEGADA al UK — no de la salida desde Lima. Si tu vuelo tiene escalas, calcula desde la hora de aterrizaje en UK hacia atrás. Sin este tratamiento documentado no hay entrada posible. Gatos: exentos de este requisito. El certificado de salud (AHC) debe reflejar la fecha y dosis del tratamiento."
+        },
+        "en": {
+          "titulo": "⚠ Critical notice for dogs: Tapeworm treatment with Praziquantel",
+          "texto": "The UK requires all dogs to receive a veterinarian-certified Praziquantel treatment within a window of 24 to 120 hours before ARRIVAL in the UK — not before departure from Lima. If your flight has layovers, calculate backwards from your UK landing time. Without this documented treatment, entry is not possible. Cats: exempt from this requirement. The Animal Health Certificate (AHC) must record the date and dose of the treatment."
+        },
+        "fr": {
+          "titulo": "⚠ Avertissement critique pour les chiens : Traitement antiparasitaire au Praziquantel (Ténia)",
+          "texto": "Le Royaume-Uni exige que tous les chiens reçoivent un traitement au Praziquantel certifié par un vétérinaire dans une fenêtre de 24 à 120 heures avant l'ARRIVÉE au Royaume-Uni — pas avant le départ de Lima. Si votre vol a des escales, calculez à rebours depuis l'heure d'atterrissage au Royaume-Uni. Sans ce traitement documenté, l'entrée est impossible. Chats : exemptés de cette exigence. Le certificat sanitaire (AHC) doit mentionner la date et la dose du traitement."
+        }
       }
     },
     "Rusia": {
@@ -487,4 +531,32 @@
       "microchip": { "es_bloqueante": true, "producto_especifico": "ISO" },
       "vacuna_antirrabica": { "dias_antes_viaje_minimo": 30, "dias_vigencia_maxima": 365, "es_bloqueante": true },
       "titer_test": { "dias_antes_viaje_minimo": 90, "es_bloqueante": true, "producto_especifico": "FAVN/RNATT ≥0.5 IU/ml. Perú = categoría alta de riesgo." },
-      "desparasitacion": { "dias_antes_viaje_minimo": 30, "es_bloqueante": tr
+      "desparasitacion": { "dias_antes_viaje_minimo": 30, "es_bloqueante": true, "producto_especifico": "Específica" },
+      "certificado_salud": { "dias_antes_viaje_minimo": 5, "dias_vigencia_maxima": 5, "es_bloqueante": true, "producto_especifico": "Veterinario oficial" },
+      "tramites_senasa": { "dias_antes_viaje_minimo": 1, "es_bloqueante": true, "producto_especifico": "CZE" },
+      "cuarentena": { "dias_antes_viaje_minimo": 0, "es_bloqueante": true, "producto_especifico": "30 días en facility AVS (puede ser home-quarantine según categoría)" },
+      "permiso_importacion": { "dias_antes_viaje_minimo": 30, "es_bloqueante": true, "producto_especifico": "Import Licence AVS" },
+      "notas": "Proceso complejo y costoso. Categoría alta de riesgo para Perú."
+    },
+    "Sudáfrica": {
+      "codigo_iso": "ZA",
+      "region": "África",
+      "fuente_oficial": {
+        "nombre": "Department of Agriculture, Land Reform and Rural Development (DALRRD)",
+        "url": "https://www.dalrrd.gov.za",
+        "fecha_consulta": "2026-05-04"
+      },
+      "edad_minima_semanas": 17,
+      "microchip": { "es_bloqueante": true, "producto_especifico": "ISO antes de vacuna antirrábica" },
+      "vacuna_antirrabica": { "dias_antes_viaje_minimo": 30, "dias_vigencia_maxima": 365, "es_bloqueante": true },
+      "titer_test": { "es_bloqueante": false, "producto_especifico": "DALRRD NO requiere titer de rabia" },
+      "desparasitacion": { "es_bloqueante": false },
+      "certificado_salud": { "dias_antes_viaje_minimo": 5, "dias_vigencia_maxima": 5, "es_bloqueante": true },
+      "tramites_senasa": { "dias_antes_viaje_minimo": 1, "es_bloqueante": true, "producto_especifico": "CZE" },
+      "cuarentena": { "es_bloqueante": false },
+      "permiso_importacion": { "dias_antes_viaje_minimo": 30, "es_bloqueante": true, "producto_especifico": "DALRRD Veterinary Import Permit" },
+      "blood_tests_perros": "5 pruebas serológicas negativas dentro de 30 días previos al viaje (perros). DALRRD las define específicamente.",
+      "notas": "Sin titer de rabia, pero sí 5 blood tests negativos para perros."
+    }
+  }
+}
