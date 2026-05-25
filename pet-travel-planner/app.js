@@ -188,10 +188,10 @@
           topic: 'microchip-orden'
         });
       } else {
-        ejeE.status = ejeE.status === 'fail' ? 'fail' : 'warn';
+        ejeE.status = 'fail';
         ejeE.issues.push({
-          severity: 'yellow',
-          msg: `Microchip absent. ${dest.codigo_iso} requires it as a blocker. Immediate implantation required.`,
+          severity: 'red',
+          msg: `Microchip absent. ${dest.codigo_iso} requires it as a blocker for ALL entry routes. Without a chip, entry is not possible — neither via FAVN nor quarantine. Immediate implantation required.`,
           topic: 'microchip'
         });
       }
@@ -261,6 +261,9 @@
         if (d.favn.resultado === 'fallido') {
           ejeC.status = 'fail';
           ejeC.issues.push({ severity: 'red', msg: 'FAVN/titer test failed (result < 0.5 IU/mL). Re-vaccination and new sample collection required. Contact Zoovet Travel for a new protocol.', topic: 'favn-fallido' });
+        } else if (!d.microchip.tiene) {
+          ejeC.status = 'fail';
+          ejeC.issues.push({ severity: 'red', msg: 'FAVN declared but no microchip registered. CDC requires the chip to be implanted BEFORE the blood sample is drawn. Without a chip the test is invalid.', topic: 'favn-sin-chip' });
         } else if (d.favn.fecha_muestra && d.microchip.fecha && d.favn.fecha_muestra < d.microchip.fecha) {
           ejeC.status = 'fail';
           ejeC.issues.push({ severity: 'red', msg: `FAVN sample date (${fmtDate(d.favn.fecha_muestra)}) is earlier than microchip implantation (${fmtDate(d.microchip.fecha)}). Test is invalid without prior chip.`, topic: 'favn-orden-chip' });
@@ -461,6 +464,20 @@
         html += `<li class="text-sm text-[#1a2e35]/85 flex gap-2"><span>${icon}</span><span>${i.msg}</span></li>`;
       });
       html += '</ul></div>';
+    }
+
+    // Additional notice banner (e.g. ACF reservation for US)
+    if (r.destinoData.nota_adicional) {
+      const na = r.destinoData.nota_adicional;
+      html += `
+        <div class="border-l-4 border-[#0C789E] bg-[#dceef5] p-5 mb-6 flex gap-4 items-start">
+          <span class="text-2xl leading-none mt-0.5">📋</span>
+          <div>
+            <p class="text-sm font-bold text-[#0C789E] uppercase tracking-wider mb-1">${na.titulo}</p>
+            <p class="text-sm text-[#1a2e35]/85 leading-relaxed">${na.texto}</p>
+          </div>
+        </div>
+      `;
     }
 
     if (r.color === 'red') {

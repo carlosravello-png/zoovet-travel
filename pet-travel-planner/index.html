@@ -292,6 +292,10 @@
   <section id="form-section" class="max-w-4xl mx-auto px-4 sm:px-6 mb-12">
     <div class="bg-white border border-[#1a2e35]/10 p-6 sm:p-8 shadow-sm">
       <h2 class="text-xl sm:text-2xl font-bold text-[#1a2e35] mb-2">Your pet and travel details</h2>
+      <div class="bg-red-50 border-l-4 border-red-500 p-4 mb-5">
+        <p class="text-sm font-bold text-red-700 mb-1">⚠ All fields are required <span class="text-red-500">*</span></p>
+        <p class="text-xs text-red-600">For an accurate diagnosis, enter your pet's <strong>real and current</strong> data. Incomplete or incorrect information will generate a false result that could put your pet's entry at risk.</p>
+      </div>
       <p class="text-sm text-[#1a2e35]/60 mb-6">Fill in all 9 fields. The planner will calculate your traffic light and plan in seconds.</p>
 
       <form id="planner-form" class="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -340,7 +344,7 @@
         <div></div>
 
         <fieldset class="md:col-span-2 border border-[#1a2e35]/15 p-4">
-          <legend class="text-xs font-semibold uppercase tracking-widest text-[#1a2e35]/70 px-2">ISO Microchip</legend>
+          <legend class="text-xs font-semibold uppercase tracking-widest text-[#1a2e35]/70 px-2">ISO Microchip <span class="text-red-500">*</span></legend>
           <div class="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
             <label class="flex items-center gap-2 text-sm"><input type="radio" name="microchip" value="si" class="accent-[#0C789E]"> Yes, already implanted</label>
             <label class="flex items-center gap-2 text-sm"><input type="radio" name="microchip" value="no" checked class="accent-[#0C789E]"> Not yet</label>
@@ -351,7 +355,7 @@
         </fieldset>
 
         <fieldset class="md:col-span-2 border border-[#1a2e35]/15 p-4">
-          <legend class="text-xs font-semibold uppercase tracking-widest text-[#1a2e35]/70 px-2">Valid rabies vaccine</legend>
+          <legend class="text-xs font-semibold uppercase tracking-widest text-[#1a2e35]/70 px-2">Valid rabies vaccine <span class="text-red-500">*</span></legend>
           <div class="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
             <label class="flex items-center gap-2 text-sm"><input type="radio" name="vacuna" value="si" class="accent-[#0C789E]"> Yes</label>
             <label class="flex items-center gap-2 text-sm"><input type="radio" name="vacuna" value="no" checked class="accent-[#0C789E]"> No</label>
@@ -365,7 +369,7 @@
         <!-- FAVN / Serological titer test -->
         <fieldset class="md:col-span-2 border border-[#1a2e35]/15 p-4">
           <legend class="text-xs font-semibold uppercase tracking-widest text-[#1a2e35]/70 px-2">
-            FAVN / Serological titer test
+            FAVN / Serological titer test <span class="text-red-500">*</span>
             <span class="ml-1 inline-flex items-center justify-center w-4 h-4 rounded-full bg-[#0C789E]/20 text-[#0C789E] text-xs font-bold cursor-help align-middle" title="Enter the blood draw date (Serum Draw Date) from the official laboratory report (KSVDL). Only required for destinations that mandate it: USA, EU, Japan, UAE, New Zealand, Singapore.">?</span>
           </legend>
           <div class="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
@@ -397,7 +401,7 @@
         </fieldset>
 
         <fieldset class="md:col-span-2 border border-[#1a2e35]/15 p-4">
-          <legend class="text-xs font-semibold uppercase tracking-widest text-[#1a2e35]/70 px-2">Internal and external deworming</legend>
+          <legend class="text-xs font-semibold uppercase tracking-widest text-[#1a2e35]/70 px-2">Internal and external deworming <span class="text-red-500">*</span></legend>
           <div class="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
             <label class="flex items-center gap-2 text-sm"><input type="radio" name="desparasitacion" value="si" class="accent-[#0C789E]"> Yes</label>
             <label class="flex items-center gap-2 text-sm"><input type="radio" name="desparasitacion" value="no" checked class="accent-[#0C789E]"> No</label>

@@ -170,10 +170,10 @@
           topic: 'microchip-orden'
         });
       } else {
-        ejeE.status = ejeE.status === 'fail' ? 'fail' : 'warn';
+        ejeE.status = 'fail';
         ejeE.issues.push({
-          severity: 'yellow',
-          msg: `Puce absente. ${dest.codigo_iso} l'exige comme condition bloquante. Implantation immédiate requise.`,
+          severity: 'red',
+          msg: `Puce absente. ${dest.codigo_iso} l'exige comme condition bloquante pour TOUTES les modalités d'entrée. Sans puce, l'entrée est impossible — ni via FAVN ni via quarantaine. Implantation immédiate requise.`,
           topic: 'microchip'
         });
       }
@@ -242,6 +242,9 @@
         if (d.favn.resultado === 'échoué') {
           ejeC.status = 'fail';
           ejeC.issues.push({ severity: 'red', msg: 'FAVN/RNATT échoué (résultat < 0,5 UI/mL). Revaccination et nouveau prélèvement requis. Contactez Zoovet Travel pour un nouveau protocole.', topic: 'favn-fallido' });
+        } else if (!d.microchip.tiene) {
+          ejeC.status = 'fail';
+          ejeC.issues.push({ severity: 'red', msg: 'FAVN déclaré mais aucune puce enregistrée. La CDC exige que la puce soit implantée AVANT le prélèvement sanguin. Sans puce, le test est invalide.', topic: 'favn-sin-chip' });
         } else if (d.favn.fecha_muestra && d.microchip.fecha && d.favn.fecha_muestra < d.microchip.fecha) {
           ejeC.status = 'fail';
           ejeC.issues.push({ severity: 'red', msg: `Le prélèvement FAVN (${fmtDate(d.favn.fecha_muestra)}) est antérieur à la puce (${fmtDate(d.microchip.fecha)}). Le test n'est pas valide sans puce préalable.`, topic: 'favn-orden-chip' });
@@ -433,6 +436,20 @@
         html += `<li class="text-sm text-[#1a2e35]/85 flex gap-2"><span>${icon}</span><span>${i.msg}</span></li>`;
       });
       html += '</ul></div>';
+    }
+
+    // Bandeau note additionnelle (ex. réservation ACF pour les États-Unis)
+    if (r.destinoData.nota_adicional) {
+      const na = r.destinoData.nota_adicional;
+      html += `
+        <div class="border-l-4 border-[#0C789E] bg-[#dceef5] p-5 mb-6 flex gap-4 items-start">
+          <span class="text-2xl leading-none mt-0.5">📋</span>
+          <div>
+            <p class="text-sm font-bold text-[#0C789E] uppercase tracking-wider mb-1">${na.titulo}</p>
+            <p class="text-sm text-[#1a2e35]/85 leading-relaxed">${na.texto}</p>
+          </div>
+        </div>
+      `;
     }
 
     if (r.color === 'red') {
