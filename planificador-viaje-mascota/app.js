@@ -241,7 +241,7 @@
       return dest.titer_test.es_bloqueante;
     })();
     if (dest.titer_test && favcBloqueante) {
-      const diasEsperaFAVN = dest.titer_test.dias_antes_viaje_minimo || reglas.favn_dias_espera_general;
+      const diasEsperaFAVN = dest.titer_test.dias_antes_viaje_minimo ?? reglas.favn_dias_espera_general;
       const especieLabel = d.especie === 'perro' ? 'Para perros' : d.especie === 'gato' ? 'Para gatos' : '';
       if (diasAlViaje < diasEsperaFAVN) {
         ejeC.status = 'fail';
@@ -256,6 +256,12 @@
           severity: 'yellow',
           msg: `Plazo justo para FAVN${especieLabel ? ' (' + especieLabel + ')' : ''}. Tomar muestra HOY mismo (${fmtDate(today())}) — debe ir al laboratorio, regresar el resultado y endosarse.`,
           topic: 'favn-justo'
+        });
+      } else {
+        ejeC.issues.push({
+          severity: 'info',
+          msg: `FAVN/RNATT requerido${especieLabel ? ' — ' + especieLabel : ''}. Programar toma de muestra antes del ${fmtDate(subDays(d.fecha_viaje, diasEsperaFAVN))}. Laboratorio aprobado: KSVDL (Kansas State).`,
+          topic: 'favn-pendiente'
         });
       }
     }
@@ -343,8 +349,14 @@
       tasks.push({ date: subDays(fv, dest.desparasitacion.dias_antes_viaje_minimo), task: `Desparasitación obligatoria (${dest.desparasitacion.producto_especifico || 'estándar'})`, org: 'Médico Veterinario', status: 'pendiente' });
     }
 
-    if (dest.titer_test && dest.titer_test.es_bloqueante) {
-      const diasEspera = dest.titer_test.dias_antes_viaje_minimo;
+    const favcBloqueanteTimeline = (() => {
+      if (!dest.titer_test) return false;
+      if (d.especie === 'perro' && dest.titer_test.es_bloqueante_perro !== undefined) return dest.titer_test.es_bloqueante_perro;
+      if (d.especie === 'gato' && dest.titer_test.es_bloqueante_gato !== undefined) return dest.titer_test.es_bloqueante_gato;
+      return dest.titer_test.es_bloqueante;
+    })();
+    if (dest.titer_test && favcBloqueanteTimeline) {
+      const diasEspera = dest.titer_test.dias_antes_viaje_minimo ?? 0;
       tasks.push({ date: subDays(fv, diasEspera), task: `FAVN/RNATT — toma de muestra (debe esperar ${diasEspera} días)`, org: 'Zoovet Travel + KSVDL', status: 'pendiente' });
     }
 

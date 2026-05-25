@@ -214,7 +214,7 @@
       return dest.titer_test.es_bloqueante;
     })();
     if (dest.titer_test && favcBloqueante) {
-      const diasEsperaFAVN = dest.titer_test.dias_antes_viaje_minimo || reglas.favn_dias_espera_general;
+      const diasEsperaFAVN = dest.titer_test.dias_antes_viaje_minimo ?? reglas.favn_dias_espera_general;
       const especieLabel = d.especie === 'perro' ? 'Pour les chiens' : d.especie === 'gato' ? 'Pour les chats' : '';
       if (diasAlViaje < diasEsperaFAVN) {
         ejeC.status = 'fail';
@@ -229,6 +229,12 @@
           severity: 'yellow',
           msg: `Délai FAVN serré${especieLabel ? ' (' + especieLabel + ')' : ''}. Prélever AUJOURD'HUI (${fmtDate(today())}) — l'échantillon doit partir, les résultats revenir et être visés.`,
           topic: 'favn-justo'
+        });
+      } else {
+        ejeC.issues.push({
+          severity: 'info',
+          msg: `Test FAVN/sérologique requis${especieLabel ? ' — ' + especieLabel : ''}. Planifier le prélèvement avant le ${fmtDate(subDays(d.fecha_viaje, diasEsperaFAVN))}. Laboratoire agréé : KSVDL (Kansas State).`,
+          topic: 'favn-pendiente'
         });
       }
     }
@@ -308,8 +314,14 @@
       tasks.push({ date: subDays(fv, dest.desparasitacion.dias_antes_viaje_minimo), task: `Déparasitage obligatoire (${dest.desparasitacion.producto_especifico || 'standard'})`, org: 'Vétérinaire', status: 'pending' });
     }
 
-    if (dest.titer_test && dest.titer_test.es_bloqueante) {
-      const diasEspera = dest.titer_test.dias_antes_viaje_minimo;
+    const favcBloqueanteTimeline = (() => {
+      if (!dest.titer_test) return false;
+      if (d.especie === 'perro' && dest.titer_test.es_bloqueante_perro !== undefined) return dest.titer_test.es_bloqueante_perro;
+      if (d.especie === 'gato' && dest.titer_test.es_bloqueante_gato !== undefined) return dest.titer_test.es_bloqueante_gato;
+      return dest.titer_test.es_bloqueante;
+    })();
+    if (dest.titer_test && favcBloqueanteTimeline) {
+      const diasEspera = dest.titer_test.dias_antes_viaje_minimo ?? 0;
       tasks.push({ date: subDays(fv, diasEspera), task: `Test FAVN/sérologique — prélèvement (attente de ${diasEspera} jours requise)`, org: 'Zoovet Travel + KSVDL', status: 'pending' });
     }
 

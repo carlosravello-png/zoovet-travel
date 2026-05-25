@@ -233,7 +233,7 @@
       return dest.titer_test.es_bloqueante;
     })();
     if (dest.titer_test && favcBloqueante) {
-      const diasEsperaFAVN = dest.titer_test.dias_antes_viaje_minimo || reglas.favn_dias_espera_general;
+      const diasEsperaFAVN = dest.titer_test.dias_antes_viaje_minimo ?? reglas.favn_dias_espera_general;
       const especieLabel = d.especie === 'perro' ? 'For dogs' : d.especie === 'gato' ? 'For cats' : '';
       if (diasAlViaje < diasEsperaFAVN) {
         ejeC.status = 'fail';
@@ -248,6 +248,12 @@
           severity: 'yellow',
           msg: `Tight FAVN deadline${especieLabel ? ' (' + especieLabel + ')' : ''}. Collect sample TODAY (${fmtDate(today())}) — sample must be sent, results returned and endorsed.`,
           topic: 'favn-justo'
+        });
+      } else {
+        ejeC.issues.push({
+          severity: 'info',
+          msg: `FAVN/Titer test required${especieLabel ? ' — ' + especieLabel : ''}. Schedule sample collection before ${fmtDate(subDays(d.fecha_viaje, diasEsperaFAVN))}. Approved lab: KSVDL (Kansas State).`,
+          topic: 'favn-pendiente'
         });
       }
     }
@@ -332,8 +338,14 @@
       tasks.push({ date: subDays(fv, dest.desparasitacion.dias_antes_viaje_minimo), task: `Mandatory deworming (${dest.desparasitacion.producto_especifico || 'standard'})`, org: 'Veterinarian', status: 'pending' });
     }
 
-    if (dest.titer_test && dest.titer_test.es_bloqueante) {
-      const diasEspera = dest.titer_test.dias_antes_viaje_minimo;
+    const favcBloqueanteTimeline = (() => {
+      if (!dest.titer_test) return false;
+      if (d.especie === 'perro' && dest.titer_test.es_bloqueante_perro !== undefined) return dest.titer_test.es_bloqueante_perro;
+      if (d.especie === 'gato' && dest.titer_test.es_bloqueante_gato !== undefined) return dest.titer_test.es_bloqueante_gato;
+      return dest.titer_test.es_bloqueante;
+    })();
+    if (dest.titer_test && favcBloqueanteTimeline) {
+      const diasEspera = dest.titer_test.dias_antes_viaje_minimo ?? 0;
       tasks.push({ date: subDays(fv, diasEspera), task: `FAVN/Titer test — sample collection (${diasEspera}-day wait required)`, org: 'Zoovet Travel + KSVDL', status: 'pending' });
     }
 
