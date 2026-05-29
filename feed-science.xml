@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:atom="http://www.w3.org/2005/Atom">
+
+  <channel>
+    <title>Zoovet Travel — Clinical Veterinary Science</title>
+    <link>https://zoovettravel.com/articles/</link>
+    <description>Peer-reviewed clinical veterinary science on companion animal transport medicine. Hypoxia, stress physiology, brachycephalic risk, immunology. Open access. CC BY 4.0.</description>
+    <language>en</language>
+    <copyright>© 2013–2026 Zoovet Travel. All rights reserved.</copyright>
+    <managingEditor>contacto@zoovettravel.com (Dra. Jessica Ysabel Camacho García)</managingEditor>
+    <lastBuildDate>Thu, 29 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://zoovettravel.com/feed-science.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>Air transport of brachycephalic dogs: physiological risks, risk factors and regulatory framework</title>
+      <link>https://zoovettravel.com/articles/zoovet_article3_braquicefalos_EN.html</link>
+      <guid isPermaLink="false">https://doi.org/10.5281/zenodo.19243638</guid>
+      <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
+      <description>Systematic analysis of physiological risks, airline restrictions and regulatory framework for brachycephalic dog breeds during international air transport.</description>
+      <dc:creator>Dra. Jessica Ysabel Camacho García — CMVP 12434 — ORCID 0009-0002-6837-5311</dc:creator>
+      <dc:contributor>Dr. Víctor Jesús Camacho Paz — CMVP 3103</dc:contributor>
+      <dc:publisher>Zoovet Travel — zoovettravel.com</dc:publisher>
+      <dc:rights>© 2026 Zoovet Travel. CC BY 4.0.</dc:rights>
+      <dc:subject>brachycephalic dogs; air transport; IATA LAR; physiological risk; veterinary regulatory</dc:subject>
+      <dcterms:identifier>10.5281/zenodo.19243638</dcterms:identifier>
+      <category>Clinical Veterinary Science</category>
+    </item>
+
+    <item>
+      <title>Physiological compensation mechanisms and hypoxia reserve limits in canids and felids during air transport</title>
+      <link>https://zoovettravel.com/articles/zoovet_art8_hipobaria-EN.html</link>
+      <guid isPermaLink="false">https://doi.org/10.5281/zenodo.19243198</guid>
+      <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
+      <description>Analysis of physiological adaptation mechanisms to moderate hypobaric hypoxia in dogs and cats during commercial air transport.</description>
+      <dc:creator>Dra. Jessica Ysabel Camacho García — CMVP 12434 — ORCID 0009-0002-6837-5311</dc:creator>
+      <dc:publisher>Zoovet Travel — zoovettravel.com</dc:publisher>
+      <dc:rights>© 2026 Zoovet Travel. CC BY 4.0.</dc:rights>
+      <dc:subject>hypoxia; air transport; canids; felids; physiological compensation; hypobaric</dc:subject>
+      <dcterms:identifier>10.5281/zenodo.19243198</dcterms:identifier>
+      <category>Clinical Veterinary Science</category>
+    </item>
+
+    <item>
+      <title>Technical description of humoral immune response post-rabies vaccination and methodological basis of RFFIT and FAVN in companion animals</title>
+      <link>https://zoovettravel.com/articles/zoovet_article2_EN.html</link>
+      <guid isPermaLink="false">https://doi.org/10.5281/zenodo.19243496</guid>
+      <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
+      <description>Technical description of humoral immune response following rabies vaccination and methodological comparison of RFFIT and FAVN neutralization tests.</description>
+      <dc:creator>Dra. Jessica Ysabel Camacho García — CMVP 12434 — ORCID 0009-0002-6837-5311</dc:creator>
+      <dc:contributor>Dr. Víctor Jesús Camacho Paz — CMVP 3103</dc:contributor>
+      <dc:publisher>Zoovet Travel — zoovettravel.com</dc:publisher>
+      <dc:rights>© 2026 Zoovet Travel. CC BY 4.0.</dc:rights>
+      <dc:subject>RFFIT; FAVN; rabies serology; humoral immunity; neutralization test; pet export</dc:subject>
+      <dcterms:identifier>10.5281/zenodo.19243496</dcterms:identifier>
+      <category>Clinical Veterinary Science</category>
+    </item>
+
+    <item>
+      <title>Gut-brain axis in dogs and cats during international transport: neuroendocrine integration, microbiota and energy metabolism</title>
+      <link>https://zoovettravel.com/articulos-interes/</link>
+      <guid isPermaLink="false">https://doi.org/10.5281/zenodo.19243363</guid>
+      <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
+      <description>Integrative review of neuroendocrine, microbiota and metabolic mechanisms activated during international animal transport stress.</description>
+      <dc:creator>Dra. Jessica Ysabel Camacho García — CMVP 12434 — ORCID 0009-0002-6837-5311</dc:creator>
+      <dc:contributor>Dr. Víctor Jesús Camacho Paz — CMVP 3103</dc:contributor>
+      <dc:publisher>Zoovet Travel — zoovettravel.com</dc:publisher>
+      <dc:rights>© 2026 Zoovet Travel. CC BY 4.0.</dc:rights>
+      <dc:subject>gut-brain axis; transport stress; neuroendocrine; microbiota; companion animals</dc:subject>
+      <dcterms:identifier>10.5281/zenodo.19243363</dcterms:identifier>
+      <category>Clinical Veterinary Science</category>
+    </item>
+
+  </channel>
+</rss>
