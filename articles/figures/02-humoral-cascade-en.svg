@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xml:lang="en" viewBox="0 0 960 640" role="img">
+  <metadata>
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+      <rdf:Description rdf:about="https://zoovettravel.com/articles/figures/02-humoral-cascade-en.svg">
+        <dc:creator>Dra. Jessica Ysabel Camacho García, Médico Veterinario, CMVP 12434</dc:creator>
+        <dc:contributor>Dr. Víctor Jesús Camacho Paz, Médico Veterinario, CMVP 3103</dc:contributor>
+        <dc:publisher>Zoovet Travel — zoovettravel.com</dc:publisher>
+        <dc:rights>© 2026 Zoovet Travel. CC BY 4.0. https://creativecommons.org/licenses/by/4.0/</dc:rights>
+        <dc:subject>humoral immune response; rabies vaccination; antibody cascade; B cells; RFFIT; FAVN; pet travel</dc:subject>
+        <dc:relation>https://zoovettravel.com/articles/zoovet_article2_ES.html</dc:relation>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:language>en</dc:language>
+        <dc:date>2026</dc:date>
+      </rdf:Description>
+    </rdf:RDF>
+  </metadata>
+<title>Primary humoral immune response cascade to rabies vaccine</title>
+<desc>From inactivated vaccine antigen through APC uptake, MHC-II presentation, germinal center class switching and affinity maturation, to circulating IgG and immune memory. Authors: Camacho García JY, Camacho Paz VJ. Source: zoovettravel.com</desc>
+
+      <title>Humoral immune cascade to rabies vaccine</title>
+      <rect width="960" height="640" fill="#ffffff"></rect>
+
+      
+      <text x="40" y="38" font-size="17" font-weight="700">
+        Primary humoral response cascade to rabies vaccine
+      </text>
+      <text x="40" y="58" font-size="12" fill="#6b7280">
+        From vaccine antigen to IgG anti-RABV plasma cells
+      </text>
+
+      
+      <line x1="60" y1="100" x2="60" y2="560" stroke="#d8d3c8" stroke-width="1.2"></line>
+      <g font-size="10" fill="#6b7280" text-anchor="end">
+        <circle cx="60" cy="120" r="3" fill="#1a1a1a"></circle>
+        <text x="52" y="124">
+          Day 0
+        </text>
+        <circle cx="60" cy="210" r="3" fill="#1a1a1a"></circle>
+        <text x="52" y="214">
+          Day 1–3
+        </text>
+        <circle cx="60" cy="300" r="3" fill="#1a1a1a"></circle>
+        <text x="52" y="304">
+          Day 3–7
+        </text>
+        <circle cx="60" cy="390" r="3" fill="#1a1a1a"></circle>
+        <text x="52" y="394">
+          Day 7–14
+        </text>
+        <circle cx="60" cy="480" r="3" fill="#1a1a1a"></circle>
+        <text x="52" y="484">
+          Day 14–30
+        </text>
+      </g>
+
+      
+      <g>
+        <rect x="100" y="98" width="380" height="56" fill="#f3f0eb" stroke="#1a1a1a" stroke-width="1.2" rx="2"></rect>
+        <text x="116" y="120" font-size="13" font-weight="700">
+          ① Inactivated vaccine antigen
+        </text>
+        <text x="116" y="140" font-size="11" fill="#555">
+          RABV glycoprotein G + adjuvant · IM/SC route
+        </text>
+      </g>
+
+      
+      <g>
+        <rect x="100" y="186" width="380" height="56" fill="#e8eef6" stroke="#2c5282" stroke-width="1.2" rx="2"></rect>
+        <text x="116" y="208" font-size="13" font-weight="700" fill="#2c5282">
+          ② Uptake by antigen-presenting cells (APC)
+        </text>
+        <text x="116" y="228" font-size="11" fill="#555">
+          Dendritic cells and macrophages · injection site and regional lymph node
+        </text>
+      </g>
+
+      
+      <g>
+        <rect x="100" y="276" width="380" height="56" fill="#e8eef6" stroke="#2c5282" stroke-width="1.2" rx="2"></rect>
+        <text x="116" y="298" font-size="13" font-weight="700" fill="#2c5282">
+          ③ MHC-II presentation → CD4⁺ T helper lymphocyte
+        </text>
+        <text x="116" y="318" font-size="11" fill="#555">
+          Clonal expansion in secondary lymphoid organs
+        </text>
+      </g>
+
+      
+      <g>
+        <rect x="100" y="366" width="380" height="56" fill="#f8ecda" stroke="#b94a2c" stroke-width="1.2" rx="2"></rect>
+        <text x="116" y="388" font-size="13" font-weight="700" fill="#b94a2c">
+          ④ Germinal centre · Activated B lymphocyte
+        </text>
+        <text x="116" y="408" font-size="11" fill="#555">
+          Initial IgM → class switch to IgG · affinity maturation
+        </text>
+      </g>
+
+      
+      <g>
+        <rect x="100" y="456" width="380" height="56" fill="#e6efe9" stroke="#2f6b4e" stroke-width="1.2" rx="2"></rect>
+        <text x="116" y="478" font-size="13" font-weight="700" fill="#2f6b4e">
+          ⑤ Plasma cells → circulating anti-RABV IgG
+        </text>
+        <text x="116" y="498" font-size="11" fill="#555">
+          This is the antibody measured by RFFIT and FAVN at day ≥ 30
+        </text>
+      </g>
+
+      
+      <g stroke="#6b7280" stroke-width="1.4" fill="none">
+        <path d="M 290,154 L 290,182" marker-end="url(#arr)"></path>
+        <path d="M 290,242 L 290,272" marker-end="url(#arr)"></path>
+        <path d="M 290,332 L 290,362" marker-end="url(#arr)"></path>
+        <path d="M 290,422 L 290,452" marker-end="url(#arr)"></path>
+      </g>
+
+      
+      <g>
+        <path d="M 480,484 C 540,484 560,420 600,420 L 700,420" stroke="#2f6b4e" stroke-width="1.4" stroke-dasharray="4 3" fill="none" marker-end="url(#arr-g)"></path>
+        <rect x="700" y="380" width="220" height="100" fill="#ffffff" stroke="#2f6b4e" stroke-width="1.2" rx="2"></rect>
+        <text x="712" y="404" font-size="12" font-weight="700" fill="#2f6b4e">
+          Immune memory
+        </text>
+        <text x="712" y="422" font-size="10.5" fill="#444">
+          Memory B and T lymphocytes
+        </text>
+        <text x="712" y="438" font-size="10.5" fill="#444">
+          persist for months–years in lymphoid
+        </text>
+        <text x="712" y="454" font-size="10.5" fill="#444">
+          organs.
+        </text>
+        <text x="712" y="472" font-size="10.5" fill="#2f6b4e" font-style="italic">
+          → Faster secondary response
+        </text>
+      </g>
+
+      
+      <g font-size="10.5" fill="#6b7280" font-style="italic">
+        <text x="500" y="128">
+          Neutralizing epitopes
+        </text>
+        <text x="500" y="218">
+          Lymphatic migration
+        </text>
+        <text x="500" y="308">
+          Costimulatory signals
+        </text>
+        <text x="500" y="398">
+          Somatic hypermutation
+        </text>
+        <text x="500" y="488">
+          Regulatory threshold ≥ 0.5 IU/mL
+        </text>
+      </g>
+
+      
+      <defs>
+        <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+          <path d="M 0 0 L 10 5 L 0 10 z" fill="#6b7280"></path>
+        </marker>
+        <marker id="arr-g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+          <path d="M 0 0 L 10 5 L 0 10 z" fill="#2f6b4e"></path>
+        </marker>
+      </defs>
+
+      
+      <line x1="40" y1="590" x2="920" y2="590" stroke="#d8d3c8" stroke-width="0.8"></line>
+      <text x="40" y="608" font-size="9.5" fill="#6b7280">
+        Sources: Tizard 2021 · Day 2007 · Flamand et al. 1993 · Kennedy et al. 2007 · WOAH Terrestrial Manual 2024
+      </text>
+      <text x="40" y="622" font-size="9.5" fill="#6b7280">Camacho García JY · Camacho Paz VJ · CC BY-SA 4.0 · zoovettravel.com · jessica-camacho.com</text>
+    
+</svg>
