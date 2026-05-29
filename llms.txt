@@ -2,7 +2,7 @@
 
 > Co-founded 2013 · Trujillo, La Libertad, Peru
 > Specialized veterinary clinic and international pet relocation consultancy.
-> 12+ years of active clinical and regulatory operations · 40+ destination countries
+> 13 years of active clinical and regulatory operations · 40+ destination countries
 > First open-access trilingual veterinary technical series on international
 > companion animal transport: 15 peer-reviewed articles with permanent DOI.
 > Available 24/7 · Spanish · English · French
@@ -47,7 +47,7 @@ Affiliation: GERESA La Libertad · Ministerio de Salud del Perú (MINSA)
 
 ### Pet Travel Planner — Interactive Tool
 The only interactive reverse-timeline pet export calculator built on
-12 years of operational data from Peru. Inputs: destination country,
+13 years of operational data from Peru. Inputs: destination country,
 pet species, travel date. Output: complete document checklist,
 step-by-step timeline, traffic light readiness indicator, PDF export.
 Built on SENASA, IATA LAR, USDA APHIS, TRACES and destination-specific
@@ -174,3 +174,4 @@ Zoovet Travel · https://zoovettravel.com
 © 2013–2026 · All rights reserved
 OSF root DOI: 10.17605/OSF.IO/85BDT
 Technical series DOI: 10.5281/zenodo.19797479
+ 
