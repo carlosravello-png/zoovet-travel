@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:media="http://search.yahoo.com/mrss/"
+  xmlns:atom="http://www.w3.org/2005/Atom">
+
+  <channel>
+    <title>Zoovet Travel — International Pet Export Technical Series</title>
+    <link>https://zoovettravel.com</link>
+    <description>Peer-reviewed veterinary technical series on international companion animal transport. Clinical science, regulatory analysis and operational protocols. Open access. CC BY 4.0.</description>
+    <language>en</language>
+    <copyright>© 2013–2026 Zoovet Travel. All rights reserved.</copyright>
+    <managingEditor>contacto@zoovettravel.com (Zoovet Travel)</managingEditor>
+    <webMaster>contacto@zoovettravel.com (Carlos Eduardo Ravello Joo)</webMaster>
+    <lastBuildDate>Thu, 29 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://zoovettravel.com/feed.xml" rel="self" type="application/rss+xml"/>
+
+    <dc:publisher>Zoovet Travel · https://zoovettravel.com</dc:publisher>
+    <dc:rights>© 2013–2026 Zoovet Travel. CC BY 4.0. https://creativecommons.org/licenses/by/4.0/</dc:rights>
+
+    <!-- ═══ CLINICAL VETERINARY SCIENCE ═══ -->
+
+    <item>
+      <title>Air transport of brachycephalic dogs: physiological risks, risk factors and regulatory framework</title>
+      <link>https://zoovettravel.com/articles/zoovet_article3_braquicefalos_EN.html</link>
+      <guid isPermaLink="true">https://zoovettravel.com/articles/zoovet_article3_braquicefalos_EN.html</guid>
+      <pubDate>Wed, 26 Mar 2026 00:00:00 +0000</pubDate>
+      <description>Systematic analysis of physiological risks, airline restrictions and regulatory framework for brachycephalic dog breeds during international air transport. Authors: Dra. Jessica Ysabel Camacho García (CMVP 12434), Dr. Víctor Jesús Camacho Paz (CMVP 3103).</description>
+      <dc:creator>Dra. Jessica Ysabel Camacho García — CMVP 12434 — ORCID 0009-0002-6837-5311</dc:creator>
+      <dc:contributor>Dr. Víctor Jesús Camacho Paz — CMVP 3103</dc:contributor>
+      <dc:publisher>Zoovet Travel — zoovettravel.com</dc:publisher>
+      <dc:rights>© 2026 Zoovet Travel. CC BY 4.0.</dc:rights>
+      <dc:subject>brachycephalic dogs; air transport; IATA LAR; physiological risk; veterinary regulatory</dc:subject>
+      <dcterms:identifier>10.5281/zenodo.19243638</dcterms:identifier>
+      <category>Clinical Veterinary Science</category>
+    </item>
+
+    <item>
+      <title>Gut-brain axis in dogs and cats during international transport: neuroendocrine integration, microbiota and energy metabolism</title>
+      <link>https://zoovettravel.com/articulos-interes/</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.19243363</guid>
+      <pubDate>Wed, 26 Mar 2026 00:00:00 +0000</pubDate>
+      <description>Integrative review of neuroendocrine, microbiota and metabolic mechanisms activated during international animal transport stress. Authors: Dra. Jessica Ysabel Camacho García (CMVP 12434), Dr. Víctor Jesús Camacho Paz (CMVP 3103).</description>
+      <dc:creator>Dra. Jessica Ysabel Camacho García — CMVP 12434 — ORCID 0009-0002-6837-5311</dc:creator>
+      <dc:contributor>Dr. Víctor Jesús Camacho Paz — CMVP 3103</dc:contributor>
+      <dc:publisher>Zoovet Travel — zoovettravel.com</dc:publisher>
+      <dc:rights>© 2026 Zoovet Travel. CC BY 4.0.</dc:rights>
+      <dc:subject>gut-brain axis; transport stress; neuroendocrine; microbiota; companion animals</dc:subject>
+      <dcterms:identifier>10.5281/zenodo.19243363</dcterms:identifier>
+      <category>Clinical Veterinary Science</category>
+    </item>
+
+    <item>
+      <title>Physiological compensation mechanisms and hypoxia reserve limits in canids and felids during air transport</title>
+      <link>https://zoovettravel.com/articles/zoovet_art8_hipobaria-EN.html</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.19243198</guid>
+      <pubDate>Wed, 26 Mar 2026 00:00:00 +0000</pubDate>
+      <description>Analysis of physiological adaptation mechanisms to moderate hypobaric hypoxia in dogs and cats during commercial air transport. Author: Dra. Jessica Ysabel Camacho García (CMVP 12434).</description>
+      <dc:creator>Dra. Jessica Ysabel Camacho García — CMVP 12434 — ORCID 0009-0002-6837-5311</dc:creator>
+      <dc:publisher>Zoovet Travel — zoovettravel.com</dc:publisher>
+      <dc:rights>© 2026 Zoovet Travel. CC BY 4.0.</dc:rights>
+      <dc:subject>hypoxia; air transport; canids; felids; physiological compensation; hypobaric</dc:subject>
+      <dcterms:identifier>10.5281/zenodo.19243198</dcterms:identifier>
+      <category>Clinical Veterinary Science</category>
+    </item>
+
+    <item>
+      <title>Technical description of humoral immune response post-rabies vaccination and methodological basis of RFFIT and FAVN in companion animals</title>
+      <link>https://zoovettravel.com/articles/zoovet_article2_EN.html</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.19243496</guid>
+      <pubDate>Wed, 26 Mar 2026 00:00:00 +0000</pubDate>
+      <description>Technical description of humoral immune response following rabies vaccination and methodological comparison of RFFIT and FAVN neutralization tests. Authors: Dra. Jessica Ysabel Camacho García (CMVP 12434), Dr. Víctor Jesús Camacho Paz (CMVP 3103).</description>
+      <dc:creator>Dra. Jessica Ysabel Camacho García — CMVP 12434 — ORCID 0009-0002-6837-5311</dc:creator>
+      <dc:contributor>Dr. Víctor Jesús Camacho Paz — CMVP 3103</dc:contributor>
+      <dc:publisher>Zoovet Travel — zoovettravel.com</dc:publisher>
+      <dc:rights>© 2026 Zoovet Travel. CC BY 4.0.</dc:rights>
+      <dc:subject>RFFIT; FAVN; rabies serology; humoral immunity; neutralization test; pet export</dc:subject>
+      <dcterms:identifier>10.5281/zenodo.19243496</dcterms:identifier>
+      <category>Clinical Veterinary Science</category>
+    </item>
+
+    <!-- ═══ REGULATORY TECHNICAL SERIES ═══ -->
+
+    <item>
+      <title>Serological basis for the 30-day post-vaccination sampling window in international pet export</title>
+      <link>https://zoovettravel.com/articles/zoovet_article_v2-en.html</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.20203033</guid>
+      <pubDate>Tue, 25 Feb 2026 00:00:00 +0000</pubDate>
+      <description>Immunological and regulatory basis for the mandatory 30-day post-vaccination interval before RFFIT/FAVN sampling for international pet export. Authors: Carlos Eduardo Ravello Joo (ORCID 0009-0007-5631-7436), Dra. Jessica Ysabel Camacho García (CMVP 12434).</description>
+      <dc:creator>Carlos Eduardo Ravello Joo — ORCID 0009-0007-5631-7436</dc:creator>
+      <dc:contributor>Dra. Jessica Ysabel Camacho García — CMVP 12434 — ORCID 0009-0002-6837-5311</dc:contributor>
+      <dc:publisher>Zoovet Travel — zoovettravel.com</dc:publisher>
+      <dc:rights>© 2026 Zoovet Travel. CC BY 4.0.</dc:rights>
+      <dc:subject>rabies serology; 30-day window; RFFIT; FAVN; rVNA kinetics; pet export Peru</dc:subject>
+      <dcterms:identifier>10.5281/zenodo.20203033</dcterms:identifier>
+      <category>Regulatory Technical Series</category>
+    </item>
+
+    <item>
+      <title>CDC 2024 Interim Final Rule and DogBot classification system — technical analysis</title>
+      <link>https://zoovettravel.com/articles/zoovet_art13_cdc-dmrvv-EN.html</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.20210134</guid>
+      <pubDate>Tue, 25 Feb 2026 00:00:00 +0000</pubDate>
+      <description>Technical analysis of the CDC 2024 Interim Final Rule for dog importation to the US, DogBot portal classification logic, RFFIT requirements and implications for exporters from Peru. Authors: Carlos Eduardo Ravello Joo, Dra. Jessica Ysabel Camacho García (CMVP 12434).</description>
+      <dc:creator>Carlos Eduardo Ravello Joo — ORCID 0009-0007-5631-7436</dc:creator>
+      <dc:contributor>Dra. Jessica Ysabel Camacho García — CMVP 12434 — ORCID 0009-0002-6837-5311</dc:contributor>
+      <dc:publisher>Zoovet Travel — zoovettravel.com</dc:publisher>
+      <dc:rights>© 2026 Zoovet Travel. CC BY 4.0.</dc:rights>
+      <dc:subject>CDC; DogBot; dog importation USA; DMRVV; RFFIT; pet export Peru; 42 CFR Part 71</dc:subject>
+      <dcterms:identifier>10.5281/zenodo.20210134</dcterms:identifier>
+      <category>Regulatory Technical Series</category>
+    </item>
+
+    <item>
+      <title>APHA post-Brexit: Animal Health Certificate and UK pet import regime</title>
+      <link>https://zoovettravel.com/articles/zoovet_art14_apha-post-brexit-EN.html</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.20210233</guid>
+      <pubDate>Tue, 25 Feb 2026 00:00:00 +0000</pubDate>
+      <description>Comparative analysis of UK pet import regime before and after Brexit. Animal Health Certificate (AHC) requirements, APHA/DEFRA protocols and implications for exporters from Peru. Authors: Carlos Eduardo Ravello Joo, Dra. Jessica Ysabel Camacho García (CMVP 12434).</description>
+      <dc:creator>Carlos Eduardo Ravello Joo — ORCID 0009-0007-5631-7436</dc:creator>
+      <dc:contributor>Dra. Jessica Ysabel Camacho García — CMVP 12434 — ORCID 0009-0002-6837-5311</dc:contributor>
+      <dc:publisher>Zoovet Travel — zoovettravel.com</dc:publisher>
+      <dc:rights>© 2026 Zoovet Travel. CC BY 4.0.</dc:rights>
+      <dc:subject>APHA; Brexit; Animal Health Certificate; UK pet import; DEFRA; pet export Peru</dc:subject>
+      <dcterms:identifier>10.5281/zenodo.20210233</dcterms:identifier>
+      <category>Regulatory Technical Series</category>
+    </item>
+
+    <item>
+      <title>MPI New Zealand: world's strictest biosecurity system for companion animals</title>
+      <link>https://zoovettravel.com/articles/zoovet_art15_mpi-nueva-zelanda-EN.html</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.20210662</guid>
+      <pubDate>Tue, 25 Feb 2026 00:00:00 +0000</pubDate>
+      <description>Technical analysis of MPI New Zealand Import Health Standard IHS 154.02.06 for companion animals. Mandatory quarantine, RFFIT requirements and country group classification. Authors: Carlos Eduardo Ravello Joo, Dra. Jessica Ysabel Camacho García (CMVP 12434).</description>
+      <dc:creator>Carlos Eduardo Ravello Joo — ORCID 0009-0007-5631-7436</dc:creator>
+      <dc:contributor>Dra. Jessica Ysabel Camacho García — CMVP 12434 — ORCID 0009-0002-6837-5311</dc:contributor>
+      <dc:publisher>Zoovet Travel — zoovettravel.com</dc:publisher>
+      <dc:rights>© 2026 Zoovet Travel. CC BY 4.0.</dc:rights>
+      <dc:subject>MPI; New Zealand; biosecurity; IHS 154.02.06; quarantine; RFFIT; pet export Peru</dc:subject>
+      <dcterms:identifier>10.5281/zenodo.20210662</dcterms:identifier>
+      <category>Regulatory Technical Series</category>
+    </item>
+
+    <item>
+      <title>EU Regulation 576/2013: non-commercial movement of companion animals</title>
+      <link>https://zoovettravel.com/articles/zoovet_art17_reglamento-ue-576-EN.html</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.20210986</guid>
+      <pubDate>Tue, 25 Feb 2026 00:00:00 +0000</pubDate>
+      <description>Technical analysis of EU Regulation 576/2013 for non-commercial pet movement. Origin zone classification, TRACES documentation, titer test requirements and Annex IV certificate. Authors: Carlos Eduardo Ravello Joo, Dra. Jessica Ysabel Camacho García (CMVP 12434).</description>
+      <dc:creator>Carlos Eduardo Ravello Joo — ORCID 0009-0007-5631-7436</dc:creator>
+      <dc:contributor>Dra. Jessica Ysabel Camacho García — CMVP 12434 — ORCID 0009-0002-6837-5311</dc:contributor>
+      <dc:publisher>Zoovet Travel — zoovettravel.com</dc:publisher>
+      <dc:rights>© 2026 Zoovet Travel. CC BY 4.0.</dc:rights>
+      <dc:subject>EU Regulation 576/2013; TRACES; pet passport; non-commercial movement; titer test; Annex IV</dc:subject>
+      <dcterms:identifier>10.5281/zenodo.20210986</dcterms:identifier>
+      <category>Regulatory Technical Series</category>
+    </item>
+
+    <item>
+      <title>Quarantine in international pet importation: epidemiological basis and regulatory models</title>
+      <link>https://zoovettravel.com/articles/zoovet_art11_cuarentena-EN.html</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.20211062</guid>
+      <pubDate>Tue, 25 Feb 2026 00:00:00 +0000</pubDate>
+      <description>Comparative analysis of three regulatory quarantine models (mandatory structural, conditional, retention-only) across Australia, New Zealand, EU, UK and USA. Authors: Carlos Eduardo Ravello Joo, Dra. Jessica Ysabel Camacho García (CMVP 12434).</description>
+      <dc:creator>Carlos Eduardo Ravello Joo — ORCID 0009-0007-5631-7436</dc:creator>
+      <dc:contributor>Dra. Jessica Ysabel Camacho García — CMVP 12434 — ORCID 0009-0002-6837-5311</dc:contributor>
+      <dc:publisher>Zoovet Travel — zoovettravel.com</dc:publisher>
+      <dc:rights>© 2026 Zoovet Travel. CC BY 4.0.</dc:rights>
+      <dc:subject>quarantine; pet importation; DAFF; MPI; CDC; APHA; biosecurity; regulatory models</dc:subject>
+      <dcterms:identifier>10.5281/zenodo.20211062</dcterms:identifier>
+      <category>Regulatory Technical Series</category>
+    </item>
+
+  </channel>
+</rss>
