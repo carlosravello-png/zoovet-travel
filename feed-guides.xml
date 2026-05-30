@@ -20,11 +20,15 @@
       <guid isPermaLink="true">https://zoovettravel.com/pet-travel-planner/requirements-by-country/</guid>
       <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
       <description>Interactive reverse-timeline calculator for pet export from Peru. Input destination, species and travel date. Output: complete checklist, timeline, traffic light and PDF. Built on 13 years of operational data.</description>
-      <dc:creator>Carlos Eduardo Ravello Joo — ORCID 0009-0007-5631-7436</dc:creator>
-      <dc:contributor>Dra. Jessica Ysabel Camacho García — CMVP 12434</dc:contributor>
-      <dc:publisher>Zoovet Travel — zoovettravel.com</dc:publisher>
-      <dc:rights>© 2026 Zoovet Travel. All rights reserved.</dc:rights>
-      <dc:subject>pet travel planner; export requirements; Peru; checklist; timeline; SENASA</dc:subject>
+      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
+      <dc:contributor>Jessica Ysabel Camacho Garcia</dc:contributor>
+      <dc:publisher>Zoovet Travel</dc:publisher>
+      <dc:rights>All rights reserved</dc:rights>
+      <dc:subject>pet travel planner</dc:subject>
+      <dc:subject>export requirements</dc:subject>
+      <dc:subject>Peru</dc:subject>
+      <dc:subject>checklist</dc:subject>
+      <dc:subject>SENASA</dc:subject>
       <category>Tools</category>
     </item>
 
@@ -34,11 +38,15 @@
       <guid isPermaLink="true">https://zoovettravel.com/kennels-en.html</guid>
       <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
       <description>Interactive IATA kennel size calculator based on LAR Edition 52 (2026). Breed database, automatic +10% brachycephalic adjustment, PDF prescription output.</description>
-      <dc:creator>Carlos Eduardo Ravello Joo — ORCID 0009-0007-5631-7436</dc:creator>
-      <dc:contributor>Dra. Jessica Ysabel Camacho García — CMVP 12434</dc:contributor>
-      <dc:publisher>Zoovet Travel — zoovettravel.com</dc:publisher>
-      <dc:rights>© 2026 Zoovet Travel. All rights reserved.</dc:rights>
-      <dc:subject>kennel IATA; LAR 2026; brachycephalic; kennel size calculator; pet transport</dc:subject>
+      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
+      <dc:contributor>Jessica Ysabel Camacho Garcia</dc:contributor>
+      <dc:publisher>Zoovet Travel</dc:publisher>
+      <dc:rights>All rights reserved</dc:rights>
+      <dc:subject>kennel IATA</dc:subject>
+      <dc:subject>LAR 2026</dc:subject>
+      <dc:subject>brachycephalic</dc:subject>
+      <dc:subject>kennel size calculator</dc:subject>
+      <dc:subject>pet transport</dc:subject>
       <category>Tools</category>
     </item>
 
@@ -48,11 +56,15 @@
       <guid isPermaLink="true">https://zoovettravel.com/zoopedia/eeuu-en.html</guid>
       <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
       <description>Complete requirements for dog and cat export from Peru to the United States. CDC DogBot classification, USDA APHIS endorsement, RFFIT titer test and high-risk country protocol.</description>
-      <dc:creator>Carlos Eduardo Ravello Joo — ORCID 0009-0007-5631-7436</dc:creator>
-      <dc:contributor>Dra. Jessica Ysabel Camacho García — CMVP 12434</dc:contributor>
-      <dc:publisher>Zoovet Travel — zoovettravel.com</dc:publisher>
-      <dc:rights>© 2026 Zoovet Travel. All rights reserved.</dc:rights>
-      <dc:subject>USA pet import; CDC DogBot; USDA APHIS; RFFIT; dog export Peru USA</dc:subject>
+      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
+      <dc:contributor>Jessica Ysabel Camacho Garcia</dc:contributor>
+      <dc:publisher>Zoovet Travel</dc:publisher>
+      <dc:rights>All rights reserved</dc:rights>
+      <dc:subject>USA pet import</dc:subject>
+      <dc:subject>CDC DogBot</dc:subject>
+      <dc:subject>USDA APHIS</dc:subject>
+      <dc:subject>RFFIT</dc:subject>
+      <dc:subject>dog export Peru</dc:subject>
       <category>Country Guide</category>
     </item>
 
@@ -62,11 +74,15 @@
       <guid isPermaLink="true">https://zoovettravel.com/zoopedia/union-europea-en.html</guid>
       <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
       <description>Complete requirements for pet export from Peru to EU member states. Regulation 576/2013, TRACES certificate, titer test, Annex IV and origin zone classification.</description>
-      <dc:creator>Carlos Eduardo Ravello Joo — ORCID 0009-0007-5631-7436</dc:creator>
-      <dc:contributor>Dra. Jessica Ysabel Camacho García — CMVP 12434</dc:contributor>
-      <dc:publisher>Zoovet Travel — zoovettravel.com</dc:publisher>
-      <dc:rights>© 2026 Zoovet Travel. All rights reserved.</dc:rights>
-      <dc:subject>EU pet import; Regulation 576/2013; TRACES; titer test; pet export Peru Europe</dc:subject>
+      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
+      <dc:contributor>Jessica Ysabel Camacho Garcia</dc:contributor>
+      <dc:publisher>Zoovet Travel</dc:publisher>
+      <dc:rights>All rights reserved</dc:rights>
+      <dc:subject>EU pet import</dc:subject>
+      <dc:subject>Regulation 576/2013</dc:subject>
+      <dc:subject>TRACES</dc:subject>
+      <dc:subject>titer test</dc:subject>
+      <dc:subject>pet export Peru Europe</dc:subject>
       <category>Country Guide</category>
     </item>
 
@@ -76,11 +92,15 @@
       <guid isPermaLink="true">https://zoovettravel.com/zoopedia/reino-unido-en.html</guid>
       <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
       <description>Post-Brexit pet import requirements for the United Kingdom. Animal Health Certificate, APHA/DEFRA protocols, tapeworm treatment and Part 2 route for non-listed countries.</description>
-      <dc:creator>Carlos Eduardo Ravello Joo — ORCID 0009-0007-5631-7436</dc:creator>
-      <dc:contributor>Dra. Jessica Ysabel Camacho García — CMVP 12434</dc:contributor>
-      <dc:publisher>Zoovet Travel — zoovettravel.com</dc:publisher>
-      <dc:rights>© 2026 Zoovet Travel. All rights reserved.</dc:rights>
-      <dc:subject>UK pet import; APHA; Animal Health Certificate; Brexit; DEFRA; pet export Peru UK</dc:subject>
+      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
+      <dc:contributor>Jessica Ysabel Camacho Garcia</dc:contributor>
+      <dc:publisher>Zoovet Travel</dc:publisher>
+      <dc:rights>All rights reserved</dc:rights>
+      <dc:subject>UK pet import</dc:subject>
+      <dc:subject>APHA</dc:subject>
+      <dc:subject>Animal Health Certificate</dc:subject>
+      <dc:subject>Brexit</dc:subject>
+      <dc:subject>DEFRA</dc:subject>
       <category>Country Guide</category>
     </item>
 
@@ -90,11 +110,15 @@
       <guid isPermaLink="true">https://zoovettravel.com/zoopedia/nueva-zelanda-en.html</guid>
       <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
       <description>World's strictest biosecurity system for pet import. MPI IHS 154.02.06, mandatory 10-day quarantine, RFFIT titer test, 3-month wait and country group classification.</description>
-      <dc:creator>Carlos Eduardo Ravello Joo — ORCID 0009-0007-5631-7436</dc:creator>
-      <dc:contributor>Dra. Jessica Ysabel Camacho García — CMVP 12434</dc:contributor>
-      <dc:publisher>Zoovet Travel — zoovettravel.com</dc:publisher>
-      <dc:rights>© 2026 Zoovet Travel. All rights reserved.</dc:rights>
-      <dc:subject>New Zealand pet import; MPI; quarantine; RFFIT; biosecurity; pet export Peru NZ</dc:subject>
+      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
+      <dc:contributor>Jessica Ysabel Camacho Garcia</dc:contributor>
+      <dc:publisher>Zoovet Travel</dc:publisher>
+      <dc:rights>All rights reserved</dc:rights>
+      <dc:subject>New Zealand pet import</dc:subject>
+      <dc:subject>MPI</dc:subject>
+      <dc:subject>quarantine</dc:subject>
+      <dc:subject>RFFIT</dc:subject>
+      <dc:subject>biosecurity</dc:subject>
       <category>Country Guide</category>
     </item>
 
@@ -104,11 +128,15 @@
       <guid isPermaLink="true">https://zoovettravel.com/zoopedia/japon-en.html</guid>
       <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
       <description>Pet export requirements from Peru to Japan. Animal Quarantine Service protocol, 180-day wait after FAVN, microchip before vaccination requirement and pre-arrival inspection.</description>
-      <dc:creator>Carlos Eduardo Ravello Joo — ORCID 0009-0007-5631-7436</dc:creator>
-      <dc:contributor>Dra. Jessica Ysabel Camacho García — CMVP 12434</dc:contributor>
-      <dc:publisher>Zoovet Travel — zoovettravel.com</dc:publisher>
-      <dc:rights>© 2026 Zoovet Travel. All rights reserved.</dc:rights>
-      <dc:subject>Japan pet import; Animal Quarantine Service; FAVN; 180-day wait; pet export Peru Japan</dc:subject>
+      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
+      <dc:contributor>Jessica Ysabel Camacho Garcia</dc:contributor>
+      <dc:publisher>Zoovet Travel</dc:publisher>
+      <dc:rights>All rights reserved</dc:rights>
+      <dc:subject>Japan pet import</dc:subject>
+      <dc:subject>Animal Quarantine Service</dc:subject>
+      <dc:subject>FAVN</dc:subject>
+      <dc:subject>180-day wait</dc:subject>
+      <dc:subject>pet export Peru Japan</dc:subject>
       <category>Country Guide</category>
     </item>
 
@@ -117,14 +145,13 @@
       <link>https://zoovettravel.com/glosario/</link>
       <guid isPermaLink="true">https://zoovettravel.com/glosario/</guid>
       <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
-      <description>Authoritative trilingual glossary of 129 technical terms for international companion animal transport. FAVN, RFFIT, IATA LAR, SENASA, TRACES, kennel, zoosanitary certificate and more. ES / EN / FR.</description>
-      <dc:creator>Carlos Eduardo Ravello Joo — ORCID 0009-0007-5631-7436</dc:creator>
-      <dc:contributor>Dra. Jessica Ysabel Camacho García — CMVP 12434</dc:contributor>
-      <dc:publisher>Zoovet Travel — zoovettravel.com</dc:publisher>
-      <dc:rights>© 2026 Zoovet Travel. All rights reserved.</dc:rights>
-      <dc:subject>veterinary glossary; FAVN; RFFIT; IATA LAR; SENASA; TRACES; pet export terminology</dc:subject>
-      <category>Glossary</category>
-    </item>
-
-  </channel>
-</rss>
+      <description>Authoritative trilingual glossary of 129 technical terms for international companion animal transport. FAVN, RFFIT, IATA LAR, SENASA, TRACES, kennel, zoosanitary certificate and more.</description>
+      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
+      <dc:contributor>Jessica Ysabel Camacho Garcia</dc:contributor>
+      <dc:publisher>Zoovet Travel</dc:publisher>
+      <dc:rights>All rights reserved</dc:rights>
+      <dc:subject>veterinary glossary</dc:subject>
+      <dc:subject>FAVN</dc:subject>
+      <dc:subject>RFFIT</dc:subject>
+      <dc:subject>IATA LAR</dc:subject>
+      <dc:subje
