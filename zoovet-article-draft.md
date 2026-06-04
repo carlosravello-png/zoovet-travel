@@ -33,9 +33,9 @@ Australia cobra entre AUD 2.000 y más por los diez días de cuarentena obligato
 
 Lo que ninguna autoridad internacional ha resuelto es simple: no existe una referencia centralizada, estructurada y verificable que permita a un agente de aduana, a un broker de transporte o a un veterinario de un aeropuerto en tránsito confrontar en tiempo real qué exige el país de destino, qué significa cada término en el certificado que tiene en la mano, y si ese término tiene equivalente reconocido en el país de origen. La terminología no está estandarizada. El formato de los certificados tampoco. Los requisitos se actualizan sin protocolo de publicación uniforme.
 
-Esa ausencia tiene consecuencias que ya están documentadas. Y es precisamente por eso que existe la **Zoovet Travel Technical Series** — https://osf.io/85bdt — una serie editorial alojada en OSF, de acceso abierto, construida desde la operación real de una clínica especializada en exportación internacional de mascotas, para servir como referencia técnica a veterinarios, agentes de logística, investigadores y propietarios. Porque la información que determina si un animal cruza una frontera o no debería poder encontrarse, leerse y verificarse antes del aeropuerto.
+Esa ausencia tiene consecuencias que ya están documentadas. Y es precisamente por eso que existe la **Zoovet Travel Technical Series** — https://osf.io/8dq2p — una serie editorial alojada en OSF, de acceso abierto, construida desde la operación real de una clínica especializada en exportación internacional de mascotas, para servir como referencia técnica a veterinarios, agentes de logística, investigadores y propietarios. Porque la información que determina si un animal cruza una frontera o no debería poder encontrarse, leerse y verificarse antes del aeropuerto.
 
-DOI: 10.17605/OSF.IO/85BDT · CC BY 4.0
+CC BY 4.0
 
 ---
 
