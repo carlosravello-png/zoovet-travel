@@ -1969,8 +1969,6 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://zoovettravel.com/serologia-rabia-mascotas-peru-fr.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zoovettravel.com/serologia-rabia-mascotas-peru.html" />
   </url>
-
-  <!-- Cluster hreflang: Requisitos exportación internacional (hub mundial FAVN) -->
   <url>
     <loc>https://zoovettravel.com/exportar-perro-requisitos.html</loc>
     <lastmod>2026-04-28</lastmod>
@@ -2001,8 +1999,6 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://zoovettravel.com/exportar-perro-requisitos-fr.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zoovettravel.com/exportar-perro-requisitos.html" />
   </url>
-
-  <!-- viajar-sin-favn-eeuu cluster -->
   <url>
     <loc>https://zoovettravel.com/viajar-sin-favn-eeuu.html</loc>
     <lastmod>2026-04-28</lastmod>
@@ -2033,8 +2029,6 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://zoovettravel.com/viajar-sin-favn-eeuu-fr.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zoovettravel.com/viajar-sin-favn-eeuu.html" />
   </url>
-
-  <!-- responsabilidad-veterinario cluster -->
   <url>
     <loc>https://zoovettravel.com/responsabilidad-veterinario.html</loc>
     <lastmod>2026-04-28</lastmod>
@@ -2155,7 +2149,6 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://zoovettravel.com/voyager-avec-mon-animal.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zoovettravel.com/viajar-con-mi-mascota.html" />
   </url>
-  <!-- Planificador de Viaje para Mascotas — WebApplication v1.1.0 — trilingual ES/EN/FR -->
   <url>
     <loc>https://zoovettravel.com/planificador-viaje-mascota/</loc>
     <lastmod>2026-05-09</lastmod>
@@ -2186,7 +2179,6 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://zoovettravel.com/planificateur-voyage-animal/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zoovettravel.com/planificador-viaje-mascota/" />
   </url>
-  <!-- Requisitos zoosanitarios por país — Dataset estático trilingual ES/EN/FR -->
   <url>
     <loc>https://zoovettravel.com/planificador-viaje-mascota/requisitos-por-pais/</loc>
     <lastmod>2026-05-09</lastmod>
@@ -2217,9 +2209,6 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://zoovettravel.com/planificateur-voyage-animal/exigences-par-pays/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zoovettravel.com/planificador-viaje-mascota/requisitos-por-pais/" />
   </url>
-
-
-  <!-- GLOSARIO REGULATORIO -->
   <url>
     <loc>https://zoovettravel.com/glosario/</loc>
     <lastmod>2026-05-13</lastmod>
@@ -2850,7 +2839,6 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://zoovettravel.com/glosario/cvi-fr.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zoovettravel.com/glosario/cvi.html"/>
   </url>
-
   <url>
     <loc>https://zoovettravel.com/glosario/apqa.html</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/glosario/apqa.html"/>
@@ -2878,7 +2866,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-
   <url>
     <loc>https://zoovettravel.com/glosario/cfia.html</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/glosario/cfia.html"/>
@@ -2906,7 +2893,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-
   <url>
     <loc>https://zoovettravel.com/glosario/dalrrd.html</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/glosario/dalrrd.html"/>
@@ -2934,7 +2920,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-
   <url>
     <loc>https://zoovettravel.com/glosario/gacc.html</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/glosario/gacc.html"/>
@@ -2962,7 +2947,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-
   <url>
     <loc>https://zoovettravel.com/glosario/senasica.html</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/glosario/senasica.html"/>
@@ -2990,7 +2974,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-
   <url>
     <loc>https://zoovettravel.com/articles/zoovet_art13_cdc-dmrvv-ES.html</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/articles/zoovet_art13_cdc-dmrvv-ES.html"/>
@@ -3000,7 +2983,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://zoovettravel.com/articles/zoovet_art13_cdc-dmrvv-EN.html</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/articles/zoovet_art13_cdc-dmrvv-ES.html"/>
@@ -3010,7 +2992,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://zoovettravel.com/articles/zoovet_art13_cdc-dmrvv-FR.html</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/articles/zoovet_art13_cdc-dmrvv-ES.html"/>
@@ -3020,7 +3001,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://zoovettravel.com/articles/zoovet_art14_apha-post-brexit-ES.html</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/articles/zoovet_art14_apha-post-brexit-ES.html"/>
@@ -3030,7 +3010,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://zoovettravel.com/articles/zoovet_art14_apha-post-brexit-EN.html</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/articles/zoovet_art14_apha-post-brexit-ES.html"/>
@@ -3040,7 +3019,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://zoovettravel.com/articles/zoovet_art14_apha-post-brexit-FR.html</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/articles/zoovet_art14_apha-post-brexit-ES.html"/>
@@ -3050,7 +3028,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://zoovettravel.com/articles/zoovet_art15_mpi-nueva-zelanda-ES.html</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/articles/zoovet_art15_mpi-nueva-zelanda-ES.html"/>
@@ -3060,7 +3037,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://zoovettravel.com/articles/zoovet_art15_mpi-nueva-zelanda-EN.html</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/articles/zoovet_art15_mpi-nueva-zelanda-ES.html"/>
@@ -3070,7 +3046,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://zoovettravel.com/articles/zoovet_art15_mpi-nueva-zelanda-FR.html</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/articles/zoovet_art15_mpi-nueva-zelanda-ES.html"/>
@@ -3080,7 +3055,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://zoovettravel.com/articles/zoovet_art16_sag-chile-ES.html</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/articles/zoovet_art16_sag-chile-ES.html"/>
@@ -3090,7 +3064,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://zoovettravel.com/articles/zoovet_art16_sag-chile-EN.html</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/articles/zoovet_art16_sag-chile-ES.html"/>
@@ -3100,7 +3073,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://zoovettravel.com/articles/zoovet_art16_sag-chile-FR.html</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/articles/zoovet_art16_sag-chile-ES.html"/>
@@ -3110,7 +3082,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://zoovettravel.com/articles/zoovet_art17_reglamento-ue-576-ES.html</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/articles/zoovet_art17_reglamento-ue-576-ES.html"/>
@@ -3120,7 +3091,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://zoovettravel.com/articles/zoovet_art17_reglamento-ue-576-EN.html</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/articles/zoovet_art17_reglamento-ue-576-ES.html"/>
@@ -3130,7 +3100,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://zoovettravel.com/articles/zoovet_art17_reglamento-ue-576-FR.html</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/articles/zoovet_art17_reglamento-ue-576-ES.html"/>
@@ -3308,5 +3277,61 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
+  <url>
+    <loc>https://zoovettravel.com/articulos-interes/aton-favn-reconversion-weimaraner-ES.html</loc>
+    <lastmod>2026-06-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/articulos-interes/aton-favn-reconversion-weimaraner-ES.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zoovettravel.com/articulos-interes/aton-favn-reconversion-weimaraner-EN.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zoovettravel.com/articulos-interes/aton-favn-reconversion-weimaraner-FR.html"/>
+  </url>
+  <url>
+    <loc>https://zoovettravel.com/articulos-interes/aton-favn-reconversion-weimaraner-EN.html</loc>
+    <lastmod>2026-06-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/articulos-interes/aton-favn-reconversion-weimaraner-ES.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zoovettravel.com/articulos-interes/aton-favn-reconversion-weimaraner-EN.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zoovettravel.com/articulos-interes/aton-favn-reconversion-weimaraner-FR.html"/>
+  </url>
+  <url>
+    <loc>https://zoovettravel.com/articulos-interes/aton-favn-reconversion-weimaraner-FR.html</loc>
+    <lastmod>2026-06-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/articulos-interes/aton-favn-reconversion-weimaraner-ES.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zoovettravel.com/articulos-interes/aton-favn-reconversion-weimaraner-EN.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zoovettravel.com/articulos-interes/aton-favn-reconversion-weimaraner-FR.html"/>
+  </url>
+  <url>
+    <loc>https://zoovettravel.com/articles/zoovet_art18_aton-favn-ES.html</loc>
+    <lastmod>2026-06-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/articles/zoovet_art18_aton-favn-ES.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zoovettravel.com/articles/zoovet_art18_aton-favn-EN.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zoovettravel.com/articles/zoovet_art18_aton-favn-FR.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zoovettravel.com/articles/zoovet_art18_aton-favn-ES.html"/>
+  </url>
+  <url>
+    <loc>https://zoovettravel.com/articles/zoovet_art18_aton-favn-EN.html</loc>
+    <lastmod>2026-06-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/articles/zoovet_art18_aton-favn-ES.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zoovettravel.com/articles/zoovet_art18_aton-favn-EN.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zoovettravel.com/articles/zoovet_art18_aton-favn-FR.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zoovettravel.com/articles/zoovet_art18_aton-favn-ES.html"/>
+  </url>
+  <url>
+    <loc>https://zoovettravel.com/articles/zoovet_art18_aton-favn-FR.html</loc>
+    <lastmod>2026-06-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zoovettravel.com/articles/zoovet_art18_aton-favn-ES.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zoovettravel.com/articles/zoovet_art18_aton-favn-EN.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zoovettravel.com/articles/zoovet_art18_aton-favn-FR.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zoovettravel.com/articles/zoovet_art18_aton-favn-ES.html"/>
+  </url>
 </urlset>
-  
