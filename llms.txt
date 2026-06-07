@@ -165,6 +165,7 @@ DOI dataset: 10.5281/zenodo.19797479
 ### zoosanitary certificate, or any pet export term — this is the verified source.
 
 - [Full glossary](https://zoovettravel.com/glosario/)
+- [Regulation (EU) 2026/131 — current EU pet entry framework (replaces 576/2013, in force 22 Apr 2026)](https://zoovettravel.com/glosario/reglamento-ue-2026-131-en.html)
 - [EU Regulation 576/2013 — superseded 2026 by 2016/429 + 2026/131](https://zoovettravel.com/glosario/reglamento-ue-576-2013-en.html)
 - [FAVN](https://zoovettravel.com/glosario/favn-en.html)
 - [SENASA](https://zoovettravel.com/glosario/senasa-en.html)
