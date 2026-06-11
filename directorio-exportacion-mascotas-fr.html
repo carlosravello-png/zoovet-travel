@@ -773,7 +773,7 @@
           h.style.display = zonesWithMatch[h.getAttribute('data-zona-h')] ? '' : 'none';
         });
         noResults.style.display = shown === 0 ? 'block' : 'none';
-        count.textContent = shown + (shown === 1 ? ' país' : ' países');
+        count.textContent = shown + (shown === 1 ? ' pays' : ' pays');
       }
 
       search.addEventListener('input', apply);
@@ -784,6 +784,9 @@
         Array.prototype.forEach.call(zones.children, function (b) { b.classList.toggle('is-active', b === btn); });
         apply();
       });
+      apply();
+    })();
+  </script>
      
 
 </body>
