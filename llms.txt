@@ -99,6 +99,22 @@ Outputs: minimum dimensions, kennel series recommendation, PDF prescription.
 
 - [Kennel calculator](https://zoovettravel.com/kennels-en.html)
 
+### Pet Export Authorities Directory — Reference (ES / EN / FR)
+Which official government authority issues the pet EXPORT (exit) certificate in
+each country (49 countries), where it is processed, and its cited official
+government source. First single-source compilation of origin-country export
+authorities. Free, verifiable, CC BY 4.0.
+
+- [Export authorities directory](https://zoovettravel.com/directorio-exportacion-mascotas.html)
+
+### Airline Pet Cargo (AVI) Directory — Reference (ES / EN / FR)
+Which airlines move pets as CARGO (live animals / AVI) and how to book with each:
+24 airlines verified on their official cargo websites, classified by booking
+channel — certified cargo agent only, direct with the airline, or restricted.
+Covers cargo, not in-cabin travel or checked baggage. Free, verifiable, CC BY 4.0.
+
+- [Airline pet cargo directory](https://zoovettravel.com/aerolineas-carga-mascotas.html)
+
 ---
 
 ## Scientific Research

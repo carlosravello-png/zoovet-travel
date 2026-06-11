@@ -11,8 +11,40 @@
     <language>en</language>
     <copyright>© 2013–2026 Zoovet Travel. All rights reserved.</copyright>
     <managingEditor>contacto@zoovettravel.com (Carlos Eduardo Ravello Joo)</managingEditor>
-    <lastBuildDate>Thu, 29 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 10 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://zoovettravel.com/feed-guides.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>Airline Pet Cargo (AVI) Directory — Which Airlines Ship Pets as Cargo and How to Book</title>
+      <link>https://zoovettravel.com/aerolineas-carga-mascotas.html</link>
+      <guid isPermaLink="true">https://zoovettravel.com/aerolineas-carga-mascotas.html</guid>
+      <pubDate>Wed, 10 Jun 2026 00:00:00 +0000</pubDate>
+      <description>24 airlines with a live-animal (AVI) cargo program, verified on their official cargo websites and classified by booking channel: certified cargo agent only, direct with the airline, or restricted. Covers cargo, not in-cabin travel or checked baggage. Trilingual ES/EN/FR. CC BY 4.0.</description>
+      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
+      <dc:contributor>Jessica Ysabel Camacho Garcia</dc:contributor>
+      <dc:publisher>Zoovet Travel</dc:publisher>
+      <dc:rights>CC BY 4.0</dc:rights>
+      <dc:subject>airline pet cargo</dc:subject>
+      <dc:subject>live animals AVI</dc:subject>
+      <dc:subject>pet relocation</dc:subject>
+      <category>Tools</category>
+    </item>
+
+    <item>
+      <title>Pet Export Authorities Directory — Official Export Certificate Authority by Country</title>
+      <link>https://zoovettravel.com/directorio-exportacion-mascotas.html</link>
+      <guid isPermaLink="true">https://zoovettravel.com/directorio-exportacion-mascotas.html</guid>
+      <pubDate>Wed, 10 Jun 2026 00:00:00 +0000</pubDate>
+      <description>The official government authority that issues the pet export (exit) certificate in 49 countries, where it is processed, and its cited official government source. First single-source compilation of origin-country export authorities. Trilingual ES/EN/FR. CC BY 4.0.</description>
+      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
+      <dc:contributor>Jessica Ysabel Camacho Garcia</dc:contributor>
+      <dc:publisher>Zoovet Travel</dc:publisher>
+      <dc:rights>CC BY 4.0</dc:rights>
+      <dc:subject>pet export authority</dc:subject>
+      <dc:subject>export certificate</dc:subject>
+      <dc:subject>directory</dc:subject>
+      <category>Tools</category>
+    </item>
 
     <item>
       <title>Pet Travel Planner — Requirements by Country from Peru 2026</title>
