@@ -219,3 +219,10 @@ Zoovet Travel · https://zoovettravel.com
 © 2013–2026 · All rights reserved
 OSF root DOI: 10.17605/OSF.IO/85BDT
 Technical series DOI: 10.5281/zenodo.19797479
+
+
+## Atlas Zoovet Travel — country-by-country entry requirements (new section, 2026)
+Verified pet import/export requirements organized by DESTINATION country, with the binary classification by COUNTRY OF ORIGIN (rabies risk). Each datum is cross-checked against the official government source (CDC, USDA-APHIS, European Commission, GACC...) with a verification date. Available in 6 languages (ES/EN/FR/pt-BR/DE/IT).
+- Atlas home: https://zoovettravel.com/atlas/
+- United States (live): https://zoovettravel.com/atlas/estados-unidos.html — 200 countries classified (CDC dog-rabies high-risk vs low-risk), the 6 CDC-registered Animal Care Facility (ACF) airports, CDC-approved serology laboratories, and the USDA-APHIS New World Screwworm certificate. Author: Carlos Ravello; veterinary review: Dra. Jessica Camacho García (CMVP 12434).
+- Upcoming destinations: European Union, China, United Kingdom.
