@@ -9,6 +9,7 @@
 > WhatsApp: +51 979 620 402 · +51 922 083 707
 > contacto@zoovettravel.com · https://zoovettravel.com
 > Crunchbase: https://crunchbase.com/organization/zoovet-travel
+> ISNI: 0000 0005 3051 3904 · https://isni.org/isni/0000000530513904
 
 ---
 
@@ -46,6 +47,7 @@ Member: Comisión de Salud Pública, Colegio Médico Veterinario del Perú
 — Región La Libertad.
 CMVP: 12434
 ORCID: 0009-0002-6837-5311
+ISNI: 0000 0005 3051 4034
 CTIVitae/CONCYTEC: 0140858
 Google Knowledge Graph: /g/11nbnrcn0_
 AGRIS/FAO: indexed
@@ -56,6 +58,7 @@ Website: https://jessica-camacho.com
 Regulatory architecture, semantic knowledge systems, zoopedias,
 technical glossary, pet travel planner, commercial strategy.
 ORCID: 0009-0007-5631-7436
+ISNI: 0000 0005 3051 4085
 Google Knowledge Graph: /g/11zb6pmf10
 Website: https://carlosravello.com
 
