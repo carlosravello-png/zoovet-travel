@@ -126,7 +126,7 @@ footer{margin-top:22px;font-size:.8rem;color:#5a6a7a}footer strong{color:#1a2e35
 </div>
 
 <h2>Authority and points of entry</h2>
-<p>Authority: <strong>Animal &amp; Veterinary Service (AVS)</strong>, part of the <strong>National Parks Board (NParks)</strong>. <strong>Air</strong> arrivals are inspected at the <strong>Changi Animal &amp; Plant Quarantine Station (CAPQ)</strong> in the Changi Airfreight Centre; <strong>land</strong> arrivals at <strong>Tuas Checkpoint</strong>. Quarantine, when it applies, is served at the <strong>Animal Quarantine Centre (AQC)</strong>, booked in advance via the Quarantine Management System. Minimum age to import: 12 weeks.</p>
+<p>Authority: <strong>Animal &amp; Veterinary Service (AVS)</strong>, part of the <strong>National Parks Board (NParks)</strong>. <strong>Air</strong> arrivals are inspected at the <strong>Changi Animal &amp; Plant Quarantine Station (CAPQ)</strong> in the Changi Airfreight Centre; <strong>land</strong> arrivals at <strong>Tuas Checkpoint</strong>. Quarantine, when it applies, is served at the <strong>Animal Quarantine Centre (AQC)</strong>, booked in advance via the Quarantine Management System. The <strong>Animal Quarantine Centre (AQC)</strong> is at <strong>2 Jalan Lekar, Singapore 698919</strong> (near Choa Chu Kang). Minimum age to import: 12 weeks.</p>
 
 <h2>Frequently asked questions</h2>
 <div class="faq">
@@ -139,6 +139,7 @@ footer{margin-top:22px;font-size:.8rem;color:#5a6a7a}footer strong{color:#1a2e35
 
 <h2>Related terms and resources</h2>
 <div class="interlinks">
+<a href="https://zoovettravel.com/zoopedia/singapur-en.html">Practical guide: travelling to Singapore with your pet</a>
 <a href="australia-en.html">Australia — another strict island destination</a>
 <a href="nueva-zelanda-en.html">New Zealand — the MPI's own Schedule</a>
 <a href="https://zoovettravel.com/glosario/serologia-antirrabica.html">Rabies serology (RNATT/FAVN)</a>
@@ -365,7 +366,7 @@ const tb=document.getElementById('tb'),q=document.getElementById('q'),count=docu
 let f='todos';
 function badge(r){if(r==='I')return '<span class="badge s1">Schedule I · no quarantine</span>';if(r==='II')return '<span class="badge s2">Schedule II · RNATT · up to 10 days</span>';return '<span class="badge s3">Schedule III · 30-day quarantine</span>';}
 function nombre(p){if(p==='Peru')return '<a href="https://zoovettravel.com/viajar-con-mi-mascota.html">Peru</a><span class="peru-tag">▸ Schedule III · 30 days</span>';if(p==='Australia')return 'Australia<span class="au-tag">▸ Schedule I · no quarantine</span>';if(p==='Spain')return 'Spain<span class="es-tag">▸ except Ceuta and Melilla</span>';return p;}
-function render(){const t=q.value.trim().toLowerCase();const rows=PAISES.filter(x=>(f==='todos'||x.r===f)&&x.p.toLowerCase().includes(t));tb.innerHTML=rows.map(x=>`<tr><td class="pais">${nombre(x.p)}</td><td>${badge(x.r)}</td></tr>`).join('');count.textContent=rows.length+' of '+PAISES.length+' countries';}
+function render(){const nrm=s=>s.normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase();const t=nrm(q.value.trim());const rows=PAISES.filter(x=>(f==='todos'||x.r===f)&&nrm(x.p).includes(t));tb.innerHTML=rows.map(x=>`<tr><td class="pais">${nombre(x.p)}</td><td>${badge(x.r)}</td></tr>`).join('');count.textContent=rows.length+' of '+PAISES.length+' countries';}
 q.addEventListener('input',render);
 document.querySelectorAll('.filtros button').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.filtros button').forEach(x=>x.classList.remove('on'));b.classList.add('on');f=b.dataset.f;render();}));
 render();

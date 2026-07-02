@@ -126,7 +126,7 @@ footer{margin-top:22px;font-size:.8rem;color:#5a6a7a}footer strong{color:#1a2e35
 </div>
 
 <h2>Autorità e punti di ingresso</h2>
-<p>Autorità: <strong>Animal &amp; Veterinary Service (AVS)</strong>, del <strong>National Parks Board (NParks)</strong>. Gli arrivi <strong>via aerea</strong> sono ispezionati alla <strong>Changi Animal &amp; Plant Quarantine Station (CAPQ)</strong>, al Changi Airfreight Centre; quelli <strong>via terra</strong> al <strong>Tuas Checkpoint</strong>. La quarantena, quando applicabile, si svolge all'<strong>Animal Quarantine Centre (AQC)</strong>, prenotata in anticipo tramite il Quarantine Management System. Età minima per importare: 12 settimane.</p>
+<p>Autorità: <strong>Animal &amp; Veterinary Service (AVS)</strong>, del <strong>National Parks Board (NParks)</strong>. Gli arrivi <strong>via aerea</strong> sono ispezionati alla <strong>Changi Animal &amp; Plant Quarantine Station (CAPQ)</strong>, al Changi Airfreight Centre; quelli <strong>via terra</strong> al <strong>Tuas Checkpoint</strong>. La quarantena, quando applicabile, si svolge all'<strong>Animal Quarantine Centre (AQC)</strong>, prenotata in anticipo tramite il Quarantine Management System. L'<strong>Animal Quarantine Centre (AQC)</strong> si trova in <strong>2 Jalan Lekar, Singapore 698919</strong> (vicino a Choa Chu Kang). Età minima per importare: 12 settimane.</p>
 
 <h2>Domande frequenti</h2>
 <div class="faq">
@@ -365,7 +365,7 @@ const tb=document.getElementById('tb'),q=document.getElementById('q'),count=docu
 let f='todos';
 function badge(r){if(r==='I')return '<span class="badge s1">Schedule I · senza quarantena</span>';if(r==='II')return '<span class="badge s2">Schedule II · RNATT · fino a 10 giorni</span>';return '<span class="badge s3">Schedule III · quarantena 30 giorni</span>';}
 function nombre(p){if(p==='Perù')return '<a href="https://zoovettravel.com/viajar-con-mi-mascota.html">Perù</a><span class="peru-tag">▸ Schedule III · 30 giorni</span>';if(p==='Australia')return 'Australia<span class="au-tag">▸ Schedule I · senza quarantena</span>';if(p==='Spagna')return 'Spagna<span class="es-tag">▸ tranne Ceuta e Melilla</span>';return p;}
-function render(){const t=q.value.trim().toLowerCase();const rows=PAISES.filter(x=>(f==='todos'||x.r===f)&&x.p.toLowerCase().includes(t));tb.innerHTML=rows.map(x=>`<tr><td class="pais">${nombre(x.p)}</td><td>${badge(x.r)}</td></tr>`).join('');count.textContent=rows.length+' di '+PAISES.length+' paesi';}
+function render(){const nrm=s=>s.normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase();const t=nrm(q.value.trim());const rows=PAISES.filter(x=>(f==='todos'||x.r===f)&&nrm(x.p).includes(t));tb.innerHTML=rows.map(x=>`<tr><td class="pais">${nombre(x.p)}</td><td>${badge(x.r)}</td></tr>`).join('');count.textContent=rows.length+' di '+PAISES.length+' paesi';}
 q.addEventListener('input',render);
 document.querySelectorAll('.filtros button').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.filtros button').forEach(x=>x.classList.remove('on'));b.classList.add('on');f=b.dataset.f;render();}));
 render();
