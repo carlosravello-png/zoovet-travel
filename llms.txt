@@ -226,6 +226,7 @@ DOI dataset: 10.5281/zenodo.19797479
 - [China — GACC import permit](https://zoovettravel.com/zoopedia/china-en.html)
 - [Russia — FSVPS requirements](https://zoovettravel.com/zoopedia/rusia-en.html)
 - [UAE — MOCCAE permit](https://zoovettravel.com/zoopedia/eau-en.html)
+- [Peru — SENASA import requirements (no general quarantine, no RNATT), Jorge Chávez inspection](https://zoovettravel.com/zoopedia/peru-en.html)
 - [Full directory — 20+ countries](https://zoovettravel.com/zoopedia/index-en.html)
 
 ---
