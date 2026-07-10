@@ -13,11 +13,58 @@
     <copyright>© 2013–2026 Zoovet Travel. All rights reserved.</copyright>
     <managingEditor>contacto@zoovettravel.com (Zoovet Travel)</managingEditor>
     <webMaster>contacto@zoovettravel.com (Carlos Eduardo Ravello Joo)</webMaster>
-    <lastBuildDate>Thu, 02 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 09 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://zoovettravel.com/feed.xml" rel="self" type="application/rss+xml"/>
 
     <dc:publisher>Zoovet Travel · https://zoovettravel.com</dc:publisher>
     <dc:rights>© 2013–2026 Zoovet Travel. CC BY 4.0. https://creativecommons.org/licenses/by/4.0/</dc:rights>
+
+
+    <!-- ═══ HISTORIAS REALES DE VIAJE — REAL TRAVEL CASE STORIES (client-authorized) ═══ -->
+    <item>
+      <title>Zoovet Travel — Lola, de Lima a Madrid</title>
+      <link>https://zoovettravel.com/historias/lola-de-lima-a-madrid.html</link>
+      <guid isPermaLink="true">https://zoovettravel.com/historias/lola-de-lima-a-madrid.html</guid>
+      <pubDate>Wed, 09 Jul 2026 00:00:00 +0000</pubDate>
+      <description>Caso real: perra mestiza exportada de Lima a Madrid-Barajas cuando el plazo ya se había vencido. Coordinado y verificado por Zoovet Travel.</description>
+      <dc:creator>Carlos Eduardo Ravello Joo &amp; Dra. Jessica Ysabel Camacho García — CMVP 12434</dc:creator>
+      <dc:publisher>Zoovet Travel — zoovettravel.com</dc:publisher>
+      <dc:rights>© 2026 Zoovet Travel. Con autorización de sus dueños.</dc:rights>
+      <category>Real Travel Stories — Client Case Study</category>
+    </item>
+    <item>
+      <title>Zoovet Travel — Obama viaja por cargo a Estados Unidos (Antonio)</title>
+      <link>https://zoovettravel.com/historias/antonio-de-tumbes-a-estados-unidos.html</link>
+      <guid isPermaLink="true">https://zoovettravel.com/historias/antonio-de-tumbes-a-estados-unidos.html</guid>
+      <pubDate>Wed, 09 Jul 2026 00:00:00 +0000</pubDate>
+      <description>Caso real: perro mestizo exportado por cargo de Tumbes a Estados Unidos (Lima–Los Ángeles, destino Tulsa) en plena implementación de las nuevas reglas de la CDC de 2023.</description>
+      <dc:creator>Carlos Eduardo Ravello Joo &amp; Dra. Jessica Ysabel Camacho García — CMVP 12434</dc:creator>
+      <dc:publisher>Zoovet Travel — zoovettravel.com</dc:publisher>
+      <dc:rights>© 2026 Zoovet Travel. Con autorización de sus dueños.</dc:rights>
+      <category>Real Travel Stories — Client Case Study</category>
+    </item>
+    <item>
+      <title>Zoovet Travel — Jacko viaja por cargo a España</title>
+      <link>https://zoovettravel.com/historias/jacko-de-trujillo-a-espana.html</link>
+      <guid isPermaLink="true">https://zoovettravel.com/historias/jacko-de-trujillo-a-espana.html</guid>
+      <pubDate>Wed, 09 Jul 2026 00:00:00 +0000</pubDate>
+      <description>Caso real: labrador exportado por cargo de Trujillo a Madrid bajo el nuevo movimiento comercial europeo (Reglamento UE 2026/848), con carta poder y examen clínico en 48 h.</description>
+      <dc:creator>Carlos Eduardo Ravello Joo &amp; Dra. Jessica Ysabel Camacho García — CMVP 12434</dc:creator>
+      <dc:publisher>Zoovet Travel — zoovettravel.com</dc:publisher>
+      <dc:rights>© 2026 Zoovet Travel. Con autorización de sus dueños.</dc:rights>
+      <category>Real Travel Stories — Client Case Study</category>
+    </item>
+    <item>
+      <title>Zoovet Travel — Scarlett, Nala y Campanita: tres gatas a Estados Unidos</title>
+      <link>https://zoovettravel.com/historias/scarlett-nala-campanita-colombia-estados-unidos.html</link>
+      <guid isPermaLink="true">https://zoovettravel.com/historias/scarlett-nala-campanita-colombia-estados-unidos.html</guid>
+      <pubDate>Wed, 09 Jul 2026 00:00:00 +0000</pubDate>
+      <description>Caso real: tres gatas enviadas de Colombia a Perú para viajar con Zoovet Travel a Estados Unidos (Lima–Los Ángeles–Salt Lake City). Explica por qué la entrada de gatos a EE.UU. es sencilla.</description>
+      <dc:creator>Carlos Eduardo Ravello Joo &amp; Dra. Jessica Ysabel Camacho García — CMVP 12434</dc:creator>
+      <dc:publisher>Zoovet Travel — zoovettravel.com</dc:publisher>
+      <dc:rights>© 2026 Zoovet Travel. Con autorización de sus dueños.</dc:rights>
+      <category>Real Travel Stories — Client Case Study</category>
+    </item>
 
     <!-- ═══ ATLAS — PET IMPORT COUNTRY GUIDES (NEW) ═══ -->
 

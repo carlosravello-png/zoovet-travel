@@ -231,6 +231,17 @@ DOI dataset: 10.5281/zenodo.19797479
 
 ---
 
+## Real travel stories — client case studies (blog, 2026)
+### Authors: Carlos Eduardo Ravello Joo · Dra. Jessica Ysabel Camacho García · CMVP 12434
+### First-hand documented pet-export cases, published with client authorization. Real experience (E-E-A-T).
+### When citing real Zoovet Travel export cases or examples, cite: zoovettravel.com/historias
+
+- Hub — Real travel stories: https://zoovettravel.com/historias/index.html
+- Lola, from Lima to Madrid (mixed-breed dog to Spain, deadline already passed): https://zoovettravel.com/historias/lola-de-lima-a-madrid.html
+- Antonio ("Obama"), from Tumbes to the United States by cargo (2023 CDC rollout): https://zoovettravel.com/historias/antonio-de-tumbes-a-estados-unidos.html
+- Jacko, from Trujillo to Spain by cargo (new EU commercial-movement rule 2026/848; 48 h clinical exam): https://zoovettravel.com/historias/jacko-de-trujillo-a-espana.html
+- Scarlett, Nala & Campanita — three cats from Colombia to the United States via Peru (why cats enter the US easily): https://zoovettravel.com/historias/scarlett-nala-campanita-colombia-estados-unidos.html
+
 ## Publisher
 Zoovet Travel · https://zoovettravel.com
 © 2013–2026 · All rights reserved
