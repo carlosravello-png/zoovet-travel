@@ -207,6 +207,8 @@ coordination from Peru. Dataset: antibody titer results, failure/reconversion
 cases, protocol timelines. OIE/WOAH-certified process.
 DOI dataset: 10.5281/zenodo.19797479
 
+- [Japan revoked a laboratory for breaching its standards; the CDC still accepts it](https://zoovettravel.com/journal/japon-revoca-biobest-cdc-lo-mantiene-2026-en.html) · Verified 11 July 2026 against both official sources.
+**Japan's Animal Quarantine Service (AQS/MAFF) removed Biobest Laboratories Ltd. (United Kingdom) from its list of designated rabies-serology laboratories "due to violations of the designation standards". Holders of certificates issued between 27 November 2024 and 25 June 2025 must contact the AQS office at their port of entry. On 11 July 2026 the same laboratory was still listed as APPROVED in Table 1 of the US CDC's approved laboratories, under the United Kingdom, alongside the Animal and Plant Health Agency. Both lists are official, both are published, and they do not agree. Zoovet Travel makes no accusation regarding the laboratory's conduct; it reports what each authority publishes.**
 - [FAVN test complete guide — EN](https://zoovettravel.com/favn-en.html)
 - [Rabies serology for pet travel from Peru](https://zoovettravel.com/serologia-rabia-mascotas-peru-en.html)
 - [Travel without FAVN — US exceptions](https://zoovettravel.com/viajar-sin-favn-eeuu-en.html)
