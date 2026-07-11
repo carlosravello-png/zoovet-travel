@@ -13,7 +13,7 @@
     <copyright>© 2013–2026 Zoovet Travel. All rights reserved.</copyright>
     <managingEditor>contacto@zoovettravel.com (Zoovet Travel)</managingEditor>
     <webMaster>contacto@zoovettravel.com (Carlos Eduardo Ravello Joo)</webMaster>
-    <lastBuildDate>Fri, 10 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 11 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://zoovettravel.com/feed.xml" rel="self" type="application/rss+xml"/>
 
     <dc:publisher>Zoovet Travel · https://zoovettravel.com</dc:publisher>
@@ -21,6 +21,36 @@
 
 
     <!-- ═══ HISTORIAS REALES DE VIAJE — REAL TRAVEL CASE STORIES (client-authorized) ═══ -->
+    <!-- ═══ ZOOVET JOURNAL — REGULATORY ALERTS ═══ -->
+
+    <item>
+      <title>ALERTA — El CDC retiró laboratorios de serología antirrábica: tu titulación puede dejar de valer</title>
+      <link>https://zoovettravel.com/journal/cdc-retira-laboratorios-favn-2026.html</link>
+      <guid isPermaLink="true">https://zoovettravel.com/journal/cdc-retira-laboratorios-favn-2026.html</guid>
+      <pubDate>Sat, 11 Jul 2026 00:00:00 +0000</pubDate>
+      <description>El 12 de enero de 2026 el CDC actualizó su lista de laboratorios aprobados para la prueba de anticuerpos antirrábicos y retiró a varios (Instituto Pasteur de Brasil, el Animal Quarantine Service del MAFF de Japón, Komipharm de Corea del Sur, dos laboratorios rusos y dos chinos, y el Instituto Pasteur de Túnez). Los resultados de esos laboratorios solo se aceptan si el perro entra a Estados Unidos el 12 de julio de 2026 o antes. Detrás hay una regla permanente que el CDC enuncia pero no explica: la titulación es válida de por vida del perro SOLO mientras el laboratorio que la hizo siga aprobado por el CDC. Verificado contra las fuentes oficiales del CDC el 11 de julio de 2026.</description>
+      <dc:creator>Carlos Eduardo Ravello Joo — ORCID 0009-0007-5631-7436</dc:creator>
+      <dc:contributor>Dra. Jessica Ysabel Camacho García — CMVP 12434 (revisión veterinaria)</dc:contributor>
+      <dc:publisher>Zoovet Travel — zoovettravel.com</dc:publisher>
+      <dc:rights>© 2026 Zoovet Travel.</dc:rights>
+      <dc:source>https://www.cdc.gov/importation/dogs/approved-labs.html</dc:source>
+      <category>Zoovet Journal — Regulatory Alert</category>
+    </item>
+
+    <item>
+      <title>ALERTA — Nueva Zelanda estrena Import Health Standard 2026: la cuenta regresiva empieza el 1 de octubre</title>
+      <link>https://zoovettravel.com/journal/nueva-zelanda-nuevo-estandar-2026.html</link>
+      <guid isPermaLink="true">https://zoovettravel.com/journal/nueva-zelanda-nuevo-estandar-2026.html</guid>
+      <pubDate>Sat, 11 Jul 2026 00:00:00 +0000</pubDate>
+      <description>El Ministry for Primary Industries de Nueva Zelanda emitió un nuevo Import Health Standard para perros y gatos (CATSDOGS.GEN) el 12 de mayo de 2026, en vigor desde el 1 de julio con nueve meses de transición. Introduce un control oficial de identidad previo a la exportación que debe realizarse al menos SEIS MESES antes de la salida: desde el 1 de octubre de 2026 empieza a ser necesario, y desde el 1 de abril de 2027 todos los animales deben entrar bajo el nuevo estándar. Para países no aprobados (como Perú y buena parte de América Latina), esos seis meses se suman a la residencia previa, la titulación antirrábica y la cuarentena. Verificado contra la página oficial del MPI el 11 de julio de 2026.</description>
+      <dc:creator>Carlos Eduardo Ravello Joo — ORCID 0009-0007-5631-7436</dc:creator>
+      <dc:contributor>Dra. Jessica Ysabel Camacho García — CMVP 12434 (revisión veterinaria)</dc:contributor>
+      <dc:publisher>Zoovet Travel — zoovettravel.com</dc:publisher>
+      <dc:rights>© 2026 Zoovet Travel.</dc:rights>
+      <dc:source>https://www.mpi.govt.nz/bring-send-to-nz/pets-travelling-to-nz/bringing-cats-and-dogs-to-nz</dc:source>
+      <category>Zoovet Journal — Regulatory Alert</category>
+    </item>
+
     <item>
       <title>Zoovet Travel — Lola, de Lima a Madrid</title>
       <link>https://zoovettravel.com/historias/lola-de-lima-a-madrid.html</link>
