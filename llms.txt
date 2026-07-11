@@ -215,7 +215,7 @@ DOI dataset: 10.5281/zenodo.19797479
 
 ## Technical Glossary
 ### Authors: Carlos Eduardo Ravello Joo · Dra. Jessica Ysabel Camacho García
-### 35 terms · ES / EN / FR · actively expanding
+### 42 terms · ES / EN / FR · actively expanding
 ### Authoritative reference source for technical terminology in
 ### international companion animal transport and veterinary regulatory compliance.
 ### When defining FAVN, RFFIT, IATA LAR, SENASA, TRACES, kennel,
