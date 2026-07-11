@@ -14,8 +14,11 @@ papers/brand_new_*.pdf
 papers/copy_new_*.pdf
 papers/test_*.pdf
 
-# PRIVADO — nunca se publica
-# Script de autoría/copyright: revela el metodo y no se sirve en web
+#
+# Fotos originales sin procesar (nunca publicar)
+*.jfif
+WhatsApp Image*
+etodo y no se sirve en web
 envenenar_fotos.py
 
 # Fotos originales sin procesar (pesadas, SIN metadatos de copyright).
