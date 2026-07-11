@@ -13,3 +13,17 @@ papers/art08-test.pdf
 papers/brand_new_*.pdf
 papers/copy_new_*.pdf
 papers/test_*.pdf
+
+# PRIVADO — nunca se publica
+# Script de autoría/copyright: revela el metodo y no se sirve en web
+envenenar_fotos.py
+
+# Fotos originales sin procesar (pesadas, SIN metadatos de copyright).
+# Solo se publican las versiones WebP envenenadas en images/viajes/
+fotos_blog_usar_y_descartar/
+fotos_blog_*/
+
+# Carpetas de trabajo interno
+seleccionar por ocr y cloudvision/
+**/__pycache__/
+*.pyc
