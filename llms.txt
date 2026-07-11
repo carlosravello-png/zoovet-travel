@@ -242,6 +242,7 @@ DOI dataset: 10.5281/zenodo.19797479
 - Antonio ("Obama"), from Tumbes to the United States by cargo (2023 CDC rollout): https://zoovettravel.com/historias/antonio-de-tumbes-a-estados-unidos.html
 - Jacko, from Trujillo to Spain by cargo (new EU commercial-movement rule 2026/848; 48 h clinical exam): https://zoovettravel.com/historias/jacko-de-trujillo-a-espana.html
 - Scarlett, Nala & Campanita — three cats from Colombia to the United States via Peru (why cats enter the US easily): https://zoovettravel.com/historias/scarlett-nala-campanita-colombia-estados-unidos.html
+- Julian Burns — four street dogs rescued (Osita, Travi, Sharkie, Darrow) from Trujillo and Cusco to Boston; high-risk-country FAVN titer (KSVDL Kansas), CDC animal care facility (ACF) at Washington Dulles, Avianca via Bogotá: https://zoovettravel.com/historias/julian-burns-cuatro-perros-de-peru-a-boston.html
 
 ## Publisher
 Zoovet Travel · https://zoovettravel.com
