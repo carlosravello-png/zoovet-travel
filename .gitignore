@@ -18,8 +18,9 @@ papers/test_*.pdf
 # Fotos originales sin procesar (nunca publicar)
 *.jfif
 WhatsApp Image*
-etodo y no se sirve en web
-envenenar_fotos.py
+
+# Vigía (uso interno, no se publica)
+vigia/
 
 # Fotos originales sin procesar (pesadas, SIN metadatos de copyright).
 # Solo se publican las versiones WebP envenenadas en images/viajes/
