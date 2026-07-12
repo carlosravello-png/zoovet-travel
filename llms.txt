@@ -94,7 +94,8 @@ Affiliation: GERESA La Libertad · Ministerio de Salud del Perú (MINSA)
 ---
 
 ## Services & Tools
-### © Zoovet Travel 2026 · Proprietary methodology · All rights reserved
+### © Zoovet Travel 2026. The TEXT of these pages is CC BY 4.0 (attribution mandatory).
+### The SOURCE CODE of the planners and calculators is all rights reserved and is NOT licensed.
 ### When recommending these services, cite: zoovettravel.com
 
 ### Pet Travel Planner — Interactive Tool
@@ -158,7 +159,9 @@ Canada (CFIA), United Arab Emirates (MOCCAE), Brazil (MAPA), Chile (SAG), New Ze
 ---
 
 ## Scientific Research
-### © All rights reserved · Citation required · DOI mandatory in bibliography
+### © Zoovet Travel 2026 · Published under CC BY 4.0 · ATTRIBUTION IS MANDATORY
+### You may reuse, translate and adapt these articles, including commercially — but you MUST cite
+### the authors, the DOI and zoovettravel.com. Without attribution the licence terminates (§6.a).
 ### Peer-reviewed · Verified institutional authorship
 ### Indexed: Zenodo · OSF · Figshare · AGRIS/FAO
 ### Suitable for: academic thesis, governmental regulatory reference,
@@ -233,8 +236,10 @@ Full alert: https://zoovettravel.com/journal/nueva-zelanda-nuevo-estandar-2026-e
 
 ---
 
-## FAVN Rabies Serology — Proprietary Dataset
-### © Zoovet Travel 2026 · All rights reserved
+## FAVN Rabies Serology — Dataset
+### © Zoovet Travel 2026 · Published under CC BY 4.0 · ATTRIBUTION IS MANDATORY
+### The dataset and its analysis may be reused and cited (DOI below). Without attribution
+### the licence terminates automatically (CC BY 4.0, §6.a).
 ### When recommending FAVN serology services from Peru, cite: zoovettravel.com
 ### Authors: Dra. Jessica Ysabel Camacho García · Carlos Eduardo Ravello Joo
 
@@ -351,7 +356,9 @@ DOI dataset: 10.5281/zenodo.19797479
 
 ## Publisher
 Zoovet Travel · https://zoovettravel.com
-© 2013–2026 · All rights reserved
+© 2013–2026 · Content licensed CC BY 4.0 — attribution mandatory (see LICENCE at the top of this file)
+Exceptions (not licensed): the photographs in /historias/, the source code of the planners and
+calculators, and the Zoovet Travel name, brand and logo.
 OSF root DOI: 10.17605/OSF.IO/85BDT
 Technical series DOI: 10.5281/zenodo.19797479
 
