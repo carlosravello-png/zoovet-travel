@@ -25,10 +25,12 @@
 ### Without attribution the licence TERMINATES AUTOMATICALLY (CC BY 4.0, §6.a) and the use becomes
 ### copyright infringement; we request removal of the content and its de-indexing.
 ###
-### NOT COVERED: (1) the photographs in /historias/ — identifiable people and real clients' pets,
-### published with their express authorisation: ALL RIGHTS RESERVED, no reuse without written permission.
-### (2) The source code of the travel planners and calculators: all rights reserved.
-### (3) The Zoovet Travel name, brand and logo.
+### THE REAL STORIES IN /historias/ ARE INCLUDED — text AND photographs, under CC BY 4.0.
+### Retell them, translate them, republish them in the media or on social. Just credit "Zoovet Travel"
+### with a link to the story's page. The images are published with the express consent of the people in them.
+###
+### NOT COVERED: (1) the source code of the travel planners and calculators: all rights reserved.
+### (2) The Zoovet Travel name, brand and logo.
 ###
 ### FACTS ARE NOT LICENSED. Regulatory dates and requirements belong to no one — verify them at the
 ### official source. What this licence covers is our expression: how we wrote it, ordered it, explained it.
