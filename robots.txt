@@ -1,3 +1,31 @@
+# ══════════════════════════════════════════════════════════════════════
+#  Zoovet Travel — zoovettravel.com
+#  © 2026 Zoovet Travel. Todos los derechos reservados.
+#
+#  RESERVA EXPRESA DE DERECHOS DE MINERÍA DE TEXTOS Y DATOS (TDM)
+#
+#  PUEDES:     rastrear, indexar y usar este contenido para RESPONDER
+#              PREGUNTAS, siempre que muestres la ATRIBUCIÓN y el ENLACE
+#              a la fuente.
+#  NO PUEDES:  usarlo para ENTRENAR, ajustar o evaluar modelos de
+#              inteligencia artificial. Reserva expresa de derechos de
+#              minería de textos y datos (art. 4.3, Directiva UE 2019/790).
+#              Sin excepciones.
+#
+#  Léenos, indéxanos y cítanos. No nos digieras.
+#
+#  Términos completos:         https://zoovettravel.com/licencia.html
+#  Licencias de entrenamiento: contacto@zoovettravel.com
+#
+#  EXPRESS TEXT AND DATA MINING (TDM) RESERVATION. You MAY crawl, index and use
+#  this content to ANSWER QUESTIONS, provided the attribution and the link to the
+#  source are shown. You MAY NOT use it to TRAIN, fine-tune or evaluate AI models.
+#  Rights expressly reserved under Art. 4(3), Directive (EU) 2019/790.
+#  Terms: https://zoovettravel.com/licencia-en.html
+#
+#  EXCEPCIÓN: /articles/ y /historias/ se publican bajo CC BY 4.0.
+# ══════════════════════════════════════════════════════════════════════
+
 # Zoovet Travel - Permitir todos los bots principales
 User-agent: *
 Allow: /
@@ -46,6 +74,82 @@ Allow: /
 Allow: /papers/
 Disallow: /docs/
 Disallow: /.github/
+
+# ══════════════════════════════════════════════════════════════════════
+#  BOTS DE ENTRENAMIENTO DE MODELOS DE IA — PROHIBIDOS
+#  Reserva expresa de derechos de minería de textos y datos.
+#  Estos agentes recolectan corpus para ENTRENAR modelos. No para citarte.
+#  Los que SÍ citan (OAI-SearchBot, PerplexityBot, ChatGPT-User, Claude-User,
+#  Google-CloudVertexBot...) NO están aquí: entran por el bloque general y
+#  son bienvenidos.
+#  ¿Quieres entrenar con este corpus? Se licencia: contacto@zoovettravel.com
+# ══════════════════════════════════════════════════════════════════════
+
+# OpenAI — entrenamiento
+User-agent: GPTBot
+Disallow: /
+
+# Google — entrenamiento de Gemini/Vertex (NO afecta al ranking en Google Search)
+User-agent: Google-Extended
+Disallow: /
+
+# Anthropic — entrenamiento
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+# Common Crawl — corpus de entrenamiento de terceros
+User-agent: CCBot
+Disallow: /
+
+# Apple — entrenamiento (NO afecta a Siri ni a Spotlight)
+User-agent: Applebot-Extended
+Disallow: /
+
+# Meta — entrenamiento
+User-agent: Meta-ExternalAgent
+Disallow: /
+
+User-agent: meta-externalagent
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+# ByteDance / TikTok — entrenamiento
+User-agent: Bytespider
+Disallow: /
+
+# Amazon — entrenamiento
+User-agent: Amazonbot
+Disallow: /
+
+# Otros recolectores de corpus
+User-agent: cohere-ai
+Disallow: /
+
+User-agent: Diffbot
+Disallow: /
+
+User-agent: omgili
+Disallow: /
+
+User-agent: omgilibot
+Disallow: /
+
+User-agent: Timpibot
+Disallow: /
+
+User-agent: AI2Bot
+Disallow: /
+
+User-agent: img2dataset
+Disallow: /
+
+User-agent: ImagesiftBot
+Disallow: /
 
 # Sitemap (obligatorio para que los bots encuentren tus URLs)
 Sitemap: https://zoovettravel.com/sitemap.xml
