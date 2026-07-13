@@ -1323,4 +1323,88 @@
   }
   .whatsapp-float:hover { transform: scale(1.08); box-shadow: 0 6px 20px rgba(37,211,102,0.55); }
 </style>
-<script></script></body></html>
+<script></script><script>
+    const searchModal = document.getElementById('searchModal');
+    const searchInput = document.getElementById('searchInput');
+    const searchResults = document.getElementById('searchResults');
+    const bodyEl = document.body;
+
+    // Open modal
+    function openSearchModal() {
+      searchModal.classList.add('is-active');
+      searchModal.setAttribute('aria-hidden', 'false');
+      bodyEl.style.overflow = 'hidden'; // Prevent scroll
+      setTimeout(() => searchInput.focus(), 100);
+
+      // Close mobile drawer if open
+      if (document.getElementById('nav-drawer').classList.contains('is-open')) {
+        document.getElementById('hamburger-btn').click();
+      }
+    }
+
+    // Open modal from mobile
+    function openSearchModalMobile() {
+      openSearchModal();
+    }
+
+    // Close modal
+    function closeSearchModal() {
+      searchModal.classList.remove('is-active');
+      searchModal.setAttribute('aria-hidden', 'true');
+      bodyEl.style.overflow = '';
+      searchInput.value = '';
+      searchResults.innerHTML = '<div class="search-empty">Type above to start searching</div>';
+    }
+
+    // Close events
+    searchModal.addEventListener('click', (e) => {
+      if (e.target === searchModal) closeSearchModal();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && searchModal.classList.contains('is-active')) {
+        closeSearchModal();
+      }
+    });
+
+    searchInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        const firstResult = searchResults.querySelector('.search-result-item');
+        if (firstResult) {
+          window.location.href = firstResult.getAttribute('href');
+        }
+      }
+    });
+
+    // Instant filter
+    searchInput.addEventListener('input', (e) => {
+      const _nrm = s => (s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+      const query = _nrm(e.target.value).trim();
+
+      if (!query || query.length < 2) {
+        searchResults.innerHTML = '<div class="search-empty">Type above to start searching</div>';
+        return;
+      }
+
+      // Filtrar el data que viene de search_data.js (variable window.searchData)
+      const matches = window.searchData.filter(item => {
+        return _nrm(item.title).includes(query) ||
+          _nrm(item.keywords).includes(query) ||
+          _nrm(item.category).includes(query);
+      });
+
+      // Render, max 6 results
+      if (matches.length === 0) {
+        searchResults.innerHTML = '<div class="search-empty">No articles found for that search.</div>';
+      } else {
+        const topMatches = matches.slice(0, 6);
+        searchResults.innerHTML = topMatches.map(match => `
+          <a href="./${match.url}" class="search-result-item">
+            <span class="search-result-title">${match.title}</span>
+            <span class="search-result-cat">${match.category}</span>
+          </a>
+        `).join('');
+      }
+    });
+  </script>
+</body></html>

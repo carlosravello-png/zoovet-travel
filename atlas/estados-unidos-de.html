@@ -372,7 +372,7 @@ const tb=document.getElementById('tb'),q=document.getElementById('q'),count=docu
 let f='todos';
 function badge(r){return r==='Alto'?'<span class="badge alto">Vollständiges Protokoll</span>':'<span class="badge bajo">Direkte Einreise</span>';}
 function nombre(p){if(p==='Peru')return '<a href="https://zoovettravel.com/viajar-con-mi-mascota.html">Peru</a><span class="peru-tag">▸ wie man reist</span>';return p;}
-function render(){const t=q.value.trim().toLowerCase();const rows=PAISES.filter(x=>(f==='todos'||x.r===f)&&x.p.toLowerCase().includes(t));tb.innerHTML=rows.map(x=>`<tr><td class="pais">${nombre(x.p)}</td><td>${badge(x.r)}</td></tr>`).join('');count.textContent=rows.length+' von '+PAISES.length+' Ländern';}
+function render(){const nrm=s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();const t=nrm(q.value.trim());const rows=PAISES.filter(x=>(f==='todos'||x.r===f)&&nrm(x.p).includes(t));tb.innerHTML=rows.map(x=>`<tr><td class="pais">${nombre(x.p)}</td><td>${badge(x.r)}</td></tr>`).join('');count.textContent=rows.length+' von '+PAISES.length+' Ländern';}
 q.addEventListener('input',render);
 document.querySelectorAll('.filtros button').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.filtros button').forEach(x=>x.classList.remove('on'));b.classList.add('on');f=b.dataset.f;render();}));
 render();

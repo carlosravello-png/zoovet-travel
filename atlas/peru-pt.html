@@ -335,7 +335,7 @@ const PAISES=[
 ];
 const tb=document.getElementById('tb'),q=document.getElementById('q'),count=document.getElementById('count');
 function badge(r){return r==='DEST'?'<span class="badge dest">País de destino</span>':'<span class="badge std">Trâmite padrão · sem exame de sangue</span>';}
-function render(){const t=q.value.trim().toLowerCase();const rows=PAISES.filter(x=>x.p.toLowerCase().includes(t));tb.innerHTML=rows.map(x=>`<tr><td class="pais">${x.p}</td><td>${badge(x.r)}</td></tr>`).join('');count.textContent=rows.length+' de '+PAISES.length+' países';}
+function render(){const nrm=s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();const t=nrm(q.value.trim());const rows=PAISES.filter(x=>nrm(x.p).includes(t));tb.innerHTML=rows.map(x=>`<tr><td class="pais">${x.p}</td><td>${badge(x.r)}</td></tr>`).join('');count.textContent=rows.length+' de '+PAISES.length+' países';}
 q.addEventListener('input',render);
 render();
 </script>

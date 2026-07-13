@@ -419,16 +419,17 @@
     });
 
     searchInput.addEventListener('input', (e) => {
-      const query = e.target.value.toLowerCase().trim();
+      const _nrm = s => (s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+      const query = _nrm(e.target.value).trim();
       if (!query || query.length < 2) {
         searchResults.innerHTML = '<div class="search-empty">Tapez ci-dessus pour lancer la recherche</div>';
         return;
       }
       if (!window.searchData) return;
       const matches = window.searchData.filter(item => {
-        return item.title.toLowerCase().includes(query) ||
-          item.keywords.toLowerCase().includes(query) ||
-          item.category.toLowerCase().includes(query);
+        return _nrm(item.title).includes(query) ||
+          _nrm(item.keywords).includes(query) ||
+          _nrm(item.category).includes(query);
       });
       if (matches.length === 0) {
         searchResults.innerHTML = '<div class="search-empty">Aucun article trouvé pour cette recherche.</div>';
