@@ -14,7 +14,6 @@ papers/brand_new_*.pdf
 papers/copy_new_*.pdf
 papers/test_*.pdf
 
-#
 # Fotos originales sin procesar (nunca publicar)
 *.jfif
 WhatsApp Image*
@@ -26,6 +25,7 @@ vigia/
 # Solo se publican las versiones WebP envenenadas en images/viajes/
 fotos_blog_usar_y_descartar/
 fotos_blog_*/
+viaja-con-tu-mascota-fotos/
 
 # Carpetas de trabajo interno
 seleccionar por ocr y cloudvision/
@@ -34,8 +34,8 @@ seleccionar por ocr y cloudvision/
 
 # ─────────────────────────────────────────────────────────────
 # BASURA QUE NUNCA SE PUBLICA (se coló con un `git add .` el 12-jul-2026)
-# Backups, borradores, plantillas y scripts. Si se suben, Google los
-# indexa como contenido duplicado de los artículos reales.
+# Backups, borradores y plantillas. Si se suben, Google los indexa
+# como contenido duplicado de los artículos reales.
 # ─────────────────────────────────────────────────────────────
 _backup_*/
 **/_backup_*/
@@ -45,8 +45,34 @@ _template_*
 PREVIEW_*
 original_index.html
 indexnow-submit.html
-envenenar_fotos.py
+
+# ─────────────────────────────────────────────────────────────
+# INTERNO — NUNCA SE SIRVE EN LA WEB (limpieza 12-jul-2026)
+# Estaba todo descargable: el método (CLAUDE.md, PROMPT-MAESTRO),
+# las memorias de sesión, las proyecciones SEO, los borradores de
+# papers y las fotos originales de clientes sin metadatos.
+# ─────────────────────────────────────────────────────────────
 *.py
-!vigia/*.py
-zoovet-article-draft.md
-zoovettravel_proyeccion_seo_2026.xlsx
+*.md
+!README.md
+*.docx
+*.xlsx
+*.ps1
+*.bat
+*.mdc
+*.bak
+*.tmp
+desktop.ini
+.cursor/
+docs/
+articulos-interes/ARTICLE_AUDIT_V10/
+scripts/auditoria/
+inventario_zoovet.json
+indexnow-payload*.json
+urls
+
+# Excepciones: esto SÍ lo necesita la web (no ignorar)
+!scripts/search_data.js
+!index.json
+!planificador-viaje-mascota/rules.json
+!favn-data/index.json
