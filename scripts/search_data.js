@@ -1,6 +1,27 @@
 // Base de datos de Búsqueda — regenerada el 12-jul-2026 desde el sitio real (582 páginas)
 const rawSearchData = [
  {
+  "title": "No existe una lista única de laboratorios antirrábicos: cada autoridad tiene la suya",
+  "url": "journal/laboratorios-serologia-sin-consenso-2026.html",
+  "category": "Journal",
+  "keywords": "La prueba de sangre de tu perro puede valer para un país y no valer para otro. Comprobamos las cuatro listas oficiales de laboratorios de serología antirrábica —Estados Unidos, Japón, Unión Europea y Reino Unido— y no coinciden. Biobest, laboratorio aprobado, revocado, caducado.",
+  "lang": "es"
+ },
+ {
+  "title": "There is no single list of rabies serology laboratories: every authority keeps its own",
+  "url": "journal/laboratorios-serologia-sin-consenso-2026-en.html",
+  "category": "Journal",
+  "keywords": "Your dog's blood test may count for one country and not for another. We checked the four official lists of rabies serology laboratories —United States, Japan, European Union and United Kingdom— and they do not match. Biobest: approved, revoked, expired, unlisted.",
+  "lang": "en"
+ },
+ {
+  "title": "Il n'existe pas de liste unique des laboratoires de sérologie antirabique : chaque autorité a la sienne",
+  "url": "journal/laboratorios-serologia-sin-consenso-2026-fr.html",
+  "category": "Journal",
+  "keywords": "La prise de sang de votre chien peut valoir pour un pays et pas pour un autre. Nous avons vérifié les quatre listes officielles de laboratoires de sérologie antirabique —États-Unis, Japon, Union européenne et Royaume-Uni— et elles ne concordent pas. Biobest.",
+  "lang": "fr"
+ },
+ {
   "title": "About Zoovet Travel — Veterinary Clinic Specialized in International Pet Export | Trujillo, Peru",
   "url": "about-en.html",
   "category": "Sobre nosotros",
