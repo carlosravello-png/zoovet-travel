@@ -31,3 +31,22 @@ fotos_blog_*/
 seleccionar por ocr y cloudvision/
 **/__pycache__/
 *.pyc
+
+# ─────────────────────────────────────────────────────────────
+# BASURA QUE NUNCA SE PUBLICA (se coló con un `git add .` el 12-jul-2026)
+# Backups, borradores, plantillas y scripts. Si se suben, Google los
+# indexa como contenido duplicado de los artículos reales.
+# ─────────────────────────────────────────────────────────────
+_backup_*/
+**/_backup_*/
+_draft-*
+_template_*
+**/_template_*
+PREVIEW_*
+original_index.html
+indexnow-submit.html
+envenenar_fotos.py
+*.py
+!vigia/*.py
+zoovet-article-draft.md
+zoovettravel_proyeccion_seo_2026.xlsx
