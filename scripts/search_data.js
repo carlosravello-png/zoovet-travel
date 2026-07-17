@@ -4094,6 +4094,48 @@ const rawSearchData = [
   "category": "Zoopedia",
   "keywords": "Unión Europea (DG SANTE): 4 meses mínimo, FAVN/RNATT ≥0,5 UI/mL, espera 3 meses + excepciones Finlandia, Irlanda, Malta y Noruega. Un error de fecha = cuarentena.",
   "lang": "es"
+ },
+ {
+  "title": "Perros y gatos en la bodega del avión: qué dicen la IATA, la AVMA y los datos oficiales",
+  "url": "articulos-interes/perros-y-gatos-en-la-bodega-del-avion.html",
+  "category": "Guías",
+  "keywords": "¿Tu mascota viaja en la bodega del avión? Va presurizada y climatizada, y el 99,99% llega sin incidentes según la IATA, la AVMA y el US DOT. Tabla verificada de aerolíneas con certificación CEIV Live Animals, riesgos de razas braquicéfalas y por qué no se seda.",
+  "lang": "es"
+ },
+ {
+  "title": "Dogs and Cats in the Airplane Cargo Hold: What IATA, the AVMA, and the Official Data Say",
+  "url": "articulos-interes/perros-y-gatos-en-la-bodega-del-avion-en.html",
+  "category": "Guías",
+  "keywords": "Does your pet travel in the aircraft cargo hold? It is pressurized and climate-controlled, and 99.99% arrive with no incidents per IATA, the AVMA and the US DOT. Verified table of airlines with IATA CEIV Live Animals certification, brachycephalic breed risks and why you must not sedate.",
+  "lang": "en"
+ },
+ {
+  "title": "Chiens et chats en soute d'avion : ce que disent l'IATA, l'AVMA et les données officielles",
+  "url": "articulos-interes/perros-y-gatos-en-la-bodega-del-avion-fr.html",
+  "category": "Guías",
+  "keywords": "Votre animal voyage en soute ? Elle est pressurisée et climatisée, et 99,99 % arrivent sans incident selon l'IATA, l'AVMA et le US DOT. Tableau vérifié des compagnies certifiées IATA CEIV Live Animals, risques des races brachycéphales et pourquoi ne pas sédater.",
+  "lang": "fr"
+ },
+ {
+  "title": "Cães e gatos no porão do avião: o que dizem a IATA, a AVMA e os dados oficiais",
+  "url": "articulos-interes/perros-y-gatos-en-la-bodega-del-avion-pt.html",
+  "category": "Guías",
+  "keywords": "Seu pet viaja no porão do avião? É pressurizado e climatizado, e 99,99% chegam sem incidentes segundo a IATA, a AVMA e o US DOT. Tabela verificada de companhias com certificação IATA CEIV Live Animals, riscos das raças braquicefálicas e por que não sedar.",
+  "lang": "pt"
+ },
+ {
+  "title": "Hunde und Katzen im Frachtraum des Flugzeugs: Was IATA, AVMA und die offiziellen Daten sagen",
+  "url": "articulos-interes/perros-y-gatos-en-la-bodega-del-avion-de.html",
+  "category": "Guías",
+  "keywords": "Reist Ihr Tier im Frachtraum? Er ist druckbelüftet und klimatisiert, und 99,99 % kommen ohne Zwischenfälle an, laut IATA, AVMA und US DOT. Geprüfte Tabelle der Airlines mit IATA CEIV Live Animals, Risiken kurznasiger Rassen und warum nicht sediert wird.",
+  "lang": "de"
+ },
+ {
+  "title": "Cani e gatti nella stiva dell'aereo: cosa dicono IATA, AVMA e i dati ufficiali",
+  "url": "articulos-interes/perros-y-gatos-en-la-bodega-del-avion-it.html",
+  "category": "Guías",
+  "keywords": "Il tuo animale viaggia in stiva? È pressurizzata e climatizzata, e il 99,99% arriva senza incidenti secondo IATA, AVMA e US DOT. Tabella verificata delle compagnie con certificazione IATA CEIV Live Animals, rischi delle razze brachicefale e perché non sedare.",
+  "lang": "it"
  }
 ];
 
