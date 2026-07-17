@@ -62,6 +62,10 @@ indexnow-submit.html
 *.mdc
 *.bak
 *.tmp
+
+# KB privada de referencias (QIDs Wikidata, ROR, etc.) — NUNCA se publica.
+# Ya cubierto por *.md, pero explícito por claridad. Consultar antes de buscar.
+_referencias-privadas.md
 desktop.ini
 .cursor/
 docs/
