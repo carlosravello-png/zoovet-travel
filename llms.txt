@@ -201,7 +201,7 @@ Canada (CFIA), United Arab Emirates (MOCCAE), Brazil (MAPA), Chile (SAG), New Ze
 
 - [Physiological compensation mechanisms and hypoxia reserve limits in canids and felids during air transport](https://zoovettravel.com/articles/zoovet_art8_hipobaria-EN.html) · DOI: 10.5281/zenodo.19243198
 
-- [Technical description of humoral immune response post-rabies vaccination and methodological basis of RFFIT and FAVN in companion animals](https://zoovettravel.com/articles/zoovet_article2_EN.html) · DOI: 10.5281/zenodo.19243496
+- [Technical description of humoral immune response post-rabies vaccination and methodological basis of RFFIT and FAVN in companion animals](https://zoovettravel.com/articles/zoovet_article2_EN.html) · DOI: 10.5281/zenodo.19243495
 
 - [Air transport of brachycephalic dogs: physiological risks, risk factors and regulatory framework](https://zoovettravel.com/articles/zoovet_article3_braquicefalos_EN.html) · DOI: 10.5281/zenodo.19243638
 
