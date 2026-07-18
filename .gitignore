@@ -80,3 +80,51 @@ urls
 !index.json
 !planificador-viaje-mascota/rules.json
 !favn-data/index.json
+
+# ─────────────────────────────────────────────────────────────
+# SECRETOS — jamás al repo (defensa en profundidad, 18-jul-2026)
+# El sitio es HTML estático y hoy NO hay ningún secreto rastreado (verificado).
+# Esto blinda contra subir por error una credencial en el futuro.
+# NO afecta a los .json que la web sí necesita: sus excepciones con '!' están arriba.
+# ─────────────────────────────────────────────────────────────
+.env
+.env.*
+*.env
+!.env.example
+*.key
+*.pem
+*.pfx
+*.p12
+*.keystore
+id_rsa
+id_dsa
+id_ecdsa
+id_ed25519
+*.ppk
+.netrc
+.npmrc
+.pypirc
+# credenciales en JSON (los .json públicos ya están permitidos con '!' arriba)
+*secret*.json
+*secrets*.json
+*credential*.json
+*credentials*.json
+service-account*.json
+*serviceaccount*.json
+firebase-adminsdk*.json
+gha-creds-*.json
+auth.json
+token.json
+*.token
+# nubes / infraestructura / estado
+.aws/
+.gcloud/
+gcloud-*.json
+*.tfstate
+*.tfstate.*
+# genéricos
+secrets.*
+*.secret
+credentials.*
+config.local.*
+*.local.json
