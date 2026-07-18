@@ -1,4 +1,4 @@
-// Base de datos de Búsqueda — regenerada el 12-jul-2026 desde el sitio real (582 páginas)
+// Base de datos de Búsqueda — regenerada el 18-07-2026 (594 páginas)
 const rawSearchData = [
  {
   "title": "No existe una lista única de laboratorios antirrábicos: cada autoridad tiene la suya",
@@ -4136,6 +4136,27 @@ const rawSearchData = [
   "category": "Guías",
   "keywords": "Il tuo animale viaggia in stiva? È pressurizzata e climatizzata, e il 99,99% arriva senza incidenti secondo IATA, AVMA e US DOT. Tabella verificata delle compagnie con certificazione IATA CEIV Live Animals, rischi delle razze brachicefale e perché non sedare.",
   "lang": "it"
+ },
+ {
+  "title": "La díada perro–propietario en el transporte aéreo en bodega: el humano como fuente del estrés",
+  "url": "articles/zoovet_art19_separacion-diada-bodega-ES.html",
+  "category": "Serie técnica",
+  "keywords": "El riesgo físico en bodega es bajo (99,99% sin incidencias, US DOT 2025), pero el estrés del dueño se transmite al perro. Modelo de la díada acoplada, ansiedad por separación, quimioseñales de miedo, cortisol, sedación desaconsejada. Preprint con DOI.",
+  "lang": "es"
+ },
+ {
+  "title": "The dog–owner dyad in air transport in the cargo hold: the human as the source of stress",
+  "url": "articles/zoovet_art19_separacion-diada-bodega-EN.html",
+  "category": "Serie técnica",
+  "keywords": "Observed physical risk in the hold is low (99.99% incident-free, US DOT 2025), yet the owner's stress transfers to the dog. Coupled-dyad model, separation anxiety, fear chemosignals, cortisol, sedation not advised. Preprint with DOI.",
+  "lang": "en"
+ },
+ {
+  "title": "La dyade chien–propriétaire dans le transport aérien en soute : l'humain comme source du stress",
+  "url": "articles/zoovet_art19_separacion-diada-bodega-FR.html",
+  "category": "Serie técnica",
+  "keywords": "Le risque physique en soute est faible (99,99 % sans incident, US DOT 2025), mais le stress du propriétaire se transmet au chien. Modèle de la dyade couplée, anxiété de séparation, chimiosignaux de peur, cortisol, sédation déconseillée. Préprint avec DOI.",
+  "lang": "fr"
  }
 ];
 
