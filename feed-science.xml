@@ -11,8 +11,27 @@
     <language>en</language>
     <copyright>© 2013–2026 Zoovet Travel. All rights reserved.</copyright>
     <managingEditor>contacto@zoovettravel.com (Dra. Jessica Ysabel Camacho García)</managingEditor>
-    <lastBuildDate>Thu, 29 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 18 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://zoovettravel.com/feed-science.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>The dog-owner dyad in air transport in the cargo hold: the human as the source of stress, the dog as emotional agent</title>
+      <link>https://zoovettravel.com/articles/zoovet_art19_separacion-diada-bodega-EN.html</link>
+      <guid isPermaLink="true">https://zoovettravel.com/articles/zoovet_art19_separacion-diada-bodega-EN.html</guid>
+      <pubDate>Sat, 18 Jul 2026 00:00:00 +0000</pubDate>
+      <description>Official data show low observed risk in the cargo hold (99.99% incident-free across 117,861 animals, US DOT 2025), yet the owner's own stress is transmitted to the dog. Acute human-to-dog transmission is experimentally measured; the work proposes the coupled-dyad model with five falsifiable predictions, risk stratification and evidence against sedation.</description>
+      <dc:creator>Jessica Ysabel Camacho Garcia</dc:creator>
+      <dc:contributor>Carlos Eduardo Ravello Joo</dc:contributor>
+      <dc:publisher>Zoovet Travel</dc:publisher>
+      <dc:rights>CC BY 4.0</dc:rights>
+      <dc:subject>dog-human dyad</dc:subject>
+      <dc:subject>emotional transmission</dc:subject>
+      <dc:subject>separation anxiety</dc:subject>
+      <dc:subject>air cargo transport</dc:subject>
+      <dc:subject>animal welfare</dc:subject>
+      <dcterms:identifier>10.5281/zenodo.21424713</dcterms:identifier>
+      <category>Clinical Veterinary Science</category>
+    </item>
 
     <item>
       <title>Air transport of brachycephalic dogs: physiological risks, risk factors and regulatory framework</title>

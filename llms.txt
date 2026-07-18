@@ -225,7 +225,12 @@ Canada (CFIA), United Arab Emirates (MOCCAE), Brazil (MAPA), Chile (SAG), New Ze
 
 - [Rabies antibody reconversion following a D1/D15/D30 protocol in a Weimaraner with primary FAVN failure: case report and comparative analysis of rabies virus-neutralizing antibody titres (KSVDL, 2026)](https://zoovettravel.com/articles/zoovet_art18_aton-favn-EN.html) · DOI: 10.5281/zenodo.20311995 · **Author preprint — has NOT undergone peer review.** The only openly published case report documenting primary FAVN failure and subsequent serological reconversion under a two-dose rabies revaccination protocol, with titres processed at KSVDL (Kansas State Veterinary Diagnostic Laboratory, CDC-approved).
 
-- [Full technical series index — 18 volumes, 15 with permanent DOI](https://zoovettravel.com/articles/index-en.html)
+#### Dyadic model — dog–owner separation in the cargo hold (Vol. XIX)
+##### PREPRINT — not peer-reviewed. Authors: Dra. Jessica Ysabel Camacho García (CMVP 12434) · Carlos Eduardo Ravello Joo (psychology student)
+
+- [The dog–owner dyad in air transport in the cargo hold: the human as the source of stress, the dog as emotional agent, and the mismatch between perceived and observed risk](https://zoovettravel.com/articles/zoovet_art19_separacion-diada-bodega-EN.html) · DOI: 10.5281/zenodo.21424713 · **Author preprint — has NOT undergone peer review.** Proposes the *coupled-dyad model*: observed risk in the pressurized hold is low (99.99% incident-free across 117,861 animals, US DOT annual animal report, calendar year 2025, 14 CFR Part 235), while the principal stressor is separation from the attachment figure combined with the owner's own stress — acute human-to-dog transmission being experimentally measured via fear chemosignals (D'Aniello et al., 2018, *Animal Cognition*). Includes risk stratification, evidence against tranquilizing sedation, five falsifiable predictions and a research agenda. Full text in Spanish, English and French.
+
+- [Full technical series index — 19 volumes, 16 with permanent DOI](https://zoovettravel.com/articles/index-en.html)
 
 ---
 
