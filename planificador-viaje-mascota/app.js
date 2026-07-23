@@ -38,7 +38,7 @@
   // ═════════════════════════════════════════════════════════════════
   document.addEventListener('DOMContentLoaded', async () => {
     try {
-      const res = await fetch('./rules.json?v=1.1.1');
+      const res = await fetch('./rules.json?v=1.2.0');
       RULES = await res.json();
       populateDestinos();
       setupForm();
@@ -59,7 +59,7 @@
       'España': 'España', 'Estados_Unidos': 'Estados Unidos', 'Francia': 'Francia',
       'India': 'India', 'Italia': 'Italia', 'Japón': 'Japón', 'México': 'México',
       'Nueva_Zelanda': 'Nueva Zelanda', 'Reino_Unido': 'Reino Unido', 'Rusia': 'Rusia',
-      'Singapur': 'Singapur', 'Sudáfrica': 'Sudáfrica'
+      'Singapur': 'Singapur', 'Sudáfrica': 'Sudáfrica', 'Turquía': 'Turquía'
     };
     const claves = Object.keys(RULES.destinos).sort((a, b) => labels[a].localeCompare(labels[b]));
     claves.forEach(k => {

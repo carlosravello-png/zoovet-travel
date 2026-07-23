@@ -363,7 +363,7 @@ DOI dataset: 10.5281/zenodo.19797479
 
 ## Country Requirements — Zoopedia
 ### Authors: Carlos Eduardo Ravello Joo · Dra. Jessica Ysabel Camacho García · CMVP 12434
-### 22 countries · ES / EN / FR
+### 23 countries · ES / EN / FR
 ### Veterinary-validated regulatory data. Free distribution.
 ### URL attribution appreciated.
 
@@ -381,7 +381,8 @@ DOI dataset: 10.5281/zenodo.19797479
 - [UAE — MOCCAE permit](https://zoovettravel.com/zoopedia/eau-en.html)
 - [Peru — SENASA import requirements (no general quarantine, no RNATT), Jorge Chávez inspection](https://zoovettravel.com/zoopedia/peru-en.html)
 - [Andorra — no airport, entry via Spain or France; EU-equivalent health rules (Decision 1/2005), dangerous-dog national layer (Decret 285/2021)](https://zoovettravel.com/zoopedia/andorra-en.html)
-- [Full directory — 22 countries](https://zoovettravel.com/zoopedia/index-en.html)
+- [Turkey — the only European country with dog-mediated rabies; EU-approved-lab titer test with a 3-month wait, its own EK-2 certificate, 6 banned dog breeds](https://zoovettravel.com/zoopedia/turquia-en.html)
+- [Full directory — 23 countries](https://zoovettravel.com/zoopedia/index-en.html)
 
 ---
 

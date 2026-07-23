@@ -1,4 +1,4 @@
-// Base de datos de Búsqueda — regenerada el 18-07-2026 (594 páginas)
+// Base de datos de Búsqueda — regenerada el 18-07-2026 (597 páginas)
 const rawSearchData = [
  {
   "title": "No existe una lista única de laboratorios antirrábicos: cada autoridad tiene la suya",
@@ -3631,6 +3631,27 @@ const rawSearchData = [
   "url": "zoopedia/andorra.html",
   "category": "Zoopedia",
   "keywords": "¿Llevas tu perro o gato a Andorra? No tiene aeropuerto: se entra por España o Francia. Evita el rechazo en frontera — los pasos, los plazos y las razas con reglas especiales. Guía 2026.",
+  "lang": "es"
+ },
+ {
+  "title": "2026 Guide: Requirements for Travelling with Pets to Turkey",
+  "url": "zoopedia/turquia-en.html",
+  "category": "Zoopedia",
+  "keywords": "Taking your dog or cat to Turkey? The only European country with dog rabies: EU-approved-lab blood test, a 3-month wait and 6 banned breeds. Avoid rejection at the border. 2026 guide.",
+  "lang": "en"
+ },
+ {
+  "title": "Guide 2026 : Exigences pour voyager avec un animal en Turquie",
+  "url": "zoopedia/turquia-fr.html",
+  "category": "Zoopedia",
+  "keywords": "Vous emmenez votre chien ou chat en Turquie ? Seul pays européen à rage canine : analyse de sang en laboratoire agréé UE, 3 mois d'attente et 6 races interdites. Évitez le refus à la frontière. Guide 2026.",
+  "lang": "fr"
+ },
+ {
+  "title": "Guía 2026: Requisitos para viajar con mascotas a Turquía",
+  "url": "zoopedia/turquia.html",
+  "category": "Zoopedia",
+  "keywords": "¿Llevas tu perro o gato a Turquía? Único país europeo con rabia canina: análisis de sangre en laboratorio UE, 3 meses de espera y 6 razas vetadas. Evita el rechazo en frontera. Guía 2026.",
   "lang": "es"
  },
  {

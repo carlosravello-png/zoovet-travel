@@ -32,7 +32,7 @@
 
   document.addEventListener('DOMContentLoaded', async () => {
     try {
-      const res = await fetch('../planificador-viaje-mascota/rules.json?v=1.1.1');
+      const res = await fetch('../planificador-viaje-mascota/rules.json?v=1.2.0');
       RULES = await res.json();
       populateDestinos();
       setupForm();
@@ -52,7 +52,7 @@
       'España': 'Espagne', 'Estados_Unidos': 'États-Unis', 'Francia': 'France',
       'India': 'Inde', 'Italia': 'Italie', 'Japón': 'Japon', 'México': 'Mexique',
       'Nueva_Zelanda': 'Nouvelle-Zélande', 'Reino_Unido': 'Royaume-Uni', 'Rusia': 'Russie',
-      'Singapur': 'Singapour', 'Sudáfrica': 'Afrique du Sud'
+      'Singapur': 'Singapour', 'Sudáfrica': 'Afrique du Sud', 'Turquía': 'Turquie'
     };
     const keys = Object.keys(RULES.destinos).sort((a, b) => labels[a].localeCompare(labels[b], 'fr'));
     keys.forEach(k => {

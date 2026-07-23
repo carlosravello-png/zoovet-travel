@@ -38,7 +38,7 @@
   // ═════════════════════════════════════════════════════════════════
   document.addEventListener('DOMContentLoaded', async () => {
     try {
-      const res = await fetch('../planificador-viaje-mascota/rules.json?v=1.1.1');
+      const res = await fetch('../planificador-viaje-mascota/rules.json?v=1.2.0');
       RULES = await res.json();
       populateDestinos();
       setupForm();
@@ -59,7 +59,7 @@
       'España': 'Spain', 'Estados_Unidos': 'United States', 'Francia': 'France',
       'India': 'India', 'Italia': 'Italy', 'Japón': 'Japan', 'México': 'Mexico',
       'Nueva_Zelanda': 'New Zealand', 'Reino_Unido': 'United Kingdom', 'Rusia': 'Russia',
-      'Singapur': 'Singapore', 'Sudáfrica': 'South Africa'
+      'Singapur': 'Singapore', 'Sudáfrica': 'South Africa', 'Turquía': 'Turkey'
     };
     const keys = Object.keys(RULES.destinos).sort((a, b) => labels[a].localeCompare(labels[b]));
     keys.forEach(k => {

@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "version": "1.1.1",
-    "last_updated": "2026-05-05",
-    "next_review_date": "2026-08-04",
+    "version": "1.2.0",
+    "last_updated": "2026-07-22",
+    "next_review_date": "2026-10-20",
     "maintainer": {
       "name": "Carlos Eduardo Ravello Joo",
       "url": "https://carlosravello.com",
@@ -61,7 +61,7 @@
         "Edad mínima cumplida con margen"
       ]
     },
-    "changelog": [
+    "changelog": [{"version": "1.2.0", "date": "2026-07-22", "author": "Carlos Eduardo Ravello Joo", "changes": "Añadido destino Turquía (TR): modelo de tercer país con certificado propio EK-2 y titer FAVN/RNATT en laboratorio aprobado por la UE con espera de 3 meses (mapea al esquema UE existente). Nota adicional ES/EN/FR sobre el titer y la prohibición de entrada de 6 razas de perro. Verificado sobre fuentes primarias 22/07/2026. Motor sin cambios."}, 
       {
         "version": "1.1.0",
         "date": "2026-05-05",
@@ -611,6 +611,68 @@
         "fr": {
           "titulo": "⚠ Avis obligatoires : Permis d'importation DALRRD + 5 tests sérologiques (chiens)",
           "texto": "L'Afrique du Sud exige un permis d'importation DALRRD au moins 30 jours à l'avance — sans lui, l'embarquement est impossible. Pour les chiens : en plus, 5 tests sérologiques négatifs définis par le DALRRD, effectués dans les 30 jours précédant le voyage. Chats : exemptés des tests sérologiques. Coordonner avec un vétérinaire officiel pour identifier et réaliser les 5 tests avec suffisamment d'avance."
+        }
+      }
+    },
+    "Turquía": {
+      "codigo_iso": "TR",
+      "region": "Europa / Asia",
+      "fuente_oficial": {
+        "nombre": "Ministerio de Agricultura y Bosques (Tarım ve Orman Bakanlığı) — Reglamento de movimientos no comerciales (Gaceta Oficial 05/12/2011, nº 28133)",
+        "url": "https://www.tarimorman.gov.tr/",
+        "fecha_consulta": "2026-07-22"
+      },
+      "edad_minima_semanas": 30,
+      "microchip": {
+        "dias_antes_viaje_minimo": 0,
+        "es_bloqueante": true,
+        "producto_especifico": "ISO 11784/11785 antes de vacuna antirrábica"
+      },
+      "vacuna_antirrabica": {
+        "dias_antes_viaje_minimo": 30,
+        "dias_vigencia_maxima": 365,
+        "es_bloqueante": true
+      },
+      "titer_test": {
+        "dias_antes_viaje_minimo": 90,
+        "es_bloqueante": true,
+        "producto_especifico": "FAVN/RNATT ≥0.5 IU/ml en laboratorio aprobado por la UE (no lista turca); muestra ≥30 días tras la vacuna y espera de 3 meses desde la extracción"
+      },
+      "desparasitacion": {
+        "es_bloqueante": false,
+        "producto_especifico": "Garrapatas y Echinococcus «cuando se requiera» (apartados del EK-2)"
+      },
+      "certificado_salud": {
+        "dias_antes_viaje_minimo": 5,
+        "dias_vigencia_maxima": 5,
+        "es_bloqueante": true,
+        "producto_especifico": "Certificado EK-2 turco bilingüe endosado por SENASA"
+      },
+      "tramites_senasa": {
+        "dias_antes_viaje_minimo": 1,
+        "es_bloqueante": true,
+        "producto_especifico": "CZE/EK-2 endosado"
+      },
+      "cuarentena": {
+        "es_bloqueante": false,
+        "producto_especifico": "Solo por incumplimiento"
+      },
+      "permiso_importacion": {
+        "es_bloqueante": false
+      },
+      "notas": "Marco de tercer país con certificado propio EK-2 (no aplica pasaporte UE). Turquía es el único país europeo con rabia canina, por eso exige el titer en laboratorio aprobado por la UE. Máximo 2 animales por pasajero. Prohibida la ENTRADA de 6 razas de perro: American Pitbull Terrier, Dogo Argentino, Fila Brasileiro, Tosa Japonés, American Staffordshire Terrier y American Bully (Ley 7332 + circular 07/12/2021). Verificado sobre fuentes primarias el 22/07/2026.",
+      "nota_adicional": {
+        "es": {
+          "titulo": "⚠ Turquía exige titer en laboratorio aprobado por la UE + 3 meses de espera",
+          "texto": "El punto que casi todos ignoran: Turquía pide título serológico antirrábico (≥0,5 UI/ml) en un laboratorio de la lista de la UE —no una lista turca— con muestra tomada al menos 30 días después de la vacuna, y la entrada solo se permite 3 meses después de esa extracción. Además veta la entrada de 6 razas de perro. Verificar en frontera (VSKN) antes de comprar el vuelo."
+        },
+        "en": {
+          "titulo": "⚠ Turkey requires a titer test at an EU-approved lab + a 3-month wait",
+          "texto": "The point almost everyone misses: Turkey requires a rabies antibody titer (≥0.5 IU/ml) at a lab on the EU list —not a Turkish list— with the sample taken at least 30 days after the vaccine, and entry is allowed only 3 months after that sampling. It also bans 6 dog breeds from entering. Verify at the border (VSKN) before buying the flight."
+        },
+        "fr": {
+          "titulo": "⚠ La Turquie exige un titrage en laboratoire agréé par l'UE + 3 mois d'attente",
+          "texto": "Le point que presque tout le monde ignore : la Turquie exige un titrage antirabique (≥0,5 UI/ml) dans un laboratoire de la liste de l'UE —non une liste turque— avec un prélèvement effectué au moins 30 jours après le vaccin, et l'entrée n'est autorisée que 3 mois après ce prélèvement. Elle interdit aussi l'entrée de 6 races de chien. Vérifier à la frontière (VSKN) avant d'acheter le vol."
         }
       }
     }
