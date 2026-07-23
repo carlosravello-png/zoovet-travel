@@ -128,3 +128,5 @@ secrets.*
 credentials.*
 config.local.*
 *.local.json
+
+tentativas/

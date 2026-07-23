@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="#0C789E" name="theme-color"/>
+<title>Services vétérinaires à Trujillo : consultation, vaccins et exportation d'animaux de compagnie | Zoovet Travel</title>
+<meta name="description" content="Votre animal est malade ou part à l'étranger ? Consultations, spécialités cliniques et exportation SENASA au même endroit, avec preuves. Écrivez-nous."/>
+<meta name="robots" content="index, follow, max-image-preview:large"/>
+<link rel="canonical" href="https://zoovettravel.com/servicios/index-fr.html"/>
+<link rel="alternate" hreflang="es" href="https://zoovettravel.com/servicios/"/>
+<link rel="alternate" hreflang="en" href="https://zoovettravel.com/servicios/index-en.html"/>
+<link rel="alternate" hreflang="fr" href="https://zoovettravel.com/servicios/index-fr.html"/>
+<link rel="alternate" hreflang="x-default" href="https://zoovettravel.com/servicios/"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="Zoovet Travel"/>
+<meta property="og:locale" content="fr_FR"/>
+<meta property="og:title" content="Services vétérinaires à Trujillo — soins cliniques et médecine d'exportation"/>
+<meta property="og:description" content="Votre animal est malade ou part à l'étranger ? Consultations, spécialités cliniques et exportation SENASA au même endroit, avec preuves. Écrivez-nous."/>
+<meta property="og:url" content="https://zoovettravel.com/servicios/index-fr.html"/>
+<meta property="og:image" content="https://zoovettravel.com/images/servicios/medico-veterinaria-jessica-camacho-examen-clinico-zoovet-trujillo.webp"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="../assets/tailwind.css" rel="stylesheet"/>
+<style>
+  body { font-family: 'Montserrat', sans-serif; color:#1a2e35; }
+  html { scroll-behavior: smooth; }
+
+  /* ── Search Modal (compartido con el resto del sitio) ── */
+  .search-btn { color: var(--mid,#0C789E); background: transparent; border: none; cursor: pointer; padding: 4px; border-radius: 50%; transition: background 0.2s; display: flex; align-items: center; justify-content: center; }
+  .search-btn:hover { background: var(--sky,#e8f4f8); color: var(--deep,#0f2340); }
+  .search-modal-backdrop { position: fixed; inset: 0; background: rgba(15, 35, 64, 0.5); z-index: 1000; opacity: 0; visibility: hidden; transition: opacity 0.3s ease, visibility 0.3s; display: flex; align-items: flex-start; justify-content: center; padding-top: 10vh; backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); }
+  .search-modal-backdrop.is-active { opacity: 1; visibility: visible; }
+  .search-modal { background: #fff; width: 90%; max-width: 600px; border-radius: 12px; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); overflow: hidden; transform: translateY(-20px); opacity: 0; transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s; display: flex; flex-direction: column; max-height: 80vh; }
+  .search-modal-backdrop.is-active .search-modal { transform: translateY(0); opacity: 1; }
+  .search-header { padding: 1rem 1.25rem; border-bottom: 1px solid var(--rule,#cdd8e3); display: flex; align-items: center; gap: 0.75rem; background: var(--paper,#f4f8fb); }
+  .search-input { flex: 1; border: none; background: transparent; font-size: 1rem; color: var(--ink,#1a2e35); outline: none; padding: 0.5rem 0; width: 100%; }
+  .search-input::placeholder { color: var(--muted,#64748b); }
+  .search-close { background: var(--sky,#e8f4f8); border: none; padding: 0.25rem 0.5rem; border-radius: 6px; font-size: 0.75rem; color: var(--mid,#0C789E); cursor: pointer; transition: all 0.2s; font-weight: 600; display: flex; align-items: center; justify-content: center; min-width: 32px; }
+  .search-close:hover { background: var(--rule,#cdd8e3); color: var(--deep,#0f2340); }
+  .search-results { padding: 0.5rem 0; overflow-y: auto; flex: 1; }
+  .search-result-item { padding: 0.75rem 1.25rem; display: flex; flex-direction: column; gap: 0.25rem; border-bottom: 1px solid var(--rule,#cdd8e3); text-decoration: none; transition: background 0.2s; }
+  .search-result-item:last-child { border-bottom: none; }
+  .search-result-item:hover { background: var(--paper,#f4f8fb); text-decoration: none !important; }
+  .search-result-title { color: var(--ink,#1a2e35); font-weight: 600; font-size: 0.9rem; line-height: 1.4; display: block; }
+  .search-result-cat { color: var(--teal,#0C789E); font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; display: block; }
+  .search-empty { padding: 2rem; text-align: center; color: var(--muted,#64748b); font-size: 0.95rem; }
+
+  /* ── Página de Servicios ── */
+  .svc { color:#1a2e35; }
+  .svc-wrap { max-width: 68rem; margin: 0 auto; padding: 0 1.25rem; }
+  .svc-hero { background: linear-gradient(180deg,#f2f9fc 0%,#ffffff 100%); border-bottom:1px solid rgba(12,120,158,.12); padding: 2.5rem 0 3rem; }
+  .svc-hero-grid { display:grid; grid-template-columns: 1.15fr .85fr; gap: 2.25rem; align-items:center; }
+  .svc-eyebrow { font-size:.72rem; font-weight:700; letter-spacing:.18em; text-transform:uppercase; color:#0C789E; margin-bottom:.85rem; }
+  .svc h1 { font-size: clamp(1.7rem, 4.4vw, 2.55rem); font-weight:700; line-height:1.16; color:#12303a; margin-bottom:1rem; }
+  .svc-lead { font-size:1.06rem; line-height:1.75; color:#33474f; margin-bottom:1.4rem; }
+  .svc-chips { display:flex; flex-wrap:wrap; gap:.5rem; margin-bottom:1.6rem; }
+  .svc-chip { font-size:.76rem; font-weight:600; color:#12303a; background:#e8f4f8; border:1px solid rgba(12,120,158,.22); padding:.4rem .7rem; border-radius:999px; }
+  .svc-hero-img { border-radius:14px; overflow:hidden; box-shadow:0 12px 30px -12px rgba(15,35,64,.35); aspect-ratio: 4/4.1; }
+  .svc-hero-img img { width:100%; height:100%; object-fit:cover; display:block; }
+  .wapp-cta { display:inline-flex; align-items:center; gap:.6rem; background:#25D366; color:#fff; font-weight:700; font-size:1rem; padding:.85rem 1.4rem; border-radius:10px; text-decoration:none; box-shadow:0 6px 18px -6px rgba(37,211,102,.6); transition:transform .2s, box-shadow .2s; }
+  .wapp-cta:hover { transform:translateY(-2px); box-shadow:0 10px 24px -8px rgba(37,211,102,.7); color:#fff; }
+  .wapp-cta svg { width:22px; height:22px; fill:#fff; flex:none; }
+  .wapp-cta.ghost { background:#fff; color:#12303a; border:1.5px solid #25D366; box-shadow:none; }
+  .wapp-cta.ghost svg { fill:#25D366; }
+
+  .svc-section { padding: 3rem 0; border-bottom:1px solid rgba(26,46,53,.08); }
+  .svc-section.alt { background:#f7fbfd; }
+  .svc-kicker { font-size:.74rem; font-weight:700; letter-spacing:.16em; text-transform:uppercase; color:#0C789E; margin-bottom:.6rem; }
+  .svc-section h2 { font-size: clamp(1.4rem,3.4vw,2rem); font-weight:700; color:#12303a; line-height:1.2; margin-bottom:.9rem; }
+  .svc-section-intro { font-size:1.02rem; line-height:1.75; color:#3a4c54; max-width:46rem; margin-bottom:2rem; }
+
+  .svc-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:1.1rem; }
+  .svc-card { background:#fff; border:1px solid rgba(26,46,53,.12); border-radius:12px; padding:1.4rem 1.35rem; transition:box-shadow .2s, transform .2s, border-color .2s; }
+  .svc-card:hover { box-shadow:0 10px 26px -14px rgba(15,35,64,.4); transform:translateY(-2px); border-color:rgba(12,120,158,.35); }
+  .svc-card h3 { font-size:1.06rem; font-weight:700; color:#0C789E; margin-bottom:.5rem; }
+  .svc-card p { font-size:.93rem; line-height:1.65; color:#43555c; }
+
+  .svc-media { display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin:2rem 0 .5rem; }
+  .svc-media figure { margin:0; border-radius:12px; overflow:hidden; box-shadow:0 8px 22px -14px rgba(15,35,64,.4); }
+  .svc-media img { width:100%; height:100%; object-fit:cover; display:block; aspect-ratio:4/3; }
+  .svc-media figcaption { font-size:.76rem; color:#5a6b72; padding:.55rem .7rem; background:#fff; line-height:1.4; }
+
+  .svc-pkg { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:1.1rem; margin-top:1.5rem; }
+  .svc-pkg-card { border:1px solid rgba(12,120,158,.22); border-left:4px solid #0C789E; border-radius:10px; padding:1.35rem 1.35rem; background:#fff; transition:box-shadow .2s, transform .2s, border-color .2s; }
+  .svc-pkg-card:hover { box-shadow:0 10px 26px -14px rgba(15,35,64,.4); transform:translateY(-2px); border-color:rgba(12,120,158,.55); }
+  .svc-pkg-card h4 { font-size:1rem; font-weight:700; color:#12303a; margin-bottom:.5rem; }
+  .svc-pkg-card p { font-size:.9rem; line-height:1.6; color:#43555c; }
+  .svc-pkg-card .tests { margin-top:.7rem; font-size:.78rem; color:#0C789E; font-weight:600; }
+
+  .svc-honesty { background:#12303a; color:#e8f2f5; border-radius:14px; padding:2.2rem 2rem; }
+  .svc-honesty h2 { color:#fff; }
+  .svc-honesty .h-item { display:flex; gap:.9rem; padding:1rem 0; border-top:1px solid rgba(255,255,255,.14); }
+  .svc-honesty .h-item:first-of-type { border-top:none; }
+  .svc-honesty .h-mark { flex:none; width:26px; height:26px; border-radius:50%; background:rgba(37,211,102,.18); color:#7ff0a8; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:.9rem; margin-top:.1rem; }
+  .svc-honesty .h-item p { font-size:.96rem; line-height:1.65; color:#d3e2e7; }
+  .svc-honesty .h-item strong { color:#fff; }
+
+  .svc-peru { display:grid; grid-template-columns:.8fr 1.2fr; gap:1.8rem; align-items:center; }
+  .svc-peru figure { margin:0; border-radius:12px; overflow:hidden; box-shadow:0 8px 22px -14px rgba(15,35,64,.4); }
+  .svc-peru img { width:100%; display:block; }
+
+  .svc-cases { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1.1rem; margin-top:1.6rem; }
+  .svc-case { border-radius:12px; overflow:hidden; border:1px solid rgba(26,46,53,.1); background:#fff; }
+  .svc-case img { width:100%; aspect-ratio:1/1; object-fit:cover; display:block; }
+  .svc-case .cap { padding:.8rem .9rem; font-size:.85rem; line-height:1.5; color:#43555c; }
+  .svc-case .cap strong { color:#12303a; }
+
+  .svc-team { display:grid; grid-template-columns:1fr 1fr; gap:1.4rem; margin-top:1.8rem; }
+  .svc-vet { display:flex; gap:1.1rem; background:#fff; border:1px solid rgba(26,46,53,.12); border-radius:12px; padding:1.3rem; }
+  .svc-vet img { width:104px; height:104px; border-radius:12px; object-fit:cover; flex:none; box-shadow:0 6px 16px -10px rgba(15,35,64,.5); }
+  .svc-vet h3 { font-size:1.05rem; font-weight:700; color:#12303a; margin-bottom:.15rem; }
+  .svc-vet .cred { font-size:.78rem; font-weight:700; color:#0C789E; letter-spacing:.03em; margin-bottom:.5rem; }
+  .svc-vet p { font-size:.86rem; line-height:1.6; color:#43555c; }
+
+  .svc-contact { background:#e8f4f8; border-radius:14px; padding:2.2rem 2rem; display:grid; grid-template-columns:1.3fr 1fr; gap:1.8rem; align-items:center; }
+  .svc-contact h2 { margin-bottom:.6rem; }
+  .svc-contact .info { font-size:.95rem; line-height:1.9; color:#33474f; }
+  .svc-contact .info strong { color:#12303a; }
+
+  .svc-faq details { border-bottom:1px solid rgba(26,46,53,.12); padding:1.05rem 0; }
+  .svc-faq summary { font-size:1rem; font-weight:600; color:#12303a; cursor:pointer; list-style:none; display:flex; justify-content:space-between; gap:1rem; }
+  .svc-faq summary::-webkit-details-marker { display:none; }
+  .svc-faq summary::after { content:'+'; color:#0C789E; font-weight:700; font-size:1.3rem; line-height:1; }
+  .svc-faq details[open] summary::after { content:'–'; }
+  .svc-faq p { font-size:.94rem; line-height:1.7; color:#43555c; margin-top:.75rem; }
+
+  .svc-final-legal { font-size:.82rem; line-height:1.65; color:#5a6b72; max-width:46rem; margin:1.5rem auto 0; text-align:center; }
+
+  @media (max-width: 820px) {
+    .svc-hero-grid, .svc-peru, .svc-team, .svc-contact { grid-template-columns:1fr; }
+    .svc-hero-img { order:-1; aspect-ratio:16/11; }
+    .svc-media { grid-template-columns:1fr; }
+  }
+</style>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@graph": [{"@type": ["WebPage", "MedicalWebPage"], "@id": "https://zoovettravel.com/servicios/#webpage", "url": "https://zoovettravel.com/servicios/", "name": "Services vétérinaires à Trujillo — soins cliniques et médecine d'exportation d'animaux de compagnie", "description": "Services médicaux vétérinaires standard et d'exportation d'animaux de compagnie à Trujillo, La Libertad : consultation, vaccins, puce électronique, vermifugation, sérologie de la rage, certificats et forfaits d'évaluation avant le vol. Prise en charge par des vétérinaires agréés.", "inLanguage": "fr", "isPartOf": {"@id": "https://zoovettravel.com/#website"}, "about": {"@id": "https://zoovettravel.com/#sede-trujillo"}, "primaryImageOfPage": "https://zoovettravel.com/images/servicios/medico-veterinaria-jessica-camacho-examen-clinico-zoovet-trujillo.webp", "breadcrumb": {"@id": "https://zoovettravel.com/servicios/#breadcrumb"}, "lastReviewed": "2026-07-23", "reviewedBy": {"@id": "https://jessica-camacho.com/#person"}, "mainEntity": {"@id": "https://zoovettravel.com/#sede-trujillo"}, "significantLink": "https://wa.me/51979620402"}, {"@type": "BreadcrumbList", "@id": "https://zoovettravel.com/servicios/#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://zoovettravel.com/"}, {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://zoovettravel.com/servicios/"}]}, {"@type": ["VeterinaryCare", "LocalBusiness"], "@id": "https://zoovettravel.com/#sede-trujillo", "name": "Zoovet Travel - Antenne de Trujillo", "url": "https://zoovettravel.com", "logo": "https://zoovettravel.com/images/zoovet-logo.png", "sameAs": ["https://www.tiktok.com/@zoovet.trujillo", "https://www.instagram.com/zoovet.trujillo/", "https://www.facebook.com/Zoovet.Trujillo/"], "address": {"@type": "PostalAddress", "streetAddress": "Calle Cuba 241", "addressLocality": "Trujillo", "addressRegion": "La Libertad", "postalCode": "13001", "addressCountry": "PE"}, "geo": {"@type": "GeoCoordinates", "latitude": -8.11585, "longitude": -79.02364}, "telephone": ["044 366094", "+51 979620402", "+51 922083707"], "image": "https://zoovettravel.com/images/og-default.png", "openingHoursSpecification": {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], "opens": "09:00", "closes": "19:00"}, "areaServed": [{"@type": "City", "name": "Trujillo"}, {"@type": "City", "name": "Víctor Larco Herrera"}, {"@type": "City", "name": "California"}, {"@type": "City", "name": "San Andrés"}], "parentOrganization": {"@id": "https://zoovettravel.com/#organization"}, "description": "Entreprise vétérinaire spécialisée dans le transport international des animaux de compagnie. Nous opérons depuis le Pérou depuis 2013 — plus de 13 ans de casuistique clinique active, des cadres réglementaires gérés dans plus de 30 destinations sur 5 continents. Nous sommes une entreprise de services vétérinaires spécialisés. La profondeur technique de notre documentation est le reflet direct de ce que nous faisons dans la pratique clinique. Nous publions la première série technique vétérinaire en libre accès en 3 langues sur le transport international des animaux de compagnie : 10 articles techniques avec DOI permanent, vérifiables sur Zenodo, Figshare et OSF. La série scientifique est publiée sous licence CC BY 4.0 ; le reste du contenu du site, tous droits réservés."}, {"@type": "Person", "@id": "https://jessica-camacho.com/#person", "name": "Jessica Ysabel Camacho García", "jobTitle": "Vétérinaire et Zootechnicienne", "identifier": [{"@type": "PropertyValue", "propertyID": "CMVP", "value": "12434"}, {"@type": "PropertyValue", "propertyID": "ORCID", "value": "0009-0002-6837-5311"}, {"@type": "PropertyValue", "propertyID": "CTIVitae", "value": "0140858"}, {"@type": "PropertyValue", "propertyID": "Google Knowledge Graph ID", "value": "/g/11nbnrcn0_", "url": "https://www.google.com/search?kgmid=/g/11nbnrcn0_"}, {"@type": "PropertyValue", "propertyID": "ISNI", "value": "0000 0005 3051 4034", "url": "https://isni.org/isni/0000000530514034"}], "alumniOf": {"@type": "CollegeOrUniversity", "name": "Universidad Privada Antenor Orrego", "sameAs": "https://www.upao.edu.pe/"}, "disambiguatingDescription": "Vétérinaire agréée (CMVP 12434), cofondatrice et relectrice scientifique de Zoovet Travel — à ne pas confondre avec d'autres personnes du même nom.", "hasCredential": {"@type": "EducationalOccupationalCredential", "credentialCategory": "CMVP", "identifier": "12434", "recognizedBy": {"@type": "Organization", "name": "Colegio Médico Veterinario del Perú"}}, "roleName": "Membre de la Commission de Santé Publique du CMVP La Libertad et Chercheuse Académique", "knowsAbout": ["Médecine du voyage vétérinaire", "Exportation internationale d'animaux de compagnie", "Sérologie de la rage RNATT/FAVN", "Bien-être animal dans le transport aérien", "Races brachycéphales et risque aérien", "Certification zoosanitaire SENASA"], "sameAs": ["https://isni.org/isni/0000000530514034", "https://ctivitae.concytec.gob.pe/appDirectorioCTI/VerDatosInvestigador.do?id_investigador=0140858", "https://orcid.org/0009-0002-6837-5311", "https://www.linkedin.com/in/jessica-ysabel-camacho-garc%C3%ADa-b1a76923b/", "https://scholar.google.com/citations?user=K30-SEIAAAAJ", "https://www.researchgate.net/profile/Jessica-Camacho-Garcia-3", "https://openalex.org/A5136214197", "https://repositorio.upao.edu.pe/handle/20.500.12759/12474", "https://carlosravello-png.github.io/zoovet-credentials/certificado-cmvp-jessica.pdf", "https://doi.org/10.5281/zenodo.19243363", "https://doi.org/10.5281/zenodo.19243198", "https://doi.org/10.5281/zenodo.19243495", "https://doi.org/10.5281/zenodo.19243638", "https://agris.fao.org/search/en/providers/125042/records/674978dc7625988a37221fdf", "https://doi.org/10.5281/zenodo.20203033", "https://doi.org/10.5281/zenodo.20209225", "https://doi.org/10.5281/zenodo.20209567", "https://doi.org/10.5281/zenodo.20209709", "https://doi.org/10.5281/zenodo.20209893", "https://doi.org/10.5281/zenodo.20210134", "https://doi.org/10.5281/zenodo.20210233", "https://doi.org/10.5281/zenodo.20210662", "https://doi.org/10.5281/zenodo.20210986", "https://doi.org/10.5281/zenodo.20211062"], "hasOccupation": {"@type": "Occupation", "name": "Veterinarian"}, "knowsLanguage": ["es", "en"], "worksFor": {"@id": "https://zoovettravel.com/#organization"}}, {"@type": "Person", "@id": "https://zoovettravel.com/#victor-camacho", "name": "Víctor Jesús Camacho Paz", "jobTitle": "Vétérinaire Spécialiste en Santé Publique et Zoonoses", "identifier": [{"@type": "PropertyValue", "propertyID": "CMVP", "value": "3103"}, {"@type": "PropertyValue", "propertyID": "ORCID", "value": "0009-0005-8096-9317", "url": "https://orcid.org/0009-0005-8096-9317"}], "sameAs": ["https://cmvp.org.pe", "https://orcid.org/0009-0005-8096-9317", "https://www.linkedin.com/in/victor-jesus-camacho-paz"], "alumniOf": {"@type": "CollegeOrUniversity", "name": "Universidad Nacional de Cajamarca", "sameAs": "https://www.unc.edu.pe/"}, "description": "35 ans au sein de la Direction Régionale de la Santé (GERESA) de La Libertad, actuellement Coordinateur Régional des Zoonoses ; ancien administrateur du Centro Antirrábico de Trujillo. Chercheur sur la prévalence de Fasciola hepatica dans les hautes terres de La Libertad et expert en contrôle des épidémies de peste bubonique et de rage urbaine ; relecteur scientifique des protocoles de la rage qui soutiennent l'exportation internationale des animaux de compagnie de Zoovet.", "affiliation": [{"@type": "Organization", "name": "Gerencia Regional de Salud (GERESA) La Libertad"}, {"@type": "Organization", "name": "Ministerio de Salud del Perú (MINSA)"}, {"@type": "Organization", "name": "Centro Antirrábico de Trujillo"}], "knowsAbout": ["Zoonoses", "Fasciola hepatica", "Yersinia pestis", "Surveillance Épidémiologique", "Rage", "Biosécurité"], "knowsLanguage": ["es"], "disambiguatingDescription": "Vétérinaire agréé (CMVP 3103), Coordinateur Régional des Zoonoses à GERESA La Libertad — à ne pas confondre avec d'autres personnes du même nom.", "worksFor": {"@id": "https://zoovettravel.com/#organization"}}, {"@type": "Service", "name": "Consultation et examen clinique vétérinaire", "serviceType": "Consultation vétérinaire", "category": "Services médicaux standard", "provider": {"@id": "https://zoovettravel.com/#sede-trujillo"}, "areaServed": {"@type": "City", "name": "Trujillo"}, "audience": {"@type": "Audience", "name": "Propriétaires de chiens et de chats"}}, {"@type": "Service", "name": "Vaccination des chiens et des chats", "serviceType": "Vaccination", "category": "Services médicaux standard", "provider": {"@id": "https://zoovettravel.com/#sede-trujillo"}, "areaServed": {"@type": "City", "name": "Trujillo"}, "audience": {"@type": "Audience", "name": "Propriétaires de chiens et de chats"}}, {"@type": "Service", "name": "Pose de puce électronique ISO", "serviceType": "Identification par puce électronique", "category": "Services médicaux standard", "provider": {"@id": "https://zoovettravel.com/#sede-trujillo"}, "areaServed": {"@type": "City", "name": "Trujillo"}, "audience": {"@type": "Audience", "name": "Propriétaires de chiens et de chats"}}, {"@type": "Service", "name": "Vermifugation interne et externe", "serviceType": "Vermifugation", "category": "Services médicaux standard", "provider": {"@id": "https://zoovettravel.com/#sede-trujillo"}, "areaServed": {"@type": "City", "name": "Trujillo"}, "audience": {"@type": "Audience", "name": "Propriétaires de chiens et de chats"}}, {"@type": "Service", "name": "Bilan de santé général", "serviceType": "Bilan vétérinaire préventif", "category": "Services médicaux standard", "provider": {"@id": "https://zoovettravel.com/#sede-trujillo"}, "areaServed": {"@type": "City", "name": "Trujillo"}, "audience": {"@type": "Audience", "name": "Propriétaires de chiens et de chats"}}, {"@type": "Service", "name": "Analyse de sang de sérologie antirabique pour l'exportation", "serviceType": "Sérologie de la rage (titrage des anticorps)", "category": "Services médicaux d'exportation", "provider": {"@id": "https://zoovettravel.com/#sede-trujillo"}, "areaServed": {"@type": "City", "name": "Trujillo"}, "audience": {"@type": "Audience", "name": "Propriétaires de chiens et de chats"}}, {"@type": "Service", "name": "Certificat de santé et de vaccination pour l'exportation", "serviceType": "Certification zoosanitaire d'exportation", "category": "Services médicaux d'exportation", "provider": {"@id": "https://zoovettravel.com/#sede-trujillo"}, "areaServed": {"@type": "City", "name": "Trujillo"}, "audience": {"@type": "Audience", "name": "Propriétaires de chiens et de chats"}}, {"@type": "Service", "name": "Évaluation cardio-respiratoire avant le vol pour les races brachycéphales", "serviceType": "Évaluation de l'aptitude au vol (électrocardiogramme, échocardiogramme, hémogramme et biochimie)", "category": "Services médicaux d'exportation", "provider": {"@id": "https://zoovettravel.com/#sede-trujillo"}, "areaServed": {"@type": "City", "name": "Trujillo"}, "audience": {"@type": "Audience", "name": "Propriétaires de chiens et de chats"}}, {"@type": "Service", "name": "Bilan gériatrique avant le voyage (plus de 6 ans)", "serviceType": "Évaluation gériatrique et endocrinienne avant le vol", "category": "Services médicaux d'exportation", "provider": {"@id": "https://zoovettravel.com/#sede-trujillo"}, "areaServed": {"@type": "City", "name": "Trujillo"}, "audience": {"@type": "Audience", "name": "Propriétaires de chiens et de chats"}}, {"@type": "Service", "name": "Évaluation féline pour voyage international", "serviceType": "Dépistage de la leucémie et du mycoplasme, hémogramme et biochimie", "category": "Services médicaux d'exportation", "provider": {"@id": "https://zoovettravel.com/#sede-trujillo"}, "areaServed": {"@type": "City", "name": "Trujillo"}, "audience": {"@type": "Audience", "name": "Propriétaires de chiens et de chats"}}, {"@type": "Service", "name": "Forfait d'exportation pour chiots", "serviceType": "Analyse parasitologique en série, hémogramme et vaccination", "category": "Services médicaux d'exportation", "provider": {"@id": "https://zoovettravel.com/#sede-trujillo"}, "areaServed": {"@type": "City", "name": "Trujillo"}, "audience": {"@type": "Audience", "name": "Propriétaires de chiens et de chats"}}, {"@type": "FAQPage", "@id": "https://zoovettravel.com/servicios/#faq", "mainEntity": [{"@type": "Question", "name": "Recevez-vous uniquement à Trujillo ?", "acceptedAnswer": {"@type": "Answer", "text": "Il n'est pas nécessaire de vivre à Trujillo. En plus de notre antenne, nous disposons d'un Réseau de vétérinaires affiliés dans différentes régions du Pérou —agréés et habilités, avec une expérience démontrée, un bon accueil client et des installations adaptées, avec une bonne gestion de la chaîne du froid et du laboratoire— qui coordonnent avec nous selon la méthodologie et le contrôle qualité de Zoovet Travel. Écrivez-nous et nous vous dirons comment procéder selon votre ville."}}, {"@type": "Question", "name": "Est-ce vous qui délivrez le certificat d'exportation ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui, dans le cadre réglementé par SENASA et le Colegio Médico Veterinario del Perú. Il est délivré par un vétérinaire autorisé après vérification de la puce électronique, du statut vaccinal et de l'état clinique de votre animal. Ce n'est pas un document qui s'achète ni qui peut être accéléré en contournant les exigences. Vous pouvez voir le détail dans notre service de certificats d'exportation et dans le guide du certificat zoosanitaire auprès de SENASA à Trujillo, publié sur le site."}}, {"@type": "Question", "name": "Mon animal a le museau court (brachycéphale), peut-il voyager ?", "acceptedAnswer": {"@type": "Answer", "text": "Cela dépend de son évaluation cardio-respiratoire. Des races comme le Bulldog, le Carlin, le Shih Tzu ou le Persan nécessitent des soins particuliers en vol. Nous réalisons l'évaluation —cœur, respiration et analyses— pour vous orienter avec des données et, si votre animal a besoin d'une préparation avant de voyager en toute sécurité, vous l'indiquer à temps. Pour approfondir avec des preuves, nous avons publié en trois langues des articles scientifiques et de vulgarisation sur le transport aérien des races brachycéphales, disponibles sur notre site."}}, {"@type": "Question", "name": "Combien de temps à l'avance dois-je commencer le processus ?", "acceptedAnswer": {"@type": "Answer", "text": "Cela dépend de la destination. Pour l'Union européenne et plusieurs pays d'Asie, le minimum est généralement de 3 mois en raison de l'attente du résultat de l'analyse de sang pour la rage. Pour l'Australie et la Nouvelle-Zélande, 6 mois ou plus. Écrivez-nous dès que vous avez le pays et la date approximative du voyage. Nous l'expliquons avec les délais réels dans nos articles sur l'analyse de sang pour la rage et sur combien de temps à l'avance commencer le voyage."}}]}]}
+</script>
+</head>
+<body class="bg-white antialiased">
+
+  <header class="max-w-4xl mx-auto px-4 py-6 flex justify-between items-center">
+    <a href="../index.html" class="text-xl font-bold tracking-[0.25em] text-[#1a2e35] font-montserrat">ZOOVET TRAVEL</a>
+    <div class="flex gap-2 items-center">
+      <button class="search-btn" aria-label="Rechercher" onclick="openSearchModal()" title="Rechercher">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+      </button>
+      <div style="width: 1px; height: 16px; background: var(--rule, #cdd8e3); margin: 0 4px;"></div>
+      <a href="index.html" class="text-xs font-semibold tracking-widest uppercase text-[#1a2e35]/80 hover:text-[#1a2e35] border border-[#1a2e35]/30 px-3 py-2 rounded-sm transition-colors">ES</a>
+      <a href="index-en.html" class="text-xs font-semibold tracking-widest uppercase text-[#1a2e35]/80 hover:text-[#1a2e35] border border-[#1a2e35]/30 px-3 py-2 rounded-sm transition-colors">EN</a>
+      <a href="index-fr.html" class="text-xs font-semibold tracking-widest uppercase text-[#1a2e35] border border-[#0C789E] bg-[#0C789E]/10 px-3 py-2 rounded-sm">FR</a>
+    </div>
+  </header>
+
+  <nav class="px-4 py-3 text-sm border-b border-[#1a2e35]/10" aria-label="Breadcrumb">
+    <ol class="flex flex-wrap gap-2 text-[#1a2e35]/70 max-w-[68rem] mx-auto">
+      <li><a href="../index.html" class="hover:text-[#1a2e35]">Accueil</a></li>
+      <li aria-hidden="true">/</li>
+      <li class="text-[#1a2e35]">Services</li>
+    </ol>
+  </nav>
+
+  <main class="svc">
+
+    <!-- ═══ HERO ═══ -->
+    <section class="svc-hero">
+      <div class="svc-wrap">
+        <div class="svc-hero-grid">
+          <div>
+            <p class="svc-eyebrow">Clinique vétérinaire · Trujillo, La Libertad</p>
+            <h1>Services vétérinaires à Trujillo : de la consultation quotidienne au voyage à l'étranger</h1>
+            <p class="svc-lead">Nous sommes une clinique dirigée par des vétérinaires agréés. Nous soignons votre chien ou votre chat au quotidien et préparons, étape par étape et sans improviser, tout ce dont il a besoin pour voler à l'étranger.</p>
+            <div class="svc-chips">
+              <span class="svc-chip">Vétérinaires agréés · CMVP 12434 et 3103</span>
+              <span class="svc-chip">En activité depuis 2013</span>
+              <span class="svc-chip">+30 destinations gérées</span>
+              <span class="svc-chip">Trujillo, La Libertad</span>
+            </div>
+            <a class="wapp-cta" href="https://wa.me/51979620402?text=Bonjour%2C%20je%20souhaiterais%20me%20renseigner%20sur%20les%20services%20v%C3%A9t%C3%A9rinaires%20de%20Zoovet%20Travel." target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+              Écrivez-nous sur WhatsApp
+            </a>
+          </div>
+          <div class="svc-hero-img">
+            <img src="../images/servicios/medico-veterinaria-jessica-camacho-examen-clinico-zoovet-trujillo.webp" alt="La vétérinaire Jessica Camacho réalisant un examen clinique sur un chien à la clinique Zoovet Travel de Trujillo" width="900" height="919" loading="eager"/>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ SERVICIOS ESTÁNDAR ═══ -->
+    <section class="svc-section">
+      <div class="svc-wrap">
+        <p class="svc-kicker">Services médicaux standard</p>
+        <h2>Les soins cliniques de toujours</h2>
+        <p class="svc-section-intro">Les soins de tous les jours pour votre chien ou votre chat, avec le même sérieux que celui que nous mettons à préparer une exportation internationale. Sans tarifs fixes publiés : chaque animal est différent et nous vous donnons le détail sur WhatsApp.</p>
+        <div class="svc-grid">
+          <a class="svc-card" href="consulta-examen-fr.html" style="display:block;text-decoration:none;"><h3>Consultation et examen clinique</h3><p>Nous examinons votre animal, écoutons le motif de votre visite et définissons un plan. C'est la base de tout le reste.</p><span style="display:inline-block;margin-top:.6rem;font-size:.82rem;font-weight:700;color:#0C789E;">Voir le détail →</span></a>
+          <a class="svc-card" href="vacunacion-fr.html" style="display:block;text-decoration:none;"><h3>Vaccination</h3><p>Des calendriers de vaccination à jour pour chiens et chats, avec l'enregistrement correspondant pour votre tranquillité et pour les démarches futures.</p><span style="display:inline-block;margin-top:.6rem;font-size:.82rem;font-weight:700;color:#0C789E;">Voir le détail →</span></a>
+          <a class="svc-card" href="microchip-fr.html" style="display:block;text-decoration:none;"><h3>Pose de puce électronique</h3><p>Identification permanente par puce électronique de standard international : la même que celle exigée ensuite pour tout voyage à l'étranger.</p><span style="display:inline-block;margin-top:.6rem;font-size:.82rem;font-weight:700;color:#0C789E;">Voir le détail →</span></a>
+          <a class="svc-card" href="desparasitacion-fr.html" style="display:block;text-decoration:none;"><h3>Vermifugation</h3><p>Interne et externe, adaptée à l'âge, au poids et au mode de vie de votre animal. Un chiot n'est pas la même chose qu'un adulte qui va à la campagne.</p><span style="display:inline-block;margin-top:.6rem;font-size:.82rem;font-weight:700;color:#0C789E;">Voir le détail →</span></a>
+          <div class="svc-card"><h3>Bilan de santé général</h3><p>Un contrôle complet pour détecter à temps ce qui ne se voit pas à l'œil nu. Valable à tout âge, et indispensable avant un voyage.</p></div>
+        </div>
+        <div class="svc-media">
+          <figure><img src="../images/servicios/consulta-examen-clinico-veterinario-zoovet-trujillo.webp" alt="Examen clinique vétérinaire d'un patient lors de la consultation à Zoovet Travel" width="1100" height="1466" loading="lazy"/><figcaption>Consultation et examen clinique à notre antenne de Trujillo.</figcaption></figure>
+          <figure><img src="../images/servicios/vacunacion-perro-esquema-vacunas-zoovet-trujillo.webp" alt="Vaccination d'un chien à la clinique Zoovet Travel de Trujillo" width="1000" height="1000" loading="lazy"/><figcaption>Vaccination avec son enregistrement correspondant, la base de tout voyage.</figcaption></figure>
+          <figure><img src="../images/servicios/implantacion-microchip-jeringa-esteril-zoovet-trujillo.webp" alt="Pose de puce électronique avec une seringue stérile à Zoovet Travel, pendant la lecture de la puce avec le lecteur" width="1000" height="1000" loading="lazy"/><figcaption>Pose de puce électronique avec du matériel stérile, vérifiée sur le moment avec le lecteur.</figcaption></figure>
+          <figure><img src="../images/servicios/microchip-lector-lectura-fdx-b-iso-zoovet-trujillo.webp" alt="Lecteur de puce électronique affichant un code FDX-B de standard international ISO à Zoovet Travel" width="960" height="540" loading="lazy"/><figcaption>Lecture de la puce électronique : standard international FDX-B (ISO), celui qu'exige tout voyage.</figcaption></figure>
+          <figure><img src="../images/servicios/desparasitacion-oral-mascota-zoovet-trujillo.webp" alt="Vermifugation orale d'un animal à la clinique Zoovet Travel" width="1000" height="666" loading="lazy"/><figcaption>Vermifugation adaptée à l'âge, au poids et au mode de vie de votre animal.</figcaption></figure>
+          <figure><img src="../images/servicios/analisis-microscopio-parasitologico-zoovet-trujillo.webp" alt="Analyse d'un échantillon au microscope dans le laboratoire de Zoovet Travel" width="820" height="1454" loading="lazy"/><figcaption>Analyses de laboratoire réalisées en interne : parasitologie, hématologie et plus encore.</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══ ESPECIALIDADES CLÍNICAS ═══ -->
+    <section class="svc-section">
+      <div class="svc-wrap">
+        <p class="svc-kicker">La vétérinaire du quotidien</p>
+        <h2>Nos spécialités cliniques</h2>
+        <p class="svc-section-intro">Au-delà du voyage international, nous sommes votre clinique de tous les jours à Trujillo. Chaque spécialité, avec un jugement clinique et un appui scientifique.</p>
+        <div class="svc-grid">
+          <a class="svc-card" href="medicina-preventiva-fr.html" style="display:block;text-decoration:none;"><h3>Médecine préventive</h3><p>Vaccins à jour, vermifugation et bilans pour anticiper la maladie.</p><span style="display:inline-block;margin-top:.6rem;font-size:.82rem;font-weight:700;color:#0C789E;">Voir le détail →</span></a>
+          <a class="svc-card" href="dermatologia-fr.html" style="display:block;text-decoration:none;"><h3>Dermatologie</h3><p>Allergies, démangeaisons, otites et problèmes de peau : nous cherchons la cause, nous ne masquons pas le symptôme.</p><span style="display:inline-block;margin-top:.6rem;font-size:.82rem;font-weight:700;color:#0C789E;">Voir le détail →</span></a>
+          <a class="svc-card" href="medicina-interna-fr.html" style="display:block;text-decoration:none;"><h3>Médecine interne</h3><p>Quand les symptômes reviennent, nous enquêtons avec méthode jusqu'au véritable diagnostic.</p><span style="display:inline-block;margin-top:.6rem;font-size:.82rem;font-weight:700;color:#0C789E;">Voir le détail →</span></a>
+          <a class="svc-card" href="oftalmologia-fr.html" style="display:block;text-decoration:none;"><h3>Ophtalmologie</h3><p>Œil rouge, ulcères, cataractes et glaucome : l'œil fait mal et évolue vite.</p><span style="display:inline-block;margin-top:.6rem;font-size:.82rem;font-weight:700;color:#0C789E;">Voir le détail →</span></a>
+          <a class="svc-card" href="endocrinologia-fr.html" style="display:block;text-decoration:none;"><h3>Endocrinologie</h3><p>Diabète, thyroïde et Cushing : des changements qui semblent liés à l'âge et qui se traitent.</p><span style="display:inline-block;margin-top:.6rem;font-size:.82rem;font-weight:700;color:#0C789E;">Voir le détail →</span></a>
+          <a class="svc-card" href="ecografia-cardiologia-fr.html" style="display:block;text-decoration:none;"><h3>Échographie et cardiologie</h3><p>Échocardiogramme, ECG et échographie pour voir de l'intérieur et bien décider.</p><span style="display:inline-block;margin-top:.6rem;font-size:.82rem;font-weight:700;color:#0C789E;">Voir le détail →</span></a>
+          <a class="svc-card" href="nutricion-fr.html" style="display:block;text-decoration:none;"><h3>Nutrition</h3><p>L'alimentation est aussi un médicament : des plans de régime réalistes et mesurables.</p><span style="display:inline-block;margin-top:.6rem;font-size:.82rem;font-weight:700;color:#0C789E;">Voir le détail →</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ SERVICIOS DE EXPORTACIÓN ═══ -->
+    <section class="svc-section alt">
+      <div class="svc-wrap">
+        <p class="svc-kicker">Services médicaux d'exportation</p>
+        <h2>Ce dont votre animal a besoin pour voyager à l'étranger</h2>
+        <p class="svc-section-intro">Emmener votre animal dans un autre pays n'est pas une démarche d'un jour : c'est un processus médical et documentaire avec des échéances qui ne s'improvisent pas. Un examen hors délai peut retarder le voyage de plusieurs mois. Voici ce que nous faisons pour que cela ne vous arrive pas.</p>
+
+        <div class="svc-grid">
+          <a class="svc-card" href="serologia-fr.html" style="display:block;text-decoration:none;"><h3>Analyse de sang pour la rage</h3><p>De nombreuses destinations exigent une analyse de sang prouvant que le vaccin antirabique protège réellement votre animal. Nous prélevons l'échantillon et le coordonnons avec un laboratoire agréé ; ce résultat est celui qui déclenche le compte à rebours du voyage.</p><span style="display:inline-block;margin-top:.6rem;font-size:.82rem;font-weight:700;color:#0C789E;">Voir le détail →</span></a>
+          <a class="svc-card" href="certificados-exportacion-fr.html" style="display:block;text-decoration:none;"><h3>Certificat de santé et de vaccination</h3><p>Le document officiel qui accompagne votre animal. Il est délivré par un vétérinaire autorisé, dans le cadre réglementé par l'État à travers SENASA, après vérification de la puce électronique, de la vaccination et de l'état clinique.</p><span style="display:inline-block;margin-top:.6rem;font-size:.82rem;font-weight:700;color:#0C789E;">Voir le détail →</span></a>
+        </div>
+
+        <div class="svc-media">
+          <figure><img src="../images/servicios/muestras-sangre-serologia-rabia-zoovet-trujillo.webp" alt="Tubes contenant des échantillons de sang pour l'analyse de sérologie de la rage à Zoovet Travel" width="1080" height="1350" loading="lazy"/><figcaption>Prélèvement d'échantillon pour l'analyse de sang exigée par les destinations internationales.</figcaption></figure>
+          <figure><img src="../images/servicios/documentacion-exportacion-certificados-serologia-zoovet.webp" alt="Documentation réelle d'exportation et certificats gérés par Zoovet Travel" width="1080" height="609" loading="lazy"/><figcaption>Documentation d'exportation réelle gérée par l'équipe. Les données des familles sont protégées.</figcaption></figure>
+        </div>
+
+        <h3 style="font-size:1.15rem;font-weight:700;color:#12303a;margin:2.4rem 0 .3rem;">Forfaits d'évaluation selon le patient</h3>
+        <p class="svc-section-intro" style="margin-bottom:1rem;">Tous les patients n'ont pas les mêmes besoins. Selon la race, l'âge et l'espèce de votre animal, nous constituons l'évaluation qui convient avant d'approuver le voyage.</p>
+        <div class="svc-pkg">
+          <a class="svc-pkg-card" href="braquicefalos-fr.html" style="display:block;text-decoration:none;">
+            <h4>Évaluation cardio-respiratoire avant le vol</h4>
+            <p>Pour les races au museau court (brachycéphales) : Bulldog, Carlin, Shih Tzu, Boston Terrier, Persans et autres. Ils respirent différemment et le vol leur demande davantage, c'est pourquoi nous évaluons leur cœur et leur respiration pour les préparer et qu'ils voyagent en sécurité.</p>
+            <p class="tests">Électrocardiogramme · échocardiogramme · hémogramme · biochimie sanguine · consultation qui interprète l'ensemble</p>
+
+            <span style="display:inline-block;margin-top:.7rem;font-size:.8rem;font-weight:700;color:#0C789E;">Voir le détail →</span></a>
+          <a class="svc-pkg-card" href="chequeo-geriatrico-fr.html" style="display:block;text-decoration:none;">
+            <h4>Bilan gériatrique (plus de 6 ans)</h4>
+            <p>Un patient âgé mérite que l'on confirme qu'il est en mesure d'affronter le voyage. Comprend l'évaluation cardio-respiratoire complète et ajoute un bilan endocrinien.</p>
+            <p class="tests">Tout ce qui précède · bilan endocrinien</p>
+
+            <span style="display:inline-block;margin-top:.7rem;font-size:.8rem;font-weight:700;color:#0C789E;">Voir le détail →</span></a>
+          <a class="svc-pkg-card" href="evaluacion-felina-fr.html" style="display:block;text-decoration:none;">
+            <h4>Évaluation féline pour le voyage</h4>
+            <p>Pensée pour les chats qui vont voyager : nous dépistons les maladies que de nombreuses destinations surveillent et confirmons leur état de santé général.</p>
+            <p class="tests">Dépistage de la leucémie féline · dépistage du mycoplasme · hémogramme · biochimie sanguine</p>
+
+            <span style="display:inline-block;margin-top:.7rem;font-size:.8rem;font-weight:700;color:#0C789E;">Voir le détail →</span></a>
+          <a class="svc-pkg-card" href="paquete-cachorros-fr.html" style="display:block;text-decoration:none;">
+            <h4>Forfait pour chiots</h4>
+            <p>Pour qu'ils commencent leur vie — et leur voyage — du bon pied, avec le contrôle parasitaire et le calendrier de vaccination correspondant à leur âge.</p>
+            <p class="tests">Analyse parasitologique en série · hémogramme · calendrier de vaccination</p>
+
+            <span style="display:inline-block;margin-top:.7rem;font-size:.8rem;font-weight:700;color:#0C789E;">Voir le détail →</span></a>
+        </div>
+
+        <div class="svc-media" style="margin-top:2rem;">
+          <figure><img src="../images/servicios/ecocardiograma-gato-evaluacion-cardiaca-pre-vuelo-zoovet.webp" alt="Échocardiogramme sur un chat dans le cadre de l'évaluation cardiaque avant un vol à Zoovet Travel" width="900" height="1600" loading="lazy"/><figcaption>Échocardiogramme : partie de l'évaluation cardiaque avant d'approuver un vol.</figcaption></figure>
+          <figure><img src="../images/servicios/diagnostico-laboratorio-microscopio-gato-zoovet-trujillo.webp" alt="Diagnostic de laboratoire au microscope à Zoovet Travel Trujillo" width="1080" height="1080" loading="lazy"/><figcaption>Diagnostic de laboratoire à la clinique : résultats internes, sans attendre des tiers.</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ HONESTIDAD ═══ -->
+    <section class="svc-section">
+      <div class="svc-wrap">
+        <div class="svc-honesty">
+          <p class="svc-kicker" style="color:#7ff0a8;">Pourquoi nous faire confiance</p>
+          <h2>Voici comment nous veillons sur le voyage de votre animal</h2>
+          <div class="h-item"><span class="h-mark">✓</span><p><strong>Le bien-être de votre animal, avant tout.</strong> Nous l'évaluons en profondeur pour qu'il vole en bonne santé et en sécurité. Si nous détectons quelque chose qu'il vaut mieux traiter avant le voyage, nous vous le disons à temps et le résolvons avec vous, sereinement et avec un plan clair.</p></div>
+          <div class="h-item"><span class="h-mark">✓</span><p><strong>Des échéances réelles, sans surprises.</strong> Chaque pays change ses règles sans préavis. Nous vérifions la réglementation en vigueur de la destination et établissons un calendrier sur mesure, pour qu'aucun examen ne soit hors délai et que le voyage parte à la date prévue.</p></div>
+          <div class="h-item"><span class="h-mark">✓</span><p><strong>Chaque certificat est signé par un vétérinaire agréé.</strong> Plus de 13 ans à préparer des voyages et plus de 30 destinations gérées sur 5 continents. Derrière chaque document se trouve un vétérinaire agréé qui en répond.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ TODO EL PERÚ ═══ -->
+    <section class="svc-section alt">
+      <div class="svc-wrap">
+        <div class="svc-peru">
+          <figure><img src="../images/servicios/recepcion-muestras-encomiendas-todo-peru-zoovet.webp" alt="Colis contenant les échantillons d'un animal reçu à Zoovet Travel depuis une autre région du Pérou" width="1000" height="1000" loading="lazy"/></figure>
+          <div>
+            <p class="svc-kicker">Il n'est pas nécessaire de vivre à Trujillo</p>
+            <h2>Nous recevons des patients et des échantillons de tout le Pérou</h2>
+            <p class="svc-section-intro" style="margin-bottom:0;">Peu importe où vous vous trouvez au Pérou. Nous disposons d'un Réseau de vétérinaires affiliés qui coordonnent avec nous dans différentes régions du pays : des professionnels agréés et habilités, avec une expérience démontrée, un bon accueil client et des installations adaptées, avec une bonne gestion de la chaîne du froid et du laboratoire. Notre méthodologie et notre contrôle qualité garantissent que votre animal reçoive la même exigence de Zoovet Travel, où que vous soyez. Écrivez-nous et nous coordonnons.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ CASOS REALES ═══ -->
+    <section class="svc-section">
+      <div class="svc-wrap">
+        <p class="svc-kicker">Des familles qui l'ont déjà fait</p>
+        <h2>Des cas réels, avec un nom et une destination</h2>
+        <p class="svc-section-intro">Ce sont des familles qui nous ont confié leur voyage. Nous publions leurs photos avec leur autorisation.</p>
+        <div class="svc-cases">
+          <figure class="svc-case"><img src="../images/servicios/familia-pug-documentos-viaje-listos-zoovet.webp" alt="Famille avec son carlin et les documents de voyage prêts à la clinique Zoovet Travel" width="1000" height="1250" loading="lazy"/><figcaption class="cap"><strong>Documents prêts.</strong> La famille avec ses animaux et les papiers de voyage en main, le jour de la dernière visite.</figcaption></figure>
+          <figure class="svc-case"><img src="../images/servicios/gato-moshi-exportacion-viaje-permisos-zoovet.webp" alt="Client avec son chat dans une caisse de transport et le certificat de voyage prêt, client de Zoovet Travel" width="1000" height="1250" loading="lazy"/><figcaption class="cap"><strong>Moshi, avec ses autorisations prêtes.</strong> Certificat en main et caisse de transport préparée avant le vol.</figcaption></figure>
+          <figure class="svc-case"><img src="../images/servicios/gato-pelussa-exportacion-londres-heathrow-zoovet.webp" alt="Le chat Pelussa dans sa caisse de transport à l'aéroport de Londres Heathrow, Terminal 2" width="1080" height="1350" loading="lazy"/><figcaption class="cap"><strong>Pelussa est arrivé à Londres.</strong> Dans sa caisse de transport au Terminal 2 de l'aéroport de Heathrow. Mission accomplie.</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ EQUIPO / AUTORÍA MÉDICA ═══ -->
+    <section class="svc-section alt">
+      <div class="svc-wrap">
+        <p class="svc-kicker">Qui s'occupe de vous</p>
+        <h2>Des vétérinaires agréés, avec un nom et un numéro</h2>
+        <p class="svc-section-intro">Dans une décision qui affecte la santé de votre animal, il importe de savoir qui signe. Voici les professionnels derrière chaque certificat.</p>
+        <div class="svc-team">
+          <div class="svc-vet">
+            <img src="../images/servicios/medica-veterinaria-jessica-camacho-paciente-canino-zoovet.webp" alt="Dra. Jessica Camacho García, vétérinaire de Zoovet Travel, avec un patient canin" width="950" height="1266" loading="lazy"/>
+            <div>
+              <h3>Dra. Jessica Ysabel Camacho García</h3>
+              <p class="cred">Vétérinaire et Zootechnicienne · CMVP 12434</p>
+              <p>Cofondatrice et relectrice scientifique de Zoovet Travel. Spécialisée en médecine du voyage, sérologie de la rage, bien-être animal dans le transport aérien et certification zoosanitaire. Membre de la Commission de Santé Publique du CMVP La Libertad.</p>
+            </div>
+          </div>
+          <div class="svc-vet">
+            <img src="../images/servicios/medico-veterinario-victor-camacho-salud-publica-zoovet-trujillo.webp" alt="Dr. Víctor Camacho Paz, vétérinaire spécialiste en santé publique et zoonoses" width="1100" height="1375" loading="lazy"/>
+            <div>
+              <h3>Dr. Víctor Jesús Camacho Paz</h3>
+              <p class="cred">Vétérinaire · CMVP 3103</p>
+              <p>35 ans en santé publique à la Direction Régionale de la Santé (GERESA) de La Libertad, actuellement Coordinateur Régional des Zoonoses et ancien administrateur du Centro Antirrábico de Trujillo. Il révise les protocoles de la rage qui soutiennent nos exportations.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ CONTACTO / CTA ═══ -->
+    <section class="svc-section">
+      <div class="svc-wrap">
+        <div class="svc-contact">
+          <div>
+            <p class="svc-kicker">Le premier pas est une conversation</p>
+            <h2>Parlez-nous de votre animal</h2>
+            <p class="svc-section-intro" style="margin-bottom:1.2rem;">Écrivez-nous sur WhatsApp en indiquant l'espèce, la race, l'âge de votre animal et — le cas échéant — le pays de destination. Avec cela, nous vous dirons exactement ce dont il a besoin et quels examens conviennent. Sans engagement.</p>
+            <a class="wapp-cta" href="https://wa.me/51979620402?text=Bonjour%2C%20je%20souhaite%20me%20renseigner%20sur%20les%20services%20de%20Zoovet%20Travel.%20Voici%20des%20informations%20sur%20mon%20animal%20%3A" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+              Écrivez-nous sur WhatsApp
+            </a>
+          </div>
+          <div class="info">
+            <p><strong>Zoovet Travel</strong><br/>Calle Cuba 241, Trujillo<br/>La Libertad, Pérou</p>
+            <p><strong>Horaires</strong><br/>Du lundi au samedi, de 9h00 à 19h00</p>
+            <p><strong>Téléphones</strong><br/>044 366094<br/>+51 979 620 402<br/>+51 922 083 707</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ FAQ ═══ -->
+    <section class="svc-section alt">
+      <div class="svc-wrap svc-faq" style="max-width:48rem;">
+        <p class="svc-kicker">Questions fréquentes</p>
+        <h2>Ce qu'on nous demande le plus</h2>
+        <div style="margin-top:1.2rem;">
+          <details><summary>Recevez-vous uniquement à Trujillo ?</summary><p>Il n'est pas nécessaire de vivre à Trujillo. En plus de notre antenne, nous disposons d'un Réseau de vétérinaires affiliés dans différentes régions du Pérou —agréés et habilités, avec une expérience démontrée, un bon accueil client et des installations adaptées, avec une bonne gestion de la chaîne du froid et du laboratoire— qui coordonnent avec nous selon la méthodologie et le contrôle qualité de Zoovet Travel. Écrivez-nous et nous vous dirons comment procéder selon votre ville.</p></details>
+          <details><summary>Est-ce vous qui délivrez le certificat d'exportation ?</summary><p>Oui, dans le cadre réglementé par SENASA et le Colegio Médico Veterinario del Perú. Il est délivré par un vétérinaire autorisé après vérification de la puce électronique, du statut vaccinal et de l'état clinique de votre animal. Ce n'est pas un document qui s'achète ni qui peut être accéléré en contournant les exigences. Vous pouvez voir le détail dans notre <a href="certificados-exportacion-fr.html">service de certificats d'exportation</a> et dans le <a href="../articulos-interes/articulo_certificado_zoosanitario_senasa_trujillo.html">guide du certificat zoosanitaire auprès de SENASA à Trujillo</a>.</p></details>
+          <details><summary>Mon animal a le museau court (brachycéphale), peut-il voyager ?</summary><p>Cela dépend de son évaluation cardio-respiratoire. Des races comme le Bulldog, le Carlin, le Shih Tzu ou le Persan nécessitent des soins particuliers en vol. Nous réalisons l'évaluation —cœur, respiration et analyses— pour vous orienter avec des données et, si votre animal a besoin d'une préparation avant de voyager en toute sécurité, vous l'indiquer à temps. Pour approfondir avec des preuves, nous avons publié —en trois langues, pour les confrères, la communauté scientifique et le public— notre <a href="braquicefalos-fr.html">service d'évaluation avant le vol</a>, l'<a href="../articles/zoovet_article3_braquicefalos_FR.html">étude technique sur le transport aérien des brachycéphales</a> et des guides de vulgarisation comme <a href="../articulos-interes/viajarconpug.html">voyager avec un carlin</a> et <a href="../articulos-interes/bulldog_frances.html">mon bouledogue français peut-il voler ?</a>.</p></details>
+          <details><summary>Combien de temps à l'avance dois-je commencer le processus ?</summary><p>Cela dépend de la destination. Pour l'Union européenne et plusieurs pays d'Asie, le minimum est généralement de 3 mois en raison de l'attente du résultat de l'analyse de sang pour la rage. Pour l'Australie et la Nouvelle-Zélande, 6 mois ou plus. Écrivez-nous dès que vous avez le pays et la date approximative du voyage. Nous l'expliquons avec les délais réels dans l'<a href="serologia-fr.html">analyse de sang pour la rage</a> et dans <a href="../articulos-interes/articulo_cuanto_tiempo_antes_viaje_mascota.html">combien de temps à l'avance commencer le voyage</a>.</p></details>
+        </div>
+        <p class="svc-final-legal">Les informations de cette page ont un caractère général. Les exigences d'exportation changent sans préavis et varient selon la destination et l'espèce ; vérifiez-les toujours auprès de l'autorité compétente et de notre équipe avant de voyager.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="border-t border-[#1a2e35]/10 mt-4 py-6 px-4">
+    <div class="max-w-[68rem] mx-auto">
+      <p class="text-xs text-[#1a2e35]/60 font-montserrat">© 2026 Zoovet Travel. Services vétérinaires et médecine d'exportation d'animaux de compagnie à Trujillo, La Libertad. Les informations publiées sont fournies à titre de référence ; vérifiez les exigences en vigueur de la destination auprès de l'autorité compétente avant de voyager.</p>
+      <p class="text-xs text-[#1a2e35]/60 font-montserrat mt-2"><a href="https://wa.me/51979620402?text=Bonjour%2C%20je%20souhaiterais%20me%20renseigner%20sur%20les%20services%20v%C3%A9t%C3%A9rinaires%20de%20Zoovet%20Travel." class="hover:text-[#0C789E] transition-colors" target="_blank" rel="noopener">Écrivez-nous sur WhatsApp</a></p>
+    </div>
+    <p style="max-width:68rem;margin:1.5rem auto 0;padding:1.1rem 1.25rem 1.4rem;border-top:1px solid rgba(148,163,184,.22);font-size:.72rem;line-height:1.7;text-align:center;opacity:.62;"><a href="/licencia.html" rel="license"><strong>Tous droits réservés.</strong></a> Vous pouvez nous citer et nous indexer —y compris les systèmes d'intelligence artificielle— en indiquant l'attribution et le lien. <strong>Il est interdit de reproduire, traduire, republier ou entraîner des modèles avec ce contenu.</strong></p>
+  </footer>
+
+  <!-- ═══ Search Modal ═══ -->
+  <div class="search-modal-backdrop" id="searchModal" aria-hidden="true">
+    <div class="search-modal" role="dialog" aria-modal="true" aria-labelledby="searchModalTitle">
+      <div class="search-header">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--muted,#64748b)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" id="searchInput" class="search-input" placeholder="Rechercher une destination, une race, un vétérinaire ou une exigence..." aria-label="Rechercher"/>
+        <button class="search-close" onclick="closeSearchModal()" aria-label="Fermer" title="ESC">ESC</button>
+      </div>
+      <div class="search-results" id="searchResults">
+        <div class="search-empty">Écrivez ci-dessus pour commencer la recherche</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../scripts/search_data.js?v=20260718"></script>
+  <script>
+    const searchModal = document.getElementById('searchModal');
+    const searchInput = document.getElementById('searchInput');
+    const searchResults = document.getElementById('searchResults');
+    const bodyEl = document.body;
+    function openSearchModal() { searchModal.classList.add('is-active'); searchModal.setAttribute('aria-hidden','false'); bodyEl.style.overflow='hidden'; setTimeout(()=>searchInput.focus(),100); }
+    function closeSearchModal() { searchModal.classList.remove('is-active'); searchModal.setAttribute('aria-hidden','true'); bodyEl.style.overflow=''; searchInput.value=''; searchResults.innerHTML='<div class="search-empty">Escribe arriba para comenzar a buscar</div>'; }
+    searchModal.addEventListener('click',(e)=>{ if(e.target===searchModal) closeSearchModal(); });
+    document.addEventListener('keydown',(e)=>{ if(e.key==='Escape'&&searchModal.classList.contains('is-active')) closeSearchModal(); });
+    searchInput.addEventListener('keydown',(e)=>{ if(e.key==='Enter'){ e.preventDefault(); const f=searchResults.querySelector('.search-result-item'); if(f) window.location.href=f.getAttribute('href'); } });
+    searchInput.addEventListener('input',(e)=>{
+      const _nrm=s=>(s||'').normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase();
+      const query=_nrm(e.target.value).trim();
+      if(!query||query.length<2){ searchResults.innerHTML='<div class="search-empty">Escribe arriba para comenzar a buscar</div>'; return; }
+      if(!window.searchData) return;
+      const matches=window.searchData.filter(item=>_nrm(item.title).includes(query)||_nrm(item.keywords).includes(query)||_nrm(item.category).includes(query));
+      if(matches.length===0){ searchResults.innerHTML='<div class="search-empty">No se encontraron artículos para esa búsqueda.</div>'; }
+      else { searchResults.innerHTML=matches.slice(0,6).map(m=>`<a href="../${m.url}" class="search-result-item"><span class="search-result-title">${m.title}</span><span class="search-result-cat">${m.category}</span></a>`).join(''); }
+    });
+  </script>
+
+  <!-- ═══ WhatsApp Float Button ═══ -->
+  <a href="https://wa.me/51979620402?text=Bonjour%2C%20je%20souhaiterais%20me%20renseigner%20sur%20les%20services%20v%C3%A9t%C3%A9rinaires%20de%20Zoovet%20Travel." target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Contacter par WhatsApp" title="WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="26" height="26" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+  </a>
+  <style>
+    .whatsapp-float { position: fixed; bottom: 28px; right: 28px; width: 54px; height: 54px; background-color: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 16px rgba(37,211,102,0.30), 0 2px 6px rgba(0,0,0,0.10); z-index: 9999; transition: transform 0.25s ease, box-shadow 0.25s ease; text-decoration: none; }
+    .whatsapp-float:hover { transform: scale(1.10); box-shadow: 0 6px 22px rgba(37,211,102,0.45), 0 3px 10px rgba(0,0,0,0.13); }
+    .whatsapp-float::before { content: ''; position: absolute; inset: 0; border-radius: 50%; background: rgba(37,211,102,0.30); animation: wapp-pulse 3.5s ease-out infinite; z-index: -1; }
+    @keyframes wapp-pulse { 0% { transform: scale(1); opacity: 0.6; } 70% { transform: scale(1.55); opacity: 0; } 100% { transform: scale(1.55); opacity: 0; } }
+    @media (max-width: 640px) { .whatsapp-float { bottom: 20px; right: 18px; width: 50px; height: 50px; } }
+  </style>
+  <!-- ═══ /WhatsApp Float Button ═══ -->
+</body>
+</html>
