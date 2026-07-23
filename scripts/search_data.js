@@ -1,4 +1,4 @@
-// Base de datos de Búsqueda — regenerada el 18-07-2026 (597 páginas)
+// Base de datos de Búsqueda — regenerada el 18-07-2026 (603 páginas)
 const rawSearchData = [
  {
   "title": "No existe una lista única de laboratorios antirrábicos: cada autoridad tiene la suya",
@@ -1175,6 +1175,48 @@ const rawSearchData = [
   "category": "Atlas",
   "keywords": "¿Vas a Andorra con tu perro o gato? No tiene aeropuerto: se entra por España o Francia. Mira si tu país necesita prueba de sangre y las razas de perro con reglas especiales. 2026.",
   "lang": "es"
+ },
+ {
+  "title": "Requisitos para entrar a Turquía con tu mascota 2026: país por país",
+  "url": "atlas/turquia.html",
+  "category": "Atlas",
+  "keywords": "¿Vas a Turquía con tu perro o gato? El país europeo sin lista: análisis de sangre en laboratorio de la UE y 3 meses de espera para todos. Mira si tu país tiene lab UE o si la muestra viaja. 234 países. 2026.",
+  "lang": "es"
+ },
+ {
+  "title": "Requirements to enter Turkey with your pet 2026: country by country",
+  "url": "atlas/turquia-en.html",
+  "category": "Atlas",
+  "keywords": "Off to Turkey with your dog or cat? The European country with no list: an EU-lab blood test and a 3-month wait for everyone. See if your country has an EU lab or the sample travels. 234 countries. 2026.",
+  "lang": "en"
+ },
+ {
+  "title": "Conditions pour entrer en Turquie avec votre animal 2026 : pays par pays",
+  "url": "atlas/turquia-fr.html",
+  "category": "Atlas",
+  "keywords": "Vous partez en Turquie avec votre chien ou chat ? Le pays européen sans liste : analyse de sang en laboratoire de l'UE et 3 mois d'attente pour tous. Voyez si votre pays a un labo UE ou si l'échantillon voyage. 234 pays. 2026.",
+  "lang": "fr"
+ },
+ {
+  "title": "Requisitos para entrar na Turquia com seu pet 2026: país por país",
+  "url": "atlas/turquia-pt.html",
+  "category": "Atlas",
+  "keywords": "Vai para a Turquia com seu cão ou gato? O país europeu sem lista: exame de sangue em laboratório da UE e 3 meses de espera para todos. Veja se seu país tem lab UE ou se a amostra viaja. 234 países. 2026.",
+  "lang": "pt"
+ },
+ {
+  "title": "Einreise in die Türkei mit Haustier 2026: Land für Land",
+  "url": "atlas/turquia-de.html",
+  "category": "Atlas",
+  "keywords": "Mit Hund oder Katze in die Türkei? Das europäische Land ohne Liste: Bluttest im EU-Labor und 3 Monate Wartezeit für alle. Sehen Sie, ob Ihr Land ein EU-Labor hat oder die Probe reist. 234 Länder. 2026.",
+  "lang": "de"
+ },
+ {
+  "title": "Requisiti per entrare in Turchia con il tuo animale 2026: paese per paese",
+  "url": "atlas/turquia-it.html",
+  "category": "Atlas",
+  "keywords": "Vai in Turchia con il tuo cane o gatto? Il paese europeo senza elenco: analisi del sangue in laboratorio UE e 3 mesi di attesa per tutti. Guarda se il tuo paese ha un lab UE o se il campione viaggia. 234 Paesi. 2026.",
+  "lang": "it"
  },
  {
   "title": "Einreisebestimmungen für Australien mit Haustier 2026: Einstufung nach Land",
