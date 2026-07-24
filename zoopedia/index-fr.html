@@ -558,7 +558,7 @@
 </div>
 </div>
 </div>
-<script src="../scripts/search_data.js?v=20260718"></script>
+<script src="../scripts/search_data.js?v=20260724"></script>
 <script>
     const searchModal = document.getElementById('searchModal');
     const searchInput = document.getElementById('searchInput');
@@ -622,7 +622,7 @@
       } else {
         const topMatches = matches.slice(0, 6);
         searchResults.innerHTML = topMatches.map(match => `
-          <a href="#" data-url="../${match.url}" class="search-result-item">
+          <a href="../${match.url}" class="search-result-item">
             <span class="search-result-title">${match.title}</span>
             <span class="search-result-cat">${match.category}</span>
           </a>

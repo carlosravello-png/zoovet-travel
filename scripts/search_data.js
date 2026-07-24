@@ -1,4 +1,4 @@
-// Base de datos de Búsqueda — regenerada el 18-07-2026 (603 páginas)
+// Base de datos de Búsqueda — actualizada el 24-07-2026 (717 páginas)
 const rawSearchData = [
  {
   "title": "No existe una lista única de laboratorios antirrábicos: cada autoridad tiene la suya",
@@ -4220,6 +4220,804 @@ const rawSearchData = [
   "category": "Serie técnica",
   "keywords": "Le risque physique en soute est faible (99,99 % sans incident, US DOT 2025), mais le stress du propriétaire se transmet au chien. Modèle de la dyade couplée, anxiété de séparation, chimiosignaux de peur, cortisol, sédation déconseillée. Préprint avec DOI.",
   "lang": "fr"
+ },
+ {
+  "title": "Pre-flight assessment for brachycephalic (short-nosed) breeds",
+  "url": "servicios/braquicefalos-en.html",
+  "category": "Servicios",
+  "keywords": "Does your bulldog or pug need to fly and you fear for its breathing? We assess flight fitness with BOAS screening and clinical judgment. WhatsApp us.",
+  "lang": "en"
+ },
+ {
+  "title": "Évaluation avant le vol pour les races brachycéphales (au museau court)",
+  "url": "servicios/braquicefalos-fr.html",
+  "category": "Servicios",
+  "keywords": "Votre bouledogue ou carlin doit voler et sa respiration vous inquiète ? Nous évaluons son aptitude au vol par dépistage BOAS. Écrivez-nous sur WhatsApp.",
+  "lang": "fr"
+ },
+ {
+  "title": "Evaluación pre-vuelo para razas braquicéfalas (hocico corto)",
+  "url": "servicios/braquicefalos.html",
+  "category": "Servicios",
+  "keywords": "¿Tu bulldog o pug debe volar y temes por su respiración? Evaluamos su aptitud al vuelo con cribado BOAS y criterio clínico. Consúltanos por WhatsApp.",
+  "lang": "es"
+ },
+ {
+  "title": "Health and vaccination certificates for exporting pets",
+  "url": "servicios/certificados-exportacion-en.html",
+  "category": "Servicios",
+  "keywords": "Trip near and your pet's certificates missing? We issue the health and vaccination certificate valid for SENASA and the destination. Message us today.",
+  "lang": "en"
+ },
+ {
+  "title": "Certificats de santé et de vaccination pour exporter vos animaux",
+  "url": "servicios/certificados-exportacion-fr.html",
+  "category": "Servicios",
+  "keywords": "Voyage proche et certificats de votre animal manquants ? Nous délivrons le certificat de santé et de vaccination valable SENASA et destination. Écrivez-nous.",
+  "lang": "fr"
+ },
+ {
+  "title": "Certificados de salud y vacunación para exportar mascotas",
+  "url": "servicios/certificados-exportacion.html",
+  "category": "Servicios",
+  "keywords": "¿Viaje encima y sin los certificados de tu mascota? Emitimos el certificado de salud y vacunación válido ante SENASA y el país destino. Escríbenos hoy.",
+  "lang": "es"
+ },
+ {
+  "title": "Pre-travel geriatric check-up for senior pets",
+  "url": "servicios/chequeo-geriatrico-en.html",
+  "category": "Servicios",
+  "keywords": "Senior dog or cat traveling and you worry about its health? A full geriatric check-up confirms its real fitness before the flight. Book on WhatsApp.",
+  "lang": "en"
+ },
+ {
+  "title": "Bilan gériatrique avant le voyage pour animaux âgés",
+  "url": "servicios/chequeo-geriatrico-fr.html",
+  "category": "Servicios",
+  "keywords": "Chien ou chat âgé qui voyage et sa santé vous inquiète ? Un bilan gériatrique complet confirme son aptitude avant le vol. Réservez sur WhatsApp.",
+  "lang": "fr"
+ },
+ {
+  "title": "Chequeo geriátrico antes del viaje para mascotas mayores",
+  "url": "servicios/chequeo-geriatrico.html",
+  "category": "Servicios",
+  "keywords": "¿Tu perro o gato mayor va a viajar y te preocupa su salud? Chequeo geriátrico completo que confirma su aptitud real antes del vuelo. Agenda por WhatsApp.",
+  "lang": "es"
+ },
+ {
+  "title": "Veterinary consultation and clinical exam in Trujillo",
+  "url": "servicios/consulta-examen-en.html",
+  "category": "Servicios",
+  "keywords": "Your pet isn't well and you don't know why? A full clinical consultation and exam to reach the right diagnosis, not guesswork. Book on WhatsApp.",
+  "lang": "en"
+ },
+ {
+  "title": "Consultation et examen clinique vétérinaire à Trujillo",
+  "url": "servicios/consulta-examen-fr.html",
+  "category": "Servicios",
+  "keywords": "Votre animal ne va pas bien et vous ignorez pourquoi ? Consultation et examen clinique complets pour le bon diagnostic, sans deviner. Réservez sur WhatsApp.",
+  "lang": "fr"
+ },
+ {
+  "title": "Consulta y examen clínico veterinario en Trujillo",
+  "url": "servicios/consulta-examen.html",
+  "category": "Servicios",
+  "keywords": "¿Tu mascota no está bien y no sabes por qué? Consulta y examen clínico completo para llegar al diagnóstico correcto, sin adivinar. Reserva por WhatsApp.",
+  "lang": "es"
+ },
+ {
+  "title": "Veterinary dermatology in Trujillo: allergies, otitis and skin",
+  "url": "servicios/dermatologia-en.html",
+  "category": "Servicios",
+  "keywords": "Pet scratching nonstop and ear infections keep returning? We find the real cause of the allergy or skin issue and control flare-ups. WhatsApp us.",
+  "lang": "en"
+ },
+ {
+  "title": "Dermatologie vétérinaire à Trujillo : allergies, otites et peau",
+  "url": "servicios/dermatologia-fr.html",
+  "category": "Servicios",
+  "keywords": "Votre animal se gratte sans cesse et les otites reviennent ? Nous trouvons la vraie cause de l'allergie ou de la peau et maîtrisons les poussées. Écrivez-nous.",
+  "lang": "fr"
+ },
+ {
+  "title": "Dermatología veterinaria en Trujillo: alergias, otitis y piel",
+  "url": "servicios/dermatologia.html",
+  "category": "Servicios",
+  "keywords": "¿Tu mascota se rasca sin parar y las otitis vuelven? Hallamos la causa real de la alergia o la piel y controlamos los brotes con evidencia. Agenda hoy.",
+  "lang": "es"
+ },
+ {
+  "title": "Deworming for dogs and cats in Trujillo",
+  "url": "servicios/desparasitacion-en.html",
+  "category": "Servicios",
+  "keywords": "Parasites that keep coming back, or a travel requirement? Documented internal and external deworming, tailored to the destination. Message us on WhatsApp.",
+  "lang": "en"
+ },
+ {
+  "title": "Vermifugation des chiens et des chats à Trujillo",
+  "url": "servicios/desparasitacion-fr.html",
+  "category": "Servicios",
+  "keywords": "Parasites qui reviennent ou exigence de voyage ? Vermifugation interne et externe documentée, selon la destination et votre animal. Écrivez-nous sur WhatsApp.",
+  "lang": "fr"
+ },
+ {
+  "title": "Desparasitación de perros y gatos en Trujillo",
+  "url": "servicios/desparasitacion.html",
+  "category": "Servicios",
+  "keywords": "¿Parásitos que vuelven o requisito para viajar? Desparasitación interna y externa documentada, según el destino y tu mascota. Escríbenos por WhatsApp.",
+  "lang": "es"
+ },
+ {
+  "title": "Veterinary ultrasound and cardiology in Trujillo: echocardiogram and ECG",
+  "url": "servicios/ecografia-cardiologia-en.html",
+  "category": "Servicios",
+  "keywords": "Need to rule out a heart or abdominal problem in your pet? Ultrasound and cardiac assessment with a clear clinical read. Coordinate it on WhatsApp.",
+  "lang": "en"
+ },
+ {
+  "title": "Échographie et cardiologie vétérinaire à Trujillo : échocardiogramme et ECG",
+  "url": "servicios/ecografia-cardiologia-fr.html",
+  "category": "Servicios",
+  "keywords": "Besoin d'écarter un problème cardiaque ou abdominal chez votre animal ? Échographie et bilan cardiaque avec lecture clinique claire. Coordonnez sur WhatsApp.",
+  "lang": "fr"
+ },
+ {
+  "title": "Ecografía y cardiología veterinaria en Trujillo: ecocardiograma y ECG",
+  "url": "servicios/ecografia-cardiologia.html",
+  "category": "Servicios",
+  "keywords": "¿Necesitas descartar un problema de corazón o abdomen en tu mascota? Ecografía y evaluación cardiológica con lectura clínica clara. Coordina por WhatsApp.",
+  "lang": "es"
+ },
+ {
+  "title": "Veterinary endocrinology in Trujillo: diabetes, thyroid and Cushing",
+  "url": "servicios/endocrinologia-en.html",
+  "category": "Servicios",
+  "keywords": "Excessive thirst, hair loss or weight changes with no cause? We confirm and control diabetes, thyroid or Cushing with follow-up. Message us on WhatsApp.",
+  "lang": "en"
+ },
+ {
+  "title": "Endocrinologie vétérinaire à Trujillo : diabète, thyroïde et Cushing",
+  "url": "servicios/endocrinologia-fr.html",
+  "category": "Servicios",
+  "keywords": "Soif excessive, perte de poils ou de poids sans cause ? Nous confirmons et maîtrisons diabète, thyroïde ou Cushing avec suivi. Écrivez-nous sur WhatsApp.",
+  "lang": "fr"
+ },
+ {
+  "title": "Endocrinología veterinaria en Trujillo: diabetes, tiroides y Cushing",
+  "url": "servicios/endocrinologia.html",
+  "category": "Servicios",
+  "keywords": "¿Sed excesiva, caída de pelo o cambios de peso sin causa? Confirmamos y controlamos diabetes, tiroides o Cushing con seguimiento. Consúltanos por WhatsApp.",
+  "lang": "es"
+ },
+ {
+  "title": "Feline evaluation for international travel",
+  "url": "servicios/evaluacion-felina-en.html",
+  "category": "Servicios",
+  "keywords": "Is your cat traveling and needs leukemia or mycoplasma ruled out? A full feline evaluation before the flight, stress-free. Book on WhatsApp.",
+  "lang": "en"
+ },
+ {
+  "title": "Évaluation féline pour voyage international",
+  "url": "servicios/evaluacion-felina-fr.html",
+  "category": "Servicios",
+  "keywords": "Votre chat voyage et il faut écarter leucémie ou mycoplasme ? Une évaluation féline complète avant le vol, sans stress. Réservez sur WhatsApp.",
+  "lang": "fr"
+ },
+ {
+  "title": "Evaluación felina para viaje internacional",
+  "url": "servicios/evaluacion-felina.html",
+  "category": "Servicios",
+  "keywords": "¿Tu gato debe viajar y hay que descartar leucemia o micoplasma? Evaluación felina completa antes del vuelo y sin estrés para él. Agenda por WhatsApp.",
+  "lang": "es"
+ },
+ {
+  "title": "Veterinary services in Trujillo: consultations, vaccines and pet export",
+  "url": "servicios/index-en.html",
+  "category": "Servicios",
+  "keywords": "Is your pet sick or traveling abroad? Consultations, clinical specialties and SENASA pet export in one place, backed by evidence. Message us on WhatsApp.",
+  "lang": "en"
+ },
+ {
+  "title": "Services vétérinaires à Trujillo : consultation, vaccins et exportation d'animaux de compagnie",
+  "url": "servicios/index-fr.html",
+  "category": "Servicios",
+  "keywords": "Votre animal est malade ou part à l'étranger ? Consultations, spécialités cliniques et exportation SENASA au même endroit, avec preuves. Écrivez-nous.",
+  "lang": "fr"
+ },
+ {
+  "title": "Servicios veterinarios en Trujillo: consulta, vacunas y exportación de mascotas",
+  "url": "servicios/index.html",
+  "category": "Servicios",
+  "keywords": "¿Tu mascota enferma o viaja al extranjero? Consulta, especialidades clínicas y exportación con SENASA en un mismo lugar y con evidencia. Agenda por WhatsApp.",
+  "lang": "es"
+ },
+ {
+  "title": "Veterinary internal medicine in Trujillo: clinical diagnosis",
+  "url": "servicios/medicina-interna-en.html",
+  "category": "Servicios",
+  "keywords": "Symptoms that keep repeating and no clear diagnosis? We investigate the real cause with method and targeted tests, acute or chronic. Book on WhatsApp.",
+  "lang": "en"
+ },
+ {
+  "title": "Médecine interne vétérinaire à Trujillo : diagnostic clinique",
+  "url": "servicios/medicina-interna-fr.html",
+  "category": "Servicios",
+  "keywords": "Symptômes qui se répètent sans diagnostic clair ? Nous cherchons la vraie cause avec méthode et examens ciblés, aigus ou chroniques. Réservez sur WhatsApp.",
+  "lang": "fr"
+ },
+ {
+  "title": "Medicina interna veterinaria en Trujillo: diagnóstico clínico",
+  "url": "servicios/medicina-interna.html",
+  "category": "Servicios",
+  "keywords": "¿Síntomas que se repiten y ningún diagnóstico claro? Investigamos el origen real con método y pruebas dirigidas, agudos o crónicos. Agenda por WhatsApp.",
+  "lang": "es"
+ },
+ {
+  "title": "Preventive veterinary medicine in Trujillo: vaccines, deworming and check-ups",
+  "url": "servicios/medicina-preventiva-en.html",
+  "category": "Servicios",
+  "keywords": "Want to stop your pet getting sick before it happens? A tailored prevention plan: vaccines up to date, parasite control and check-ups. Message us now.",
+  "lang": "en"
+ },
+ {
+  "title": "Médecine préventive vétérinaire à Trujillo : vaccins, vermifugation et bilans",
+  "url": "servicios/medicina-preventiva-fr.html",
+  "category": "Servicios",
+  "keywords": "Éviter que votre animal tombe malade avant que cela n'arrive ? Plan de prévention sur mesure : vaccins à jour, antiparasitaire et bilans. Écrivez-nous.",
+  "lang": "fr"
+ },
+ {
+  "title": "Medicina preventiva veterinaria en Trujillo: vacunas, desparasitación y chequeos",
+  "url": "servicios/medicina-preventiva.html",
+  "category": "Servicios",
+  "keywords": "¿Quieres evitar que tu mascota enferme antes de que ocurra? Plan preventivo a medida: vacunas al día, control parasitario y chequeos. Escríbenos ya.",
+  "lang": "es"
+ },
+ {
+  "title": "Pet microchip implantation",
+  "url": "servicios/microchip-en.html",
+  "category": "Servicios",
+  "keywords": "Does your pet need ID to travel or by law? We implant and correctly register the ISO 11784/11785 microchip. Book on WhatsApp.",
+  "lang": "en"
+ },
+ {
+  "title": "Pose de puce électronique pour animaux",
+  "url": "servicios/microchip-fr.html",
+  "category": "Servicios",
+  "keywords": "Votre animal a besoin d'une identification pour voyager ou par la loi ? Nous posons et enregistrons la puce ISO 11784/11785. Réservez sur WhatsApp.",
+  "lang": "fr"
+ },
+ {
+  "title": "Implantación de microchip para mascotas",
+  "url": "servicios/microchip.html",
+  "category": "Servicios",
+  "keywords": "¿Tu mascota necesita identificación para viajar o por norma legal? Implantamos y registramos el microchip ISO 11784/11785. Agenda por WhatsApp.",
+  "lang": "es"
+ },
+ {
+  "title": "Veterinary nutrition in Trujillo: diets, obesity and chronic diseases",
+  "url": "servicios/nutricion-en.html",
+  "category": "Servicios",
+  "keywords": "Overweight, gastritis or allergies that won't ease? We adjust your pet's diet with measurable, realistic goals. Ask for your assessment on WhatsApp.",
+  "lang": "en"
+ },
+ {
+  "title": "Nutrition vétérinaire à Trujillo : régimes, obésité et maladies chroniques",
+  "url": "servicios/nutricion-fr.html",
+  "category": "Servicios",
+  "keywords": "Surpoids, gastrite ou allergies qui persistent ? Nous ajustons l'alimentation de votre animal avec des objectifs mesurables. Demandez votre bilan.",
+  "lang": "fr"
+ },
+ {
+  "title": "Nutrición veterinaria en Trujillo: dietas, obesidad y enfermedades crónicas",
+  "url": "servicios/nutricion.html",
+  "category": "Servicios",
+  "keywords": "¿Sobrepeso, gastritis o alergias que no ceden? Ajustamos la dieta de tu mascota con objetivos medibles y realistas. Pide tu evaluación por WhatsApp.",
+  "lang": "es"
+ },
+ {
+  "title": "Veterinary ophthalmology in Trujillo: ulcers, glaucoma and cataracts",
+  "url": "servicios/oftalmologia-en.html",
+  "category": "Servicios",
+  "keywords": "Red eye, tearing or your pet bumping into things? We treat ulcers, conjunctivitis, cataracts and glaucoma to protect its vision. Message us today.",
+  "lang": "en"
+ },
+ {
+  "title": "Ophtalmologie vétérinaire à Trujillo : ulcères, glaucome et cataractes",
+  "url": "servicios/oftalmologia-fr.html",
+  "category": "Servicios",
+  "keywords": "Œil rouge, larmoiement ou votre animal se cogne ? Nous traitons ulcères, conjonctivite, cataracte et glaucome pour protéger sa vue. Écrivez-nous.",
+  "lang": "fr"
+ },
+ {
+  "title": "Oftalmología veterinaria en Trujillo: úlceras, glaucoma y cataratas",
+  "url": "servicios/oftalmologia.html",
+  "category": "Servicios",
+  "keywords": "¿Ojo rojo, lagrimeo o tu mascota se golpea con todo? Atendemos úlceras, conjuntivitis, cataratas y glaucoma para cuidar su visión. Consúltanos hoy.",
+  "lang": "es"
+ },
+ {
+  "title": "Export package for puppies and kittens",
+  "url": "servicios/paquete-cachorros-en.html",
+  "category": "Servicios",
+  "keywords": "Is your puppy traveling and you don't know where to start? A full pediatric package: serial tests, vaccines and paperwork. Book on WhatsApp.",
+  "lang": "en"
+ },
+ {
+  "title": "Forfait d'exportation pour chiots et chatons",
+  "url": "servicios/paquete-cachorros-fr.html",
+  "category": "Servicios",
+  "keywords": "Votre chiot voyage et vous ne savez pas par où commencer ? Un forfait pédiatrique complet : analyses, vaccins et documents. Réservez sur WhatsApp.",
+  "lang": "fr"
+ },
+ {
+  "title": "Paquete de exportación para cachorros",
+  "url": "servicios/paquete-cachorros.html",
+  "category": "Servicios",
+  "keywords": "¿Tu cachorro debe viajar y no sabes por dónde empezar? Paquete pediátrico completo: análisis seriados, vacunas y documentación. Agenda por WhatsApp.",
+  "lang": "es"
+ },
+ {
+  "title": "Rabies blood test (FAVN serology)",
+  "url": "servicios/serologia-en.html",
+  "category": "Servicios",
+  "keywords": "Does your destination require the FAVN rabies serology and time is short? We coordinate the test with an EU-authorized lab. Message us on WhatsApp.",
+  "lang": "en"
+ },
+ {
+  "title": "Analyse de sang pour la rage (sérologie FAVN)",
+  "url": "servicios/serologia-fr.html",
+  "category": "Servicios",
+  "keywords": "Votre destination exige la sérologie antirabique FAVN et le temps presse ? Nous coordonnons l'analyse avec un labo agréé UE. Écrivez-nous sur WhatsApp.",
+  "lang": "fr"
+ },
+ {
+  "title": "Análisis de sangre para la rabia (serología FAVN)",
+  "url": "servicios/serologia.html",
+  "category": "Servicios",
+  "keywords": "¿Tu destino exige la serología antirrábica FAVN y el tiempo corre? Coordinamos el análisis con laboratorio autorizado por la UE. Escríbenos por WhatsApp.",
+  "lang": "es"
+ },
+ {
+  "title": "Dog and cat vaccination for travel",
+  "url": "servicios/vacunacion-en.html",
+  "category": "Servicios",
+  "keywords": "What vaccines does your pet need to travel abroad? We give the rabies schedule with export-valid registration. Book on WhatsApp.",
+  "lang": "en"
+ },
+ {
+  "title": "Vaccination des chiens et chats pour voyager",
+  "url": "servicios/vacunacion-fr.html",
+  "category": "Servicios",
+  "keywords": "Quels vaccins pour faire voyager votre animal à l'étranger ? Nous appliquons le schéma antirabique avec enregistrement valable export. Réservez.",
+  "lang": "fr"
+ },
+ {
+  "title": "Vacunación de perros y gatos para viajar",
+  "url": "servicios/vacunacion.html",
+  "category": "Servicios",
+  "keywords": "¿Qué vacunas necesita tu mascota para viajar al extranjero? Aplicamos el esquema antirrábico con registro válido para exportación. Agenda por WhatsApp.",
+  "lang": "es"
+ },
+ {
+  "title": "Cataract in dogs and cats: causes, diagnosis and options",
+  "url": "glosario/catarata-en.html",
+  "category": "Glosario",
+  "keywords": "What a cataract is in dogs and cats: a clouding of the lens that reduces vision, its causes (hereditary, senile, diabetic), how it differs from nuclear sclerosis, and ophthalmic diagnosis.",
+  "lang": "en"
+ },
+ {
+  "title": "Cataracte chez le chien et le chat : causes, diagnostic et options",
+  "url": "glosario/catarata-fr.html",
+  "category": "Glosario",
+  "keywords": "Qu'est-ce que la cataracte chez le chien et le chat : opacité du cristallin qui réduit la vision, ses causes (héréditaire, sénile, diabétique), la différence avec la sclérose nucléaire et le diagnostic ophtalmologique.",
+  "lang": "fr"
+ },
+ {
+  "title": "Catarata en perros y gatos: causas, diagnóstico y opciones",
+  "url": "glosario/catarata.html",
+  "category": "Glosario",
+  "keywords": "Qué es la catarata en perros y gatos: opacidad del cristalino que reduce la visión, sus causas (hereditaria, senil, diabética), diferencia con la esclerosis nuclear y diagnóstico oftalmológico.",
+  "lang": "es"
+ },
+ {
+  "title": "Hyperadrenocorticism (Cushing's) in dogs: signs, diagnosis and control",
+  "url": "glosario/cushing-hiperadrenocorticismo-en.html",
+  "category": "Glosario",
+  "keywords": "What hyperadrenocorticism (Cushing's syndrome) is in dogs: chronic cortisol excess, classic signs, why it often reaches dermatology first, diagnosis and control.",
+  "lang": "en"
+ },
+ {
+  "title": "Hyperadrénocorticisme (Cushing) chez le chien : signes, diagnostic et contrôle",
+  "url": "glosario/cushing-hiperadrenocorticismo-fr.html",
+  "category": "Glosario",
+  "keywords": "Qu'est-ce que l'hyperadrénocorticisme (syndrome de Cushing) chez le chien : excès chronique de cortisol, signes classiques, pourquoi il arrive souvent d'abord en dermatologie, diagnostic et contrôle.",
+  "lang": "fr"
+ },
+ {
+  "title": "Hiperadrenocorticismo (Cushing) en perros: signos, diagnóstico y control",
+  "url": "glosario/cushing-hiperadrenocorticismo.html",
+  "category": "Glosario",
+  "keywords": "Qué es el hiperadrenocorticismo (síndrome de Cushing) en perros: exceso crónico de cortisol, signos clásicos, por qué llega a dermatología, diagnóstico y control.",
+  "lang": "es"
+ },
+ {
+  "title": "Demodicosis (demodectic mange) in dogs: causes, signs and diagnosis",
+  "url": "glosario/demodicosis-en.html",
+  "category": "Glosario",
+  "keywords": "What demodicosis (demodectic mange) is in dogs: proliferation of the Demodex mite, localized and generalized forms, skin signs and diagnosis by deep skin scraping.",
+  "lang": "en"
+ },
+ {
+  "title": "Démodécie (gale démodécique) chez le chien : causes, signes et diagnostic",
+  "url": "glosario/demodicosis-fr.html",
+  "category": "Glosario",
+  "keywords": "Qu'est-ce que la démodécie (gale démodécique) chez le chien : prolifération de l'acarien Demodex, formes localisée et généralisée, signes cutanés et diagnostic par raclage profond.",
+  "lang": "fr"
+ },
+ {
+  "title": "Demodicosis (sarna demodécica) en perros: causas, signos y diagnóstico",
+  "url": "glosario/demodicosis.html",
+  "category": "Glosario",
+  "keywords": "Qué es la demodicosis o sarna demodécica en perros: proliferación del ácaro Demodex, formas localizada y generalizada, signos cutáneos y diagnóstico por raspado profundo.",
+  "lang": "es"
+ },
+ {
+  "title": "Canine atopic dermatitis: chronic itch, diagnosis and management",
+  "url": "glosario/dermatitis-atopica-canina-en.html",
+  "category": "Glosario",
+  "keywords": "What canine atopic dermatitis is, its signs (chronic itch, paw licking, recurrent otitis), why it requires diagnosis by exclusion and how its management is approached.",
+  "lang": "en"
+ },
+ {
+  "title": "Dermatite atopique canine : démangeaisons chroniques, diagnostic et prise en charge",
+  "url": "glosario/dermatitis-atopica-canina-fr.html",
+  "category": "Glosario",
+  "keywords": "Qu'est-ce que la dermatite atopique canine, ses signes (démangeaisons chroniques, léchage des pattes, otite récidivante), pourquoi elle exige un diagnostic d'exclusion et comment on la prend en charge.",
+  "lang": "fr"
+ },
+ {
+  "title": "Dermatitis atópica canina: picazón crónica, diagnóstico y manejo",
+  "url": "glosario/dermatitis-atopica-canina.html",
+  "category": "Glosario",
+  "keywords": "Qué es la dermatitis atópica canina, sus signos (picazón crónica, lamido de patas, otitis recurrente), por qué requiere diagnóstico por descarte y cómo se aborda su manejo.",
+  "lang": "es"
+ },
+ {
+  "title": "Diabetes mellitus in dogs and cats: signs, diagnosis and control",
+  "url": "glosario/diabetes-mellitus-en.html",
+  "category": "Glosario",
+  "keywords": "What diabetes mellitus is in dogs and cats: signs (increased urination, thirst and appetite with weight loss), diagnosis (blood glucose, glucosuria, fructosamine) and periodic control.",
+  "lang": "en"
+ },
+ {
+  "title": "Diabète sucré chez le chien et le chat : signes, diagnostic et contrôle",
+  "url": "glosario/diabetes-mellitus-fr.html",
+  "category": "Glosario",
+  "keywords": "Qu'est-ce que le diabète sucré chez le chien et le chat : signes (mictions, soif et appétit accrus avec perte de poids), diagnostic (glycémie, glucosurie, fructosamine) et contrôle périodique.",
+  "lang": "fr"
+ },
+ {
+  "title": "Diabetes mellitus en perros y gatos: signos, diagnóstico y control",
+  "url": "glosario/diabetes-mellitus.html",
+  "category": "Glosario",
+  "keywords": "Qué es la diabetes mellitus en perros y gatos: signos (poliuria, polidipsia, polifagia con pérdida de peso), diagnóstico (glucemia, glucosuria, fructosamina) y control periódico.",
+  "lang": "es"
+ },
+ {
+  "title": "Veterinary echocardiography: what it evaluates and when it is indicated",
+  "url": "glosario/ecocardiograma-en.html",
+  "category": "Glosario",
+  "keywords": "What a veterinary echocardiography is, what it evaluates (cardiac structure and function, valves, contractility and flow with Doppler), when it is indicated, and how it differs from the electrocardiogram (ECG).",
+  "lang": "en"
+ },
+ {
+  "title": "Échocardiographie vétérinaire : ce qu'elle évalue et quand elle est indiquée",
+  "url": "glosario/ecocardiograma-fr.html",
+  "category": "Glosario",
+  "keywords": "Qu'est-ce que l'échocardiographie vétérinaire, ce qu'elle évalue (structure et fonction cardiaques, valves, contractilité et flux au Doppler), quand elle est indiquée et en quoi elle diffère de l'électrocardiogramme (ECG).",
+  "lang": "fr"
+ },
+ {
+  "title": "Ecocardiograma veterinario: qué evalúa y cuándo se indica",
+  "url": "glosario/ecocardiograma.html",
+  "category": "Glosario",
+  "keywords": "Qué es el ecocardiograma veterinario, qué evalúa (estructura y función cardíaca, válvulas, contractilidad y flujo con Doppler), cuándo se indica y en qué se diferencia del electrocardiograma (ECG).",
+  "lang": "es"
+ },
+ {
+  "title": "Veterinary electrocardiography (ECG): what it measures and when it is indicated",
+  "url": "glosario/electrocardiograma-en.html",
+  "category": "Glosario",
+  "keywords": "What veterinary electrocardiography (ECG) is, what it measures, what it detects and when it is indicated. Difference between ECG and echocardiography in cardiac assessment of pets.",
+  "lang": "en"
+ },
+ {
+  "title": "Électrocardiographie (ECG) vétérinaire : ce qu'elle mesure et quand elle est indiquée",
+  "url": "glosario/electrocardiograma-fr.html",
+  "category": "Glosario",
+  "keywords": "Qu'est-ce que l'électrocardiographie (ECG) vétérinaire, ce qu'elle mesure, ce qu'elle détecte et quand elle est indiquée. Différence entre l'ECG et l'échocardiographie dans l'évaluation cardiaque des animaux.",
+  "lang": "fr"
+ },
+ {
+  "title": "Electrocardiograma (ECG) veterinario: qué mide y cuándo se indica",
+  "url": "glosario/electrocardiograma.html",
+  "category": "Glosario",
+  "keywords": "Qué es el electrocardiograma (ECG) veterinario, qué mide, qué detecta y cuándo se indica. Diferencia entre ECG y ecocardiograma en la evaluación cardiológica de mascotas.",
+  "lang": "es"
+ },
+ {
+  "title": "Giardiasis in dogs and cats: transmission, diarrhea and diagnosis",
+  "url": "glosario/giardiasis-en.html",
+  "category": "Glosario",
+  "keywords": "What giardiasis is in dogs and cats, how it spreads through Giardia cysts, signs such as intermittent diarrhea, diagnosis and relevance to deworming.",
+  "lang": "en"
+ },
+ {
+  "title": "Giardiose chez le chien et le chat : contagion, diarrhée et diagnostic",
+  "url": "glosario/giardiasis-fr.html",
+  "category": "Glosario",
+  "keywords": "Qu'est-ce que la giardiose chez le chien et le chat, comment elle se transmet par les kystes de Giardia, signes comme la diarrhée intermittente, diagnostic et lien avec la vermifugation.",
+  "lang": "fr"
+ },
+ {
+  "title": "Giardiasis en perros y gatos: contagio, diarrea y diagnóstico",
+  "url": "glosario/giardiasis.html",
+  "category": "Glosario",
+  "keywords": "Qué es la giardiasis en perros y gatos, cómo se contagia por quistes de Giardia, signos como diarrea intermitente, diagnóstico y relevancia en la desparasitación.",
+  "lang": "es"
+ },
+ {
+  "title": "Glaucoma in dogs and cats: intraocular pressure, emergency and treatment",
+  "url": "glosario/glaucoma-en.html",
+  "category": "Glosario",
+  "keywords": "What glaucoma is in dogs and cats: raised intraocular pressure that damages the optic nerve. Signs, why it is an emergency, tonometry and treatment.",
+  "lang": "en"
+ },
+ {
+  "title": "Glaucome chez le chien et le chat : pression intraoculaire, urgence et traitement",
+  "url": "glosario/glaucoma-fr.html",
+  "category": "Glosario",
+  "keywords": "Qu'est-ce que le glaucome chez le chien et le chat : hausse de la pression intraoculaire qui lèse le nerf optique. Signes, urgence, tonométrie et traitement.",
+  "lang": "fr"
+ },
+ {
+  "title": "Glaucoma en perros y gatos: presión intraocular, urgencia y tratamiento",
+  "url": "glosario/glaucoma.html",
+  "category": "Glosario",
+  "keywords": "Qué es el glaucoma en perros y gatos: aumento de la presión intraocular que daña el nervio óptico. Signos, por qué es una urgencia, tonometría y tratamiento.",
+  "lang": "es"
+ },
+ {
+  "title": "Complete blood count (CBC) in pets: what it measures and what it is for",
+  "url": "glosario/hemograma-en.html",
+  "category": "Glosario",
+  "keywords": "What the veterinary complete blood count (CBC) measures: red series, white series and platelets, what it reveals (anemia, infection, clotting) and how the sample is taken.",
+  "lang": "en"
+ },
+ {
+  "title": "Hémogramme (numération formule sanguine) vétérinaire : ce qu'il mesure et à quoi il sert",
+  "url": "glosario/hemograma-fr.html",
+  "category": "Glosario",
+  "keywords": "Ce que mesure l'hémogramme (numération formule sanguine) vétérinaire : lignée rouge, lignée blanche et plaquettes, ce qu'il révèle (anémie, infection, coagulation) et comment le prélèvement se fait.",
+  "lang": "fr"
+ },
+ {
+  "title": "Hemograma (biometría hemática) veterinario: qué mide y para qué sirve",
+  "url": "glosario/hemograma.html",
+  "category": "Glosario",
+  "keywords": "Qué es el hemograma (biometría hemática) veterinario: qué mide en serie roja, blanca y plaquetas, qué informa (anemia, infección, coagulación) y cómo se toma la muestra.",
+  "lang": "es"
+ },
+ {
+  "title": "Canine hypothyroidism: signs, diagnosis and the euthyroid sick confounder",
+  "url": "glosario/hipotiroidismo-canino-en.html",
+  "category": "Glosario",
+  "keywords": "What canine hypothyroidism is, its signs (lethargy, weight gain, skin and coat disease), diagnosis with total T4, TSH and free T4, and the confounder of euthyroid sick syndrome (NTIS).",
+  "lang": "en"
+ },
+ {
+  "title": "Hypothyroïdie canine : signes, diagnostic et le confusant de l'euthyroïdien malade",
+  "url": "glosario/hipotiroidismo-canino-fr.html",
+  "category": "Glosario",
+  "keywords": "Qu'est-ce que l'hypothyroïdie canine, ses signes (léthargie, prise de poids, dermatopathies), le diagnostic par T4 totale, TSH et T4 libre, et le confusant du syndrome de l'euthyroïdien malade (NTIS).",
+  "lang": "fr"
+ },
+ {
+  "title": "Hipotiroidismo canino: signos, diagnóstico y el confusor del eutiroideo enfermo",
+  "url": "glosario/hipotiroidismo-canino.html",
+  "category": "Glosario",
+  "keywords": "Qué es el hipotiroidismo canino, sus signos (letargia, aumento de peso, dermatopatías), diagnóstico con T4 total, TSH y T4 libre, y el confusor del síndrome del eutiroideo enfermo (NTIS).",
+  "lang": "es"
+ },
+ {
+  "title": "Leptospirosis in dogs: transmission, zoonosis, signs and prevention",
+  "url": "glosario/leptospirosis-en.html",
+  "category": "Glosario",
+  "keywords": "What leptospirosis in dogs is: a bacterial infection caused by Leptospira, a zoonosis transmissible to people, spread through urine and contaminated water, its signs, diagnosis and prevention by vaccination and hygiene.",
+  "lang": "en"
+ },
+ {
+  "title": "Leptospirose chez le chien : contagion, zoonose, signes et prévention",
+  "url": "glosario/leptospirosis-fr.html",
+  "category": "Glosario",
+  "keywords": "Qu'est-ce que la leptospirose chez le chien : une infection bactérienne à Leptospira, une zoonose transmissible à l'humain, transmise par l'urine et l'eau contaminée, ses signes, le diagnostic et la prévention par la vaccination et l'hygiène.",
+  "lang": "fr"
+ },
+ {
+  "title": "Leptospirosis en perros: contagio, zoonosis, signos y prevención",
+  "url": "glosario/leptospirosis.html",
+  "category": "Glosario",
+  "keywords": "Qué es la leptospirosis en perros: infección bacteriana por Leptospira, zoonosis transmisible a personas, contagio por orina y agua contaminada, signos, diagnóstico y prevención por vacunación e higiene.",
+  "lang": "es"
+ },
+ {
+  "title": "Feline leukemia (FeLV): contagion, diagnosis and its relevance in travel",
+  "url": "glosario/leucemia-felina-en.html",
+  "category": "Glosario",
+  "keywords": "What feline leukemia (FeLV) is, how it spreads between cats, its consequences and why many destinations and pre-flight evaluations ask to rule it out before travel.",
+  "lang": "en"
+ },
+ {
+  "title": "Leucémie féline (FeLV) : contagion, diagnostic et sa pertinence en voyage",
+  "url": "glosario/leucemia-felina-fr.html",
+  "category": "Glosario",
+  "keywords": "Qu'est-ce que la leucémie féline (FeLV), comment elle se transmet entre chats, ses conséquences et pourquoi de nombreuses destinations et évaluations prévol demandent de l'écarter avant le voyage.",
+  "lang": "fr"
+ },
+ {
+  "title": "Leucemia felina (FeLV): contagio, diagnóstico y su relevancia en viajes",
+  "url": "glosario/leucemia-felina.html",
+  "category": "Glosario",
+  "keywords": "Qué es la leucemia felina (FeLV), cómo se contagia entre gatos, qué consecuencias tiene y por qué muchos destinos y evaluaciones prevuelo piden descartarla antes de viajar.",
+  "lang": "es"
+ },
+ {
+  "title": "Feline hemotropic mycoplasmosis (infectious anemia): transmission, signs and diagnosis",
+  "url": "glosario/micoplasmosis-hemotropica-en.html",
+  "category": "Glosario",
+  "keywords": "What feline hemotropic mycoplasmosis (feline infectious anemia) is: bacteria that parasitize red blood cells, transmission, signs, hemolytic anemia and PCR diagnosis in the feline evaluation.",
+  "lang": "en"
+ },
+ {
+  "title": "Mycoplasmose hémotrope féline (anémie infectieuse) : transmission, signes et diagnostic",
+  "url": "glosario/micoplasmosis-hemotropica-fr.html",
+  "category": "Glosario",
+  "keywords": "Qu'est-ce que la mycoplasmose hémotrope féline (anémie infectieuse féline) : bactéries qui parasitent les érythrocytes, transmission, signes, anémie hémolytique et diagnostic par PCR dans l'évaluation féline.",
+  "lang": "fr"
+ },
+ {
+  "title": "Micoplasmosis hemotrópica felina (anemia infecciosa): contagio, signos y diagnóstico",
+  "url": "glosario/micoplasmosis-hemotropica.html",
+  "category": "Glosario",
+  "keywords": "Qué es la micoplasmosis hemotrópica felina (anemia infecciosa felina): bacterias que parasitan los eritrocitos, contagio, signos, anemia hemolítica y diagnóstico por PCR en la evaluación felina.",
+  "lang": "es"
+ },
+ {
+  "title": "Canine distemper: signs, phases and prevention through vaccination",
+  "url": "glosario/moquillo-canino-en.html",
+  "category": "Glosario",
+  "keywords": "What canine distemper is: a highly contagious systemic viral infection caused by a Morbillivirus (CDV), its multisystemic signs, severity in puppies and prevention through core vaccination.",
+  "lang": "en"
+ },
+ {
+  "title": "Maladie de Carré (distemper) : signes, phases et prévention par la vaccination",
+  "url": "glosario/moquillo-canino-fr.html",
+  "category": "Glosario",
+  "keywords": "Qu'est-ce que la maladie de Carré (distemper) : une infection virale systémique très contagieuse due à un Morbillivirus (CDV), ses signes multisystémiques, sa gravité chez le chiot et sa prévention par la vaccination essentielle.",
+  "lang": "fr"
+ },
+ {
+  "title": "Moquillo canino (distemper): signos, fases y prevención por vacunación",
+  "url": "glosario/moquillo-canino.html",
+  "category": "Glosario",
+  "keywords": "Qué es el moquillo canino (distemper): infección viral sistémica por Morbillivirus (CDV), signos multisistémicos, gravedad en cachorros y prevención por vacunación de núcleo.",
+  "lang": "es"
+ },
+ {
+  "title": "Otitis externa in dogs and cats: causes, signs and why it recurs",
+  "url": "glosario/otitis-externa-en.html",
+  "category": "Glosario",
+  "keywords": "What otitis externa is in dogs and cats, its primary causes (allergy, foreign bodies, mites), perpetuating factors and why it recurs when the underlying cause is not treated.",
+  "lang": "en"
+ },
+ {
+  "title": "Otite externe chez le chien et le chat : causes, signes et pourquoi elle récidive",
+  "url": "glosario/otitis-externa-fr.html",
+  "category": "Glosario",
+  "keywords": "Qu'est-ce que l'otite externe chez le chien et le chat, ses causes primaires (allergie, corps étrangers, acariens), les facteurs perpétuants et pourquoi elle récidive si la cause n'est pas traitée.",
+  "lang": "fr"
+ },
+ {
+  "title": "Otitis externa en perros y gatos: causas, signos y por qué recurre",
+  "url": "glosario/otitis-externa.html",
+  "category": "Glosario",
+  "keywords": "Qué es la otitis externa en perros y gatos, sus causas primarias (alergia, cuerpos extraños, ácaros), los factores perpetuantes y por qué recurre si no se trata la causa.",
+  "lang": "es"
+ },
+ {
+  "title": "Feline panleukopenia: contagion, signs, prevention by vaccination",
+  "url": "glosario/panleucopenia-felina-en.html",
+  "category": "Glosario",
+  "keywords": "What feline panleukopenia is: feline parvovirus infection, highly contagious, clinical signs, severity in kittens, diagnosis and prevention by core vaccination.",
+  "lang": "en"
+ },
+ {
+  "title": "Panleucopénie féline : contagion, signes, prévention par vaccination",
+  "url": "glosario/panleucopenia-felina-fr.html",
+  "category": "Glosario",
+  "keywords": "Qu'est-ce que la panleucopénie féline : infection par le parvovirus félin, très contagieuse, signes, gravité chez les chatons, diagnostic et prévention par vaccination.",
+  "lang": "fr"
+ },
+ {
+  "title": "Panleucopenia felina: contagio, signos, prevención por vacunación",
+  "url": "glosario/panleucopenia-felina.html",
+  "category": "Glosario",
+  "keywords": "Qué es la panleucopenia felina: infección por parvovirus felino, muy contagiosa, signos, gravedad en gatitos, diagnóstico y prevención por vacunación de núcleo.",
+  "lang": "es"
+ },
+ {
+  "title": "Canine parvovirus: symptoms, vaccine prevention and care",
+  "url": "glosario/parvovirosis-canina-en.html",
+  "category": "Glosario",
+  "keywords": "What canine parvovirus infection is: symptoms (vomiting and bloody diarrhea), why it is an emergency, diagnosis by fecal antigen test and prevention through puppy vaccination.",
+  "lang": "en"
+ },
+ {
+  "title": "Parvovirose canine : symptômes, prévention par la vaccination et soins",
+  "url": "glosario/parvovirosis-canina-fr.html",
+  "category": "Glosario",
+  "keywords": "Qu'est-ce que la parvovirose canine : symptômes (vomissements et diarrhée sanglante), pourquoi c'est une urgence, diagnostic par test antigénique dans les selles et prévention par la vaccination des chiots.",
+  "lang": "fr"
+ },
+ {
+  "title": "Parvovirosis canina: síntomas, prevención por vacunación y cuidados",
+  "url": "glosario/parvovirosis-canina.html",
+  "category": "Glosario",
+  "keywords": "Qué es la parvovirosis canina: síntomas (vómito y diarrea con sangre), por qué es una urgencia, diagnóstico por test de antígeno en heces y prevención por vacunación en cachorros.",
+  "lang": "es"
+ },
+ {
+  "title": "Brachycephalic syndrome (BOAS): what it is, flight risk and assessment",
+  "url": "glosario/sindrome-braquicefalico-en.html",
+  "category": "Glosario",
+  "keywords": "What brachycephalic obstructive airway syndrome (BOAS) is, why it is critical for the air transport of snub-nosed breeds, and how flight fitness is assessed before export.",
+  "lang": "en"
+ },
+ {
+  "title": "Syndrome brachycéphale (BOAS) : définition, risque en vol et évaluation",
+  "url": "glosario/sindrome-braquicefalico-fr.html",
+  "category": "Glosario",
+  "keywords": "Qu'est-ce que le syndrome obstructif des voies respiratoires brachycéphales (BOAS), pourquoi il est critique pour le transport aérien des races à museau court et comment évaluer l'aptitude au vol avant l'exportation.",
+  "lang": "fr"
+ },
+ {
+  "title": "Síndrome braquicefálico (BOAS): qué es, riesgo en vuelo y evaluación",
+  "url": "glosario/sindrome-braquicefalico.html",
+  "category": "Glosario",
+  "keywords": "Qué es el síndrome braquicefálico (BOAS), por qué es crítico en el transporte aéreo de razas de hocico corto y cómo se evalúa la aptitud para volar antes de la exportación.",
+  "lang": "es"
+ },
+ {
+  "title": "Corneal ulcer in dogs and cats: emergency, signs and diagnosis",
+  "url": "glosario/ulcera-corneal-en.html",
+  "category": "Glosario",
+  "keywords": "What is a corneal ulcer in dogs and cats, why it is an ophthalmic emergency, warning signs (blepharospasm, tearing, red eye) and diagnosis with fluorescein stain.",
+  "lang": "en"
+ },
+ {
+  "title": "Ulcère cornéen chez le chien et le chat : urgence, signes et diagnostic",
+  "url": "glosario/ulcera-corneal-fr.html",
+  "category": "Glosario",
+  "keywords": "Qu'est-ce qu'un ulcère cornéen chez le chien et le chat, pourquoi c'est une urgence ophtalmologique, signes d'alerte (blépharospasme, larmoiement, œil rouge) et diagnostic à la fluorescéine.",
+  "lang": "fr"
+ },
+ {
+  "title": "Úlcera corneal en perros y gatos: urgencia, signos y diagnóstico",
+  "url": "glosario/ulcera-corneal.html",
+  "category": "Glosario",
+  "keywords": "Qué es la úlcera corneal en perros y gatos, por qué es una urgencia oftalmológica, signos de alarma (blefaroespasmo, lagrimeo, ojo rojo) y diagnóstico con tinción de fluoresceína.",
+  "lang": "es"
  }
 ];
 
