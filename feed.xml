@@ -13,7 +13,7 @@
     <copyright>© 2013–2026 Zoovet Travel. All rights reserved.</copyright>
     <managingEditor>contacto@zoovettravel.com (Zoovet Travel)</managingEditor>
     <webMaster>contacto@zoovettravel.com (Carlos Eduardo Ravello Joo)</webMaster>
-    <lastBuildDate>Sun, 26 Jul 2026 09:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 26 Jul 2026 12:00:00 -0500</lastBuildDate>
     <atom:link href="https://zoovettravel.com/feed.xml" rel="self" type="application/rss+xml"/>
 
     <dc:publisher>Zoovet Travel · https://zoovettravel.com</dc:publisher>
@@ -23,6 +23,18 @@
     <!-- ═══ HISTORIAS REALES DE VIAJE — REAL TRAVEL CASE STORIES (client-authorized) ═══ -->
     <!-- ═══ GUÍAS PRÁCTICAS ═══ -->
     <item>
+    <title>La historia de la cuarentena animal en Australia (y por qué no es sobre tu perro)</title>
+    <link>https://zoovettravel.com/journal/historia-cuarentena-animal-australia-2026.html</link>
+    <guid isPermaLink="true">https://zoovettravel.com/journal/historia-cuarentena-animal-australia-2026.html</guid>
+    <pubDate>Sun, 26 Jul 2026 12:00:00 -0500</pubDate>
+    <category>Zoovet Journal — Editorial</category>
+    <dc:creator>Carlos Ravello</dc:creator>
+    <dc:contributor>Jessica Ysabel Camacho Garcia</dc:contributor>
+    <dc:source>https://www.agriculture.gov.au/biosecurity-trade/cat-dogs</dc:source>
+    <description>Australia es el pais mas dificil del mundo para viajar con un perro o un gato, y la razon no esta en la rabia. La cuarentena australiana nacio del ganado, no de las mascotas: el continente se blindo primero contra las plagas agropecuarias, la seccion 51 de la Constitucion de 1901 le dio al Commonwealth el poder de cuarentena, el Quarantine Act 1908 lo puso por escrito y el Biosecurity Act 2015 lo reemplazo. El endurecimiento moderno no vino de un perro: vino de la epizootia de gripe equina de 2007, que se escapo de una instalacion de cuarentena y llevo a la investigacion Callinan —encargada en septiembre de 2007, entregada el 12 de junio de 2008, con 38 recomendaciones aceptadas en su totalidad— y de ahi a la instalacion unica de Mickleham (Melbourne), 379,9 millones de dolares australianos. Hoy los paises se clasifican en Grupos 1, 2 y 3; desde el Grupo 3 el minimo de cuarentena posterior a la llegada es de 10 dias y las tarifas oficiales del DAFF (pagina actualizada el 29 de agosto de 2025) suman 2.937 dolares australianos en el escenario tipico. El episodio de Pistol y Boo, los perros de Johnny Depp, se entiende solo con esa historia delante. Editorial firmado: analisis y opinion, con fuentes primarias verificadas el 26 de julio de 2026.</description>
+  </item>
+
+  <item>
     <title>Nadie te pide el certificado del gusano barrenador para entrar a México: te lo piden para volver a Estados Unidos</title>
     <link>https://zoovettravel.com/journal/certificado-gusano-barrenador-mexico-eeuu-2026.html</link>
     <guid isPermaLink="true">https://zoovettravel.com/journal/certificado-gusano-barrenador-mexico-eeuu-2026.html</guid>
