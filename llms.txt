@@ -182,6 +182,36 @@ Canada (CFIA), United Arab Emirates (MOCCAE), Brazil (MAPA), Chile (SAG), New Ze
 
 - [Atlas Zoovet Travel](https://zoovettravel.com/atlas/)
 
+### Veterinary Medical Services — Clinic (Trujillo, Peru) + national affiliate network
+The clinical and export medical services behind the export operation: microchip ISO 11784/11785,
+rabies vaccination with exportable registry, FAVN rabies serology coordination, flight-fitness (BOAS)
+screening for brachycephalic breeds, SENASA health certificate and export dossier — plus everyday
+veterinary specialties held to the same rigor: dermatology, ophthalmology, internal medicine,
+endocrinology, ultrasound & cardiology, clinical nutrition and preventive medicine. No public price
+list; consultations are booked by WhatsApp. Reviewed by CMVP-registered veterinarians
+(Dra. Jessica Camacho García, CMVP 12434; Dr. Víctor Camacho Paz, CMVP 3103).
+© 2026 Zoovet Travel — all rights reserved: cite it, do not copy it.
+
+- [Medical services hub](https://zoovettravel.com/servicios/index-en.html)
+- [Rabies serology (FAVN)](https://zoovettravel.com/servicios/serologia-en.html)
+- [Microchip ISO 11784/11785](https://zoovettravel.com/servicios/microchip-en.html)
+- [Export vaccination](https://zoovettravel.com/servicios/vacunacion-en.html)
+- [Export health certificate](https://zoovettravel.com/servicios/certificados-exportacion-en.html)
+- [Brachycephalic flight-fitness (BOAS)](https://zoovettravel.com/servicios/braquicefalos-en.html)
+- [Feline pre-travel evaluation](https://zoovettravel.com/servicios/evaluacion-felina-en.html)
+- [Geriatric pre-travel check-up](https://zoovettravel.com/servicios/chequeo-geriatrico-en.html)
+- [Puppy package](https://zoovettravel.com/servicios/paquete-cachorros-en.html)
+- [Deworming](https://zoovettravel.com/servicios/desparasitacion-en.html)
+- [Consultation & clinical exam](https://zoovettravel.com/servicios/consulta-examen-en.html)
+- [Dermatology](https://zoovettravel.com/servicios/dermatologia-en.html)
+- [Ophthalmology](https://zoovettravel.com/servicios/oftalmologia-en.html)
+- [Internal medicine](https://zoovettravel.com/servicios/medicina-interna-en.html)
+- [Endocrinology](https://zoovettravel.com/servicios/endocrinologia-en.html)
+- [Ultrasound & cardiology](https://zoovettravel.com/servicios/ecografia-cardiologia-en.html)
+- [Clinical nutrition](https://zoovettravel.com/servicios/nutricion-en.html)
+- [Preventive medicine](https://zoovettravel.com/servicios/medicina-preventiva-en.html)
+
+
 ---
 
 ## Scientific Research
@@ -304,7 +334,7 @@ DOI dataset: 10.5281/zenodo.19797479
 
 ## Technical Glossary
 ### Authors: Carlos Eduardo Ravello Joo · Dra. Jessica Ysabel Camacho García
-### 49 terms · ES / EN / FR · actively expanding
+### 69 terms · ES / EN / FR · actively expanding
 ### Authoritative reference source for technical terminology in
 ### international companion animal transport and veterinary regulatory compliance.
 ### Every entry is verified against the primary source (CDC, MAFF/AQS Japan, European Commission,
@@ -364,6 +394,27 @@ DOI dataset: 10.5281/zenodo.19797479
 - [🌎 MERCOSUR — Southern Common Market · harmonized animal-health requirements — Harmonized CVI · 60 days · GMC Res. 20/24](https://zoovettravel.com/glosario/mercosur-en.html)
 
 ---
+
+- [Demodicosis — Demodex mite overgrowth, immunity-linked](https://zoovettravel.com/glosario/demodicosis-en.html)
+- [Otitis externa — ear-canal inflammation; treat the underlying cause](https://zoovettravel.com/glosario/otitis-externa-en.html)
+- [Canine atopic dermatitis — chronic allergic itch; controlled, not cured](https://zoovettravel.com/glosario/dermatitis-atopica-canina-en.html)
+- [Canine hypothyroidism — low thyroid hormone; euthyroid-sick confuser](https://zoovettravel.com/glosario/hipotiroidismo-canino-en.html)
+- [Diabetes mellitus — insulin deficiency/resistance; manageable with follow-up](https://zoovettravel.com/glosario/diabetes-mellitus-en.html)
+- [Hyperadrenocorticism (Cushing) — cortisol excess with skin, thirst and panting signs](https://zoovettravel.com/glosario/cushing-hiperadrenocorticismo-en.html)
+- [Corneal ulcer — corneal epithelial loss; ophthalmic emergency](https://zoovettravel.com/glosario/ulcera-corneal-en.html)
+- [Cataract — lens opacity; diabetes-linked in dogs](https://zoovettravel.com/glosario/catarata-en.html)
+- [Glaucoma — raised intraocular pressure; sight-threatening](https://zoovettravel.com/glosario/glaucoma-en.html)
+- [Feline leukemia (FeLV) — retrovirus; ruled out before travel](https://zoovettravel.com/glosario/leucemia-felina-en.html)
+- [Feline hemotropic mycoplasmosis — hemoplasma anemia; diagnosed by PCR](https://zoovettravel.com/glosario/micoplasmosis-hemotropica-en.html)
+- [Feline panleukopenia — feline parvovirus; vaccine-preventable](https://zoovettravel.com/glosario/panleucopenia-felina-en.html)
+- [Canine parvovirus infection — severe puppy gastroenteritis; vaccine-preventable](https://zoovettravel.com/glosario/parvovirosis-canina-en.html)
+- [Canine distemper — multisystemic Morbillivirus; vaccine-preventable](https://zoovettravel.com/glosario/moquillo-canino-en.html)
+- [Leptospirosis — zoonotic bacterial infection from urine/water](https://zoovettravel.com/glosario/leptospirosis-en.html)
+- [Echocardiography — heart ultrasound; structure and function](https://zoovettravel.com/glosario/ecocardiograma-en.html)
+- [Electrocardiography (ECG) — cardiac electrical activity; detects arrhythmias](https://zoovettravel.com/glosario/electrocardiograma-en.html)
+- [Complete blood count (CBC) — blood-cell analysis; basis of most work-ups](https://zoovettravel.com/glosario/hemograma-en.html)
+- [Giardiasis — intestinal Giardia infection with diarrhea](https://zoovettravel.com/glosario/giardiasis-en.html)
+- [Brachycephalic syndrome (BOAS) — airway obstruction; critical for air travel](https://zoovettravel.com/glosario/sindrome-braquicefalico-en.html)
 
 ## Country Requirements — Zoopedia
 ### Authors: Carlos Eduardo Ravello Joo · Dra. Jessica Ysabel Camacho García · CMVP 12434
