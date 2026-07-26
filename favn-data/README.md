@@ -6,9 +6,9 @@
 
 ## About this dataset
 
-This repository contains **44 documented FAVN test results** processed by Veterinaria Zoovet through the Kansas State Veterinary Diagnostic Laboratory (KSVDL) between 2019 and 2026.
+This repository contains **49 documented FAVN test results** processed by Veterinaria Zoovet through the Kansas State Veterinary Diagnostic Laboratory (KSVDL) between 2019 and 2026.
 
-It is the only publicly accessible, structured FAVN case dataset from a Latin American veterinary operator in existence.
+It constitutes, to the authors' knowledge and at the time of writing, one of the most complete publicly accessible, structured FAVN case datasets from a Latin American veterinary operator.
 
 **Responsible veterinarian:** Jessica Ysabel Camacho García, MV  
 **ORCID:** [0009-0002-6837-5311](https://orcid.org/0009-0002-6837-5311)  
@@ -36,36 +36,33 @@ All cases from 2024 onward were processed under the Zoovet Travel standard proto
 
 | Metric | Value |
 |--------|-------|
-| Total case entries | 44 |
-| Unique animals | 42 |
-| PASS (≥ 0.5 IU/mL) | 39 |
-| FAIL (< 0.5 IU/mL) | 5 |
-| FAIL → PASS documented re-tests | 2 (DARKY, ALMA) |
+| Total case entries | 49 |
+| Unique animals | 47 |
+| PASS (≥ 0.5 IU/mL) | 46 |
+| FAIL (< 0.5 IU/mL) | 3 |
+| FAIL → PASS documented re-tests | 1 (ATON) |
 | Years covered | 2019 – 2026 |
+| Species | Dogs, Cats |
+| Titre range | 0.20 – 6.01 IU/mL |
 | Laboratory | KSVDL (Manhattan, Kansas, USA) |
 | Destinations | Spain, Italy, United States, Germany, France, Portugal, Sweden |
 
 ---
 
-## Documented FAIL → PASS recovery cases
+## Documented FAIL → PASS recovery case
 
-### DARKY (cases R22-047695 → R22-061578)
-- **Species:** Dog, Mixed Breed · **Microchip:** 991003001930072
-- **First test (R22-047695):** Single vaccination (February 2, 2022), no booster. Serum drawn 5 months post-vaccination. Result: **0.22 IU/mL — FAIL**
-- **Re-test (R22-061578):** Booster vaccination added. Result: **0.87 IU/mL — PASS**
-- **Clinical lesson:** Single vaccination without booster yields insufficient titer at 5 months. Booster corrects this in the same animal.
-
-### ALMA (cases R22-061576 → R22-072736)
-- **Species:** Dog, Mixed Breed · **Microchip:** 991003001930075
-- **First test (R22-061576):** Result: **< 0.20 IU/mL — FAIL** · Destination: Italy
-- **Re-test (R22-072736):** After booster vaccination. Result: **1.15 IU/mL — PASS**
-- **Clinical lesson:** Titer recovered from < 0.20 to 1.15 IU/mL — a > 5× increase. Confirms that a low initial titer does not indicate permanent biological failure to respond.
+### ATON (cases R26-013079 → R26-030347)
+- **Species:** Dog, Weimaraner · **Microchip:** 725093200213835
+- **First test (R26-013079):** Under D1/D15/D30 protocol. Serum drawn February 4, 2026. Result: **0.22 IU/mL — FAIL**
+- **Re-test (R26-030347):** Post-booster re-vaccination and extended serological window. Serum drawn April 4, 2026. Result: **≥ 3.46 IU/mL — PASS**
+- **Delta:** 15.73× titer increase between extractions (58 days apart)
+- **Clinical lesson:** Initial serological failure under a standard protocol does not indicate permanent biological inability to respond. A structured booster intervention produced a robust anamnestic response, confirming adequate immunological memory.
 
 ---
 
 ## Data structure (`index.json`)
 
-Each case object contains:
+Each case object contains core clinical fields plus a full **Dublin Core 15-element metadata block** for semantic interoperability and open data standards compliance.
 
 ```json
 {
@@ -86,7 +83,24 @@ Each case object contains:
   "lab": "KSVDL",
   "protocol": "Novibac Rabies D1/D15/D30",
   "submitting_clinic": "Veterinaria Zoovet",
-  "veterinarian": "Jessica Ysabel Camacho García, MV"
+  "veterinarian": "Jessica Ysabel Camacho García, MV",
+  "dublin_core": {
+    "dc:title": "FAVN Serology Report — YING YANG · R24-072480 · PASS",
+    "dc:creator": "Jessica Ysabel Camacho García, MV",
+    "dc:subject": "FAVN; rabies neutralizing antibody titer; KSVDL; PASS; dog",
+    "dc:description": "Dog, Schnauzer, Male, 7Y 4M. Result 0.5 IU/mL — at EU threshold of 0.50 IU/mL. PASS.",
+    "dc:publisher": "Veterinaria Zoovet Travel · Calle Cuba 241, Trujillo, Perú",
+    "dc:contributor": "",
+    "dc:date": "2024-07-20",
+    "dc:type": "Dataset; Laboratory Result; Clinical Record",
+    "dc:format": "application/json; application/pdf",
+    "dc:identifier": "R24-072480",
+    "dc:source": "Kansas State Veterinary Diagnostic Laboratory (KSVDL)",
+    "dc:language": "en",
+    "dc:relation": "https://zenodo.org/records/19797479",
+    "dc:coverage": "Trujillo, La Libertad, Perú — Destination: Spain",
+    "dc:rights": "CC BY 4.0"
+  }
 }
 ```
 
@@ -102,9 +116,28 @@ KSVDL is the only OIE/WOAH-approved laboratory in North America for FAVN testing
 1. Wallace RM et al. (2017). Risk factors for inadequate antibody response to primary rabies vaccination in dogs. PMC5552338.
 2. Langedijk AC et al. (2018). Rabies Antibody Response After Booster Immunization. DOI: 10.1093/cid/ciy518.
 3. Moore SM et al. (2021). Challenges in rabies serology. PMC8402924.
-4. OIE/WOAH Terrestrial Manual — Chapter on Rabies (current edition).
-5. KSVDL FAVN Protocol: https://www.ksvdl.org/laboratories/rabies-laboratory/favn-test/
+4. Belanger JM et al. (2025). Factors associated with adequate rabies virus neutralizing antibody titers in dogs tested at a USDA-approved laboratory. *Preventive Veterinary Medicine*.
+5. Chuquista-Alcarraz RP et al. (2023). Evaluación de la respuesta serológica a la vacuna antirrábica en caninos domésticos en Lima, Perú. *Revista de Investigaciones Veterinarias del Perú*.
+6. McElhinney LM et al. (2026). Evaluation of rabies antibody responses in dogs vaccinated under accelerated immunisation protocols. *Vaccine*.
+7. OIE/WOAH Terrestrial Manual — Chapter on Rabies (current edition). Chapter 8.14.
+8. European Parliament. Regulation (EU) No 576/2013 on the non-commercial movement of pet animals.
+9. KSVDL FAVN Protocol: https://www.ksvdl.org/laboratories/rabies-laboratory/favn-test/
 
 ---
 
-*Dataset maintained by Veterinaria Zoovet. Last updated: 2026. ATON (R26-013079) re-test result pending.*
+## Version changelog
+
+### Version 2 (May 2026)
+- **Records added:** 8 new cases from March–April 2026 batch (R26-030347 through R26-030354); R26-030348 documented as two sub-reports covering two animals
+- **Records corrected:** 4 records removed due to data integrity issues identified post-publication
+- **Net total:** 49 records (41 validated from v1 + 8 new)
+- **Dublin Core metadata:** All 49 records now carry a full 15-element Dublin Core block
+- **FAIL→PASS documentation:** Revised to reflect the single validated case pair: ATON (R26-013079 / R26-030347)
+- **PASS rate:** 93.9% (46/49)
+
+### Version 1 (April 2026)
+- Initial public release: 44 records, 2019–2025
+
+---
+
+*Dataset maintained by Veterinaria Zoovet. Last updated: May 2026.*

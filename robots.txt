@@ -38,11 +38,13 @@ Disallow: /PREVIEW_SEO_ZOOPEDIA.html
 Disallow: /urls
 Disallow: /indexnow-send.ps1
 Disallow: /indexnow-send.bat
+Disallow: /papers/_src/
 
 # Google
 User-agent: Googlebot
 Allow: /
 Allow: /papers/
+Disallow: /papers/_src/
 Disallow: /docs/
 Disallow: /.github/
 Disallow: /indexnow-submit.html
@@ -52,12 +54,14 @@ Disallow: /PREVIEW_SEO_ZOOPEDIA.html
 # Bing
 User-agent: Bingbot
 Allow: /
+Disallow: /papers/_src/
 Disallow: /docs/
 Disallow: /.github/
 
 # Yandex (IndexNow)
 User-agent: Yandexbot
 Allow: /
+Disallow: /papers/_src/
 Disallow: /docs/
 Disallow: /.github/
 
@@ -72,6 +76,7 @@ Allow: /
 User-agent: Googlebot-Scholar
 Allow: /
 Allow: /papers/
+Disallow: /papers/_src/
 Disallow: /docs/
 Disallow: /.github/
 
