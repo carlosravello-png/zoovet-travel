@@ -13,7 +13,7 @@
     <copyright>© 2013–2026 Zoovet Travel. All rights reserved.</copyright>
     <managingEditor>contacto@zoovettravel.com (Zoovet Travel)</managingEditor>
     <webMaster>contacto@zoovettravel.com (Carlos Eduardo Ravello Joo)</webMaster>
-    <lastBuildDate>Sat, 11 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 26 Jul 2026 09:00:00 -0500</lastBuildDate>
     <atom:link href="https://zoovettravel.com/feed.xml" rel="self" type="application/rss+xml"/>
 
     <dc:publisher>Zoovet Travel · https://zoovettravel.com</dc:publisher>
@@ -23,6 +23,18 @@
     <!-- ═══ HISTORIAS REALES DE VIAJE — REAL TRAVEL CASE STORIES (client-authorized) ═══ -->
     <!-- ═══ GUÍAS PRÁCTICAS ═══ -->
     <item>
+    <title>Nadie te pide el certificado del gusano barrenador para entrar a México: te lo piden para volver a Estados Unidos</title>
+    <link>https://zoovettravel.com/journal/certificado-gusano-barrenador-mexico-eeuu-2026.html</link>
+    <guid isPermaLink="true">https://zoovettravel.com/journal/certificado-gusano-barrenador-mexico-eeuu-2026.html</guid>
+    <pubDate>Sun, 26 Jul 2026 09:00:00 -0500</pubDate>
+    <category>Zoovet Journal — Regla vigente</category>
+    <dc:creator>Carlos Ravello</dc:creator>
+    <dc:contributor>Jessica Ysabel Camacho Garcia</dc:contributor>
+    <dc:source>https://www.aphis.usda.gov/sites/default/files/import-alert-nws-mexico.pdf</dc:source>
+    <description>El certificado de libertad de gusano barrenador (GBG) no se pide para entrar a México: se pide para ingresar un perro a Estados Unidos desde México. Es un requisito estadounidense vigente desde el 9 de julio de 2025, la inspeccion debe hacerse dentro de los cinco dias previos al embarque, y alcanza tambien a los perros de origen estadounidense que regresan de un viaje. En Mexico lo emite un Medico Veterinario Responsable Autorizado (MVRA) con constancia vigente del Senasica y capacitacion oficial en gusano barrenador; el propio Senasica publica el directorio de esos veterinarios —764 registros en 32 estados, 238 en los seis estados fronterizos y solo 3 en Ciudad Juarez— actualizado el 24 de julio de 2026. En sentido inverso, de Estados Unidos o Canada hacia Mexico, el Senasica no pide certificado de buena salud ni cartilla de vacunacion: solo inspeccion fisica en el punto de ingreso. El certificado zoosanitario de exportacion es otro papel y Estados Unidos no lo pide. Verificado sobre las paginas oficiales de APHIS, CBP, CDC y Senasica el 26 de julio de 2026.</description>
+  </item>
+
+  <item>
     <title>Perros y gatos en la bodega del avión: qué dicen la IATA, la AVMA y los datos oficiales</title>
     <link>https://zoovettravel.com/articulos-interes/perros-y-gatos-en-la-bodega-del-avion.html</link>
     <guid isPermaLink="true">https://zoovettravel.com/articulos-interes/perros-y-gatos-en-la-bodega-del-avion.html</guid>
