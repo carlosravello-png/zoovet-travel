@@ -1,4 +1,4 @@
-// Base de datos de Búsqueda — actualizada el 24-07-2026 (717 páginas)
+// Base de datos de Búsqueda — actualizada el 26-07-2026 (723 páginas)
 const rawSearchData = [
  {
   "title": "No existe una lista única de laboratorios antirrábicos: cada autoridad tiene la suya",
@@ -3464,6 +3464,48 @@ const rawSearchData = [
   "category": "Journal",
   "keywords": "El nuevo Import Health Standard de Nueva Zelanda entró en vigor el 1 de julio de 2026 e introduce un control oficial de identidad que debe hacerse seis meses antes de la exportación. Quien viaje desde abril de 2027 tiene",
   "lang": "es"
+ },
+ {
+  "title": "Certificado de gusano barrenador: se pide para entrar a EE.UU., no a México",
+  "url": "journal/certificado-gusano-barrenador-mexico-eeuu-2026.html",
+  "category": "Journal",
+  "keywords": "El certificado de gusano barrenador se exige para ingresar perros a Estados Unidos desde México, no para entrar a México. Quién puede firmarlo —764 veterinarios en el directorio oficial del Senasica, tres en Ciudad Juárez—, cuántos días vale y qué pide cada país. Verificado en APHIS, CBP, CDC y Senasica el 26 de julio de 2026.",
+  "lang": "es"
+ },
+ {
+  "title": "Screwworm certificate: required to enter the U.S., not Mexico",
+  "url": "journal/certificado-gusano-barrenador-mexico-eeuu-2026-en.html",
+  "category": "Journal",
+  "keywords": "The screwworm freedom certificate is required to bring dogs into the United States from Mexico, not to enter Mexico. Who may sign it — 764 vets in SENASICA's official directory, three of them in Ciudad Juárez — how long it lasts, and what each country actually asks for. Verified on APHIS, CBP, CDC and SENASICA on 26 July 2026.",
+  "lang": "en"
+ },
+ {
+  "title": "Certificat lucilie bouchère : exigé pour entrer aux États-Unis, pas au Mexique",
+  "url": "journal/certificado-gusano-barrenador-mexico-eeuu-2026-fr.html",
+  "category": "Journal",
+  "keywords": "Le certificat d'absence de lucilie bouchère est exigé pour faire entrer un chien aux États-Unis depuis le Mexique, et non pour entrer au Mexique. Qui peut le signer — 764 vétérinaires dans l'annuaire officiel du SENASICA, dont trois à Ciudad Juárez —, combien de temps il vaut et ce que chaque pays exige réellement. Vérifié auprès de l'APHIS, du CBP, du CDC et du SENASICA le 26 juillet 2026.",
+  "lang": "fr"
+ },
+ {
+  "title": "IATA y las mascotas en cabina: su primer manual (2026), qué obliga y qué no",
+  "url": "journal/iata-manual-mascotas-cabina-2026.html",
+  "category": "Journal",
+  "keywords": "IATA publicó su primer manual operativo de mascotas en cabina. Qué obliga de verdad, qué deja a cada aerolínea y qué sigue en manos del país de destino.",
+  "lang": "es"
+ },
+ {
+  "title": "IATA and pets in the cabin: its first manual (2026), what it requires and what it doesn't",
+  "url": "journal/iata-manual-mascotas-cabina-2026-en.html",
+  "category": "Journal",
+  "keywords": "IATA has published its first operational manual for pets in the cabin. What it really requires, what it leaves to each airline, and what still rests with the destination country.",
+  "lang": "en"
+ },
+ {
+  "title": "IATA et les animaux en cabine : son premier manuel (2026), ce qu'il impose et ce qu'il n'impose pas",
+  "url": "journal/iata-manual-mascotas-cabina-2026-fr.html",
+  "category": "Journal",
+  "keywords": "L'IATA a publié son premier manuel opérationnel pour les animaux en cabine. Ce qu'il impose vraiment, ce qu'il laisse à chaque compagnie, et ce qui reste entre les mains du pays de destination.",
+  "lang": "fr"
  },
  {
   "title": "IATA Kennels for International Travel",
