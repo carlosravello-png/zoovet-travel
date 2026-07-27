@@ -85,6 +85,13 @@
     footer a{color:rgba(255,255,255,.8);text-decoration:none;}
     .wa{position:fixed;bottom:22px;right:22px;z-index:99;width:54px;height:54px;background:var(--wa);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(37,211,102,.4);}
     .wa svg{width:28px;height:28px;fill:#fff;}
+  .tip{max-width:940px;margin:34px auto 30px;background:var(--ink);border-radius:6px;padding:26px 28px;font-family:'Montserrat',sans-serif;color:rgba(255,255,255,.78);}
+  .tip .k{font-size:.62rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#7fd3ee;margin-bottom:13px;}
+  .tip .q{font-family:'Source Serif 4',Georgia,serif;font-size:1.22rem;line-height:1.45;color:#fff;margin-bottom:11px;}
+  .tip p{font-size:.9rem;line-height:1.7;margin-bottom:17px;}
+  .tip b{color:#fff;}
+  .tip a.go2{display:inline-flex;align-items:center;background:var(--wa);color:#fff;font-size:.86rem;font-weight:700;padding:11px 20px;border-radius:24px;text-decoration:none;}
+  @media(max-width:960px){.tip{margin-left:18px;margin-right:18px;}}
   </style>
 </head>
 <body>
@@ -199,6 +206,12 @@
     </div>
   </div>
 
+  <aside class="tip" aria-label="Contacto editorial">
+    <div class="k">Contacto editorial</div>
+    <p class="q">&iquest;Te qued&oacute; una duda con esta nota? &iquest;Sabes de algo que cambi&oacute; y que nadie ha contado?</p>
+    <p><b>Escr&iacute;benos.</b> Lo verificamos contra la fuente oficial y, si se sostiene, lo publicamos &mdash; con la fecha en que se comprob&oacute; y el enlace al documento. Si no se sostiene, tambi&eacute;n te lo decimos.</p>
+    <a class="go2" href="https://wa.me/51979620402?text=Hola%2C%20escribo%20al%20Zoovet%20Journal%3A%20tengo%20una%20duda%20sobre%20una%20norma" target="_blank" rel="noopener">Escribir al Journal</a>
+  </aside>
 <footer>
     <div>© 2026 Zoovet Travel · Zoovet Journal — alertas regulatorias y análisis</div>
     <div style="margin-top:8px;"><a href="../index.html">Inicio</a> · <a href="./index.html">Todas las entradas</a> · <a href="../uso-de-imagenes.html">Uso de imágenes</a></div>
