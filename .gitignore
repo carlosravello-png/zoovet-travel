@@ -130,3 +130,21 @@ config.local.*
 *.local.json
 
 tentativas/
+
+# Clave de la API de PageSpeed (NUNCA se sube)
+psi_key.txt
+psi_crudo_*.json
+
+# Resultados del censo PSI (NUNCA se suben)
+psi_censo_*.json
+psi_censo_*.csv
+psi_censo_parcial.json
+
+# material sin usar: vive en el disco, no se publica
+SVG-FULL-SEO-CIENTIFICO/
+seleccionar por ocr y cloudvision/
+viaja-con-tu-mascota-fotos/
+_revisar-fotos/
+_to_delete/
+# copias de seguridad de mis scripts
+*.bak-*
