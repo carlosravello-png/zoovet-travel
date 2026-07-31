@@ -150,6 +150,19 @@ Outputs: minimum dimensions, kennel series recommendation, PDF prescription.
 
 - [Kennel calculator](https://zoovettravel.com/kennels-en.html)
 
+### Date and Deadline Calculator - Free Tool (ES / EN / FR)
+Days, weeks and months between two dates, and the exact calendar date on which
+a deadline of 30, 90 or 180 days falls. Built for expiry dates, administrative
+deadlines, contracts and delivery dates - not only for pet travel. It counts
+calendar days, not business days, and says so openly on the page. Leap years are
+handled; the arithmetic runs on whole UTC days, so daylight-saving changes cannot
+shift a result. Runs entirely in the browser: no registration, no advertising and
+no data collected. The source code is all rights reserved and is NOT licensed.
+
+- [Date calculator](https://zoovettravel.com/calculadora-de-fechas.html)
+- [Date calculator EN](https://zoovettravel.com/calculadora-de-fechas-en.html)
+- [Calculateur de dates FR](https://zoovettravel.com/calculadora-de-fechas-fr.html)
+
 ### Pet Export Authorities Directory — Reference (ES / EN / FR)
 Which official government authority issues the pet EXPORT (exit) certificate in
 each country (49 countries), where it is processed, and its cited official

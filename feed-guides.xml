@@ -11,8 +11,25 @@
     <language>en</language>
     <copyright>© 2013–2026 Zoovet Travel. All rights reserved.</copyright>
     <managingEditor>contacto@zoovettravel.com (Carlos Eduardo Ravello Joo)</managingEditor>
-    <lastBuildDate>Thu, 02 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://zoovettravel.com/feed-guides.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>Date and Deadline Calculator &#8212; Days Between Two Dates, and When a Deadline Falls</title>
+      <link>https://zoovettravel.com/calculadora-de-fechas.html</link>
+      <guid isPermaLink="true">https://zoovettravel.com/calculadora-de-fechas.html</guid>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
+      <description>Free trilingual calculator (ES/EN/FR): days, weeks and months between two dates, and the exact date on which a deadline of 30, 90 or 180 days falls. Calendar days, not business days &#8212; stated openly. For expiry dates, administrative deadlines, contracts and deliveries. No registration, no advertising, runs in the browser. &#169; 2026 Zoovet Travel &#8212; all rights reserved.</description>
+      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
+      <dc:contributor>Jessica Ysabel Camacho Garcia</dc:contributor>
+      <dc:publisher>Zoovet Travel</dc:publisher>
+      <dc:rights>All rights reserved</dc:rights>
+      <dc:subject>date calculator</dc:subject>
+      <dc:subject>days between two dates</dc:subject>
+      <dc:subject>deadline calculation</dc:subject>
+      <dc:subject>expiry date</dc:subject>
+      <category>Tools</category>
+    </item>
 
     <item>
       <title>Zoovet Travel — Importing pets to Singapore (AVS): Schedules I/II/III and 30-day AQC quarantine</title>
