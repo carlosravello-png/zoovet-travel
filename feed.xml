@@ -13,7 +13,7 @@
     <copyright>© 2013–2026 Zoovet Travel. All rights reserved.</copyright>
     <managingEditor>contacto@zoovettravel.com (Zoovet Travel)</managingEditor>
     <webMaster>contacto@zoovettravel.com (Carlos Eduardo Ravello Joo)</webMaster>
-    <lastBuildDate>Sun, 26 Jul 2026 12:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 03 Aug 2026 12:00:00 -0500</lastBuildDate>
     <atom:link href="https://zoovettravel.com/feed.xml" rel="self" type="application/rss+xml"/>
 
     <dc:publisher>Zoovet Travel · https://zoovettravel.com</dc:publisher>
@@ -22,6 +22,17 @@
 
     <!-- ═══ HISTORIAS REALES DE VIAJE — REAL TRAVEL CASE STORIES (client-authorized) ═══ -->
     <!-- ═══ GUÍAS PRÁCTICAS ═══ -->
+    <item>
+      <title>Zoovet Travel — Pacha, de Bolivia a Bélgica: cuatro países y 90 días de espera</title>
+      <link>https://zoovettravel.com/historias/pacha-de-bolivia-a-belgica.html</link>
+      <guid isPermaLink="true">https://zoovettravel.com/historias/pacha-de-bolivia-a-belgica.html</guid>
+      <pubDate>Mon, 03 Aug 2026 12:00:00 -0500</pubDate>
+      <description>Caso real: Justine y Lucie adoptaron a Pacha en Bolivia y el trámite se detuvo porque nadie conseguía entenderse. Permiso zoosanitario del SENASAG, microchip y toma de muestra en Lima, titulación de anticuerpos antirrábicos, los 90 días reglamentarios repartidos entre Perú y Canadá, y certificado de exportación refrendado por la CFIA. Viajó en cabina acreditada como perra de asistencia. Escrito por la Dra. Jessica Camacho.</description>
+      <dc:creator>Dra. Jessica Ysabel Camacho García — CMVP 12434 (autora) &amp; Carlos Eduardo Ravello Joo (edición)</dc:creator>
+      <dc:publisher>Zoovet Travel — zoovettravel.com</dc:publisher>
+      <dc:rights>© 2026 Zoovet Travel. Con autorización de sus dueños.</dc:rights>
+      <category>Real Travel Stories — Client Case Study</category>
+    </item>
     <item>
     <title>La historia de la cuarentena animal en Australia (y por qué no es sobre tu perro)</title>
     <link>https://zoovettravel.com/journal/historia-cuarentena-animal-australia-2026.html</link>
