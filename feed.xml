@@ -13,7 +13,7 @@
     <copyright>© 2013–2026 Zoovet Travel. All rights reserved.</copyright>
     <managingEditor>contacto@zoovettravel.com (Zoovet Travel)</managingEditor>
     <webMaster>contacto@zoovettravel.com (Carlos Eduardo Ravello Joo)</webMaster>
-    <lastBuildDate>Mon, 03 Aug 2026 12:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 04 Aug 2026 09:00:00 -0500</lastBuildDate>
     <atom:link href="https://zoovettravel.com/feed.xml" rel="self" type="application/rss+xml"/>
 
     <dc:publisher>Zoovet Travel · https://zoovettravel.com</dc:publisher>
@@ -68,6 +68,20 @@
     </item>
 
     <!-- ═══ ZOOVET JOURNAL — REGULATORY ALERTS ═══ -->
+
+    <item>
+      <title>ALERTA — El reglamento europeo de mascotas cambió el 22 de abril: los plazos siguen, los papeles no</title>
+      <link>https://zoovettravel.com/journal/nuevo-reglamento-ue-2026-131-mascotas.html</link>
+      <guid isPermaLink="true">https://zoovettravel.com/journal/nuevo-reglamento-ue-2026-131-mascotas.html</guid>
+      <pubDate>Tue, 04 Aug 2026 09:00:00 -0500</pubDate>
+      <description>Desde el 22 de abril de 2026 se aplica el Reglamento Delegado (UE) 2026/131, que sustituye al Reglamento (UE) 576/2013 en los desplazamientos sin fines comerciales de animales de compañía, y el Reglamento de Ejecución (UE) 2026/705 fija por fin un modelo oficial europeo para la autorización escrita del propietario (anexo V, parte 1). Los plazos del viajero —microchip antes de la vacuna, veintiún días de espera, tres meses tras la serología en terceros países no listados— no cambiaron. Cambió la norma que los ordena, y las fichas que citaban la derogada. El 27 de julio de 2026 se publicó además una corrección de errores del 2026/131 que sólo toca su entrada en vigor, no su fecha de aplicación. Al releer el marco aparece una regla anterior que sigue viva: el artículo 245.2 del Reglamento (UE) 2016/429 da al propietario una ventana de cinco días; fuera de ella el traslado deja de ser no comercial y pasa al régimen de importación. Verificado en EUR-Lex, en el BOE y en la web del Ministerio de Agricultura el 4 de agosto de 2026.</description>
+      <dc:creator>Carlos Eduardo Ravello Joo — ORCID 0009-0007-5631-7436</dc:creator>
+      <dc:contributor>Dra. Jessica Ysabel Camacho García — CMVP 12434 (revisión veterinaria)</dc:contributor>
+      <dc:publisher>Zoovet Travel — zoovettravel.com</dc:publisher>
+      <dc:rights>© 2026 Zoovet Travel.</dc:rights>
+      <dc:source>https://eur-lex.europa.eu/eli/reg_del/2026/131/oj</dc:source>
+      <category>Zoovet Journal — Regulatory Alert</category>
+    </item>
 
     <item>
     <title>IATA publica su primer manual para mascotas en cabina: qué obliga de verdad, y por qué tu exportación sigue en manos del país</title>
