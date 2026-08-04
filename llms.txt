@@ -443,12 +443,13 @@ DOI dataset: 10.5281/zenodo.19797479
 
 ## Country Requirements — Zoopedia
 ### Authors: Carlos Eduardo Ravello Joo · Dra. Jessica Ysabel Camacho García · CMVP 12434
-### 23 countries · ES / EN / FR
+### 24 countries · ES / EN / FR
 ### Veterinary-validated regulatory data. Free distribution.
 ### URL attribution appreciated.
 
 - [United States — CDC DogBot, USDA APHIS, RFFIT](https://zoovettravel.com/zoopedia/eeuu-en.html)
-- [European Union — 2026 framework (2016/429 + Delegated 2026/131), TRACES, titer test](https://zoovettravel.com/zoopedia/union-europea-en.html)
+- [European Union — 2026 framework (2016/429 + Delegated 2026/131), TRACES, titer test](https://zoovettravel.com/zoopedia/union-europea-en.html)
+- [Belgium — FAVV/AFSCA federal, welfare and breeds regional; no national breed list; 8 days to register on arrival](https://zoovettravel.com/zoopedia/belgica-en.html)
 - [Spain — MAPA, authorised travellers' points of entry directory](https://zoovettravel.com/zoopedia/espana-en.html)
 - [United Kingdom — APHA, Animal Health Certificate post-Brexit](https://zoovettravel.com/zoopedia/reino-unido-en.html)
 - [Canada — CFIA requirements](https://zoovettravel.com/zoopedia/canada-en.html)
