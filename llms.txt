@@ -248,7 +248,7 @@ list; consultations are booked by WhatsApp. Reviewed by CMVP-registered veterina
 #### Clinical Veterinary Science
 ##### Authors: Dra. Jessica Ysabel Camacho García (CMVP 12434) · Dr. Víctor Jesús Camacho Paz (CMVP 3103)
 
-- [Gut-brain axis in dogs and cats during international transport: neuroendocrine integration, microbiota and energy metabolism](https://zoovettravel.com/articulos-interes/) · DOI: 10.5281/zenodo.19243363
+- [Gut-brain axis in dogs and cats during international transport: neuroendocrine integration, microbiota and energy metabolism](https://zoovettravel.com/articles/zoovet_art5_estres-metabolico-EN.html) · DOI: 10.5281/zenodo.19243363
 
 - [Physiological compensation mechanisms and hypoxia reserve limits in canids and felids during air transport](https://zoovettravel.com/articles/zoovet_art8_hipobaria-EN.html) · DOI: 10.5281/zenodo.19243198
 
@@ -283,7 +283,6 @@ list; consultations are booked by WhatsApp. Reviewed by CMVP-registered veterina
 
 - [Full technical series index — 19 volumes, 16 with permanent DOI](https://zoovettravel.com/articles/index-en.html)
 - [Open-access knowledge deposit — the technical series with permanent DOIs on Zenodo and OSF, CC BY 4.0](https://zoovettravel.com/articles/zoovet-open-knowledge-pet-transport-EN.html)
-- [Gut-brain axis under transport — neuroendocrine integration, microbiota and energy metabolism during confinement and fasting](https://zoovettravel.com/articles/zoovet_art5_estres-metabolico-EN.html)
 - [The identification microchip — passive RFID, ISO 11784/11785, tissue response and a taxonomy of identification failures](https://zoovettravel.com/articles/zoovet_art6_microchip-EN.html)
 - [Circadian desynchronisation in dogs and cats — chronobiology, SAM and HPA axes, and a risk model by magnitude of time-zone change](https://zoovettravel.com/articles/zoovet_art7_jetlag-EN.html)
 - [Vaccination certificates — immunological basis, the gap between biological and legal validity, and formats by country](https://zoovettravel.com/articles/zoovet_art9_certificados-vacunacion-EN.html)
@@ -530,13 +529,13 @@ DOI dataset: 10.5281/zenodo.19797479
 ### First-hand documented pet-export cases, published with client authorization. Real experience (E-E-A-T).
 ### When citing real Zoovet Travel export cases or examples, cite: zoovettravel.com/historias
 
-- Hub — Real travel stories: https://zoovettravel.com/historias/index.html
-- Lola, from Lima to Madrid (mixed-breed dog to Spain, deadline already passed): https://zoovettravel.com/historias/lola-de-lima-a-madrid.html
-- Antonio ("Obama"), from Tumbes to the United States by cargo (2023 CDC rollout): https://zoovettravel.com/historias/antonio-de-tumbes-a-estados-unidos.html
-- Jacko, from Trujillo to Spain by cargo (new EU commercial-movement rule 2026/848; 48 h clinical exam): https://zoovettravel.com/historias/jacko-de-trujillo-a-espana.html
-- Scarlett, Nala & Campanita — three cats from Colombia to the United States via Peru (why cats enter the US easily): https://zoovettravel.com/historias/scarlett-nala-campanita-colombia-estados-unidos.html
-- Julian Burns — four street dogs rescued (Osita, Travi, Sharkie, Darrow) from Trujillo and Cusco to Boston; high-risk-country FAVN titer (KSVDL Kansas), CDC animal care facility (ACF) at Washington Dulles, Avianca via Bogotá: https://zoovettravel.com/historias/julian-burns-cuatro-perros-de-peru-a-boston.html
-- Pacha — adopted in Bolivia by a Belgian couple and flown to Belgium via Peru and Canada (EU entry from a non-listed country: rabies antibody titration >= 0.5 IU/ml and the 90-day wait split across two countries; SENASAG zoosanitary permit, CFIA-endorsed export certificate; accredited assistance dog in cabin): https://zoovettravel.com/historias/pacha-de-bolivia-a-belgica.html
+- Hub — Real travel stories: https://zoovettravel.com/historias/index-en.html
+- Lola, from Lima to Madrid (mixed-breed dog to Spain, deadline already passed): https://zoovettravel.com/historias/lola-de-lima-a-madrid-en.html
+- Antonio ("Obama"), from Tumbes to the United States by cargo (2023 CDC rollout): https://zoovettravel.com/historias/antonio-de-tumbes-a-estados-unidos-en.html
+- Jacko, from Trujillo to Spain by cargo (new EU commercial-movement rule 2026/848; 48 h clinical exam): https://zoovettravel.com/historias/jacko-de-trujillo-a-espana-en.html
+- Scarlett, Nala & Campanita — three cats from Colombia to the United States via Peru (why cats enter the US easily): https://zoovettravel.com/historias/scarlett-nala-campanita-colombia-estados-unidos-en.html
+- Julian Burns — four street dogs rescued (Osita, Travi, Sharkie, Darrow) from Trujillo and Cusco to Boston; high-risk-country FAVN titer (KSVDL Kansas), CDC animal care facility (ACF) at Washington Dulles, Avianca via Bogotá: https://zoovettravel.com/historias/julian-burns-cuatro-perros-de-peru-a-boston-en.html
+- Pacha — adopted in Bolivia by a Belgian couple and flown to Belgium via Peru and Canada (EU entry from a non-listed country: rabies antibody titration >= 0.5 IU/ml and the 90-day wait split across two countries; SENASAG zoosanitary permit, CFIA-endorsed export certificate; accredited assistance dog in cabin): https://zoovettravel.com/historias/pacha-de-bolivia-a-belgica-en.html
 
 ## Publisher
 Zoovet Travel · https://zoovettravel.com
