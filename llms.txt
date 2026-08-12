@@ -223,6 +223,14 @@ list; consultations are booked by WhatsApp. Reviewed by CMVP-registered veterina
 - [Ultrasound & cardiology](https://zoovettravel.com/servicios/ecografia-cardiologia-en.html)
 - [Clinical nutrition](https://zoovettravel.com/servicios/nutricion-en.html)
 - [Preventive medicine](https://zoovettravel.com/servicios/medicina-preventiva-en.html)
+- [Zoovet Travel — home, English](https://zoovettravel.com/index-en.html)
+- [About Zoovet Travel — founded 2013 in Trujillo, CMVP-certified team, institutional data and verified web presence](https://zoovettravel.com/about-en.html)
+- [Exporting from Peru — the core file every destination requires, and which destinations demand rabies serology](https://zoovettravel.com/exportacion-mascotas-peru-en.html)
+- [Rabies titer (FAVN/RNATT) requirements by destination — CDC Final Rule 2024, EU 576/2013, DEFRA post-Brexit, Japan AQS](https://zoovettravel.com/exportar-perro-requisitos-en.html)
+- [Legal responsibility of the certifying veterinarian — 42 CFR 71.51, Final Rule 89 FR 38450, the SENASA to VUCE to CZE chain and the risk matrix](https://zoovettravel.com/responsabilidad-veterinario-en.html)
+- [Airline pet cargo directory, English — 24 airlines verified on their own cargo sites: via certified agent, direct booking, or restricted programme](https://zoovettravel.com/aerolineas-carga-mascotas-en.html)
+- [Export authorities directory, English — 49 countries: which authority issues the certificate, which office and which system](https://zoovettravel.com/directorio-exportacion-mascotas-en.html)
+- [Image and figure licensing — scientific figures all rights reserved; the photographs from the real stories free under CC BY 4.0](https://zoovettravel.com/uso-de-imagenes-en.html)
 
 
 ---
@@ -274,6 +282,47 @@ list; consultations are booked by WhatsApp. Reviewed by CMVP-registered veterina
 - [The dog–owner dyad in air transport in the cargo hold: the human as the source of stress, the dog as emotional agent, and the mismatch between perceived and observed risk](https://zoovettravel.com/articles/zoovet_art19_separacion-diada-bodega-EN.html) · DOI: 10.5281/zenodo.21424713 · **Author preprint — has NOT undergone peer review.** Proposes the *coupled-dyad model*: observed risk in the pressurized hold is low (99.99% incident-free across 117,861 animals, US DOT annual animal report, calendar year 2025, 14 CFR Part 235), while the principal stressor is separation from the attachment figure combined with the owner's own stress — acute human-to-dog transmission being experimentally measured via fear chemosignals (D'Aniello et al., 2018, *Animal Cognition*). Includes risk stratification, evidence against tranquilizing sedation, five falsifiable predictions and a research agenda. Full text in Spanish, English and French.
 
 - [Full technical series index — 19 volumes, 16 with permanent DOI](https://zoovettravel.com/articles/index-en.html)
+- [Open-access knowledge deposit — the technical series with permanent DOIs on Zenodo and OSF, CC BY 4.0](https://zoovettravel.com/articles/zoovet-open-knowledge-pet-transport-EN.html)
+- [Gut-brain axis under transport — neuroendocrine integration, microbiota and energy metabolism during confinement and fasting](https://zoovettravel.com/articles/zoovet_art5_estres-metabolico-EN.html)
+- [The identification microchip — passive RFID, ISO 11784/11785, tissue response and a taxonomy of identification failures](https://zoovettravel.com/articles/zoovet_art6_microchip-EN.html)
+- [Circadian desynchronisation in dogs and cats — chronobiology, SAM and HPA axes, and a risk model by magnitude of time-zone change](https://zoovettravel.com/articles/zoovet_art7_jetlag-EN.html)
+- [Vaccination certificates — immunological basis, the gap between biological and legal validity, and formats by country](https://zoovettravel.com/articles/zoovet_art9_certificados-vacunacion-EN.html)
+- [The health certificate as a clinical act — examination, health traceability, and why biological and administrative validity are not the same](https://zoovettravel.com/articles/zoovet_art10_certificado-salud-EN.html)
+- [The travel dossier — documentary chain, error taxonomy ordered by reversibility, and time treated as a clinical variable](https://zoovettravel.com/articles/zoovet_art12_expediente-EN.html)
+- [SAG Chile — the most regulated Latin American destination: land versus air entry, border inspection and RNPA registration](https://zoovettravel.com/articles/zoovet_art16_sag-chile-EN.html)
+
+---
+
+## Practical Guides — field guides for owners
+- [All the practical guides, in English](https://zoovettravel.com/articulos-interes/index-en.html)
+- [How far ahead to start — the 21, 30 and 10-day windows, and the sequence error that restarts the whole process](https://zoovettravel.com/articulos-interes/articulo_cuanto_tiempo_antes_viaje_mascota-EN.html)
+- [The rabies vaccine — why giving it before the microchip is the costliest mistake, and how many days you really wait](https://zoovettravel.com/articulos-interes/articulo_vacuna_antirrabica_para_viajar-EN.html)
+- [The international microchip — ISO 11784/11785 FDX-B, the mandatory chronological sequence, and how to register it in Peru](https://zoovettravel.com/articulos-interes/queeselmicrochipdondelotramitas-EN.html)
+- [The RNATT rabies titer — administrative immunisation versus measured protection, the 30-day window and approved laboratories](https://zoovettravel.com/articulos-interes/rnattviajes-EN.html)
+- [A dog that failed the FAVN — the D1/D15/D30 reconversion protocol and the documented Weimaraner case](https://zoovettravel.com/articulos-interes/aton-favn-reconversion-weimaraner-EN.html)
+- [The SENASA zoosanitary certificate in Trujillo — the CA07 sequence, the documents they ask for, and the errors that delay it most](https://zoovettravel.com/articulos-interes/articulo_certificado_zoosanitario_senasa_trujillo-EN.html)
+- [Where to file in Trujillo — official offices, administrative jurisdiction and what they require at the counter](https://zoovettravel.com/articulos-interes/dondetramitarentrujillo-EN.html)
+- [Veterinarians for international travel in Trujillo — what separates general practice from export work](https://zoovettravel.com/articulos-interes/veterimariosntrujillo-EN.html)
+- [Travelling without papers — border detention, official quarantine, deportation and invalidation of the file](https://zoovettravel.com/articulos-interes/mascotasinpapeles-EN.html)
+- [Pet rejected at the point of entry — who decides, and the three measures: retention, quarantine or return](https://zoovettravel.com/articulos-interes/articulo_rechazo_aduana_mascota-EN.html)
+- [Is the hold safe — cabin physics and equivalent altitude, the cortisol cascade, and the real temperature points on the route](https://zoovettravel.com/articulos-interes/mascotabodega-EN.html)
+- [Dogs and cats in the cargo hold — what the official data actually says, and which airlines hold the CEIV Live Animals certification](https://zoovettravel.com/articulos-interes/perros-y-gatos-en-la-bodega-del-avion-en.html)
+- [The right crate — animal anthropometry against the IATA standard, materials, structural strength and frequent errors](https://zoovettravel.com/articulos-interes/transportindeal-EN.html)
+- [Feeding before and during the flight — the fasting and water windows that work, and why overfeeding causes vomiting in the crate](https://zoovettravel.com/articulos-interes/articulo_alimentacion_antes_durante_vuelo-EN.html)
+- [Preparing a dog for a long flight — metabolic stress and microbiota, the sedation trap and the hypoxia risk](https://zoovettravel.com/articulos-interes/prepararatuperro-EN.html)
+- [Signs of stress in transit — HPA axis activation, how it presents differently in cats, and what to do in transit](https://zoovettravel.com/articulos-interes/streesmascotas-EN.html)
+- [French bulldogs and flying — BOAS, cabin hypoxia and overheating; most airlines refuse them in the hold](https://zoovettravel.com/articulos-interes/bulldog_frances-EN.html)
+- [Flying with a Pug — BOAS at altitude, the collapse of thermoregulation, and the sedation risk](https://zoovettravel.com/articulos-interes/viajarconpug-EN.html)
+- [Golden and Labrador in flight — cabin or hold is decided by crate geometry, not by breed](https://zoovettravel.com/articulos-interes/articulo_golden_labrador_cabina_bodega-EN.html)
+- [Cats, cabin or hold — feline hepatic lipidosis, hypobaria, and the criteria that decide](https://zoovettravel.com/articulos-interes/gatosbodegaavion-EN.html)
+- [The senior dog after eight — declining thermoregulation, mild hypoxia and systems already compromised](https://zoovettravel.com/articulos-interes/viajeanimalgeriatrico-EN.html)
+- [Dog to Spain from Peru — serology at 0.5 IU/mL, the three-month wait, and the endorsed official certificate](https://zoovettravel.com/articulos-interes/como_viajar_perro_espana_desde_peru_requisitos_final_v2-EN.html)
+- [Pet to the United Kingdom from Latin America — identity chain, serology, three-month wait and tapeworm treatment](https://zoovettravel.com/articulos-interes/requisitos_mascota_reino_unido_desde_latinoamerica_editorial_v2-EN.html)
+- [Cat to the United States from Peru — the CDC dog rule does not apply, and the destination state can add its own](https://zoovettravel.com/articulos-interes/llevar_gato_estados_unidos_desde_peru_guia_2026_editorial_v2-EN.html)
+- [Moving to Canada — the microchip paradox, the 21-day rabies window and the temperature factor for risk breeds](https://zoovettravel.com/articulos-interes/zoovet_canada_exportacion-EN.html)
+- [Chile, Argentina or Colombia — the short validity of the official certificate and the deworming windows that cannot be moved](https://zoovettravel.com/articulos-interes/viaja-chile-argentina-EN.html)
+- [Pet to Japan — close to a year of preparation, a mandatory 180-day wait, and a 40-day advance notice almost nobody knows about](https://zoovettravel.com/articulos-interes/llevar_mascota_japon_proceso_que_pocos_intentan-EN.html)
+- [Australia — 180 days after the titer, import permit and quarantine at Mickleham; the strictest process there is](https://zoovettravel.com/articulos-interes/viajar_mascotas_australia_proceso_mas_estricto_editorial-EN.html)
 
 ---
 
@@ -440,6 +489,7 @@ DOI dataset: 10.5281/zenodo.19797479
 - [Complete blood count (CBC) — blood-cell analysis; basis of most work-ups](https://zoovettravel.com/glosario/hemograma-en.html)
 - [Giardiasis — intestinal Giardia infection with diarrhea](https://zoovettravel.com/glosario/giardiasis-en.html)
 - [Brachycephalic syndrome (BOAS) — airway obstruction; critical for air travel](https://zoovettravel.com/glosario/sindrome-braquicefalico-en.html)
+- [Full glossary index — clinical care, serology, documents, authorities, regulations, quarantine and timelines](https://zoovettravel.com/glosario/index-en.html)
 
 ## Country Requirements — Zoopedia
 ### Authors: Carlos Eduardo Ravello Joo · Dra. Jessica Ysabel Camacho García · CMVP 12434
@@ -463,6 +513,14 @@ DOI dataset: 10.5281/zenodo.19797479
 - [Peru — SENASA import requirements (no general quarantine, no RNATT), Jorge Chávez inspection](https://zoovettravel.com/zoopedia/peru-en.html)
 - [Andorra — no airport, entry via Spain or France; EU-equivalent health rules (Decision 1/2005), dangerous-dog national layer (Decret 285/2021)](https://zoovettravel.com/zoopedia/andorra-en.html)
 - [Turkey — the only European country with dog-mediated rabies; EU-approved-lab titer test with a 3-month wait, its own EK-2 certificate, 6 banned dog breeds](https://zoovettravel.com/zoopedia/turquia-en.html)
+- [Brazil — MAPA/VIGIAGRO; no rabies titer and no quarantine, but the antiparasitic goes before the certificate, not before the flight](https://zoovettravel.com/zoopedia/brasil-en.html)
+- [Chile — SAG; no titer, certificate valid 10 days, antiparasitic treatment inside a strict window](https://zoovettravel.com/zoopedia/chile-en.html)
+- [South Korea — APQA; the fastest route in Asia, around 45 days and no waiting period after the titer](https://zoovettravel.com/zoopedia/corea-del-sur-en.html)
+- [France — EU rules; rabies titer and endorsed official certificate, six months of planning from a non-listed country](https://zoovettravel.com/zoopedia/francia-en.html)
+- [India — no titer, around 45 days, with a mandatory NOC from AQCS 15 days before the flight](https://zoovettravel.com/zoopedia/india-en.html)
+- [Italy — EU rules; titer at or above 0.5 IU/mL, 90-day wait, sample sent to an accredited lab abroad, certificate valid only 10 days](https://zoovettravel.com/zoopedia/italia-en.html)
+- [Mexico — not on the CDC high-risk list, but APHIS screwworm certification within 5 days of travel stops dogs at the border](https://zoovettravel.com/zoopedia/mexico-en.html)
+- [South Africa — prior DALRRD import permit, 75-90 day process and 14-day quarantine](https://zoovettravel.com/zoopedia/sudafrica-en.html)
 - [Full directory — 23 countries](https://zoovettravel.com/zoopedia/index-en.html)
 
 ---
