@@ -35,6 +35,112 @@
     html {
       scroll-behavior: smooth;
     }
+
+    @media (min-width: 768px) {
+      .hamburger-wrap {
+        display: none !important;
+      }
+
+      .nav-drawer-backdrop {
+        display: none !important;
+      }
+    }
+
+    .hamburger-wrap {
+      position: relative;
+      z-index: 60;
+    }
+
+    .hamburger-btn {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 44px;
+      height: 44px;
+      padding: 0;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      gap: 5px;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .hamburger-btn span {
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: #1a2e35;
+      border-radius: 1px;
+      transition: transform 0.25s ease, opacity 0.2s ease;
+    }
+
+    .hamburger-btn.is-open span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .hamburger-btn.is-open span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger-btn.is-open span:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    .nav-drawer-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(26, 46, 53, 0.2);
+      z-index: 45;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.25s ease, visibility 0.25s;
+    }
+
+    .nav-drawer-backdrop.is-open {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .nav-drawer {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: min(280px, 88vw);
+      max-width: 280px;
+      height: 100%;
+      background: #F8FAFC;
+      box-shadow: -4px 0 24px rgba(26, 46, 53, 0.12);
+      z-index: 50;
+      transform: translateX(100%);
+      transition: transform 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+      overflow-y: auto;
+      padding: 3.5rem 1rem 1.5rem;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .nav-drawer.is-open {
+      transform: translateX(0);
+    }
+
+    .nav-drawer a {
+      display: block;
+      padding: 0.75rem 0.5rem;
+      color: #1a2e35;
+      font-size: 0.8125rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      border-bottom: 1px solid rgba(26, 46, 53, 0.08);
+      -webkit-tap-highlight-color: rgba(12, 120, 158, 0.15);
+    }
+
+    .nav-drawer a:hover {
+      color: #0C789E;
+    }
+
+    body.menu-open-mobile {
+      overflow: hidden;
+    }
   </style>
 <link href="../assets/tailwind.css" rel="stylesheet"/>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "CollectionPage","about":[{"@type":"Thing","name":"Médecine vétérinaire","sameAs":"https://www.wikidata.org/wiki/Q170201"},{"@type":"MedicalCondition","name":"Rage","sameAs":"https://www.wikidata.org/wiki/Q39222"},{"@type":"Thing","name":"Sérologie","sameAs":"https://www.wikidata.org/wiki/Q502159"},{"@type":"Thing","name":"Hypoxie","sameAs":"https://www.wikidata.org/wiki/Q105688"}],"dateModified":"2026-07-31", "@id": "https://zoovettravel.com/articles/index-fr.html#collection", "name": "Articles Scientifiques — Zoovet Travel", "description": "Articles scientifiques en médecine vétérinaire appliquée aux voyages internationaux avec animaux. Rédigés et vérifiés par Dr. Jessica Camacho, Zoovet Travel.", "url": "https://zoovettravel.com/articles/index-fr.html", "inLanguage": "fr", "publisher": {"@id": "https://zoovettravel.com/#organization"}, "isPartOf": {"@type": "WebSite", "@id": "https://zoovettravel.com/#website", "url": "https://zoovettravel.com"}, "mainEntity": {"@type": "ItemList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Interventions antiparasitaires exigées pour les mouvements internationaux de chiens : fondement biologique et critères réglementaires comparés", "url": "https://zoovettravel.com/articles/zoovet_art4_desparasitacionFR.html"}, {"@type": "ListItem", "position": 2, "name": "L'axe intestin–cerveau chez le chien et le chat lors du transport international : intégration neuroendocrinienne, microbiote et métabolisme énergétique", "url": "https://zoovettravel.com/articles/zoovet_art5_estres-metabolico-FR.html"}, {"@type": "ListItem", "position": 3, "name": "Puce d'identification animale : fondement technologique, cadre réglementaire international et traçabilité sanitaire", "url": "https://zoovettravel.com/articles/zoovet_art6_microchip-FR.html"}, {"@type": "ListItem", "position": 4, "name": "Désynchronisation circadienne et stress du transport chez le chien et le chat : le phénomène communément appelé « jet lag »", "url": "https://zoovettravel.com/articles/zoovet_art7_jetlag-FR.html"}, {"@type": "ListItem", "position": 5, "name": "Physiologie hypobare dans le transport aérien du chien et du chat : pressurisation, oxygène et réponse physiologique en vol commercial", "url": "https://zoovettravel.com/articles/zoovet_art8_hipobaria-FR.html"}, {"@type": "ListItem", "position": 6, "name": "Certificats de vaccination chez le chien et le chat : fondement immunologique, validité sanitaire et cadre réglementaire international", "url": "https://zoovettravel.com/articles/zoovet_art9_certificados-vacunacion-FR.html"}, {"@type": "ListItem", "position": 7, "name": "Le certificat de santé dans le déplacement international de chiens et chats : examen clinique, traçabilité sanitaire et validité documentaire", "url": "https://zoovettravel.com/articles/zoovet_art10_certificado-salud-FR.html"}, {"@type": "ListItem", "position": 8, "name": "Quarantaine dans l'Importation Internationale de Chiens et Chats : Fondement Épidémiologique, Modèles Réglementaires et Points Critiques de Défaillance", "url": "https://zoovettravel.com/articles/zoovet_art11_cuarentena-FR.html"}, {"@type": "ListItem", "position": 9, "name": "Le Dossier d'Exportation d'Animaux de Compagnie : Chaîne Documentaire Complète, Taxonomie de l'Erreur et Réversibilité", "url": "https://zoovettravel.com/articles/zoovet_art12_expediente-FR.html"}, {"@type": "ListItem", "position": 10, "name": "CDC et importation de chiens aux États-Unis: analyse de la règle provisoire de 2024 et du système DogBot", "url": "https://zoovettravel.com/articles/zoovet_art13_cdc-dmrvv-FR.html"}, {"@type": "ListItem", "position": 11, "name": "APHA post-Brexit et l'Animal Health Certificate: analyse du nouveau régime d'importation d'animaux au Royaume-Uni", "url": "https://zoovettravel.com/articles/zoovet_art14_apha-post-brexit-FR.html"}, {"@type": "ListItem", "position": 12, "name": "MPI Nouvelle-Zélande: le système de biosécurité le plus strict au monde et les exigences de quarantaine pour animaux de compagnie", "url": "https://zoovettravel.com/articles/zoovet_art15_mpi-nueva-zelanda-FR.html"}, {"@type": "ListItem", "position": 13, "name": "SAG Chili et l'importation d'animaux de compagnie: la destination latino-américaine la plus réglementée", "url": "https://zoovettravel.com/articles/zoovet_art16_sag-chile-FR.html"}, {"@type": "ListItem", "position": 14, "name": "Règlement (UE) 576/2013: Le cadre européen pour le mouvement non commercial d'animaux de compagnie", "url": "https://zoovettravel.com/articles/zoovet_art17_reglamento-ue-576-FR.html"}, {"@type": "ListItem", "position": 15, "name": "Reconversion Sérologique Post-Protocole D1/J15/J30 chez un Braque de Weimar présentant un Échec Primaire au Test FAVN : Rapport de Cas (KSVDL, 2026)", "url": "https://zoovettravel.com/articles/zoovet_art18_aton-favn-FR.html"}, {"@type": "ListItem", "position": 16, "name": "Description technique de la réponse immune humorale post-vaccination antirabique et bases méthodologiques des épreuves de neutralisation virale (RFFIT et FAVN) chez les animaux de compagnie", "url": "https://zoovettravel.com/articles/zoovet_article2_FR.html"}, {"@type": "ListItem", "position": 17, "name": "Transport aérien des chiens brachycéphales : risques physiologiques, facteurs de risque et cadre réglementaire", "url": "https://zoovettravel.com/articles/zoovet_article3_braquicefalos_FR.html"}, {"@type": "ListItem", "position": 18, "name": "Titrage des anticorps antirabiques et fenêtre de 30 jours post-primovaccination", "url": "https://zoovettravel.com/articles/zoovet_article_v2_FR.html"}, {"@type": "ListItem", "position": 19, "name": "Pourquoi les pays retiennent votre animal à l'aéroport", "url": "https://zoovettravel.com/articles/zoovet-connaissance-ouverte-transport-animaux-FR.html"}, {"@type": "ListItem", "position": 20, "name": "La dyade chien–propriétaire dans le transport aérien en soute : l'humain comme source du stress, le chien comme agent émotionnel", "url": "https://zoovettravel.com/articles/zoovet_art19_separacion-diada-bodega-FR.html"}], "numberOfItems": 20}, "license": "https://creativecommons.org/licenses/by/4.0/", "copyrightNotice": "© 2026 Zoovet Travel — CC BY 4.0", "creditText": "Zoovet Travel (C. E. Ravello Joo & J. Y. Camacho García, CMVP 12434)"}, {"@type": "BreadcrumbList", "@id": "https://zoovettravel.com/articles/index-fr.html#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://zoovettravel.com/"}, {"@type": "ListItem", "position": 2, "name": "Articles Scientifiques", "item": "https://zoovettravel.com/articles/index-fr.html"}]}, {"@type": "Organization", "@id": "https://zoovettravel.com/#organization", "name": "Zoovet Travel", "url": "https://zoovettravel.com", "logo": "https://zoovettravel.com/images/zoovet-logo.png"}]}</script>
