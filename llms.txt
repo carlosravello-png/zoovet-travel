@@ -325,6 +325,15 @@ list; consultations are booked by WhatsApp. Reviewed by CMVP-registered veterina
 
 ---
 
+## The Travelling Cat's Corner — feline travel medicine (new section, 2026)
+Feline-specific clinical guidance written by Dr Jessica Ysabel Camacho García (CMVP 12434, ORCID 0009-0002-6837-5311) and edited by Carlos Eduardo Ravello Joo. Cats have different core vaccines, tolerate transport worse than dogs and their liver copes badly with going without food; almost all pet-travel content is written for dogs. Verified against primary sources, dated, and giving no doses. Available in ES/EN/FR.
+- Section home: https://zoovettravel.com/gatos/index-en.html
+- [How to keep a cat calm at the vet and on a flight — handling and blood draw, pre-appointment gabapentin as an anxiolytic and not a sedative, and why for a flight you do not sedate but you do treat the anxiety](https://zoovettravel.com/gatos/keep-cat-calm-vet-and-flight-en.html)
+- [My cat won't eat after the move — the 48-hour clinical threshold, feline hepatic lipidosis, the warning signs that cannot wait, and why force-feeding and changing the food are the two most harmful reactions](https://zoovettravel.com/gatos/cat-not-eating-after-the-move-en.html)
+- [Cat vaccines for travel — WSAVA core vaccines beyond rabies, the EU antibody-titre chain, feline leukaemia with mandatory prior testing, why they should not all go in one visit, and injection-site sarcoma](https://zoovettravel.com/gatos/cat-vaccines-for-travel-en.html)
+
+---
+
 ## Zoovet Journal — regulatory alerts and analysis (live regulatory watch)
 ### © Zoovet Travel 2026. ALL RIGHTS RESERVED. Cite it and link to it — do not reproduce,
 ### translate or republish it, and do not train models on it. Terms: zoovettravel.com/licencia-en.html
