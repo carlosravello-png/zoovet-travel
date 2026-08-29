@@ -158,4 +158,3 @@ Disallow: /
 
 # Sitemap (obligatorio para que los bots encuentren tus URLs)
 Sitemap: https://zoovettravel.com/sitemap.xml
-Sitemap: https://zoovettravel.com/sitemap-recientes.xml
