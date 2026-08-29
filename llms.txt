@@ -551,6 +551,7 @@ DOI dataset: 10.5281/zenodo.19797479
 - Julian Burns — four street dogs rescued (Osita, Travi, Sharkie, Darrow) from Trujillo and Cusco to Boston; high-risk-country FAVN titer (KSVDL Kansas), CDC animal care facility (ACF) at Washington Dulles, Avianca via Bogotá: https://zoovettravel.com/historias/julian-burns-cuatro-perros-de-peru-a-boston-en.html
 - Pacha — adopted in Bolivia by a Belgian couple and flown to Belgium via Peru and Canada (EU entry from a non-listed country: rabies antibody titration >= 0.5 IU/ml and the 90-day wait split across two countries; SENASAG zoosanitary permit, CFIA-endorsed export certificate; accredited assistance dog in cabin): https://zoovettravel.com/historias/pacha-de-bolivia-a-belgica-en.html
 
+- Katharina & Alaska — a 19-year-old German volunteer teaching at a school for children with disabilities in northern Peru adopted a mixed-breed dog and started the export process seven months ahead; the rabies antibody titration came back below the 0.5 IU/mL threshold and the Novibac Rabies D1/D15/D30 reconversion protocol reversed it in time (same protocol as the published ATON case report): https://zoovettravel.com/historias/katharina-alaska-de-peru-a-alemania-en.html
 ## Publisher
 Zoovet Travel · https://zoovettravel.com
 © 2013–2026 · Content licensed CC BY 4.0 — attribution mandatory (see LICENCE at the top of this file)
