@@ -584,6 +584,7 @@ Verified pet import/export requirements organized by DESTINATION country, with t
 - [Italy — Ministero della Salute + EU rules](https://zoovettravel.com/atlas/italia-en.html)
 - [Germany — BMLEH + EU rules](https://zoovettravel.com/atlas/alemania-en.html)
 - [France — DGAL + EU rules](https://zoovettravel.com/atlas/francia-en.html)
+- [Belgium — no national breed list (the 1998 one was annulled in 1999; each municipality decides); 7 points of entry, one a railway station; DogID/CatID within 8 days](https://zoovettravel.com/atlas/belgica-en.html)
 - [New Zealand — MPI; strict biosecurity, approved countries](https://zoovettravel.com/atlas/nueva-zelanda-en.html)
 - [Singapore — AVS; category by country of origin](https://zoovettravel.com/atlas/singapur-en.html)
 - [Andorra — no airport, entry via Spain or France; EU-equivalent health rules](https://zoovettravel.com/atlas/andorra-en.html)
