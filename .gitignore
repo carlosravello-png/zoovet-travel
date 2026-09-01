@@ -148,3 +148,32 @@ _revisar-fotos/
 _to_delete/
 # copias de seguridad de mis scripts
 *.bak-*
+
+# ─────────────────────────────────────────────────────────────
+# CARPETA DE TRABAJO EN LA RAÍZ (1-sep-2026)
+# Salidas de scripts, censos, dry-runs y volcados. Viven en el disco,
+# no se sirven. Comprobado con find: ninguno de estos patrones toca
+# un fichero fuera de la raíz ni nada que la web necesite.
+# ─────────────────────────────────────────────────────────────
+psi_*.json
+_pmids.txt
+_urls_externas.json
+_vigia_*.csv
+aplicado_*.txt
+dryrun_*.txt
+verifica_*.txt
+censo_plazo*
+volcado_plazo.json
+tabla_plazo.tsv
+citas_sin_identificador.csv
+
+# ─────────────────────────────────────────────────────────────
+# ORIGINALES DE CLIENTE Y DE LABORATORIO — JAMÁS AL REPO
+# 'sumar favns/' son informes del KSVDL: nombre del animal, microchip,
+# destino y datos del propietario. En un repositorio público eso no se
+# retira con un commit — queda en el historial para siempre.
+# 'JOURNAL FOTOS/' son los originales sin procesar. Al repo solo entra
+# el .webp final con sus metadatos, en images/journal/.
+# ─────────────────────────────────────────────────────────────
+sumar favns/
+JOURNAL FOTOS/
