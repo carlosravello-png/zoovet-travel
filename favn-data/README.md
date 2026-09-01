@@ -6,7 +6,7 @@
 
 ## About this dataset
 
-This repository contains **49 documented FAVN test results** processed by Veterinaria Zoovet through the Kansas State Veterinary Diagnostic Laboratory (KSVDL) between 2019 and 2026.
+This repository contains **71 documented FAVN test results** processed by Veterinaria Zoovet through the Kansas State Veterinary Diagnostic Laboratory (KSVDL) between 2019 and 2026.
 
 It constitutes, to the authors' knowledge and at the time of writing, one of the most complete publicly accessible, structured FAVN case datasets from a Latin American veterinary operator.
 
@@ -36,20 +36,44 @@ All cases from 2024 onward were processed under the Zoovet Travel standard proto
 
 | Metric | Value |
 |--------|-------|
-| Total case entries | 49 |
-| Unique animals | 47 |
-| PASS (≥ 0.5 IU/mL) | 46 |
+| Total case entries | 71 |
+| Unique animals | 68 |
+| PASS (>/= 0.5 IU/mL) | 68 |
 | FAIL (< 0.5 IU/mL) | 3 |
-| FAIL → PASS documented re-tests | 1 (ATON) |
-| Years covered | 2019 – 2026 |
+| PASS rate | 95.8% |
+| FAIL -> PASS documented re-tests | 2 (ATON, DYLAN) |
+| Years covered | 2019 - 2026 |
 | Species | Dogs, Cats |
-| Titre range | 0.20 – 6.01 IU/mL |
+| Titre range | 0.20 - 6.01 IU/mL (see *Censored values*) |
 | Laboratory | KSVDL (Manhattan, Kansas, USA) |
-| Destinations | Spain, Italy, United States, Germany, France, Portugal, Sweden |
+| Destinations | Spain, Italy, United States, Germany, France, Portugal, Sweden, Czech Republic, Cyprus |
+
+### Censored values
+
+KSVDL reports a titre either as an exact value (`1.99 IU/ml`) or as a censored one
+(`>/= 3.46 IU/ml`) when the result reaches the top of the reportable range. Versions 1 and 2 of
+this dataset stored both forms as a bare number, which silently turned "greater than or equal to"
+into a point estimate.
+
+From version 3 onward each record may carry two additional fields:
+
+- `result_operator` - `">="` or `"="`
+- `favn_result_display` - the literal string printed on the KSVDL report
+
+**These fields are present only where the operator was verified against the original PDF report:
+30 of the 71 records.** The remaining 41 keep `favn_result_iu_ml` alone; for those the operator is
+unknown. Any statistic computed on `favn_result_iu_ml` across the whole dataset is therefore a
+conservative estimate.
+
+### Completeness
+
+Fields `sex`, `age` and `serum_draw_date` are empty in 23 of the 71 records, and `species` and
+`breed` in 9. All belong to the historical block (records 1-24, 2019-2022). Records from 2024
+onward are complete.
 
 ---
 
-## Documented FAIL → PASS recovery case
+## Documented FAIL → PASS recovery cases
 
 ### ATON (cases R26-013079 → R26-030347)
 - **Species:** Dog, Weimaraner · **Microchip:** 725093200213835
@@ -57,6 +81,14 @@ All cases from 2024 onward were processed under the Zoovet Travel standard proto
 - **Re-test (R26-030347):** Post-booster re-vaccination and extended serological window. Serum drawn April 4, 2026. Result: **≥ 3.46 IU/mL — PASS**
 - **Delta:** 15.73× titer increase between extractions (58 days apart)
 - **Clinical lesson:** Initial serological failure under a standard protocol does not indicate permanent biological inability to respond. A structured booster intervention produced a robust anamnestic response, confirming adequate immunological memory.
+
+### DYLAN (cases R24-081686 -> R26-046305-1)
+- **Species:** Dog, French Bulldog - **Microchip:** 990000011836355
+- **First test (R24-081686):** Serum drawn September 23, 2024. Result: **0.20 IU/mL - FAIL**
+- **Re-test (R26-046305-1):** Serum drawn May 18, 2026. Result: **>/= 3.46 IU/mL - PASS**
+- **Interval:** 602 days between extractions
+- **Clinical lesson:** consistent with ATON - an initial non-response does not establish a
+  permanent inability to seroconvert.
 
 ---
 
@@ -127,6 +159,19 @@ KSVDL is the only OIE/WOAH-approved laboratory in North America for FAVN testing
 
 ## Version changelog
 
+### Version 3 (September 2026)
+- **Records added:** 22 new cases, serum drawn between April 20 and July 16, 2026 (accessions
+  R26-046305 ... R26-058253). Four accessions cover more than one animal and are split into
+  sub-records (`-1`, `-2`, `-3`).
+- **New fields:** `result_operator` and `favn_result_display`, populated for the 30 records whose
+  operator was verified against the original KSVDL PDF report
+- **FAIL->PASS documentation:** a second validated pair added (DYLAN)
+- **Records excluded:** reports cancelled by the laboratory, reports superseded by a corrected
+  reissue, and cases withdrawn on editorial grounds are not included
+- **Net total:** 71 records
+- **PASS rate:** 95.8% (68/71)
+- **New destinations:** Czech Republic, Cyprus
+
 ### Version 2 (May 2026)
 - **Records added:** 8 new cases from March–April 2026 batch (R26-030347 through R26-030354); R26-030348 documented as two sub-reports covering two animals
 - **Records corrected:** 4 records removed due to data integrity issues identified post-publication
@@ -140,4 +185,4 @@ KSVDL is the only OIE/WOAH-approved laboratory in North America for FAVN testing
 
 ---
 
-*Dataset maintained by Veterinaria Zoovet. Last updated: May 2026.*
+*Dataset maintained by Veterinaria Zoovet. Last updated: September 2026.*
