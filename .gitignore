@@ -177,3 +177,10 @@ citas_sin_identificador.csv
 # ─────────────────────────────────────────────────────────────
 sumar favns/
 JOURNAL FOTOS/
+
+# ─────────────────────────────────────────────────────────────
+# ENTREGAS DE CLAUDE — carpeta de trabajo local, no es contenido del sitio
+# La crea la app al dejar ficheros aquí (previsualizaciones, borradores).
+# Lo que sí va al repo se coloca en su ruta definitiva, nunca desde aquí.
+# ─────────────────────────────────────────────────────────────
+Claude outputs/
