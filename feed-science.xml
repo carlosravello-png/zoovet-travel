@@ -11,8 +11,27 @@
     <language>en</language>
     <copyright>© 2013–2026 Zoovet Travel. All rights reserved.</copyright>
     <managingEditor>contacto@zoovettravel.com (Dra. Jessica Ysabel Camacho García)</managingEditor>
-    <lastBuildDate>Sat, 18 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 28 Sep 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://zoovettravel.com/feed-science.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>The free-roaming dog as a sentinel of human leptospirosis after the coastal El Niño event: an inference from the Peruvian evidence</title>
+      <link>https://zoovettravel.com/articles/zoovet_art20_leptospirosis-perros-el-nino-en.html</link>
+      <guid isPermaLink="true">https://zoovettravel.com/articles/zoovet_art20_leptospirosis-perros-el-nino-en.html</guid>
+      <pubDate>Mon, 28 Sep 2026 00:00:00 +0000</pubDate>
+      <description>Systematic review with meta-analysis of canine Leptospira seroprevalence in Peru (8 studies, 993 dogs; pooled 60.1%, I² 93.9%) and transportability analysis of the 2017 coastal El Niño effect (prevalence ratio 3.11; Monte Carlo, 200,000 iterations). After a coastal El Niño year, at least one in three free-roaming dogs in an endemic coastal area would be seropositive (inferred). Unvaccinated free-roaming dogs are the only population in which a titre against Icterohaemorrhagiae reads as environmental exposure: a sentinel of human risk. Open data and code: doi:10.5281/zenodo.23024275.</description>
+      <dc:creator>Jessica Ysabel Camacho García</dc:creator>
+      <dc:contributor>Carlos Eduardo Ravello Joo</dc:contributor>
+      <dc:publisher>Zoovet Travel</dc:publisher>
+      <dc:rights>CC BY 4.0</dc:rights>
+      <dc:subject>leptospirosis</dc:subject>
+      <dc:subject>El Niño</dc:subject>
+      <dc:subject>sentinel animal</dc:subject>
+      <dc:subject>One Health</dc:subject>
+      <dc:subject>meta-analysis</dc:subject>
+      <dcterms:identifier>10.5281/zenodo.23023822</dcterms:identifier>
+      <category>Clinical Veterinary Science</category>
+    </item>
 
     <item>
       <title>The dog-owner dyad in air transport in the cargo hold: the human as the source of stress, the dog as emotional agent</title>
