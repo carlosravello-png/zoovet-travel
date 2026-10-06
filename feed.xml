@@ -13,7 +13,7 @@
     <copyright>© 2013–2026 Zoovet Travel. All rights reserved.</copyright>
     <managingEditor>contacto@zoovettravel.com (Zoovet Travel)</managingEditor>
     <webMaster>contacto@zoovettravel.com (Carlos Eduardo Ravello Joo)</webMaster>
-    <lastBuildDate>Tue, 01 Sep 2026 09:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2026 09:00:00 -0500</lastBuildDate>
     <atom:link href="https://zoovettravel.com/feed.xml" rel="self" type="application/rss+xml"/>
 
     <dc:publisher>Zoovet Travel · https://zoovettravel.com</dc:publisher>
@@ -79,6 +79,20 @@
     </item>
 
     <!-- ═══ ZOOVET JOURNAL — REGULATORY ALERTS ═══ -->
+
+    <item>
+      <title>ALERTA — Chile cambió las reglas para entrar con mascotas: identificación obligatoria y dos plazos de vacuna publicados</title>
+      <link>https://zoovettravel.com/journal/chile-nuevas-reglas-sag-mascotas-2026.html</link>
+      <guid isPermaLink="true">https://zoovettravel.com/journal/chile-nuevas-reglas-sag-mascotas-2026.html</guid>
+      <pubDate>Tue, 06 Oct 2026 09:00:00 -0500</pubDate>
+      <description>Desde el 27 de julio de 2026 rige en Chile la Resolución Exenta SAG N.º 3.343 de 2026, modificada por la N.º 5.444, que deroga la Resolución N.º 6.508 de 2021. La identificación individual y permanente (tatuaje o microchip ISO 11784/11785) pasa a ser obligatoria; el examen clínico y el antiparasitario se cuentan hacia atrás desde la emisión del Certificado Veterinario Internacional y no desde la llegada; y el retorno a Chile con el certificado de exportación pasa de 21 a 60 días corridos. La resolución no contiene confinamiento domiciliario ni un régimen aparte para cachorros. Sobre la vacuna antirrábica hay dos plazos oficiales publicados: 21 días para primovacunados en la resolución del SAG y entre 30 días y 12 meses en el Decreto N.º 1 del Ministerio de Salud. La validación de la OMS del 14 de septiembre de 2026 no cambió ningún requisito. Normas leídas en su texto oficial el 6 de octubre de 2026.</description>
+      <dc:creator>Carlos Eduardo Ravello Joo — ORCID 0009-0007-5631-7436</dc:creator>
+      <dc:contributor>Dra. Jessica Ysabel Camacho García — CMVP 12434 (revisión veterinaria)</dc:contributor>
+      <dc:publisher>Zoovet Travel — zoovettravel.com</dc:publisher>
+      <dc:rights>© 2026 Zoovet Travel.</dc:rights>
+      <dc:source>https://www.sag.gob.cl/sites/default/files/RES_3343_2026%20Version%20DO.pdf</dc:source>
+      <category>Zoovet Journal — Regulatory Alert</category>
+    </item>
 
     <item>
       <title>ALERTA — El reglamento europeo de mascotas cambió el 22 de abril: los plazos siguen, los papeles no</title>
