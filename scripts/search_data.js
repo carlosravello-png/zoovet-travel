@@ -1,6 +1,27 @@
 // Base de datos de Búsqueda — actualizada el 26-07-2026 (723 páginas)
 const rawSearchData = [
  {
+  "title": "Chile cambió las reglas para entrar con tu mascota: identificación obligatoria y dos plazos de vacuna",
+  "url": "journal/chile-nuevas-reglas-sag-mascotas-2026.html",
+  "category": "Journal",
+  "keywords": "Desde el 27 de julio de 2026 Chile exige microchip o tatuaje para entrar con mascotas. Hay dos plazos de vacuna publicados. Y qué cambia la OMS, y qué no.",
+  "lang": "es"
+ },
+ {
+  "title": "Chile changed the rules for bringing in your pet: mandatory identification and two vaccine deadlines",
+  "url": "journal/chile-nuevas-reglas-sag-mascotas-2026-en.html",
+  "category": "Journal",
+  "keywords": "Since 27 July 2026 Chile requires a microchip or tattoo to bring in a pet. Two vaccine deadlines are in print. And what the WHO validation does not change.",
+  "lang": "en"
+ },
+ {
+  "title": "Le Chili a changé les règles pour entrer avec votre animal : identification obligatoire et deux délais de vaccin",
+  "url": "journal/chile-nuevas-reglas-sag-mascotas-2026-fr.html",
+  "category": "Journal",
+  "keywords": "Depuis le 27 juillet 2026, le Chili exige une puce ou un tatouage pour entrer avec un animal. Deux délais de vaccin sont publiés. Et ce que change l'OMS.",
+  "lang": "fr"
+ },
+ {
   "title": "No existe una lista única de laboratorios antirrábicos: cada autoridad tiene la suya",
   "url": "journal/laboratorios-serologia-sin-consenso-2026.html",
   "category": "Journal",
@@ -1348,42 +1369,42 @@ const rawSearchData = [
   "title": "Voraussetzungen für die Einreise nach Chile mit deinem Haustier 2026: SAG, Entwurmung 5–30 Tage und keine Quar",
   "url": "atlas/chile-de.html",
   "category": "Atlas",
-  "keywords": "Reist du mit deinem Hund oder deiner Katze nach Chile? Der SAG verlangt CZI und Tollwutimpfung, die Entwurmung genau zwischen 5 und 30 Tagen vorher und 10 Tage häusliche Absonderung. Kein Bluttest.",
+  "keywords": "Mit Hund oder Katze nach Chile? Seit dem 27. Juli 2026 verlangt der SAG Mikrochip oder Tätowierung, Tollwutimpfung und Entwurmung 5 bis 30 Tage vor dem Zertifikat. Keine Quarantäne.",
   "lang": "de"
  },
  {
   "title": "Requirements to enter Chile with your pet 2026: SAG, antiparasitic 5-30 days and no quarantine",
   "url": "atlas/chile-en.html",
   "category": "Atlas",
-  "keywords": "Taking your dog or cat to Chile? The SAG requires a CZI and rabies vaccine, the antiparasitic treatment exactly between 5 and 30 days before, and 10 days of home confinement. No blood test.",
+  "keywords": "Taking your dog or cat to Chile? Since 27 July 2026 the SAG requires a microchip or tattoo, rabies vaccine and antiparasitic treatment 5 to 30 days before the certificate. No quarantine.",
   "lang": "en"
  },
  {
   "title": "Conditions pour entrer au Chili avec votre animal 2026 : SAG, antiparasitaire 5-30 jours et sans quarantaine",
   "url": "atlas/chile-fr.html",
   "category": "Atlas",
-  "keywords": "Vous emmenez votre chien ou chat au Chili ? Le SAG exige le CZI et le vaccin antirabique, l'antiparasitaire précisément entre 5 et 30 jours avant, et 10 jours de confinement à domicile. Sans test sanguin.",
+  "keywords": "Vous emmenez votre chien ou chat au Chili ? Depuis le 27 juillet 2026, le SAG exige puce ou tatouage, vaccin antirabique et antiparasitaire 5 à 30 jours avant le certificat. Sans quarantaine.",
   "lang": "fr"
  },
  {
   "title": "Requisiti per entrare in Cile con il tuo animale 2026: SAG, antiparassitario 5-30 giorni e senza quarantena",
   "url": "atlas/chile-it.html",
   "category": "Atlas",
-  "keywords": "Porti il tuo cane o gatto in Cile? Il SAG richiede CZI e vaccino antirabbico, l'antiparassitario esattamente tra 5 e 30 giorni prima, e 10 giorni di confinamento a casa. Senza esame del sangue.",
+  "keywords": "Porti il tuo cane o gatto in Cile? Dal 27 luglio 2026 il SAG richiede microchip o tatuaggio, vaccino antirabbico e antiparassitario da 5 a 30 giorni prima del certificato. Senza quarantena.",
   "lang": "it"
  },
  {
   "title": "Requisitos para entrar no Chile com seu pet 2026: SAG, antiparasitário 5-30 dias e sem quarentena",
   "url": "atlas/chile-pt.html",
   "category": "Atlas",
-  "keywords": "Vai levar seu cão ou gato ao Chile? O SAG exige CZI e vacina antirrábica, o antiparasitário exato entre 5 e 30 dias antes, e 10 dias de confinamento em casa. Sem exame de sangue.",
+  "keywords": "Vai levar seu cão ou gato ao Chile? Desde 27 de julho de 2026 o SAG exige microchip ou tatuagem, vacina antirrábica e antiparasitário de 5 a 30 dias antes do certificado. Sem quarentena.",
   "lang": "pt"
  },
  {
   "title": "Requisitos para entrar a Chile con tu mascota 2026: SAG, antiparasitario 5-30 días y sin cuarentena",
   "url": "atlas/chile.html",
   "category": "Atlas",
-  "keywords": "¿Llevas tu perro o gato a Chile? El SAG pide CZI y vacuna antirrábica, el antiparasitario justo entre 5 y 30 días antes, y 10 días de confinamiento en casa. Sin prueba de sangre.",
+  "keywords": "¿Llevas tu perro o gato a Chile? Desde el 27 de julio de 2026 el SAG exige microchip o tatuaje, vacuna antirrábica y antiparasitario entre 5 y 30 días antes del certificado. Sin cuarentena.",
   "lang": "es"
  },
  {
@@ -3805,21 +3826,21 @@ const rawSearchData = [
   "title": "2026 Guide: Chile Pet Travel Requirements – Dogs & Cats",
   "url": "zoopedia/chile-en.html",
   "category": "Zoopedia",
-  "keywords": "Chile: no RNATT, 10 days. More regulated than it looks — SAG requires antiparasitic treatment + CZE in strict window. Official SAG + SENASA 2026 guide.",
+  "keywords": "Chile: no mandatory RNATT, no quarantine. Since 27 July 2026 the SAG requires microchip or tattoo, rabies vaccine and antiparasitic 5-30 days before the certificate.",
   "lang": "en"
  },
  {
   "title": "Guide 2026 : Voyager avec son animal au Chili – Chiens et Chats",
   "url": "zoopedia/chile-fr.html",
   "category": "Zoopedia",
-  "keywords": "Chili : sans RNATT, 10 jours. Plus réglementé qu'il n'y paraît — SAG exige antiparasitaire + déclaration numérique ingresoachile.cl. Guide SAG + SENASA 2026.",
+  "keywords": "Chili : sans RNATT obligatoire ni quarantaine. Depuis le 27 juillet 2026, le SAG exige puce ou tatouage, vaccin antirabique et antiparasitaire 5 à 30 jours avant le certificat.",
   "lang": "fr"
  },
  {
   "title": "Guía 2026: Requisitos para viajar con mascotas a Chile",
   "url": "zoopedia/chile.html",
   "category": "Zoopedia",
-  "keywords": "Chile: sin RNATT, 10 días. Más regulado que parece — SAG exige desparasitación previa + CZE en ventana estricta. Guía oficial SAG + SENASA 2026.",
+  "keywords": "Chile: sin RNATT obligatorio ni cuarentena. Desde el 27-07-2026 el SAG exige microchip o tatuaje, vacuna antirrábica y antiparasitario 5-30 días antes del certificado.",
   "lang": "es"
  },
  {

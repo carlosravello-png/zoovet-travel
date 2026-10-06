@@ -483,7 +483,7 @@ DOI dataset: 10.5281/zenodo.19797479
 - [🇪🇺 Regulation (EU) 576/2013 — European legal framework for pet movement — Art. 6 · FAVN+3 months · EU Passport · Third countries](https://zoovettravel.com/glosario/reglamento-ue-576-2013-en.html)
 - [🇬🇧 APHA (United Kingdom) — UK animal health authority post-Brexit — GB Pet Travel Scheme · Tapeworm · AHC · post-Brexit](https://zoovettravel.com/glosario/apha-en.html)
 - [🇳🇿 MPI (New Zealand) — New Zealand animal biosecurity authority — 10-day quarantine · FAVN 180 days · Biosecurity NZ](https://zoovettravel.com/glosario/mpi-en.html)
-- [🇨🇱 SAG (Chile) — Chile's sanitary authority for pet importation — Res. N° 1547/2016 · FAVN or RFFIT · Lima–Santiago](https://zoovettravel.com/glosario/sag-en.html)
+- [🇨🇱 SAG (Chile) — Chile's sanitary authority for pet importation — Exempt Res. 3.343/2026 · permanent identification · no antibody test](https://zoovettravel.com/glosario/sag-en.html)
 - [🇪🇸 MAPA (Spain) — Spanish competent authority for imported pets — FAVN+3 months · TRACES NT · PCF Barajas · EU](https://zoovettravel.com/glosario/mapa-en.html)
 - [🏥 Fit-to-fly certificate — Veterinary certificate of fitness for flight — Valid 7-10 days · Airline · Brachycephalic risk](https://zoovettravel.com/glosario/fit-to-fly-en.html)
 - [🌡️ Hypobaric stress in flight — Risk of reduced pressure in aircraft hold — Pressure 75% sea level · Reduced O₂ · Brachycephalic risk](https://zoovettravel.com/glosario/hipobaria-en.html)
